@@ -22,7 +22,7 @@ const launchSteps = [
 
 const faqs = [
   {
-    question: 'What should I prepare before hiring Filipino offshore staff?',
+    question: 'What should I prepare before hiring Filipino talent?',
     answer: 'Prepare task examples, tool access rules, a first-week checklist, and one person who can review work every day during the pilot.',
   },
   {
@@ -83,7 +83,7 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
       {
         '@type': 'HowTo',
         '@id': `${serviceUrl}#launch-plan`,
-        name: `How to launch ${service.title.toLowerCase()} with offshore staff`,
+        name: `How to launch ${service.title.toLowerCase()} with Filipino talent`,
         step: launchSteps.map((step, index) => ({
           '@type': 'HowToStep',
           position: index + 1,
@@ -123,10 +123,10 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
               <p className="eyebrow">{site.brand} service</p>
               <h1>{service.title}</h1>
               <p className="lead">{service.desc}</p>
-              <a className="btn" href="/contact">Plan this role</a>
+              <a className="btn primary" href="/contact">Plan my Philippines team</a>
             </div>
             <div className="hero-card">
-              <img src={site.serviceImage} alt={`${service.title} offshore service team`} />
+              <img src={site.serviceImage} alt="Coworkers discussing notes around a table" />
             </div>
           </div>
         </section>

@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Site logo">
-  <rect width="96" height="96" rx="24" fill="#17324D"/>
-  <path d="M24 60V29h13l22 28V29h13v38H59L37 39v28H24z" fill="#FFF8EE"/>
-  <circle cx="70" cy="26" r="8" fill="#F27B3D"/>
-  <path d="M22 73c15-8 36-8 52 0" fill="none" stroke="#0F8F73" stroke-width="8" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Filipino Outsource logo">
+  <rect width="96" height="96" rx="26" fill="#143B8F"/>
+  <path d="M19 63c9-19 21-29 36-29 10 0 18 4 24 11" fill="none" stroke="#B7F34A" stroke-width="9" stroke-linecap="round"/>
+  <path d="M26 73c9-17 20-25 33-25 8 0 15 3 21 9" fill="none" stroke="#FFB347" stroke-width="9" stroke-linecap="round"/>
+  <path d="M34 21v54M34 26h27M34 46h21" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
 </svg>
