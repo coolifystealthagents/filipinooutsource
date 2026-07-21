@@ -135,27 +135,15 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
           <div className="container cards">
             <div className="card">
               <h3>Best tasks</h3>
-              <ul>
-                <li>Recurring work with examples</li>
-                <li>Inbox, tickets, reports, updates, or follow-up</li>
-                <li>Tasks with clear approval rules</li>
-              </ul>
+              <ul>{service.bestTasks.map((task) => <li key={task}>{task}</li>)}</ul>
             </div>
             <div className="card">
               <h3>Quality controls</h3>
-              <ul>
-                <li>Daily notes</li>
-                <li>Weekly scorecard</li>
-                <li>Escalation list</li>
-              </ul>
+              <ul>{service.qualityControls.map((control) => <li key={control}>{control}</li>)}</ul>
             </div>
             <div className="card">
               <h3>First week</h3>
-              <ul>
-                <li>Tool access</li>
-                <li>Sample work</li>
-                <li>Review call</li>
-              </ul>
+              <ul>{service.firstWeek.map((item) => <li key={item}>{item}</li>)}</ul>
             </div>
           </div>
         </section>

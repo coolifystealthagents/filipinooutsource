@@ -18,22 +18,34 @@ export const services = [
   {
     "slug": "operations-support",
     "title": "Operations Support",
-    "desc": "Recurring coordination, queue updates, and handoffs for a Filipino operations role with clear review rules."
+    "desc": "Recurring coordination, queue updates, and handoffs for a Filipino operations role with clear review rules.",
+    "bestTasks": ["Update project boards and owner lists", "Prepare recurring status reports", "Chase missing files or approvals"],
+    "qualityControls": ["A named owner for each queue", "Examples of a correct update", "An exception list for blocked work"],
+    "firstWeek": ["Watch one full handoff", "Complete a small live queue", "Review misses before adding work"]
   },
   {
     "slug": "customer-support",
     "title": "Customer Support",
-    "desc": "Inbox and ticket work for Filipino support staff, with sample replies, escalation limits, and a named reviewer."
+    "desc": "Inbox and ticket work for Filipino support staff, with sample replies, escalation limits, and a named reviewer.",
+    "bestTasks": ["Answer routine order and account questions", "Tag and route new tickets", "Follow up on open customer cases"],
+    "qualityControls": ["Approved reply examples", "Clear refund and escalation limits", "Ticket reviews with written corrections"],
+    "firstWeek": ["Read past replies and policies", "Draft answers before sending", "Review difficult cases each day"]
   },
   {
     "slug": "admin-support",
     "title": "Admin Support",
-    "desc": "Calendar, records, and follow-up work for Filipino admin staff, scoped around the tools they need."
+    "desc": "Calendar, records, and follow-up work for Filipino admin staff, scoped around the tools they need.",
+    "bestTasks": ["Prepare calendars and meeting notes", "Clean records and file documents", "Send routine reminders and follow-ups"],
+    "qualityControls": ["Naming and filing rules", "Approval for calendar changes", "A private-data access list"],
+    "firstWeek": ["Set up limited account access", "Complete one task from each lane", "Correct examples together"]
   },
   {
     "slug": "reporting-and-qa",
     "title": "Reporting and QA",
-    "desc": "Report preparation and routine checks handled by Filipino talent against examples your team can inspect."
+    "desc": "Report preparation and routine checks handled by Filipino talent against examples your team can inspect.",
+    "bestTasks": ["Prepare recurring reports", "Check records against a checklist", "Flag missing or unusual entries"],
+    "qualityControls": ["A source for every reported number", "A written pass-fail checklist", "Spot checks by the report owner"],
+    "firstWeek": ["Rebuild a past report", "Compare the result line by line", "Record questions and edge cases"]
   }
 ] as const;
 export const blogPosts = [
@@ -45,23 +57,51 @@ export const blogPosts = [
   },
   {
     "slug": "Filipino-outsource-staffing-tasks-to-outsource",
-    "title": "Filipino Outsource: What tasks should you outsource first?",
-    "excerpt": "Start with recurring work that has examples and clear review rules.",
+    "title": "Which tasks should a Filipino team take on first?",
+    "excerpt": "Choose recurring work with good examples, a clear owner, and low risk when something goes wrong.",
     "minutes": 7
   },
   {
     "slug": "Filipino-outsource-staffing-provider-questions",
-    "title": "Filipino Outsource: Questions to ask before hiring",
+    "title": "Questions to ask before hiring Filipino talent",
     "excerpt": "Use these questions before you sign with a provider or freelancer.",
     "minutes": 8
   },
   {
     "slug": "Filipino-outsource-staffing-onboarding-checklist",
-    "title": "Filipino Outsource: First week onboarding checklist",
-    "excerpt": "A simple checklist for tools, SOPs, calls, QA, and reporting.",
+    "title": "First-week checklist for a Filipino team member",
+    "excerpt": "Set up access, examples, daily questions, and review time before handing over a full queue.",
     "minutes": 9
   }
 ] as const;
+
+export const guideBodies = {
+  'Filipino-outsource-staffing-planning': {
+    intro: 'A useful staffing plan explains the job in plain terms. Write down the work, the schedule, the accounts the person may use, and who will check the first week. That gives Filipino candidates something real to respond to.',
+    sections: [
+      { title: 'Describe the finished work', paragraphs: ['Name the result you expect, not a broad job title. "Update every open order before noon" is easier to understand than "help with operations." Add one or two examples so the candidate can see what a correct result looks like.'] },
+      { title: 'Write down the limits', paragraphs: ['List the decisions that stay with your team. Refunds, payments, policy exceptions, and changes to sensitive account access usually need an owner. A clear limit protects the customer and the new team member.'] },
+      { title: 'Make room for review', paragraphs: ['Choose who will answer questions and review early work. If nobody has time to check the first few handoffs, the role is not ready. Start with a small queue and add work after the results are steady.'] },
+    ],
+  },
+  'Filipino-outsource-staffing-tasks-to-outsource': {
+    intro: 'Start with work that repeats and can be checked. A task is a good first handoff when you have a real example, can explain the exceptions, and know who will review the result.',
+    sections: [
+      { title: 'Pick one queue that keeps coming back', paragraphs: ['Inbox sorting, routine ticket replies, report preparation, record cleanup, and follow-up lists are often easier to hand off than one-time projects. Choose the queue that takes time every week and has a clear stopping point.'] },
+      { title: 'Keep judgment-heavy calls with your team', paragraphs: ['Do not hand over a vague instruction like "handle the customers." Mark the replies, refunds, payments, or policy decisions that need approval. The Filipino team member can prepare the work without owning a decision they were never hired to make.'] },
+      { title: 'Test the handoff before widening the role', paragraphs: ['Give the person a few live items, then compare the result with your examples. Fix the instructions where questions keep coming up. Add another task only when the first one is accurate and easy for a manager to review.'] },
+    ],
+  },
+  'Filipino-outsource-staffing-onboarding-checklist': {
+    intro: 'The first week should be small enough to watch closely. Give the new Filipino team member the right examples and limited access, then make time to answer questions while the work is still easy to correct.',
+    sections: [
+      { title: 'Before the first login', paragraphs: ['Prepare the task list, sample work, account owner, and access rules. Turn on multifactor authentication where it is available. Share passwords through an approved password manager instead of email or chat.'] },
+      { title: 'Use real work in small batches', paragraphs: ['Walk through one item, let the team member complete the next one, and review it together. Keep the first batch small. Written corrections are more useful than a long call that nobody can check later.'] },
+      { title: 'End the week with the work on screen', paragraphs: ['Review completed items, mistakes, open questions, and access that is no longer needed. Decide which task can continue, which SOP needs fixing, and which decisions must still come back to the manager.'] },
+    ],
+  },
+} as const;
+
 export const blogDetails = {
   'Filipino-outsource-staffing-provider-questions': {
     shortAnswer: 'Ask for proof of how the provider screens, manages, and protects access. A polished candidate profile is useful, but it does not tell you who checks the work or what happens when something goes wrong.',
@@ -138,7 +178,7 @@ export const staffingOffer = {
   ],
   proof: [
     'clear task scope before hiring',
-    'weekly reporting rhythm',
+    'a weekly report with examples of the work',
     'named accountability and escalation path',
     'simple handoff plan for tools, SOPs, and quality checks',
   ],

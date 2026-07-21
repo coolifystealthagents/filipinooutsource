@@ -25,7 +25,7 @@ export default function Home() {
         <div className="ph-hero-copy">
           <p className="ph-kicker">Filipino talent, properly scoped</p>
           <h1>Build your Philippines team around the work.</h1>
-          <p className="ph-intro">Turn the tasks piling up on your desk into a clear role for Filipino talent. Set the handoffs, access rules, schedule, and review rhythm before anyone starts.</p>
+          <p className="ph-intro">Turn the tasks piling up on your desk into a clear role for Filipino talent. Set the handoffs, access rules, schedule, and review routine before anyone starts.</p>
           <div className="ph-actions"><a className="ph-button ph-button-lime" href="/contact">Plan my Philippines team</a><a className="ph-text-link" href="#roles">See the role map <span>↘</span></a></div>
           <p className="ph-disclosure">FilipinoOutsource.com is an independent information site. Your request may be sent to a staffing partner that recruits only in the Philippines.</p>
         </div>
@@ -38,19 +38,19 @@ export default function Home() {
     </section>
 
     <section className="container ph-section" id="roles">
-      <div className="ph-section-head"><div><p className="ph-kicker dark">Start with the work</p><h2>Four useful places to begin.</h2></div><p>You do not need a grand outsourcing plan. Pick one lane with repeatable work, decent examples, and a manager who can review the first week.</p></div>
+      <div className="ph-section-head"><div><p className="ph-kicker dark">Start with the work</p><h2>Pick a role.</h2></div><p>You do not need a grand outsourcing plan. Pick one lane with repeatable work, decent examples, and a manager who can review the first week.</p></div>
       <div className="ph-role-grid">{services.map((service, index) => <a href={`/services/${service.slug}`} className="ph-role" key={service.slug}><span>0{index + 1}</span><h3>{service.title}</h3><p>{service.desc}</p><b>Open the role brief →</b></a>)}</div>
     </section>
 
     <section className="ph-system" id="how-it-works">
       <div className="container ph-system-grid">
-        <div><p className="ph-kicker">The part around the hire</p><h2>A good Filipino team needs an operating system.</h2><p className="ph-system-lead">Recruitment gets someone in the seat. Clear ownership keeps the work moving after launch.</p><img src="/images/filipino-team.jpg" alt="Coworkers working at computers in an office"/></div>
+        <div><p className="ph-kicker">The part around the hire</p><h2>Give the team a clear way to work.</h2><p className="ph-system-lead">Hiring fills the seat. Clear ownership keeps the work moving after the person starts.</p><img src="/images/filipino-team.jpg" alt="Coworkers working at computers in an office"/></div>
         <div className="ph-system-list">{staffingOffer.included.map((item, index) => <article key={item}><span>{index + 1}</span><p>{item}</p></article>)}</div>
       </div>
     </section>
 
     <section className="container ph-section">
-      <div className="ph-section-head"><div><p className="ph-kicker dark">A controlled launch</p><h2>Keep the first month boring.</h2></div><p>That is a compliment. The best early handoffs are small enough to check, repeat, and improve without drama.</p></div>
+      <div className="ph-section-head"><div><p className="ph-kicker dark">A controlled launch</p><h2>Month one.</h2></div><p>That is a compliment. The best early handoffs are small enough to check, repeat, and improve without drama.</p></div>
       <div className="ph-steps">{steps.map(([number, title, body]) => <article key={number}><span>{number}</span><h3>{title}</h3><p>{body}</p></article>)}</div>
     </section>
 

@@ -1,5 +1,5 @@
 import { Header, Footer, CTA, JsonLd } from '../../components';
-import { blogDetails, blogPosts, site } from '../../data';
+import { blogDetails, blogPosts, guideBodies, site } from '../../data';
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -21,6 +21,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const { slug } = await params;
   const post = blogPosts.find((item) => item.slug === slug) || blogPosts[0];
   const details = blogDetails[slug as keyof typeof blogDetails];
+  const guide = guideBodies[slug as keyof typeof guideBodies];
   const url = `https://${site.domain}/blog/${post.slug}`;
   const schema = {
     '@context': 'https://schema.org',
@@ -114,14 +115,16 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
               <h3>{faq.question}</h3><p>{faq.answer}</p>
             </div>)}</div>
           </section>
-        </> : <div className='card'>
-          <h2>The short answer</h2>
-          <p>Start with one role, a short task list, and a weekly scorecard. Do not outsource a messy process until examples and rules are clear.</p>
-          <h2>What to prepare</h2>
-          <ul><li>Task examples and sample replies</li><li>Tool access and permission rules</li><li>Daily output target</li><li>Escalation rules for anything sensitive</li></ul>
-          <h2>Questions to ask</h2>
-          <ul><li>Who screens the worker?</li><li>Who checks quality?</li><li>What happens if fit is poor?</li><li>How are passwords and customer data handled?</li></ul>
-        </div>}
+        </> : guide ? <>
+          <section className='evidence-card'>
+            <p className='article-kicker'>Start here</p>
+            <p>{guide.intro}</p>
+          </section>
+          {guide.sections.map((section) => <section className='article-section' key={section.title}>
+            <h2>{section.title}</h2>
+            {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          </section>)}
+        </> : <div className='card'><p>{post.excerpt}</p></div>}
       </article>
       <CTA />
       <JsonLd data={schema} />
