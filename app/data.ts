@@ -50,6 +50,12 @@ export const services = [
 ] as const;
 export const blogPosts = [
   {
+    "slug": "filipino-virtual-assistant-hiring-guide",
+    "title": "Filipino virtual assistant: A practical hiring guide for 2026",
+    "excerpt": "A Filipino virtual assistant can take on repeat work when the role has clear limits, examples, and a manager. This guide shows how to choose tasks, screen candidates, protect access, and run a careful 30-day launch.",
+    "minutes": 12
+  },
+  {
     "slug": "Filipino-outsource-staffing-planning",
     "title": "What belongs in a Philippines staffing plan?",
     "excerpt": "The role details worth settling before you review candidates.",
@@ -103,6 +109,139 @@ export const guideBodies = {
 } as const;
 
 export const blogDetails = {
+  'filipino-virtual-assistant-hiring-guide': {
+    datePublished: '2026-07-22',
+    dateModified: '2026-07-22',
+    shortAnswer: 'A Filipino virtual assistant is a Philippines-based remote worker who handles defined business tasks such as inbox support, records, scheduling, research, and routine follow-up. The hire works best when you start with one clear queue, show what good work looks like, and keep judgment calls with a named manager.',
+    takeaways: [
+      'Choose one repeat task before writing a broad job description.',
+      'Use the same work sample and scorecard for each candidate.',
+      'Plan a 30-day launch with small batches and daily review at first.',
+      'Give limited access, use MFA, and write down the offboarding steps.',
+      'Hire and provide talent only from the Philippines for this model.',
+    ],
+    sections: [
+      {
+        title: 'Start with the result you need',
+        paragraphs: [
+          'Do not begin with a title like "rockstar VA" or a long list of unrelated chores. Name the result instead, such as clearing routine order questions by 3 p.m. or preparing a clean sales report every Friday.',
+          'Pick work that repeats, has a clear finish, and can be checked against a real example. Inbox sorting, CRM cleanup, calendar preparation, customer follow-up, and weekly report work are often easier first lanes than open-ended project ownership.',
+        ],
+      },
+      {
+        title: 'Separate task work from owner decisions',
+        paragraphs: [
+          'A Filipino virtual assistant can prepare a refund case, but the business owner should set the refund limit and approve exceptions. The assistant can draft a supplier reply, while a manager keeps final control of prices, contracts, policy changes, and sensitive HR calls.',
+          'Write a short stop list beside each task so the worker knows when to pause. Include cases involving money, legal threats, account ownership, unusual customer demands, or any request that falls outside the approved examples.',
+        ],
+      },
+      {
+        title: 'Build a role brief candidates can use',
+        paragraphs: [
+          'A useful brief names the task lanes, tools, work hours, time zone, expected output, and person who reviews the work. It also says which decisions stay with the client and which systems the worker may use during the first week.',
+          'The Philippines uses Philippine Standard Time, which PAGASA lists as UTC+8. Show both the worker schedule and the manager overlap in that time zone so candidates can judge the shift before the interview.',
+        ],
+        steps: [
+          {label:'01',title:'Name one queue',body:'Choose one weekly or daily queue with a clear finish. Attach 3 to 5 redacted examples that show normal work and one exception.'},
+          {label:'02',title:'Set the limits',body:'List the actions the assistant may take without asking. Put payment, policy, access, and unusual customer decisions on the manager list.'},
+          {label:'03',title:'Set the schedule',body:'Write the hours in Philippine Standard Time and the client time zone. Add a 30 to 60 minute overlap when live questions matter.'},
+          {label:'04',title:'Name the reviewer',body:'Choose one person who can answer questions and check early work. Block 15 minutes a day for review during the first week.'},
+        ],
+      },
+      {
+        title: 'Screen with the work, not polished claims',
+        paragraphs: [
+          'Use a short interview to confirm communication, schedule, and relevant experience, then move to a small work sample. Give every candidate the same instructions, time limit, source files, and scorecard so you can compare the work fairly.',
+          'Score accuracy first because a fast wrong answer creates more work. Then check whether the candidate followed the steps, wrote clearly, spotted an exception, and asked for help at the right point.',
+        ],
+      },
+      {
+        title: 'Compare direct hiring and managed staffing',
+        paragraphs: [
+          'A direct hire gives you a close working relationship, but your company handles sourcing, screening, pay, management, leave coverage, and replacement. A staffing provider may handle part of that work, so ask for the exact owner of each step before comparing a quote.',
+          'Do not assume the word "managed" includes daily quality review or backup coverage. Ask who checks attendance, who corrects weak work, what happens during an outage, and how quickly the provider starts a replacement process.',
+        ],
+      },
+      {
+        title: 'Protect accounts before the first login',
+        paragraphs: [
+          'Start with the fewest permissions needed for the first task lane. NIST places identity and access control inside cyber risk management, and Microsoft describes least privilege as giving users only the access needed to do their work.',
+          'Use named accounts, multifactor authentication, and a password manager rather than shared passwords in chat. CISA recommends MFA because a stolen password alone should not be enough to reach an account.',
+          'Keep a simple access list with the system, permission level, account owner, approval date, and removal step. Review it after 7 days, after any role change, and on the same day the working relationship ends.',
+        ],
+      },
+      {
+        title: 'Run a 30-day launch in small stages',
+        paragraphs: [
+          'During days 1 to 3, train on one task and review every completed item. During days 4 to 7, use a small live batch and record each question or exception in the written process.',
+          'In weeks 2 and 3, increase volume only when the first lane stays accurate. At day 30, review work samples, errors, response time, attendance, access, and the manager time still needed before adding another task.',
+        ],
+        steps: [
+          {label:'Days 1-3',title:'Learn with examples',body:'Walk through one correct item and one exception. Let the assistant complete 3 to 5 items while the reviewer stays available.'},
+          {label:'Days 4-7',title:'Use a small live batch',body:'Move a limited set of real work into the queue. Review it daily and update the instructions where questions repeat.'},
+          {label:'Weeks 2-3',title:'Hold a steady lane',body:'Keep the same task long enough to see a pattern. Add volume before adding a second kind of work.'},
+          {label:'Day 30',title:'Make a clear call',body:'Keep, change, or stop the lane based on samples and simple measures. Remove access that the role no longer needs.'},
+        ],
+      },
+      {
+        title: 'Manage the work without filling the day with calls',
+        paragraphs: [
+          'Use one written queue, one place for questions, and one short review time. A daily update can list finished work, blocked items, decisions needed, and the first task for tomorrow without turning into a long meeting.',
+          'Review the work on screen instead of asking whether everything is fine. Open two completed items and one difficult case, then give a written correction that the assistant can use the next time the same issue appears.',
+        ],
+      },
+    ],
+    metrics: {
+      title: 'A sample first-month planning board',
+      intro: 'The figures below are planning examples, not promised results or fixed service levels. Change them to match the risk, volume, and manager time in your own role.',
+      items: [
+        {value:'1',label:'starting task lane',note:'Keep the first handoff narrow enough to inspect closely.'},
+        {value:'3-5',label:'sample items',note:'Use normal examples plus at least one case that needs escalation.'},
+        {value:'15 min',label:'daily review block',note:'Reserve manager time while questions are still easy to fix.'},
+        {value:'30 days',label:'first role review',note:'Decide whether to keep, change, or stop the initial lane.'},
+      ],
+      note: 'These numbers form a cautious example for a low-risk admin or support queue. A role involving money, health data, legal work, or broad system access may need slower steps and more review.',
+    },
+    comparisonTitle: 'Questions that expose a weak hiring plan',
+    comparison: [
+      {question:'What will the person own first?',weak:'"They can help with anything."',useful:'One named queue, a finish point, examples, limits, and a reviewer.'},
+      {question:'How will candidates be tested?',weak:'"We only send top talent."',useful:'The same paid sample, instructions, time box, and scorecard for each person.'},
+      {question:'Who checks early work?',weak:'"The assistant will report to you."',useful:'A named client reviewer, daily check for week 1, and written corrections.'},
+      {question:'How is access controlled?',weak:'"Our systems are secure."',useful:'Named accounts, MFA, limited permissions, an access list, and same-day removal.'},
+      {question:'What happens if the fit is wrong?',weak:'"We can find someone else."',useful:'Written timing, fees if any, work handoff, account removal, and queue coverage.'},
+    ],
+    scripts: [
+      {title:'Script for the first provider call',quote:'"I want to start with one task lane: [name the queue]. Please explain how you would test candidates, who checks work in week 1, and what happens if the first hire is absent or not a fit."',note:'Replace the bracketed text with a real queue before the call. Ask the provider to answer with names, steps, and time frames rather than a broad promise.'},
+      {title:'Script for an access boundary',quote:'"You may prepare the refund record and draft the reply. Stop and tag [manager name] when the amount is above [limit], the customer threatens legal action, or the request falls outside these examples."',note:'This is a planning example, not legal advice. Set the limit and exception list with the person who owns the policy.'},
+    ],
+    scenario: {
+      title: 'Mini-scenario: handing off an order inbox',
+      paragraphs: [
+        'A small online store receives about 40 routine order messages on a busy day, but the owner still handles refunds and policy exceptions. The first handoff is limited to tagging new messages, answering approved order-status questions, and preparing difficult cases for review.',
+        'The owner shares 5 redacted examples, a reply library, and a stop list before day 1. For the first 3 days, the assistant drafts replies without sending them, and the owner reviews a 15-minute sample at the end of the shift.',
+        'In week 2, the assistant sends routine replies and leaves refunds in a manager queue. At day 30, the owner checks reopened tickets, incorrect tags, response time, and five real conversations before deciding whether to add return-status work.',
+      ],
+    },
+    sources: [
+      {name:'PAGASA: Astronomical diary and Philippine time',url:'https://www.pagasa.dost.gov.ph/astronomy',note:'Official Philippine astronomy and standard-time reference.'},
+      {name:'NIST Cybersecurity Framework 2.0',url:'https://www.nist.gov/cyberframework',note:'Government risk-management guidance that includes identity and access controls.'},
+      {name:'Microsoft: Plan a least-privilege access strategy',url:'https://learn.microsoft.com/en-us/security/zero-trust/deploy/identity',note:'First-party guidance for identity controls and least-privilege access.'},
+      {name:'CISA: Require multifactor authentication',url:'https://www.cisa.gov/secure-our-world/require-multifactor-authentication',note:'Government guidance on using MFA to reduce account risk.'},
+    ],
+    faqs: [
+      {question:'What tasks can a Filipino virtual assistant handle?',answer:'Good first tasks include inbox sorting, routine customer replies, calendar preparation, record cleanup, research, CRM updates, and weekly reports. Start with work that repeats, has a clear finish, and can be checked against an example.'},
+      {question:'Should I hire directly or use a staffing provider?',answer:'Direct hiring may give you more control, while a provider may help with sourcing, screening, pay, management, or replacement. Compare the exact work included, the person responsible for each step, and the manager time your team must still provide.'},
+      {question:'How long should onboarding take?',answer:'A low-risk task can start with a 3-day training and sample period, followed by a small live batch during week 1. Treat 30 days as a first review point rather than a promise that every role will be fully independent by then.'},
+      {question:'How do I protect customer and company data?',answer:'Give only the access needed, use named accounts and MFA, and keep passwords in an approved password manager. Record how access is approved, reviewed, and removed, then get legal or security advice when the work involves regulated data.'},
+      {question:'What should I measure in the first month?',answer:'Check real work samples for accuracy, missed steps, repeated questions, and cases that should have been escalated. Add simple measures such as response time or completed items only when they match the task and do not reward rushed work.'},
+    ],
+    related: [
+      {href:'/services/admin-support',label:'Plan an admin support role'},
+      {href:'/services/customer-support',label:'Plan a customer support role'},
+      {href:'/blog/Filipino-outsource-staffing-provider-questions',label:'Questions to ask a staffing provider'},
+      {href:'/contact',label:'Request a Philippines staffing plan'},
+    ],
+  },
   'Filipino-outsource-staffing-provider-questions': {
     shortAnswer: 'Ask for proof of how the provider screens, manages, and protects access. A polished candidate profile is useful, but it does not tell you who checks the work or what happens when something goes wrong.',
     takeaways: [
