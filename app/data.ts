@@ -16,36 +16,36 @@ export const site = {
 } as const;
 export const services = [
   {
-    "slug": "operations-support",
-    "title": "Operations Support",
-    "desc": "Recurring coordination, queue updates, and handoffs for a Filipino operations role with clear review rules.",
-    "bestTasks": ["Update project boards and owner lists", "Prepare recurring status reports", "Chase missing files or approvals"],
-    "qualityControls": ["A named owner for each queue", "Examples of a correct update", "An exception list for blocked work"],
-    "firstWeek": ["Watch one full handoff", "Complete a small live queue", "Review misses before adding work"]
+    "slug": "executive-assistance",
+    "title": "Executive Assistance",
+    "desc": "Calendar, follow-up, and meeting prep for a Filipino executive assistant with clear access and approval rules.",
+    "bestTasks": ["Prepare calendars and meeting notes", "Organize routine follow-ups", "Keep action lists current"],
+    "qualityControls": ["Approval rules for calendar changes", "A private-data access list", "A named executive or chief of staff reviewer"],
+    "firstWeek": ["Set up limited account access", "Practice on past requests", "Review each handoff together"]
   },
   {
-    "slug": "customer-support",
-    "title": "Customer Support",
+    "slug": "customer-support-operations",
+    "title": "Customer Support Operations",
     "desc": "Inbox and ticket work for Filipino support staff, with sample replies, escalation limits, and a named reviewer.",
     "bestTasks": ["Answer routine order and account questions", "Tag and route new tickets", "Follow up on open customer cases"],
     "qualityControls": ["Approved reply examples", "Clear refund and escalation limits", "Ticket reviews with written corrections"],
     "firstWeek": ["Read past replies and policies", "Draft answers before sending", "Review difficult cases each day"]
   },
   {
-    "slug": "admin-support",
-    "title": "Admin Support",
-    "desc": "Calendar, records, and follow-up work for Filipino admin staff, scoped around the tools they need.",
-    "bestTasks": ["Prepare calendars and meeting notes", "Clean records and file documents", "Send routine reminders and follow-ups"],
-    "qualityControls": ["Naming and filing rules", "Approval for calendar changes", "A private-data access list"],
-    "firstWeek": ["Set up limited account access", "Complete one task from each lane", "Correct examples together"]
+    "slug": "bookkeeping-support",
+    "title": "Bookkeeping Support",
+    "desc": "Record prep and routine bookkeeping support from Filipino staff, while your business keeps payment and approval control.",
+    "bestTasks": ["Organize receipts and source files", "Prepare transaction records for review", "Flag missing or unusual entries"],
+    "qualityControls": ["No authority to release payments", "A source file for every entry", "Review by the client bookkeeper or accountant"],
+    "firstWeek": ["Rebuild a past record set", "Compare entries with source files", "Write down questions and exceptions"]
   },
   {
-    "slug": "reporting-and-qa",
-    "title": "Reporting and QA",
-    "desc": "Report preparation and routine checks handled by Filipino talent against examples your team can inspect.",
-    "bestTasks": ["Prepare recurring reports", "Check records against a checklist", "Flag missing or unusual entries"],
-    "qualityControls": ["A source for every reported number", "A written pass-fail checklist", "Spot checks by the report owner"],
-    "firstWeek": ["Rebuild a past report", "Compare the result line by line", "Record questions and edge cases"]
+    "slug": "data-processing-support",
+    "title": "Data Processing Support",
+    "desc": "Structured data entry and record checks handled by Filipino talent against rules and examples your team can inspect.",
+    "bestTasks": ["Clean and format records", "Move approved data between systems", "Flag duplicates and missing fields"],
+    "qualityControls": ["A written field guide", "Pass-fail checks for required data", "Spot checks by the record owner"],
+    "firstWeek": ["Practice on a redacted sample", "Review errors line by line", "Start with a limited live batch"]
   }
 ] as const;
 export const blogPosts = [
