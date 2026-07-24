@@ -84,6 +84,14 @@ export const blogPosts = [
 export const guideBodies = {
   'Filipino-outsource-staffing-planning': {
     intro: 'A useful staffing plan explains the job in plain terms. Write down the work, the schedule, the accounts the person may use, and who will check the launch period. That gives Filipino candidates something real to respond to.',
+
+    bodyLinks: {
+      internal: [
+        {href:'/blog/Filipino-outsource-staffing-tasks-to-outsource',label:'task queue',note:'Use this article to choose the first handoff.'},
+        {href:'/services/customer-support',label:'customer support',note:'Review this service page when the starting queue involves customer messages.'},
+      ],
+      external: {href:'https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees',label:'SBA hiring',note:'Authority guidance for defining and managing hiring responsibilities.'},
+    },
     sections: [
       { title: 'Describe the finished work', paragraphs: ['Name the result you expect, not a broad job title. "Update every open order before noon" is easier to understand than "help with operations." Add one or two examples so the candidate can see what a correct result looks like.'] },
       { title: 'Write down the limits', paragraphs: ['List the decisions that stay with your team. Refunds, payments, policy exceptions, and changes to sensitive account access usually need an owner. A clear limit protects the customer and the new team member.'] },
@@ -92,6 +100,14 @@ export const guideBodies = {
   },
   'Filipino-outsource-staffing-tasks-to-outsource': {
     intro: 'Start with work that repeats and can be checked. A task is a good first handoff when you have a real example, can explain the exceptions, and know who will review the result.',
+
+    bodyLinks: {
+      internal: [
+        {href:'/blog/Filipino-outsource-staffing-planning',label:'staffing plan',note:'Use the planning article before assigning live work.'},
+        {href:'/blog/Filipino-outsource-staffing-onboarding-checklist',label:'launch checklist',note:'Use the checklist once the first task is selected.'},
+      ],
+      external: {href:'https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees',label:'SBA hiring',note:'Authority guidance for defining responsibilities before hiring.'},
+    },
     sections: [
       { title: 'Pick one queue that keeps coming back', paragraphs: ['Inbox sorting, routine ticket replies, report preparation, record cleanup, and follow-up lists are often easier to hand off than one-time projects. Choose the queue that takes time every week and has a clear stopping point.'] },
       { title: 'Keep judgment-heavy calls with your team', paragraphs: ['Do not hand over a vague instruction like "handle the customers." Mark the replies, refunds, payments, or policy decisions that need approval. The Filipino team member can prepare the work without owning a decision they were never hired to make.'] },
@@ -100,6 +116,14 @@ export const guideBodies = {
   },
   'Filipino-outsource-staffing-onboarding-checklist': {
     intro: 'The launch period should be small enough to watch closely. Give the new Filipino team member the right examples and limited access, then make time to answer questions while the work is still easy to correct.',
+
+    bodyLinks: {
+      internal: [
+        {href:'/blog/Filipino-outsource-staffing-planning',label:'staffing plan',note:'Confirm the role scope before assigning access.'},
+        {href:'/blog/Filipino-outsource-staffing-tasks-to-outsource',label:'task queue',note:'Check whether the starting work is narrow enough.'},
+      ],
+      external: {href:'https://www.cisa.gov/secure-our-world/require-multifactor-authentication',label:'CISA MFA',note:'Authority guidance for multifactor authentication before account access.'},
+    },
     sections: [
       { title: 'Before the first login', paragraphs: ['Prepare the task list, sample work, account owner, and access rules. Turn on multifactor authentication where it is available. Share passwords through an approved password manager instead of email or chat.'] },
       { title: 'Use real work in small batches', paragraphs: ['Walk through one item, let the team member complete the next one, and review it together. Keep the first batch small. Written corrections are more useful than a long call that nobody can check later.'] },
@@ -120,6 +144,14 @@ export const blogDetails = {
       'Give limited access, use MFA, and write down the offboarding steps.',
       'Hire and provide talent only from the Philippines for this model.',
     ],
+
+    bodyLinks: {
+      internal: [
+        {href:'/services/admin-support',label:'admin support',note:'Use this service page when the first queue is administrative.'},
+        {href:'/blog/Filipino-outsource-staffing-provider-questions',label:'provider questions',note:'Use these questions before comparing staffing options.'},
+      ],
+      external: {href:'https://www.cisa.gov/secure-our-world/require-multifactor-authentication',label:'CISA MFA',note:'Authority guidance for multifactor authentication and account safety.'},
+    },
     sections: [
       {
         title: 'Start with the result you need',
@@ -238,7 +270,7 @@ export const blogDetails = {
     related: [
       {href:'/services/admin-support',label:'Plan an admin support role'},
       {href:'/services/customer-support',label:'Plan a customer support role'},
-      {href:'/blog/Filipino-outsource-staffing-provider-questions',label:'Questions to ask a staffing provider'},
+      {href:'/blog/Filipino-outsource-staffing-provider-questions',label:'Provider questions'},
       {href:'/contact',label:'Request a Philippines staffing plan'},
     ],
   },
@@ -252,6 +284,14 @@ export const blogDetails = {
       'Ask what happens if the first hire is absent, misses the mark, or leaves.',
       'Keep owner approval for refunds, payments, policy exceptions, and other sensitive calls.',
     ],
+
+    bodyLinks: {
+      internal: [
+        {href:'/blog/Filipino-outsource-staffing-planning',label:'staffing plan',note:'Start here before asking a provider for candidates.'},
+        {href:'/blog/Filipino-outsource-staffing-onboarding-checklist',label:'launch checklist',note:'Use this checklist after a provider recommends a worker.'},
+      ],
+      external: {href:'https://www.nist.gov/cyberframework',label:'NIST CSF',note:'Authority framework for access, identity, and cyber risk controls.'},
+    },
     sections: [
       {
         title: 'Start with the work, not the resume',
@@ -297,7 +337,7 @@ export const blogDetails = {
       { name: 'CISA: Use strong passwords', url: 'https://www.cisa.gov/secure-our-world/use-strong-passwords', note: 'Plain guidance on long, unique passwords and password managers.' },
     ],
     related: [
-      {href:'/blog/filipino-virtual-assistant-hiring-guide',label:'Read the full Filipino virtual assistant hiring guide'},
+      {href:'/blog/filipino-virtual-assistant-hiring-guide',label:'Full hiring guide'},
       {href:'/blog/Filipino-outsource-staffing-planning',label:'Write the staffing plan first'},
       {href:'/blog/Filipino-outsource-staffing-onboarding-checklist',label:'Use the launch checklist'},
       {href:'/contact',label:'Request a Philippines staffing plan'},
