@@ -52,7 +52,7 @@ export const blogPosts = [
   {
     "slug": "filipino-virtual-assistant-hiring-guide",
     "title": "Filipino virtual assistant: A practical hiring guide for 2026",
-    "excerpt": "A Filipino virtual assistant can take on repeat work when the role has clear limits, examples, and a manager. This guide shows how to choose tasks, screen candidates, protect access, and run a careful 30-day launch.",
+    "excerpt": "A Filipino virtual assistant can take on repeat work when the role has clear limits, examples, and a manager. This guide shows how to choose tasks, screen candidates, protect access, and run a careful controlled launch.",
     "minutes": 12
   },
   {
@@ -85,13 +85,6 @@ export const guideBodies = {
   'Filipino-outsource-staffing-planning': {
     intro: 'A useful staffing plan explains the job in plain terms. Write down the work, the schedule, the accounts the person may use, and who will check the launch period. That gives Filipino candidates something real to respond to.',
 
-    bodyLinks: {
-      internal: [
-        {href:'/blog/Filipino-outsource-staffing-tasks-to-outsource',label:'task queue',note:'Use this article to choose the first handoff.'},
-        {href:'/services/customer-support',label:'customer support',note:'Review this service page when the starting queue involves customer messages.'},
-      ],
-      external: {href:'https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees',label:'SBA hiring',note:'Authority guidance for defining and managing hiring responsibilities.'},
-    },
     sections: [
       { title: 'Describe the finished work', paragraphs: ['Name the result you expect, not a broad job title. "Update every open order before noon" is easier to understand than "help with operations." Add one or two examples so the candidate can see what a correct result looks like.'] },
       { title: 'Write down the limits', paragraphs: ['List the decisions that stay with your team. Refunds, payments, policy exceptions, and changes to sensitive account access usually need an owner. A clear limit protects the customer and the new team member.'] },
@@ -101,13 +94,6 @@ export const guideBodies = {
   'Filipino-outsource-staffing-tasks-to-outsource': {
     intro: 'Start with work that repeats and can be checked. A task is a good first handoff when you have a real example, can explain the exceptions, and know who will review the result.',
 
-    bodyLinks: {
-      internal: [
-        {href:'/blog/Filipino-outsource-staffing-planning',label:'staffing plan',note:'Use the planning article before assigning live work.'},
-        {href:'/blog/Filipino-outsource-staffing-onboarding-checklist',label:'launch checklist',note:'Use the checklist once the first task is selected.'},
-      ],
-      external: {href:'https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees',label:'SBA hiring',note:'Authority guidance for defining responsibilities before hiring.'},
-    },
     sections: [
       { title: 'Pick one queue that keeps coming back', paragraphs: ['Inbox sorting, routine ticket replies, report preparation, record cleanup, and follow-up lists are often easier to hand off than one-time projects. Choose the queue that takes time every week and has a clear stopping point.'] },
       { title: 'Keep judgment-heavy calls with your team', paragraphs: ['Do not hand over a vague instruction like "handle the customers." Mark the replies, refunds, payments, or policy decisions that need approval. The Filipino team member can prepare the work without owning a decision they were never hired to make.'] },
@@ -117,13 +103,6 @@ export const guideBodies = {
   'Filipino-outsource-staffing-onboarding-checklist': {
     intro: 'The launch period should be small enough to watch closely. Give the new Filipino team member the right examples and limited access, then make time to answer questions while the work is still easy to correct.',
 
-    bodyLinks: {
-      internal: [
-        {href:'/blog/Filipino-outsource-staffing-planning',label:'staffing plan',note:'Confirm the role scope before assigning access.'},
-        {href:'/blog/Filipino-outsource-staffing-tasks-to-outsource',label:'task queue',note:'Check whether the starting work is narrow enough.'},
-      ],
-      external: {href:'https://www.cisa.gov/secure-our-world/require-multifactor-authentication',label:'CISA MFA',note:'Authority guidance for multifactor authentication before account access.'},
-    },
     sections: [
       { title: 'Before the first login', paragraphs: ['Prepare the task list, sample work, account owner, and access rules. Turn on multifactor authentication where it is available. Share passwords through an approved password manager instead of email or chat.'] },
       { title: 'Use real work in small batches', paragraphs: ['Walk through one item, let the team member complete the next one, and review it together. Keep the first batch small. Written corrections are more useful than a long call that nobody can check later.'] },
@@ -140,7 +119,7 @@ export const blogDetails = {
     takeaways: [
       'Choose one repeat task before writing a broad job description.',
       'Use the same work sample and scorecard for each candidate.',
-      'Plan a 30-day launch with small batches and daily review at first.',
+      'Plan a controlled launch with small batches and regular review.',
       'Give limited access, use MFA, and write down the offboarding steps.',
       'Hire and provide talent only from the Philippines for this model.',
     ],
@@ -177,7 +156,7 @@ export const blogDetails = {
           {label:'01',title:'Name one queue',body:'Choose one weekly or daily queue with a clear finish. Attach 3 to 5 redacted examples that show normal work and one exception.'},
           {label:'02',title:'Set the limits',body:'List the actions the assistant may take without asking. Put payment, policy, access, and unusual customer decisions on the manager list.'},
           {label:'03',title:'Set the schedule',body:'Write the hours in Philippine Standard Time and the client time zone. Add a 30 to 60 minute overlap when live questions matter.'},
-          {label:'04',title:'Name the reviewer',body:'Choose one person who can answer questions and check early work. Block 15 minutes a day for review during the launch period.'},
+          {label:'04',title:'Name the reviewer',body:'Choose one person who can answer questions and check early work. Reserve a short review block during the launch period.'},
         ],
       },
       {
@@ -199,20 +178,20 @@ export const blogDetails = {
         paragraphs: [
           'Start with the fewest permissions needed for the first task lane. NIST places identity and access control inside cyber risk management, and Microsoft describes least privilege as giving users only the access needed to do their work.',
           'Use named accounts, multifactor authentication, and a password manager rather than shared passwords in chat. CISA recommends MFA because a stolen password alone should not be enough to reach an account.',
-          'Keep a simple access list with the system, permission level, account owner, approval date, and removal step. Review it after 7 days, after any role change, and on the same day the working relationship ends.',
+          'Keep a simple access list with the system, permission level, account owner, approval date, and removal step. Review it during the launch period, after any role change, and on the same day the working relationship ends.',
         ],
       },
       {
-        title: 'Run a 30-day launch in small stages',
+        title: 'Run a controlled launch in small stages',
         paragraphs: [
-          'During days 1 to 3, train on one task and review every completed item. During days 4 to 7, use a small live batch and record each question or exception in the written process.',
-          'In weeks 2 and 3, increase volume only when the first lane stays accurate. At day 30, review work samples, errors, response time, attendance, access, and the manager time still needed before adding another task.',
+          'Start by training on one task and reviewing completed items closely. Then use a small live batch and record each question or exception in the written process.',
+          'Increase volume only when the first lane stays accurate. At the review point, check work samples, errors, response time, attendance, access, and the manager time still needed before adding another task.',
         ],
         steps: [
-          {label:'Days 1-3',title:'Learn with examples',body:'Walk through one correct item and one exception. Let the assistant complete 3 to 5 items while the reviewer stays available.'},
-          {label:'Days 4-7',title:'Use a small live batch',body:'Move a limited set of real work into the queue. Review it daily and update the instructions where questions repeat.'},
-          {label:'Weeks 2-3',title:'Hold a steady lane',body:'Keep the same task long enough to see a pattern. Add volume before adding a second kind of work.'},
-          {label:'Day 30',title:'Make a clear call',body:'Keep, change, or stop the lane based on samples and simple measures. Remove access that the role no longer needs.'},
+          {label:'Step 1',title:'Learn with examples',body:'Walk through one correct item and one exception. Let the assistant complete a small sample while the reviewer stays available.'},
+          {label:'Step 2',title:'Use a small live batch',body:'Move a limited set of real work into the queue. Review it regularly and update the instructions where questions repeat.'},
+          {label:'Step 3',title:'Hold a steady lane',body:'Keep the same task long enough to see a pattern. Add volume before adding a second kind of work.'},
+          {label:'Step 4',title:'Make a clear call',body:'Keep, change, or stop the lane based on samples and simple measures. Remove access that the role no longer needs.'},
         ],
       },
       {
@@ -230,7 +209,7 @@ export const blogDetails = {
         {value:'1',label:'starting task lane',note:'Keep the first handoff narrow enough to inspect closely.'},
         {value:'3-5',label:'sample items',note:'Use normal examples plus at least one case that needs escalation.'},
         {value:'15 min',label:'daily review block',note:'Reserve manager time while questions are still easy to fix.'},
-        {value:'30 days',label:'first role review',note:'Decide whether to keep, change, or stop the initial lane.'},
+        {value:'Review',label:'role checkpoint',note:'Decide whether to keep, change, or stop the initial lane.'},
       ],
       note: 'These numbers form a cautious example for a low-risk admin or support queue. A role involving money, health data, legal work, or broad system access may need slower steps and more review.',
     },
@@ -238,20 +217,20 @@ export const blogDetails = {
     comparison: [
       {question:'What will the person own first?',weak:'"They can help with anything."',useful:'One named queue, a finish point, examples, limits, and a reviewer.'},
       {question:'How will candidates be tested?',weak:'"We only send top talent."',useful:'The same paid sample, instructions, time box, and scorecard for each person.'},
-      {question:'Who checks early work?',weak:'"The assistant will report to you."',useful:'A named client reviewer, daily check for week 1, and written corrections.'},
+      {question:'Who checks launch work?',weak:'"The assistant will report to you."',useful:'A named client reviewer, regular launch check, and written corrections.'},
       {question:'How is access controlled?',weak:'"Our systems are secure."',useful:'Named accounts, MFA, limited permissions, an access list, and same-day removal.'},
       {question:'What happens if the fit is wrong?',weak:'"We can find someone else."',useful:'Written timing, fees if any, work handoff, account removal, and queue coverage.'},
     ],
     scripts: [
-      {title:'Script for the first provider call',quote:'"I want to start with one task lane: [name the queue]. Please explain how you would test candidates, who checks work in week 1, and what happens if the first hire is absent or not a fit."',note:'Replace the bracketed text with a real queue before the call. Ask the provider to answer with names, steps, and time frames rather than a broad promise.'},
+      {title:'Script for the provider call',quote:'"I want to start with one task lane: [name the queue]. Please explain how you would test candidates, who checks work in launch period, and what happens if the first hire is absent or not a fit."',note:'Replace the bracketed text with a real queue before the call. Ask the provider to answer with names, steps, and time frames rather than a broad promise.'},
       {title:'Script for an access boundary',quote:'"You may prepare the refund record and draft the reply. Stop and tag [manager name] when the amount is above [limit], the customer threatens legal action, or the request falls outside these examples."',note:'This is a planning example, not legal advice. Set the limit and exception list with the person who owns the policy.'},
     ],
     scenario: {
       title: 'Mini-scenario: handing off an order inbox',
       paragraphs: [
         'A small online store receives about 40 routine order messages on a busy day, but the owner still handles refunds and policy exceptions. The first handoff is limited to tagging new messages, answering approved order-status questions, and preparing difficult cases for review.',
-        'The owner shares 5 redacted examples, a reply library, and a stop list before day 1. For the first 3 days, the assistant drafts replies without sending them, and the owner reviews a 15-minute sample at the end of the shift.',
-        'In week 2, the assistant sends routine replies and leaves refunds in a manager queue. At day 30, the owner checks reopened tickets, incorrect tags, response time, and five real conversations before deciding whether to add return-status work.',
+        'The owner shares 5 redacted examples, a reply library, and a stop list before day 1. At launch, the assistant drafts replies without sending them, and the owner reviews a small sample at the end of the shift.',
+        'After the sample is accurate, the assistant sends routine replies and leaves refunds in a manager queue. At the review point, the owner checks reopened tickets, incorrect tags, response time, and real conversations before deciding whether to add return-status work.',
       ],
     },
     sources: [
@@ -263,15 +242,15 @@ export const blogDetails = {
     faqs: [
       {question:'What tasks can a Filipino virtual assistant handle?',answer:'Good first tasks include inbox sorting, routine customer replies, calendar preparation, record cleanup, research, CRM updates, and weekly reports. Start with work that repeats, has a clear finish, and can be checked against an example.'},
       {question:'Should I hire directly or use a staffing provider?',answer:'Direct hiring may give you more control, while a provider may help with sourcing, screening, pay, management, or replacement. Compare the exact work included, the person responsible for each step, and the manager time your team must still provide.'},
-      {question:'How long should onboarding take?',answer:'A low-risk task can start with a 3-day training and sample period, followed by a small live batch during week 1. Treat 30 days as a first review point rather than a promise that every role will be fully independent by then.'},
+      {question:'How long should onboarding take?',answer:'A low-risk task can start with a training sample followed by a small live batch. Treat the first formal review as a control point rather than a promise that every role will be fully independent by then.'},
       {question:'How do I protect customer and company data?',answer:'Give only the access needed, use named accounts and MFA, and keep passwords in an approved password manager. Record how access is approved, reviewed, and removed, then get legal or security advice when the work involves regulated data.'},
       {question:'What should I measure in the first month?',answer:'Check real work samples for accuracy, missed steps, repeated questions, and cases that should have been escalated. Add simple measures such as response time or completed items only when they match the task and do not reward rushed work.'},
     ],
     related: [
-      {href:'/services/admin-support',label:'Plan an admin support role'},
-      {href:'/services/customer-support',label:'Plan a customer support role'},
+      {href:'/services/admin-support',label:'Plan admin support'},
+      {href:'/services/customer-support',label:'Plan customer support'},
       {href:'/blog/Filipino-outsource-staffing-provider-questions',label:'Provider questions'},
-      {href:'/contact',label:'Request a Philippines staffing plan'},
+      {href:'/contact',label:'Request staffing plan'},
     ],
   },
   'Filipino-outsource-staffing-provider-questions': {
@@ -315,9 +294,9 @@ export const blogDetails = {
         ],
       },
       {
-        title: 'Agree on the first 30 days',
+        title: 'Agree on the launch review',
         paragraphs: [
-          'The launch period should be narrow. Start with a few repeatable tasks, sample answers, and daily checks. In weeks two and three, add work only after the first tasks are steady. At the end of the month, review accuracy, response time, attendance, questions raised, and the amount of manager time the role still needs.',
+          'The launch period should be narrow. Start with a few repeatable tasks, sample answers, and daily checks. Add work only after the first tasks are steady. At the launch review, review accuracy, response time, attendance, questions raised, and the amount of manager time the role still needs.',
           'Ask the provider to put the replacement process in writing. Find out what starts a replacement, whether there is another fee, who keeps the work moving, and how account access is closed. A replacement promise means little if there is no handoff plan or expected response time.',
         ],
       },
@@ -329,7 +308,7 @@ export const blogDetails = {
       { question: 'What if the hire is not a fit?', weak: '"We offer replacements."', useful: 'The agreement states the replacement steps, fees, timing, work handoff, and access removal process.' },
     ],
     scripts: [
-      {title:'Script for the first provider call',quote:'"Before you send candidates, please show me how you would screen for this role. Who will check the launch period of work? Please include your process for absences, replacement, password access, and removing access when someone leaves."',note:'Ask for the owner of each step, not a general assurance. Save the answer beside the role brief before you approve candidates.'},
+      {title:'Script for the provider call',quote:'"Before you send candidates, please show me how you would screen for this role. Who will check the launch period of work? Please include your process for absences, replacement, password access, and removing access when someone leaves."',note:'Ask for the owner of each step, not a general assurance. Save the answer beside the role brief before you approve candidates.'},
     ],
     sources: [
       { name: 'NIST Cybersecurity Framework 2.0', url: 'https://www.nist.gov/cyberframework', note: 'A risk-management reference for access, identity, protection, and recovery planning.' },
@@ -338,9 +317,9 @@ export const blogDetails = {
     ],
     related: [
       {href:'/blog/filipino-virtual-assistant-hiring-guide',label:'Full hiring guide'},
-      {href:'/blog/Filipino-outsource-staffing-planning',label:'Write the staffing plan first'},
+      {href:'/blog/Filipino-outsource-staffing-planning',label:'Write staffing plan'},
       {href:'/blog/Filipino-outsource-staffing-onboarding-checklist',label:'Use the launch checklist'},
-      {href:'/contact',label:'Request a Philippines staffing plan'},
+      {href:'/contact',label:'Request staffing plan'},
     ],
     faqs: [
       { question: 'Should I hire through a provider or hire a Filipino freelancer directly?', answer: 'A direct hire may cost less and gives you a direct relationship, but your team handles screening, contracts, payroll, management, and replacement. A provider may cover some of that work. Ask exactly what is included before comparing prices.' },
@@ -360,6 +339,14 @@ export const blogDetails = {
       'Keep payments, refunds, policy exceptions, and sensitive access with a named owner.',
       'Write the review path before the first live handoff.',
     ],
+
+    bodyLinks: {
+      internal: [
+        {href:'/blog/Filipino-outsource-staffing-tasks-to-outsource',label:'task queue',note:'Use this article to choose the first handoff.'},
+        {href:'/services/customer-support',label:'customer support',note:'Review this service page when the starting queue involves customer messages.'},
+      ],
+      external: {href:'https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees',label:'SBA hiring',note:'Authority guidance for defining and managing hiring responsibilities.'},
+    },
     sections: [
       {title:'Define the first queue in plain language',paragraphs:['The first queue should be narrow enough to check. Instead of writing that a Filipino team member will help with operations, write the result: update order records before a cutoff, prepare a customer-reply draft, clean a weekly spreadsheet, or tag tickets that need a manager decision.','Add 3 to 5 redacted examples. Include one normal item, one messy item, and one case that should stop for review. The examples keep the role from becoming a vague list of errands and give the candidate a fair way to show judgment.']},
       {title:'Separate work execution from owner decisions',paragraphs:['A staffing plan should say which work the team member may complete and which decisions stay with the business. The worker may prepare a refund record, summarize a vendor issue, or draft a reply, while the manager keeps final control of money, policy, contracts, legal questions, and unusual customer demands.','This boundary protects both sides. The business keeps authority over risk, and the Filipino team member does not have to guess when a decision is outside the role. Put the stop list next to each task so it is easy to use during live work.']},
@@ -372,13 +359,21 @@ export const blogDetails = {
     scenario:{title:'Mini-scenario: planning a support inbox role',paragraphs:['A business wants Filipino support help because the owner spends too much time reading routine customer messages. The first queue is not all support. It is only order-status replies, message tagging, and escalation notes for refunds or policy exceptions.','The plan includes five redacted examples, a reply library, a stop list, and a daily review owner. After candidates complete the same sample task, the business can compare accuracy and judgment instead of choosing based on a polished interview alone.']},
     sources:[{name:'SBA: Hire and manage employees',url:'https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees',note:'General small-business guidance for defining hiring needs and managing employees.'}],
     faqs:[{question:'What should be in a Philippines staffing plan?',answer:'Include the starting task, examples, access limits, schedule, manager, review method, and decisions that stay with the business owner.'},{question:'Should the plan list every future task?',answer:'No. Start with the first queue and note possible later tasks separately. Expanding too early makes review harder.'},{question:'Who should own quality checks?',answer:'A named client-side reviewer should check real samples and write corrections into the process.'}],
-    related:[{href:'/blog/filipino-virtual-assistant-hiring-guide',label:'Read the full hiring guide'},{href:'/blog/Filipino-outsource-staffing-tasks-to-outsource',label:'Choose the first task queue'},{href:'/blog/Filipino-outsource-staffing-provider-questions',label:'Questions to ask a provider'},{href:'/contact',label:'Request a staffing plan'}],
+    related:[{href:'/blog/filipino-virtual-assistant-hiring-guide',label:'Full hiring guide'},{href:'/blog/Filipino-outsource-staffing-tasks-to-outsource',label:'Choose task queue'},{href:'/blog/Filipino-outsource-staffing-provider-questions',label:'Provider questions'},{href:'/contact',label:'Request a staffing plan'}],
   },
   'Filipino-outsource-staffing-tasks-to-outsource': {
     datePublished: '2026-07-22',
     dateModified: '2026-07-23',
     shortAnswer: 'The best first tasks for a Filipino team are repeatable, example-backed, easy to review, and low risk if paused for approval. Start with admin, support, records, follow-up, or reporting work before assigning judgment-heavy decisions.',
     takeaways: ['Pick recurring work with a clear finish point.','Keep sensitive decisions with your internal owner.','Use examples and a scorecard before widening the role.','Add a second task only after the first queue is stable.'],
+
+    bodyLinks: {
+      internal: [
+        {href:'/blog/Filipino-outsource-staffing-planning',label:'staffing plan',note:'Use the planning article before assigning live work.'},
+        {href:'/blog/Filipino-outsource-staffing-onboarding-checklist',label:'launch checklist',note:'Use the checklist once the first task is selected.'},
+      ],
+      external: {href:'https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees',label:'SBA hiring',note:'Authority guidance for defining responsibilities before hiring.'},
+    },
     sections:[
       {title:'Choose work that repeats',paragraphs:['Inbox triage, routine replies, CRM cleanup, record formatting, calendar preparation, reporting support, and follow-up lists are practical first handoffs because the same pattern appears again and again. Repetition makes training easier and gives the reviewer enough samples to see whether the process is working.','Avoid starting with a task that changes every time. If each item needs a new judgment call, the worker will spend more time asking for decisions than completing useful work. Keep the first queue simple enough to explain in one page.']},
       {title:'Keep high-risk decisions internal',paragraphs:['A Filipino team member can prepare a refund summary, but the refund limit should stay with the business. They can draft a supplier message, but price changes and contract positions should stay with the account owner. The more sensitive the decision, the clearer the stop rule needs to be.','This does not mean the role is low value. Preparing work, organizing evidence, drafting replies, and flagging exceptions can save manager time while keeping final authority in the right place.']},
@@ -391,13 +386,21 @@ export const blogDetails = {
     scenario:{title:'Mini-scenario: choosing between three tasks',paragraphs:['A founder wants help with customer email, bookkeeping, and appointment scheduling. The safest first handoff is customer email tagging because examples already exist, the owner can review a sample, and refunds stay internal.','Bookkeeping prep may be second after access rules are written. Appointment scheduling may wait until calendar rules and rescheduling authority are clear. The sequence is based on reviewability, not which task feels most annoying.']},
     sources:[{name:'SBA: Hire and manage employees',url:'https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees',note:'Small-business hiring guidance that supports defining roles and responsibilities before hiring.'}],
     faqs:[{question:'What tasks are easiest to outsource first?',answer:'Start with repeat admin, support, records, scheduling prep, reporting, or follow-up work that has examples and a clear reviewer.'},{question:'Should I outsource sales calls first?',answer:'Only if scripts, compliance rules, recording/review, and escalation paths are already clear. Otherwise begin with research, list cleanup, or call prep.'},{question:'How do I know when to add more tasks?',answer:'Add tasks after the first queue is accurate, questions have decreased, and the SOP reflects real exceptions.'}],
-    related:[{href:'/blog/Filipino-outsource-staffing-planning',label:'Write the staffing plan first'},{href:'/blog/Filipino-outsource-staffing-provider-questions',label:'Ask provider screening questions'},{href:'/blog/Filipino-outsource-staffing-onboarding-checklist',label:'Use the launch checklist'},{href:'/services/admin-support',label:'Plan admin support'}],
+    related:[{href:'/blog/Filipino-outsource-staffing-planning',label:'Write staffing plan'},{href:'/blog/Filipino-outsource-staffing-provider-questions',label:'Provider questions'},{href:'/blog/Filipino-outsource-staffing-onboarding-checklist',label:'Use the launch checklist'},{href:'/services/admin-support',label:'Plan admin support'}],
   },
   'Filipino-outsource-staffing-onboarding-checklist': {
     datePublished: '2026-07-22',
     dateModified: '2026-07-23',
     shortAnswer: 'A good launch checklist gives the Filipino team member examples, limited access, a question path, and a review rhythm before a full queue is assigned. The goal is controlled learning with real work samples, not a broad handoff on the first login.',
     takeaways:['Prepare examples and stop rules before account access.','Use named accounts, MFA, and manager-owned permissions.','Review a small sample of real work before increasing volume.','Close the loop by updating the SOP after repeated questions.'],
+
+    bodyLinks: {
+      internal: [
+        {href:'/blog/Filipino-outsource-staffing-planning',label:'staffing plan',note:'Confirm the role scope before assigning access.'},
+        {href:'/blog/Filipino-outsource-staffing-tasks-to-outsource',label:'task queue',note:'Check whether the starting work is narrow enough.'},
+      ],
+      external: {href:'https://www.cisa.gov/secure-our-world/require-multifactor-authentication',label:'CISA MFA',note:'Authority guidance for multifactor authentication before account access.'},
+    },
     sections:[
       {title:'Prepare the work before access',paragraphs:['Before the first login, gather the task brief, sample outputs, stop list, tool list, and reviewer name. A short checklist prevents the launch from turning into a series of chat messages that disappear as soon as work gets busy.','Use redacted samples wherever possible. Show one correct item, one messy item, and one item that should stop for approval. This teaches the boundary as well as the task.']},
       {title:'Set up limited accounts',paragraphs:['Create named accounts for the systems needed by the first queue only. Turn on multifactor authentication where available and share credentials through an approved password manager. Do not send shared passwords through email or chat.','Record each permission in an access list. Include the system, permission level, owner, reason, approval date, and removal step. This makes it easier to review access when the role changes or ends.']},
@@ -410,7 +413,7 @@ export const blogDetails = {
     scenario:{title:'Mini-scenario: launching a records role',paragraphs:['A company wants a Filipino team member to clean weekly CRM records. The launch starts with a redacted export, a field guide, and three known problem records. The worker practices on the sample before receiving limited CRM access.','The reviewer checks ten live records and finds that one status field is confusing. Instead of adding more volume, the reviewer updates the field guide and asks the worker to redo the confusing records. The next batch expands only after the corrected sample is accurate.']},
     sources:[{name:'CISA: Require multifactor authentication',url:'https://www.cisa.gov/secure-our-world/require-multifactor-authentication',note:'Government guidance supporting MFA as a basic account protection control.'}],
     faqs:[{question:'What should happen before the first login?',answer:'Prepare examples, stop rules, access limits, MFA, password-manager sharing, a reviewer, and a place for questions.'},{question:'How much work should be assigned at launch?',answer:'Start with a small batch that can be reviewed quickly. Increase volume only after the first queue is accurate and the SOP is updated.'},{question:'Who removes access if the role changes?',answer:'The business should name an account owner and record the removal step for each system before access is granted.'}],
-    related:[{href:'/blog/Filipino-outsource-staffing-planning',label:'Start with the staffing plan'},{href:'/blog/Filipino-outsource-staffing-tasks-to-outsource',label:'Choose the first task queue'},{href:'/blog/Filipino-outsource-staffing-provider-questions',label:'Ask provider questions'},{href:'/contact',label:'Request a launch plan'}],
+    related:[{href:'/blog/Filipino-outsource-staffing-planning',label:'Start staffing plan'},{href:'/blog/Filipino-outsource-staffing-tasks-to-outsource',label:'Choose task queue'},{href:'/blog/Filipino-outsource-staffing-provider-questions',label:'Ask provider questions'},{href:'/contact',label:'Request a launch plan'}],
   },
 } as const;
 
