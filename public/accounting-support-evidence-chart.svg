@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">December 2024 Philippine CPA examination counts</title>
+  <desc id="desc">A bar chart comparing 10,136 examinees with 3,058 passers, based on the Professional Regulation Commission results notice.</desc>
+  <rect width="1200" height="760" rx="36" fill="#fff7ed"/>
+  <rect x="54" y="50" width="1092" height="660" rx="28" fill="#ffffff" stroke="#fed7aa" stroke-width="3"/>
+  <text x="100" y="126" fill="#331806" font-family="Arial, sans-serif" font-size="38" font-weight="700">December 2024 CPA examination</text>
+  <text x="100" y="170" fill="#7c2d12" font-family="Arial, sans-serif" font-size="23">Published counts from the Philippine Professional Regulation Commission</text>
+  <line x1="280" y1="590" x2="1080" y2="590" stroke="#9a3412" stroke-width="2"/>
+  <line x1="280" y1="240" x2="280" y2="590" stroke="#9a3412" stroke-width="2"/>
+  <text x="250" y="602" text-anchor="end" fill="#7c2d12" font-family="Arial, sans-serif" font-size="18">0</text>
+  <text x="250" y="432" text-anchor="end" fill="#7c2d12" font-family="Arial, sans-serif" font-size="18">5,000</text>
+  <text x="250" y="258" text-anchor="end" fill="#7c2d12" font-family="Arial, sans-serif" font-size="18">10,000</text>
+  <line x1="270" y1="415" x2="1080" y2="415" stroke="#ffedd5" stroke-width="2"/>
+  <line x1="270" y1="240" x2="1080" y2="240" stroke="#ffedd5" stroke-width="2"/>
+  <rect x="400" y="235" width="220" height="355" rx="14" fill="#ea580c"/>
+  <rect x="760" y="483" width="220" height="107" rx="14" fill="#2563eb"/>
+  <text x="510" y="216" text-anchor="middle" fill="#9a3412" font-family="Arial, sans-serif" font-size="30" font-weight="700">10,136</text>
+  <text x="870" y="464" text-anchor="middle" fill="#1d4ed8" font-family="Arial, sans-serif" font-size="30" font-weight="700">3,058</text>
+  <text x="510" y="635" text-anchor="middle" fill="#331806" font-family="Arial, sans-serif" font-size="24" font-weight="700">Examinees</text>
+  <text x="870" y="635" text-anchor="middle" fill="#331806" font-family="Arial, sans-serif" font-size="24" font-weight="700">Passers</text>
+  <text x="100" y="684" fill="#7c2d12" font-family="Arial, sans-serif" font-size="18">Source: PRC results notice, December 17, 2024. Counts provide national context, not a provider ranking.</text>
+</svg>

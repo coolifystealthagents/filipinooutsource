@@ -1,3 +1,5 @@
+import { accountingArticleDetail, accountingArticlePost } from './accounting-article';
+
 export const site = {
   "domain": "FilipinoOutsource.com",
   "slug": "filipinooutsource",
@@ -49,6 +51,7 @@ export const services = [
   }
 ] as const;
 export const blogPosts = [
+  accountingArticlePost,
   {
     "slug": "filipino-virtual-assistant-hiring-guide",
     "title": "Filipino virtual assistant: A practical hiring guide for 2026",
@@ -112,6 +115,7 @@ export const guideBodies = {
 } as const;
 
 export const blogDetails = {
+  [accountingArticlePost.slug]: accountingArticleDetail,
   'filipino-virtual-assistant-hiring-guide': {
     datePublished: '2026-07-22',
     dateModified: '2026-07-22',
