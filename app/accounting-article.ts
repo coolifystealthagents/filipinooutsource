@@ -26,12 +26,17 @@ export const accountingArticleDetail = {
     'Expand only after a full work cycle leaves a clean evidence trail.'
   ],
   lead: 'A Philippines-based accounting support team can take on repeatable prep work, but it should not become the final authority over your books. The safest setup gives the remote team a clear work queue while your controller, CPA, or finance owner keeps approval rights.',
-  shortAnswer: 'Start with document collection, invoice coding drafts, reconciliation support, and report preparation. Keep bank releases, tax positions, journal approval, payroll release, and final close signoff with a qualified person who is accountable to your business.',
+  shortAnswer: 'Start with bookkeeping support tasks such as document collection, invoice coding drafts, reconciliation support, and report preparation. Keep bank releases, tax positions, journal approval, payroll release, and final close signoff with a qualified person who is accountable to your business.',
+  inlineAnchors: [
+    { phrase: 'Bookkeeping support', href: '/services/bookkeeping-support' },
+    { phrase: 'onboarding checklist', href: '/blog/Filipino-outsource-staffing-onboarding-checklist' },
+    { phrase: 'NIST Cybersecurity Framework 2.0', href: 'https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf', external: true },
+  ],
   sections: [
     {
       title: 'Start with the work, not the job title',
       paragraphs: [
-        'The word "accounting" covers jobs with very different levels of risk. Sorting receipts and preparing a reconciliation pack is not the same as approving a journal entry, filing a return, or releasing money. Write down the exact tasks before you compare people or providers.',
+        'The word "accounting" covers jobs with very different levels of risk. Bookkeeping support for sorting receipts and preparing a reconciliation pack is not the same as approving a journal entry, filing a return, or releasing money. Write down the exact tasks before you compare people or providers.',
         'A useful first list has three columns: work the support team may prepare, work a reviewer must approve, and work that stays owner-only. This makes the hiring conversation much clearer. It also gives you a simple way to test whether a provider respects control boundaries.',
         'The Philippines has a large professional services sector, but that fact does not prove that any one candidate is fit for your books. The Professional Regulation Commission reported that 3,058 of 10,136 examinees passed the December 2024 Licensure Examination for Certified Public Accountants. Check the person, the role, and the review plan instead of leaning on a country-level headline.'
       ]
@@ -102,7 +107,7 @@ export const accountingArticleDetail = {
     {
       title: 'Run a 30-day controlled start',
       paragraphs: [
-        'During the first week, confirm the task list, examples, access map, reviewer, and escalation path. Use invented or masked records for training when you can. The worker should be able to repeat the boundary back to you in plain words before live work begins.',
+        'During the first week, use an onboarding checklist to confirm the task list, examples, access map, reviewer, and escalation path. Use invented or masked records for training when you can. The worker should be able to repeat the boundary back to you in plain words before live work begins.',
         'In weeks two and three, run the narrow work queue and review every output. Record defects, questions, and access changes. Do not add a new task just because the first few items looked clean; wait until a full work cycle has passed.',
         'At day 30, decide whether to hold, expand, fix, or stop. Expansion should be small and documented. If you expand, update the task table, permissions, examples, and review sample before the new work enters the queue.'
       ]
