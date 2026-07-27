@@ -395,13 +395,13 @@ export const blogDetails = {
     bodyLinks: {
       internal: [
         {href:'/blog/Filipino-outsource-staffing-tasks-to-outsource',label:'task queue',note:'Use this article to choose the first handoff.'},
-        {href:'/services/customer-support',label:'customer support',note:'Review this service page when the starting queue involves customer messages.'},
+        {href:'/services/customer-support-operations',label:'customer support workflow',note:'Review this service page when the starting queue involves customer messages.'},
       ],
       external: {href:'https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees',label:'SBA hiring',note:'Authority guidance for defining and managing hiring responsibilities.'},
     },
     inlineAnchors: [
       {phrase:'task queue',href:'/blog/Filipino-outsource-staffing-tasks-to-outsource'},
-      {phrase:'customer support workflow',href:'/services/customer-support'},
+      {phrase:'customer support workflow',href:'/services/customer-support-operations'},
       {phrase:'SBA hiring guidance',href:'https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees',external:true},
     ],
     sections: [
