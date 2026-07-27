@@ -48,6 +48,17 @@ function ArticleBanner({ banner }: { banner: any }) {
   );
 }
 
+function EditorialLinkNote({ link }: { link: any }) {
+  if (!link) return null;
+  const external = Boolean(link.external);
+  return (
+    <aside className={external ? 'editorial-link-note editorial-link-note-source' : 'editorial-link-note'}>
+      <p className="article-kicker">{external ? 'Source note' : 'Related planning note'}</p>
+      <p><a href={link.href} target={external ? '_blank' : undefined} rel={external ? 'noreferrer' : undefined}>{link.label}</a>{link.note ? <span> {link.note}</span> : null}</p>
+    </aside>
+  );
+}
+
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = blogPosts.find((item) => item.slug === slug);
@@ -69,7 +80,6 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
       detail.comparisonTitle || (detail.comparison ? 'Compare the choices' : undefined),
       detail.scenario?.title,
       faqItems.length ? 'Questions buyers ask' : undefined,
-      (detail.bodyLinks || detail.sources) ? 'Sources and related reading' : undefined,
       detail.related ? 'Keep planning' : undefined,
     ].filter(Boolean) as string[];
 
@@ -111,6 +121,10 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
       {eyebrow:'Before you hand off work',title:'Check the scope while it is still small.',text:'A short planning request can help turn scattered tasks into one reviewable Philippines staffing lane.',href:'/contact',cta:'Contact Us'},
       {eyebrow:'Ready to plan the next step?',title:'Share the work you want covered.',text:'Send the tasks, tools, schedule, and approval points so a staffing conversation starts with useful context.',href:'/contact',cta:'Contact Us'},
     ];
+    const internalNotes = detail.bodyLinks?.internal || [];
+    const externalSource = detail.bodyLinks?.external || (detail.sources?.[0] ? {href:detail.sources[0].url,label:detail.sources[0].name,note:detail.sources[0].note} : undefined);
+    const editorialNotes = [internalNotes[0], externalSource ? {...externalSource, external:true} : undefined, internalNotes[1], internalNotes[2]].filter(Boolean);
+    const notePositions = new Map([[1, 0], [3, 1], [5, 2], [7, 3]]);
 
     return (
       <>
@@ -159,6 +173,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                           {strictAccounting && index === 2 && detail.taskTable && <div className="wide-table-wrap" role="region" aria-label={detail.taskTable.caption} tabIndex={0}><p className="table-scroll-cue">Swipe or scroll sideways to see every column.</p><table className="article-task-table"><caption>{detail.taskTable.caption}</caption><thead><tr>{detail.taskTable.headers.map((header: string) => <th scope="col" key={header}>{header}</th>)}</tr></thead><tbody>{detail.taskTable.rows.map((row: string[]) => <tr key={row[0]}>{row.map((cell, cellIndex) => cellIndex === 0 ? <th scope="row" key={cell}>{cell}</th> : <td key={cell}>{cell}</td>)}</tr>)}</tbody></table></div>}
                           {strictAccounting && index === 6 && detail.expertQuote && <figure className="expert-quote"><p className="article-kicker">{detail.expertQuote.label}</p><blockquote>"{detail.expertQuote.quote}"</blockquote><figcaption><a href={detail.expertQuote.href} target="_blank" rel="noreferrer">{detail.expertQuote.attribution}</a></figcaption></figure>}
                         </section>
+                        {notePositions.has(index) && <EditorialLinkNote link={editorialNotes[notePositions.get(index) as number]} />}
                         {bannerIndex !== undefined && articleBanners?.[bannerIndex] && <ArticleBanner banner={articleBanners[bannerIndex]} />}
                       </div>
                     );
@@ -169,8 +184,6 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                   {detail.comparison && <section id={slugify(detail.comparisonTitle || 'Compare the choices')} className="article-section"><h2>{detail.comparisonTitle || 'Compare the choices'}</h2><div className="comparison-table"><div className="comparison-row comparison-head"><span>Question</span><span>Weak answer</span><span>Useful answer</span></div>{detail.comparison.map((row: any) => <div className="comparison-row" key={row.question}><strong>{row.question}</strong><span>{row.weak}</span><span>{row.useful}</span></div>)}</div></section>}
                   {detail.scripts?.map((script: any) => <section className="script-card" key={script.title}><h2>{script.title}</h2><blockquote>{script.quote}</blockquote><p>{script.note}</p></section>)}
                   {detail.scenario && <section id={slugify(detail.scenario.title)} className="article-section scenario-card"><h2>{detail.scenario.title}</h2>{detail.scenario.paragraphs.map((paragraph: string) => <p key={paragraph}>{paragraph}</p>)}</section>}
-
-                  {(detail.bodyLinks || detail.sources) && <section id="sources-and-related-reading" className="article-section"><h2>Sources and related reading</h2>{detail.bodyLinks?.internal?.length > 0 && <><p>Use these pages to plan the role and handoff.</p><ul className="source-list article-body-links">{detail.bodyLinks.internal.map((link: any) => <li key={link.href}><a href={link.href}>{link.label}</a><span>{link.note}</span></li>)}</ul></>}{detail.bodyLinks?.external && <ul className="source-list article-body-links"><li><a href={detail.bodyLinks.external.href} target="_blank" rel="noreferrer">{detail.bodyLinks.external.label}</a><span>{detail.bodyLinks.external.note}</span></li></ul>}{!pilotFormat && detail.sources?.length > 0 && <><h3>Numbered sources</h3><ol className="numbered-sources">{detail.sources.map((source: any) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.name}</a><span>{source.date ? `Published ${source.date}. ` : ''}{source.note}</span></li>)}</ol></>}</section>}
 
                   {faqItems.length > 0 && <section id="questions-buyers-ask" className="article-section"><h2>Questions buyers ask</h2><div className="faq-stack">{faqItems.map((faq: any) => <article key={faq.question}><h3>Q: {faq.question}</h3><p>A: {faq.answer}</p></article>)}</div></section>}
                   {articleBanners?.[2] && <ArticleBanner banner={articleBanners[2]} />}
