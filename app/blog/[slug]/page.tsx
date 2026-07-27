@@ -1,3 +1,4 @@
+import React from 'react';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { Header, Footer, CTA } from '../../components';
@@ -104,7 +105,12 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
         { '@type': 'ListItem', position: 3, name: post.title, item: url },
       ],
     };
-    const bannerPositions = new Map([[1, 0], [5, 1], [9, 2]]);
+    const bannerPositions = new Map([[0, 0], [3, 1]]);
+    const articleBanners = detail.banners || [
+      {eyebrow:'Role planning checkpoint',title:'Turn the article into a role brief.',text:'Use the guide to name the queue, examples, access limits, and review owner before candidate matching.',href:'/contact',cta:'Contact Us'},
+      {eyebrow:'Before you hand off work',title:'Check the scope while it is still small.',text:'A short planning request can help turn scattered tasks into one reviewable Philippines staffing lane.',href:'/contact',cta:'Contact Us'},
+      {eyebrow:'Ready to plan the next step?',title:'Share the work you want covered.',text:'Send the tasks, tools, schedule, and approval points so a staffing conversation starts with useful context.',href:'/contact',cta:'Contact Us'},
+    ];
 
     return (
       <>
@@ -153,7 +159,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                           {strictAccounting && index === 2 && detail.taskTable && <div className="wide-table-wrap" role="region" aria-label={detail.taskTable.caption} tabIndex={0}><p className="table-scroll-cue">Swipe or scroll sideways to see every column.</p><table className="article-task-table"><caption>{detail.taskTable.caption}</caption><thead><tr>{detail.taskTable.headers.map((header: string) => <th scope="col" key={header}>{header}</th>)}</tr></thead><tbody>{detail.taskTable.rows.map((row: string[]) => <tr key={row[0]}>{row.map((cell, cellIndex) => cellIndex === 0 ? <th scope="row" key={cell}>{cell}</th> : <td key={cell}>{cell}</td>)}</tr>)}</tbody></table></div>}
                           {strictAccounting && index === 6 && detail.expertQuote && <figure className="expert-quote"><p className="article-kicker">{detail.expertQuote.label}</p><blockquote>"{detail.expertQuote.quote}"</blockquote><figcaption><a href={detail.expertQuote.href} target="_blank" rel="noreferrer">{detail.expertQuote.attribution}</a></figcaption></figure>}
                         </section>
-                        {strictAccounting && bannerIndex !== undefined && detail.banners?.[bannerIndex] && <ArticleBanner banner={detail.banners[bannerIndex]} />}
+                        {bannerIndex !== undefined && articleBanners?.[bannerIndex] && <ArticleBanner banner={articleBanners[bannerIndex]} />}
                       </div>
                     );
                   })}
@@ -167,6 +173,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                   {(detail.bodyLinks || detail.sources) && <section id="sources-and-related-reading" className="article-section"><h2>Sources and related reading</h2>{detail.bodyLinks?.internal?.length > 0 && <><p>Use these pages to plan the role and handoff.</p><ul className="source-list article-body-links">{detail.bodyLinks.internal.map((link: any) => <li key={link.href}><a href={link.href}>{link.label}</a><span>{link.note}</span></li>)}</ul></>}{detail.bodyLinks?.external && <ul className="source-list article-body-links"><li><a href={detail.bodyLinks.external.href} target="_blank" rel="noreferrer">{detail.bodyLinks.external.label}</a><span>{detail.bodyLinks.external.note}</span></li></ul>}{!pilotFormat && detail.sources?.length > 0 && <><h3>Numbered sources</h3><ol className="numbered-sources">{detail.sources.map((source: any) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.name}</a><span>{source.date ? `Published ${source.date}. ` : ''}{source.note}</span></li>)}</ol></>}</section>}
 
                   {faqItems.length > 0 && <section id="questions-buyers-ask" className="article-section"><h2>Questions buyers ask</h2><div className="faq-stack">{faqItems.map((faq: any) => <article key={faq.question}><h3>Q: {faq.question}</h3><p>A: {faq.answer}</p></article>)}</div></section>}
+                  {articleBanners?.[2] && <ArticleBanner banner={articleBanners[2]} />}
                   {detail.tags && <section className="article-tags" aria-label="Article tags"><h2>Tags</h2><div>{detail.tags.map((tag: string) => <span key={tag}>{tag}</span>)}</div></section>}
                   {detail.related && <section id="keep-planning" className="related-card"><h2>Keep planning</h2><div>{detail.related.map((item: any) => <a href={item.href} key={item.href}>{item.label}<span>Read next</span></a>)}</div></section>}
                 </div>

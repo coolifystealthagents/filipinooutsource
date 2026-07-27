@@ -24,9 +24,9 @@ export default function Home() {
       <div className="container ph-hero-grid">
         <div className="ph-hero-copy">
           <p className="ph-kicker">Filipino talent, properly scoped</p>
-          <h1>Build your Philippines team around the work.</h1>
+          <h1>Build your Philippines team clearly.</h1>
           <p className="ph-intro">Turn the tasks piling up on your desk into a clear role for Filipino talent. Set the handoffs, access rules, schedule, and review routine before anyone starts.</p>
-          <div className="ph-actions"><a className="ph-button ph-button-lime" href="/contact">Plan my Philippines team</a><a className="ph-text-link" href="#roles">See the role map <span>↘</span></a></div>
+          <div className="ph-actions"><a className="ph-button ph-button-lime" href="/contact">Plan my team</a><a className="ph-text-link" href="#roles">See role map <span>↘</span></a></div>
           <p className="ph-disclosure">FilipinoOutsource.com is an independent information site. Your request may be sent to a staffing partner that recruits only in the Philippines.</p>
         </div>
         <div className="ph-hero-media">
@@ -38,7 +38,7 @@ export default function Home() {
     </section>
 
     <section className="container ph-section" id="roles">
-      <div className="ph-section-head"><div><p className="ph-kicker dark">Start with the work</p><h2>Pick a role.</h2></div><p>You do not need a grand outsourcing plan. Pick one lane with repeatable work, decent examples, and a manager who can review the first week.</p></div>
+      <div className="ph-section-head"><div><p className="ph-kicker dark">Start with the work</p><h2>Pick a role.</h2></div><p>You do not need a grand outsourcing plan. Pick one lane with repeatable work, decent examples, and a manager who can review early handoffs.</p></div>
       <div className="ph-role-grid">{services.map((service, index) => <a href={`/services/${service.slug}`} className="ph-role" key={service.slug}><span>0{index + 1}</span><h3>{service.title}</h3><p>{service.desc}</p><b>Open the role brief →</b></a>)}</div>
     </section>
 
@@ -50,7 +50,7 @@ export default function Home() {
     </section>
 
     <section className="container ph-section">
-      <div className="ph-section-head"><div><p className="ph-kicker dark">A controlled launch</p><h2>Month one.</h2></div><p>That is a compliment. The best early handoffs are small enough to check, repeat, and improve without drama.</p></div>
+      <div className="ph-section-head"><div><p className="ph-kicker dark">A controlled launch</p><h2>Controlled launch.</h2></div><p>That is a compliment. The best early handoffs are small enough to check, repeat, and improve without drama.</p></div>
       <div className="ph-steps">{steps.map(([number, title, body]) => <article key={number}><span>{number}</span><h3>{title}</h3><p>{body}</p></article>)}</div>
     </section>
 
@@ -59,6 +59,6 @@ export default function Home() {
       <div>{blogPosts.slice(0,3).map(post => <a href={`/blog/${post.slug}`} key={post.slug}><span>{post.minutes} min</span><h3>{post.title}</h3><p>{post.excerpt}</p></a>)}</div>
     </section>
 
-    <section className="container ph-final"><div><p className="ph-kicker">One role. Clear boundaries.</p><h2>What should your Philippines team own first?</h2></div><a className="ph-button ph-button-lime" href="/contact">Plan my Philippines team</a></section>
+    <section className="container ph-final"><div><p className="ph-kicker">One role. Clear boundaries.</p><h2>What should your Philippines team own first?</h2></div><a className="ph-button ph-button-lime" href="/contact">Plan my team</a></section>
   </main><Footer/></>;
 }
