@@ -56,6 +56,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const guide = (guideBodies as Record<string, any>)[slug];
   const url = `${base}/blog/${slug}`;
   const strictAccounting = slug === strictAccountingSlug;
+  const pilotFormat = Boolean(detail?.formatPilot);
 
   if (detail) {
     const faqItems = detail.faqs || [];
@@ -108,7 +109,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
     return (
       <>
         <Header />
-        <main className="article-page">
+        <main className={pilotFormat ? "article-page competitor-article-page" : "article-page"}>
           <JsonLd data={articleSchema} />
           {faqItems.length > 0 && <JsonLd data={faqSchema} />}
           <JsonLd data={breadcrumbSchema} />
@@ -121,17 +122,19 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                 <p className="lead">{post.excerpt}</p>
                 <p className="byline">By {site.brand} Editorial Team · Updated {detail.dateModified || '2026-07-22'} · {post.minutes} min read</p>
                 {detail.image && <figure className="article-hero-image"><img src={detail.image.src} alt={detail.image.alt} /><figcaption>{detail.image.caption}</figcaption></figure>}
+                {pilotFormat && detail.editorialChecks && <div className="pilot-trust-strip" aria-label="Editorial checks">{detail.editorialChecks.map((item: string) => <span key={item}>{item}</span>)}</div>}
               </header>
 
               <div className="article-grid">
                 <aside className="article-sidebar" aria-label="Article navigation">
-                  <div className="toc-card"><p className="article-kicker">Table of contents</p><ol>{toc.map((item) => <li key={item}><a href={`#${slugify(item)}`}>{item}</a></li>)}</ol></div>
-                  <div className="sidebar-card"><p className="article-kicker">Need a staffing scope?</p><p>Turn a scattered handoff into one role, one review owner, and one controlled access plan.</p><a className="btn primary" href="/contact">Request plan</a></div>
+                  <div className="toc-card"><p className="article-kicker">In this article</p><ol>{toc.map((item) => <li key={item}><a href={`#${slugify(item)}`}>{item}</a></li>)}</ol></div>
+                  <div className="sidebar-card"><p className="article-kicker">{pilotFormat ? 'Planning checkpoint' : 'Need a staffing scope?'}</p><p>{pilotFormat ? 'Use this guide to decide whether one queue is ready for candidate review.' : 'Turn a scattered handoff into one role, one review owner, and one controlled access plan.'}</p><a className="btn primary" href="/contact">Request plan</a></div>
                 </aside>
 
                 <div className="article-wrap">
                   {detail.lead && <p className="article-intro">{detail.lead}</p>}
-                  <section id="short-answer" className="evidence-card">
+                  {pilotFormat && detail.summaryCards && <section className="pilot-summary-cards" aria-label="Article summary">{detail.summaryCards.map((card: any) => <article key={card.label}><span>{card.label}</span><strong>{card.value}</strong><p>{card.note}</p></article>)}</section>}
+                  <section id="short-answer" className={pilotFormat ? "evidence-card pilot-key-card" : "evidence-card"}>
                     <p className="article-kicker">Short answer</p>
                     <p>{detail.shortAnswer}</p>
                     <h2 id="what-to-settle-first">What to settle first</h2>
@@ -155,12 +158,13 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                     );
                   })}
 
+                  {pilotFormat && detail.decisionTable && <section id={slugify(detail.decisionTable.title)} className="article-section"><h2>{detail.decisionTable.title}</h2><p>{detail.decisionTable.intro}</p><div className="pilot-decision-table"><div className="comparison-row comparison-head">{detail.decisionTable.headers.map((header: string) => <span key={header}>{header}</span>)}</div>{detail.decisionTable.rows.map((row: string[]) => <div className="comparison-row" key={row[0]}>{row.map((cell: string, index: number) => index === 0 ? <strong key={cell}>{cell}</strong> : <span key={cell}>{cell}</span>)}</div>)}</div></section>}
                   {detail.metrics && <section id={slugify(detail.metrics.title)} className="article-section"><h2>{detail.metrics.title}</h2><p>{detail.metrics.intro}</p><div className="metric-grid">{detail.metrics.items.map((item: any) => <article key={item.label}><strong>{item.value}</strong><h3>{item.label}</h3><p>{item.note}</p></article>)}</div><p className="metric-note">{detail.metrics.note}</p></section>}
                   {detail.comparison && <section id={slugify(detail.comparisonTitle || 'Compare the choices')} className="article-section"><h2>{detail.comparisonTitle || 'Compare the choices'}</h2><div className="comparison-table"><div className="comparison-row comparison-head"><span>Question</span><span>Weak answer</span><span>Useful answer</span></div>{detail.comparison.map((row: any) => <div className="comparison-row" key={row.question}><strong>{row.question}</strong><span>{row.weak}</span><span>{row.useful}</span></div>)}</div></section>}
                   {detail.scripts?.map((script: any) => <section className="script-card" key={script.title}><h2>{script.title}</h2><blockquote>{script.quote}</blockquote><p>{script.note}</p></section>)}
                   {detail.scenario && <section id={slugify(detail.scenario.title)} className="article-section scenario-card"><h2>{detail.scenario.title}</h2>{detail.scenario.paragraphs.map((paragraph: string) => <p key={paragraph}>{paragraph}</p>)}</section>}
 
-                  {(detail.bodyLinks || detail.sources) && <section id="sources-and-related-reading" className="article-section"><h2>Sources and related reading</h2>{detail.bodyLinks?.internal?.length > 0 && <><p>Use these pages to plan the role and handoff.</p><ul className="source-list article-body-links">{detail.bodyLinks.internal.map((link: any) => <li key={link.href}><a href={link.href}>{link.label}</a><span>{link.note}</span></li>)}</ul></>}{detail.bodyLinks?.external && <ul className="source-list article-body-links"><li><a href={detail.bodyLinks.external.href} target="_blank" rel="noreferrer">{detail.bodyLinks.external.label}</a><span>{detail.bodyLinks.external.note}</span></li></ul>}{detail.sources?.length > 0 && <><h3>Numbered sources</h3><ol className="numbered-sources">{detail.sources.map((source: any) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.name}</a><span>{source.date ? `Published ${source.date}. ` : ''}{source.note}</span></li>)}</ol></>}</section>}
+                  {(detail.bodyLinks || detail.sources) && <section id="sources-and-related-reading" className="article-section"><h2>Sources and related reading</h2>{detail.bodyLinks?.internal?.length > 0 && <><p>Use these pages to plan the role and handoff.</p><ul className="source-list article-body-links">{detail.bodyLinks.internal.map((link: any) => <li key={link.href}><a href={link.href}>{link.label}</a><span>{link.note}</span></li>)}</ul></>}{detail.bodyLinks?.external && <ul className="source-list article-body-links"><li><a href={detail.bodyLinks.external.href} target="_blank" rel="noreferrer">{detail.bodyLinks.external.label}</a><span>{detail.bodyLinks.external.note}</span></li></ul>}{!pilotFormat && detail.sources?.length > 0 && <><h3>Numbered sources</h3><ol className="numbered-sources">{detail.sources.map((source: any) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.name}</a><span>{source.date ? `Published ${source.date}. ` : ''}{source.note}</span></li>)}</ol></>}</section>}
 
                   {faqItems.length > 0 && <section id="questions-buyers-ask" className="article-section"><h2>Questions buyers ask</h2><div className="faq-stack">{faqItems.map((faq: any) => <article key={faq.question}><h3>Q: {faq.question}</h3><p>A: {faq.answer}</p></article>)}</div></section>}
                   {detail.tags && <section className="article-tags" aria-label="Article tags"><h2>Tags</h2><div>{detail.tags.map((tag: string) => <span key={tag}>{tag}</span>)}</div></section>}

@@ -348,6 +348,24 @@ export const blogDetails = {
       'Keep payments, refunds, policy exceptions, and sensitive access with a named owner.',
       'Write the review path before the first live handoff.',
     ],
+    formatPilot: true,
+    editorialChecks: ['Planning guide', 'Philippines-only scope', 'No rate language'],
+    summaryCards: [
+      {label:'Best for',value:'first handoff',note:'Use this before asking for candidates or comparing provider fit.'},
+      {label:'Main risk',value:'vague scope',note:'The article shows how to keep decisions and access limits clear.'},
+      {label:'Body links',value:'2 internal + 1 source',note:'The links stay editorial and avoid action anchors in the article body.'},
+    ],
+    decisionTable: {
+      title:'Staffing plan readiness table',
+      intro:'Use this table before candidate review. If a row is weak, tighten the plan before adding people or access.',
+      headers:['Planning item','Ready signal','If missing'],
+      rows:[
+        ['Starting queue','One recurring queue has examples and a finish point.','The role becomes a mixed assistant request.'],
+        ['Decision owner','A named manager approves exceptions and sensitive actions.','The team member has to guess what they may decide.'],
+        ['Access boundary','Each system has a permission level and removal step.','Accounts spread before the role is stable.'],
+        ['Review cadence','A reviewer checks a sample and updates instructions.','Mistakes repeat because feedback stays in chat.'],
+      ],
+    },
 
     bodyLinks: {
       internal: [
