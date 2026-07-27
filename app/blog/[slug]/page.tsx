@@ -107,7 +107,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
 
     return (
       <>
-        <Header hidePricing={strictAccounting} />
+        <Header />
         <main className="article-page">
           <JsonLd data={articleSchema} />
           {faqItems.length > 0 && <JsonLd data={faqSchema} />}
@@ -171,7 +171,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
           </article>
           {!strictAccounting && <CTA />}
         </main>
-        <Footer hidePricing={strictAccounting} />
+        <Footer />
       </>
     );
   }

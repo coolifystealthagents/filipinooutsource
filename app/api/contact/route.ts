@@ -40,7 +40,7 @@ export async function POST(request: NextRequest) {
   const sourcePage = request.headers.get('referer') || new URL('/contact', request.url).toString();
   const details = [
     text(form, 'needs'), text(form, 'details'), text(form, 'positions'), text(form, 'role'),
-    text(form, 'tier'), text(form, 'companySize'), text(form, 'website'),
+    text(form, 'companySize'), text(form, 'website'),
   ].filter(Boolean).join('\n');
   const payload = {
     full_name: fullName,
