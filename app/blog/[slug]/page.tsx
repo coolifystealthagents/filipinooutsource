@@ -48,15 +48,13 @@ function ArticleBanner({ banner }: { banner: any }) {
   );
 }
 
-function EditorialLinkNote({ link }: { link: any }) {
-  if (!link) return null;
-  const external = Boolean(link.external);
-  return (
-    <aside className={external ? 'editorial-link-note editorial-link-note-source' : 'editorial-link-note'}>
-      <p className="article-kicker">{external ? 'Source note' : 'Related planning note'}</p>
-      <p><a href={link.href} target={external ? '_blank' : undefined} rel={external ? 'noreferrer' : undefined}>{link.label}</a>{link.note ? <span> {link.note}</span> : null}</p>
-    </aside>
-  );
+
+type InlineAnchor = { phrase: string; href: string; external?: boolean };
+function LinkedParagraph({ paragraph, anchors }: { paragraph: string; anchors: InlineAnchor[] }) {
+  const anchor = anchors.find((item) => paragraph.includes(item.phrase));
+  if (!anchor) return <p>{paragraph}</p>;
+  const [before, ...rest] = paragraph.split(anchor.phrase);
+  return <p>{before}<a href={anchor.href} target={anchor.external ? '_blank' : undefined} rel={anchor.external ? 'noreferrer' : undefined}>{anchor.phrase}</a>{rest.join(anchor.phrase)}</p>;
 }
 
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
@@ -121,10 +119,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
       {eyebrow:'Before you hand off work',title:'Check the scope while it is still small.',text:'A short planning request can help turn scattered tasks into one reviewable Philippines staffing lane.',href:'/contact',cta:'Contact Us'},
       {eyebrow:'Ready to plan the next step?',title:'Share the work you want covered.',text:'Send the tasks, tools, schedule, and approval points so a staffing conversation starts with useful context.',href:'/contact',cta:'Contact Us'},
     ];
-    const internalNotes = detail.bodyLinks?.internal || [];
-    const externalSource = detail.bodyLinks?.external || (detail.sources?.[0] ? {href:detail.sources[0].url,label:detail.sources[0].name,note:detail.sources[0].note} : undefined);
-    const editorialNotes = [internalNotes[0], externalSource ? {...externalSource, external:true} : undefined, internalNotes[1], internalNotes[2]].filter(Boolean);
-    const notePositions = new Map([[1, 0], [3, 1], [5, 2], [7, 3]]);
+    const inlineAnchors: InlineAnchor[] = detail.inlineAnchors || [];
 
     return (
       <>
@@ -167,13 +162,12 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                       <div key={section.title}>
                         <section id={slugify(section.title)} className="article-section">
                           <h2>{section.title}</h2>
-                          {section.paragraphs.map((paragraph: string) => <p key={paragraph}>{paragraph}</p>)}
+                          {section.paragraphs.map((paragraph: string) => <LinkedParagraph key={paragraph} paragraph={paragraph} anchors={inlineAnchors} />)}
                           {section.steps && <div className="article-steps">{section.steps.map((step: any) => <article key={step.label}><span>{step.label}</span><h3>{step.title}</h3><p>{step.body}</p></article>)}</div>}
                           {strictAccounting && index === 0 && detail.chart && <figure className="article-data-figure"><img src={detail.chart.src} alt={detail.chart.alt} /><figcaption><strong>{detail.chart.caption}</strong><span>{detail.chart.methods}</span></figcaption></figure>}
                           {strictAccounting && index === 2 && detail.taskTable && <div className="wide-table-wrap" role="region" aria-label={detail.taskTable.caption} tabIndex={0}><p className="table-scroll-cue">Swipe or scroll sideways to see every column.</p><table className="article-task-table"><caption>{detail.taskTable.caption}</caption><thead><tr>{detail.taskTable.headers.map((header: string) => <th scope="col" key={header}>{header}</th>)}</tr></thead><tbody>{detail.taskTable.rows.map((row: string[]) => <tr key={row[0]}>{row.map((cell, cellIndex) => cellIndex === 0 ? <th scope="row" key={cell}>{cell}</th> : <td key={cell}>{cell}</td>)}</tr>)}</tbody></table></div>}
                           {strictAccounting && index === 6 && detail.expertQuote && <figure className="expert-quote"><p className="article-kicker">{detail.expertQuote.label}</p><blockquote>"{detail.expertQuote.quote}"</blockquote><figcaption><a href={detail.expertQuote.href} target="_blank" rel="noreferrer">{detail.expertQuote.attribution}</a></figcaption></figure>}
                         </section>
-                        {notePositions.has(index) && <EditorialLinkNote link={editorialNotes[notePositions.get(index) as number]} />}
                         {bannerIndex !== undefined && articleBanners?.[bannerIndex] && <ArticleBanner banner={articleBanners[bannerIndex]} />}
                       </div>
                     );
@@ -183,7 +177,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                   {detail.metrics && <section id={slugify(detail.metrics.title)} className="article-section"><h2>{detail.metrics.title}</h2><p>{detail.metrics.intro}</p><div className="metric-grid">{detail.metrics.items.map((item: any) => <article key={item.label}><strong>{item.value}</strong><h3>{item.label}</h3><p>{item.note}</p></article>)}</div><p className="metric-note">{detail.metrics.note}</p></section>}
                   {detail.comparison && <section id={slugify(detail.comparisonTitle || 'Compare the choices')} className="article-section"><h2>{detail.comparisonTitle || 'Compare the choices'}</h2><div className="comparison-table"><div className="comparison-row comparison-head"><span>Question</span><span>Weak answer</span><span>Useful answer</span></div>{detail.comparison.map((row: any) => <div className="comparison-row" key={row.question}><strong>{row.question}</strong><span>{row.weak}</span><span>{row.useful}</span></div>)}</div></section>}
                   {detail.scripts?.map((script: any) => <section className="script-card" key={script.title}><h2>{script.title}</h2><blockquote>{script.quote}</blockquote><p>{script.note}</p></section>)}
-                  {detail.scenario && <section id={slugify(detail.scenario.title)} className="article-section scenario-card"><h2>{detail.scenario.title}</h2>{detail.scenario.paragraphs.map((paragraph: string) => <p key={paragraph}>{paragraph}</p>)}</section>}
+                  {detail.scenario && <section id={slugify(detail.scenario.title)} className="article-section scenario-card"><h2>{detail.scenario.title}</h2>{detail.scenario.paragraphs.map((paragraph: string) => <LinkedParagraph key={paragraph} paragraph={paragraph} anchors={inlineAnchors} />)}</section>}
 
                   {faqItems.length > 0 && <section id="questions-buyers-ask" className="article-section"><h2>Questions buyers ask</h2><div className="faq-stack">{faqItems.map((faq: any) => <article key={faq.question}><h3>Q: {faq.question}</h3><p>A: {faq.answer}</p></article>)}</div></section>}
                   {articleBanners?.[2] && <ArticleBanner banner={articleBanners[2]} />}
