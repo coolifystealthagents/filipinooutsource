@@ -177,7 +177,7 @@ export const accountingArticleDetail = {
       eyebrow: 'Build your brief',
       title: 'Map one controlled accounting support lane',
       text: 'Tell us which records, systems, and approvals are in scope. We will help turn that into a role brief for a Philippines-based search.',
-      href: '/contact',
+      href: '/contact-us',
       cta: 'Start a role brief'
     }
   ],
@@ -246,7 +246,7 @@ export const accountingArticleDetail = {
     { label: 'Accounting and bookkeeping support', href: '/services/bookkeeping-support', note: 'Review a narrower bookkeeping support scope.' },
     { label: 'Philippines staffing onboarding checklist', href: '/blog/Filipino-outsource-staffing-onboarding-checklist', note: 'Plan access, examples, and review before launch.' },
     { label: 'Philippines staffing plan', href: '/blog/Filipino-outsource-staffing-planning', note: 'Write down the task, schedule, tools, and limits.' },
-      { label: 'Contact FilipinoOutsource', href: '/contact', note: 'Build a role brief around your exact task and approval boundary.' }
+      { label: 'Contact FilipinoOutsource', href: '/contact-us', note: 'Build a role brief around your exact task and approval boundary.' }
     ]
   }
 } as const;

@@ -115,9 +115,9 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
     };
     const bannerPositions = new Map([[0, 0], [3, 1]]);
     const articleBanners = detail.banners || [
-      {eyebrow:'Role planning checkpoint',title:'Turn the article into a role brief.',text:'Use the guide to name the queue, examples, access limits, and review owner before candidate matching.',href:'/contact',cta:'Contact Us'},
-      {eyebrow:'Before you hand off work',title:'Check the scope while it is still small.',text:'A short planning request can help turn scattered tasks into one reviewable Philippines staffing lane.',href:'/contact',cta:'Contact Us'},
-      {eyebrow:'Ready to plan the next step?',title:'Share the work you want covered.',text:'Send the tasks, tools, schedule, and approval points so a staffing conversation starts with useful context.',href:'/contact',cta:'Contact Us'},
+      {eyebrow:'Role planning checkpoint',title:'Turn the article into a role brief.',text:'Use the guide to name the queue, examples, access limits, and review owner before candidate matching.',href:'/contact-us',cta:'Contact Us'},
+      {eyebrow:'Before you hand off work',title:'Check the scope while it is still small.',text:'A short planning request can help turn scattered tasks into one reviewable Philippines staffing lane.',href:'/contact-us',cta:'Contact Us'},
+      {eyebrow:'Ready to plan the next step?',title:'Share the work you want covered.',text:'Send the tasks, tools, schedule, and approval points so a staffing conversation starts with useful context.',href:'/contact-us',cta:'Contact Us'},
     ];
     const inlineAnchors: InlineAnchor[] = detail.inlineAnchors || [];
 
@@ -143,7 +143,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
               <div className="article-grid">
                 <aside className="article-sidebar" aria-label="Article navigation">
                   <div className="toc-card"><p className="article-kicker">In this article</p><ol>{toc.map((item) => <li key={item}><a href={`#${slugify(item)}`}>{item}</a></li>)}</ol></div>
-                  <div className="sidebar-card"><p className="article-kicker">{pilotFormat ? 'Planning checkpoint' : 'Need a staffing scope?'}</p><p>{pilotFormat ? 'Use this guide to decide whether one queue is ready for candidate review.' : 'Turn a scattered handoff into one role, one review owner, and one controlled access plan.'}</p><a className="btn primary" href="/contact">Request plan</a></div>
+                  <div className="sidebar-card"><p className="article-kicker">{pilotFormat ? 'Planning checkpoint' : 'Need a staffing scope?'}</p><p>{pilotFormat ? 'Use this guide to decide whether one queue is ready for candidate review.' : 'Turn a scattered handoff into one role, one review owner, and one controlled access plan.'}</p><a className="btn primary" href="/contact-us">Request plan</a></div>
                 </aside>
 
                 <div className="article-wrap">

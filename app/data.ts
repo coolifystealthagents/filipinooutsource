@@ -286,7 +286,7 @@ export const blogDetails = {
       {href:'/services/admin-support',label:'Plan admin support'},
       {href:'/services/customer-support',label:'Plan customer support'},
       {href:'/blog/Filipino-outsource-staffing-provider-questions',label:'Provider questions'},
-      {href:'/contact',label:'Request staffing plan'},
+      {href:'/contact-us',label:'Request staffing plan'},
     ],
   },
   'Filipino-outsource-staffing-provider-questions': {
@@ -362,7 +362,7 @@ export const blogDetails = {
       {href:'/blog/filipino-virtual-assistant-hiring-guide',label:'Full hiring guide'},
       {href:'/blog/Filipino-outsource-staffing-planning',label:'Write staffing plan'},
       {href:'/blog/Filipino-outsource-staffing-onboarding-checklist',label:'Use the launch checklist'},
-      {href:'/contact',label:'Request staffing plan'},
+      {href:'/contact-us',label:'Request staffing plan'},
     ],
     faqs: [
       { question: 'Should I hire through a provider or hire a Filipino freelancer directly?', answer: 'A direct hire can give you a direct relationship, but your team handles screening, contracts, payroll, management, and replacement. A provider may cover some of that work. Ask exactly what is included before comparing service models.' },
@@ -430,7 +430,7 @@ export const blogDetails = {
     sources:[{name:'SBA: Hire and manage employees',url:'https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees',note:'General small-business guidance for defining hiring needs and managing employees.'}],
     faqs:[{question:'What should be in a Philippines staffing plan?',answer:'Include the starting task, examples, access limits, schedule, manager, review method, and decisions that stay with the business owner.'},{question:'Should the plan list every future task?',answer:'No. Start with the first queue and note possible later tasks separately. Expanding too early makes review harder.'},{question:'Who should own quality checks?',answer:'A named client-side reviewer should check real samples and write corrections into the process.'}],
     tags: ['Staffing plan', 'Role scope', 'Filipino talent'],
-    related:[{href:'/blog/filipino-virtual-assistant-hiring-guide',label:'Full hiring guide'},{href:'/blog/Filipino-outsource-staffing-tasks-to-outsource',label:'Choose task queue'},{href:'/blog/Filipino-outsource-staffing-provider-questions',label:'Provider questions'},{href:'/contact',label:'Request a staffing plan'}],
+    related:[{href:'/blog/filipino-virtual-assistant-hiring-guide',label:'Full hiring guide'},{href:'/blog/Filipino-outsource-staffing-tasks-to-outsource',label:'Choose task queue'},{href:'/blog/Filipino-outsource-staffing-provider-questions',label:'Provider questions'},{href:'/contact-us',label:'Request a staffing plan'}],
   },
   'Filipino-outsource-staffing-tasks-to-outsource': {
     datePublished: '2026-07-22',
@@ -504,7 +504,7 @@ export const blogDetails = {
     sources:[{name:'CISA: Require multifactor authentication',url:'https://www.cisa.gov/secure-our-world/require-multifactor-authentication',note:'Government guidance supporting MFA as a basic account protection control.'}],
     faqs:[{question:'What should happen before the first login?',answer:'Prepare examples, stop rules, access limits, MFA, password-manager sharing, a reviewer, and a place for questions.'},{question:'How much work should be assigned at launch?',answer:'Start with a small batch that can be reviewed quickly. Increase volume only after the first queue is accurate and the SOP is updated.'},{question:'Who removes access if the role changes?',answer:'The business should name an account owner and record the removal step for each system before access is granted.'}],
     tags: ['Launch checklist', 'Access control', 'SOP review'],
-    related:[{href:'/blog/Filipino-outsource-staffing-planning',label:'Start staffing plan'},{href:'/blog/Filipino-outsource-staffing-tasks-to-outsource',label:'Choose task queue'},{href:'/blog/Filipino-outsource-staffing-provider-questions',label:'Ask provider questions'},{href:'/contact',label:'Request a launch plan'}],
+    related:[{href:'/blog/Filipino-outsource-staffing-planning',label:'Start staffing plan'},{href:'/blog/Filipino-outsource-staffing-tasks-to-outsource',label:'Choose task queue'},{href:'/blog/Filipino-outsource-staffing-provider-questions',label:'Ask provider questions'},{href:'/contact-us',label:'Request a launch plan'}],
   },
   'filipino-customer-support-assistant-guide': {
     datePublished: '2026-07-24',
