@@ -18,7 +18,7 @@ export default function Home() {
     ],
   };
 
-  return <><Header/><main className="ph-home" data-design="philippines-ops-map-2026"><JsonLd data={schema}/>
+  return <><Header/><main className="ph-home" data-design="philippines-ops-map-2026" data-gi-rollout="two-illustration-packs-one-icon-pack"><JsonLd data={schema}/>
     <section className="ph-hero">
       <div className="ph-contours" aria-hidden="true"/>
       <div className="container ph-hero-grid">
@@ -30,11 +30,11 @@ export default function Home() {
           <p className="ph-disclosure">FilipinoOutsource.com is an independent information site. Your request may be sent to a staffing partner that recruits only in the Philippines.</p>
         </div>
         <div className="ph-hero-media">
-          <img src="/images/team-workshop.jpg" alt="Coworkers discussing a planning board around a table"/>
+          <img src="/illustrations/getillustrations/goodle-team-illustrations-svg/filipino-team-planning.svg" alt="Illustration of a Filipino team planning clearly scoped work together"/>
           <div className="ph-field-note"><span>Role brief</span><b>Tasks + tools + hours + limits</b></div>
         </div>
       </div>
-      <div className="container ph-checks" aria-label="Planning principles"><span>Philippines-only sourcing</span><span>Work sample before interview</span><span>Named review owner</span></div>
+      <div className="container ph-checks" aria-label="Planning principles"><span><img src="/icons/getillustrations/sharpie-business-icons-svg/sourcing-check.svg" alt="" width="28" height="28"/> Philippines-only sourcing</span><span><img src="/icons/getillustrations/sharpie-business-icons-svg/work-sample.svg" alt="" width="28" height="28"/> Work sample before interview</span><span><img src="/icons/getillustrations/sharpie-business-icons-svg/review-owner.svg" alt="" width="28" height="28"/> Named review owner</span></div>
     </section>
 
     <section className="container ph-section" id="roles">
@@ -44,7 +44,7 @@ export default function Home() {
 
     <section className="ph-system" id="how-it-works">
       <div className="container ph-system-grid">
-        <div><p className="ph-kicker">The part around the hire</p><h2>Give the team a clear way to work.</h2><p className="ph-system-lead">Hiring fills the seat. Clear ownership keeps the work moving after the person starts.</p><img src="/images/filipino-team.jpg" alt="Coworkers working at computers in an office"/></div>
+        <div><p className="ph-kicker">The part around the hire</p><h2>Give the team a clear way to work.</h2><p className="ph-system-lead">Hiring fills the seat. Clear ownership keeps the work moving after the person starts.</p><img src="/illustrations/getillustrations/goodle-business-illustrations-svg/remote-work-handoff.svg" alt=""/></div>
         <div className="ph-system-list">{staffingOffer.included.map((item, index) => <article key={item}><span>{index + 1}</span><p>{item}</p></article>)}</div>
       </div>
     </section>
