@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
     return errorPage(400);
   }
 
-  if (text(form, 'website_confirm')) return NextResponse.redirect(new URL('/thanks-whats-next', request.url), 303);
+  if (text(form, 'website_confirm')) return NextResponse.redirect(new URL('/thank-you', request.url), 303);
 
   const firstName = text(form, 'firstName', 100);
   const lastName = text(form, 'lastName', 100);
@@ -76,5 +76,5 @@ export async function POST(request: NextRequest) {
     return errorPage(502);
   }
 
-  return NextResponse.redirect(new URL('/thanks-whats-next', request.url), 303);
+  return NextResponse.redirect(new URL('/thank-you', request.url), 303);
 }
