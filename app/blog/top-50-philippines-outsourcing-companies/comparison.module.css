@@ -1,5 +1,5 @@
-/* unique-style-profile: filipinooutsource-5 */
-.page{--ink:#2b1020;--accent:#b84478;--canvas:#fff5fa;--soft:#f6d5e5;--deep:#671f42;--line:#f6d5e5;background:var(--canvas);color:var(--ink);font-family:Tahoma, Arial, sans-serif}
+/* uniform-style-profile: filipinooutsource-site-palette */
+.page{--ink:#17324d;--accent:#0f8f73;--canvas:#fff8ee;--soft:#dff4ed;--deep:#143b8f;--line:#eadfcf;background:var(--canvas);color:var(--ink);font-family:Tahoma, Arial, sans-serif}
 .shell{width:min(1052px,calc(100% - 42px));margin-inline:auto}
 .hero{padding:90px 0 102px;background:linear-gradient(133deg,var(--ink),var(--deep) 58%,var(--accent));color:#fff;clip-path:none}
 .hero h1{max-width:940px;margin:14px 0 22px;font-size:clamp(42px,4.8vw,76px);line-height:1.04;letter-spacing:-.035em}
