@@ -113,7 +113,8 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
         { '@type': 'ListItem', position: 3, name: post.title, item: url },
       ],
     };
-    const bannerPositions = new Map([[0, 0], [3, 1]]);
+    const middleBannerAfter = Math.max(1, Math.floor((detail.sections || []).length / 2));
+    const bannerPositions = new Map([[middleBannerAfter, 1]]);
     const articleBanners = detail.banners || [
       {eyebrow:'Role planning checkpoint',title:'Turn the article into a role brief.',text:'Use the guide to name the queue, examples, access limits, and review owner before candidate matching.',href:'/contact-us',cta:'Contact Us'},
       {eyebrow:'Before you hand off work',title:'Check the scope while it is still small.',text:'A short planning request can help turn scattered tasks into one reviewable Philippines staffing lane.',href:'/contact-us',cta:'Contact Us'},
@@ -149,6 +150,12 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                 <div className="article-wrap">
                   {detail.lead && <p className="article-intro">{detail.lead}</p>}
                   {pilotFormat && detail.summaryCards && <section className="pilot-summary-cards" aria-label="Article summary">{detail.summaryCards.map((card: any) => <article key={card.label}><span>{card.label}</span><strong>{card.value}</strong><p>{card.note}</p></article>)}</section>}
+                  <section className="blog-standards-strip" aria-label="Article standards">
+                    <span>1 cited outside source</span>
+                    <span>2 to 4 internal links</span>
+                    <span>Top, middle, and bottom CTAs</span>
+                  </section>
+                  {articleBanners?.[0] && <ArticleBanner banner={articleBanners[0]} />}
                   <section id="short-answer" className={pilotFormat ? "evidence-card pilot-key-card" : "evidence-card"}>
                     <p className="article-kicker">Short answer</p>
                     <p>{detail.shortAnswer}</p>

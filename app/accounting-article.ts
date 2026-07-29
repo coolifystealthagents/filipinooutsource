@@ -163,15 +163,15 @@ export const accountingArticleDetail = {
       eyebrow: 'Plan the boundary',
       title: 'Put access and approval rules in writing',
       text: 'Use the onboarding checklist to name the task owner, reviewer, systems, and removal steps before the first live record moves.',
-      href: '/blog/Filipino-outsource-staffing-onboarding-checklist',
-      cta: 'Open the onboarding checklist'
+      href: '/contact-us',
+      cta: 'Contact Us'
     },
     {
       eyebrow: 'Check the role',
       title: 'Compare finance support with a clear task list',
       text: 'See the accounting support service page for role scope, control questions, and a safe handoff path.',
-      href: '/services/bookkeeping-support',
-      cta: 'Review accounting support'
+      href: '/contact-us',
+      cta: 'Contact Us'
     },
     {
       eyebrow: 'Build your brief',
