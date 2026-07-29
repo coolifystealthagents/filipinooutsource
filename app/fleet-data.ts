@@ -5,6 +5,8 @@ export type ResearchPost = {
   excerpt: string;
   published: string;
   readTime: string;
+  cluster: string;
+  cardHighlight: string;
   keyTakeaways: readonly string[];
   stats: readonly { label: string; value: string; width: number }[];
   graphicCaption: string;
@@ -37,6 +39,8 @@ export const researchPosts: readonly ResearchPost[] = [
     excerpt: 'A data-backed review of Philippine service exports, services share of GDP, and what those numbers mean for businesses planning offshore support roles.',
     published: 'Reviewed July 2026',
     readTime: '8 minute read',
+    cluster: 'Philippines Market Data',
+    cardHighlight: 'Philippine service exports reached about $51.5B in 2025, while services represented more than 64% of GDP.',
     keyTakeaways: [
       'World Bank data reports Philippine service exports above $51 billion in 2025, showing the scale behind global services delivery.',
       'Services accounted for more than 64 percent of Philippine GDP in 2025, which makes service capability a central part of the economy.',
@@ -131,6 +135,8 @@ export const researchPosts: readonly ResearchPost[] = [
     excerpt: 'A practical research brief on Philippine services employment, internet access, and the role controls buyers should use before building remote support teams.',
     published: 'Reviewed July 2026',
     readTime: '8 minute read',
+    cluster: 'Remote Support Workforce',
+    cardHighlight: 'Services employment reached about 59.5% of total Philippine employment in 2025, with remote work needing clear controls.',
     keyTakeaways: [
       'World Bank data places services employment near 59.5 percent of total Philippine employment in 2025.',
       'Internet-use data shows the importance of tool readiness, documentation, and backup workflows for remote support operations.',
@@ -225,6 +231,8 @@ export const researchPosts: readonly ResearchPost[] = [
     excerpt: 'A source-backed look at what the Philippines IT-BPM market means for business owners planning support roles, access controls, and operating capacity in 2026.',
     published: 'Reviewed July 2026',
     readTime: '8 minute read',
+    cluster: 'Outsourcing Market Size',
+    cardHighlight: 'IBPAP reports a 1.9M talent workforce and $40B in revenue generated across the Philippines IT-BPM sector.',
     keyTakeaways: [
       'The Philippines remains a scaled outsourcing market, with IBPAP reporting a 1.9 million talent workforce and $40 billion in revenue generated.',
       'Market size does not remove buyer risk. Better outcomes still depend on role clarity, documented workflows, and careful access design.',
