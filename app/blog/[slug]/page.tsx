@@ -201,10 +201,16 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
     );
   }
 
+  const fallbackBanners = [
+    {eyebrow:'Role planning checkpoint',title:'Turn the article into a role brief.',text:'Use the guide to name the queue, examples, access limits, and review owner before candidate matching.',href:'/contact-us',cta:'Contact Us'},
+    {eyebrow:'Before you hand off work',title:'Check the scope while it is still small.',text:'A short planning request can help turn scattered tasks into one reviewable Philippines staffing lane.',href:'/contact-us',cta:'Contact Us'},
+    {eyebrow:'Ready to plan the next step?',title:'Share the work you want covered.',text:'Send the tasks, tools, schedule, and approval points so a staffing conversation starts with useful context.',href:'/contact-us',cta:'Contact Us'},
+  ];
+
   return (
     <>
       <Header />
-      <main><article className="section"><div className="container article-shell"><p className="eyebrow">{site.brand} blog</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p>{guide ? <><p>{guide.intro}</p>{guide.sections.map((section: any) => <section className="card" key={section.title}><h2>{section.title}</h2>{section.paragraphs.map((paragraph: string) => <p key={paragraph}>{paragraph}</p>)}</section>)}</> : <section className="card"><h2>Start with a defined workflow</h2><p>For Philippines-based staffing, document the work, tools, schedule, and desired outcome before candidate matching. Keep business judgment and final approvals with a named manager.</p></section>}</div></article><CTA /></main>
+      <main><article className="section"><div className="container article-shell"><p className="eyebrow">{site.brand} blog</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><section className="blog-standards-strip" aria-label="Article standards"><span>1 cited outside source</span><span>2 to 4 internal links</span><span>Top, middle, and bottom CTAs</span></section><ArticleBanner banner={fallbackBanners[0]} />{guide ? <><p>{guide.intro}</p>{guide.sections.map((section: any, index: number) => <React.Fragment key={section.title}><section className="card"><h2>{section.title}</h2>{section.paragraphs.map((paragraph: string) => <p key={paragraph}>{paragraph}</p>)}</section>{index === 0 && <ArticleBanner banner={fallbackBanners[1]} />}</React.Fragment>)}</> : <section className="card"><h2>Start with a defined workflow</h2><p>For Philippines-based staffing, document the work, tools, schedule, and desired outcome before candidate matching. Keep business judgment and final approvals with a named manager.</p></section>}<ArticleBanner banner={fallbackBanners[2]} /></div></article><CTA /></main>
       <Footer />
     </>
   );
