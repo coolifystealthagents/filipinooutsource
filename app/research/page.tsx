@@ -1,3 +1,65 @@
-import {Header,Footer} from '../components'; import {researchPosts} from '../fleet-data'; import {site} from '../data';
-export const metadata={title:`Research | ${site.brand}`,description:'Original research and source-backed analysis for planning Philippines-based support.'};
-export default function Research(){const clusters=['All Research','Hiring Controls','Cost Benchmarks','Workflow Design'];return <><Header/><main className="research-index-page"><section className="research-hero"><div className="container research-hero-grid"><div><p className="eyebrow">Research Library</p><h1>Source-backed research for better staffing decisions</h1><p className="lead">Use these reports to compare roles, costs, controls, and onboarding decisions before building a Philippines-based support team.</p><div className="research-meta"><span>{researchPosts.length||0} reports</span><span>Methodology notes</span><span>Buyer controls</span></div></div><aside className="research-hero-card" aria-label="Research quality signals"><div><strong>01</strong><span>Benchmarks and operating context</span></div><div><strong>02</strong><span>Practical screening questions</span></div><div><strong>03</strong><span>Implementation checks</span></div></aside></div></section><section className="section research-library-section"><div className="container"><nav className="research-cluster-tabs" aria-label="Research topic filters">{clusters.map((cluster,i)=><a className={i===0?'active':''} href="/research" key={cluster}>{cluster}<small>{i===0?researchPosts.length:Math.max(1,Math.ceil((researchPosts.length||1)/3))}</small></a>)}</nav><div className="research-card-grid">{researchPosts.length?researchPosts.map((p,i)=><a className="research-library-card" href={`/research/${p.slug}`} key={p.slug}><span className="research-card-badge">{clusters[(i%3)+1]}</span><h2>{p.title}</h2><p className="research-card-highlight">Planning signal: compare the role, review owner, and handoff risk before hiring.</p><p className="research-card-excerpt">{p.excerpt}</p><div className="research-card-meta"><span>{site.brand} Research</span><span>6 min read</span><span>1 source</span></div></a>):<div className="research-library-card empty-state"><span className="research-card-badge">Coming soon</span><h2>Research is being prepared</h2><p className="research-card-highlight">The library will group reports by buyer controls, benchmarks, and workflow design.</p><p className="research-card-excerpt">Visit the blog for practical planning guides while formal research pages are prepared.</p><a className="btn primary" href="/blog">Visit the blog</a></div>}</div></div></section><section className="section research-methodology"><div className="container"><h2>Methodology and use</h2><p>Each research page should make assumptions visible, separate sourced facts from recommendations, and translate findings into a role brief your team can review.</p></div></section></main><Footer/></>}
+import { Header, Footer } from '../components';
+import { researchPosts } from '../fleet-data';
+import { site } from '../data';
+
+export const metadata = {
+  title: `Research | ${site.brand}`,
+  description: 'Original research and source-backed analysis for Philippines-based support operations.'
+};
+
+const clusters = ['All Research', ...Array.from(new Set(researchPosts.map((post) => post.cluster)))] as const;
+const counts = researchPosts.reduce<Record<string, number>>((acc, post) => {
+  acc[post.cluster] = (acc[post.cluster] || 0) + 1;
+  return acc;
+}, {});
+
+export default function Research() {
+  return <>
+    <Header />
+    <main className="research-index-page">
+      <section className="fleet-hero variant-0 research-index-hero">
+        <div className="container">
+          <p className="eyebrow">Research</p>
+          <h1>Research and analysis</h1>
+          <p className="lead">Source-backed research for buyers planning Philippines-based support, operations, and remote staffing workflows.</p>
+        </div>
+      </section>
+
+      <section className="section research-library-section">
+        <div className="container">
+          {researchPosts.length ? <>
+            <nav className="research-cluster-tabs" aria-label="Research clusters">
+              {clusters.map((cluster, index) => {
+                const href = index === 0 ? '#all-research' : `#${cluster.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+                return <a className={index === 0 ? 'active' : ''} href={href} key={cluster}>
+                  <span>{cluster}</span>
+                  {index > 0 ? <small>{counts[cluster] || 0}</small> : <small>{researchPosts.length}</small>}
+                </a>;
+              })}
+            </nav>
+
+            <div className="research-card-grid" id="all-research">
+              {researchPosts.map((post) => <a className="research-library-card" href={`/research/${post.slug}`} key={post.slug} id={post.cluster.toLowerCase().replace(/[^a-z0-9]+/g, '-')}>
+                <span className="research-card-badge">{post.cluster}</span>
+                <h2>{post.title}</h2>
+                <p className="research-card-highlight">{post.cardHighlight}</p>
+                <p className="research-card-excerpt">{post.excerpt}</p>
+                <div className="research-card-meta">
+                  <span>{site.brand} Research Team</span>
+                  <span>{post.readTime}</span>
+                  <span>{post.published.replace('Reviewed ', '')}</span>
+                </div>
+                <div className="research-card-sources">{post.sources?.length || 1} cited source</div>
+              </a>)}
+            </div>
+          </> : <div className="card empty-state">
+            <h2>Research is being prepared</h2>
+            <p>No research articles are published yet. Visit the blog for practical planning guides.</p>
+            <a className="btn primary" href="/blog">Visit the blog</a>
+          </div>}
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </>;
+}
