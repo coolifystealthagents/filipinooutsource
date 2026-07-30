@@ -1,6 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Filipino Outsource logo">
-  <rect width="96" height="96" rx="26" fill="#143B8F"/>
-  <path d="M19 63c9-19 21-29 36-29 10 0 18 4 24 11" fill="none" stroke="#B7F34A" stroke-width="9" stroke-linecap="round"/>
-  <path d="M26 73c9-17 20-25 33-25 8 0 15 3 21 9" fill="none" stroke="#FFB347" stroke-width="9" stroke-linecap="round"/>
-  <path d="M34 21v54M34 26h27M34 46h21" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">FilipinoOutsource logo</title>
+  <desc id="desc">A modern FO monogram with a Philippines sun and connected staffing path.</desc>
+  <defs>
+    <linearGradient id="navy" x1="18" y1="12" x2="110" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#143B8F"/>
+      <stop offset="0.58" stop-color="#0A245F"/>
+      <stop offset="1" stop-color="#071C4B"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="24" y1="101" x2="98" y2="28" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F8F73"/>
+      <stop offset="1" stop-color="#5ED8BF"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#071C4B" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect width="128" height="128" rx="34" fill="#FFF8EE"/>
+  <rect x="8" y="8" width="112" height="112" rx="30" fill="url(#navy)" filter="url(#softShadow)"/>
+  <circle cx="91" cy="35" r="12" fill="#FFB347"/>
+  <g stroke="#FFB347" stroke-width="4" stroke-linecap="round" opacity="0.95">
+    <path d="M91 14v8"/>
+    <path d="M91 48v8"/>
+    <path d="M70 35h8"/>
+    <path d="M104 35h8"/>
+    <path d="M76 20l6 6"/>
+    <path d="M100 44l6 6"/>
+    <path d="M106 20l-6 6"/>
+    <path d="M82 44l-6 6"/>
+  </g>
+  <path d="M35 94V31h40" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M35 61h33" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M62 92c0-17 12-31 30-31s30 14 30 31" fill="none" stroke="#B7F34A" stroke-width="12" stroke-linecap="round"/>
+  <path d="M62 92c0-17 12-31 30-31s30 14 30 31" fill="none" stroke="url(#teal)" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="92" cy="92" r="10" fill="#FFF8EE"/>
+  <circle cx="92" cy="92" r="5" fill="#0F8F73"/>
 </svg>
