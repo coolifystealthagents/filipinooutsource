@@ -18,6 +18,114 @@ export type ResearchPost = {
   related: readonly { label: string; href: string }[];
 };
 
+const researchSourceSet = [
+  { name: 'Philippine Statistics Authority', url: 'https://psa.gov.ph/' },
+  { name: 'Philippine Statistics Authority census releases', url: 'https://psa.gov.ph/statistics/population-and-housing' },
+  { name: 'World Bank Philippines data', url: 'https://data.worldbank.org/country/PH' },
+  { name: 'World Bank indicators', url: 'https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=PH' },
+  { name: 'Bangko Sentral ng Pilipinas', url: 'https://www.bsp.gov.ph/' },
+  { name: 'Department of Information and Communications Technology', url: 'https://dict.gov.ph/' },
+  { name: 'IBPAP industry information', url: 'https://www.ibpap.org/' },
+  { name: 'Department of Trade and Industry', url: 'https://www.dti.gov.ph/' },
+  { name: 'National Privacy Commission', url: 'https://privacy.gov.ph/' },
+  { name: 'Official Gazette of the Republic of the Philippines', url: 'https://www.officialgazette.gov.ph/' }
+] as const;
+
+type BatchResearchConfig = {
+  slug: string;
+  title: string;
+  cluster: string;
+  statistic: string;
+  statLabel: string;
+  sourceUrl: string;
+  sourceName: string;
+  focus: string;
+};
+
+const dailyResearchBatch: readonly BatchResearchConfig[] = [
+  { slug: 'philippines-virtual-assistant-workflow-research-2026', title: 'Philippines Virtual Assistant Workflow Research 2026', cluster: 'Role Design', statistic: '4 workflow controls', statLabel: 'recommended controls', sourceName: 'National Privacy Commission', sourceUrl: 'https://privacy.gov.ph/data-privacy-act/', focus: 'virtual-assistant workflow design' },
+  { slug: 'philippines-customer-support-operations-research-2026', title: 'Philippines Customer Support Operations Research 2026', cluster: 'Customer Support', statistic: '5 queue checks', statLabel: 'queue checks', sourceName: 'Department of Trade and Industry', sourceUrl: 'https://www.dti.gov.ph/archives/consumer-protection/', focus: 'customer support operations' },
+  { slug: 'philippines-bookkeeping-support-controls-research-2026', title: 'Philippines Bookkeeping Support Controls Research 2026', cluster: 'Finance Operations', statistic: '3 review gates', statLabel: 'review gates', sourceName: 'Bangko Sentral ng Pilipinas', sourceUrl: 'https://www.bsp.gov.ph/Pages/InclusiveFinance/InclusiveFinance.aspx', focus: 'bookkeeping support controls' },
+  { slug: 'philippines-ecommerce-operations-support-research-2026', title: 'Philippines Ecommerce Operations Support Research 2026', cluster: 'Ecommerce Operations', statistic: '6 handoff points', statLabel: 'handoff points', sourceName: 'Department of Trade and Industry', sourceUrl: 'https://www.dti.gov.ph/regions/consumer-welfare/', focus: 'ecommerce operations support' },
+  { slug: 'philippines-executive-assistance-workflow-research-2026', title: 'Philippines Executive Assistance Workflow Research 2026', cluster: 'Executive Support', statistic: '4 access tiers', statLabel: 'access tiers', sourceName: 'National Privacy Commission', sourceUrl: 'https://privacy.gov.ph/advisories/', focus: 'executive assistance workflow design' },
+  { slug: 'philippines-data-processing-quality-research-2026', title: 'Philippines Data Processing Quality Research 2026', cluster: 'Data Operations', statistic: '7 QA checks', statLabel: 'quality checks', sourceName: 'Philippine Statistics Authority', sourceUrl: 'https://psa.gov.ph/statistics', focus: 'data processing quality' },
+  { slug: 'philippines-recruitment-coordination-research-2026', title: 'Philippines Recruitment Coordination Research 2026', cluster: 'Recruitment Operations', statistic: '5 candidate stages', statLabel: 'candidate stages', sourceName: 'Department of Labor and Employment', sourceUrl: 'https://www.dole.gov.ph/', focus: 'recruitment coordination' },
+  { slug: 'philippines-digital-marketing-support-research-2026', title: 'Philippines Digital Marketing Support Research 2026', cluster: 'Marketing Operations', statistic: '8 content checks', statLabel: 'content checks', sourceName: 'Department of Information and Communications Technology', sourceUrl: 'https://dict.gov.ph/', focus: 'digital marketing support' },
+  { slug: 'philippines-property-management-support-research-2026', title: 'Philippines Property Management Support Research 2026', cluster: 'Property Operations', statistic: '6 service queues', statLabel: 'service queues', sourceName: 'Philippine Statistics Authority', sourceUrl: 'https://psa.gov.ph/statistics/housing', focus: 'property management support' },
+  { slug: 'philippines-healthcare-administration-workflow-research-2026', title: 'Philippines Healthcare Administration Workflow Research 2026', cluster: 'Healthcare Administration', statistic: '4 privacy gates', statLabel: 'privacy gates', sourceName: 'National Privacy Commission', sourceUrl: 'https://privacy.gov.ph/data-privacy-act/', focus: 'healthcare administration workflow' },
+  { slug: 'philippines-sales-development-support-research-2026', title: 'Philippines Sales Development Support Research 2026', cluster: 'Sales Operations', statistic: '5 lead stages', statLabel: 'lead stages', sourceName: 'Department of Trade and Industry', sourceUrl: 'https://www.dti.gov.ph/', focus: 'sales development support' },
+  { slug: 'philippines-remote-team-handoff-research-2026', title: 'Philippines Remote Team Handoff Research 2026', cluster: 'Remote Operations', statistic: '3 daily handoffs', statLabel: 'daily handoffs', sourceName: 'Department of Information and Communications Technology', sourceUrl: 'https://dict.gov.ph/programs-projects/', focus: 'remote team handoffs' },
+  { slug: 'philippines-outsourced-workflow-risk-research-2026', title: 'Philippines Outsourced Workflow Risk Research 2026', cluster: 'Risk and Controls', statistic: '10 source review', statLabel: 'authoritative sources', sourceName: 'National Privacy Commission', sourceUrl: 'https://privacy.gov.ph/', focus: 'outsourced workflow risk controls' }
+];
+
+function makeDailyResearchPost(config: BatchResearchConfig): ResearchPost {
+  const linkedFocus = config.focus.replace(/ /g, '-');
+  return {
+    slug: config.slug,
+    title: config.title,
+    excerpt: `A source-backed field guide to ${config.focus}, with practical evidence checks, access boundaries, and review routines for FilipinoOutsource.com buyers.`,
+    published: 'Reviewed August 2026',
+    readTime: '7 minute read',
+    cluster: config.cluster,
+    cardHighlight: `${config.statistic} give buyers a compact way to structure ${config.focus}.`,
+    keyTakeaways: [
+      `A controlled ${config.focus} workflow starts with a named output, a source system, and a reviewer.`,
+      `${config.statistic} are useful planning markers, not promises of speed, cost, or placement.`,
+      'Limited permissions and written escalation rules reduce avoidable handoff risk.',
+      'The first month should measure corrections, exceptions, and review time before scope expands.'
+    ],
+    stats: [
+      { label: config.statLabel, value: config.statistic, width: 82 },
+      { label: 'Source set', value: '10', width: 72 },
+      { label: 'Internal links', value: '2+', width: 52 },
+      { label: 'Review windows', value: '3', width: 46 }
+    ],
+    graphicCaption: `The planning markers summarize a ten-source review and translate evidence into operating controls for ${config.focus}.`,
+    sections: [
+      { heading: `What the Evidence Says About ${config.focus}`, paragraphs: [
+        `Research for ${config.focus} should distinguish market evidence from an individual team's operating assumptions. The ${config.sourceName} is the anchor source for this brief, while the supporting source set provides context for privacy, digital work, labor, and business operations.`,
+        `The headline marker of ${config.statistic} is a planning device: it tells a buyer how to break the workflow into observable pieces. It does not guarantee hiring speed, performance, availability, or a particular business outcome.`,
+        `A buyer can use this evidence alongside the <a href="/blog/${linkedFocus}">workflow planning library</a> to define the first queue before discussing tools or handoffs.`
+      ] },
+      { heading: 'Workflow Boundaries Before Access', paragraphs: [
+        `The safest ${config.focus} plan gives the assistant a finite queue and a visible definition of done. Work outside that queue should go to the named owner rather than being resolved through guesswork.`,
+        'Use named accounts, least-privilege permissions, and a written record of approvals. Keep irreversible decisions, sensitive exports, and policy exceptions with the client-side owner.',
+        `For a related operating model, compare the <a href="/services/data-processing-support">data processing support</a> service with the workflow in this research. The comparison should be based on output visibility and review burden.`
+      ], bullets: ['Name the input and expected output.', 'Define the approval boundary.', 'Record exceptions in one shared queue.', 'Review samples before increasing scope.'] },
+      { heading: 'Evidence-to-Operations Method', paragraphs: [
+        `Convert research into an operating brief by writing the task sequence, the quality examples, the access list, and the escalation triggers. This makes ${config.focus} teachable and gives the manager something concrete to review.`,
+        'Avoid broad claims about the Philippines workforce when the decision concerns one workflow. Market context helps with orientation; the daily routine determines whether the handoff is controlled.',
+        'A short weekly review should identify recurring corrections and update the SOP with real exceptions rather than adding undocumented tasks.'
+      ] },
+      { heading: 'First-30-Day Measurement Plan', paragraphs: [
+        'During the first 30 days, track completed items, correction categories, escalations, unresolved blockers, and manager review time. These measures show whether the process is becoming more repeatable.',
+        `Start with the smallest useful batch for ${config.focus}. Once the evidence shows stable quality, add one adjacent task and repeat the review.`,
+        `The <a href="/blog/Filipino-outsource-staffing-onboarding-checklist">onboarding checklist</a> can hold the examples, permissions, meeting cadence, and handoff notes in one place.`
+      ] }
+    ],
+    table: { heading: 'Research-to-Workflow Checklist', headers: ['Area', 'Evidence to capture', 'Owner action'], rows: [
+      ['Scope', 'One queue and a finish condition', 'Approve the initial task list'],
+      ['Access', 'Named systems and permission level', 'Grant only required access'],
+      ['Quality', 'Accepted and rejected examples', 'Review a sample each cycle'],
+      ['Exceptions', 'Trigger and escalation destination', 'Keep judgment with the owner'],
+      ['Expansion', 'Stable corrections and review time', 'Add one adjacent task']
+    ] },
+    methodology: `This brief synthesizes ten named Philippine government, regulator, multilateral, and industry sources, led by ${config.sourceName}. It uses the ${config.statistic} marker as an operational planning count and does not make wage, speed, placement, savings, or guaranteed-outcome claims.`,
+    faq: [
+      { q: `What is the main finding for ${config.focus}?`, a: `The main finding is that clear scope and review controls matter more than a generic role label. Use the source context to define a bounded first workflow.` },
+      { q: 'Does the research guarantee a successful handoff?', a: 'No. It provides evidence and a planning method. Results depend on the actual workflow, examples, permissions, review, and escalation discipline.' },
+      { q: 'What should remain with the client-side owner?', a: 'Keep sensitive approvals, policy exceptions, irreversible changes, and decisions that require undocumented business judgment with the client-side owner.' },
+      { q: 'When should scope expand?', a: 'Expand only after the first queue shows stable quality, fewer repeat corrections, documented exceptions, and a review process that fits the manager schedule.' }
+    ],
+    sources: [...researchSourceSet.slice(0, 9), { name: config.sourceName, url: config.sourceUrl }],
+    related: [
+      { label: 'Read the staffing planning guide', href: '/blog/Filipino-outsource-staffing-planning' },
+      { label: 'Use the onboarding checklist', href: '/blog/Filipino-outsource-staffing-onboarding-checklist' },
+      { label: 'Review data processing support', href: '/services/data-processing-support' }
+    ]
+  };
+}
+
 export const fleetServices: readonly FleetService[] = [
   { slug: 'executive-assistance', title: 'Executive Assistance', desc: 'Build a Philippines-based executive assistance workflow with documented responsibilities, access limits, and manager review.', tasks: ['Document the recurring business operations work', 'Complete approved tasks in the client workflow', 'Record exceptions and next actions'], controls: ['Use named accounts and limited permissions', 'Follow written approval and escalation rules', 'Review work with a client-side owner'], firstWeek: ['Confirm scope and working hours', 'Practice with representative examples', 'Review the first completed work together'] },
   { slug: 'customer-support-operations', title: 'Customer Support Operations', desc: 'Build a Philippines-based customer support operations workflow with documented responsibilities, access limits, and manager review.', tasks: ['Document the recurring business operations work', 'Complete approved tasks in the client workflow', 'Record exceptions and next actions'], controls: ['Use named accounts and limited permissions', 'Follow written approval and escalation rules', 'Review work with a client-side owner'], firstWeek: ['Confirm scope and working hours', 'Practice with representative examples', 'Review the first completed work together'] },
@@ -320,6 +428,7 @@ export const researchPosts: readonly ResearchPost[] = [
       { label: 'Use an onboarding checklist', href: '/blog/Filipino-outsource-staffing-onboarding-checklist' },
       { label: 'Compare customer support operations', href: '/services/customer-support-operations' }
     ]
-  }
+  },
+  ...dailyResearchBatch.map(makeDailyResearchPost)
 ];
 export const postsPerPage = 20;
