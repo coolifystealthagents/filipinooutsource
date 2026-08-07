@@ -1,4 +1,5 @@
 import { accountingArticleDetail, accountingArticlePost } from './accounting-article';
+import { dailyBlogPosts, dailyBlogDetails } from './daily-blog-batch';
 
 export const site = {
   "domain": "FilipinoOutsource.com",
@@ -105,7 +106,7 @@ export const blogPosts = [
     "title": "How to write a Filipino executive assistant role brief",
     "excerpt": "Set calendar, inbox, meeting, and follow-up rules before handing executive support to a Filipino assistant.",
     "minutes": 10
-  }
+  }, ...dailyBlogPosts
 ] as const;
 
 export const guideBodies = {
@@ -629,6 +630,8 @@ export const blogDetails = {
     tags: ['Executive assistant', 'Role brief', 'Philippines staffing'],
     related:[{href:'/blog/Filipino-outsource-staffing-planning',label:'Staffing plan'},{href:'/blog/filipino-virtual-assistant-hiring-guide',label:'Related guide'},{href:'/blog/Filipino-outsource-staffing-onboarding-checklist',label:'Launch checklist'}],
   },
+
+  ...dailyBlogDetails,
 
 } as const;
 
