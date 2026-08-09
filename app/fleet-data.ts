@@ -58,8 +58,22 @@ const dailyResearchBatch: readonly BatchResearchConfig[] = [
   { slug: 'philippines-outsourced-workflow-risk-research-2026', title: 'Philippines Outsourced Workflow Risk Research 2026', cluster: 'Risk and Controls', statistic: '10 source review', statLabel: 'authoritative sources', sourceName: 'National Privacy Commission', sourceUrl: 'https://privacy.gov.ph/', focus: 'outsourced workflow risk controls' }
 ];
 
+const dailyResearchBatchAugust09: readonly BatchResearchConfig[] = [
+  { slug: 'philippines-inbox-management-support-research-2026', title: 'Philippines Inbox Management Support Research 2026', cluster: 'Executive Support', statistic: '4 triage labels', statLabel: 'triage labels', sourceName: 'National Privacy Commission', sourceUrl: 'https://privacy.gov.ph/data-privacy-act/', focus: 'inbox management support' },
+  { slug: 'philippines-crm-data-cleanup-research-2026', title: 'Philippines CRM Data Cleanup Research 2026', cluster: 'Data Operations', statistic: '5 duplicate checks', statLabel: 'duplicate checks', sourceName: 'Philippine Statistics Authority', sourceUrl: 'https://psa.gov.ph/statistics', focus: 'CRM data cleanup' },
+  { slug: 'philippines-order-processing-support-research-2026', title: 'Philippines Order Processing Support Research 2026', cluster: 'Ecommerce Operations', statistic: '6 order states', statLabel: 'order states', sourceName: 'Department of Trade and Industry', sourceUrl: 'https://www.dti.gov.ph/archives/consumer-protection/', focus: 'order processing support' },
+  { slug: 'philippines-calendar-coordination-research-2026', title: 'Philippines Calendar Coordination Research 2026', cluster: 'Executive Support', statistic: '3 review windows', statLabel: 'review windows', sourceName: 'National Privacy Commission', sourceUrl: 'https://privacy.gov.ph/advisories/', focus: 'calendar coordination' },
+  { slug: 'philippines-content-brief-production-research-2026', title: 'Philippines Content Brief Production Research 2026', cluster: 'Marketing Operations', statistic: '8 brief checks', statLabel: 'brief checks', sourceName: 'Department of Information and Communications Technology', sourceUrl: 'https://dict.gov.ph/', focus: 'content brief production' },
+  { slug: 'philippines-ticket-triage-workflow-research-2026', title: 'Philippines Ticket Triage Workflow Research 2026', cluster: 'Customer Support', statistic: '5 routing rules', statLabel: 'routing rules', sourceName: 'Department of Trade and Industry', sourceUrl: 'https://www.dti.gov.ph/regions/consumer-welfare/', focus: 'ticket triage workflows' },
+  { slug: 'philippines-invoice-review-support-research-2026', title: 'Philippines Invoice Review Support Research 2026', cluster: 'Finance Operations', statistic: '4 review gates', statLabel: 'review gates', sourceName: 'Bangko Sentral ng Pilipinas', sourceUrl: 'https://www.bsp.gov.ph/', focus: 'invoice review support' },
+  { slug: 'philippines-recruiting-scheduling-support-research-2026', title: 'Philippines Recruiting Scheduling Support Research 2026', cluster: 'Recruitment Operations', statistic: '5 candidate handoffs', statLabel: 'candidate handoffs', sourceName: 'Department of Labor and Employment', sourceUrl: 'https://www.dole.gov.ph/', focus: 'recruiting scheduling support' },
+  { slug: 'philippines-property-maintenance-coordination-research-2026', title: 'Philippines Property Maintenance Coordination Research 2026', cluster: 'Property Operations', statistic: '6 service states', statLabel: 'service states', sourceName: 'Philippine Statistics Authority', sourceUrl: 'https://psa.gov.ph/statistics/housing', focus: 'property maintenance coordination' },
+  { slug: 'philippines-healthcare-records-administration-research-2026', title: 'Philippines Healthcare Records Administration Research 2026', cluster: 'Healthcare Administration', statistic: '4 privacy checks', statLabel: 'privacy checks', sourceName: 'National Privacy Commission', sourceUrl: 'https://privacy.gov.ph/data-privacy-act/', focus: 'healthcare records administration' },
+  { slug: 'philippines-sales-list-research-support-research-2026', title: 'Philippines Sales List Research Support Research 2026', cluster: 'Sales Operations', statistic: '7 verification checks', statLabel: 'verification checks', sourceName: 'Department of Trade and Industry', sourceUrl: 'https://www.dti.gov.ph/', focus: 'sales list research support' }
+];
+
 function makeDailyResearchPost(config: BatchResearchConfig): ResearchPost {
-  const linkedFocus = config.focus.replace(/ /g, '-');
+  const linkedFocus = 'Filipino-outsource-staffing-planning';
   return {
     slug: config.slug,
     title: config.title,
@@ -429,6 +443,7 @@ export const researchPosts: readonly ResearchPost[] = [
       { label: 'Compare customer support operations', href: '/services/customer-support-operations' }
     ]
   },
-  ...dailyResearchBatch.map(makeDailyResearchPost)
+  ...dailyResearchBatch.map(makeDailyResearchPost),
+  ...dailyResearchBatchAugust09.map(makeDailyResearchPost)
 ];
 export const postsPerPage = 20;
