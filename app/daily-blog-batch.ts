@@ -19,6 +19,31 @@ const topics = [
   ['filipino-document-control-assistant', 'How to scope a Filipino document control assistant', 'Manage file naming, version logs, and review queues without approving technical content.', 'document control'],
   ['filipino-event-coordination-assistant', 'How to plan Filipino event coordination support', 'Turn registrations, vendor follow-ups, and run-of-show updates into a controlled queue.', 'event coordination'],
   ['filipino-logistics-coordination-assistant', 'How to scope Filipino logistics coordination support', 'Define shipment records, status checks, exception handling, and handoffs to the operations owner.', 'logistics coordination'],
+  ['filipino-executive-calendar-coordinator', 'How to plan Filipino executive calendar coordination', 'Create scheduling rules, meeting context, travel buffers, and escalation paths without taking decision ownership.', 'executive calendar coordination'],
+  ['filipino-insurance-claims-data-support', 'How to scope Filipino insurance claims data support', 'Organize intake fields, document checks, status updates, and reviewer handoffs for claims operations.', 'insurance claims data'],
+  ['filipino-legal-intake-coordinator', 'How to plan Filipino legal intake coordination', 'Build a bounded intake queue for matter details, conflict-check preparation, and attorney review.', 'legal intake coordination'],
+  ['filipino-medical-billing-data-assistant', 'How to scope Filipino medical billing data support', 'Set up coding preparation, missing-field checks, payer queues, and billing-owner approvals.', 'medical billing data'],
+  ['filipino-real-estate-transaction-coordinator', 'How to plan Filipino real estate transaction coordination', 'Track documents, deadlines, client updates, and exception handoffs across a property transaction.', 'real estate transaction coordination'],
+  ['filipino-marketplace-operations-assistant', 'How to scope Filipino marketplace operations support', 'Define catalog checks, order exceptions, seller messages, and approval rules for marketplace work.', 'marketplace operations'],
+  ['filipino-crm-data-cleanup-assistant', 'How to plan Filipino CRM data cleanup', 'Use field rules, duplicate checks, audit samples, and owner approvals to improve CRM records safely.', 'CRM data cleanup'],
+  ['filipino-procurement-coordinator', 'How to scope Filipino procurement coordination', 'Organize request intake, quote comparisons, supplier records, and purchase approval boundaries.', 'procurement coordination'],
+  ['filipino-payroll-preparation-assistant', 'How to plan Filipino payroll preparation support', 'Prepare timesheet checks and payroll inputs while keeping final payroll review and approval with the owner.', 'payroll preparation'],
+  ['filipino-social-content-coordinator', 'How to scope Filipino social content coordination', 'Turn approved topics into a calendar, draft queue, asset checklist, and manager review process.', 'social content coordination'],
+  ['filipino-webinar-operations-assistant', 'How to plan Filipino webinar operations support', 'Coordinate registrations, speaker assets, reminders, and post-event handoffs with clear approval points.', 'webinar operations'],
+  ['filipino-quality-assurance-coordinator', 'How to scope Filipino quality assurance coordination', 'Create test queues, evidence capture rules, defect labels, and escalation paths for product checks.', 'quality assurance coordination'],
+  ['filipino-customer-success-operations', 'How to plan Filipino customer success operations support', 'Maintain customer task queues, renewal signals, meeting notes, and manager-owned account decisions.', 'customer success operations'],
+  ['filipino-grant-research-assistant', 'How to scope Filipino grant research support', 'Define search criteria, source logs, eligibility checks, and nonprofit review before any submission decision.', 'grant research'],
+  ['filipino-donor-records-coordinator', 'How to plan Filipino nonprofit donor records support', 'Keep donor records, acknowledgments, missing details, and access boundaries organized for nonprofit teams.', 'donor records coordination'],
+  ['filipino-construction-project-administrator', 'How to scope Filipino construction project administration', 'Coordinate submittal logs, meeting actions, document versions, and project-manager approvals.', 'construction project administration'],
+  ['filipino-travel-booking-coordinator', 'How to plan Filipino business travel booking coordination', 'Set traveler preferences, approval rules, itinerary checks, and exception escalation before booking work begins.', 'business travel coordination'],
+  ['filipino-interview-scheduling-coordinator', 'How to scope Filipino interview scheduling support', 'Manage candidate availability, interviewer calendars, reminders, and confidential escalation rules.', 'interview scheduling'],
+  ['filipino-inventory-reconciliation-assistant', 'How to plan Filipino inventory reconciliation support', 'Compare records, flag variances, document evidence, and keep adjustment approval with the inventory owner.', 'inventory reconciliation'],
+  ['filipino-knowledge-base-coordinator', 'How to scope Filipino knowledge base coordination', 'Maintain article inventories, feedback queues, version checks, and subject-matter review boundaries.', 'knowledge base coordination'],
+  ['filipino-email-marketing-operations', 'How to plan Filipino email marketing operations support', 'Coordinate approved campaigns, audience checks, asset readiness, and send-review ownership.', 'email marketing operations'],
+  ['filipino-financial-reporting-data-support', 'How to scope Filipino financial reporting data support', 'Prepare recurring report inputs, reconciliation notes, source links, and finance-owner review checkpoints.', 'financial reporting data'],
+  ['filipino-supplier-onboarding-coordinator', 'How to plan Filipino supplier onboarding coordination', 'Track supplier forms, required records, system setup requests, and procurement approvals.', 'supplier onboarding'],
+  ['filipino-project-status-reporting-assistant', 'How to scope Filipino project status reporting support', 'Collect updates, flag dependencies, maintain action logs, and keep project decisions with the manager.', 'project status reporting'],
+  ['filipino-digital-asset-coordinator', 'How to plan Filipino digital asset coordination', 'Organize asset requests, naming rules, approvals, and delivery records for a repeatable creative queue.', 'digital asset coordination'],
 ] as const;
 
 export const dailyBlogPosts = topics.map(([slug, title, excerpt]) => ({ slug, title, excerpt, minutes: 9 }));
@@ -28,7 +53,7 @@ export const dailyBlogDetails = Object.fromEntries(topics.map(([slug, title, exc
   const secondLink = index % 2 === 0 ? '/services/data-processing-support' : '/services/customer-support-operations';
   return [slug, {
     datePublished: '2026-08-10', dateModified: '2026-08-10',
-    image: { src: '/article-planning.svg', alt: `Planning board for ${lane}`, caption: `A clear ${lane} brief keeps tasks, limits, and review visible.` },
+    image: { src: '/blog-daily-2026-08-10.svg', alt: `Planning board for ${lane}`, caption: `A clear ${lane} brief keeps tasks, limits, and review visible.` },
     shortAnswer: `${title.replace(/^How to |^A practical |^A controlled /, '')} works best when the first queue is narrow, examples are current, access is limited, and a named manager reviews the launch.`,
     takeaways: ['Start with one repeatable queue.', 'Show normal work and an exception.', 'Keep sensitive approvals with a named manager.', 'Expand only after the first lane is stable.'],
     inlineAnchors: [
