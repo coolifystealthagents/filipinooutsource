@@ -72,6 +72,20 @@ const dailyResearchBatchAugust09: readonly BatchResearchConfig[] = [
   { slug: 'philippines-sales-list-research-support-research-2026', title: 'Philippines Sales List Research Support Research 2026', cluster: 'Sales Operations', statistic: '7 verification checks', statLabel: 'verification checks', sourceName: 'Department of Trade and Industry', sourceUrl: 'https://www.dti.gov.ph/', focus: 'sales list research support' }
 ];
 
+const dailyResearchBatchAugust10: readonly BatchResearchConfig[] = [
+  { slug: 'philippines-accounts-receivable-follow-up-research-2026', title: 'Philippines Accounts Receivable Follow-Up Research 2026', cluster: 'Finance Operations', statistic: '5 follow-up states', statLabel: 'follow-up states', sourceName: 'Bangko Sentral ng Pilipinas', sourceUrl: 'https://www.bsp.gov.ph/', focus: 'accounts receivable follow-up' },
+  { slug: 'philippines-inventory-records-support-research-2026', title: 'Philippines Inventory Records Support Research 2026', cluster: 'Ecommerce Operations', statistic: '6 stock checks', statLabel: 'stock checks', sourceName: 'Department of Trade and Industry', sourceUrl: 'https://www.dti.gov.ph/archives/consumer-protection/', focus: 'inventory records support' },
+  { slug: 'philippines-payroll-administration-workflow-research-2026', title: 'Philippines Payroll Administration Workflow Research 2026', cluster: 'Finance Operations', statistic: '4 approval gates', statLabel: 'approval gates', sourceName: 'Department of Labor and Employment', sourceUrl: 'https://www.dole.gov.ph/', focus: 'payroll administration workflow' },
+  { slug: 'philippines-social-media-moderation-support-research-2026', title: 'Philippines Social Media Moderation Support Research 2026', cluster: 'Marketing Operations', statistic: '7 moderation rules', statLabel: 'moderation rules', sourceName: 'Department of Information and Communications Technology', sourceUrl: 'https://dict.gov.ph/', focus: 'social media moderation support' },
+  { slug: 'philippines-legal-administration-support-research-2026', title: 'Philippines Legal Administration Support Research 2026', cluster: 'Data Operations', statistic: '4 confidentiality gates', statLabel: 'confidentiality gates', sourceName: 'National Privacy Commission', sourceUrl: 'https://privacy.gov.ph/', focus: 'legal administration support' },
+  { slug: 'philippines-real-estate-lead-coordination-research-2026', title: 'Philippines Real Estate Lead Coordination Research 2026', cluster: 'Property Operations', statistic: '5 lead handoffs', statLabel: 'lead handoffs', sourceName: 'Philippine Statistics Authority', sourceUrl: 'https://psa.gov.ph/statistics/housing', focus: 'real estate lead coordination' },
+  { slug: 'philippines-appointment-setting-workflow-research-2026', title: 'Philippines Appointment Setting Workflow Research 2026', cluster: 'Customer Support', statistic: '4 confirmation checks', statLabel: 'confirmation checks', sourceName: 'Department of Trade and Industry', sourceUrl: 'https://www.dti.gov.ph/', focus: 'appointment setting workflows' },
+  { slug: 'philippines-document-digitization-support-research-2026', title: 'Philippines Document Digitization Support Research 2026', cluster: 'Data Operations', statistic: '8 capture checks', statLabel: 'capture checks', sourceName: 'Philippine Statistics Authority', sourceUrl: 'https://psa.gov.ph/', focus: 'document digitization support' },
+  { slug: 'philippines-marketplace-listing-support-research-2026', title: 'Philippines Marketplace Listing Support Research 2026', cluster: 'Ecommerce Operations', statistic: '6 listing fields', statLabel: 'listing fields', sourceName: 'Department of Trade and Industry', sourceUrl: 'https://www.dti.gov.ph/regions/consumer-welfare/', focus: 'marketplace listing support' },
+  { slug: 'philippines-quality-assurance-coordination-research-2026', title: 'Philippines Quality Assurance Coordination Research 2026', cluster: 'Remote Operations', statistic: '5 sampling checks', statLabel: 'sampling checks', sourceName: 'Department of Information and Communications Technology', sourceUrl: 'https://dict.gov.ph/programs-projects/', focus: 'quality assurance coordination' },
+  { slug: 'philippines-knowledge-base-maintenance-research-2026', title: 'Philippines Knowledge Base Maintenance Research 2026', cluster: 'Role Design', statistic: '7 maintenance checks', statLabel: 'maintenance checks', sourceName: 'National Privacy Commission', sourceUrl: 'https://privacy.gov.ph/advisories/', focus: 'knowledge base maintenance' }
+];
+
 function makeDailyResearchPost(config: BatchResearchConfig): ResearchPost {
   const linkedFocus = 'Filipino-outsource-staffing-planning';
   return {
@@ -444,6 +458,7 @@ export const researchPosts: readonly ResearchPost[] = [
     ]
   },
   ...dailyResearchBatch.map(makeDailyResearchPost),
-  ...dailyResearchBatchAugust09.map(makeDailyResearchPost)
+  ...dailyResearchBatchAugust09.map(makeDailyResearchPost),
+  ...dailyResearchBatchAugust10.map(makeDailyResearchPost)
 ];
 export const postsPerPage = 20;
