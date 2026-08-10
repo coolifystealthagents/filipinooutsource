@@ -52,6 +52,7 @@ export const services = [
   }
 ] as const;
 export const blogPosts = [
+  ...dailyBlogPosts,
   accountingArticlePost,
   {
     "slug": "filipino-virtual-assistant-hiring-guide",
@@ -106,7 +107,7 @@ export const blogPosts = [
     "title": "How to write a Filipino executive assistant role brief",
     "excerpt": "Set calendar, inbox, meeting, and follow-up rules before handing executive support to a Filipino assistant.",
     "minutes": 10
-  }, ...dailyBlogPosts
+  }
 ] as const;
 
 export const guideBodies = {
