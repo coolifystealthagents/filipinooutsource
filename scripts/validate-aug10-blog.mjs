@@ -24,8 +24,8 @@ for (const entry of manifest.entries) {
   if (entry.sourceDate !== '2026-08-10' || entry.renderedDate !== '2026-08-10') throw new Error(`bad date ${entry.slug}`);
   if (entry.sourceDateField !== `dailyBlogDetails.${entry.slug}.datePublished`) throw new Error(`bad date field ${entry.slug}`);
   if (!source.includes(`'${entry.slug}'`) || !source.includes(`datePublished: '2026-08-10'`)) throw new Error(`slug/date absent in source ${entry.slug}`);
-  if (!page.includes('datePublished: detail.datePublished') || !page.includes('Updated {detail.dateModified')) throw new Error('rendered date contract missing');
-  if (!entry.renderedDateFields.includes('datePublished') || !entry.renderedDateFields.includes('visible updated date')) throw new Error(`rendered fields incomplete ${entry.slug}`);
+  if (!page.includes('datePublished: detail.datePublished') || !page.includes('<time dateTime={detail.dateModified')) throw new Error('rendered date contract missing');
+  if (!entry.renderedDateFields.includes('datePublished') || !entry.renderedDateFields.includes('time[datetime]')) throw new Error(`rendered fields incomplete ${entry.slug}`);
   const candidate = builtFiles.find((file) => file.includes(entry.slug));
   if (builtFiles.length && (!candidate || !fs.readFileSync(candidate, 'utf8').includes('2026-08-10'))) throw new Error(`built date missing ${entry.slug}`);
 }

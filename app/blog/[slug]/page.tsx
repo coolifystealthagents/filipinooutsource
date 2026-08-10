@@ -136,7 +136,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                 <p className="eyebrow">Philippines hiring guide</p>
                 <h1>{post.title}</h1>
                 <p className="lead">{post.excerpt}</p>
-                <p className="byline">By {site.brand} Editorial Team · Updated {detail.dateModified || '2026-07-22'} · {post.minutes} min read</p>
+                <p className="byline">By {site.brand} Editorial Team · Updated <time dateTime={detail.dateModified || '2026-07-22'}>{detail.dateModified || '2026-07-22'}</time> · {post.minutes} min read</p>
                 {detail.image && <figure className="article-hero-image"><img src={detail.image.src} alt={detail.image.alt} /><figcaption>{detail.image.caption}</figcaption></figure>}
                 {pilotFormat && detail.editorialChecks && <div className="pilot-trust-strip" aria-label="Editorial checks">{detail.editorialChecks.map((item: string) => <span key={item}>{item}</span>)}</div>}
               </header>
