@@ -11,7 +11,10 @@ const sitemap = fs.readFileSync('app/sitemap.xml/route.ts', 'utf8');
 const builtFiles = fs.existsSync('.next/server/app/blog') ? fs.readdirSync('.next/server/app/blog', { recursive: true }).filter((file) => String(file).endsWith('.html')).map((file) => `.next/server/app/blog/${file}`) : [];
 
 if (manifest.entries.length < 22) throw new Error(`accepted count ${manifest.entries.length} < 22`);
+if (manifest.schemaVersion !== 1 || manifest.contract !== 'sites3-aug10-public-date-v6' || manifest.targetDate !== '2026-08-10' || manifest.family !== 'blog' || manifest.domain !== 'filipinooutsource.com' || manifest.repository !== 'coolifystealthagents/filipinooutsource' || manifest.branch !== 'main') throw new Error('manifest identity/contract mismatch');
+if (manifest.priorRunId !== '49a4e683-2b98-4aa7-bcf7-f0e077aacd5f' || manifest.priorIssueId !== '86ea24ef-ddb2-49d1-94a3-cbfc9225c30c') throw new Error('authoritative prior linkage mismatch');
 const seen = new Set();
+let previousIndex = -1;
 for (const entry of manifest.entries) {
   if (seen.has(entry.slug)) throw new Error(`duplicate slug ${entry.slug}`);
   seen.add(entry.slug);
@@ -30,6 +33,11 @@ for (const entry of manifest.entries) {
   if (builtFiles.length && (!candidate || !fs.readFileSync(candidate, 'utf8').includes('2026-08-10'))) throw new Error(`built date missing ${entry.slug}`);
 }
 if (!data.includes('...dailyBlogPosts')) throw new Error('newest-first blog index missing');
+for (const entry of manifest.entries) {
+  const index = source.indexOf(`'${entry.slug}'`);
+  if (index <= previousIndex) throw new Error(`index is not newest-first ${entry.slug}`);
+  previousIndex = index;
+}
 if (!page.includes("alternates: { canonical: `/blog/${slug}` }")) throw new Error('canonical route missing');
 if (!sitemap.includes('blogs.map')) throw new Error('sitemap eligibility missing');
 console.log(`AUG10_BLOG_REGRESSION_PASS count=${manifest.entries.length} builtFiles=${builtFiles.length} manifestSha256=${crypto.createHash('sha256').update(fs.readFileSync(manifestPath)).digest('hex')}`);
