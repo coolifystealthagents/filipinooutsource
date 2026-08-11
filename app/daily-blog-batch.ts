@@ -1,4 +1,30 @@
+const august11Topics = [
+  ['filipino-bookkeeping-reconciliation-assistant', 'How to scope Filipino bookkeeping reconciliation support', 'Use source records, exception notes, and owner review to make recurring bookkeeping reconciliation easier to hand off.', 'bookkeeping reconciliation', '2026-08-11'],
+  ['filipino-appointment-coordination-assistant', 'How to plan Filipino appointment coordination support', 'Build a dependable appointment queue around availability, confirmations, reschedules, and clear escalation rules.', 'appointment coordination', '2026-08-11'],
+  ['filipino-customer-onboarding-coordinator', 'How to scope a Filipino customer onboarding coordinator', 'Turn welcome tasks, missing information, and progress updates into a reviewable customer onboarding lane.', 'customer onboarding', '2026-08-11'],
+  ['filipino-data-entry-quality-assistant', 'How to plan Filipino data entry quality support', 'Define field rules, sample checks, correction notes, and ownership before expanding a data entry queue.', 'data entry quality', '2026-08-11'],
+  ['filipino-facilities-request-coordinator', 'How to scope Filipino facilities request coordination', 'Organize workplace requests, vendor follow-ups, status changes, and approval boundaries for facilities teams.', 'facilities request coordination', '2026-08-11'],
+  ['filipino-finance-reconciliation-coordinator', 'How to plan Filipino finance reconciliation coordination', 'Keep source files, unmatched items, evidence, and finance-owner decisions visible in one controlled queue.', 'finance reconciliation', '2026-08-11'],
+  ['filipino-healthcare-records-coordinator', 'How to scope Filipino healthcare records coordination', 'Plan narrow records administration with privacy-aware access, completeness checks, and escalation to the healthcare owner.', 'healthcare records coordination', '2026-08-11'],
+  ['filipino-lead-research-assistant', 'How to plan Filipino lead research support', 'Set research fields, source standards, duplicate checks, and review rules for a useful lead research queue.', 'lead research', '2026-08-11'],
+  ['filipino-maintenance-scheduling-coordinator', 'How to scope Filipino maintenance scheduling support', 'Coordinate service requests, appointment windows, vendor updates, and exceptions without owning repair decisions.', 'maintenance scheduling', '2026-08-11'],
+  ['filipino-order-management-coordinator', 'How to plan Filipino order management support', 'Create a clear order queue with status checks, customer handoffs, and owner approval for exceptions.', 'order management', '2026-08-11'],
+  ['filipino-payments-data-assistant', 'How to scope Filipino payments data support', 'Prepare payment records and missing-field checks while keeping payment release and approval with the business owner.', 'payments data', '2026-08-11'],
+  ['filipino-property-management-coordinator', 'How to plan Filipino property management coordination', 'Track resident requests, maintenance updates, documents, and escalation points for property operations.', 'property management', '2026-08-11'],
+  ['filipino-recruiting-records-assistant', 'How to scope Filipino recruiting records support', 'Keep candidate records, interview notes, missing fields, and access boundaries organized for recruiting teams.', 'recruiting records', '2026-08-11'],
+  ['filipino-remote-team-coordinator', 'How to plan Filipino remote team coordination', 'Make recurring handoffs, action lists, time-zone context, and blocked work visible to a distributed team.', 'remote team coordination', '2026-08-11'],
+  ['filipino-sales-pipeline-coordinator', 'How to scope Filipino sales pipeline coordination', 'Maintain pipeline fields, next-step reminders, and evidence checks without making sales decisions for the owner.', 'sales pipeline coordination', '2026-08-11'],
+  ['filipino-supplier-records-assistant', 'How to plan Filipino supplier records support', 'Keep supplier profiles, documents, renewal dates, and missing information ready for procurement review.', 'supplier records', '2026-08-11'],
+  ['filipino-ticket-routing-assistant', 'How to scope Filipino ticket routing support', 'Use categories, priority rules, response examples, and escalation paths to keep a support queue moving.', 'ticket routing', '2026-08-11'],
+  ['filipino-transaction-document-coordinator', 'How to plan Filipino transaction document coordination', 'Track required documents, version changes, deadlines, and owner approvals across a transaction.', 'transaction documents', '2026-08-11'],
+  ['filipino-website-audit-assistant', 'How to scope Filipino website audit support', 'Create an evidence-based audit queue for broken links, content fields, accessibility checks, and owner review.', 'website audit support', '2026-08-11'],
+  ['filipino-workforce-records-coordinator', 'How to plan Filipino workforce records coordination', 'Organize employee records, missing details, change requests, and confidential access with clear ownership.', 'workforce records', '2026-08-11'],
+  ['filipino-returns-coordination-assistant', 'How to scope Filipino returns coordination support', 'Track return requests, evidence, status updates, and exception decisions for ecommerce operations.', 'returns coordination', '2026-08-11'],
+  ['filipino-research-sourcing-assistant', 'How to plan Filipino research sourcing support', 'Give research work a defined question, source log, evidence standard, and reviewable conclusion.', 'research sourcing', '2026-08-11'],
+] as const;
+
 const topics = [
+  ...august11Topics,
   ['filipino-podcast-production-assistant', 'How to scope a Filipino podcast production assistant', 'Plan episode research, guest coordination, and handoff checks without giving away editorial control.', 'podcast production'],
   ['filipino-video-editing-coordinator', 'How to plan Filipino video editing coordination', 'Create a clean footage queue, naming rules, feedback loop, and approval boundary for video work.', 'video editing coordination'],
   ['filipino-accounts-payable-data-support', 'How to scope Filipino accounts payable data support', 'Organize invoice intake and coding preparation while keeping payment approval with your finance owner.', 'accounts payable data'],
@@ -78,11 +104,11 @@ export const aug10PublicSourceDates: Record<string, string> = {
   'filipino-digital-asset-coordinator': '2026-08-10',
 };
 
-export const dailyBlogDetails = Object.fromEntries(topics.map(([slug, title, excerpt, lane], index) => {
+export const dailyBlogDetails = Object.fromEntries(topics.map(([slug, title, excerpt, lane, publicationDate], index) => {
   const firstLink = index % 2 === 0 ? '/blog/Filipino-outsource-staffing-planning' : '/blog/Filipino-outsource-staffing-onboarding-checklist';
   const secondLink = index % 2 === 0 ? '/services/data-processing-support' : '/services/customer-support-operations';
   return [slug, {
-    datePublished: aug10PublicSourceDates[slug], dateModified: aug10PublicSourceDates[slug],
+    datePublished: publicationDate || aug10PublicSourceDates[slug], dateModified: publicationDate || aug10PublicSourceDates[slug],
     image: { src: '/blog-daily-2026-08-10.svg', alt: `Planning board for ${lane}`, caption: `A clear ${lane} brief keeps tasks, limits, and review visible.` },
     shortAnswer: `${title.replace(/^How to |^A practical |^A controlled /, '')} works best when the first queue is narrow, examples are current, access is limited, and a named manager reviews the launch.`,
     takeaways: ['Start with one repeatable queue.', 'Show normal work and an exception.', 'Keep sensitive approvals with a named manager.', 'Expand only after the first lane is stable.'],
