@@ -13,12 +13,9 @@
     "git fetch origin main",
     "git remote get-url origin",
     "git branch --show-current",
-    "git show 46a54c8e85b57080b8b11a24f7ab64200d9a428f^..46a54c8e85b57080b8b11a24f7ab64200d9a428f -- app/daily-blog-batch.ts",
-    "npm run build",
     "node scripts/validate-aug10-blog.mjs",
+    "npm run build",
     "git diff --check",
-    "git status --short --branch",
-    "git fetch origin main",
     "git push origin HEAD:main",
     "git ls-remote origin refs/heads/main",
     "git show origin/main:.paperclip/aug10-2026/blog.json | sha256sum"
