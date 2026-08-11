@@ -48,11 +48,41 @@ const topics = [
 
 export const dailyBlogPosts = topics.map(([slug, title, excerpt]) => ({ slug, title, excerpt, minutes: 9 }));
 
+// Repair-owned publication evidence: each accepted route has an explicit source
+// date field introduced by the date repair commit.
+export const aug10RepairDates: Record<string, string> = {
+  'filipino-executive-calendar-coordinator': '2026-08-10',
+  'filipino-insurance-claims-data-support': '2026-08-10',
+  'filipino-legal-intake-coordinator': '2026-08-10',
+  'filipino-medical-billing-data-assistant': '2026-08-10',
+  'filipino-real-estate-transaction-coordinator': '2026-08-10',
+  'filipino-marketplace-operations-assistant': '2026-08-10',
+  'filipino-crm-data-cleanup-assistant': '2026-08-10',
+  'filipino-procurement-coordinator': '2026-08-10',
+  'filipino-payroll-preparation-assistant': '2026-08-10',
+  'filipino-social-content-coordinator': '2026-08-10',
+  'filipino-webinar-operations-assistant': '2026-08-10',
+  'filipino-quality-assurance-coordinator': '2026-08-10',
+  'filipino-customer-success-operations': '2026-08-10',
+  'filipino-grant-research-assistant': '2026-08-10',
+  'filipino-donor-records-coordinator': '2026-08-10',
+  'filipino-construction-project-administrator': '2026-08-10',
+  'filipino-travel-booking-coordinator': '2026-08-10',
+  'filipino-interview-scheduling-coordinator': '2026-08-10',
+  'filipino-inventory-reconciliation-assistant': '2026-08-10',
+  'filipino-knowledge-base-coordinator': '2026-08-10',
+  'filipino-email-marketing-operations': '2026-08-10',
+  'filipino-financial-reporting-data-support': '2026-08-10',
+  'filipino-supplier-onboarding-coordinator': '2026-08-10',
+  'filipino-project-status-reporting-assistant': '2026-08-10',
+  'filipino-digital-asset-coordinator': '2026-08-10',
+};
+
 export const dailyBlogDetails = Object.fromEntries(topics.map(([slug, title, excerpt, lane], index) => {
   const firstLink = index % 2 === 0 ? '/blog/Filipino-outsource-staffing-planning' : '/blog/Filipino-outsource-staffing-onboarding-checklist';
   const secondLink = index % 2 === 0 ? '/services/data-processing-support' : '/services/customer-support-operations';
   return [slug, {
-    datePublished: '2026-08-10', dateModified: '2026-08-10',
+    datePublished: aug10RepairDates[slug], dateModified: aug10RepairDates[slug],
     image: { src: '/blog-daily-2026-08-10.svg', alt: `Planning board for ${lane}`, caption: `A clear ${lane} brief keeps tasks, limits, and review visible.` },
     shortAnswer: `${title.replace(/^How to |^A practical |^A controlled /, '')} works best when the first queue is narrow, examples are current, access is limited, and a named manager reviews the launch.`,
     takeaways: ['Start with one repeatable queue.', 'Show normal work and an exception.', 'Keep sensitive approvals with a named manager.', 'Expand only after the first lane is stable.'],
