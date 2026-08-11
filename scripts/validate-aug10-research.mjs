@@ -13,9 +13,15 @@ for (const entry of manifest.entries) {
   seen.add(entry.slug);
   if (!entry.route.startsWith('/research/') || entry.sourcePath !== 'app/fleet-data.ts' || entry.sourceDate !== '2026-08-10' || entry.renderedDate !== '2026-08-10' || !/^\/[a-z0-9-]+$/.test(entry.route.replace('/research/', '/'))) throw new Error(`manifest fields failed: ${entry.slug}`);
   if (!source.includes(`slug: '${entry.slug}'`) || !source.includes("datePublished: '2026-08-10'")) throw new Error(`source record/date failed: ${entry.slug}`);
+  if (!/^[0-9a-f]{40}$/.test(entry.introducedByCommit) || !['original-aug10-batch', 'repair-replacement'].includes(entry.provenance)) throw new Error(`provenance shape failed: ${entry.slug}`);
   const parent = execFileSync('git', ['show', `${entry.introducedByCommit}^:app/fleet-data.ts`], { encoding: 'utf8' });
   const introduced = execFileSync('git', ['show', `${entry.introducedByCommit}:app/fleet-data.ts`], { encoding: 'utf8' });
-  if (parent.includes(`slug: '${entry.slug}'`) || !introduced.includes(`slug: '${entry.slug}'`)) throw new Error(`provenance failed: ${entry.slug}`);
+  if (!introduced.includes(`slug: '${entry.slug}'`)) throw new Error(`provenance present-after failed: ${entry.slug}`);
+  if (entry.provenance === 'original-aug10-batch' && parent.includes(`slug: '${entry.slug}'`)) throw new Error(`original provenance absent-before failed: ${entry.slug}`);
+  if (entry.provenance === 'repair-replacement') {
+    if (!parent.includes(`slug: '${entry.slug}'`) || parent.includes(`acceptedAugust10Research`)) throw new Error(`repair anchor failed: ${entry.slug}`);
+    if (!introduced.includes(`acceptedAugust10Research`) || !introduced.includes("datePublished: '2026-08-10'")) throw new Error(`repair date patch failed: ${entry.slug}`);
+  }
 }
 if (!source.includes('...acceptedAugust10Research.map(makeDailyResearchPost)') || !source.includes("datePublished?: string")) throw new Error('index/source contract failed');
 if (source.indexOf('...acceptedAugust10Research.map(makeDailyResearchPost)') > source.indexOf("slug: 'philippines-service-exports-outsourcing-statistics-2026'")) throw new Error('index newest-first failed');
