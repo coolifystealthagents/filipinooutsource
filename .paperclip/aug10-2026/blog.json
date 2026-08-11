@@ -16,6 +16,7 @@
     "node scripts/validate-aug10-blog.mjs",
     "npm run build",
     "git diff --check",
+    "git rev-parse HEAD",
     "git push origin HEAD:main",
     "git ls-remote origin refs/heads/main",
     "git show origin/main:.paperclip/aug10-2026/blog.json | sha256sum"
