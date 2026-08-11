@@ -20,12 +20,17 @@ for (const entry of manifest.entries) {
   seen.add(entry.slug);
   if (!/^\/blog\/[a-z0-9-]+$/.test(entry.route) || entry.route !== `/blog/${entry.slug}`) throw new Error(`bad blog route ${entry.route}`);
   if (entry.sourcePath !== 'app/daily-blog-batch.ts' || !fs.existsSync(entry.sourcePath)) throw new Error(`missing source ${entry.sourcePath}`);
-  if (entry.provenance !== 'repair-replacement' || !/^[0-9a-f]{40}$/.test(entry.introducedByCommit)) throw new Error(`bad provenance ${entry.slug}`);
+  if (!['original-aug10-batch', 'repair-replacement'].includes(entry.provenance) || !/^[0-9a-f]{40}$/.test(entry.introducedByCommit)) throw new Error(`bad provenance ${entry.slug}`);
   const before = execFileSync('git', ['show', `${entry.introducedByCommit}^:app/daily-blog-batch.ts`], { encoding: 'utf8' });
   const after = execFileSync('git', ['show', `${entry.introducedByCommit}:app/daily-blog-batch.ts`], { encoding: 'utf8' });
-  const field = `aug10RepairDates['${entry.slug}']`;
-  if (before.includes(`'${entry.slug}': '2026-08-10'`) || !after.includes(`'${entry.slug}': '2026-08-10'`)) throw new Error(`diff provenance failed ${entry.slug}`);
-  if (entry.sourceDateField !== `aug10RepairDates.${entry.slug}`) throw new Error(`bad repair date field ${entry.slug}`);
+  if (entry.provenance === 'original-aug10-batch') {
+    if (entry.introducedByCommit !== '28f1069da9abfb817ebdd938c020e5a31c78892e' || before.includes(`'${entry.slug}',`) || !after.includes(`'${entry.slug}',`)) throw new Error(`original slug provenance failed ${entry.slug}`);
+    if (!before.includes("datePublished: '2026-08-10'") || !after.includes("datePublished: '2026-08-10'")) throw new Error(`original date provenance failed ${entry.slug}`);
+    if (entry.sourceDateField !== `dailyBlogDetails.${entry.slug}.datePublished`) throw new Error(`bad original date field ${entry.slug}`);
+  } else {
+    if (before.includes(`'${entry.slug}': '2026-08-10'`) || !after.includes(`'${entry.slug}': '2026-08-10'`)) throw new Error(`diff provenance failed ${entry.slug}`);
+    if (entry.sourceDateField !== `aug10RepairDates.${entry.slug}`) throw new Error(`bad repair date field ${entry.slug}`);
+  }
   if (entry.sourceDate !== '2026-08-10' || entry.renderedDate !== '2026-08-10') throw new Error(`bad date ${entry.slug}`);
   if (!source.includes(`'${entry.slug}': '2026-08-10'`) || !source.includes('datePublished: aug10RepairDates[slug]')) throw new Error(`slug/date absent in source ${entry.slug}`);
   if (!page.includes('datePublished: detail.datePublished') || !page.includes('<time dateTime={detail.dateModified')) throw new Error('rendered date contract missing');
