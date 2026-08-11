@@ -9,7 +9,7 @@
   "minimum": 10,
   "priorRunId": "ec12c456-7be9-4d40-a5f2-5ad5f9b43d3a",
   "priorIssueId": "4fd009f5-09be-4e17-9f5d-a54042e1d25e",
-  "validationCommands": ["node scripts/validate-aug10-research.mjs", "npm run build"],
+  "validationCommands": ["git remote get-url origin", "git branch --show-current", "git fetch origin main", "git diff c78df3eb6ada5325091a98c82eb4d2f967543823^ c78df3eb6ada5325091a98c82eb4d2f967543823 --unified=0 -- app/fleet-data.ts", "NEXT_PRIVATE_BUILD_WORKER=1 npm run build", "node scripts/validate-aug10-research.mjs", "git diff --check", "git fetch origin main", "git push origin HEAD:main", "git ls-remote origin refs/heads/main"],
   "cleanBuildPassed": true,
   "existingCompliancePassed": true,
   "indexNewestFirstPassed": true,

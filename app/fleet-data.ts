@@ -188,6 +188,8 @@ export const fleetServices: readonly FleetService[] = [
 
 export const researchPosts: readonly ResearchPost[] = [
 
+  ...acceptedAugust10Research.map(makeDailyResearchPost),
+
   {
     slug: 'philippines-service-exports-outsourcing-statistics-2026',
     title: 'Philippines Service Exports and Outsourcing Statistics 2026',
@@ -476,7 +478,6 @@ export const researchPosts: readonly ResearchPost[] = [
       { label: 'Compare customer support operations', href: '/services/customer-support-operations' }
     ]
   },
-  ...acceptedAugust10Research.map(makeDailyResearchPost),
   ...dailyResearchBatchAugust10.map(makeDailyResearchPost),
   ...dailyResearchBatchAugust09.map(makeDailyResearchPost),
   ...dailyResearchBatch.map(makeDailyResearchPost)
