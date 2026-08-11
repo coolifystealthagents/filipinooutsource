@@ -16,7 +16,7 @@ for (const entry of manifest.entries) {
   if (seen.has(entry.slug) || entry.route !== `/research/${entry.slug}`) throw new Error(`route or duplicate failed: ${entry.slug}`);
   seen.add(entry.slug);
   if (!entry.route.startsWith('/research/') || entry.sourcePath !== 'app/fleet-data.ts' || entry.sourceDate !== '2026-08-10' || entry.renderedDate !== '2026-08-10' || !/^\/[a-z0-9-]+$/.test(entry.route.replace('/research/', '/'))) throw new Error(`manifest fields failed: ${entry.slug}`);
-  if (!source.includes(`slug: '${entry.slug}'`) || !source.includes(`datePublished: '2026-08-10'`)) throw new Error(`source record/date failed: ${entry.slug}`);
+  if (!source.includes(`slug: '${entry.slug}'`) || !source.includes(`sourceDate: '2026-08-10'`)) throw new Error(`source record/date failed: ${entry.slug}`);
   if (!/^[0-9a-f]{40}$/.test(entry.introducedByCommit) || !['original-aug10-batch', 'repair-replacement'].includes(entry.provenance)) throw new Error(`provenance shape failed: ${entry.slug}`);
   const parent = execFileSync('git', ['show', `${entry.introducedByCommit}^:app/fleet-data.ts`], { encoding: 'utf8' });
   const introduced = execFileSync('git', ['show', `${entry.introducedByCommit}:app/fleet-data.ts`], { encoding: 'utf8' });
@@ -26,8 +26,8 @@ for (const entry of manifest.entries) {
     const sourceRecord = new RegExp(`\\{ slug: '${entry.slug}',[^\\n]+\\}`);
     const parentRecord = parent.match(sourceRecord)?.[0] ?? '';
     const introducedRecord = introduced.match(sourceRecord)?.[0] ?? '';
-    if (!parentRecord || /datePublished/.test(parentRecord)) throw new Error(`repair anchor failed: ${entry.slug}`);
-    if (!introducedRecord.includes("datePublished: '2026-08-10'")) throw new Error(`repair date patch failed: ${entry.slug}`);
+    if (!parentRecord || /sourceDate/.test(parentRecord)) throw new Error(`repair anchor failed: ${entry.slug}`);
+    if (!introducedRecord.includes("sourceDate: '2026-08-10'")) throw new Error(`repair date patch failed: ${entry.slug}`);
   }
 }
 if (!manifest.entries.every((entry) => entry.renderedDateFields.includes('datePublished') && entry.renderedDateFields.includes('article:published_time') && entry.renderedDateFields.includes('time[datetime]'))) throw new Error('rendered date field audit failed');
