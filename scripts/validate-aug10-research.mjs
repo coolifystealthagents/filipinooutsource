@@ -23,8 +23,11 @@ for (const entry of manifest.entries) {
   if (!introduced.includes(`slug: '${entry.slug}'`)) throw new Error(`provenance present-after failed: ${entry.slug}`);
   if (entry.provenance === 'original-aug10-batch' && parent.includes(`slug: '${entry.slug}'`)) throw new Error(`original provenance absent-before failed: ${entry.slug}`);
   if (entry.provenance === 'repair-replacement') {
-    if (!parent.includes(`slug: '${entry.slug}'`) || parent.includes(`acceptedAugust10Research`)) throw new Error(`repair anchor failed: ${entry.slug}`);
-    if (!introduced.includes(`acceptedAugust10Research`) || !introduced.includes("datePublished: '2026-08-10'")) throw new Error(`repair date patch failed: ${entry.slug}`);
+    const sourceRecord = new RegExp(`\\{ slug: '${entry.slug}',[^\\n]+\\}`);
+    const parentRecord = parent.match(sourceRecord)?.[0] ?? '';
+    const introducedRecord = introduced.match(sourceRecord)?.[0] ?? '';
+    if (!parentRecord || /datePublished/.test(parentRecord)) throw new Error(`repair anchor failed: ${entry.slug}`);
+    if (!introducedRecord.includes("datePublished: '2026-08-10'")) throw new Error(`repair date patch failed: ${entry.slug}`);
   }
 }
 if (!manifest.entries.every((entry) => entry.renderedDateFields.includes('datePublished') && entry.renderedDateFields.includes('article:published_time') && entry.renderedDateFields.includes('time[datetime]'))) throw new Error('rendered date field audit failed');
