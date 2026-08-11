@@ -28,7 +28,7 @@ for (const entry of manifest.entries) {
     if (!before.includes("datePublished: '2026-08-10'") || !after.includes("datePublished: '2026-08-10'")) throw new Error(`original date provenance failed ${entry.slug}`);
     if (entry.sourceDateField !== `dailyBlogDetails.${entry.slug}.datePublished`) throw new Error(`bad original date field ${entry.slug}`);
   } else {
-    if (before.includes(`'${entry.slug}': '2026-08-10'`) || !after.includes(`'${entry.slug}': '2026-08-10'`)) throw new Error(`diff provenance failed ${entry.slug}`);
+    if (before.includes('aug10SourceDates') || !after.includes(`'${entry.slug}': '2026-08-10'`)) throw new Error(`diff provenance failed ${entry.slug}`);
     if (entry.sourceDateField !== `aug10SourceDates.${entry.slug}`) throw new Error(`bad repair date field ${entry.slug}`);
   }
   if (entry.sourceDate !== '2026-08-10' || entry.renderedDate !== '2026-08-10') throw new Error(`bad date ${entry.slug}`);
