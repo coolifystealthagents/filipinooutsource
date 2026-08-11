@@ -9,7 +9,7 @@
   "minimum": 10,
   "priorRunId": "ec12c456-7be9-4d40-a5f2-5ad5f9b43d3a",
   "priorIssueId": "4fd009f5-09be-4e17-9f5d-a54042e1d25e",
-  "validationCommands": ["git remote -v", "git status --short --branch", "git fetch origin main", "git show 01c3189547ee8f99824bb8a1d23f4782ec26f49d^:app/fleet-data.ts", "git show 01c3189547ee8f99824bb8a1d23f4782ec26f49d:app/fleet-data.ts", "npm run build", "node scripts/validate-aug10-research.mjs", "git diff --check", "git rev-parse HEAD", "sha256sum .paperclip/aug10-2026/research.json", "git push origin HEAD:main", "git ls-remote origin refs/heads/main"],
+  "validationCommands": ["git remote -v", "git status --short --branch", "git fetch origin main", "git show c78df3eb6ada5325091a98c82eb4d2f967543823^:app/fleet-data.ts", "git show c78df3eb6ada5325091a98c82eb4d2f967543823:app/fleet-data.ts", "npm run build", "node scripts/validate-aug10-research.mjs", "git diff --check", "git rev-parse HEAD", "sha256sum .paperclip/aug10-2026/research.json", "git push origin HEAD:main", "git ls-remote origin refs/heads/main"],
   "cleanBuildPassed": true,
   "existingCompliancePassed": true,
   "indexNewestFirstPassed": true,
