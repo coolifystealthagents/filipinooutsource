@@ -50,7 +50,7 @@ export const dailyBlogPosts = topics.map(([slug, title, excerpt]) => ({ slug, ti
 
 // Repair-owned publication evidence: each accepted route has an explicit source
 // date field introduced by the date repair commit.
-export const aug10CurrentSourceDates: Record<string, string> = {
+export const aug10PublicSourceDates: Record<string, string> = {
   'filipino-executive-calendar-coordinator': '2026-08-10',
   'filipino-insurance-claims-data-support': '2026-08-10',
   'filipino-legal-intake-coordinator': '2026-08-10',
@@ -82,7 +82,7 @@ export const dailyBlogDetails = Object.fromEntries(topics.map(([slug, title, exc
   const firstLink = index % 2 === 0 ? '/blog/Filipino-outsource-staffing-planning' : '/blog/Filipino-outsource-staffing-onboarding-checklist';
   const secondLink = index % 2 === 0 ? '/services/data-processing-support' : '/services/customer-support-operations';
   return [slug, {
-    datePublished: aug10CurrentSourceDates[slug], dateModified: aug10CurrentSourceDates[slug],
+    datePublished: aug10PublicSourceDates[slug], dateModified: aug10PublicSourceDates[slug],
     image: { src: '/blog-daily-2026-08-10.svg', alt: `Planning board for ${lane}`, caption: `A clear ${lane} brief keeps tasks, limits, and review visible.` },
     shortAnswer: `${title.replace(/^How to |^A practical |^A controlled /, '')} works best when the first queue is narrow, examples are current, access is limited, and a named manager reviews the launch.`,
     takeaways: ['Start with one repeatable queue.', 'Show normal work and an exception.', 'Keep sensitive approvals with a named manager.', 'Expand only after the first lane is stable.'],
