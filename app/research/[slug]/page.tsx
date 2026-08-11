@@ -18,6 +18,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${post.title} | ${site.brand}`,
     description: post.excerpt,
+    alternates: { canonical: `/research/${slug}` },
+    openGraph: post.datePublished ? { type: 'article', publishedTime: post.datePublished } : undefined,
   };
 }
 
@@ -38,7 +40,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
               <h1>{post.title}</h1>
               <p className="lead">{post.excerpt}</p>
               <div className="research-meta" aria-label="Article metadata">
-                <span>{post.published}</span>
+                <span>{post.datePublished ? <time dateTime={post.datePublished}>{post.datePublished}</time> : post.published}</span>
                 <span>{post.readTime}</span>
                 <span>{post.sources?.length || 0} source</span>
               </div>
@@ -53,6 +55,12 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
             </aside>
           </div>
         </section>
+
+        {post.datePublished ? <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org', '@type': 'Article', headline: post.title,
+          datePublished: post.datePublished, dateModified: post.datePublished,
+          mainEntityOfPage: `https://${site.domain}/research/${post.slug}`
+        }) }} /> : null}
 
         <section className="section research-body-section">
           <div className="container research-layout">

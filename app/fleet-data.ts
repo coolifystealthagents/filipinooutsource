@@ -4,6 +4,7 @@ export type ResearchPost = {
   title: string;
   excerpt: string;
   published: string;
+  datePublished?: string;
   readTime: string;
   cluster: string;
   cardHighlight: string;
@@ -33,6 +34,7 @@ const researchSourceSet = [
 
 type BatchResearchConfig = {
   slug: string;
+  datePublished?: string;
   title: string;
   cluster: string;
   statistic: string;
@@ -100,6 +102,8 @@ const dailyResearchBatchAugust10Followup: readonly BatchResearchConfig[] = [
   { slug: 'philippines-facilities-request-coordination-research-2026', title: 'Philippines Facilities Request Coordination Research 2026', cluster: 'Property Operations', statistic: '6 request states', statLabel: 'request states', sourceName: 'Philippine Statistics Authority', sourceUrl: 'https://psa.gov.ph/statistics/housing', focus: 'facilities request coordination' }
 ];
 
+const acceptedAugust10Research = dailyResearchBatchAugust10Followup.map((config) => ({ ...config, datePublished: '2026-08-10' }));
+
 function makeDailyResearchPost(config: BatchResearchConfig): ResearchPost {
   const linkedFocus = 'Filipino-outsource-staffing-planning';
   return {
@@ -107,6 +111,7 @@ function makeDailyResearchPost(config: BatchResearchConfig): ResearchPost {
     title: config.title,
     excerpt: `A source-backed field guide to ${config.focus}, with practical evidence checks, access boundaries, and review routines for FilipinoOutsource.com buyers.`,
     published: 'Reviewed August 2026',
+    datePublished: config.datePublished,
     readTime: '7 minute read',
     cluster: config.cluster,
     cardHighlight: `${config.statistic} give buyers a compact way to structure ${config.focus}.`,
@@ -471,9 +476,9 @@ export const researchPosts: readonly ResearchPost[] = [
       { label: 'Compare customer support operations', href: '/services/customer-support-operations' }
     ]
   },
-  ...dailyResearchBatch.map(makeDailyResearchPost),
-  ...dailyResearchBatchAugust09.map(makeDailyResearchPost),
+  ...acceptedAugust10Research.map(makeDailyResearchPost),
   ...dailyResearchBatchAugust10.map(makeDailyResearchPost),
-  ...dailyResearchBatchAugust10Followup.map(makeDailyResearchPost)
+  ...dailyResearchBatchAugust09.map(makeDailyResearchPost),
+  ...dailyResearchBatch.map(makeDailyResearchPost)
 ];
 export const postsPerPage = 20;

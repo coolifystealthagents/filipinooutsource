@@ -47,7 +47,7 @@ export default function Research() {
                 <div className="research-card-meta">
                   <span>{site.brand} Research Team</span>
                   <span>{post.readTime}</span>
-                  <span>{post.published.replace('Reviewed ', '')}</span>
+                  <span>{post.datePublished || post.published.replace('Reviewed ', '')}</span>
                 </div>
                 <div className="research-card-sources">{post.sources?.length || 1} cited source</div>
               </a>)}
