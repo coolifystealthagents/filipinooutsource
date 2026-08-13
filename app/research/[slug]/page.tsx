@@ -3,6 +3,9 @@ import { Header, Footer } from '../../components';
 import { researchPosts, ResearchPost } from '../../fleet-data';
 import { site } from '../../data';
 
+const readerDate = new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+const formatReaderDate = (value: string) => readerDate.format(new Date(`${value}T00:00:00Z`));
+
 function slugify(value: string) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
@@ -40,7 +43,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
               <h1>{post.title}</h1>
               <p className="lead">{post.excerpt}</p>
               <div className="research-meta" aria-label="Article metadata">
-                <span>{post.datePublished ? <time dateTime={post.datePublished}>{post.datePublished}</time> : post.published}</span>
+                <span>{post.datePublished ? <time dateTime={post.datePublished}>{formatReaderDate(post.datePublished)}</time> : post.published}</span>
                 <span>{post.readTime}</span>
                 <span>{post.sources?.length || 0} source</span>
               </div>

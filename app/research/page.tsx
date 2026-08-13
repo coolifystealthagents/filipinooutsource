@@ -8,6 +8,8 @@ export const metadata = {
 };
 
 const clusters = ['All Research', ...Array.from(new Set(researchPosts.map((post) => post.cluster)))] as const;
+const readerDate = new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+const formatReaderDate = (value: string) => readerDate.format(new Date(`${value}T00:00:00Z`));
 const counts = researchPosts.reduce<Record<string, number>>((acc, post) => {
   acc[post.cluster] = (acc[post.cluster] || 0) + 1;
   return acc;
@@ -47,7 +49,7 @@ export default function Research() {
                 <div className="research-card-meta">
                   <span>{site.brand} Research Team</span>
                   <span>{post.readTime}</span>
-                  <span>{post.datePublished || post.published.replace('Reviewed ', '')}</span>
+                  <span>{post.datePublished ? formatReaderDate(post.datePublished) : post.published.replace('Reviewed ', '')}</span>
                 </div>
                 <div className="research-card-sources">{post.sources?.length || 1} cited source</div>
               </a>)}
