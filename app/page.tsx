@@ -34,7 +34,7 @@ export default function Home() {
           <div className="ph-field-note"><span>Role brief</span><b>Tasks + tools + hours + limits</b></div>
         </div>
       </div>
-      <div className="container ph-checks" aria-label="Planning principles"><span><img src="/icons/getillustrations/sharpie-business-icons-svg/sourcing-check.svg" alt="" width="28" height="28"/> Philippines-only sourcing</span><span><img src="/icons/getillustrations/sharpie-business-icons-svg/work-sample.svg" alt="" width="28" height="28"/> Work sample before interview</span><span><img src="/icons/getillustrations/sharpie-business-icons-svg/review-owner.svg" alt="" width="28" height="28"/> Named review owner</span></div>
+      <div className="container ph-checks" aria-label="Planning principles"><span><img src="/icons/getillustrations/sharpie-business-icons-svg/sourcing-check.svg" alt="Philippines-only sourcing icon" width="28" height="28"/> Philippines-only sourcing</span><span><img src="/icons/getillustrations/sharpie-business-icons-svg/work-sample.svg" alt="Work sample review icon" width="28" height="28"/> Work sample before interview</span><span><img src="/icons/getillustrations/sharpie-business-icons-svg/review-owner.svg" alt="Named review owner icon" width="28" height="28"/> Named review owner</span></div>
     </section>
 
     <section className="container ph-section" id="roles">
@@ -44,7 +44,7 @@ export default function Home() {
 
     <section className="ph-system" id="how-it-works">
       <div className="container ph-system-grid">
-        <div><p className="ph-kicker">The part around the hire</p><h2>Give the team a clear way to work.</h2><p className="ph-system-lead">Hiring fills the seat. Clear ownership keeps the work moving after the person starts.</p><img src="/illustrations/getillustrations/goodle-business-illustrations-svg/remote-work-handoff.svg" alt=""/></div>
+        <div><p className="ph-kicker">The part around the hire</p><h2>Give the team a clear way to work.</h2><p className="ph-system-lead">Hiring fills the seat. Clear ownership keeps the work moving after the person starts.</p><img src="/illustrations/getillustrations/goodle-business-illustrations-svg/remote-work-handoff.svg" alt="Remote work ownership handoff"/></div>
         <div className="ph-system-list">{staffingOffer.included.map((item, index) => <article key={item}><span>{index + 1}</span><p>{item}</p></article>)}</div>
       </div>
     </section>
