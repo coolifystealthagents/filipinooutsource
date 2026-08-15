@@ -144,7 +144,7 @@ export const blogDetails = {
   [accountingArticlePost.slug]: accountingArticleDetail,
   'filipino-virtual-assistant-hiring-guide': {
     datePublished: '2026-07-22',
-    dateModified: '2026-07-22',
+    dateModified: '2026-08-15',
     image: {src:'/article-planning.svg',alt:'Planning board for a Filipino staffing role',caption:'A clear role plan keeps task scope, review, and access control visible before hiring.'},
     shortAnswer: 'A Filipino virtual assistant is a Philippines-based remote worker who handles defined business tasks such as inbox support, records, scheduling, research, and routine follow-up. The hire works best when you start with one clear queue, show what good work looks like, and keep judgment calls with a named manager.',
     takeaways: [
@@ -285,8 +285,8 @@ export const blogDetails = {
     ],
     tags: ['Filipino virtual assistant', 'Philippines staffing', 'Role planning'],
     related: [
-      {href:'/services/admin-support',label:'Plan admin support'},
-      {href:'/services/customer-support',label:'Plan customer support'},
+      {href:'/services/executive-assistance',label:'Map your executive support queue'},
+      {href:'/services/customer-support-operations',label:'Set up a Philippines customer queue'},
       {href:'/blog/Filipino-outsource-staffing-provider-questions',label:'Provider questions'},
       {href:'/contact-us',label:'Request staffing plan'},
     ],
