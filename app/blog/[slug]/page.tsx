@@ -152,11 +152,6 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                 <div className="article-wrap">
                   {detail.lead && <p className="article-intro">{detail.lead}</p>}
                   {pilotFormat && detail.summaryCards && <section className="pilot-summary-cards" aria-label="Article summary">{detail.summaryCards.map((card: any) => <article key={card.label}><span>{card.label}</span><strong>{card.value}</strong><p>{card.note}</p></article>)}</section>}
-                  <section className="blog-standards-strip" aria-label="Article standards">
-                    <span>1 cited outside source</span>
-                    <span>2 to 4 internal links</span>
-                    <span>Top, middle, and bottom CTAs</span>
-                  </section>
                   {articleBanners?.[0] && <ArticleBanner banner={articleBanners[0]} />}
                   <section id="short-answer" className={pilotFormat ? "evidence-card pilot-key-card" : "evidence-card"}>
                     <p className="article-kicker">Short answer</p>
@@ -212,7 +207,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   return (
     <>
       <Header />
-      <main><article className="section"><div className="container article-shell"><p className="eyebrow">{site.brand} blog</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><section className="blog-standards-strip" aria-label="Article standards"><span>1 cited outside source</span><span>2 to 4 internal links</span><span>Top, middle, and bottom CTAs</span></section><ArticleBanner banner={fallbackBanners[0]} />{guide ? <><p>{guide.intro}</p>{guide.sections.map((section: any, index: number) => <React.Fragment key={section.title}><section className="card"><h2>{section.title}</h2>{section.paragraphs.map((paragraph: string) => <p key={paragraph}>{paragraph}</p>)}</section>{index === 0 && <ArticleBanner banner={fallbackBanners[1]} />}</React.Fragment>)}</> : <section className="card"><h2>Start with a defined workflow</h2><p>For Philippines-based staffing, document the work, tools, schedule, and desired outcome before candidate matching. Keep business judgment and final approvals with a named manager. <a href="https://www.ilo.org/global/topics/non-standard-employment/WCMS_534825/lang--en/index.htm" target="_blank" rel="noopener noreferrer">International Labour Organization guidance on remote work arrangements</a> reinforces the need for clear expectations, communication rhythms, and accountable handoffs.</p></section>}<ArticleBanner banner={fallbackBanners[2]} /></div></article><CTA /></main>
+      <main><article className="section"><div className="container article-shell"><p className="eyebrow">{site.brand} blog</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><ArticleBanner banner={fallbackBanners[0]} />{guide ? <><p>{guide.intro}</p>{guide.sections.map((section: any, index: number) => <React.Fragment key={section.title}><section className="card"><h2>{section.title}</h2>{section.paragraphs.map((paragraph: string) => <p key={paragraph}>{paragraph}</p>)}</section>{index === 0 && <ArticleBanner banner={fallbackBanners[1]} />}</React.Fragment>)}</> : <section className="card"><h2>Start with a defined workflow</h2><p>For Philippines-based staffing, document the work, tools, schedule, and desired outcome before candidate matching. Keep business judgment and final approvals with a named manager. <a href="https://www.ilo.org/global/topics/non-standard-employment/WCMS_534825/lang--en/index.htm" target="_blank" rel="noopener noreferrer">International Labour Organization guidance on remote work arrangements</a> reinforces the need for clear expectations, communication rhythms, and accountable handoffs.</p></section>}<ArticleBanner banner={fallbackBanners[2]} /></div></article><CTA /></main>
       <Footer />
     </>
   );

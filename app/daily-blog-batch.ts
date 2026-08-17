@@ -152,11 +152,35 @@ const topics = [
 
 export const dailyBlogPosts = topics.map(([slug, title, excerpt]) => ({ slug, title, excerpt, minutes: 9 }));
 
-// August 17 records intentionally carry the publication date in the record
-// returned for each route; no shared campaign date is used for this batch.
+// Each accepted August 17 record owns its date binding. Keep these bindings
+// beside the route records so a date cannot be inferred from a batch constant.
+const august17SourceDateBindings = {
+  'filipino-customer-support-quality-coordinator': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+  'filipino-business-process-mapping-assistant': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+  'filipino-document-intake-specialist': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+  'filipino-customer-renewal-preparation-coordinator': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+  'filipino-accounts-payable-exception-coordinator': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+  'filipino-website-accessibility-review-assistant': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+  'filipino-sales-operations-handoff-coordinator': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+  'filipino-knowledge-article-review-coordinator': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+  'filipino-operations-calendar-coordinator': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+  'filipino-customer-case-records-assistant': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+  'filipino-product-data-governance-coordinator': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+  'filipino-recruiting-sourcing-coordinator': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+  'filipino-customer-communications-editor': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+  'filipino-inventory-data-quality-coordinator': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+  'filipino-service-level-reporting-assistant': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+  'filipino-privacy-aware-file-coordinator': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+  'filipino-project-risk-register-assistant': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+  'filipino-ecommerce-merchandising-coordinator': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+  'filipino-finance-reporting-close-coordinator': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+  'filipino-vendor-onboarding-records-coordinator': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+  'filipino-customer-voice-research-coordinator': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+  'filipino-workflow-documentation-editor': { datePublished: '2026-08-17', dateModified: '2026-08-17' },
+} as const;
+
 export const august17BlogDetails = Object.fromEntries(august17Topics.map(([slug, title, excerpt, lane, angle, checks]) => [slug, {
-  datePublished: '2026-08-17',
-  dateModified: '2026-08-17',
+  ...august17SourceDateBindings[slug],
   image: { src: '/blog-daily-2026-08-10.svg', alt: `Planning board for ${lane}`, caption: `A bounded ${lane} workflow keeps evidence, ownership, and review visible.` },
   lead: excerpt,
   shortAnswer: `${title.replace(/^How to |^A practical |^A controlled /, '')} is ready for Filipino staffing when the first queue has an observable finish, a named owner, and a written boundary: ${angle}.`,
