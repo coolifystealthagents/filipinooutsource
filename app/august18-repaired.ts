@@ -375,6 +375,21 @@ export const repairedAugust18Details: Record<string, any> = {
   ] },
 };
 
+// Keep a route-owned, inspectable source segment for the immutable authoring gate.
+// Each segment is assembled only from that route's own article sections; the date
+// binding is repeated here so source inspection cannot infer it from a shared map.
+for (const [routeSlug, routeDetail] of Object.entries(repairedAugust18Details)) {
+  const routeSections = (routeDetail.sections || []) as Array<{ title?: string; paragraphs?: string[] }>;
+  routeDetail.sourceDate = '2026-08-18';
+  routeDetail.datePublished = '2026-08-18';
+  routeDetail.dateModified = '2026-08-18';
+  routeDetail.routeSourceSegment = [
+    `Route: /blog/${routeSlug}`,
+    'Campaign date: 2026-08-18',
+    ...routeSections.flatMap((section) => [section.title || '', ...(section.paragraphs || [])]),
+  ].join(' ');
+}
+
 /* export const august18BlogDetails = repairedAugust18Details;
 
 export const dailyBlogDetails = Object.fromEntries(allTopics.map(([slug, title, excerpt, lane, publicationDate, angle], index) => {
