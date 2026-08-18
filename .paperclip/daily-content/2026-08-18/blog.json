@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "targetDate": "2026-08-18",
+  "family": "blog",
+  "domain": "filipinooutsource.com",
+  "repository": "coolifystealthagents/filipinooutsource",
+  "branch": "main",
+  "entries": [
+    { "slug": "filipino-returns-processing-coordinator", "route": "/blog/filipino-returns-processing-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
+    { "slug": "filipino-lead-enrichment-research-assistant", "route": "/blog/filipino-lead-enrichment-research-assistant", "sourcePath": "app/daily-blog-batch.ts" },
+    { "slug": "filipino-appointment-intake-coordinator", "route": "/blog/filipino-appointment-intake-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
+    { "slug": "filipino-subscription-billing-records-assistant", "route": "/blog/filipino-subscription-billing-records-assistant", "sourcePath": "app/daily-blog-batch.ts" },
+    { "slug": "filipino-claims-documentation-coordinator", "route": "/blog/filipino-claims-documentation-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
+    { "slug": "filipino-content-calendar-editor", "route": "/blog/filipino-content-calendar-editor", "sourcePath": "app/daily-blog-batch.ts" },
+    { "slug": "filipino-logistics-exception-coordinator", "route": "/blog/filipino-logistics-exception-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
+    { "slug": "filipino-employee-onboarding-records-coordinator", "route": "/blog/filipino-employee-onboarding-records-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
+    { "slug": "filipino-customer-feedback-tagging-assistant", "route": "/blog/filipino-customer-feedback-tagging-assistant", "sourcePath": "app/daily-blog-batch.ts" },
+    { "slug": "filipino-website-content-inventory-coordinator", "route": "/blog/filipino-website-content-inventory-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
+    { "slug": "filipino-order-entry-quality-assistant", "route": "/blog/filipino-order-entry-quality-assistant", "sourcePath": "app/daily-blog-batch.ts" },
+    { "slug": "filipino-legal-document-indexing-coordinator", "route": "/blog/filipino-legal-document-indexing-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
+    { "slug": "filipino-podcast-production-coordinator", "route": "/blog/filipino-podcast-production-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
+    { "slug": "filipino-salesforce-activity-hygiene-assistant", "route": "/blog/filipino-salesforce-activity-hygiene-assistant", "sourcePath": "app/daily-blog-batch.ts" },
+    { "slug": "filipino-property-maintenance-coordinator", "route": "/blog/filipino-property-maintenance-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
+    { "slug": "filipino-training-materials-coordinator", "route": "/blog/filipino-training-materials-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
+    { "slug": "filipino-marketplace-seller-support-coordinator", "route": "/blog/filipino-marketplace-seller-support-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
+    { "slug": "filipino-expense-receipt-review-assistant", "route": "/blog/filipino-expense-receipt-review-assistant", "sourcePath": "app/daily-blog-batch.ts" },
+    { "slug": "filipino-customer-implementation-coordinator", "route": "/blog/filipino-customer-implementation-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
+    { "slug": "filipino-archive-migration-coordinator", "route": "/blog/filipino-archive-migration-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
+    { "slug": "filipino-donation-processing-coordinator", "route": "/blog/filipino-donation-processing-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
+    { "slug": "filipino-product-review-moderation-assistant", "route": "/blog/filipino-product-review-moderation-assistant", "sourcePath": "app/daily-blog-batch.ts" }
+  ]
+}
