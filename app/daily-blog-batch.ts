@@ -375,7 +375,8 @@ export const august17BlogDetails = Object.fromEntries(august17Topics.map(([slug,
     sources: [sourceBySlug[slug]],
     faqs: [{ question: `What belongs in the first ${lane} queue?`, answer: 'Recurring work with a clear source, finish point, example, and reviewer.' }, { question: 'What should stop?', answer: 'Conflicting facts, sensitive requests, policy interpretation, commitments, and exceptions outside the approved examples.' }, { question: 'When can the role expand?', answer: 'After sample review shows the first lane is accurate, documented, and easy for the owner to inspect.' }],
     tags: [lane, 'Role brief', 'Philippines staffing'],
-    related: [{ href: '/blog/Filipino-outsource-staffing-planning', label: 'Staffing plan' }, { href: '/services/data-processing-support', label: 'Data processing support' }, { href: '/blog/Filipino-outsource-staffing-onboarding-checklist', label: 'Onboarding checklist' }],
+    inlineAnchors: slug === 'filipino-customer-support-quality-coordinator' ? [{ phrase: 'support lead', href: '/services/customer-support-operations' }] : [],
+    related: [{ href: '/blog/Filipino-outsource-staffing-planning', label: 'Staffing plan' }, slug === 'filipino-customer-support-quality-coordinator' ? { href: '/services/customer-support-operations', label: 'Customer support operations' } : { href: '/services/data-processing-support', label: 'Data processing support' }, { href: '/blog/Filipino-outsource-staffing-onboarding-checklist', label: 'Onboarding checklist' }],
   }];
 }));
 
