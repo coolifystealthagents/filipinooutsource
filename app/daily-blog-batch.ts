@@ -1,3 +1,5 @@
+import { repairedAugust18Details } from './august18-repaired';
+
 const august17Topics = [
   ['filipino-customer-support-quality-coordinator', 'How to build Filipino customer support quality coordination', 'Create a review lane for sampled replies, policy references, correction notes, and coaching handoffs without making the support decision itself.', 'customer support quality coordination', 'sampling replies against approved guidance before coaching changes the queue', 'review samples, not every conversation; preserve the original customer context; route policy ambiguity to the support owner'],
   ['filipino-business-process-mapping-assistant', 'How to scope Filipino business process mapping support', 'Turn interviews and existing work instructions into a checked process map while leaving redesign choices with the process owner.', 'business process mapping', 'separating observed steps from proposed improvements so a map does not become an unapproved policy', 'record who performed each step, capture exceptions, show system handoffs, and mark assumptions for owner review'],
@@ -768,7 +770,7 @@ const august18Details: Record<string, any> = {
   ], metrics: { title: 'Queue review fields', intro: "Use reviewable signals for product review moderation.", items: [{ value: '1', label: 'queue', note: 'A defined first lane.' }, { value: '3', label: 'examples', note: 'Normal, incomplete, and stop.' }, { value: '1', label: 'owner', note: 'A named reviewer.' }], note: 'Signals support management review and are not service guarantees.' }, comparisonTitle: 'Unbounded scope versus a reviewable lane', comparison: [{ question: 'What enters?', weak: 'Anything related to the function.', useful: "Items matching the product review moderation intake rule." }, { question: 'Who decides exceptions?', weak: 'The person in the queue.', useful: 'The named business owner.' }], sources: [{ name: 'CISA: Require multifactor authentication', url: 'https://www.cisa.gov/secure-our-world/require-multifactor-authentication', note: 'Account access reference.' }], faqs: [{ question: "What belongs in the first product review moderation queue?", answer: 'Recurring work with a source, finish point, example, and reviewer.' }, { question: 'When should the role stop?', answer: 'When evidence conflicts, a sensitive decision is required, or the request exceeds approved examples.' }], tags: ["product review moderation", 'Role brief', 'Philippines staffing'], related: [{ href: '/blog/Filipino-outsource-staffing-planning', label: 'Staffing plan' }, { href: '/blog/Filipino-outsource-staffing-onboarding-checklist', label: 'Onboarding checklist' }] }
 };
 
-export const august18BlogDetails = august18Details;
+export const august18BlogDetails = repairedAugust18Details;
 
 const allTopics = [...topics, ...august18Topics];
 export const dailyBlogPosts = allTopics.map(([slug, title, excerpt]) => ({ slug, title, excerpt, minutes: 9 }));
