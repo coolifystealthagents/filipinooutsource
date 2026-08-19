@@ -846,7 +846,13 @@ for (const [routeSlug, detail] of Object.entries(august18BlogDetails)) {
   const authoredBody = authoredSections.flatMap((section) => [section.title || '', ...(section.paragraphs || [])]).join(' ');
   const closer = august18RouteClosers[routeSlug];
   if (!closer) throw new Error(`Missing authored August 18 closer: ${routeSlug}`);
-  const routeSourceSegment = `Route: /blog/${routeSlug} Campaign date: 2026-08-18 ${authoredBody} ${closer}`;
+  // Preserve the route-owned source authored in the native detail record. The
+  // fallback is retained only for compatibility with an incomplete legacy
+  // record; it must still carry the route and literal campaign date.
+  const nativeRouteSource = typeof detail.routeSourceSegment === 'string' ? detail.routeSourceSegment : '';
+  const routeSourceSegment = nativeRouteSource.includes(`Route: /blog/${routeSlug}`) && nativeRouteSource.includes('Campaign date: 2026-08-18')
+    ? nativeRouteSource
+    : `Route: /blog/${routeSlug} Campaign date: 2026-08-18 ${authoredBody} ${closer}`;
   if (routeSourceSegment.trim().split(/\s+/).length < 900) throw new Error(`August 18 authored route source is short: ${routeSlug}`);
   detail.sourceDate = '2026-08-18';
   detail.datePublished = '2026-08-18';
