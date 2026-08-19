@@ -119,7 +119,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
               {post.sources?.length ? (
                 <section className="research-sources" id="sources">
                   <h2>Sources and citation</h2>
-                  <ul>{post.sources.map((source) => <li key={source.url}><strong>{source.name}</strong><span>{source.url.replace(/^https?:\/\//, '')}</span></li>)}</ul>
+                  <ul>{post.sources.map((source) => <li key={source.url}><strong>{source.name}</strong><a href={source.url} target="_blank" rel="noopener noreferrer">{source.url.replace(/^https?:\/\//, '')}</a></li>)}</ul>
                 </section>
               ) : null}
             </article>
