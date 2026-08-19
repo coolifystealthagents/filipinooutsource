@@ -799,8 +799,17 @@ const august18RouteSourceSegments: Record<string, string> = {
 };
 
 for (const [routeSlug, routeSourceSegment] of Object.entries(august18RouteSourceSegments)) {
-  august18BlogDetails[routeSlug].sourceSegment = routeSourceSegment;
-  august18BlogDetails[routeSlug].routeSourceSegment = routeSourceSegment;
+  const detail = august18BlogDetails[routeSlug];
+  if (!detail || !routeSourceSegment.includes(`Route: /blog/${routeSlug}`) || !routeSourceSegment.includes('Campaign date: 2026-08-18')) {
+    throw new Error(`Invalid August 18 route source binding: ${routeSlug}`);
+  }
+  const sourceWords = routeSourceSegment.trim().split(/\s+/).length;
+  if (sourceWords < 900) throw new Error(`August 18 route source is short: ${routeSlug} (${sourceWords})`);
+  detail.sourceDate = '2026-08-18';
+  detail.datePublished = '2026-08-18';
+  detail.dateModified = '2026-08-18';
+  detail.sourceSegment = routeSourceSegment;
+  detail.routeSourceSegment = routeSourceSegment;
 }
 
 const allTopics = [...topics, ...august18Topics];
