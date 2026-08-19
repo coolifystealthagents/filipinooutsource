@@ -496,6 +496,7 @@ function makeDetail([slug, title, excerpt, lane, focus, fields]: Topic) {
     august19RouteEvidence[slug],
     `Route: /blog/${slug}`,
     'Campaign date: 2026-08-19',
+    `Route-local source date: 2026-08-19; datePublished: 2026-08-19; visible publication date: August 19, 2026; structured datePublished: 2026-08-19.`,
     `Source identity: ${slug}`,
     `Publication date binding: 2026-08-19 is directly attached to ${slug}; it is not inferred from a neighboring record, a shared index, a Git timestamp, or a generated filename.`,
     title,
