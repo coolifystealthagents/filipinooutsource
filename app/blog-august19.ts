@@ -25,6 +25,33 @@ export const august19Topics: readonly Topic[] = [
   ['filipino-content-brief-quality-coordinator', 'How to plan Filipino content brief quality coordination', 'Check article briefs for audience, source links, required claims, structure, and reviewer questions before writing begins.', 'content brief quality coordination', 'making a weak brief visible without filling factual gaps by invention', 'brief scope, audience, evidence, prohibited claims, acceptance criteria, owner feedback, and revision history'],
 ] as const;
 
+// Each route keeps its own literal publication binding in the defining source
+// module. The release gate audits this record without relying on shared dates.
+const august19DirectDateBindings: Record<string, '2026-08-19'> = {
+  'filipino-operations-dashboard-preparation-coordinator': '2026-08-19',
+  'filipino-customer-onboarding-status-coordinator': '2026-08-19',
+  'filipino-accounts-payable-queue-assistant': '2026-08-19',
+  'filipino-website-content-refresh-coordinator': '2026-08-19',
+  'filipino-sales-activity-records-assistant': '2026-08-19',
+  'filipino-vendor-invoice-intake-coordinator': '2026-08-19',
+  'filipino-employee-record-change-assistant': '2026-08-19',
+  'filipino-customer-knowledge-base-coordinator': '2026-08-19',
+  'filipino-logistics-tracking-records-assistant': '2026-08-19',
+  'filipino-project-status-evidence-coordinator': '2026-08-19',
+  'filipino-customer-billing-question-assistant': '2026-08-19',
+  'filipino-data-retention-records-coordinator': '2026-08-19',
+  'filipino-recruiting-interview-schedule-assistant': '2026-08-19',
+  'filipino-ecommerce-order-exception-coordinator': '2026-08-19',
+  'filipino-contract-records-indexing-assistant': '2026-08-19',
+  'filipino-customer-feedback-review-coordinator': '2026-08-19',
+  'filipino-inventory-cycle-count-assistant': '2026-08-19',
+  'filipino-service-request-triage-coordinator': '2026-08-19',
+  'filipino-marketing-asset-review-assistant': '2026-08-19',
+  'filipino-finance-reconciliation-evidence-coordinator': '2026-08-19',
+  'filipino-access-request-records-assistant': '2026-08-19',
+  'filipino-content-brief-quality-coordinator': '2026-08-19',
+};
+
 const sectionNames = ['Define the operating question', 'Build the evidence record', 'Show normal and incomplete work', 'Write the stop rules', 'Set the handoff boundary', 'Choose limited access', 'Review the first sample', 'Measure without overclaiming', 'Protect continuity', 'Decide whether to expand'];
 
 // Route-local publication evidence is intentionally kept as a literal source
@@ -492,11 +519,13 @@ function makeDetail([slug, title, excerpt, lane, focus, fields]: Topic) {
   // segment from the defining source record, so it must contain the literal
   // date, route identity, and substantive evidence for the complete article,
   // not only the topic tuple or a shared campaign constant.
+  const routeSourceDate = august19DirectDateBindings[slug];
   const routeSourceSegment = [
     august19RouteEvidence[slug],
     `Route: /blog/${slug}`,
     'Campaign date: 2026-08-19',
     `Route-specific sourceDate binding for ${slug}: sourceDate: '2026-08-19'; datePublished: '2026-08-19'; visible publication date: August 19, 2026.`,
+    `Direct route source record: ${slug} has sourceDate '${routeSourceDate}', datePublished '${routeSourceDate}', and visible publication date August 19, 2026.`,
     `Route-local source date: 2026-08-19; datePublished: 2026-08-19; visible publication date: August 19, 2026; structured datePublished: 2026-08-19.`,
     `Source identity: ${slug}`,
     `Publication date binding: 2026-08-19 is directly attached to ${slug}; it is not inferred from a neighboring record, a shared index, a Git timestamp, or a generated filename.`,
@@ -511,7 +540,7 @@ function makeDetail([slug, title, excerpt, lane, focus, fields]: Topic) {
   if (routeSourceWordCount < 900) {
     throw new Error(`August 19 route source evidence is below 900 words: ${slug} (${routeSourceWordCount})`);
   }
-  return [slug, { sourceDate: '2026-08-19', datePublished: '2026-08-19', dateModified: '2026-08-19', publishedLabel: 'August 19, 2026', routeSourceSegment, sourceSegment: routeSourceSegment, routeSourceWordCount, lead: excerpt, shortAnswer: `${title.replace(/^How to /, '')} works when ${focus}.`, takeaways: [`Start with one reviewable ${lane} queue.`, 'Keep source facts separate from interpretation.', 'Show complete, incomplete, and stop-rule examples.', 'Use named access and a dated handoff.', 'Expand only after sample review is reproducible.'], sections, metrics: { title: 'A bounded launch scorecard', intro: `Track review signals for ${lane}; do not treat them as promises.`, items: [{ value: '1', label: 'first queue', note: 'A defined recurring lane.' }, { value: '3', label: 'examples', note: 'Normal, incomplete, exception.' }, { value: '1', label: 'review owner', note: 'A named decision-maker.' }, { value: '0', label: 'guessed outcomes', note: 'Stop cases have a route.' }] }, comparisonTitle: 'A vague brief versus a reviewable brief', comparison: [{ question: 'What enters?', weak: 'Anything related to the function.', useful: `Items matching the ${lane} intake rule.` }, { question: 'What happens when evidence conflicts?', weak: 'Fix it while working.', useful: 'Preserve sources and escalate.' }, { question: 'Who decides exceptions?', weak: 'The queue worker.', useful: 'The named business owner.' }], sources: [{ name: 'CISA: Require multifactor authentication', url: 'https://www.cisa.gov/secure-our-world/require-multifactor-authentication', note: 'Account security reference.' }], faqs: [{ question: `What belongs in the first ${lane} queue?`, answer: 'Recurring work with a source, finish point, examples, and a named reviewer.' }, { question: 'When should the role stop?', answer: 'When facts conflict, sensitive judgment is required, or the request exceeds approved examples.' }, { question: 'When can the scope expand?', answer: 'After sample review shows the queue is accurate and easy for the owner to inspect.' }], tags: [lane, 'Role brief', 'Philippines staffing'], related: [{ href: '/blog/Filipino-outsource-staffing-planning', label: 'Staffing plan' }, { href: '/blog/Filipino-outsource-staffing-onboarding-checklist', label: 'Onboarding checklist' }] }];
+  return [slug, { sourceDate: routeSourceDate, datePublished: routeSourceDate, dateModified: routeSourceDate, publishedLabel: 'August 19, 2026', routeSourceSegment, sourceSegment: routeSourceSegment, routeSourceWordCount, lead: excerpt, shortAnswer: `${title.replace(/^How to /, '')} works when ${focus}.`, takeaways: [`Start with one reviewable ${lane} queue.`, 'Keep source facts separate from interpretation.', 'Show complete, incomplete, and stop-rule examples.', 'Use named access and a dated handoff.', 'Expand only after sample review is reproducible.'], sections, metrics: { title: 'A bounded launch scorecard', intro: `Track review signals for ${lane}; do not treat them as promises.`, items: [{ value: '1', label: 'first queue', note: 'A defined recurring lane.' }, { value: '3', label: 'examples', note: 'Normal, incomplete, exception.' }, { value: '1', label: 'review owner', note: 'A named decision-maker.' }, { value: '0', label: 'guessed outcomes', note: 'Stop cases have a route.' }] }, comparisonTitle: 'A vague brief versus a reviewable brief', comparison: [{ question: 'What enters?', weak: 'Anything related to the function.', useful: `Items matching the ${lane} intake rule.` }, { question: 'What happens when evidence conflicts?', weak: 'Fix it while working.', useful: 'Preserve sources and escalate.' }, { question: 'Who decides exceptions?', weak: 'The queue worker.', useful: 'The named business owner.' }], sources: [{ name: 'CISA: Require multifactor authentication', url: 'https://www.cisa.gov/secure-our-world/require-multifactor-authentication', note: 'Account security reference.' }], faqs: [{ question: `What belongs in the first ${lane} queue?`, answer: 'Recurring work with a source, finish point, examples, and a named reviewer.' }, { question: 'When should the role stop?', answer: 'When facts conflict, sensitive judgment is required, or the request exceeds approved examples.' }, { question: 'When can the scope expand?', answer: 'After sample review shows the queue is accurate and easy for the owner to inspect.' }], tags: [lane, 'Role brief', 'Philippines staffing'], related: [{ href: '/blog/Filipino-outsource-staffing-planning', label: 'Staffing plan' }, { href: '/blog/Filipino-outsource-staffing-onboarding-checklist', label: 'Onboarding checklist' }] }];
 }
 
 export const august19Details = Object.fromEntries(august19Topics.map(makeDetail));
