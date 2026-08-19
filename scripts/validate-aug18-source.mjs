@@ -1,17 +1,28 @@
-import { repairedAugust18Details } from '../app/august18-repaired.ts';
+import { august18ReplacementDetails as repairedAugust18Details } from '../app/august18-replacement.ts';
 
 const expected = [
-  'filipino-returns-processing-coordinator', 'filipino-lead-enrichment-research-assistant',
-  'filipino-appointment-intake-coordinator', 'filipino-subscription-billing-records-assistant',
-  'filipino-claims-documentation-coordinator', 'filipino-content-calendar-editor',
-  'filipino-logistics-exception-coordinator', 'filipino-employee-onboarding-records-coordinator',
-  'filipino-customer-feedback-tagging-assistant', 'filipino-website-content-inventory-coordinator',
-  'filipino-order-entry-quality-assistant', 'filipino-legal-document-indexing-coordinator',
-  'filipino-podcast-production-coordinator', 'filipino-salesforce-activity-hygiene-assistant',
-  'filipino-property-maintenance-coordinator', 'filipino-training-materials-coordinator',
-  'filipino-marketplace-seller-support-coordinator', 'filipino-expense-receipt-review-assistant',
-  'filipino-customer-implementation-coordinator', 'filipino-archive-migration-coordinator',
-  'filipino-donation-processing-coordinator', 'filipino-product-review-moderation-assistant',
+  'filipino-workflow-audit-assistant',
+  'filipino-inbox-triage-coordinator',
+  'filipino-data-retention-coordinator',
+  'filipino-customer-onboarding-records-assistant',
+  'filipino-knowledge-transfer-coordinator',
+  'filipino-vendor-invoice-matching-assistant',
+  'filipino-quality-sample-review-coordinator',
+  'filipino-calendar-request-coordinator',
+  'filipino-customer-records-cleanup-assistant',
+  'filipino-operations-dashboard-coordinator',
+  'filipino-employee-file-indexing-assistant',
+  'filipino-service-request-routing-coordinator',
+  'filipino-customer-renewal-records-assistant',
+  'filipino-research-source-log-coordinator',
+  'filipino-returns-evidence-assistant',
+  'filipino-content-brief-coordinator',
+  'filipino-project-action-log-assistant',
+  'filipino-contact-preference-coordinator',
+  'filipino-document-review-queue-assistant',
+  'filipino-product-catalog-check-coordinator',
+  'filipino-support-escalation-records-assistant',
+  'filipino-appointment-confirmation-coordinator'
 ];
 
 if (Object.keys(repairedAugust18Details).length !== 22) throw new Error('August 18 route count is not 22');
