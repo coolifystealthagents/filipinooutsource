@@ -6,15 +6,15 @@
   "repository": "coolifystealthagents/filipinooutsource",
   "branch": "main",
   "entries": [
-    { "slug": "philippines-client-intake-evidence-research-2026", "route": "/research/philippines-client-intake-evidence-research-2026", "sourcePaths": ["app/fleet-data.ts"] },
-    { "slug": "philippines-knowledge-base-article-accuracy-research-2026", "route": "/research/philippines-knowledge-base-article-accuracy-research-2026", "sourcePaths": ["app/fleet-data.ts"] },
-    { "slug": "philippines-payment-reconciliation-exception-research-2026", "route": "/research/philippines-payment-reconciliation-exception-research-2026", "sourcePaths": ["app/fleet-data.ts"] },
-    { "slug": "philippines-candidate-reference-records-research-2026", "route": "/research/philippines-candidate-reference-records-research-2026", "sourcePaths": ["app/fleet-data.ts"] },
-    { "slug": "philippines-customer-identity-verification-notes-research-2026", "route": "/research/philippines-customer-identity-verification-notes-research-2026", "sourcePaths": ["app/fleet-data.ts"] },
-    { "slug": "philippines-ecommerce-shipment-traceability-research-2026", "route": "/research/philippines-ecommerce-shipment-traceability-research-2026", "sourcePaths": ["app/fleet-data.ts"] },
-    { "slug": "philippines-property-inspection-records-research-2026", "route": "/research/philippines-property-inspection-records-research-2026", "sourcePaths": ["app/fleet-data.ts"] },
-    { "slug": "philippines-content-source-attribution-research-2026", "route": "/research/philippines-content-source-attribution-research-2026", "sourcePaths": ["app/fleet-data.ts"] },
-    { "slug": "philippines-service-level-exception-records-research-2026", "route": "/research/philippines-service-level-exception-records-research-2026", "sourcePaths": ["app/fleet-data.ts"] },
-    { "slug": "philippines-data-export-request-coordination-research-2026", "route": "/research/philippines-data-export-request-coordination-research-2026", "sourcePaths": ["app/fleet-data.ts"] }
+    { "slug": "philippines-client-intake-evidence-research-2026", "route": "/research/philippines-client-intake-evidence-research-2026", "sourcePaths": ["app/research-august18/client-intake-evidence.ts", "app/fleet-data.ts"] },
+    { "slug": "philippines-knowledge-base-article-accuracy-research-2026", "route": "/research/philippines-knowledge-base-article-accuracy-research-2026", "sourcePaths": ["app/research-august18/knowledge-base-accuracy.ts", "app/fleet-data.ts"] },
+    { "slug": "philippines-payment-reconciliation-exception-research-2026", "route": "/research/philippines-payment-reconciliation-exception-research-2026", "sourcePaths": ["app/research-august18/payment-reconciliation.ts", "app/fleet-data.ts"] },
+    { "slug": "philippines-candidate-reference-records-research-2026", "route": "/research/philippines-candidate-reference-records-research-2026", "sourcePaths": ["app/research-august18/candidate-reference-records.ts", "app/fleet-data.ts"] },
+    { "slug": "philippines-customer-identity-verification-notes-research-2026", "route": "/research/philippines-customer-identity-verification-notes-research-2026", "sourcePaths": ["app/research-august18/customer-identity-notes.ts", "app/fleet-data.ts"] },
+    { "slug": "philippines-ecommerce-shipment-traceability-research-2026", "route": "/research/philippines-ecommerce-shipment-traceability-research-2026", "sourcePaths": ["app/research-august18/shipment-traceability.ts", "app/fleet-data.ts"] },
+    { "slug": "philippines-property-inspection-records-research-2026", "route": "/research/philippines-property-inspection-records-research-2026", "sourcePaths": ["app/research-august18/property-inspection-records.ts", "app/fleet-data.ts"] },
+    { "slug": "philippines-content-source-attribution-research-2026", "route": "/research/philippines-content-source-attribution-research-2026", "sourcePaths": ["app/research-august18/content-source-attribution.ts", "app/fleet-data.ts"] },
+    { "slug": "philippines-service-level-exception-records-research-2026", "route": "/research/philippines-service-level-exception-records-research-2026", "sourcePaths": ["app/research-august18/service-level-exceptions.ts", "app/fleet-data.ts"] },
+    { "slug": "philippines-data-export-request-coordination-research-2026", "route": "/research/philippines-data-export-request-coordination-research-2026", "sourcePaths": ["app/research-august18/data-export-coordination.ts", "app/fleet-data.ts"] }
   ]
 }
