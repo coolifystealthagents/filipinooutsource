@@ -1,3 +1,5 @@
+import { august19Topics, august19Details } from './blog-august19';
+
 const august17Topics = [
   ['filipino-customer-support-quality-coordinator', 'How to build Filipino customer support quality coordination', 'Create a review lane for sampled replies, policy references, correction notes, and coaching handoffs without making the support decision itself.', 'customer support quality coordination', 'sampling replies against approved guidance before coaching changes the queue', 'review samples, not every conversation; preserve the original customer context; route policy ambiguity to the support owner'],
   ['filipino-business-process-mapping-assistant', 'How to scope Filipino business process mapping support', 'Turn interviews and existing work instructions into a checked process map while leaving redesign choices with the process owner.', 'business process mapping', 'separating observed steps from proposed improvements so a map does not become an unapproved policy', 'record who performed each step, capture exceptions, show system handoffs, and mark assumptions for owner review'],
@@ -347,7 +349,7 @@ const august18Details = Object.fromEntries(august18Topics.map(([slug, title, exc
   return [slug, { sourceDate: '2026-08-18', ...august18SourceDateBindings[slug], routeSourceSegment, sourceSegment: routeSourceSegment, image: { src: '/blog-daily-2026-08-10.svg', alt: `Planning board for ${lane}`, caption: `A bounded ${lane} workflow keeps evidence and ownership visible.` }, lead: excerpt, shortAnswer: `${title.replace(/^How to /, '')} works when ${angle}.`, takeaways: [`Start with one reviewable ${lane} queue.`, 'Show complete, incomplete, and stop-rule examples.', 'Keep owner decisions outside the support role.', 'Use named access and a written handoff.', 'Expand only after sample review is reproducible.'], sections, metrics: { title: 'A reviewable launch scorecard', intro: `Track the operating signals that help the owner improve ${lane}.`, items: [{ value: '1', label: 'first queue', note: 'A defined recurring lane.' }, { value: '3', label: 'examples', note: 'Complete, incomplete, and exception.' }, { value: '1', label: 'review owner', note: 'A named decision-maker.' }, { value: '0', label: 'guessed outcomes', note: 'Stop cases have a route.' }], note: 'These fields support review; they are not a service guarantee.' }, comparisonTitle: 'An open-ended brief versus a bounded brief', comparison: [{ question: 'What enters?', weak: 'Anything related to the function.', useful: `Items matching the ${lane} intake rule.` }, { question: 'What happens when evidence conflicts?', weak: 'Fix it while working.', useful: 'Preserve sources and escalate the question.' }, { question: 'Who decides the exception?', weak: 'The person in the queue.', useful: 'The named business owner.' }], sources: [{ name: source, url: 'https://www.cisa.gov/secure-our-world/require-multifactor-authentication', note: 'Reference used for bounded operating and access guidance.' }], faqs: [{ question: `What should the first ${lane} batch contain?`, answer: 'Recurring items with a source, finish point, example, and named reviewer.' }, { question: 'When should the role stop?', answer: 'When facts conflict, a sensitive decision is required, or the request exceeds the approved examples.' }, { question: 'When can the scope expand?', answer: 'After sample review shows the queue is accurate, documented, and easy for the owner to inspect.' }], tags: [lane, 'Role brief', 'Philippines staffing'], related: [{ href: '/blog/Filipino-outsource-staffing-planning', label: 'Staffing plan' }, { href: '/blog/Filipino-outsource-staffing-onboarding-checklist', label: 'Onboarding checklist' }] }];
 }));
 
-const allTopics = [...topics, ...august18Topics];
+const allTopics = [...topics, ...august18Topics, ...august19Topics];
 export const dailyBlogPosts = allTopics.map(([slug, title, excerpt]) => ({ slug, title, excerpt, minutes: 9 }));
 
 // Each accepted August 17 record owns its date binding. Keep these bindings
@@ -609,11 +611,12 @@ export const aug10PublicSourceDates: Record<string, string> = {
 };
 
 export const august18BlogDetails = august18Details;
+export const august19BlogDetails = august19Details;
 
 export const dailyBlogDetails = Object.fromEntries(allTopics.map(([slug, title, excerpt, lane, publicationDate, angle], index) => {
   const firstLink = index % 2 === 0 ? '/blog/Filipino-outsource-staffing-planning' : '/blog/Filipino-outsource-staffing-onboarding-checklist';
   const secondLink = index % 2 === 0 ? '/services/data-processing-support' : '/services/customer-support-operations';
-  return august18BlogDetails[slug] ? [slug, august18BlogDetails[slug]] : august17BlogDetails[slug] ? [slug, august17BlogDetails[slug]] : [slug, {
+  return august19BlogDetails[slug] ? [slug, august19BlogDetails[slug]] : august18BlogDetails[slug] ? [slug, august18BlogDetails[slug]] : august17BlogDetails[slug] ? [slug, august17BlogDetails[slug]] : [slug, {
     datePublished: publicationDate || aug10PublicSourceDates[slug], dateModified: publicationDate || aug10PublicSourceDates[slug],
     image: { src: '/blog-daily-2026-08-10.svg', alt: `Planning board for ${lane}`, caption: `A clear ${lane} brief keeps tasks, limits, and review visible.` },
     shortAnswer: `${title.replace(/^How to |^A practical |^A controlled /, '')} works best when ${angle || `the first queue for ${lane} is narrow, examples are current, access is limited, and a named manager reviews the launch`}.`,
