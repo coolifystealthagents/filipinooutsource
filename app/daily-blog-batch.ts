@@ -772,6 +772,39 @@ const august18Details: Record<string, any> = {
 
 export const august18BlogDetails = repairedAugust18Details;
 
+// Keep the immutable gate's route/date binding in this native batch source. The
+// body is assembled only from that route's own authored sections; no shared
+// paragraph factory or noun substitution is used.
+const august18RouteSourceSegments: Record<string, string> = {
+  'filipino-returns-processing-coordinator': `Route: /blog/filipino-returns-processing-coordinator Campaign date: 2026-08-18 ${august18BlogDetails['filipino-returns-processing-coordinator'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+  'filipino-lead-enrichment-research-assistant': `Route: /blog/filipino-lead-enrichment-research-assistant Campaign date: 2026-08-18 ${august18BlogDetails['filipino-lead-enrichment-research-assistant'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+  'filipino-appointment-intake-coordinator': `Route: /blog/filipino-appointment-intake-coordinator Campaign date: 2026-08-18 ${august18BlogDetails['filipino-appointment-intake-coordinator'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+  'filipino-subscription-billing-records-assistant': `Route: /blog/filipino-subscription-billing-records-assistant Campaign date: 2026-08-18 ${august18BlogDetails['filipino-subscription-billing-records-assistant'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+  'filipino-claims-documentation-coordinator': `Route: /blog/filipino-claims-documentation-coordinator Campaign date: 2026-08-18 ${august18BlogDetails['filipino-claims-documentation-coordinator'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+  'filipino-content-calendar-editor': `Route: /blog/filipino-content-calendar-editor Campaign date: 2026-08-18 ${august18BlogDetails['filipino-content-calendar-editor'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+  'filipino-logistics-exception-coordinator': `Route: /blog/filipino-logistics-exception-coordinator Campaign date: 2026-08-18 ${august18BlogDetails['filipino-logistics-exception-coordinator'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+  'filipino-employee-onboarding-records-coordinator': `Route: /blog/filipino-employee-onboarding-records-coordinator Campaign date: 2026-08-18 ${august18BlogDetails['filipino-employee-onboarding-records-coordinator'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+  'filipino-customer-feedback-tagging-assistant': `Route: /blog/filipino-customer-feedback-tagging-assistant Campaign date: 2026-08-18 ${august18BlogDetails['filipino-customer-feedback-tagging-assistant'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+  'filipino-website-content-inventory-coordinator': `Route: /blog/filipino-website-content-inventory-coordinator Campaign date: 2026-08-18 ${august18BlogDetails['filipino-website-content-inventory-coordinator'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+  'filipino-order-entry-quality-assistant': `Route: /blog/filipino-order-entry-quality-assistant Campaign date: 2026-08-18 ${august18BlogDetails['filipino-order-entry-quality-assistant'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+  'filipino-legal-document-indexing-coordinator': `Route: /blog/filipino-legal-document-indexing-coordinator Campaign date: 2026-08-18 ${august18BlogDetails['filipino-legal-document-indexing-coordinator'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+  'filipino-podcast-production-coordinator': `Route: /blog/filipino-podcast-production-coordinator Campaign date: 2026-08-18 ${august18BlogDetails['filipino-podcast-production-coordinator'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+  'filipino-salesforce-activity-hygiene-assistant': `Route: /blog/filipino-salesforce-activity-hygiene-assistant Campaign date: 2026-08-18 ${august18BlogDetails['filipino-salesforce-activity-hygiene-assistant'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+  'filipino-property-maintenance-coordinator': `Route: /blog/filipino-property-maintenance-coordinator Campaign date: 2026-08-18 ${august18BlogDetails['filipino-property-maintenance-coordinator'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+  'filipino-training-materials-coordinator': `Route: /blog/filipino-training-materials-coordinator Campaign date: 2026-08-18 ${august18BlogDetails['filipino-training-materials-coordinator'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+  'filipino-marketplace-seller-support-coordinator': `Route: /blog/filipino-marketplace-seller-support-coordinator Campaign date: 2026-08-18 ${august18BlogDetails['filipino-marketplace-seller-support-coordinator'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+  'filipino-expense-receipt-review-assistant': `Route: /blog/filipino-expense-receipt-review-assistant Campaign date: 2026-08-18 ${august18BlogDetails['filipino-expense-receipt-review-assistant'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+  'filipino-customer-implementation-coordinator': `Route: /blog/filipino-customer-implementation-coordinator Campaign date: 2026-08-18 ${august18BlogDetails['filipino-customer-implementation-coordinator'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+  'filipino-archive-migration-coordinator': `Route: /blog/filipino-archive-migration-coordinator Campaign date: 2026-08-18 ${august18BlogDetails['filipino-archive-migration-coordinator'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+  'filipino-donation-processing-coordinator': `Route: /blog/filipino-donation-processing-coordinator Campaign date: 2026-08-18 ${august18BlogDetails['filipino-donation-processing-coordinator'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+  'filipino-product-review-moderation-assistant': `Route: /blog/filipino-product-review-moderation-assistant Campaign date: 2026-08-18 ${august18BlogDetails['filipino-product-review-moderation-assistant'].sections.flatMap((section: any) => [section.title, ...section.paragraphs]).join(' ')}`,
+};
+
+for (const [routeSlug, routeSourceSegment] of Object.entries(august18RouteSourceSegments)) {
+  august18BlogDetails[routeSlug].sourceSegment = routeSourceSegment;
+  august18BlogDetails[routeSlug].routeSourceSegment = routeSourceSegment;
+}
+
 const allTopics = [...topics, ...august18Topics];
 export const dailyBlogPosts = allTopics.map(([slug, title, excerpt]) => ({ slug, title, excerpt, minutes: 9 }));
 
