@@ -150,7 +150,7 @@ const topics = [
   ['filipino-digital-asset-coordinator', 'How to plan Filipino digital asset coordination', 'Organize asset requests, naming rules, approvals, and delivery records for a repeatable creative queue.', 'digital asset coordination'],
 ] as const;
 
-const august18Topics = [
+const august18TopicsAll = [
   ['filipino-returns-processing-coordinator', 'How to plan Filipino returns processing coordination', 'Build a returns queue that keeps item evidence, customer updates, carrier events, and approval decisions distinct.', 'returns processing coordination', 'matching every returned item to an order and an owner before any disposition is promised'],
   ['filipino-lead-enrichment-research-assistant', 'How to scope Filipino lead enrichment research', 'Organize approved company and contact research with source dates, confidence notes, and strict outreach boundaries.', 'lead enrichment research', 'making a record more useful without turning an uncertain source into a sales claim'],
   ['filipino-appointment-intake-coordinator', 'How to plan Filipino appointment intake support', 'Coordinate request details, availability, reminders, and handoffs while leaving eligibility and service decisions with the owner.', 'appointment intake support', 'separating a complete scheduling request from a decision about who should receive service'],
@@ -197,6 +197,10 @@ const august18Topics = [
   ['filipino-recruiting-candidate-file-assistant', 'How to scope Filipino recruiting candidate-file support', 'Organize approved candidate records, missing documents, interview notes, and recruiter questions.', 'recruiting candidate-file support', 'maintaining record completeness without ranking or selecting candidates'],
   ['filipino-customer-portal-request-coordinator', 'How to plan Filipino customer portal request coordination', 'Track portal changes, access questions, approved content, and owner review in one queue.', 'customer portal request coordination', 'keeping a request traceable without granting access or changing customer terms'],
 ] as const;
+
+// The first 22 records are the pre-run August 18 corpus. Only the 22 records
+// appended by this campaign are eligible for the new-article count.
+const august18Topics = august18TopicsAll.slice(22);
 
 const august18SourceDateBindings: Record<string, { datePublished: string; dateModified: string }> = {
   'filipino-shared-inbox-ownership-coordinator': { datePublished: '2026-08-18', dateModified: '2026-08-18' },
