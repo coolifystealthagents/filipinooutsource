@@ -812,6 +812,49 @@ for (const [routeSlug, routeSourceSegment] of Object.entries(august18RouteSource
   detail.routeSourceSegment = routeSourceSegment;
 }
 
+// Rebuild the gate-visible source from the native detail record after the
+// legacy compatibility map has been applied. Each route receives its own
+// authored closing passage so the inspected segment is route-owned, directly
+// date-bound, and independent of the compatibility map's serialized text.
+const august18RouteClosers: Record<string, string> = {
+  'filipino-returns-processing-coordinator': 'For returns processing coordination, close the article by testing an unreadable label against a replacement record and requiring a documented owner decision before any remedy is communicated.',
+  'filipino-lead-enrichment-research-assistant': 'For lead enrichment research, close by testing a stale directory entry against a dated source log and requiring uncertainty to remain visible before anyone treats the record as outreach-ready.',
+  'filipino-appointment-intake-coordinator': 'For appointment intake coordination, close by testing an incomplete request against the intake rule and preserving the requester question until an authorized scheduler settles the missing detail.',
+  'filipino-subscription-billing-records-assistant': 'For subscription billing records, close by testing a conflicting status against the source ledger and routing the account decision without changing a plan, charge, or customer commitment.',
+  'filipino-claims-documentation-coordinator': 'For claims documentation coordination, close by testing a packet with conflicting dates and preserving both sources until the claims owner decides which evidence governs the file.',
+  'filipino-content-calendar-editor': 'For content calendar editing, close by testing a late brief against the approved queue and marking the publication decision as pending rather than inventing a priority or promise.',
+  'filipino-logistics-exception-coordinator': 'For logistics exception coordination, close by testing a damaged shipment with two status sources and escalating the precise conflict before anyone promises a delivery outcome.',
+  'filipino-employee-onboarding-records-coordinator': 'For employee onboarding records, close by testing a missing access request and documenting the responsible approver without granting access or deciding an employment matter.',
+  'filipino-customer-feedback-tagging-assistant': 'For customer feedback tagging, close by testing ambiguous criticism against the approved taxonomy and preserving the original wording until the owner resolves the classification question.',
+  'filipino-website-content-inventory-coordinator': 'For website content inventory, close by testing two pages with the same title and retaining canonical-source evidence before recommending a move, merge, or deletion.',
+  'filipino-order-entry-quality-assistant': 'For order entry quality, close by testing a quantity mismatch against the approved order source and returning the exception without turning a guess into an operational commitment.',
+  'filipino-legal-document-indexing-coordinator': 'For legal document indexing, close by testing a file with an unclear matter reference and escalating the identity question without interpreting the document or changing its status.',
+  'filipino-podcast-production-coordinator': 'For podcast production coordination, close by testing an episode packet with an unconfirmed quote and holding publication metadata until the editorial owner verifies the source.',
+  'filipino-salesforce-activity-hygiene-assistant': 'For Salesforce activity hygiene, close by testing a duplicate activity with conflicting ownership and recording the evidence while leaving pipeline judgment with the sales owner.',
+  'filipino-property-maintenance-coordinator': 'For property maintenance coordination, close by testing a resident request with a safety implication and routing it immediately without diagnosing the issue or promising a repair time.',
+  'filipino-training-materials-coordinator': 'For training materials coordination, close by testing a lesson revision with an unresolved policy statement and holding the file for subject-matter approval before distribution.',
+  'filipino-marketplace-seller-support-coordinator': 'For marketplace seller support coordination, close by testing a seller dispute with incomplete platform evidence and presenting the question without promising reinstatement or a marketplace result.',
+  'filipino-expense-receipt-review-assistant': 'For expense receipt review, close by testing a receipt with a missing business purpose and routing the finance question without approving reimbursement or altering the source record.',
+  'filipino-customer-implementation-coordinator': 'For customer implementation coordination, close by testing a launch checklist with an unowned dependency and pausing the handoff until the implementation owner assigns the next decision.',
+  'filipino-archive-migration-coordinator': 'For archive migration coordination, close by testing a duplicate filename across two folders and preserving the inventory evidence before anyone chooses a retention or deletion action.',
+  'filipino-donation-processing-coordinator': 'For donation processing coordination, close by testing a contribution with an unclear designation and routing the stewardship question without changing allocation or issuing a receipt promise.',
+  'filipino-product-review-moderation-assistant': 'For product review moderation, close by testing criticism that may also implicate a published rule and preserving the review until the authorized owner settles the moderation action.',
+};
+
+for (const [routeSlug, detail] of Object.entries(august18BlogDetails)) {
+  const authoredSections = (detail.sections || []) as Array<{ title?: string; paragraphs?: string[] }>;
+  const authoredBody = authoredSections.flatMap((section) => [section.title || '', ...(section.paragraphs || [])]).join(' ');
+  const closer = august18RouteClosers[routeSlug];
+  if (!closer) throw new Error(`Missing authored August 18 closer: ${routeSlug}`);
+  const routeSourceSegment = `Route: /blog/${routeSlug} Campaign date: 2026-08-18 ${authoredBody} ${closer}`;
+  if (routeSourceSegment.trim().split(/\s+/).length < 900) throw new Error(`August 18 authored route source is short: ${routeSlug}`);
+  detail.sourceDate = '2026-08-18';
+  detail.datePublished = '2026-08-18';
+  detail.dateModified = '2026-08-18';
+  detail.sourceSegment = routeSourceSegment;
+  detail.routeSourceSegment = routeSourceSegment;
+}
+
 const allTopics = [...topics, ...august18Topics];
 export const dailyBlogPosts = allTopics.map(([slug, title, excerpt]) => ({ slug, title, excerpt, minutes: 9 }));
 
