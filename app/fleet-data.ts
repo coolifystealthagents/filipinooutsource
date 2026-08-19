@@ -202,6 +202,17 @@ function makeAugust13ResearchPost(config: August13ResearchConfig): ResearchPost 
 
 function makeAugust17ResearchPost(config: August13ResearchConfig): ResearchPost {
   const post = makeAugust13ResearchPost(config);
+  return {
+    ...post,
+    excerpt: `Research question: ${config.decision} Evidence-led analysis of ${config.focus} for businesses planning Philippines-based support.`,
+    sections: post.sections.map((section, index) => index === 0
+      ? { ...section, paragraphs: [`Research question: ${config.decision}`, ...section.paragraphs.map((paragraph) => paragraph.replace(/[“”]/g, '"'))] }
+      : section)
+  };
+}
+
+function makeAugust18ResearchPost(config: August13ResearchConfig): ResearchPost {
+  const post = makeAugust13ResearchPost(config);
   const repairSections = [
     { heading: `How ${config.focus} Fails in Real Records`, paragraphs: [
       `The practical test for ${config.focus} is not whether a form contains many fields. It is whether another person can reconstruct what happened, identify the source for each important statement, and see what still requires a decision. In a Philippines-based support arrangement, that test matters because a remote coordinator often works from several client systems, forwarded messages, attachments, and status views. A record that looks complete in one system can still hide a missing authorization, an old instruction, or a conflicting timestamp.`,
@@ -378,7 +389,7 @@ export const fleetServices: readonly FleetService[] = [
 
 export const researchPosts: readonly ResearchPost[] = [
 
-  ...dailyResearchBatchAugust18.map(makeAugust17ResearchPost),
+  ...dailyResearchBatchAugust18.map(makeAugust18ResearchPost),
 
   ...dailyResearchBatchAugust17.map(makeAugust17ResearchPost),
 
