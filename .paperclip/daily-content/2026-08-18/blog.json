@@ -6,27 +6,115 @@
   "repository": "coolifystealthagents/filipinooutsource",
   "branch": "main",
   "entries": [
-    { "slug": "filipino-workflow-audit-assistant", "route": "/blog/filipino-workflow-audit-assistant", "sourcePath": "app/daily-blog-batch.ts" },
-    { "slug": "filipino-inbox-triage-coordinator", "route": "/blog/filipino-inbox-triage-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
-    { "slug": "filipino-data-retention-coordinator", "route": "/blog/filipino-data-retention-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
-    { "slug": "filipino-customer-onboarding-records-assistant", "route": "/blog/filipino-customer-onboarding-records-assistant", "sourcePath": "app/daily-blog-batch.ts" },
-    { "slug": "filipino-knowledge-transfer-coordinator", "route": "/blog/filipino-knowledge-transfer-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
-    { "slug": "filipino-vendor-invoice-matching-assistant", "route": "/blog/filipino-vendor-invoice-matching-assistant", "sourcePath": "app/daily-blog-batch.ts" },
-    { "slug": "filipino-quality-sample-review-coordinator", "route": "/blog/filipino-quality-sample-review-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
-    { "slug": "filipino-calendar-request-coordinator", "route": "/blog/filipino-calendar-request-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
-    { "slug": "filipino-customer-records-cleanup-assistant", "route": "/blog/filipino-customer-records-cleanup-assistant", "sourcePath": "app/daily-blog-batch.ts" },
-    { "slug": "filipino-operations-dashboard-coordinator", "route": "/blog/filipino-operations-dashboard-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
-    { "slug": "filipino-employee-file-indexing-assistant", "route": "/blog/filipino-employee-file-indexing-assistant", "sourcePath": "app/daily-blog-batch.ts" },
-    { "slug": "filipino-service-request-routing-coordinator", "route": "/blog/filipino-service-request-routing-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
-    { "slug": "filipino-customer-renewal-records-assistant", "route": "/blog/filipino-customer-renewal-records-assistant", "sourcePath": "app/daily-blog-batch.ts" },
-    { "slug": "filipino-research-source-log-coordinator", "route": "/blog/filipino-research-source-log-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
-    { "slug": "filipino-returns-evidence-assistant", "route": "/blog/filipino-returns-evidence-assistant", "sourcePath": "app/daily-blog-batch.ts" },
-    { "slug": "filipino-content-brief-coordinator", "route": "/blog/filipino-content-brief-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
-    { "slug": "filipino-project-action-log-assistant", "route": "/blog/filipino-project-action-log-assistant", "sourcePath": "app/daily-blog-batch.ts" },
-    { "slug": "filipino-contact-preference-coordinator", "route": "/blog/filipino-contact-preference-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
-    { "slug": "filipino-document-review-queue-assistant", "route": "/blog/filipino-document-review-queue-assistant", "sourcePath": "app/daily-blog-batch.ts" },
-    { "slug": "filipino-product-catalog-check-coordinator", "route": "/blog/filipino-product-catalog-check-coordinator", "sourcePath": "app/daily-blog-batch.ts" },
-    { "slug": "filipino-support-escalation-records-assistant", "route": "/blog/filipino-support-escalation-records-assistant", "sourcePath": "app/daily-blog-batch.ts" },
-    { "slug": "filipino-appointment-confirmation-coordinator", "route": "/blog/filipino-appointment-confirmation-coordinator", "sourcePath": "app/daily-blog-batch.ts" }
+    {
+      "slug": "filipino-shared-inbox-ownership-coordinator",
+      "route": "/blog/filipino-shared-inbox-ownership-coordinator",
+      "sourcePath": "app/daily-blog-batch.ts"
+    },
+    {
+      "slug": "filipino-client-file-naming-assistant",
+      "route": "/blog/filipino-client-file-naming-assistant",
+      "sourcePath": "app/daily-blog-batch.ts"
+    },
+    {
+      "slug": "filipino-service-brief-intake-coordinator",
+      "route": "/blog/filipino-service-brief-intake-coordinator",
+      "sourcePath": "app/daily-blog-batch.ts"
+    },
+    {
+      "slug": "filipino-customer-call-note-assistant",
+      "route": "/blog/filipino-customer-call-note-assistant",
+      "sourcePath": "app/daily-blog-batch.ts"
+    },
+    {
+      "slug": "filipino-operations-sop-library-coordinator",
+      "route": "/blog/filipino-operations-sop-library-coordinator",
+      "sourcePath": "app/daily-blog-batch.ts"
+    },
+    {
+      "slug": "filipino-invoice-supporting-document-assistant",
+      "route": "/blog/filipino-invoice-supporting-document-assistant",
+      "sourcePath": "app/daily-blog-batch.ts"
+    },
+    {
+      "slug": "filipino-customer-address-change-coordinator",
+      "route": "/blog/filipino-customer-address-change-coordinator",
+      "sourcePath": "app/daily-blog-batch.ts"
+    },
+    {
+      "slug": "filipino-project-dependency-log-assistant",
+      "route": "/blog/filipino-project-dependency-log-assistant",
+      "sourcePath": "app/daily-blog-batch.ts"
+    },
+    {
+      "slug": "filipino-support-macro-review-coordinator",
+      "route": "/blog/filipino-support-macro-review-coordinator",
+      "sourcePath": "app/daily-blog-batch.ts"
+    },
+    {
+      "slug": "filipino-customer-document-check-assistant",
+      "route": "/blog/filipino-customer-document-check-assistant",
+      "sourcePath": "app/daily-blog-batch.ts"
+    },
+    {
+      "slug": "filipino-team-handoff-notes-coordinator",
+      "route": "/blog/filipino-team-handoff-notes-coordinator",
+      "sourcePath": "app/daily-blog-batch.ts"
+    },
+    {
+      "slug": "filipino-product-return-status-assistant",
+      "route": "/blog/filipino-product-return-status-assistant",
+      "sourcePath": "app/daily-blog-batch.ts"
+    },
+    {
+      "slug": "filipino-content-fact-check-queue-coordinator",
+      "route": "/blog/filipino-content-fact-check-queue-coordinator",
+      "sourcePath": "app/daily-blog-batch.ts"
+    },
+    {
+      "slug": "filipino-client-request-archive-assistant",
+      "route": "/blog/filipino-client-request-archive-assistant",
+      "sourcePath": "app/daily-blog-batch.ts"
+    },
+    {
+      "slug": "filipino-bookkeeping-source-file-coordinator",
+      "route": "/blog/filipino-bookkeeping-source-file-coordinator",
+      "sourcePath": "app/daily-blog-batch.ts"
+    },
+    {
+      "slug": "filipino-customer-issue-timeline-coordinator",
+      "route": "/blog/filipino-customer-issue-timeline-coordinator",
+      "sourcePath": "app/daily-blog-batch.ts"
+    },
+    {
+      "slug": "filipino-vendor-document-expiry-assistant",
+      "route": "/blog/filipino-vendor-document-expiry-assistant",
+      "sourcePath": "app/daily-blog-batch.ts"
+    },
+    {
+      "slug": "filipino-website-change-request-coordinator",
+      "route": "/blog/filipino-website-change-request-coordinator",
+      "sourcePath": "app/daily-blog-batch.ts"
+    },
+    {
+      "slug": "filipino-customer-follow-up-queue-assistant",
+      "route": "/blog/filipino-customer-follow-up-queue-assistant",
+      "sourcePath": "app/daily-blog-batch.ts"
+    },
+    {
+      "slug": "filipino-operations-exception-log-coordinator",
+      "route": "/blog/filipino-operations-exception-log-coordinator",
+      "sourcePath": "app/daily-blog-batch.ts"
+    },
+    {
+      "slug": "filipino-recruiting-candidate-file-assistant",
+      "route": "/blog/filipino-recruiting-candidate-file-assistant",
+      "sourcePath": "app/daily-blog-batch.ts"
+    },
+    {
+      "slug": "filipino-customer-portal-request-coordinator",
+      "route": "/blog/filipino-customer-portal-request-coordinator",
+      "sourcePath": "app/daily-blog-batch.ts"
+    }
   ]
 }
