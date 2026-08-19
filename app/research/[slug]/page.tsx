@@ -45,7 +45,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
               <div className="research-meta" aria-label="Article metadata">
                 <span>{post.datePublished ? <time dateTime={post.datePublished}>{formatReaderDate(post.datePublished)}</time> : post.published}</span>
                 <span>{post.readTime}</span>
-                <span>{post.sources?.length || 0} source</span>
+                <span>{post.sources?.length || 0} {(post.sources?.length || 0) === 1 ? 'source' : 'sources'}</span>
               </div>
             </div>
             <aside className="research-hero-card" aria-label="Research summary">
