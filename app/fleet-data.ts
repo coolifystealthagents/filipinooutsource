@@ -30,6 +30,7 @@ import contentSourceAttribution from './research-august18/content-source-attribu
 import serviceLevelExceptions from './research-august18/service-level-exceptions';
 import dataExportCoordination from './research-august18/data-export-coordination';
 import { august18ResearchPosts } from './research-august18';
+import { august19ResearchPosts } from './research-august19';
 
 const researchSourceSet = [
   { name: 'Philippine Statistics Authority', url: 'https://psa.gov.ph/' },
@@ -393,6 +394,8 @@ export const fleetServices: readonly FleetService[] = [
 ];
 
 export const researchPosts: readonly ResearchPost[] = [
+
+  ...august19ResearchPosts,
 
   ...august18ResearchPosts,
 

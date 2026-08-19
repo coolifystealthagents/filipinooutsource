@@ -1,0 +1,18 @@
+{
+  "family": "research",
+  "targetDate": "2026-08-19",
+  "repository": "coolifystealthagents/filipinooutsource",
+  "branch": "main",
+  "entries": [
+    {"slug":"philippines-vendor-risk-register-research-2026","route":"/research/philippines-vendor-risk-register-research-2026","sourcePaths":["app/research-august19/vendor-risk-register.ts"]},
+    {"slug":"philippines-customer-complaint-taxonomy-research-2026","route":"/research/philippines-customer-complaint-taxonomy-research-2026","sourcePaths":["app/research-august19/customer-complaint-taxonomy.ts"]},
+    {"slug":"philippines-knowledge-article-review-research-2026","route":"/research/philippines-knowledge-article-review-research-2026","sourcePaths":["app/research-august19/knowledge-article-review.ts"]},
+    {"slug":"philippines-cash-application-evidence-research-2026","route":"/research/philippines-cash-application-evidence-research-2026","sourcePaths":["app/research-august19/cash-application-evidence.ts"]},
+    {"slug":"philippines-candidate-interview-coordination-research-2026","route":"/research/philippines-candidate-interview-coordination-research-2026","sourcePaths":["app/research-august19/candidate-interview-coordination.ts"]},
+    {"slug":"philippines-product-catalog-accuracy-research-2026","route":"/research/philippines-product-catalog-accuracy-research-2026","sourcePaths":["app/research-august19/product-catalog-accuracy.ts"]},
+    {"slug":"philippines-meeting-decision-register-research-2026","route":"/research/philippines-meeting-decision-register-research-2026","sourcePaths":["app/research-august19/meeting-decision-register.ts"]},
+    {"slug":"philippines-data-access-request-research-2026","route":"/research/philippines-data-access-request-research-2026","sourcePaths":["app/research-august19/data-access-request-research.ts"]},
+    {"slug":"philippines-shipment-exception-aging-research-2026","route":"/research/philippines-shipment-exception-aging-research-2026","sourcePaths":["app/research-august19/shipment-exception-aging.ts"]},
+    {"slug":"philippines-website-source-review-research-2026","route":"/research/philippines-website-source-review-research-2026","sourcePaths":["app/research-august19/website-source-review.ts"]}
+  ]
+}

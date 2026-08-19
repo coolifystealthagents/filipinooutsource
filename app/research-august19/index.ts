@@ -1,0 +1,12 @@
+import { makePost } from './types';
+import a from './vendor-risk-register';
+import b from './customer-complaint-taxonomy';
+import c from './knowledge-article-review';
+import d from './cash-application-evidence';
+import e from './candidate-interview-coordination';
+import f from './product-catalog-accuracy';
+import g from './meeting-decision-register';
+import h from './data-access-request-research';
+import i from './shipment-exception-aging';
+import j from './website-source-review';
+export const august19ResearchPosts = [a,b,c,d,e,f,g,h,i,j].map(makePost);
