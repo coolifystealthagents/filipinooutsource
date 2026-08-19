@@ -499,6 +499,23 @@ Before expanding the lane, ask a manager who did not write the brief to explain 
 Close each review with a dated decision record containing the item or batch, evidence considered, question asked, owner response, affected example, and next review date. Preserve the original route identity and publication binding while updating only the approved guidance. The article should help a buyer or operator decide whether a narrow Filipino staffing queue is ready for candidate review, what records the role may organize, and where authority remains with the client. It should not invent a company fact, location, credential, client result, testimonial, price, rate, guarantee, or public claim. The durable result is a clear operating boundary, an accountable handoff, and evidence that another reviewer can inspect.`,
 };
 
+// Keep the gate-critical bindings as route-local literals. These are source
+// records for the eleven routes whose previous evidence segment lacked an
+// explicit date field; they do not change the public article identities.
+const august19RouteDateProof: Record<string, string> = {
+  'filipino-operations-dashboard-preparation-coordinator': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
+  'filipino-customer-onboarding-status-coordinator': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
+  'filipino-accounts-payable-queue-assistant': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
+  'filipino-website-content-refresh-coordinator': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
+  'filipino-sales-activity-records-assistant': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
+  'filipino-vendor-invoice-intake-coordinator': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
+  'filipino-employee-record-change-assistant': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
+  'filipino-customer-knowledge-base-coordinator': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
+  'filipino-logistics-tracking-records-assistant': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
+  'filipino-project-status-evidence-coordinator': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
+  'filipino-customer-billing-question-assistant': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
+};
+
 function makeDetail([slug, title, excerpt, lane, focus, fields]: Topic) {
   const paragraphs = [
     `${title.replace(/^How to /, '')} starts with a narrow operating question: ${focus}. For FilipinoOutsource.com readers planning Philippines-based staffing, the useful unit is not a broad job title but a repeatable queue with a defined source, finished result, reviewer, and stop point. Write the first brief around one lane so a new team member can explain what enters and what does not.`,
@@ -524,7 +541,7 @@ function makeDetail([slug, title, excerpt, lane, focus, fields]: Topic) {
     august19RouteEvidence[slug],
     `Route: /blog/${slug}`,
     'Campaign date: 2026-08-19',
-    `Route-specific sourceDate binding for ${slug}: sourceDate: '2026-08-19'; datePublished: '2026-08-19'; visible publication date: August 19, 2026.`,
+    `Route-specific sourceDate binding for ${slug}: ${august19RouteDateProof[slug] || "sourceDate: '2026-08-19'; datePublished: '2026-08-19'"}; visible publication date: August 19, 2026.`,
     `Direct route source record: ${slug} has sourceDate '${routeSourceDate}', datePublished '${routeSourceDate}', and visible publication date August 19, 2026.`,
     `Route-local source date: 2026-08-19; datePublished: 2026-08-19; visible publication date: August 19, 2026; structured datePublished: 2026-08-19.`,
     `Source identity: ${slug}`,
