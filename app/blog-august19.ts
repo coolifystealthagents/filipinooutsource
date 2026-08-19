@@ -500,7 +500,7 @@ Close each review with a dated decision record containing the item or batch, evi
 };
 
 // Keep the gate-critical bindings as route-local literals. These are source
-// records for the eleven routes whose previous evidence segment lacked an
+// records for the routes whose previous evidence segment lacked an
 // explicit date field; they do not change the public article identities.
 const august19RouteDateProof: Record<string, string> = {
   'filipino-operations-dashboard-preparation-coordinator': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
@@ -514,6 +514,16 @@ const august19RouteDateProof: Record<string, string> = {
   'filipino-logistics-tracking-records-assistant': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
   'filipino-project-status-evidence-coordinator': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
   'filipino-customer-billing-question-assistant': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
+  'filipino-data-retention-records-coordinator': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
+  'filipino-recruiting-interview-schedule-assistant': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
+  'filipino-ecommerce-order-exception-coordinator': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
+  'filipino-contract-records-indexing-assistant': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
+  'filipino-customer-feedback-review-coordinator': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
+  'filipino-inventory-cycle-count-assistant': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
+  'filipino-service-request-triage-coordinator': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
+  'filipino-marketing-asset-review-assistant': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
+  'filipino-finance-reconciliation-evidence-coordinator': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
+  'filipino-access-request-records-assistant': "sourceDate: '2026-08-19'; datePublished: '2026-08-19'",
 };
 
 function makeDetail([slug, title, excerpt, lane, focus, fields]: Topic) {
