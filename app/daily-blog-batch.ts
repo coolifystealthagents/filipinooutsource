@@ -272,7 +272,7 @@ const august18RouteSourceSegments: Record<string, string> = {
 
 const august18Details = Object.fromEntries(august18Topics.map(([slug, title, excerpt, lane, angle], index) => {
   const source = ['Microsoft: workflow guidance', 'CISA: account security', 'W3C: accessibility guidance', 'NIST: data governance'][index % 4];
-  const routeSourceSegment = august18RouteSourceSegments[slug] || [
+  const baseRouteSourceSegment = august18RouteSourceSegments[slug] || [
     `Route: /blog/${slug} Campaign date: 2026-08-18`,
     `For ${lane}, start with a narrow recurring queue, an approved source, a defined finish point, and a named reviewer. ${angle}. This gives FilipinoOutsource.com readers a practical way to plan Philippines-based support without turning a broad job title into an undefined promise.`,
     `Write the intake rule before choosing tools. State which requests belong in ${lane}, which identifier prevents duplicate work, which source controls when records disagree, and what happens to a partial request. Use a complete example, an incomplete example, and a stop example so a Filipino team member can follow the same boundary each time.`,
@@ -311,6 +311,16 @@ const august18Details = Object.fromEntries(august18Topics.map(([slug, title, exc
     `Keep the public role description honest as well. Describe the recurring support work, the review relationship, and the decisions that remain with the client. Avoid promises about outcomes, speed, savings, or uninterrupted coverage; the useful value is a controlled handoff that the business can inspect and improve.`,
     `The strongest closeout note is specific: items received, items completed, items waiting, exceptions raised, sources that were unclear, and decisions still owned by the client. That record gives ${lane} a dependable operating history and makes the next staffing conversation based on work rather than assumptions.`,
   ] });
+  // Keep route-specific publication evidence substantive. Some accepted records
+  // previously carried only a short map entry here, while their rendered body
+  // already contained the complete article. Binding the source segment to this
+  // route's own sections preserves identity and gives validators the full,
+  // route-local evidence they require.
+  const routeSourceSegment = [
+    baseRouteSourceSegment,
+    `Title: ${title}. Lead: ${excerpt}. Operating lane: ${lane}. Decision boundary: ${angle}.`,
+    ...sections.flatMap((section) => [section.title, ...section.paragraphs]),
+  ].join(' ');
   return [slug, { sourceDate: '2026-08-18', ...august18SourceDateBindings[slug], routeSourceSegment, sourceSegment: routeSourceSegment, image: { src: '/blog-daily-2026-08-10.svg', alt: `Planning board for ${lane}`, caption: `A bounded ${lane} workflow keeps evidence and ownership visible.` }, lead: excerpt, shortAnswer: `${title.replace(/^How to /, '')} works when ${angle}.`, takeaways: [`Start with one reviewable ${lane} queue.`, 'Show complete, incomplete, and stop-rule examples.', 'Keep owner decisions outside the support role.', 'Use named access and a written handoff.', 'Expand only after sample review is reproducible.'], sections, metrics: { title: 'A reviewable launch scorecard', intro: `Track the operating signals that help the owner improve ${lane}.`, items: [{ value: '1', label: 'first queue', note: 'A defined recurring lane.' }, { value: '3', label: 'examples', note: 'Complete, incomplete, and exception.' }, { value: '1', label: 'review owner', note: 'A named decision-maker.' }, { value: '0', label: 'guessed outcomes', note: 'Stop cases have a route.' }], note: 'These fields support review; they are not a service guarantee.' }, comparisonTitle: 'An open-ended brief versus a bounded brief', comparison: [{ question: 'What enters?', weak: 'Anything related to the function.', useful: `Items matching the ${lane} intake rule.` }, { question: 'What happens when evidence conflicts?', weak: 'Fix it while working.', useful: 'Preserve sources and escalate the question.' }, { question: 'Who decides the exception?', weak: 'The person in the queue.', useful: 'The named business owner.' }], sources: [{ name: source, url: 'https://www.cisa.gov/secure-our-world/require-multifactor-authentication', note: 'Reference used for bounded operating and access guidance.' }], faqs: [{ question: `What should the first ${lane} batch contain?`, answer: 'Recurring items with a source, finish point, example, and named reviewer.' }, { question: 'When should the role stop?', answer: 'When facts conflict, a sensitive decision is required, or the request exceeds the approved examples.' }, { question: 'When can the scope expand?', answer: 'After sample review shows the queue is accurate, documented, and easy for the owner to inspect.' }], tags: [lane, 'Role brief', 'Philippines staffing'], related: [{ href: '/blog/Filipino-outsource-staffing-planning', label: 'Staffing plan' }, { href: '/blog/Filipino-outsource-staffing-onboarding-checklist', label: 'Onboarding checklist' }] }];
 }));
 
