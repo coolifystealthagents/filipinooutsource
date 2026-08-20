@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "targetDate": "2026-08-20",
+  "family": "blog",
+  "domain": "filipinooutsource.com",
+  "repository": "coolifystealthagents/filipinooutsource",
+  "branch": "main",
+  "entries": [
+    {"slug":"filipino-cash-application-preparation-coordinator","route":"/blog/filipino-cash-application-preparation-coordinator","sourcePath":"app/blog-august20.ts","sourceDate":"2026-08-20","imagePath":"public/images/blog-2026-08-20-cash-application-preparation.png"},
+    {"slug":"filipino-revenue-operations-data-coordinator","route":"/blog/filipino-revenue-operations-data-coordinator","sourcePath":"app/blog-august20.ts","sourceDate":"2026-08-20","imagePath":"public/images/blog-2026-08-20-revenue-operations-data-coordination.png"},
+    {"slug":"filipino-property-management-maintenance-coordinator","route":"/blog/filipino-property-management-maintenance-coordinator","sourcePath":"app/blog-august20.ts","sourceDate":"2026-08-20","imagePath":"public/images/blog-2026-08-20-property-maintenance-coordination.png"},
+    {"slug":"filipino-medical-office-records-coordinator","route":"/blog/filipino-medical-office-records-coordinator","sourcePath":"app/blog-august20.ts","sourceDate":"2026-08-20","imagePath":"public/images/blog-2026-08-20-medical-office-records-coordination.png"},
+    {"slug":"filipino-legal-intake-administration-coordinator","route":"/blog/filipino-legal-intake-administration-coordinator","sourcePath":"app/blog-august20.ts","sourceDate":"2026-08-20","imagePath":"public/images/blog-2026-08-20-legal-intake-administration.png"},
+    {"slug":"filipino-ecommerce-order-exception-review-coordinator","route":"/blog/filipino-ecommerce-order-exception-review-coordinator","sourcePath":"app/blog-august20.ts","sourceDate":"2026-08-20","imagePath":"public/images/blog-2026-08-20-ecommerce-order-exception-coordination.png"},
+    {"slug":"filipino-hr-onboarding-records-coordinator","route":"/blog/filipino-hr-onboarding-records-coordinator","sourcePath":"app/blog-august20.ts","sourceDate":"2026-08-20","imagePath":"public/images/blog-2026-08-20-hr-onboarding-records-coordination.png"},
+    {"slug":"filipino-insurance-claims-document-coordinator","route":"/blog/filipino-insurance-claims-document-coordinator","sourcePath":"app/blog-august20.ts","sourceDate":"2026-08-20","imagePath":"public/images/blog-2026-08-20-insurance-claims-document-coordination.png"},
+    {"slug":"filipino-saas-customer-onboarding-coordinator","route":"/blog/filipino-saas-customer-onboarding-coordinator","sourcePath":"app/blog-august20.ts","sourceDate":"2026-08-20","imagePath":"public/images/blog-2026-08-20-saas-customer-onboarding-coordination.png"},
+    {"slug":"filipino-quality-assurance-test-case-coordinator","route":"/blog/filipino-quality-assurance-test-case-coordinator","sourcePath":"app/blog-august20.ts","sourceDate":"2026-08-20","imagePath":"public/images/blog-2026-08-20-qa-test-case-coordination.png"},
+    {"slug":"filipino-subscription-billing-support-coordinator","route":"/blog/filipino-subscription-billing-support-coordinator","sourcePath":"app/blog-august20.ts","sourceDate":"2026-08-20","imagePath":"public/images/blog-2026-08-20-subscription-billing-support.png"},
+    {"slug":"filipino-digital-publishing-workflow-coordinator","route":"/blog/filipino-digital-publishing-workflow-coordinator","sourcePath":"app/blog-august20.ts","sourceDate":"2026-08-20","imagePath":"public/images/blog-2026-08-20-digital-publishing-workflow-coordination.png"}
+  ]
+}

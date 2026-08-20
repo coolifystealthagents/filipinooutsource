@@ -1,6 +1,7 @@
 import { accountingArticleDetail, accountingArticlePost } from './accounting-article';
 import { dailyBlogPosts, dailyBlogDetails } from './daily-blog-batch';
 import { august19Topics, august19Details } from './blog-august19';
+import { august20BlogPosts, august20BlogDetails } from './blog-august20';
 
 export const site = {
   "domain": "FilipinoOutsource.com",
@@ -53,6 +54,7 @@ export const services = [
   }
 ] as const;
 export const blogPosts = [
+  ...august20BlogPosts,
   ...dailyBlogPosts,
   ...august19Topics.map(([slug, title, excerpt]) => ({ slug, title, excerpt, minutes: 10 })),
   accountingArticlePost,
@@ -143,6 +145,7 @@ export const guideBodies = {
 } as const;
 
 export const blogDetails = {
+  ...august20BlogDetails,
   ...august19Details,
   [accountingArticlePost.slug]: accountingArticleDetail,
   'filipino-virtual-assistant-hiring-guide': {
