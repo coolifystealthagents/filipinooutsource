@@ -37,4 +37,14 @@ const topics:Topic[] = [
 const acceptedTopics = topics.slice(0,12);
 const routeSlug = (slug:string) => slug;
 export const august20BlogPosts = acceptedTopics.map(({slug,title,excerpt})=>({slug:routeSlug(slug),title,excerpt,minutes:11}));
-export const august20BlogDetails = Object.fromEntries(acceptedTopics.map(t=>[routeSlug(t.slug),common(t.lane,t.focus,t.sections)]));
+export const august20BlogDetails = Object.fromEntries(acceptedTopics.map(t=>[
+  routeSlug(t.slug),
+  common(
+    t.lane,
+    t.focus,
+    [
+      ...(t.sourceArticleText ? [{title:'Operating brief',paragraphs:[t.sourceArticleText]}] : []),
+      ...t.sections,
+    ],
+  ),
+]));
