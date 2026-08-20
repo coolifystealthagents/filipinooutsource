@@ -1,0 +1,7 @@
+[
+  { "route": "/research/philippines-article-research-evidence-desk-research-2026", "sourcePaths": ["app/research-august20/index.ts"] },
+  { "route": "/research/philippines-remote-staffing-handoff-research-2026", "sourcePaths": ["app/research-august20/index.ts"] },
+  { "route": "/research/philippines-customer-support-knowledge-accuracy-research-2026", "sourcePaths": ["app/research-august20/index.ts"] },
+  { "route": "/research/philippines-outsourced-data-retention-research-2026", "sourcePaths": ["app/research-august20/index.ts"] },
+  { "route": "/research/philippines-back-office-exception-routing-research-2026", "sourcePaths": ["app/research-august20/index.ts"] }
+]

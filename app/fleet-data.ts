@@ -17,6 +17,7 @@ export type ResearchPost = {
   faq: readonly { q: string; a: string }[];
   sources?: readonly { name: string; url: string }[];
   related: readonly { label: string; href: string }[];
+  heroImage?: string;
 };
 
 import clientIntakeEvidence from './research-august18/client-intake-evidence';
@@ -31,6 +32,7 @@ import serviceLevelExceptions from './research-august18/service-level-exceptions
 import dataExportCoordination from './research-august18/data-export-coordination';
 import { august18ResearchPosts } from './research-august18';
 import { august19ResearchPosts } from './research-august19';
+import { august20ResearchPosts } from './research-august20';
 
 const researchSourceSet = [
   { name: 'Philippine Statistics Authority', url: 'https://psa.gov.ph/' },
@@ -394,6 +396,8 @@ export const fleetServices: readonly FleetService[] = [
 ];
 
 export const researchPosts: readonly ResearchPost[] = [
+
+  ...august20ResearchPosts,
 
   ...august19ResearchPosts,
 

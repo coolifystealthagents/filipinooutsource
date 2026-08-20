@@ -68,6 +68,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
         <section className="section research-body-section">
           <div className="container research-layout">
             <article className="research-article">
+              {post.heroImage ? <img className="research-hero-image" src={post.heroImage} alt="" /> : null}
               <aside aria-label="Key Takeaways" className="research-takeaways">
                 <h2>Key Takeaways</h2>
                 <ul>{post.keyTakeaways.map((item) => <li key={item}>{item}</li>)}</ul>
