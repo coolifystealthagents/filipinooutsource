@@ -1,0 +1,7 @@
+[
+  {"route":"/research/philippines-article-source-attribution-research-2026","sourcePaths":["app/research-august21.ts"],"imagePath":"public/images/research-2026-08-21-source-attribution.png"},
+  {"route":"/research/philippines-editorial-correction-queue-research-2026","sourcePaths":["app/research-august21.ts"],"imagePath":"public/images/research-2026-08-21-editorial-corrections.png"},
+  {"route":"/research/philippines-article-research-brief-scope-research-2026","sourcePaths":["app/research-august21.ts"],"imagePath":"public/images/research-2026-08-21-brief-scope.png"},
+  {"route":"/research/philippines-research-evidence-freshness-research-2026","sourcePaths":["app/research-august21.ts"],"imagePath":"public/images/research-2026-08-21-evidence-freshness.png"},
+  {"route":"/research/philippines-research-topic-overlap-decision-research-2026","sourcePaths":["app/research-august21.ts"],"imagePath":"public/images/research-2026-08-21-topic-distinctness.png"}
+]
