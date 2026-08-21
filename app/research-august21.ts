@@ -1,12 +1,5 @@
 import type { ResearchPost } from './fleet-data';
 
-const sources = [
-  { name: 'National Privacy Commission: Data Privacy Act', url: 'https://privacy.gov.ph/data-privacy-act/' },
-  { name: 'Philippine Statistics Authority: Statistics', url: 'https://psa.gov.ph/statistics' },
-  { name: 'Department of Information and Communications Technology', url: 'https://dict.gov.ph/' },
-  { name: 'Department of Trade and Industry: Consumer Protection', url: 'https://www.dti.gov.ph/archives/consumer-protection/' }
-] as const;
-
 const related = [
   { label: 'Review digital marketing support', href: '/services/digital-marketing-support' },
   { label: 'Read the research library', href: '/research' }
@@ -17,9 +10,10 @@ type ArticleSeed = {
   keyTakeaways: readonly string[]; stats: readonly { label: string; value: string; width: number }[];
   graphicCaption: string; heroImage: string; sections: readonly ResearchPost['sections'][number][];
   methodology: string; faq: readonly { q: string; a: string }[];
+  sources: readonly { name: string; url: string }[];
 };
 
-const base = (seed: ArticleSeed): ResearchPost => ({ ...seed, related, sources });
+const base = (seed: ArticleSeed): ResearchPost => ({ ...seed, related });
 
 export const august21ResearchPosts: readonly ResearchPost[] = [
   base({
@@ -71,7 +65,8 @@ export const august21ResearchPosts: readonly ResearchPost[] = [
       ]}
     ],
     methodology: 'This research compares four Philippine public sources with a claim-level article research scenario. Source statements are distinguished from operational analysis for a bounded FilipinoOutsource.com support role; the method is not a citation standard or professional advice.',
-    faq: [{ q: 'Does a citation prove the whole paragraph?', a: 'No. The source should be mapped to the specific claim and its limits.' }, { q: 'Who decides whether a claim is publishable?', a: 'The named editor or subject owner. Research support prepares the trail and routes uncertainty.' }]
+    faq: [{ q: 'Does a citation prove the whole paragraph?', a: 'No. The source should be mapped to the specific claim and its limits.' }, { q: 'Who decides whether a claim is publishable?', a: 'The named editor or subject owner. Research support prepares the trail and routes uncertainty.' }],
+    sources: [{ name: 'National Privacy Commission: Data Privacy Act', url: 'https://privacy.gov.ph/data-privacy-act/' }, { name: 'Philippine Statistics Authority: Statistics', url: 'https://psa.gov.ph/statistics' }, { name: 'Department of Information and Communications Technology', url: 'https://dict.gov.ph/' }, { name: 'Department of Trade and Industry: Consumer Protection', url: 'https://www.dti.gov.ph/archives/consumer-protection/' }]
   }),
   base({
     slug: 'philippines-editorial-correction-queue-research-2026',
@@ -122,7 +117,8 @@ export const august21ResearchPosts: readonly ResearchPost[] = [
       ]}
     ],
     methodology: 'This analysis maps four public Philippine sources to a correction-record scenario. It separates source facts from operational recommendations and does not claim a universal error benchmark, editorial guarantee, or professional compliance opinion.',
-    faq: [{ q: 'Should support staff rewrite every flagged sentence?', a: 'Only when an approved instruction permits the change. Otherwise they prepare evidence and route the decision.' }, { q: 'What makes a correction useful later?', a: 'A specific defect, supporting evidence, owner decision, applied fix, and prevention note.' }]
+    faq: [{ q: 'Should support staff rewrite every flagged sentence?', a: 'Only when an approved instruction permits the change. Otherwise they prepare evidence and route the decision.' }, { q: 'What makes a correction useful later?', a: 'A specific defect, supporting evidence, owner decision, applied fix, and prevention note.' }],
+    sources: [{ name: 'National Privacy Commission: Data Privacy Act', url: 'https://privacy.gov.ph/data-privacy-act/' }, { name: 'Philippine Statistics Authority: Statistics', url: 'https://psa.gov.ph/statistics' }, { name: 'Department of Information and Communications Technology', url: 'https://dict.gov.ph/' }, { name: 'Department of Trade and Industry: Consumer Protection', url: 'https://www.dti.gov.ph/archives/consumer-protection/' }]
   }),
   base({
     slug: 'philippines-article-research-brief-scope-research-2026',
@@ -174,7 +170,8 @@ export const august21ResearchPosts: readonly ResearchPost[] = [
       ]}
     ],
     methodology: 'This research treats the article brief as a scope-control document and compares four Philippine public sources with a recurring research scenario. The brief design is operational analysis, not an official standard or a guarantee of publication quality.',
-    faq: [{ q: 'Should a brief specify the conclusion?', a: 'It should specify the question and evidence boundary, then leave the conclusion to the evidence and editor.' }, { q: 'What must always be named?', a: 'The audience, research output, evidence scope, stop rule, and person who owns publication judgment.' }]
+    faq: [{ q: 'Should a brief specify the conclusion?', a: 'It should specify the question and evidence boundary, then leave the conclusion to the evidence and editor.' }, { q: 'What must always be named?', a: 'The audience, research output, evidence scope, stop rule, and person who owns publication judgment.' }],
+    sources: [{ name: 'National Privacy Commission: Data Privacy Act', url: 'https://privacy.gov.ph/data-privacy-act/' }, { name: 'Philippine Statistics Authority: Statistics', url: 'https://psa.gov.ph/statistics' }, { name: 'Department of Information and Communications Technology', url: 'https://dict.gov.ph/' }, { name: 'Department of Trade and Industry: Consumer Protection', url: 'https://www.dti.gov.ph/archives/consumer-protection/' }]
   }),
   base({
     slug: 'philippines-research-evidence-freshness-research-2026',
@@ -225,7 +222,8 @@ export const august21ResearchPosts: readonly ResearchPost[] = [
       ]}
     ],
     methodology: 'The article compares four public Philippine source contexts with a claim-freshness register. It separates source facts from operational analysis and does not set a legal, statistical, or universal expiration rule.',
-    faq: [{ q: 'Is a source older than one year automatically unusable?', a: 'No. Suitability depends on the claim period, volatility, scope, and review decision.' }, { q: 'Who makes the final freshness call?', a: 'The editor or subject owner, after the researcher records the source context and change signals.' }]
+    faq: [{ q: 'Is a source older than one year automatically unusable?', a: 'No. Suitability depends on the claim period, volatility, scope, and review decision.' }, { q: 'Who makes the final freshness call?', a: 'The editor or subject owner, after the researcher records the source context and change signals.' }],
+    sources: [{ name: 'National Privacy Commission: Data Privacy Act', url: 'https://privacy.gov.ph/data-privacy-act/' }, { name: 'Philippine Statistics Authority: Statistics', url: 'https://psa.gov.ph/statistics' }, { name: 'Department of Information and Communications Technology', url: 'https://dict.gov.ph/' }, { name: 'Department of Trade and Industry: Consumer Protection', url: 'https://www.dti.gov.ph/archives/consumer-protection/' }]
   }),
   base({
     slug: 'philippines-research-topic-overlap-decision-research-2026',
@@ -276,6 +274,7 @@ export const august21ResearchPosts: readonly ResearchPost[] = [
       ]}
     ],
     methodology: 'This article applies a four-field topic-overlap test to the site’s research and guide families, using four public Philippine sources as evidence contexts. The taxonomy and editorial recommendations are analysis, not a ranking or traffic guarantee.',
-    faq: [{ q: 'Can a blog guide and research article share a topic area?', a: 'Yes, if the reader question, evidence task, treatment, and conclusion are genuinely different.' }, { q: 'Do citations make a checklist research?', a: 'No. Research needs a question, method, claim-relevant evidence, limitations, and an evidence-led conclusion.' }]
+    faq: [{ q: 'Can a blog guide and research article share a topic area?', a: 'Yes, if the reader question, evidence task, treatment, and conclusion are genuinely different.' }, { q: 'Do citations make a checklist research?', a: 'No. Research needs a question, method, claim-relevant evidence, limitations, and an evidence-led conclusion.' }],
+    sources: [{ name: 'National Privacy Commission: Data Privacy Act', url: 'https://privacy.gov.ph/data-privacy-act/' }, { name: 'Philippine Statistics Authority: Statistics', url: 'https://psa.gov.ph/statistics' }, { name: 'Department of Information and Communications Technology', url: 'https://dict.gov.ph/' }, { name: 'Department of Trade and Industry: Consumer Protection', url: 'https://www.dti.gov.ph/archives/consumer-protection/' }]
   })
 ];
