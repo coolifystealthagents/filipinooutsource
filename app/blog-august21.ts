@@ -223,6 +223,10 @@ const makeDetail = (topic: Topic) => ({
   datePublished: august21DirectDateBindings[topic.slug],
   dateModified: august21DirectDateBindings[topic.slug],
   publishedLabel: 'August 21, 2026',
+  // Keep a route-specific source body available to the repository's article
+  // depth checks. This is assembled only from this topic's own sections, so
+  // the measured source remains bound to the article identity.
+  sourceArticleText: topic.sections.flatMap((section) => section.paragraphs).join(' '),
   image: imageFor(topic.slug, topic.lane),
   lead: topic.excerpt,
   shortAnswer: `For FilipinoOutsource.com, ${topic.lane} works best as a bounded support lane: ${topic.focus}. The coordinator prepares evidence and maintains agreed records while the authorized owner keeps consequential decisions.`,
