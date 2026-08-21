@@ -1,0 +1,18 @@
+{
+  "campaignDate": "2026-08-21",
+  "family": "blog",
+  "entries": [
+    {"route":"/blog/filipino-customer-onboarding-implementation-coordinator","sourcePaths":["app/blog-august21.ts"],"imagePath":"public/images/blog-2026-08-21-filipino-customer-onboarding-implementation-coordinator.png"},
+    {"route":"/blog/filipino-revenue-operations-forecast-support-coordinator","sourcePaths":["app/blog-august21.ts"],"imagePath":"public/images/blog-2026-08-21-filipino-revenue-operations-forecast-support-coordinator.png"},
+    {"route":"/blog/filipino-hr-policy-documentation-coordinator","sourcePaths":["app/blog-august21.ts"],"imagePath":"public/images/blog-2026-08-21-filipino-hr-policy-documentation-coordinator.png"},
+    {"route":"/blog/filipino-ecommerce-refund-case-preparation-coordinator","sourcePaths":["app/blog-august21.ts"],"imagePath":"public/images/blog-2026-08-21-filipino-ecommerce-refund-case-preparation-coordinator.png"},
+    {"route":"/blog/filipino-website-analytics-reporting-coordinator","sourcePaths":["app/blog-august21.ts"],"imagePath":"public/images/blog-2026-08-21-filipino-website-analytics-reporting-coordinator.png"},
+    {"route":"/blog/filipino-vendor-compliance-records-coordinator","sourcePaths":["app/blog-august21.ts"],"imagePath":"public/images/blog-2026-08-21-filipino-vendor-compliance-records-coordinator.png"},
+    {"route":"/blog/filipino-product-support-release-notes-coordinator","sourcePaths":["app/blog-august21.ts"],"imagePath":"public/images/blog-2026-08-21-filipino-product-support-release-notes-coordinator.png"},
+    {"route":"/blog/filipino-insurance-claims-intake-coordinator","sourcePaths":["app/blog-august21.ts"],"imagePath":"public/images/blog-2026-08-21-filipino-insurance-claims-intake-coordinator.png"},
+    {"route":"/blog/filipino-community-moderation-queue-coordinator","sourcePaths":["app/blog-august21.ts"],"imagePath":"public/images/blog-2026-08-21-filipino-community-moderation-queue-coordinator.png"},
+    {"route":"/blog/filipino-learning-content-qa-coordinator","sourcePaths":["app/blog-august21.ts"],"imagePath":"public/images/blog-2026-08-21-filipino-learning-content-qa-coordinator.png"},
+    {"route":"/blog/filipino-business-continuity-records-coordinator","sourcePaths":["app/blog-august21.ts"],"imagePath":"public/images/blog-2026-08-21-filipino-business-continuity-records-coordinator.png"},
+    {"route":"/blog/filipino-customer-feedback-evidence-coordinator","sourcePaths":["app/blog-august21.ts"],"imagePath":"public/images/blog-2026-08-21-filipino-customer-feedback-evidence-coordinator.png"}
+  ]
+}

@@ -2,6 +2,7 @@ import { accountingArticleDetail, accountingArticlePost } from './accounting-art
 import { dailyBlogPosts, dailyBlogDetails } from './daily-blog-batch';
 import { august19Topics, august19Details } from './blog-august19';
 import { august20BlogPosts, august20BlogDetails } from './blog-august20';
+import { august21BlogPosts, august21BlogDetails } from './blog-august21';
 
 export const site = {
   "domain": "FilipinoOutsource.com",
@@ -54,6 +55,7 @@ export const services = [
   }
 ] as const;
 export const blogPosts = [
+  ...august21BlogPosts,
   ...august20BlogPosts,
   ...dailyBlogPosts,
   ...august19Topics.map(([slug, title, excerpt]) => ({ slug, title, excerpt, minutes: 10 })),
@@ -145,6 +147,7 @@ export const guideBodies = {
 } as const;
 
 export const blogDetails = {
+  ...august21BlogDetails,
   ...august20BlogDetails,
   ...august19Details,
   [accountingArticlePost.slug]: accountingArticleDetail,
