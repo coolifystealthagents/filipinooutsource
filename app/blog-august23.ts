@@ -103,6 +103,8 @@ const extra: Topic[] = [
   ]},
 ];
 
+topics.push(...extra);
+
 for (const topic of extra) topic.image = topic.image.replace('/blog-2026-08-23--', '/blog-2026-08-23-');
 
 const routeRepairNotes: Record<string, string> = {
@@ -172,7 +174,7 @@ const detailFor = (topic: Topic) => {
   datePublished:topic.datePublished, dateModified:topic.datePublished, publishedLabel:'August 23, 2026',
   routeSourceSegment, sourceSegment:routeSourceSegment, routeSourceWordCount:routeWordCount,
   sourceArticleText:routeSourceSegment,
-  image:{src:topic.image,alt:`Filipino ${topic.lane} planning desk`,caption:`A reviewable ${topic.lane} workflow keeps source evidence and owner decisions visible.`}, lead:topic.excerpt,
+  image:{src:topic.image.replace('/images/blog-2026-08-23--','/images/blog-2026-08-23-'),alt:`Filipino ${topic.lane} planning desk`,caption:`A reviewable ${topic.lane} workflow keeps source evidence and owner decisions visible.`}, lead:topic.excerpt,
   shortAnswer:`For FilipinoOutsource.com, ${topic.lane} works best as a bounded support lane. The coordinator prepares evidence and maintains agreed records while the authorized owner keeps consequential decisions.`,
   takeaways:['Name one recurring queue and its finished output.','Show normal, incomplete, and stop-rule examples.','Use named access limited to the first queue.','Keep source facts, uncertainty, and decisions separate.','Expand only after sample review is reproducible.'],
   sections:topic.sections, metrics:{title:'A bounded launch scorecard',intro:`Track review signals for ${topic.lane}; do not treat them as promises.`,items:[{value:'1',label:'queue',note:'A defined recurring lane.'},{value:'3',label:'examples',note:'Normal, incomplete, and stop-rule.'},{value:'1',label:'owner',note:'A named reviewer.'},{value:'0',label:'guessed decisions',note:'Stop cases have a route.'}],note:'These fields support inspection rather than outcome claims.'},
@@ -183,4 +185,4 @@ const detailFor = (topic: Topic) => {
 
 export const august23BlogPosts = topics.map(({slug,title,excerpt})=>({slug,title,excerpt,minutes:11}));
 export const august23BlogDetails = Object.fromEntries(topics.map(topic=>[topic.slug,detailFor(topic)]));
-export const august23PromptReceipts = Object.fromEntries(topics.map(topic=>[topic.slug,`Gemini hero prompt receipt: editorial productivity-visual for FilipinoOutsource.com, showing a distinct ${topic.lane} workflow, no text, no logo, no watermark, wide web-hero composition. Asset: ${topic.image}`]));
+export const august23PromptReceipts = Object.fromEntries(topics.map(topic=>[topic.slug,`Gemini hero prompt receipt: editorial productivity-visual for FilipinoOutsource.com, showing a distinct ${topic.lane} workflow, no text, no logo, no watermark, wide web-hero composition. Asset: ${topic.image.replace('/images/blog-2026-08-23--','/images/blog-2026-08-23-')}`]));
