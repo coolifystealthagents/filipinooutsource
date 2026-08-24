@@ -34,6 +34,7 @@ import { august18ResearchPosts } from './research-august18';
 import { august19ResearchPosts } from './research-august19';
 import { august20ResearchPosts } from './research-august20';
 import { august21ResearchPosts } from './research-august21';
+import { august23ResearchPosts } from './research-august23';
 
 const researchSourceSet = [
   { name: 'Philippine Statistics Authority', url: 'https://psa.gov.ph/' },
@@ -397,6 +398,7 @@ export const fleetServices: readonly FleetService[] = [
 ];
 
 export const researchPosts: readonly ResearchPost[] = [
+  ...august23ResearchPosts,
 
   ...august21ResearchPosts,
 
