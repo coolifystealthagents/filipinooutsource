@@ -29,7 +29,7 @@ const topics: Topic[] = [
 
 // The remaining routes use individually named operational lanes with distinct source-bound records.
 const extra = [
- ['filipino-vendor-onboarding-records-coordinator','How to organize Filipino vendor onboarding records','Collect vendor forms, evidence, and owner questions without approving suppliers.','vendor onboarding records'],
+ ['filipino-supplier-intake-evidence-coordinator','How to organize Filipino supplier intake evidence','Collect supplier forms, evidence, and owner questions without approving suppliers.','supplier intake evidence'],
  ['filipino-project-handoff-status-assistant','How to scope Filipino project handoff status support','Keep project facts, dependencies, and decisions visible without making delivery promises.','project handoff status'],
  ['filipino-customer-complaint-evidence-coordinator','How to prepare Filipino customer complaint evidence','Build a neutral complaint packet that preserves context and routes remedies to an owner.','customer complaint evidence'],
  ['filipino-inventory-adjustment-preparation-assistant','How to scope Filipino inventory adjustment preparation','Compare approved stock records and flag differences without authorizing adjustments.','inventory adjustment preparation'],

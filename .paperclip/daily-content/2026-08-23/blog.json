@@ -5,7 +5,7 @@
     {"route":"/blog/filipino-back-office-inbox-triage-coordinator","sourcePaths":["app/blog-august23.ts"],"imagePath":"public/images/blog-2026-08-23-back-office-inbox-triage.png"},
     {"route":"/blog/filipino-customer-renewal-records-assistant","sourcePaths":["app/blog-august23.ts"],"imagePath":"public/images/blog-2026-08-23-customer-renewal-records.png"},
     {"route":"/blog/filipino-knowledge-base-maintenance-coordinator","sourcePaths":["app/blog-august23.ts"],"imagePath":"public/images/blog-2026-08-23-knowledge-base-maintenance.png"},
-    {"route":"/blog/filipino-vendor-onboarding-records-coordinator","sourcePaths":["app/blog-august23.ts"],"imagePath":"public/images/blog-2026-08-23-vendor-onboarding-records-coordinator.png"},
+    {"route":"/blog/filipino-supplier-intake-evidence-coordinator","sourcePaths":["app/blog-august23.ts"],"imagePath":"public/images/blog-2026-08-23-supplier-intake-evidence-coordinator.png"},
     {"route":"/blog/filipino-project-handoff-status-assistant","sourcePaths":["app/blog-august23.ts"],"imagePath":"public/images/blog-2026-08-23-project-handoff-status-assistant.png"},
     {"route":"/blog/filipino-customer-complaint-evidence-coordinator","sourcePaths":["app/blog-august23.ts"],"imagePath":"public/images/blog-2026-08-23-customer-complaint-evidence-coordinator.png"},
     {"route":"/blog/filipino-inventory-adjustment-preparation-assistant","sourcePaths":["app/blog-august23.ts"],"imagePath":"public/images/blog-2026-08-23-inventory-adjustment-preparation-assistant.png"},

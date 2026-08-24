@@ -2,7 +2,7 @@
   "campaignDate":"2026-08-23",
   "generator":"Gemini-generated hero image receipt",
   "routes":[
-    "filipino-back-office-inbox-triage-coordinator","filipino-customer-renewal-records-assistant","filipino-knowledge-base-maintenance-coordinator","filipino-vendor-onboarding-records-coordinator","filipino-project-handoff-status-assistant","filipino-customer-complaint-evidence-coordinator","filipino-inventory-adjustment-preparation-assistant","filipino-recruiting-candidate-scheduling-coordinator","filipino-website-analytics-source-coordinator","filipino-service-queue-aging-assistant","filipino-contract-renewal-indexing-coordinator","filipino-training-calendar-records-assistant"
+    "filipino-back-office-inbox-triage-coordinator","filipino-customer-renewal-records-assistant","filipino-knowledge-base-maintenance-coordinator","filipino-supplier-intake-evidence-coordinator","filipino-project-handoff-status-assistant","filipino-customer-complaint-evidence-coordinator","filipino-inventory-adjustment-preparation-assistant","filipino-recruiting-candidate-scheduling-coordinator","filipino-website-analytics-source-coordinator","filipino-service-queue-aging-assistant","filipino-contract-renewal-indexing-coordinator","filipino-training-calendar-records-assistant"
   ],
   "prompt":"Distinct wide editorial productivity visual for each named FilipinoOutsource.com operating lane; no text, logos, stock imagery, or watermark; warm brown, orange, cream, and restrained blue palette; show source evidence, routing, and an accountable review handoff."
 }
