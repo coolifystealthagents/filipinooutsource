@@ -57,7 +57,7 @@ export default function Research() {
           </> : <div className="card empty-state">
             <h2>Research is being prepared</h2>
             <p>No research articles are published yet. Visit the blog for practical planning guides.</p>
-            <a className="btn primary" href="/blog">Visit the blog</a>
+            <a className="btn primary" href="/blog" id="cta-research-action-1">Visit the blog</a>
           </div>}
         </div>
       </section>

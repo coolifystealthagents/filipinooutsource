@@ -26,7 +26,7 @@ export default function Home() {
           <p className="ph-kicker">Filipino talent, properly scoped</p>
           <h1>Build your Philippines team clearly.</h1>
           <p className="ph-intro">Turn the tasks piling up on your desk into a clear role for Filipino talent. Set the handoffs, access rules, schedule, and review routine before anyone starts.</p>
-          <div className="ph-actions"><a className="ph-button ph-button-lime" href="/contact-us">Plan my team</a><a className="ph-text-link" href="#roles">See role map <span>↘</span></a></div>
+          <div className="ph-actions"><a className="ph-button ph-button-lime" href="/contact-us" id="cta-page-action-1">Plan my team</a><a className="ph-text-link" href="#roles" id="cta-page-action-2">See role map <span>↘</span></a></div>
           <p className="ph-disclosure">FilipinoOutsource.com is an independent information site. Your request may be sent to a staffing partner that recruits only in the Philippines.</p>
         </div>
         <div className="ph-hero-media">
@@ -39,7 +39,7 @@ export default function Home() {
 
     <section className="container ph-section" id="roles">
       <div className="ph-section-head"><div><p className="ph-kicker dark">Start with the work</p><h2>Pick a role.</h2></div><p>You do not need a grand outsourcing plan. Pick one lane with repeatable work, decent examples, and a manager who can review early handoffs.</p></div>
-      <div className="ph-role-grid">{services.map((service, index) => <a href={`/services/${service.slug}`} className="ph-role" key={service.slug}><span>0{index + 1}</span><h3>{service.title}</h3><p>{service.desc}</p><b>Open the role brief →</b></a>)}</div>
+      <div className="ph-role-grid">{services.map((service, index) => <a id={`cta-home-services-open-${service.slug}`} href={`/services/${service.slug}`} className="ph-role" key={service.slug}><span>0{index + 1}</span><h3>{service.title}</h3><p>{service.desc}</p><b>Open the role brief →</b></a>)}</div>
     </section>
 
     <section className="ph-system" id="how-it-works">
@@ -59,6 +59,6 @@ export default function Home() {
       <div>{blogPosts.slice(0,3).map(post => <a href={`/blog/${post.slug}`} key={post.slug}><span>{post.minutes} min</span><h3>{post.title}</h3><p>{post.excerpt}</p></a>)}</div>
     </section>
 
-    <section className="container ph-final"><div><p className="ph-kicker">One role. Clear boundaries.</p><h2>What should your Philippines team own first?</h2></div><a className="ph-button ph-button-lime" href="/contact-us">Plan my team</a></section>
+    <section className="container ph-final"><div><p className="ph-kicker">One role. Clear boundaries.</p><h2>What should your Philippines team own first?</h2></div><a className="ph-button ph-button-lime" href="/contact-us" id="cta-page-action-3">Plan my team</a></section>
   </main><Footer/></>;
 }

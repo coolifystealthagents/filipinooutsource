@@ -45,7 +45,7 @@ function ArticleBanner({ banner }: { banner: any }) {
       <p className="article-kicker">{banner.eyebrow}</p>
       <h2>{banner.title}</h2>
       <p>{banner.text}</p>
-      <a className="btn primary" href={banner.href}>{banner.cta}</a>
+      <a className="btn primary" href={banner.href} id="cta-blog-slug-action-1">{banner.cta}</a>
     </aside>
   );
 }
@@ -146,7 +146,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
               <div className="article-grid">
                 <aside className="article-sidebar" aria-label="Article navigation">
                   <div className="toc-card"><p className="article-kicker">In this article</p><ol>{toc.map((item) => <li key={item}><a href={`#${slugify(item)}`}>{item}</a></li>)}</ol></div>
-                  <div className="sidebar-card"><p className="article-kicker">{pilotFormat ? 'Planning checkpoint' : 'Need a staffing scope?'}</p><p>{pilotFormat ? 'Use this guide to decide whether one queue is ready for candidate review.' : 'Turn a scattered handoff into one role, one review owner, and one controlled access plan.'}</p><a className="btn primary" href="/contact-us">Request plan</a></div>
+                  <div className="sidebar-card"><p className="article-kicker">{pilotFormat ? 'Planning checkpoint' : 'Need a staffing scope?'}</p><p>{pilotFormat ? 'Use this guide to decide whether one queue is ready for candidate review.' : 'Turn a scattered handoff into one role, one review owner, and one controlled access plan.'}</p><a className="btn primary" href="/contact-us" id="cta-blog-slug-action-2">Request plan</a></div>
                 </aside>
 
                 <div className="article-wrap">

@@ -139,7 +139,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
                 <span>Planning note</span>
                 <h2>Turn market scale into a safer role plan.</h2>
                 <p>Use the research to decide which tasks need documentation, access limits, and manager review before hiring.</p>
-                <a className="btn primary" href="/contact-us">Contact Us</a>
+                <a className="btn primary" href="/contact-us" id="cta-research-slug-action-1">Contact Us</a>
               </div>
               <div className="research-sidebar-card compact">
                 <h2>Related reading</h2>

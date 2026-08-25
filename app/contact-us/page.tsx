@@ -105,7 +105,7 @@ export default function ContactUs() {
               </div>
             </div>
 
-            <form className="contact-intake-form" action="/api/contact" method="post">
+            <form id="contact-form" className="contact-intake-form" action="/api/contact" method="post">
               <div className="form-card-header">
                 <p className="ph-kicker dark">Request a role plan</p>
                 <h2>Share your staffing need</h2>
@@ -128,7 +128,7 @@ export default function ContactUs() {
               </div>
               <label>What work should the person handle? *<textarea name="message" required rows={6} placeholder="Describe the queue, tools, schedule, examples, review owner, and any access limits." /></label>
               <div className="sa-honeypot" aria-hidden="true">
-                <label>Leave this field empty<input name="websiteConfirm" tabIndex={-1} autoComplete="off" /></label>
+                <label>Leave this field empty<input name="websiteConfirm" tabIndex={-1} aria-hidden="true" autoComplete="off" /></label>
               </div>
               <p className="form-disclosure">
                 We use your details to prepare a staffing conversation. Do not include passwords, payment details, or private customer records in this form.
