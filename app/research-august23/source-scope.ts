@@ -4,12 +4,12 @@ const article: August23Article = {
   slug: 'philippines-outsourcing-source-scope-research-2026',
   title: 'How Should Philippines Outsourcing Research Define Source Scope?',
   excerpt: 'A source-backed study of how a Philippines outsourcing research desk can keep national evidence, service descriptions, and company-specific decisions in their proper lanes.',
-  published: 'August 23, 2026', datePublished: '2026-08-23', readTime: '11 minute read', cluster: 'Research Quality',
+  published: 'August 24, 2026', datePublished: '2026-08-24', readTime: '11 minute read', cluster: 'Research Quality',
   cardHighlight: 'A source is useful only when its population, period, purpose, and authority match the sentence it supports.',
   keyTakeaways: ['Scope is a property of the claim and the source together.', 'Government context can inform planning without proving a provider fact.', 'A research desk should route mismatched evidence instead of stretching it.'],
   stats: [{ label: 'Scope tests', value: '4', width: 78 }, { label: 'Evidence lanes', value: '3', width: 60 }, { label: 'Owner decisions', value: '1', width: 36 }],
   graphicCaption: 'Source scope is checked across population, period, purpose, and decision ownership.',
-  heroImage: '/images/research-2026-08-23-source-scope.png',
+  heroImage: '/images/research-2026-08-24-source-scope.png',
   sections: [
     { heading: 'The question behind source scope', paragraphs: [
       'A business reading about FilipinoOutsource.com may see a national labor statistic, a privacy principle, and a service description on the same research page. Those materials can all be relevant, but relevance is not the same as proof. This research asks how a Philippines outsourcing desk should define source scope before turning evidence into an article sentence.',
