@@ -37,9 +37,20 @@ Existing research routes must remain transparent about what they measure and wha
 
 Do not present existing regulator, market, or statistical sources as evidence that a particular worker, provider, or workflow will produce a result. A new original-research release needs a documented method, a source list, a clear sample boundary, and a visible limitation before publication.
 
+## Verified link ledger
+
+The checks below use the generated route-local `<main>` rather than shared navigation. They are planning records, not a reason to add links until the source page and the next decision still match.
+
+| Source route | Existing destination | Route-local result | Next action |
+| --- | --- | --- | --- |
+| `/research/philippines-cash-application-evidence-research-2026` | `/services/bookkeeping-support` | Delivered. The generated research article has one bookkeeping-support link in its main content. | Do not add another CTA for this pair. |
+| `/research/philippines-data-processing-quality-research-2026` | `/services/data-processing-support` | Delivered through the existing research content. The generated main contains two matching links. | Keep the current reader path; do not duplicate it. |
+| `/research/philippines-customer-support-operations-research-2026` | `/services/customer-support-operations` | Absent from the generated main. Both routes have a generated H1, canonical URL, and sitemap entry. | First candidate for one bounded contextual handoff. Keep customer promises, policy changes, and exception decisions with the buyer's support owner. |
+| `/research/philippines-executive-assistance-workflow-research-2026` | `/services/executive-assistance` | Absent from the generated main. Both routes have a generated H1, canonical URL, and sitemap entry. | Hold as the next candidate after the customer-support route. |
+
 ## Implementation order
 
-1. Replace the generated two-service rotation in `app/daily-blog-batch.ts` with an explicit, typed destination field per published article. Start with a single customer-support or bookkeeping article where the destination already exists.
-2. Keep link text in the sentence that explains the reader's next decision. Do not add sitewide or unrelated service links merely to increase link counts.
+1. Use the customer-support research candidate first. Store its destination and link copy with the route data, then place the link in the sentence that explains the reader's next decision.
+2. Do not add sitewide or unrelated service links merely to increase link counts. Keep customer commitments, policy changes, and exception decisions with the buyer's named owner.
 3. Verify the rendered article has the exact intended href, the service route resolves, and Article metadata, title, H1, canonical, and sitemap entry remain intact.
 4. After the first typed-link release, audit byline and `BlogPosting` author/publisher fields together. Use only the existing organization identity unless a real named author and evidence are already published on the site.
