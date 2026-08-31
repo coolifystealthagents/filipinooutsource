@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "campaignDate": "2026-08-31",
+  "domain": "filipinooutsource.com",
+  "repository": "coolifystealthagents/filipinooutsource",
+  "branch": "main",
+  "issueId": "45a64aee-c623-4cde-9731-31cf71678e8d",
+  "counts": { "blog": 12, "research": 5, "total": 17 },
+  "blogRoutes": [
+    "/blog/filipino-customer-credit-memo-preparation-coordinator",
+    "/blog/filipino-product-return-inspection-records-coordinator",
+    "/blog/filipino-subscription-cancellation-case-preparation-assistant",
+    "/blog/filipino-procurement-bid-comparison-coordinator",
+    "/blog/filipino-software-license-inventory-coordinator",
+    "/blog/filipino-customer-data-correction-request-coordinator",
+    "/blog/filipino-event-sponsor-deliverables-coordinator",
+    "/blog/filipino-facilities-maintenance-request-records-assistant",
+    "/blog/filipino-learning-certificate-records-coordinator",
+    "/blog/filipino-vendor-invoice-tax-document-coordinator",
+    "/blog/filipino-customer-success-action-register-coordinator",
+    "/blog/filipino-security-questionnaire-evidence-coordinator"
+  ],
+  "researchRoutes": [
+    "/research/philippines-outsourcing-personal-data-correction-workflow-research-2026",
+    "/research/philippines-remote-support-source-access-register-research-2026",
+    "/research/philippines-ecommerce-return-evidence-workflow-research-2026",
+    "/research/philippines-services-workforce-role-design-boundaries-research-2026",
+    "/research/philippines-consumer-complaint-handoff-evidence-research-2026"
+  ],
+  "validationCommands": ["npx tsc --noEmit", "npm run build", "git diff --check"],
+  "dateBinding": "2026-08-31",
+  "formsSubmitted": 0
+}
