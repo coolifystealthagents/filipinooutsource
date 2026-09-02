@@ -5,6 +5,7 @@ export type ResearchPost = {
   excerpt: string;
   published: string;
   datePublished?: string;
+  dateModified?: string;
   readTime: string;
   cluster: string;
   cardHighlight: string;
@@ -17,6 +18,7 @@ export type ResearchPost = {
   faq: readonly { q: string; a: string }[];
   sources?: readonly { name: string; url: string }[];
   related: readonly { label: string; href: string }[];
+  serviceHandoff?: { heading: string; copy: string; label: string; href: string };
   heroImage?: string;
 };
 
@@ -55,6 +57,7 @@ type BatchResearchConfig = {
   slug: string;
   sourceDate?: string;
   datePublished?: string;
+  dateModified?: string;
   title: string;
   cluster: string;
   statistic: string;
@@ -62,11 +65,12 @@ type BatchResearchConfig = {
   sourceUrl: string;
   sourceName: string;
   focus: string;
+  serviceHandoff?: { heading: string; copy: string; label: string; href: string };
 };
 
 const dailyResearchBatch: readonly BatchResearchConfig[] = [
   { slug: 'philippines-virtual-assistant-workflow-research-2026', title: 'Philippines Virtual Assistant Workflow Research 2026', cluster: 'Role Design', statistic: '4 workflow controls', statLabel: 'recommended controls', sourceName: 'National Privacy Commission', sourceUrl: 'https://privacy.gov.ph/data-privacy-act/', focus: 'virtual-assistant workflow design' },
-  { slug: 'philippines-customer-support-operations-research-2026', title: 'Philippines Customer Support Operations Research 2026', cluster: 'Customer Support', statistic: '5 queue checks', statLabel: 'queue checks', sourceName: 'Department of Trade and Industry', sourceUrl: 'https://www.dti.gov.ph/archives/consumer-protection/', focus: 'customer support operations' },
+  { slug: 'philippines-customer-support-operations-research-2026', datePublished: '2026-08-07', dateModified: '2026-09-02', title: 'Philippines Customer Support Operations Research 2026', cluster: 'Customer Support', statistic: '5 queue checks', statLabel: 'queue checks', sourceName: 'Department of Trade and Industry', sourceUrl: 'https://www.dti.gov.ph/archives/consumer-protection/', focus: 'customer support operations', serviceHandoff: { heading: 'Plan the support queue', copy: 'Use the customer support operations guide to define approved reply work, escalation triggers, and the manager who decides policy changes or customer exceptions.', label: 'Review customer support operations', href: '/services/customer-support-operations' } },
   { slug: 'philippines-bookkeeping-support-controls-research-2026', title: 'Philippines Bookkeeping Support Controls Research 2026', cluster: 'Finance Operations', statistic: '3 review gates', statLabel: 'review gates', sourceName: 'Bangko Sentral ng Pilipinas', sourceUrl: 'https://www.bsp.gov.ph/Pages/InclusiveFinance/InclusiveFinance.aspx', focus: 'bookkeeping support controls' },
   { slug: 'philippines-ecommerce-operations-support-research-2026', title: 'Philippines Ecommerce Operations Support Research 2026', cluster: 'Ecommerce Operations', statistic: '6 handoff points', statLabel: 'handoff points', sourceName: 'Department of Trade and Industry', sourceUrl: 'https://www.dti.gov.ph/regions/consumer-welfare/', focus: 'ecommerce operations support' },
   { slug: 'philippines-executive-assistance-workflow-research-2026', title: 'Philippines Executive Assistance Workflow Research 2026', cluster: 'Executive Support', statistic: '4 access tiers', statLabel: 'access tiers', sourceName: 'National Privacy Commission', sourceUrl: 'https://privacy.gov.ph/advisories/', focus: 'executive assistance workflow design' },
@@ -325,6 +329,7 @@ function makeDailyResearchPost(config: BatchResearchConfig): ResearchPost {
     excerpt: `A source-backed field guide to ${config.focus}, with practical evidence checks, access boundaries, and review routines for FilipinoOutsource.com buyers.`,
     published: 'Reviewed August 2026',
     datePublished: config.datePublished,
+    dateModified: config.dateModified,
     readTime: '7 minute read',
     cluster: config.cluster,
     cardHighlight: `${config.statistic} give buyers a compact way to structure ${config.focus}.`,
@@ -378,6 +383,7 @@ function makeDailyResearchPost(config: BatchResearchConfig): ResearchPost {
       { q: 'When should scope expand?', a: 'Expand only after the first queue shows stable quality, fewer repeat corrections, documented exceptions, and a review process that fits the manager schedule.' }
     ],
     sources: [...researchSourceSet.slice(0, 9), { name: config.sourceName, url: config.sourceUrl }],
+    serviceHandoff: config.serviceHandoff,
     related: [
       { label: 'Read the staffing planning guide', href: '/blog/Filipino-outsource-staffing-planning' },
       { label: 'Use the onboarding checklist', href: '/blog/Filipino-outsource-staffing-onboarding-checklist' },

@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `${post.title} | ${site.brand}`,
     description: post.excerpt,
     alternates: { canonical: `/research/${slug}` },
-    openGraph: post.datePublished ? { type: 'article', publishedTime: post.datePublished } : undefined,
+    openGraph: post.datePublished ? { type: 'article', publishedTime: post.datePublished, modifiedTime: post.dateModified } : undefined,
   };
 }
 
@@ -44,6 +44,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
               <p className="lead">{post.excerpt}</p>
               <div className="research-meta" aria-label="Article metadata">
                 <span>{post.datePublished ? <time dateTime={post.datePublished}>{formatReaderDate(post.datePublished)}</time> : post.published}</span>
+                {post.dateModified && post.dateModified !== post.datePublished ? <span>Updated <time dateTime={post.dateModified}>{formatReaderDate(post.dateModified)}</time></span> : null}
                 <span>{post.readTime}</span>
                 <span>{post.sources?.length || 0} {(post.sources?.length || 0) === 1 ? 'source' : 'sources'}</span>
               </div>
@@ -61,7 +62,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
 
         {post.datePublished ? <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org', '@type': 'Article', headline: post.title,
-          datePublished: post.datePublished, dateModified: post.datePublished,
+          datePublished: post.datePublished, dateModified: post.dateModified || post.datePublished,
           mainEntityOfPage: `https://${site.domain}/research/${post.slug}`
         }) }} /> : null}
 
@@ -94,6 +95,14 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
                   {section.bullets?.length ? <ul>{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul> : null}
                 </section>
               ))}
+
+              {post.serviceHandoff ? (
+                <section className="research-section" id="service-handoff">
+                  <h2>{post.serviceHandoff.heading}</h2>
+                  <p>{post.serviceHandoff.copy}</p>
+                  <a href={post.serviceHandoff.href}>{post.serviceHandoff.label}</a>
+                </section>
+              ) : null}
 
               {post.table ? (
                 <section className="research-section" id="operational-benchmarks">
