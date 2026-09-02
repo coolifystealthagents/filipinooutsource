@@ -45,7 +45,7 @@ The checks below use the generated route-local `<main>` rather than shared navig
 | --- | --- | --- | --- |
 | `/research/philippines-cash-application-evidence-research-2026` | `/services/bookkeeping-support` | Delivered. The generated research article has one bookkeeping-support link in its main content. | Do not add another CTA for this pair. |
 | `/research/philippines-data-processing-quality-research-2026` | `/services/data-processing-support` | Delivered through the existing research content. The generated main contains two matching links. | Keep the current reader path; do not duplicate it. |
-| `/research/philippines-customer-support-operations-research-2026` | `/services/customer-support-operations` | Absent from the generated main. Both routes have a generated H1, canonical URL, and sitemap entry. | First candidate for one bounded contextual handoff. Keep customer promises, policy changes, and exception decisions with the buyer's support owner. |
+| `/research/philippines-customer-support-operations-research-2026` | `/services/customer-support-operations` | Delivered locally in rendered source `e1fa87a527468bf80ab3633235877f14535295de`: the generated main has one matching handoff, canonical URL, Article publication/update dates, and sitemap entry. | Do not add another CTA. Public delivery is pending because both hosts still serve the prior route without this handoff. |
 | `/research/philippines-executive-assistance-workflow-research-2026` | `/services/executive-assistance` | Absent from the generated main. Both routes have a generated H1, canonical URL, and sitemap entry. | Hold as the next candidate after the customer-support route. |
 
 ## Implementation order
@@ -54,3 +54,10 @@ The checks below use the generated route-local `<main>` rather than shared navig
 2. Do not add sitewide or unrelated service links merely to increase link counts. Keep customer commitments, policy changes, and exception decisions with the buyer's named owner.
 3. Verify the rendered article has the exact intended href, the service route resolves, and Article metadata, title, H1, canonical, and sitemap entry remain intact.
 4. After the first typed-link release, audit byline and `BlogPosting` author/publisher fields together. Use only the existing organization identity unless a real named author and evidence are already published on the site.
+
+## Release status — 2026-09-02
+
+- Rendered source: `e1fa87a527468bf80ab3633235877f14535295de` added the customer-support research handoff, original publication date, updated date, Open Graph modified date, and Article modified date.
+- Local artifact evidence: the exact research page has the expected H1 and canonical URL, one `Plan the support queue` marker, one `/services/customer-support-operations` link in `<main>`, Article dates `2026-08-07` and `2026-09-02`, and a canonical sitemap `<loc>`; this sitemap intentionally has no `<lastmod>`.
+- Public evidence: cache-busted apex and www each returned HTTP 200 `text/html` with the expected H1 and apex canonical URL, but neither route-local main contains the new marker or service link and neither response contains `article:modified_time`. The canonical sitemap contains the route but no `<lastmod>` by contract.
+- Lifecycle: `deployment_pending_public_verification / public_stale`. A source push is not deployment proof, and no repository-approved deployment target was available to trigger or monitor.
