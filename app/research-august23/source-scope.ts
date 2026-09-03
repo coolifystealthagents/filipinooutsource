@@ -4,12 +4,12 @@ const article: August23Article = {
   slug: 'philippines-outsourcing-source-scope-research-2026',
   title: 'How Should Philippines Outsourcing Research Define Source Scope?',
   excerpt: 'A source-backed study of how a Philippines outsourcing research desk can keep national evidence, service descriptions, and company-specific decisions in their proper lanes.',
-  published: 'August 24, 2026', datePublished: '2026-08-24', readTime: '11 minute read', cluster: 'Research Quality',
+  published: 'August 23, 2026', datePublished: '2026-08-23', readTime: '11 minute read', cluster: 'Research Quality',
   cardHighlight: 'A source is useful only when its population, period, purpose, and authority match the sentence it supports.',
   keyTakeaways: ['Scope is a property of the claim and the source together.', 'Government context can inform planning without proving a provider fact.', 'A research desk should route mismatched evidence instead of stretching it.'],
   stats: [{ label: 'Scope tests', value: '4', width: 78 }, { label: 'Evidence lanes', value: '3', width: 60 }, { label: 'Owner decisions', value: '1', width: 36 }],
   graphicCaption: 'Source scope is checked across population, period, purpose, and decision ownership.',
-  heroImage: '/images/research-2026-08-24-source-scope.png',
+  heroImage: '/images/research-2026-08-23-source-scope.png',
   sections: [
     { heading: 'The question behind source scope', paragraphs: [
       'A business reading about FilipinoOutsource.com may see a national labor statistic, a privacy principle, and a service description on the same research page. Those materials can all be relevant, but relevance is not the same as proof. This research asks how a Philippines outsourcing desk should define source scope before turning evidence into an article sentence.',
@@ -32,11 +32,11 @@ const article: August23Article = {
       'If a privacy page and a workflow brief appear to point in different directions, the support role can identify the relevant principle and the operational question. The owner decides whether the workflow needs a policy review. This is especially important for roles handling customer records, financial files, or recruiting information.'
     ]},
     { heading: 'A scope note that helps an editor', paragraphs: [
-      'A useful research note is short but concrete: “This source covers Philippine internet use in the stated year; it does not establish individual connectivity, service reliability, or a hiring outcome.” That sentence gives an editor a reason to keep the statistic and a boundary around the interpretation. It also makes later updates easier when the source period changes.',
+      'A useful research note is short but concrete: "This source covers Philippine internet use in the stated year; it does not establish individual connectivity, service reliability, or a hiring outcome." That sentence gives an editor a reason to keep the statistic and a boundary around the interpretation. It also makes later updates easier when the source period changes.',
       'The note should link the exact page, capture the retrieval date, retain the source definition, and name the unresolved owner decision. A broad bibliography is less useful than a small record attached to each consequential claim. For a daily article routine, that attachment is a practical handoff between research and publication.'
     ]},
     { heading: 'Limits of the analysis', paragraphs: [
-      'Public source pages cannot prove the quality of an individual assistant, the performance of a provider, or the likely result of a buyer’s staffing plan. Some pages may change, move, or omit a revision date. The four-source comparison also favors public Philippine institutions and therefore does not represent every legitimate evidence tradition.',
+      'Public source pages cannot prove the quality of an individual assistant, the performance of a provider, or the likely result of a buyer\'s staffing plan. Some pages may change, move, or omit a revision date. The four-source comparison also favors public Philippine institutions and therefore does not represent every legitimate evidence tradition.',
       'The method is a scope-control aid, not legal, statistical, or procurement advice. A sensitive claim may need a specialist reviewer even when the source is official. A narrow source can still be insufficient if the proposed sentence carries a larger meaning than the source states.'
     ]},
     { heading: 'Evidence-led conclusion', paragraphs: [
