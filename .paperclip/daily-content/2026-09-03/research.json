@@ -1,0 +1,12 @@
+{
+  "campaignDate": "2026-09-03",
+  "family": "research",
+  "imageStatus": "Gemini unavailable in this execution environment; text-complete fallback used without stock substitution.",
+  "entries": [
+    { "route": "/research/philippines-outsourcing-approval-latency-stale-work-research-2026", "sourcePaths": ["app/research-september3.ts"] },
+    { "route": "/research/philippines-outsourcing-source-field-lineage-research-2026", "sourcePaths": ["app/research-september3.ts"] },
+    { "route": "/research/philippines-outsourcing-review-rubric-anchor-drift-research-2026", "sourcePaths": ["app/research-september3.ts"] },
+    { "route": "/research/philippines-outsourcing-queue-denominator-integrity-research-2026", "sourcePaths": ["app/research-september3.ts"] },
+    { "route": "/research/philippines-outsourcing-reversible-work-boundary-research-2026", "sourcePaths": ["app/research-september3.ts"] }
+  ]
+}
