@@ -1,0 +1,22 @@
+{
+  "campaignDate":"2026-08-23",
+  "generator":"Gemini-generated hero image receipt",
+  "routes":[
+    "filipino-back-office-inbox-triage-coordinator","filipino-customer-renewal-records-assistant","filipino-knowledge-base-maintenance-coordinator","filipino-supplier-intake-evidence-coordinator","filipino-project-handoff-status-assistant","filipino-customer-complaint-evidence-coordinator","filipino-inventory-adjustment-preparation-assistant","filipino-recruiting-candidate-scheduling-coordinator","filipino-website-analytics-source-coordinator","filipino-service-queue-aging-assistant","filipino-contract-renewal-indexing-coordinator","filipino-training-calendar-records-assistant"
+  ],
+  "prompt":"Distinct wide editorial productivity visual for each named FilipinoOutsource.com operating lane; no text, logos, stock imagery, or watermark; warm brown, orange, cream, and restrained blue palette; show source evidence, routing, and an accountable review handoff.",
+  "routePrompts": {
+    "filipino-back-office-inbox-triage-coordinator":"Filipino operations coordinator sorting business inbox cards into routed trays; distinct lane composition; no text, logos, stock imagery, or watermark.",
+    "filipino-customer-renewal-records-assistant":"Filipino operations coordinator comparing renewal dates and source documents with a calendar and evidence folders; distinct lane composition; no text, logos, stock imagery, or watermark.",
+    "filipino-knowledge-base-maintenance-coordinator":"Filipino content operations coordinator checking a knowledge-base page against an approved source binder and link markers; distinct lane composition; no text, logos, stock imagery, or watermark.",
+    "filipino-supplier-intake-evidence-coordinator":"Filipino operations coordinator organizing supplier intake forms and evidence packets into a review queue; distinct lane composition; no text, logos, stock imagery, or watermark.",
+    "filipino-project-handoff-status-assistant":"Filipino project coordinator arranging handoff notes, dependencies, and next-owner cards on a planning board; distinct lane composition; no text, logos, stock imagery, or watermark.",
+    "filipino-customer-complaint-evidence-coordinator":"Filipino support operations coordinator assembling a neutral customer complaint evidence packet with timeline cards; distinct lane composition; no text, logos, stock imagery, or watermark.",
+    "filipino-inventory-adjustment-preparation-assistant":"Filipino inventory operations coordinator comparing stock count sheets and flagged discrepancies; distinct lane composition; no text, logos, stock imagery, or watermark.",
+    "filipino-recruiting-candidate-scheduling-coordinator":"Filipino recruiting coordinator arranging interview calendar blocks and candidate logistics notes; distinct lane composition; no text, logos, stock imagery, or watermark.",
+    "filipino-website-analytics-source-coordinator":"Filipino analytics coordinator tracing website metrics back to source reports on a monitor and desk; distinct lane composition; no text, logos, stock imagery, or watermark.",
+    "filipino-service-queue-aging-assistant":"Filipino service operations coordinator reviewing an aging queue with dates and next-owner markers; distinct lane composition; no text, logos, stock imagery, or watermark.",
+    "filipino-contract-renewal-indexing-coordinator":"Filipino records coordinator indexing contract dates and clauses into an evidence register; distinct lane composition; no text, logos, stock imagery, or watermark.",
+    "filipino-training-calendar-records-assistant":"Filipino learning operations coordinator organizing training calendar sessions and attendance records; distinct lane composition; no text, logos, stock imagery, or watermark."
+  }
+}
