@@ -1,0 +1,27 @@
+{
+  "campaignDate": "2026-09-04",
+  "required": { "blog": 12, "research": 5 },
+  "productionAuditBefore": { "blog": 0, "research": 0 },
+  "imagePolicy": "Existing repository images only; no image generation or download.",
+  "blog": [
+    "/blog/filipino-customer-credit-note-evidence-assistant",
+    "/blog/filipino-catalog-price-change-verification-coordinator",
+    "/blog/filipino-vendor-bank-detail-change-register-assistant",
+    "/blog/filipino-support-macro-version-control-assistant",
+    "/blog/filipino-candidate-offer-document-checklist-coordinator",
+    "/blog/filipino-executive-meeting-decision-log-assistant",
+    "/blog/filipino-subscription-cancellation-evidence-coordinator",
+    "/blog/filipino-property-maintenance-access-note-coordinator",
+    "/blog/filipino-healthcare-referral-records-assistant",
+    "/blog/filipino-social-content-approval-register-assistant",
+    "/blog/filipino-sales-demo-follow-up-records-coordinator",
+    "/blog/filipino-month-end-accrual-support-packet-assistant"
+  ],
+  "research": [
+    "/research/philippines-outsourcing-queue-reopen-rate-research-2026",
+    "/research/philippines-outsourcing-owner-wait-time-research-2026",
+    "/research/philippines-outsourcing-redaction-review-research-2026",
+    "/research/philippines-outsourcing-exception-owner-churn-research-2026",
+    "/research/philippines-outsourcing-instruction-exception-debt-research-2026"
+  ]
+}
