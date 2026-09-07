@@ -46,14 +46,14 @@ The checks below use the generated route-local `<main>` rather than shared navig
 | `/research/philippines-cash-application-evidence-research-2026` | `/services/bookkeeping-support` | Delivered. The generated research article has one bookkeeping-support link in its main content. | Do not add another CTA for this pair. |
 | `/research/philippines-data-processing-quality-research-2026` | `/services/data-processing-support` | Delivered through the existing research content. The generated main contains two matching links. | Keep the current reader path; do not duplicate it. |
 | `/research/philippines-customer-support-operations-research-2026` | `/services/customer-support-operations` | Delivered locally in rendered source `e1fa87a527468bf80ab3633235877f14535295de`: the generated main has one matching handoff, canonical URL, Article publication/update dates, and sitemap entry. | Do not add another CTA. Public delivery is pending because both hosts still serve the prior route without this handoff. |
-| `/research/philippines-executive-assistance-workflow-research-2026` | `/services/executive-assistance` | Absent from the generated main. Both routes have a generated H1, canonical URL, and sitemap entry. | Hold as the next candidate after the customer-support route. |
+| `/research/philippines-executive-assistance-workflow-research-2026` | `/services/executive-assistance` | Delivered locally in rendered source `e9e75d541eafa99e498b5000f6012d9a2099cece`: the generated main has one matching handoff, canonical URL, Article publication/update dates, and sitemap entry. | Do not add another CTA. Public delivery is pending because both hosts still serve the prior route without this handoff. |
 
 ## Implementation order
 
-1. Use the customer-support research candidate first. Store its destination and link copy with the route data, then place the link in the sentence that explains the reader's next decision.
-2. Do not add sitewide or unrelated service links merely to increase link counts. Keep customer commitments, policy changes, and exception decisions with the buyer's named owner.
-3. Verify the rendered article has the exact intended href, the service route resolves, and Article metadata, title, H1, canonical, and sitemap entry remain intact.
-4. After the first typed-link release, audit byline and `BlogPosting` author/publisher fields together. Use only the existing organization identity unless a real named author and evidence are already published on the site.
+1. The customer-support and executive-assistance research handoffs are delivered locally. Keep their existing typed route data and do not add sitewide or duplicate service links.
+2. Before promoting another candidate, rebuild and reconcile each declared pair against the route-local main. Keep customer commitments, policy changes, and exception decisions with the buyer's named owner.
+3. For any verified-absent pair, verify the rendered article has the exact intended href, the service route resolves, and Article metadata, title, H1, canonical, and sitemap entry remain intact.
+4. Audit byline and `BlogPosting` author/publisher fields together only if a real named author and supporting on-site evidence are already published. Otherwise retain the existing organization identity.
 
 ## Release status — 2026-09-02
 
