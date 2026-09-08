@@ -22,7 +22,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `${post.title} | ${site.brand}`,
     description: post.excerpt,
     alternates: { canonical: `/research/${slug}` },
-    openGraph: post.datePublished ? { type: 'article', publishedTime: post.datePublished, modifiedTime: post.dateModified } : undefined,
+    openGraph: post.datePublished ? {
+      type: 'article',
+      url: `/research/${slug}`,
+      title: post.title,
+      description: post.excerpt,
+      publishedTime: post.datePublished,
+      modifiedTime: post.dateModified,
+      images: post.heroImage ? [{ url: post.heroImage, alt: `${post.title} research graphic` }] : undefined,
+    } : undefined,
   };
 }
 
