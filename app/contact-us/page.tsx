@@ -1,3 +1,4 @@
+import StandardContactForm from "./StandardContactForm";
 import { Header, Footer } from '../components';
 import { site } from '../data';
 import { TestimonialsRail } from '../booking-components';
@@ -105,36 +106,7 @@ export default function ContactUs() {
               </div>
             </div>
 
-            <form id="contact-form" className="contact-intake-form" action="/api/contact" method="post">
-              <div className="form-card-header">
-                <p className="ph-kicker dark">Request a role plan</p>
-                <h2>Share your staffing need</h2>
-                <p>Fields marked with an asterisk are required.</p>
-              </div>
-
-              <div className="form-two">
-                <label>First name *<input name="firstName" required autoComplete="given-name" /></label>
-                <label>Last name *<input name="lastName" required autoComplete="family-name" /></label>
-              </div>
-              <label>Business email *<input name="email" type="email" required autoComplete="email" /></label>
-              <label>Phone *<input name="phone" type="tel" required autoComplete="tel" /></label>
-              <div className="form-two">
-                <label>Company *<input name="company" required autoComplete="organization" /></label>
-                <label>Website<input name="website" type="url" placeholder="https://" /></label>
-              </div>
-              <div className="form-two">
-                <label>Company size *<select name="companySize" required defaultValue=""><option value="" disabled>Select size</option><option>1 to 10</option><option>11 to 50</option><option>51 to 200</option><option>201 plus</option></select></label>
-                <label>Role type *<select name="roleType" required defaultValue=""><option value="" disabled>Select role</option>{roleOptions.map((role) => <option key={role}>{role}</option>)}</select></label>
-              </div>
-              <label>What work should the person handle? *<textarea name="message" required rows={6} placeholder="Describe the queue, tools, schedule, examples, review owner, and any access limits." /></label>
-              <div className="sa-honeypot" aria-hidden="true">
-                <label>Leave this field empty<input name="websiteConfirm" tabIndex={-1} aria-hidden="true" autoComplete="off" /></label>
-              </div>
-              <p className="form-disclosure">
-                We use your details to prepare a staffing conversation. Do not include passwords, payment details, or private customer records in this form.
-              </p>
-              <button className="ph-button ph-button-lime contact-submit" type="submit">Send staffing request</button>
-            </form>
+            <StandardContactForm endpoint="/api/contact" encoding="form" />
           </div>
         </section>
 
