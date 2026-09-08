@@ -47,6 +47,7 @@ The checks below use the generated route-local `<main>` rather than shared navig
 | `/research/philippines-data-processing-quality-research-2026` | `/services/data-processing-support` | Delivered through the existing research content. The generated main contains two matching links. | Keep the current reader path; do not duplicate it. |
 | `/research/philippines-customer-support-operations-research-2026` | `/services/customer-support-operations` | Delivered locally in rendered source `e1fa87a527468bf80ab3633235877f14535295de`: the generated main has one matching handoff, canonical URL, Article publication/update dates, and sitemap entry. | Do not add another CTA. Public delivery is pending because both hosts still serve the prior route without this handoff. |
 | `/research/philippines-executive-assistance-workflow-research-2026` | `/services/executive-assistance` | Delivered locally in rendered source `e9e75d541eafa99e498b5000f6012d9a2099cece`: the generated main has one matching handoff, canonical URL, Article publication/update dates, and sitemap entry. | Do not add another CTA. Public delivery is pending because both hosts still serve the prior route without this handoff. |
+| `/research/philippines-calendar-coordination-research-2026` | `/services/executive-assistance` | Delivered locally in rendered source `fccd4bc10e59ba03e3f6aa75c629cdf7c8482caf`: the generated main has one matching handoff, the owner boundary, canonical URL, Article publication/update dates, and sitemap entry. | Do not add another CTA. Public delivery is pending because both hosts still serve the prior route without this handoff. |
 
 ## Implementation order
 
@@ -61,3 +62,12 @@ The checks below use the generated route-local `<main>` rather than shared navig
 - Local artifact evidence: the exact research page has the expected H1 and canonical URL, one `Plan the support queue` marker, one `/services/customer-support-operations` link in `<main>`, Article dates `2026-08-07` and `2026-09-02`, and a canonical sitemap `<loc>`; this sitemap intentionally has no `<lastmod>`.
 - Public evidence: cache-busted apex and www each returned HTTP 200 `text/html` with the expected H1 and apex canonical URL, but neither route-local main contains the new marker or service link and neither response contains `article:modified_time`. The canonical sitemap contains the route but no `<lastmod>` by contract.
 - Lifecycle: `deployment_pending_public_verification / public_stale`. A source push is not deployment proof, and no repository-approved deployment target was available to trigger or monitor.
+
+## Release status — 2026-09-08
+
+- Rendered source: `fccd4bc10e59ba03e3f6aa75c629cdf7c8482caf` added the `Set the calendar handoff` research section and the `/services/executive-assistance` route-local link.
+- Local artifact evidence: the research page has the expected H1 and canonical URL, exactly one `Set the calendar handoff` marker and one executive-assistance link in `<main>`, the retained owner boundary, Article dates `2026-08-09` and `2026-09-08`, Open Graph dates, and a canonical sitemap `<loc>`; this sitemap intentionally has no `<lastmod>`.
+- Public evidence: cache-busted apex and www each returned HTTP 200 `text/html` with the expected H1 and apex canonical URL, but neither route-local main contains the marker or service link and neither response exposes `article:modified_time` for `2026-09-08`. Both served sitemaps contain the canonical route and intentionally have no `<lastmod>`.
+- Deployment policy: no repository-approved deployment target or deployment record is configured. No deployment was triggered.
+- Lifecycle: `deployment_pending_public_verification / public_stale`.
+- Preserve rendered-source commit `fccd4bc10e59ba03e3f6aa75c629cdf7c8482caf`; this status-only record must remain separate from the rendered change.
