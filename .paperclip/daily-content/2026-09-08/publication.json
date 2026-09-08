@@ -1,0 +1,27 @@
+{
+  "campaignDate": "2026-09-08",
+  "required": { "blog": 12, "research": 5 },
+  "productionAuditBefore": { "blog": 0, "research": 0 },
+  "imagePolicy": "Existing repository images only; no image generation or download.",
+  "blog": [
+    "/blog/filipino-vendor-master-change-evidence-assistant",
+    "/blog/filipino-saas-license-reclamation-queue-coordinator",
+    "/blog/filipino-accounts-receivable-dispute-file-assistant",
+    "/blog/filipino-product-recall-contact-list-coordinator",
+    "/blog/filipino-b2b-renewal-obligation-tracker",
+    "/blog/filipino-marketplace-seller-verification-packet-assistant",
+    "/blog/filipino-customer-success-health-signal-register-assistant",
+    "/blog/filipino-facilities-work-order-closeout-assistant",
+    "/blog/filipino-returns-disposition-evidence-coordinator",
+    "/blog/filipino-clinical-referral-record-routing-assistant",
+    "/blog/filipino-digital-asset-rights-register-coordinator",
+    "/blog/filipino-procurement-bid-comparison-file-assistant"
+  ],
+  "research": [
+    "/research/philippines-outsourcing-owner-wait-time-research-2026",
+    "/research/philippines-outsourcing-correction-traceability-research-2026",
+    "/research/philippines-outsourcing-exception-category-drift-research-2026",
+    "/research/philippines-outsourcing-evidence-freshness-trigger-research-2026",
+    "/research/philippines-outsourcing-denominator-change-research-2026"
+  ]
+}
