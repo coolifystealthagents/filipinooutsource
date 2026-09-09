@@ -1,0 +1,27 @@
+{
+  "campaignDate": "2026-09-09",
+  "required": { "blog": 12, "research": 5 },
+  "productionAuditBefore": { "blog": 0, "research": 0 },
+  "imagePolicy": "Existing repository images only; no image generation or download.",
+  "blog": [
+    "/blog/filipino-subscription-dunning-case-coordinator",
+    "/blog/filipino-freight-document-exception-assistant",
+    "/blog/filipino-grant-reporting-evidence-assistant",
+    "/blog/filipino-field-service-warranty-claim-assistant",
+    "/blog/filipino-learning-management-enrollment-coordinator",
+    "/blog/filipino-insurance-certificate-tracking-assistant",
+    "/blog/filipino-restaurant-menu-data-coordinator",
+    "/blog/filipino-construction-submittal-log-assistant",
+    "/blog/filipino-charity-donor-restriction-record-assistant",
+    "/blog/filipino-laboratory-sample-accessioning-assistant",
+    "/blog/filipino-franchise-compliance-calendar-assistant",
+    "/blog/filipino-podcast-sponsorship-fulfillment-coordinator"
+  ],
+  "research": [
+    "/research/philippines-outsourcing-reopen-rate-measurement-research-2026",
+    "/research/philippines-outsourcing-small-sample-review-research-2026",
+    "/research/philippines-outsourcing-source-system-conflict-research-2026",
+    "/research/philippines-outsourcing-queue-exclusion-research-2026",
+    "/research/philippines-outsourcing-instruction-version-lag-research-2026"
+  ]
+}
