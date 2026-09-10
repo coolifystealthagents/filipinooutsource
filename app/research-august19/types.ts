@@ -4,6 +4,8 @@ export type August19Config = {
   slug: string; title: string; cluster: string; question: string; thesis: string;
   lens: string; scenario: string; measure: string; sourceName: string; sourceUrl: string;
   secondName: string; secondUrl: string; thirdName: string; thirdUrl: string;
+  dateModified?: string;
+  serviceHandoff?: { heading: string; copy: string; label: string; href: string };
   sections: readonly { heading: string; paragraphs: readonly string[] }[];
 };
 
@@ -31,7 +33,7 @@ export function makePost(c: August19Module): ResearchPost {
   return {
     slug: c.slug, title: c.title,
     excerpt: `Research question: ${c.question} Evidence-led analysis for Philippines-based support operations.`,
-    published: 'August 19, 2026', datePublished: c.datePublished, readTime: '11 minute read', cluster: c.cluster,
+    published: 'August 19, 2026', datePublished: c.datePublished, dateModified: c.dateModified, readTime: '11 minute read', cluster: c.cluster,
     cardHighlight: c.thesis,
     keyTakeaways: [c.thesis, 'Separate observed facts from owner decisions.', `Measure ${c.measure}.`],
     stats: [{ label: 'Research sources', value: '3', width: 72 }, { label: 'Decision boundary', value: '1', width: 55 }, { label: 'Review cases', value: '4', width: 66 }],
@@ -42,6 +44,6 @@ export function makePost(c: August19Module): ResearchPost {
       { q: 'Does the evidence transfer approval to support staff?', a: 'No. Support may prepare evidence and route exceptions; the authorized client-side owner retains approval and judgment.' },
       { q: 'What should a buyer inspect first?', a: `Inspect ${c.measure} in the underlying records, including paused and escalated cases.` }
     ],
-    sources, related: [{ label: 'Review services', href: '/services' }, { label: 'Read research', href: '/research' }]
+    sources, serviceHandoff: c.serviceHandoff, related: [{ label: 'Review services', href: '/services' }, { label: 'Read research', href: '/research' }]
   };
 }

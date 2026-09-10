@@ -3,6 +3,7 @@ import { August19Module } from './types';
 const article: August19Module = {
   sourceDate: '2026-08-19',
   datePublished: '2026-08-19',
+  dateModified: '2026-09-10',
   slug: 'philippines-customer-complaint-taxonomy-research-2026',
   title: 'Philippines Customer Complaint Taxonomy Research 2026',
   cluster: 'Customer Support',
@@ -17,6 +18,12 @@ const article: August19Module = {
   secondUrl: 'https://privacy.gov.ph/data-privacy-act/',
   thirdName: 'Official Gazette of the Republic of the Philippines',
   thirdUrl: 'https://www.officialgazette.gov.ph/',
+  serviceHandoff: {
+    heading: 'Set up the complaint queue',
+    copy: 'Use customer support operations to set the record fields, escalation route, and review point before work enters the queue. The client-side owner still decides remedies, policy exceptions, and customer commitments.',
+    label: 'Plan customer support operations',
+    href: '/services/customer-support-operations'
+  },
   sections: [
     {
       heading: 'Evidence before classification',
