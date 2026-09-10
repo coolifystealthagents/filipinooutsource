@@ -1,0 +1,27 @@
+{
+  "campaignDate": "2026-09-10",
+  "required": { "blog": 12, "research": 5 },
+  "productionAuditBefore": { "blog": 0, "research": 0 },
+  "imagePolicy": "Existing repository images only; no image generation or download.",
+  "blog": [
+    "/blog/filipino-saas-user-provisioning-assistant",
+    "/blog/filipino-mortgage-document-intake-assistant",
+    "/blog/filipino-property-lease-renewal-coordinator",
+    "/blog/filipino-manufacturing-change-order-log-assistant",
+    "/blog/filipino-veterinary-referral-records-assistant",
+    "/blog/filipino-supplier-rebate-claim-assistant",
+    "/blog/filipino-fleet-maintenance-records-coordinator",
+    "/blog/filipino-advertising-creative-trafficking-assistant",
+    "/blog/filipino-legal-hold-custodian-tracking-assistant",
+    "/blog/filipino-ecommerce-chargeback-evidence-assistant",
+    "/blog/filipino-clinical-trial-site-file-assistant",
+    "/blog/filipino-utility-billing-exception-assistant"
+  ],
+  "research": [
+    "/research/philippines-outsourcing-approval-wait-time-research-2026",
+    "/research/philippines-outsourcing-evidence-freshness-research-2026",
+    "/research/philippines-outsourcing-correction-log-research-2026",
+    "/research/philippines-outsourcing-escalation-specificity-research-2026",
+    "/research/philippines-outsourcing-consecutive-case-review-research-2026"
+  ]
+}

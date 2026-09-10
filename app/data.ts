@@ -11,6 +11,7 @@ import { september4BlogPosts, september4BlogDetails } from './blog-september4';
 import { september7BlogPosts, september7BlogDetails } from './blog-september7';
 import { september8BlogPosts, september8BlogDetails } from './blog-september8';
 import { september9BlogPosts, september9BlogDetails } from './blog-september9';
+import { september10BlogPosts, september10BlogDetails } from './blog-september10';
 
 export const site = {
   "domain": "FilipinoOutsource.com",
@@ -63,6 +64,7 @@ export const services = [
   }
 ] as const;
 export const blogPosts = [
+  ...september10BlogPosts,
   ...september9BlogPosts,
   ...september8BlogPosts,
   ...september7BlogPosts,
@@ -163,6 +165,7 @@ export const guideBodies = {
 } as const;
 
 export const blogDetails = {
+  ...september10BlogDetails,
   ...september9BlogDetails,
   ...september8BlogDetails,
   ...september7BlogDetails,
