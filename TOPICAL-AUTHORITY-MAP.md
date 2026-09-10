@@ -71,3 +71,12 @@ The checks below use the generated route-local `<main>` rather than shared navig
 - Deployment policy: no repository-approved deployment target or deployment record is configured. No deployment was triggered.
 - Lifecycle: `deployment_pending_public_verification / public_stale`.
 - Preserve rendered-source commit `fccd4bc10e59ba03e3f6aa75c629cdf7c8482caf`; this status-only record must remain separate from the rendered change.
+
+## Release status — 2026-09-10
+
+- Rendered source: `4e4689b7b973bcf250617b62d06ed3fab7145e28` added the `Set up the complaint queue` section and the `/services/customer-support-operations` route-local link.
+- Local artifact evidence: the research page has the expected H1 and canonical URL, exactly one marker and one service link in `<main>`, the retained client-owner boundary, Article dates `2026-08-19` and `2026-09-10`, an Open Graph modified date, and a canonical sitemap `<loc>`; this sitemap intentionally has no `<lastmod>`.
+- Public evidence: cache-busted apex and www each returned HTTP 200 `text/html` with the expected H1 and apex canonical URL, but neither route-local main contains the marker or service link and neither response contains `2026-09-10` or the refreshed Open Graph date.
+- Deployment policy: no repository-approved deployment target or deployment record is configured. No deployment was triggered.
+- Lifecycle: `deployment_pending_public_verification / public_stale`.
+- Preserve rendered-source commit `4e4689b7b973bcf250617b62d06ed3fab7145e28`; this status-only record must remain separate from the rendered change.
