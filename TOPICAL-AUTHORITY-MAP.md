@@ -80,3 +80,12 @@ The checks below use the generated route-local `<main>` rather than shared navig
 - Deployment policy: no repository-approved deployment target or deployment record is configured. No deployment was triggered.
 - Lifecycle: `deployment_pending_public_verification / public_stale`.
 - Preserve rendered-source commit `4e4689b7b973bcf250617b62d06ed3fab7145e28`; this status-only record must remain separate from the rendered change.
+
+## Release status — 2026-09-12
+
+- Rendered source: `966497c7fa029d91d348234d760af82e523ac1fe` added the `Prepare the interview record` section and the `/services/recruitment-coordination` route-local link.
+- Local artifact evidence: the research page has the expected H1 and canonical URL, exactly one marker and one service link in `<main>`, the retained client hiring-team boundary, Article dates `2026-08-19` and `2026-09-12`, an Open Graph modified date, and a canonical sitemap `<loc>`; this sitemap intentionally has no `<lastmod>`.
+- Public evidence: cache-busted apex and www each returned HTTP 200 `text/html` with the expected H1 and apex canonical URL, but neither route-local main contains the marker or service link and neither response contains an Open Graph modified date for `2026-09-12`. Both served sitemaps contain the canonical route and intentionally have no `<lastmod>`.
+- Deployment policy: no repository-approved deployment target or deployment record is configured. No deployment was triggered.
+- Lifecycle: `deployment_pending_public_verification / public_stale`.
+- Preserve rendered-source commit `966497c7fa029d91d348234d760af82e523ac1fe`; this status-only record must remain separate from the rendered change.
