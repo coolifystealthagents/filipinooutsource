@@ -3,6 +3,7 @@ import { August19Module } from './types';
 const article: August19Module = {
   sourceDate: '2026-08-19',
   datePublished: '2026-08-19',
+  dateModified: '2026-09-12',
   slug: 'philippines-candidate-interview-coordination-research-2026',
   title: 'Philippines Candidate Interview Coordination Research 2026',
   cluster: 'Recruitment Operations',
@@ -17,6 +18,12 @@ const article: August19Module = {
   secondUrl: 'https://www.dole.gov.ph/',
   thirdName: 'Official Gazette of the Republic of the Philippines',
   thirdUrl: 'https://www.officialgazette.gov.ph/',
+  serviceHandoff: {
+    heading: 'Prepare the interview record',
+    copy: 'Use recruitment coordination to set the approved interview stages, calendar rules, and owner review before a coordinator works the queue. The client hiring team still decides who advances, receives an offer, or needs an exception.',
+    label: 'Plan recruitment coordination',
+    href: '/services/recruitment-coordination'
+  },
   sections: [
     {
       heading: 'Evidence for a coordination record',
