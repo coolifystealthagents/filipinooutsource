@@ -8,6 +8,9 @@ type TrackerWindow = Window & { acrTracker?: { trackLead?: (payload: Record<stri
 const companySizes = ["1-5", "5-10", "11-50", "51-250", "251-1k", "1k+"];
 const positions = ["Just 1 Position", "2-5 Positions", "6-10 Positions", "11-50 Positions", "51-100 Positions", "101-500 Positions", "501-1,000 Positions", "Over 1,000 Positions"];
 const referrals = ["Google", "Email", "LinkedIn", "Reddit", "X / Twitter", "Referral", "ChatGPT / AI", "Outbound Outreach", "Other"];
+const serviceNeeds = ["Executive assistance", "Customer support", "Operations support", "Bookkeeping support", "Ecommerce support", "Sales administration", "Recruiting coordination", "Not sure yet"];
+const contactMethods = ["Email", "Phone call", "Either works"];
+const contactTimes = ["Morning", "Afternoon", "Evening", "Flexible"];
 const countryCodes = [
   ["🇺🇸", "+1"], ["🇨🇦", "+1"], ["🇮🇩", "+62"], ["🇵🇭", "+63"], ["🇬🇧", "+44"],
   ["🇦🇺", "+61"], ["🇳🇿", "+64"], ["🇸🇬", "+65"], ["🇮🇳", "+91"], ["🇦🇪", "+971"],
@@ -45,6 +48,8 @@ export default function StandardContactForm({ endpoint = "/api/submit-lead", enc
       companyName: String(data.get("companyName") || ""), company: String(data.get("companyName") || ""),
       website: String(data.get("website") || ""), companySize: String(data.get("companySize") || ""),
       positions: String(data.get("positions") || ""), positionsToFill: String(data.get("positions") || ""),
+      serviceNeed: String(data.get("serviceNeed") || ""), preferredContact: String(data.get("preferredContact") || ""),
+      preferredTime: String(data.get("preferredTime") || ""),
       referral: String(data.get("referral") || ""), howTheyHeard: String(data.get("referral") || ""),
       referralSpecify: String(data.get("referralSpecify") || ""), message: String(data.get("message") || ""),
       source: "contact-form", formId: "contactPageForm",
@@ -75,9 +80,11 @@ export default function StandardContactForm({ endpoint = "/api/submit-lead", enc
 
   return (
     <div className="sa-form-card">
-      <h2>Find Growth In Your Business By Hiring Industry Experienced Virtual Assistants</h2>
-      <form onSubmit={submit} id="contactPageForm">
-        <input className="sa-hp" name="website_url" tabIndex={-1} autoComplete="off" aria-hidden="true" />
+      <p className="sa-form-kicker">Free staffing consultation</p>
+      <h2>Tell us what support your team needs.</h2>
+      <p className="sa-form-intro">A staffing specialist will use these details to prepare a focused conversation about your Philippines-based role.</p>
+      <form action={endpoint} method="post" onSubmit={submit} id="contactPageForm" data-acr-handled="1">
+        <input className="sa-hp" name="website_url" type="hidden" tabIndex={-1} autoComplete="off" aria-label="Leave this field empty" />
         <div className="sa-grid">
           <label>First Name *<input name="firstName" required autoComplete="given-name" /></label>
           <label>Last Name *<input name="lastName" required autoComplete="family-name" /></label>
@@ -88,28 +95,36 @@ export default function StandardContactForm({ endpoint = "/api/submit-lead", enc
           <label>Company Name *<input name="companyName" required autoComplete="organization" /></label>
           <label>Website / URL<input name="website" placeholder="example.com" autoComplete="url" /></label>
         </div>
+        <label>What support do you need? *<select name="serviceNeed" required defaultValue=""><option value="" disabled>Select a support area...</option>{serviceNeeds.map((x) => <option key={x}>{x}</option>)}</select></label>
         <div className="sa-grid">
           <label>Company Size *<select name="companySize" required defaultValue=""><option value="" disabled>Select...</option>{companySizes.map((x) => <option key={x}>{x}</option>)}</select></label>
           <label>How Many Positions to Fill *<select name="positions" required defaultValue=""><option value="" disabled>Select...</option>{positions.map((x) => <option key={x}>{x}</option>)}</select></label>
         </div>
+        <div className="sa-grid">
+          <label>Preferred Contact Method *<select name="preferredContact" required defaultValue=""><option value="" disabled>Select...</option>{contactMethods.map((x) => <option key={x}>{x}</option>)}</select></label>
+          <label>Best Time to Reach You *<select name="preferredTime" required defaultValue=""><option value="" disabled>Select...</option>{contactTimes.map((x) => <option key={x}>{x}</option>)}</select></label>
+        </div>
         <label>How Did You Hear About Us? *<select name="referral" required value={referral} onChange={(e) => setReferral(e.target.value)}><option value="" disabled>Select...</option>{referrals.map((x) => <option key={x}>{x}</option>)}</select></label>
         {referral === "Other" ? <label>Please Specify *<input name="referralSpecify" required /></label> : null}
-        <label>Message<textarea name="message" rows={4} /></label>
+        <label>Tell us about the work *<textarea name="message" rows={4} required placeholder="Tasks, tools, schedule, goals, or anything else that would help us understand the role." /></label>
         {error ? <p className="sa-error" role="alert">{error}</p> : null}
-        <button type="submit" disabled={submitting}>{submitting ? "Submitting..." : "Book a Free Consultation"}</button>
+        <button type="submit" disabled={submitting}>{submitting ? "Submitting..." : "Book My Free Consultation"}</button>
+        <p className="sa-form-note">By submitting, you agree that a staffing specialist may contact you about your request. We do not submit the form until you choose the button above.</p>
       </form>
       <style jsx>{`
-        .sa-form-card{width:100%;max-width:876px;margin:0 auto;background:#fff;border:1px solid #e3e8ef;border-radius:22px;padding:34px 48px 48px;box-shadow:0 18px 48px rgba(15,34,58,.16);color:#34415a;text-align:left}
-        h2{margin:0 0 30px;color:#111827;font-size:30px;line-height:1.35;font-weight:800;letter-spacing:-.02em;max-width:700px}
-        form{display:flex;flex-direction:column;gap:22px}.sa-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-        label{display:flex;flex-direction:column;gap:8px;font-size:18px;line-height:1.3;font-weight:500;color:#34415a}
-        input,select,textarea{box-sizing:border-box;width:100%;border:1px solid #cfd7e3;border-radius:12px;background:#fff;color:#1f2937;font:inherit;font-size:17px;padding:15px 17px;outline:none;min-height:58px}
+        .sa-form-card{width:100%;max-width:680px;margin:0 auto;background:#fff;border:1px solid rgba(255,255,255,.72);border-radius:20px;padding:30px 34px 34px;box-shadow:0 28px 80px rgba(0,0,0,.27);color:#34415a;text-align:left}
+        .sa-form-kicker{margin:0 0 8px;color:#0e7490;font-size:12px;line-height:1.2;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+        h2{margin:0 0 9px;color:#111827;font-size:27px;line-height:1.15;font-weight:850;letter-spacing:-.03em;max-width:700px}.sa-form-intro{margin:0 0 22px;color:#64748b;font-size:14px;line-height:1.5}
+        form{display:flex;flex-direction:column;gap:15px}.sa-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+        label{display:flex;flex-direction:column;gap:6px;font-size:14px;line-height:1.3;font-weight:750;color:#34415a}
+        input,select,textarea{box-sizing:border-box;width:100%;border:1px solid #cfd7e3;border-radius:9px;background:#fff;color:#1f2937;font:inherit;font-size:15px;padding:11px 13px;outline:none;min-height:46px}
         input:focus,select:focus,textarea:focus{border-color:#00adf4;box-shadow:0 0 0 3px rgba(0,173,244,.14)}
-        small{margin-top:-3px;color:#7b869b;font-size:15px;font-weight:400}.sa-phone{display:grid;grid-template-columns:146px 1fr;border:1px solid #cfd7e3;border-radius:12px;overflow:hidden}.sa-phone:focus-within{border-color:#00adf4;box-shadow:0 0 0 3px rgba(0,173,244,.14)}
+        small{margin-top:-3px;color:#7b869b;font-size:12px;font-weight:400}.sa-phone{display:grid;grid-template-columns:120px 1fr;border:1px solid #cfd7e3;border-radius:9px;overflow:hidden}.sa-phone:focus-within{border-color:#00adf4;box-shadow:0 0 0 3px rgba(0,173,244,.14)}
         .sa-phone select,.sa-phone input{border:0;border-radius:0;box-shadow:none!important}.sa-phone select{border-right:1px solid #dbe1ea;padding-right:8px}.sa-phone input{min-width:0}
-        textarea{resize:vertical;min-height:150px}button{width:100%;border:0;border-radius:12px;background:linear-gradient(100deg,#05acec,#79cdf1);color:#fff;padding:20px 24px;font-size:21px;font-weight:700;cursor:pointer;box-shadow:0 7px 16px rgba(0,173,244,.22)}
+        textarea{resize:vertical;min-height:96px}button{width:100%;border:0;border-radius:10px;background:linear-gradient(100deg,#05acec,#79cdf1);color:#fff;padding:16px 22px;font-size:17px;font-weight:800;cursor:pointer;box-shadow:0 7px 16px rgba(0,173,244,.22)}
         button:hover{filter:brightness(.98)}button:disabled{cursor:wait;opacity:.65}.sa-error{margin:0;color:#b42318;font-size:14px}.sa-hp{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important}
-        @media(max-width:700px){.sa-form-card{padding:26px 20px 30px;border-radius:18px}h2{font-size:25px}.sa-grid{grid-template-columns:1fr;gap:22px}label{font-size:17px}.sa-phone{grid-template-columns:122px 1fr}button{font-size:19px}}
+        .sa-form-note{margin:0;color:#64748b;font-size:11px;line-height:1.5;text-align:center}
+        @media(max-width:700px){.sa-form-card{padding:25px 20px 28px;border-radius:16px}h2{font-size:24px}.sa-grid{grid-template-columns:1fr;gap:15px}.sa-phone{grid-template-columns:112px 1fr}}
       `}</style>
     </div>
   );
