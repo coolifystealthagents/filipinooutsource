@@ -13,7 +13,6 @@ import { september8BlogPosts, september8BlogDetails } from './blog-september8';
 import { september9BlogPosts, september9BlogDetails } from './blog-september9';
 import { september10BlogPosts, september10BlogDetails } from './blog-september10';
 import { september14BlogPosts, september14BlogDetails } from './blog-september14';
-import { september18BlogPosts, september18BlogDetails } from './blog-september18';
 import { september18Fil81BlogPosts, september18Fil81BlogDetails } from './blog-september18-fil81';
 
 export const site = {
@@ -68,7 +67,6 @@ export const services = [
 ] as const;
 export const blogPosts = [
   ...september18Fil81BlogPosts,
-  ...september18BlogPosts,
   ...september14BlogPosts,
   ...september10BlogPosts,
   ...september9BlogPosts,
@@ -172,7 +170,6 @@ export const guideBodies = {
 
 export const blogDetails = {
   ...september18Fil81BlogDetails,
-  ...september18BlogDetails,
   ...september14BlogDetails,
   ...september10BlogDetails,
   ...september9BlogDetails,

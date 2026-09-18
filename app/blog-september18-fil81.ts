@@ -1,4 +1,4 @@
-import { buildSeptember18Detail, type Brief } from './blog-september18';
+import { buildSeptember18Detail, type Brief } from './blog-september18-shared';
 
 const briefs: readonly Brief[] = [
   {slug:'filipino-executive-calendar-conflict-assistant',title:'How to Scope a Filipino Executive Calendar Conflict Assistant',excerpt:'Prepare calendar conflict options while the executive keeps priority, attendance, and rescheduling authority.',service:'executive assistance',queue:'executive calendar conflict preparation',owner:'executive or chief of staff',inputs:'meeting owners, approved calendar, time zones, attendance rules, travel buffers, priorities, and current commitments',stop:'priorities conflict, a confidential attendee appears, travel is infeasible, or an external commitment must change',example:'A customer review overlaps a board preparation block and moving either meeting affects participants in three time zones.',output:'a conflict packet showing fixed constraints, available options, affected attendees, and the decision required'},
