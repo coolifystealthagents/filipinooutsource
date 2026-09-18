@@ -1,0 +1,21 @@
+{
+  "publicationDate": "2026-09-18",
+  "family": "blog",
+  "requiredCount": 12,
+  "sourcePath": "app/blog-september18.ts",
+  "status": "prepared",
+  "entries": [
+    "filipino-executive-travel-approval-assistant",
+    "filipino-customer-escalation-timeline-assistant",
+    "filipino-expense-receipt-matching-assistant",
+    "filipino-duplicate-customer-record-review-assistant",
+    "filipino-reference-check-scheduling-assistant",
+    "filipino-campaign-link-qa-assistant",
+    "filipino-marketplace-listing-suppression-assistant",
+    "filipino-property-maintenance-intake-assistant",
+    "filipino-legal-client-intake-data-assistant",
+    "filipino-healthcare-eligibility-records-assistant",
+    "filipino-saas-migration-validation-assistant",
+    "filipino-purchase-order-confirmation-assistant"
+  ]
+}
