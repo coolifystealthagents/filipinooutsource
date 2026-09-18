@@ -1,0 +1,58 @@
+{
+  "routine": "Daily Research Publishing",
+  "publicationDate": "2026-09-18",
+  "siteTimezone": "UTC (repository date rendering)",
+  "requiredCount": 5,
+  "contentCommit": "19e5a164c3ea0709ca8bf23976f2f10518f1fde8",
+  "repository": "coolifystealthagents/filipinooutsource",
+  "productionBranch": "main",
+  "deploymentResource": "zicup2lu74m4qgqkyrhj8tzf",
+  "status": "awaiting-live-verification",
+  "articles": [
+    {
+      "family": "buyer-governance",
+      "topic": "Data processing agreements for Philippines outsourcing",
+      "slug": "philippines-outsourcing-data-processing-agreement-research-2026",
+      "sources": ["National Privacy Commission Data Privacy Act", "NPC implementing rules", "NPC Advisory No. 2024-01", "NPC Manage Legal guidance"],
+      "contentHash": "ead1572cfe95888edcd845b292066757ea5373a2673aef930b0e0c8790fb3314",
+      "publicationDate": "2026-09-18",
+      "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-data-processing-agreement-research-2026"
+    },
+    {
+      "family": "workforce-cost-planning",
+      "topic": "13th-month pay budgeting for a Philippines team",
+      "slug": "philippines-outsourcing-thirteenth-month-pay-budget-research-2026",
+      "sources": ["DOLE Bureau of Working Conditions", "NWPC statutory-benefits handbook", "DOLE Labor Code edition"],
+      "contentHash": "6a245808363701e7c036e838056ca201346ad6f29b9f9cebd2ec576ad99eaabd",
+      "publicationDate": "2026-09-18",
+      "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-thirteenth-month-pay-budget-research-2026"
+    },
+    {
+      "family": "employee-lifecycle",
+      "topic": "Final pay and offboarding evidence",
+      "slug": "philippines-outsourcing-final-pay-offboarding-research-2026",
+      "sources": ["DOLE 2026 final-pay and COE guidance", "DOLE Labor Code edition", "National Privacy Commission Data Privacy Act"],
+      "contentHash": "ce22ad8a197af257c070741642251d2e214d7e1d5f70ca1a5aeb2cfb2e441301",
+      "publicationDate": "2026-09-18",
+      "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-final-pay-offboarding-research-2026"
+    },
+    {
+      "family": "remote-work-design",
+      "topic": "Telecommuting operating agreements",
+      "slug": "philippines-telecommuting-agreement-operations-research-2026",
+      "sources": ["DOLE Department Order No. 237-22", "DOLE expanded WFH guidance", "BWC 2026 flexible-work guidance", "DOLE Labor Code Book Three"],
+      "contentHash": "5f1133b070ea133a5c246400de00d5c37f6d8d3c93af0052e1ed58aa2585ff62",
+      "publicationDate": "2026-09-18",
+      "liveUrl": "https://filipinooutsource.com/research/philippines-telecommuting-agreement-operations-research-2026"
+    },
+    {
+      "family": "business-continuity",
+      "topic": "Weather disruption planning for Philippines remote teams",
+      "slug": "philippines-remote-team-weather-continuity-research-2026",
+      "sources": ["PAGASA 2026 preparedness guidance", "PAGASA severe-wind maps", "PAGASA storm-surge guidance", "DOLE 2026 flexible-work guidance"],
+      "contentHash": "9ceb52ea6929a0c36746e5313b44ade06ffff5fb1a71c36df196c850e276c9c2",
+      "publicationDate": "2026-09-18",
+      "liveUrl": "https://filipinooutsource.com/research/philippines-remote-team-weather-continuity-research-2026"
+    }
+  ]
+}
