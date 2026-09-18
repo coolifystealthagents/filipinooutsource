@@ -1,6 +1,6 @@
 const published = '2026-09-18' as const;
 
-type Brief = {
+export type Brief = {
   slug: string; title: string; excerpt: string; service: string; queue: string;
   owner: string; inputs: string; stop: string; example: string; output: string;
 };
@@ -20,7 +20,7 @@ const briefs: readonly Brief[] = [
   {slug:'filipino-purchase-order-confirmation-assistant',title:'A Filipino Purchase Order Confirmation Assistant Playbook',excerpt:'Compare supplier acknowledgments with approved purchase orders while procurement retains change and acceptance authority.',service:'data processing support',queue:'purchase order confirmation review',owner:'procurement or operations owner',inputs:'purchase order, approved revision, supplier acknowledgment, item, quantity, price, delivery date, ship-to location, and terms reference',stop:'price, quantity, specification, entity, date, or terms differ, or a change must be accepted',example:'The supplier confirms the correct quantity and price but substitutes a later delivery date and a different warehouse.',output:'a line-level variance record with both sources, material differences, deadline context, and a single owner decision request'},
 ];
 
-function detail(b: Brief) {
+export function buildSeptember18Detail(b: Brief) {
   const sections = [
     {title:'Define the work before access begins',paragraphs:[`Treat ${b.queue} as a bounded queue, not a broad assistant title. The written entry rule should name ${b.inputs}. The ${b.owner} should identify which system is authoritative for each field and what evidence is acceptable when a source is missing.`, `Define administrative completion as ${b.output}. Completion does not mean the underlying business decision is approved. It means the evidence is organized, the open question is visible, and an accountable owner can review the case without reconstructing it from private messages.`, `Use one queue identifier from intake through closure. If an item arrives through email, chat, a form, and a business system, link those events rather than creating four unrelated tasks. This protects the chronology and reduces duplicate effort.`]},
     {title:'Separate preparation from authority',paragraphs:[`The assistant may retrieve approved records, transcribe exact fields, apply client-defined labels, compare sources, request specified missing items, and route a packet. The ${b.owner} retains judgment, approval, external commitment, and any action that changes money, access, rights, safety, or the authoritative record.`, `A useful stop rule is concrete: stop when ${b.stop}. The escalation should quote or link the conflicting evidence, describe the action that cannot continue, and ask one decision question. “Please advise” without context only moves the research burden back to the owner.`, `Urgency never expands permission. If a deadline approaches, record the deadline source and notify the named owner through the approved channel. Do not resolve uncertainty by copying an earlier decision from a superficially similar case.`]},
@@ -51,4 +51,4 @@ function detail(b: Brief) {
 }
 
 export const september18BlogPosts = briefs.map(({slug,title,excerpt})=>({slug,title,excerpt,minutes:12,image:'/article-planning.svg'}));
-export const september18BlogDetails = Object.fromEntries(briefs.map(brief=>[brief.slug,detail(brief)]));
+export const september18BlogDetails = Object.fromEntries(briefs.map(brief=>[brief.slug,buildSeptember18Detail(brief)]));
