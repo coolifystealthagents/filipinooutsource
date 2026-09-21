@@ -51,7 +51,7 @@ export default function ContactUs() {
                 <li>Dedicated, full-time talent</li>
                 <li>Clear onboarding and review boundaries</li>
               </ul>
-              <a className="contact-powered" href="https://stealthagents.com/" target="_blank" rel="noopener noreferrer">Powered by Stealth Agents <span aria-hidden="true">↗</span></a>
+              <a className="contact-powered" href="https://stealthagents.com/" target="_blank" rel="noopener noreferrer">Powered by StealthAgents <span aria-hidden="true">↗</span></a>
             </div>
             <StandardContactForm endpoint="/api/contact" encoding="form" />
           </div>
@@ -98,7 +98,7 @@ export default function ContactUs() {
         <section className="contact-trust-section contact-about" aria-labelledby="contact-about-title">
           <div className="container contact-about-card">
             <div>
-              <p className="contact-trust-kicker">Powered by Stealth Agents</p>
+              <p className="contact-trust-kicker">Powered by StealthAgents</p>
               <h2 id="contact-about-title">About Stealth Agents</h2>
             </div>
             <div>
