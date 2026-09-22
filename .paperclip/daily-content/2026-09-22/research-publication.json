@@ -1,0 +1,18 @@
+{
+  "routine": "Daily Research Publishing",
+  "publicationDate": "2026-09-22",
+  "siteTimezone": "UTC (repository date rendering)",
+  "requiredCount": 5,
+  "repository": "coolifystealthagents/filipinooutsource",
+  "productionBranch": "main",
+  "deploymentResource": "zicup2lu74m4qgqkyrhj8tzf",
+  "verifiedCount": 0,
+  "status": "pre-deployment",
+  "articles": [
+    { "family": "buyer-governance", "topic": "Philippines outsourcing provider verification", "slug": "philippines-outsourcing-provider-verification-research-2026", "publicationDate": "2026-09-22", "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-provider-verification-research-2026" },
+    { "family": "workforce-planning", "topic": "Philippine holiday coverage planning", "slug": "philippines-outsourcing-holiday-coverage-planning-research-2026", "publicationDate": "2026-09-22", "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-holiday-coverage-planning-research-2026" },
+    { "family": "incident-governance", "topic": "Outsourced personal-data breach escalation", "slug": "philippines-outsourcing-data-breach-escalation-research-2026", "publicationDate": "2026-09-22", "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-data-breach-escalation-research-2026" },
+    { "family": "remote-operations", "topic": "Remote-worker monitoring privacy", "slug": "philippines-remote-worker-monitoring-privacy-research-2026", "publicationDate": "2026-09-22", "liveUrl": "https://filipinooutsource.com/research/philippines-remote-worker-monitoring-privacy-research-2026" },
+    { "family": "access-governance", "topic": "BYOD controls for outsourced work", "slug": "philippines-outsourcing-byod-controls-research-2026", "publicationDate": "2026-09-22", "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-byod-controls-research-2026" }
+  ]
+}
