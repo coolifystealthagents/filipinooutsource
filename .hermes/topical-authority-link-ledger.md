@@ -17,6 +17,16 @@ This is a source-only planning ledger. It maps existing Philippines-only service
 
 ## Rules for the next release
 
+## 2026-09-23 research additions
+
+| Service pillar | New supporting research | Buyer question answered | Controlled handoff |
+| --- | --- | --- | --- |
+| `/services/data-processing-support` | `/research/philippines-outsourcing-generative-ai-tool-intake-research-2026` | What evidence is needed before client data enters a generative-AI tool? | Article-to-service handoff only. |
+| `/services/sales-development-support` | `/research/philippines-outsourcing-public-data-scraping-research-2026` | Does public availability permit unrestricted personal-data collection? | Article-to-service handoff only. |
+| `/services/digital-marketing-support` | `/research/philippines-outsourcing-ai-likeness-content-review-research-2026` | Who approves synthetic media depicting a real person? | Article-to-service handoff only. |
+| `/services/recruitment-coordination` | `/research/philippines-outsourcing-automated-decision-human-review-research-2026` | Where does meaningful human review sit when software ranks people? | Article-to-service handoff only. |
+| `/services/data-processing-support` | `/research/philippines-outsourcing-subprocessor-change-control-research-2026` | What evidence should accompany a new onward processor? | Article-to-service handoff only. |
+
 1. Recheck the source page and this ledger before adding a link. Do not duplicate a verified path.
 2. Keep the link inside the paragraph where the buyer's question appears. A generic footer or sidebar link does not count.
 3. Keep the reader-facing sentence unique to FilipinoOutsource.com. Do not promise placement, savings, outcomes, or clinical, legal, or financial decisions.
