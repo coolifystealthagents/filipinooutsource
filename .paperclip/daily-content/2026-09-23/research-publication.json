@@ -1,0 +1,30 @@
+{
+  "routine": "Daily Research Publishing",
+  "publicationDate": "pending-live-verification",
+  "siteTimezone": "UTC (repository date rendering)",
+  "requiredCount": 5,
+  "contentCommit": "7d84cd87571ceb051fe2eb4e05339ebd84af1f12",
+  "remoteSha": "7d84cd87571ceb051fe2eb4e05339ebd84af1f12",
+  "repository": "coolifystealthagents/filipinooutsource",
+  "productionBranch": "main",
+  "deploymentResource": "zicup2lu74m4qgqkyrhj8tzf",
+  "deploymentAttempts": ["npewxdmjl04ly93ic4yvqk3x", "dmjzoza1l0auuzdflbi9swji", "vr0srhvxc03nbtyf6dt4ngx5"],
+  "verifiedCount": 0,
+  "status": "deployment-blocked",
+  "blocker": "Coolify has five older deployments continuously in progress; three authenticated deployment requests confirmed this commit is queued, while both public hosts still return 404 for every new route.",
+  "recoveryAction": "Coolify owner: clear or complete the five stuck deployments, then deploy application zicup2lu74m4qgqkyrhj8tzf from main at content commit 7d84cd87571ceb051fe2eb4e05339ebd84af1f12. Before deployment, set all publication-date surfaces to the UTC date on which each route can pass live verification if that date is no longer 2026-09-23. Verify title, unique body text, canonical, shared asset, Article JSON-LD, Research index entry, sitemap entry, and remote SHA on both apex and www; then update this manifest and the issue with verification times.",
+  "validation": {
+    "typescript": "passed",
+    "productionBuild": "passed (593 static pages)",
+    "duplicateSlugCheck": "passed",
+    "sourceReview": "eight National Privacy Commission URLs checked 2026-09-23; direct curl received the publisher's bot-protection 403 while browser retrieval confirmed the cited materials",
+    "publicProbe": "404 on apex and www before deployment"
+  },
+  "articles": [
+    { "family": "ai-governance", "topic": "Generative-AI tool intake", "slug": "philippines-outsourcing-generative-ai-tool-intake-research-2026", "contentHash": "0b626de87fdc89f3df960549247eebfcd9c0b75e4b91730a060deb175c9584a2", "publicationDate": "pending-live-verification", "commitSha": "7d84cd87571ceb051fe2eb4e05339ebd84af1f12", "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-generative-ai-tool-intake-research-2026" },
+    { "family": "research-governance", "topic": "Public-personal-data scraping", "slug": "philippines-outsourcing-public-data-scraping-research-2026", "contentHash": "92fa199c02940bab7d4c60ee19db7e63202e67a0e9d17a94e9522b928421f42b", "publicationDate": "pending-live-verification", "commitSha": "7d84cd87571ceb051fe2eb4e05339ebd84af1f12", "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-public-data-scraping-research-2026" },
+    { "family": "content-governance", "topic": "AI-generated likeness review", "slug": "philippines-outsourcing-ai-likeness-content-review-research-2026", "contentHash": "ce911c4859409d150642f0ac492b4b31c10b5d93fe8fce7c04bcebd4c847cec2", "publicationDate": "pending-live-verification", "commitSha": "7d84cd87571ceb051fe2eb4e05339ebd84af1f12", "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-ai-likeness-content-review-research-2026" },
+    { "family": "ai-governance", "topic": "Automated-decision human review", "slug": "philippines-outsourcing-automated-decision-human-review-research-2026", "contentHash": "cc87c36222209546ee9e050b1d5063b98a61c9b627e3b6daa26cf7375dfb9134", "publicationDate": "pending-live-verification", "commitSha": "7d84cd87571ceb051fe2eb4e05339ebd84af1f12", "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-automated-decision-human-review-research-2026" },
+    { "family": "buyer-governance", "topic": "Subprocessor change control", "slug": "philippines-outsourcing-subprocessor-change-control-research-2026", "contentHash": "ded4e03e663b0a7ba752c41c66af26cea84c334d380ec48b02cce56b45bdac12", "publicationDate": "pending-live-verification", "commitSha": "7d84cd87571ceb051fe2eb4e05339ebd84af1f12", "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-subprocessor-change-control-research-2026" }
+  ]
+}
