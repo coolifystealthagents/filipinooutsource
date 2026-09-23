@@ -7,15 +7,14 @@
   "repository": "coolifystealthagents/filipinooutsource",
   "branch": "main",
   "requiredCount": 12,
-  "status": "deployment-blocked",
-  "build": "PASS: next build; 601 static pages generated",
-  "validation": "PASS: 12 unique new routes; 1471 shared substantive words; TypeScript clean; local canonical/date/schema/asset/sitemap checks passed",
+  "status": "live-verified",
+  "build": "PASS: clean combined production build; 606 static pages generated",
+  "validation": "PASS: 12 unique new routes; 1471 shared substantive words; TypeScript clean; all 12 public URL, title, distinct-content hash, canonical, asset, structured-data, Blog index, and sitemap checks passed",
   "commitSha": "158c1c09f349c85935b996ae2d93c58604c9d8ac",
-  "remoteSha": "158c1c09f349c85935b996ae2d93c58604c9d8ac",
-  "deploymentEvidence": "Coolify deployment blkdethmssrte9uewmngpvb8 queued at 2026-09-23T16:47:15Z behind a saturated shared queue; Coolify resolved stale pre-push commit f6d7264c7c360cabd039a0d6e85b3dcfb0775900, so it cannot publish this batch",
-  "verifiedCount": 0,
-  "blocker": "Coolify shared deployment queue is saturated and the bounded authenticated deployment attempt captured a stale commit",
-  "recoveryAction": "When a Coolify queue slot is available, deploy application zicup2lu74m4qgqkyrhj8tzf from current origin/main, verify the deployed SHA includes 158c1c09f349c85935b996ae2d93c58604c9d8ac, then run all 12 public URL, title, unique-content, canonical, asset, structured-data, Blog index, and sitemap checks. If verification crosses UTC midnight, update every publication-date surface before counting any article.",
+  "remoteSha": "bb33538a33a5986a56daf53a8f31803f50726d83",
+  "deploymentEvidence": "Sole retained combined deployment wwcy6b8qdpkumhjhur9q6bmn targeted bb33538a33a5986a56daf53a8f31803f50726d83. Coolify authentication was unavailable during final verification, so public metadata transition plus dual-host route checks provided deployment evidence.",
+  "verifiedCount": 12,
+  "verificationTime": "2026-09-23T21:06:02Z",
   "entries": [
     {
       "family": "blog",
@@ -32,10 +31,10 @@
       ],
       "contentHash": "d3427e86c654e8c8611b065abca9ef5bc2b1c6adc9f812a4af230c81262a576d",
       "actualPublicationDate": "2026-09-23",
-      "commitSha": null,
-      "deploymentEvidence": null,
+      "commitSha": "158c1c09f349c85935b996ae2d93c58604c9d8ac",
+      "deploymentEvidence": "Combined deployment wwcy6b8qdpkumhjhur9q6bmn at bb33538a33a5986a56daf53a8f31803f50726d83; public checks passed",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-budget-inputs-guide",
-      "verifiedAt": null
+      "verifiedAt": "2026-09-23T21:06:02Z"
     },
     {
       "family": "blog",
@@ -52,10 +51,10 @@
       ],
       "contentHash": "05bc7310d1ba5b5576f8a01b29655c32e581480b3b50111c4c0b4e8257ab8f11",
       "actualPublicationDate": "2026-09-23",
-      "commitSha": null,
-      "deploymentEvidence": null,
+      "commitSha": "158c1c09f349c85935b996ae2d93c58604c9d8ac",
+      "deploymentEvidence": "Combined deployment wwcy6b8qdpkumhjhur9q6bmn at bb33538a33a5986a56daf53a8f31803f50726d83; public checks passed",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-candidate-structured-interview-plan",
-      "verifiedAt": null
+      "verifiedAt": "2026-09-23T21:06:02Z"
     },
     {
       "family": "blog",
@@ -72,10 +71,10 @@
       ],
       "contentHash": "8f7ea5b903885ced5c9cc55bd6ce4d37b2cadf5a3224d7e003397bbebca5d270",
       "actualPublicationDate": "2026-09-23",
-      "commitSha": null,
-      "deploymentEvidence": null,
+      "commitSha": "158c1c09f349c85935b996ae2d93c58604c9d8ac",
+      "deploymentEvidence": "Combined deployment wwcy6b8qdpkumhjhur9q6bmn at bb33538a33a5986a56daf53a8f31803f50726d83; public checks passed",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-candidate-reference-check-workflow",
-      "verifiedAt": null
+      "verifiedAt": "2026-09-23T21:06:02Z"
     },
     {
       "family": "blog",
@@ -92,10 +91,10 @@
       ],
       "contentHash": "04dff7546feb5fc5f7133cacb2028558c5595294f7605b7e616161698688746d",
       "actualPublicationDate": "2026-09-23",
-      "commitSha": null,
-      "deploymentEvidence": null,
+      "commitSha": "158c1c09f349c85935b996ae2d93c58604c9d8ac",
+      "deploymentEvidence": "Combined deployment wwcy6b8qdpkumhjhur9q6bmn at bb33538a33a5986a56daf53a8f31803f50726d83; public checks passed",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-candidate-paid-work-trial-guide",
-      "verifiedAt": null
+      "verifiedAt": "2026-09-23T21:06:02Z"
     },
     {
       "family": "blog",
@@ -112,10 +111,10 @@
       ],
       "contentHash": "9b743084e97aea19c9b531c44c519a8428613f908bce9e0cbc5c520970c9cf45",
       "actualPublicationDate": "2026-09-23",
-      "commitSha": null,
-      "deploymentEvidence": null,
+      "commitSha": "158c1c09f349c85935b996ae2d93c58604c9d8ac",
+      "deploymentEvidence": "Combined deployment wwcy6b8qdpkumhjhur9q6bmn at bb33538a33a5986a56daf53a8f31803f50726d83; public checks passed",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-remote-worker-equipment-plan",
-      "verifiedAt": null
+      "verifiedAt": "2026-09-23T21:06:02Z"
     },
     {
       "family": "blog",
@@ -132,10 +131,10 @@
       ],
       "contentHash": "9a6152d9954676b921b9326bea54cef1c5aed5a9f0e6e411570a015b1b045169",
       "actualPublicationDate": "2026-09-23",
-      "commitSha": null,
-      "deploymentEvidence": null,
+      "commitSha": "158c1c09f349c85935b996ae2d93c58604c9d8ac",
+      "deploymentEvidence": "Combined deployment wwcy6b8qdpkumhjhur9q6bmn at bb33538a33a5986a56daf53a8f31803f50726d83; public checks passed",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-team-communication-cadence-plan",
-      "verifiedAt": null
+      "verifiedAt": "2026-09-23T21:06:02Z"
     },
     {
       "family": "blog",
@@ -152,10 +151,10 @@
       ],
       "contentHash": "5cc6f7a21d190bbf9f9ad6d4802964cf965c6fd3c89de917c8a0fad81313f7f7",
       "actualPublicationDate": "2026-09-23",
-      "commitSha": null,
-      "deploymentEvidence": null,
+      "commitSha": "158c1c09f349c85935b996ae2d93c58604c9d8ac",
+      "deploymentEvidence": "Combined deployment wwcy6b8qdpkumhjhur9q6bmn at bb33538a33a5986a56daf53a8f31803f50726d83; public checks passed",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-quality-review-sampling-plan",
-      "verifiedAt": null
+      "verifiedAt": "2026-09-23T21:06:02Z"
     },
     {
       "family": "blog",
@@ -172,10 +171,10 @@
       ],
       "contentHash": "22f6fdd28053367be261946151e106d92268b36e8187d65653823c791770800a",
       "actualPublicationDate": "2026-09-23",
-      "commitSha": null,
-      "deploymentEvidence": null,
+      "commitSha": "158c1c09f349c85935b996ae2d93c58604c9d8ac",
+      "deploymentEvidence": "Combined deployment wwcy6b8qdpkumhjhur9q6bmn at bb33538a33a5986a56daf53a8f31803f50726d83; public checks passed",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-assistant-workload-capacity-plan",
-      "verifiedAt": null
+      "verifiedAt": "2026-09-23T21:06:02Z"
     },
     {
       "family": "blog",
@@ -192,10 +191,10 @@
       ],
       "contentHash": "569630e048992e563280a367262997923e0adf70cb74c6ffcfec7f49b43d1ee5",
       "actualPublicationDate": "2026-09-23",
-      "commitSha": null,
-      "deploymentEvidence": null,
+      "commitSha": "158c1c09f349c85935b996ae2d93c58604c9d8ac",
+      "deploymentEvidence": "Combined deployment wwcy6b8qdpkumhjhur9q6bmn at bb33538a33a5986a56daf53a8f31803f50726d83; public checks passed",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-team-holiday-coverage-plan",
-      "verifiedAt": null
+      "verifiedAt": "2026-09-23T21:06:02Z"
     },
     {
       "family": "blog",
@@ -212,10 +211,10 @@
       ],
       "contentHash": "d9f1d167e69f1f26241656a0ac9b1731f80d01d76e0838baba1e938b8d431804",
       "actualPublicationDate": "2026-09-23",
-      "commitSha": null,
-      "deploymentEvidence": null,
+      "commitSha": "158c1c09f349c85935b996ae2d93c58604c9d8ac",
+      "deploymentEvidence": "Combined deployment wwcy6b8qdpkumhjhur9q6bmn at bb33538a33a5986a56daf53a8f31803f50726d83; public checks passed",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-team-offboarding-checklist",
-      "verifiedAt": null
+      "verifiedAt": "2026-09-23T21:06:02Z"
     },
     {
       "family": "blog",
@@ -232,10 +231,10 @@
       ],
       "contentHash": "092df6054f624334d85704363a6ffa48468385cd72a968c3dfddf657f3d0c2a5",
       "actualPublicationDate": "2026-09-23",
-      "commitSha": null,
-      "deploymentEvidence": null,
+      "commitSha": "158c1c09f349c85935b996ae2d93c58604c9d8ac",
+      "deploymentEvidence": "Combined deployment wwcy6b8qdpkumhjhur9q6bmn at bb33538a33a5986a56daf53a8f31803f50726d83; public checks passed",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-freelancer-to-managed-team-transition",
-      "verifiedAt": null
+      "verifiedAt": "2026-09-23T21:06:02Z"
     },
     {
       "family": "blog",
@@ -252,10 +251,10 @@
       ],
       "contentHash": "fc5c1b6a8ef134d2971d7a87fa05b9e71e2644f497454e5ae93b508d389ee0b4",
       "actualPublicationDate": "2026-09-23",
-      "commitSha": null,
-      "deploymentEvidence": null,
+      "commitSha": "158c1c09f349c85935b996ae2d93c58604c9d8ac",
+      "deploymentEvidence": "Combined deployment wwcy6b8qdpkumhjhur9q6bmn at bb33538a33a5986a56daf53a8f31803f50726d83; public checks passed",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-backup-coverage-plan",
-      "verifiedAt": null
+      "verifiedAt": "2026-09-23T21:06:02Z"
     }
   ]
 }
