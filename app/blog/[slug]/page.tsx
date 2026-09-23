@@ -90,7 +90,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
       description: post.excerpt,
       url,
       datePublished: detail.datePublished || '2026-07-22',
-      dateModified: detail.dateModified || '2026-07-22',
+      dateModified: detail.dateModified,
       author: { '@type': 'Organization', name: `${site.brand} Editorial Team` },
       publisher: { '@type': 'Organization', name: site.brand, url: base },
       image: detail.image ? `${base}${detail.image.src}` : undefined,
