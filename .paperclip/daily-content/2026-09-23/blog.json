@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "contract": "FIL-86-canonical-daily-blog",
+  "publicationDate": "2026-09-23",
+  "family": "blog",
+  "domain": "filipinooutsource.com",
+  "repository": "coolifystealthagents/filipinooutsource",
+  "branch": "main",
+  "requiredCount": 12,
+  "status": "validated",
+  "build": "PASS: next build; 601 static pages generated",
+  "validation": "PASS: 12 unique new routes; 1471 shared substantive words; TypeScript clean; local canonical/date/schema/asset/sitemap checks passed",
+  "commitSha": null,
+  "remoteSha": null,
+  "deploymentEvidence": null,
+  "entries": [
+    {
+      "family": "blog",
+      "topic": "How to Budget for a Filipino Outsourcing Role",
+      "slug": "filipino-outsourcing-budget-inputs-guide",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "sourcePaths": [
+        "app/blog-september23.ts",
+        "app/blog-september23-shared.ts"
+      ],
+      "contentHash": "d3427e86c654e8c8611b065abca9ef5bc2b1c6adc9f812a4af230c81262a576d",
+      "actualPublicationDate": "2026-09-23",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-budget-inputs-guide",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "A Structured Interview Plan for Filipino Candidates",
+      "slug": "filipino-candidate-structured-interview-plan",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "sourcePaths": [
+        "app/blog-september23.ts",
+        "app/blog-september23-shared.ts"
+      ],
+      "contentHash": "05bc7310d1ba5b5576f8a01b29655c32e581480b3b50111c4c0b4e8257ab8f11",
+      "actualPublicationDate": "2026-09-23",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-candidate-structured-interview-plan",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "How to Run Reference Checks for Filipino Candidates",
+      "slug": "filipino-candidate-reference-check-workflow",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "sourcePaths": [
+        "app/blog-september23.ts",
+        "app/blog-september23-shared.ts"
+      ],
+      "contentHash": "8f7ea5b903885ced5c9cc55bd6ce4d37b2cadf5a3224d7e003397bbebca5d270",
+      "actualPublicationDate": "2026-09-23",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-candidate-reference-check-workflow",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "How to Design a Paid Work Trial for a Filipino Candidate",
+      "slug": "filipino-candidate-paid-work-trial-guide",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "sourcePaths": [
+        "app/blog-september23.ts",
+        "app/blog-september23-shared.ts"
+      ],
+      "contentHash": "04dff7546feb5fc5f7133cacb2028558c5595294f7605b7e616161698688746d",
+      "actualPublicationDate": "2026-09-23",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-candidate-paid-work-trial-guide",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "An Equipment Plan for a Filipino Remote Team Member",
+      "slug": "filipino-remote-worker-equipment-plan",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "sourcePaths": [
+        "app/blog-september23.ts",
+        "app/blog-september23-shared.ts"
+      ],
+      "contentHash": "9b743084e97aea19c9b531c44c519a8428613f908bce9e0cbc5c520970c9cf45",
+      "actualPublicationDate": "2026-09-23",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-remote-worker-equipment-plan",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "A Communication Cadence for a Filipino Remote Team",
+      "slug": "filipino-team-communication-cadence-plan",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "sourcePaths": [
+        "app/blog-september23.ts",
+        "app/blog-september23-shared.ts"
+      ],
+      "contentHash": "9a6152d9954676b921b9326bea54cef1c5aed5a9f0e6e411570a015b1b045169",
+      "actualPublicationDate": "2026-09-23",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-team-communication-cadence-plan",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "How to Sample Work for Filipino Outsourcing Quality Reviews",
+      "slug": "filipino-outsourcing-quality-review-sampling-plan",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "sourcePaths": [
+        "app/blog-september23.ts",
+        "app/blog-september23-shared.ts"
+      ],
+      "contentHash": "5cc6f7a21d190bbf9f9ad6d4802964cf965c6fd3c89de917c8a0fad81313f7f7",
+      "actualPublicationDate": "2026-09-23",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-quality-review-sampling-plan",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "How to Plan Workload for a Filipino Assistant",
+      "slug": "filipino-assistant-workload-capacity-plan",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "sourcePaths": [
+        "app/blog-september23.ts",
+        "app/blog-september23-shared.ts"
+      ],
+      "contentHash": "22f6fdd28053367be261946151e106d92268b36e8187d65653823c791770800a",
+      "actualPublicationDate": "2026-09-23",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-assistant-workload-capacity-plan",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "A Holiday Coverage Plan for a Filipino Remote Team",
+      "slug": "filipino-team-holiday-coverage-plan",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "sourcePaths": [
+        "app/blog-september23.ts",
+        "app/blog-september23-shared.ts"
+      ],
+      "contentHash": "569630e048992e563280a367262997923e0adf70cb74c6ffcfec7f49b43d1ee5",
+      "actualPublicationDate": "2026-09-23",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-team-holiday-coverage-plan",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "An Offboarding Checklist for a Filipino Team Member",
+      "slug": "filipino-team-offboarding-checklist",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "sourcePaths": [
+        "app/blog-september23.ts",
+        "app/blog-september23-shared.ts"
+      ],
+      "contentHash": "d9f1d167e69f1f26241656a0ac9b1731f80d01d76e0838baba1e938b8d431804",
+      "actualPublicationDate": "2026-09-23",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-team-offboarding-checklist",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "Moving from a Filipino Freelancer to a Managed Team",
+      "slug": "filipino-freelancer-to-managed-team-transition",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "sourcePaths": [
+        "app/blog-september23.ts",
+        "app/blog-september23-shared.ts"
+      ],
+      "contentHash": "092df6054f624334d85704363a6ffa48468385cd72a968c3dfddf657f3d0c2a5",
+      "actualPublicationDate": "2026-09-23",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-freelancer-to-managed-team-transition",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "How to Build Backup Coverage for a Filipino Outsourcing Role",
+      "slug": "filipino-outsourcing-backup-coverage-plan",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "sourcePaths": [
+        "app/blog-september23.ts",
+        "app/blog-september23-shared.ts"
+      ],
+      "contentHash": "fc5c1b6a8ef134d2971d7a87fa05b9e71e2644f497454e5ae93b508d389ee0b4",
+      "actualPublicationDate": "2026-09-23",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-backup-coverage-plan",
+      "verifiedAt": null
+    }
+  ]
+}

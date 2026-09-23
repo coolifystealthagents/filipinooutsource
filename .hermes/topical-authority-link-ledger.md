@@ -21,3 +21,7 @@ This is a source-only planning ledger. It maps existing Philippines-only service
 2. Keep the link inside the paragraph where the buyer's question appears. A generic footer or sidebar link does not count.
 3. Keep the reader-facing sentence unique to FilipinoOutsource.com. Do not promise placement, savings, outcomes, or clinical, legal, or financial decisions.
 4. A public link release needs its own source, target, canonical, sitemap, and dual-host proof. This ledger alone does not need a deployment because it produces no route output.
+
+## 2026-09-23 Blog decision-support expansion
+
+Twelve new buyer guides extend the staffing-decision pillar across commercial planning, candidate assessment, work trials, equipment, communication, quality sampling, capacity, continuity, offboarding, and delivery-model transitions. Their canonical slugs and publication evidence are recorded in `.paperclip/daily-content/2026-09-23/blog.json`; future batches must treat those topics and slugs as occupied.
