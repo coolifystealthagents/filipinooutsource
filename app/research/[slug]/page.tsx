@@ -70,7 +70,8 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
 
         {post.datePublished ? <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org', '@type': 'Article', headline: post.title,
-          datePublished: post.datePublished, dateModified: post.dateModified || post.datePublished,
+          datePublished: post.datePublished,
+          ...(post.dateModified ? { dateModified: post.dateModified } : {}),
           mainEntityOfPage: `https://${site.domain}/research/${post.slug}`
         }) }} /> : null}
 
