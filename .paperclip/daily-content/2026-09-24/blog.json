@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "contract": "FIL-89-canonical-daily-blog",
+  "publicationDate": "2026-09-24",
+  "family": "blog",
+  "domain": "filipinooutsource.com",
+  "repository": "coolifystealthagents/filipinooutsource",
+  "branch": "main",
+  "requiredCount": 12,
+  "status": "awaiting-deployment",
+  "build": "pending",
+  "validation": "pending",
+  "commitSha": "pending",
+  "remoteSha": "pending",
+  "deploymentEvidence": "pending",
+  "verifiedCount": 0,
+  "verificationTime": null,
+  "entries": [
+    {"family":"blog","topic":"How to Build a Scorecard for a Filipino Outsourcing Role","slug":"filipino-outsourcing-role-scorecard","contentHash":"21e6a0367aea6a01f0b7978629b09e295742f696ff414164505b39b82bd6ba52"},
+    {"family":"blog","topic":"Is Your SOP Ready for a Filipino Outsourcing Hire?","slug":"filipino-outsourcing-sop-readiness-check","contentHash":"310476f3efeccaa0b16c8c89cf15681b7fff81225fe89207e1859cd1156ef7c4"},
+    {"family":"blog","topic":"A First-Week Plan for a Filipino Virtual Assistant","slug":"filipino-virtual-assistant-first-week-plan","contentHash":"e801eb481f4069c473cf6e7315efc55ff3de830be1b4dded24a7c7cd8fe6da27"},
+    {"family":"blog","topic":"How Much Manager Time Does Filipino Outsourcing Need?","slug":"filipino-outsourcing-manager-time-plan","contentHash":"2378dc54a6bc59ac5523729a844b698cfbdf00a801cd42e942eb40186295c546"},
+    {"family":"blog","topic":"An Access Matrix for a Filipino Outsourcing Role","slug":"filipino-outsourcing-permission-plan","contentHash":"fd00b05075696f00ba8cbebcd721e208c7918b1fbfec8425d25ffa75637d18d8"},
+    {"family":"blog","topic":"How to Set a KPI Baseline Before Outsourcing to the Philippines","slug":"filipino-outsourcing-kpi-baseline","contentHash":"cd0f96e2e086a6411a8a1728b4d5e91486a4c047b6c8613a9786b66c71ba1596"},
+    {"family":"blog","topic":"How to Set Escalation Response Targets for a Filipino Team","slug":"filipino-outsourcing-escalation-sla","contentHash":"3b84a559aecd76d05523cce08da6921f424e33d51785e1f401197de15ecb7faf"},
+    {"family":"blog","topic":"How to Run a Shadow Period for a Filipino Outsourcing Hire","slug":"filipino-outsourcing-shadow-period","contentHash":"76cd11f6dc437c1c9b74423c649c0ee05a30e30727131ee76fad8ba74e2f7b54"},
+    {"family":"blog","topic":"Who Should Own a Filipino Outsourcing Process?","slug":"filipino-outsourcing-process-owner-guide","contentHash":"bb4865ceed37cd292a8f5ae6d66d8c761fecef372927099b0c74f88bbf0a069a"},
+    {"family":"blog","topic":"How to Choose a Pilot Scope for Filipino Outsourcing","slug":"filipino-outsourcing-launch-pilot-charter","contentHash":"80cb5d4d29f4c5ac4fffcc6f6979c933e4a43b4393e995f37664f91a519120fd"},
+    {"family":"blog","topic":"A Change-Request Workflow for a Filipino Outsourcing Team","slug":"filipino-outsourcing-change-request-workflow","contentHash":"c4be7b41e67d75c7a35f1debcf4716d2378b513a6db6b83cb5ecf5effddcbfb4"},
+    {"family":"blog","topic":"A Review Meeting Agenda for Filipino Outsourcing Operations","slug":"filipino-outsourcing-review-meeting-agenda","contentHash":"b7e7fa3079f3ce06b624a8662367298fd3095a2e24dde6257578ce6715e75d8b"}
+  ]
+}
