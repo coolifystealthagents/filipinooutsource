@@ -17,6 +17,13 @@ const article: August19Module = {
   secondUrl: 'https://privacy.gov.ph/',
   thirdName: 'World Wide Web Consortium',
   thirdUrl: 'https://www.w3.org/standards/',
+  dateModified: '2026-09-24',
+  serviceHandoff: {
+    heading: 'Set up a source-review lane',
+    copy: 'Use the digital marketing support guide to define the approved source list, claim record, reviewer, and publication handoff before a Philippines-based coordinator starts page review. The business owner and any required specialist still decide what evidence is enough, what wording may go live, and when a claim needs correction.',
+    label: 'Review digital marketing support',
+    href: '/services/digital-marketing-support'
+  },
   sections: [
     {
       heading: 'Evidence in a website claim ledger',
