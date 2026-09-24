@@ -1,0 +1,30 @@
+{
+  "routine": "Daily Research Publishing",
+  "publicationDate": "2026-09-24",
+  "siteTimezone": "UTC (repository date rendering)",
+  "requiredCount": 5,
+  "contentCommit": "e5fd3e6bfeaa5d43ca688c74a1d393d556cfc67f",
+  "remoteSha": null,
+  "repository": "coolifystealthagents/filipinooutsource",
+  "productionBranch": "main",
+  "deploymentResource": "zicup2lu74m4qgqkyrhj8tzf",
+  "verifiedCount": 0,
+  "status": "validated-awaiting-deployment",
+  "deploymentEvidence": null,
+  "verificationTime": null,
+  "validation": {
+    "typescript": "passed",
+    "productionBuild": "passed (611 static pages)",
+    "duplicateSlugCheck": "passed (5 unique new slugs; no production inventory collisions)",
+    "substantiveWordCount": "passed (rendered pages: 2,419 to 2,473 words including site chrome)",
+    "sourceReview": "13 official Philippine government URLs checked 2026-09-24; browser-indexed primary material confirmed the cited propositions; direct publisher requests were variably blocked by 403 or connection controls",
+    "publicProbe": "pending deployment"
+  },
+  "articles": [
+    { "family": "privacy-operations", "topic": "Data-subject request handoff", "slug": "philippines-outsourcing-data-subject-request-handoff-research-2026", "sources": 3, "contentHash": "12fe0801b153e37ad8e6ce86e70adfbf6b2c4aab78c95266ce8455e86083299f", "publicationDate": "2026-09-24", "commitSha": "e5fd3e6bfeaa5d43ca688c74a1d393d556cfc67f", "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-data-subject-request-handoff-research-2026", "verificationTime": null },
+    { "family": "privacy-operations", "topic": "Privacy-impact-assessment readiness", "slug": "philippines-outsourcing-privacy-impact-assessment-research-2026", "sources": 3, "contentHash": "914fddbec9b403d688cb6524f48cf39a53bad59f2a6f0ddd9cfcf5cc34db6b65", "publicationDate": "2026-09-24", "commitSha": "e5fd3e6bfeaa5d43ca688c74a1d393d556cfc67f", "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-privacy-impact-assessment-research-2026", "verificationTime": null },
+    { "family": "privacy-operations", "topic": "DPO escalation design", "slug": "philippines-outsourcing-dpo-escalation-design-research-2026", "sources": 4, "contentHash": "299a25708af2909ef1297f5a6923abebc5dac6136a16034c30923030dcf91e2e", "publicationDate": "2026-09-24", "commitSha": "e5fd3e6bfeaa5d43ca688c74a1d393d556cfc67f", "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-dpo-escalation-design-research-2026", "verificationTime": null },
+    { "family": "buyer-governance", "topic": "Contractor-registration due diligence", "slug": "philippines-outsourcing-contractor-registration-due-diligence-research-2026", "sources": 3, "contentHash": "345fb0b9b5fbf0a6bcdeed94bfd41680a3f23f0c83ab0d41af43eb3268041ee9", "publicationDate": "2026-09-24", "commitSha": "e5fd3e6bfeaa5d43ca688c74a1d393d556cfc67f", "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-contractor-registration-due-diligence-research-2026", "verificationTime": null },
+    { "family": "buyer-governance", "topic": "Outsourcing instruction control", "slug": "philippines-outsourcing-instruction-register-research-2026", "sources": 4, "contentHash": "a37f1fff938f3278f87446d9b1e079320a784f636cf65ee924bc88693b9ab527", "publicationDate": "2026-09-24", "commitSha": "e5fd3e6bfeaa5d43ca688c74a1d393d556cfc67f", "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-instruction-register-research-2026", "verificationTime": null }
+  ]
+}
