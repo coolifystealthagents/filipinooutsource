@@ -94,3 +94,12 @@ The checks below use the generated route-local `<main>` rather than shared navig
 - Deployment policy: no repository-approved deployment target or deployment record is configured. No deployment was triggered.
 - Lifecycle: `deployment_pending_public_verification / public_stale`.
 - Preserve rendered-source commit `966497c7fa029d91d348234d760af82e523ac1fe`; this status-only record must remain separate from the rendered change.
+
+## Release status — 2026-09-24
+
+- Rendered source: `53a615e3383924862d0a0fccbd643ae1d8e09938` adds the `Set up a source-review lane` handoff from the existing website-source review research to the existing `/services/digital-marketing-support` route. The copy limits a Philippines-based coordinator to preparing the source and claim record; the business owner and required specialist retain publication and evidence decisions.
+- Local artifact evidence: the selected generated research page has H1 `Philippines Website Source Review Research 2026`, its canonical URL, exactly one route-local marker and one `/services/digital-marketing-support` link, Article dates `2026-08-19` and `2026-09-24`, and the canonical sitemap `<loc>`; the sitemap intentionally has no `<lastmod>`.
+- Public evidence: cache-busted apex and www each returned HTTP 200 `text/html` with the expected H1 and apex canonical URL. Each route-local main omits the new marker and service link, and neither response exposes `article:modified_time`; both XML sitemaps contain the canonical route and intentionally have no `<lastmod>`.
+- Deployment policy: no repository-approved deployment target or deployment record is configured. No deployment was triggered.
+- Lifecycle: `deployment_pending_public_verification / public_stale`.
+- Preserve rendered-source commit `53a615e3383924862d0a0fccbd643ae1d8e09938`; this status-only record must remain separate from the rendered change.
