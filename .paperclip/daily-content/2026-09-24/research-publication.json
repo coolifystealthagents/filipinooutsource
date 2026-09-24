@@ -4,13 +4,13 @@
   "siteTimezone": "UTC (repository date rendering)",
   "requiredCount": 5,
   "contentCommit": "e5fd3e6bfeaa5d43ca688c74a1d393d556cfc67f",
-  "remoteSha": null,
+  "remoteSha": "b82117f498a682bf700a9c0937196c47466d7d82",
   "repository": "coolifystealthagents/filipinooutsource",
   "productionBranch": "main",
   "deploymentResource": "zicup2lu74m4qgqkyrhj8tzf",
   "verifiedCount": 0,
-  "status": "validated-awaiting-deployment",
-  "deploymentEvidence": null,
+  "status": "blocked-awaiting-production-deployment",
+  "deploymentEvidence": "Content commit e5fd3e6bfeaa5d43ca688c74a1d393d556cfc67f and evidence commit 9aeb748486efd1616593c00f3ac71450b88ca931 are ancestors of combined production head b82117f498a682bf700a9c0937196c47466d7d82. The configured Coolify API returned 401 Unauthenticated for application status and deployment requests. Three bounded public transition checks returned HTTP 404 for all five routes; the concurrent 2026-09-24 Blog routes also returned 404, showing that the combined head had not cut over.",
   "verificationTime": null,
   "validation": {
     "typescript": "passed",
@@ -18,7 +18,7 @@
     "duplicateSlugCheck": "passed (5 unique new slugs; no production inventory collisions)",
     "substantiveWordCount": "passed (rendered pages: 2,419 to 2,473 words including site chrome)",
     "sourceReview": "13 official Philippine government URLs checked 2026-09-24; browser-indexed primary material confirmed the cited propositions; direct publisher requests were variably blocked by 403 or connection controls",
-    "publicProbe": "pending deployment"
+    "publicProbe": "failed after three bounded transition checks: all five routes HTTP 404"
   },
   "articles": [
     { "family": "privacy-operations", "topic": "Data-subject request handoff", "slug": "philippines-outsourcing-data-subject-request-handoff-research-2026", "sources": 3, "contentHash": "12fe0801b153e37ad8e6ce86e70adfbf6b2c4aab78c95266ce8455e86083299f", "publicationDate": "2026-09-24", "commitSha": "e5fd3e6bfeaa5d43ca688c74a1d393d556cfc67f", "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-data-subject-request-handoff-research-2026", "verificationTime": null },
