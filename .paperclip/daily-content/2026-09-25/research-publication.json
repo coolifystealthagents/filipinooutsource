@@ -1,0 +1,84 @@
+{
+  "routine": "Daily Research Publishing",
+  "cycleLabel": "2026-09-25 recovery",
+  "publicationDate": "2026-09-25",
+  "siteTimezone": "UTC (repository date rendering)",
+  "requiredCount": 5,
+  "stagedCount": 5,
+  "verifiedCount": 0,
+  "status": "staged-awaiting-blog-combined-release",
+  "repository": "coolifystealthagents/filipinooutsource",
+  "productionBranch": "main",
+  "researchBranch": "fil-91-research-2026-09-25",
+  "productionBaseSha": "ffe3415fec2e9876e8389fc8c682274d6c94e63d",
+  "contentCommit": "c8a8f3e8a0d9a89a62473ce8582f634332d6bbf2",
+  "deploymentResource": "zicup2lu74m4qgqkyrhj8tzf",
+  "deploymentEvidence": "Research-only local staging. Per the combined release contract, Research did not push main, trigger Coolify, or probe public routes. Blog is the sole release integrator and the user owns article-by-article public route verification.",
+  "handoff": "Blog integrator must combine this Research commit with exactly 12 same-cycle Blog articles, rerun exact-count and clean-build checks, and make the single production push. If first public reachability occurs after 2026-09-25 UTC, update all five visible dates, datePublished values, manifest dates, and release evidence to the actual date before production.",
+  "validation": {
+    "typescript": "passed",
+    "productionBuild": "passed (629 static pages)",
+    "duplicateSlugCheck": "passed (5 unique new slugs; no production inventory collisions)",
+    "substantiveWordCount": "passed (rendered main content: 2,260 to 2,344 words)",
+    "metadata": "passed (H1, canonical URL, datePublished, and sitemap entry for all 5)",
+    "sourceReview": "Primary Philippine government material reviewed September 25, 2026: DTI Ecommerce Bureau and consumer guidance, Official Gazette, BIR regulations and EOPT portal, SSS employer/payment guidance, and NPC privacy/security guidance.",
+    "publicProbe": "not performed; user owns public-route verification"
+  },
+  "articles": [
+    {
+      "family": "ecommerce-operations",
+      "topic": "Online-transaction record control",
+      "slug": "philippines-outsourcing-online-transaction-record-research-2026",
+      "sources": ["https://ecommerce.dti.gov.ph/internet-transactions-act-of-2023/", "https://www.officialgazette.gov.ph/2023/12/05/republic-act-no-11967/", "https://www.dti.gov.ph/konsyumer/consumer-education/"],
+      "contentHash": "5f6fcd3f406bb451a377f7d6b5a56da46e6aaae93b8ebd87b61c4fdfef8e0f1a",
+      "publicationDate": "2026-09-25",
+      "commitSha": "c8a8f3e8a0d9a89a62473ce8582f634332d6bbf2",
+      "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-online-transaction-record-research-2026",
+      "verificationTime": null
+    },
+    {
+      "family": "finance-operations",
+      "topic": "Invoice-evidence handoff design",
+      "slug": "philippines-outsourcing-invoice-evidence-handoff-research-2026",
+      "sources": ["https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%207-%202024.pdf", "https://bir-cdn.bir.gov.ph/BIR/pdf/RR%203-2024%20%28final%29.pdf", "https://bir-cdn.bir.gov.ph/BIR/pdf/RR%2011-2024.pdf", "https://www.bir.gov.ph/EOPT"],
+      "contentHash": "bfcb15d98c36aa9ba938de9a81863ad04b92dbaaed6c1a44539e3f39b6ce2aef",
+      "publicationDate": "2026-09-25",
+      "commitSha": "c8a8f3e8a0d9a89a62473ce8582f634332d6bbf2",
+      "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-invoice-evidence-handoff-research-2026",
+      "verificationTime": null
+    },
+    {
+      "family": "people-operations",
+      "topic": "SSS contribution handoff control",
+      "slug": "philippines-outsourcing-sss-contribution-handoff-research-2026",
+      "sources": ["https://www.sss.gov.ph/employer-er/", "https://www.sss.gov.ph/pay-contribution/", "https://www.sss.gov.ph/sss-payment-channels/"],
+      "contentHash": "2224eca53851a5e7eb1f823a71bca49139036d103d98c34821dca6069a8187b3",
+      "publicationDate": "2026-09-25",
+      "commitSha": "c8a8f3e8a0d9a89a62473ce8582f634332d6bbf2",
+      "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-sss-contribution-handoff-research-2026",
+      "verificationTime": null
+    },
+    {
+      "family": "access-governance",
+      "topic": "Remote-work device custody",
+      "slug": "philippines-outsourcing-remote-device-custody-research-2026",
+      "sources": ["https://privacy.gov.ph/npc-phe-bulletin-no-12-protecting-personal-data-in-a-work-from-home-arrangement/", "https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/", "https://privacy.gov.ph/data-security/"],
+      "contentHash": "0db3b0b550c36fb4fef47e1d87d397ca7e681f2f27a0aaa8e36789f1bea4a9bd",
+      "publicationDate": "2026-09-25",
+      "commitSha": "c8a8f3e8a0d9a89a62473ce8582f634332d6bbf2",
+      "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-remote-device-custody-research-2026",
+      "verificationTime": null
+    },
+    {
+      "family": "buyer-governance",
+      "topic": "Outsourcing provider exit evidence",
+      "slug": "philippines-outsourcing-provider-exit-evidence-research-2026",
+      "sources": ["https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/", "https://privacy.gov.ph/manage-legal/", "https://privacy.gov.ph/data-security/", "https://privacy.gov.ph/accountability/"],
+      "contentHash": "413e5e9ca062aff4644c9a3e8de05039887ae175cdb900968b83cef2c8936e83",
+      "publicationDate": "2026-09-25",
+      "commitSha": "c8a8f3e8a0d9a89a62473ce8582f634332d6bbf2",
+      "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-provider-exit-evidence-research-2026",
+      "verificationTime": null
+    }
+  ]
+}
