@@ -1,4 +1,5 @@
-import { buildSeptember23Detail, type September23Brief } from './blog-september23-shared';
+import type { September23Brief } from './blog-september23-shared';
+import { buildSeptember25Detail } from './blog-september25-detail';
 
 export const september25Briefs: readonly September23Brief[] = [
   {slug:'filipino-outsourcing-rfp-requirements',title:'How to Write an RFP for Filipino Outsourcing',excerpt:'Turn a broad outsourcing request into comparable requirements for scope, evidence, access, review, and exit.',pillar:'provider selection',question:'What should an RFP for Filipino outsourcing include?',owner:'procurement owner',inputs:'the business outcome, representative queue, volumes, service windows, source systems, data classes, retained decisions, review capacity, transition needs, and commercial assumptions',scenario:'Three providers answer the same RFP, but each priced a different queue because the request described job titles instead of finished work.',boundary:'the coordinator may assemble requirements and responses but cannot select a provider, approve terms, or accept unsupported claims',comparison:'Compare responses against one requirements matrix, sample queue, evidence standard, and list of client-retained responsibilities.',output:'an RFP matrix with requirement, evidence requested, provider response, exclusion, dependency, owner, and decision status'},
@@ -16,4 +17,4 @@ export const september25Briefs: readonly September23Brief[] = [
 ];
 
 export const september25BlogPosts = september25Briefs.map(({slug,title,excerpt})=>({slug,title,excerpt,minutes:12,image:'/article-planning.svg'}));
-export const september25BlogDetails = Object.fromEntries(september25Briefs.map(brief=>[brief.slug,buildSeptember23Detail(brief,'2026-09-25')]));
+export const september25BlogDetails = Object.fromEntries(september25Briefs.map((brief,index)=>[brief.slug,buildSeptember25Detail(brief,index)]));

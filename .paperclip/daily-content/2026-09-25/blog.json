@@ -7,12 +7,12 @@
   "repository": "coolifystealthagents/filipinooutsource",
   "branch": "main",
   "requiredCount": 12,
-  "status": "combined-build-passed-awaiting-single-push",
-  "build": "passed: Next.js production build, 641 static pages",
-  "validation": "passed: exactly 12 unique new Blog slugs; 1,475-word substantive shared body; TypeScript passed",
+  "status": "corrected-originality-build-passed-awaiting-browser-operator",
+  "build": "passed: corrective Next.js production build, 641 static pages",
+  "validation": "passed: exactly 12 unique Blog slugs; rendered substantive bodies 2124-2604 words; maximum five-word-shingle Jaccard 23.67%; TypeScript passed",
   "commitSha": "70850bd4423ad2732f6386d1a4f87e1a13330828",
   "remoteSha": "pending",
-  "deploymentEvidence": "Browser operator owns the single deployment; task submitted no deployment and performed no public probes.",
+  "deploymentEvidence": "Corrective content requires one non-force push; task submitted no deployment and performed no public probes.",
   "verifiedCount": 0,
   "verificationTime": null,
   "entries": [
@@ -20,7 +20,7 @@
       "family": "blog",
       "topic": "How to Write an RFP for Filipino Outsourcing",
       "slug": "filipino-outsourcing-rfp-requirements",
-      "contentHash": "ddaaf08e507e2b9f3c90b301472351cfb0df41ce97cb2b4cbc0efd541f61dc36",
+      "contentHash": "0d91a7701114d4a3b10c24c382064fc4535ecec16b3ec04998f49eb246043f59",
       "sources": [
         "https://privacy.gov.ph/data-privacy-act/",
         "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
@@ -32,7 +32,7 @@
       "family": "blog",
       "topic": "A Due-Diligence Checklist for a Filipino Outsourcing Provider",
       "slug": "filipino-outsourcing-vendor-entity-review",
-      "contentHash": "b8cb3b38ed5e93c354c08cbba7abf863ee05c11f90fdae8a3ff3c57421f498c1",
+      "contentHash": "b70b1189d3b520bf1a3e9bbfb4a5e8b4357bd2d6a6bee1a921dc7c53eb13d3ed",
       "sources": [
         "https://privacy.gov.ph/data-privacy-act/",
         "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
@@ -44,7 +44,7 @@
       "family": "blog",
       "topic": "How to Compare the Total Cost of Filipino Outsourcing",
       "slug": "filipino-outsourcing-total-cost-model",
-      "contentHash": "c868ce6052da367c6427aab14445589944b7ceb4cc0a61d14e22413bf7d5d169",
+      "contentHash": "86cc022bf11b8dcfa9d6b394d499b649fccf252c33c16f8e617fa2690d2c65c0",
       "sources": [
         "https://privacy.gov.ph/data-privacy-act/",
         "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
@@ -56,7 +56,7 @@
       "family": "blog",
       "topic": "A Scope Checklist for a Filipino Outsourcing Agreement",
       "slug": "filipino-outsourcing-contract-scope-checklist",
-      "contentHash": "ddda1dc7e5d327f89be2108fb47657716820ce956d6eff4d2d3b92e60e30a5df",
+      "contentHash": "8139a8bbb2b1cc2de73dada8e96d3765046ca84c7dc7ef9bece968124112c5e1",
       "sources": [
         "https://privacy.gov.ph/data-privacy-act/",
         "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
@@ -68,7 +68,7 @@
       "family": "blog",
       "topic": "How to Design a Work Sample for a Filipino Outsourcing Role",
       "slug": "filipino-outsourcing-interview-work-sample",
-      "contentHash": "3e354c441e3c1fe4f4066a7e52c9045688f8c07e02668f33e3d9a05b14cf641a",
+      "contentHash": "76597aa0539bf8196328eccd37f7d89ed5498feb1c56760c5b39a095efe50ae4",
       "sources": [
         "https://privacy.gov.ph/data-privacy-act/",
         "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
@@ -80,7 +80,7 @@
       "family": "blog",
       "topic": "Reference-Check Questions for a Filipino Outsourcing Hire",
       "slug": "filipino-outsourcing-reference-check-questions",
-      "contentHash": "fd0d1a88cf6847376e26aa0ce899e521e1bef49a6d8469816652c273bb01ce75",
+      "contentHash": "4faaf6abcb22a296559587a09d67c2d3dbaa336e0f38f394614558d097ea2b68",
       "sources": [
         "https://privacy.gov.ph/data-privacy-act/",
         "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
@@ -92,7 +92,7 @@
       "family": "blog",
       "topic": "How to Plan Time-Zone Coverage with a Filipino Team",
       "slug": "filipino-outsourcing-time-zone-coverage-plan",
-      "contentHash": "6916f39f83267a7e9c4863e5c8c4ac077832aeb87fb8672a4514b28877f7ab77",
+      "contentHash": "c25b405dd22ecf0b011e33f13e0575f72ee416441ec4dc900f6b82e9da53aacb",
       "sources": [
         "https://privacy.gov.ph/data-privacy-act/",
         "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
@@ -104,7 +104,7 @@
       "family": "blog",
       "topic": "A Holiday Coverage Plan for Filipino Outsourcing Teams",
       "slug": "filipino-outsourcing-holiday-coverage-plan",
-      "contentHash": "34d963579a6e3c233aa9f13bf53763ee99cf7b042501a7ba197041e877c4bfc2",
+      "contentHash": "80e265d714f0164a2a73b3fcc7d7171fea9cfd6384d7d60c001ba64a588be6e7",
       "sources": [
         "https://privacy.gov.ph/data-privacy-act/",
         "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
@@ -116,7 +116,7 @@
       "family": "blog",
       "topic": "How to Build a Quality Sampling Plan for Filipino Outsourcing",
       "slug": "filipino-outsourcing-quality-sampling-plan",
-      "contentHash": "79be1966a0c4c91c7bf2f0d7f0b4935cec2e00096f64f17e65fdaf5eda1bcfb7",
+      "contentHash": "b2d9611875d149f9a9431264d096f9512bffb0d0e3b9397e0ccbe9c3c47cb5ef",
       "sources": [
         "https://privacy.gov.ph/data-privacy-act/",
         "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
@@ -128,7 +128,7 @@
       "family": "blog",
       "topic": "A Correction Workflow for Filipino Outsourcing Operations",
       "slug": "filipino-outsourcing-correction-workflow",
-      "contentHash": "57a92416aba548da638d2bc491b356a9b0d74a0be0b5fae22dd402a4bfe023cc",
+      "contentHash": "4b878e71756a3b78967d165d52d269cb607ae017ad82161478bb59633e2f0e22",
       "sources": [
         "https://privacy.gov.ph/data-privacy-act/",
         "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
@@ -140,7 +140,7 @@
       "family": "blog",
       "topic": "How to Test Business Continuity for a Filipino Outsourcing Team",
       "slug": "filipino-outsourcing-business-continuity-test",
-      "contentHash": "ee700c5c603ece342ce0ba45d4fec47960e676a0eb91436f333af247f97cc36d",
+      "contentHash": "f6fc9966d0bbb4b3fce65157e5740973bc38b9167132623d38b28dc428b94a70",
       "sources": [
         "https://privacy.gov.ph/data-privacy-act/",
         "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
@@ -152,7 +152,7 @@
       "family": "blog",
       "topic": "An Offboarding Checklist for a Filipino Outsourcing Role",
       "slug": "filipino-outsourcing-offboarding-checklist",
-      "contentHash": "01ef6576aa1641fc5311a2ffe967530a3a498458a3d7ba7eba47bc0489a829d7",
+      "contentHash": "2ce84a47ce54084c3b409435710f0bdd836f66ce84f5fefa7b39cb95941406c3",
       "sources": [
         "https://privacy.gov.ph/data-privacy-act/",
         "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",

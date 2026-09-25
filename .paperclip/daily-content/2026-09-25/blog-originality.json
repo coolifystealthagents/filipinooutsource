@@ -1,0 +1,23 @@
+{
+  "status": "SEPTEMBER25_BLOG_ORIGINALITY_PASS",
+  "metric": "five-word-shingle Jaccard over rendered article-section text; shared layout, navigation, CTA banners, FAQ, sources, and related cards excluded",
+  "wordCounts": {
+    "filipino-outsourcing-rfp-requirements": 2210,
+    "filipino-outsourcing-vendor-entity-review": 2604,
+    "filipino-outsourcing-total-cost-model": 2346,
+    "filipino-outsourcing-contract-scope-checklist": 2343,
+    "filipino-outsourcing-interview-work-sample": 2186,
+    "filipino-outsourcing-reference-check-questions": 2310,
+    "filipino-outsourcing-time-zone-coverage-plan": 2318,
+    "filipino-outsourcing-holiday-coverage-plan": 2294,
+    "filipino-outsourcing-quality-sampling-plan": 2242,
+    "filipino-outsourcing-correction-workflow": 2310,
+    "filipino-outsourcing-business-continuity-test": 2334,
+    "filipino-outsourcing-offboarding-checklist": 2124
+  },
+  "maximumPairwiseOverlapPercent": 23.67,
+  "maximumPair": [
+    "filipino-outsourcing-quality-sampling-plan",
+    "filipino-outsourcing-correction-workflow"
+  ]
+}
