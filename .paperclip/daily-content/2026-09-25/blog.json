@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "contract": "FIL-92-canonical-daily-blog",
+  "publicationDate": "2026-09-25",
+  "family": "blog",
+  "domain": "filipinooutsource.com",
+  "repository": "coolifystealthagents/filipinooutsource",
+  "branch": "main",
+  "requiredCount": 12,
+  "status": "awaiting-browser-operator-deployment",
+  "build": "pending",
+  "validation": "pending",
+  "commitSha": "pending",
+  "remoteSha": "pending",
+  "deploymentEvidence": "browser operator owns single deployment",
+  "verifiedCount": 0,
+  "verificationTime": null,
+  "entries": [
+    {
+      "family": "blog",
+      "topic": "How to Write an RFP for Filipino Outsourcing",
+      "slug": "filipino-outsourcing-rfp-requirements",
+      "contentHash": "ddaaf08e507e2b9f3c90b301472351cfb0df41ce97cb2b4cbc0efd541f61dc36",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-rfp-requirements"
+    },
+    {
+      "family": "blog",
+      "topic": "A Due-Diligence Checklist for a Filipino Outsourcing Provider",
+      "slug": "filipino-outsourcing-vendor-entity-review",
+      "contentHash": "b8cb3b38ed5e93c354c08cbba7abf863ee05c11f90fdae8a3ff3c57421f498c1",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-vendor-entity-review"
+    },
+    {
+      "family": "blog",
+      "topic": "How to Compare the Total Cost of Filipino Outsourcing",
+      "slug": "filipino-outsourcing-total-cost-model",
+      "contentHash": "c868ce6052da367c6427aab14445589944b7ceb4cc0a61d14e22413bf7d5d169",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-total-cost-model"
+    },
+    {
+      "family": "blog",
+      "topic": "A Scope Checklist for a Filipino Outsourcing Agreement",
+      "slug": "filipino-outsourcing-contract-scope-checklist",
+      "contentHash": "ddda1dc7e5d327f89be2108fb47657716820ce956d6eff4d2d3b92e60e30a5df",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-contract-scope-checklist"
+    },
+    {
+      "family": "blog",
+      "topic": "How to Design a Work Sample for a Filipino Outsourcing Role",
+      "slug": "filipino-outsourcing-interview-work-sample",
+      "contentHash": "3e354c441e3c1fe4f4066a7e52c9045688f8c07e02668f33e3d9a05b14cf641a",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-interview-work-sample"
+    },
+    {
+      "family": "blog",
+      "topic": "Reference-Check Questions for a Filipino Outsourcing Hire",
+      "slug": "filipino-outsourcing-reference-check-questions",
+      "contentHash": "fd0d1a88cf6847376e26aa0ce899e521e1bef49a6d8469816652c273bb01ce75",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-reference-check-questions"
+    },
+    {
+      "family": "blog",
+      "topic": "How to Plan Time-Zone Coverage with a Filipino Team",
+      "slug": "filipino-outsourcing-time-zone-coverage-plan",
+      "contentHash": "6916f39f83267a7e9c4863e5c8c4ac077832aeb87fb8672a4514b28877f7ab77",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-time-zone-coverage-plan"
+    },
+    {
+      "family": "blog",
+      "topic": "A Holiday Coverage Plan for Filipino Outsourcing Teams",
+      "slug": "filipino-outsourcing-holiday-coverage-plan",
+      "contentHash": "34d963579a6e3c233aa9f13bf53763ee99cf7b042501a7ba197041e877c4bfc2",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-holiday-coverage-plan"
+    },
+    {
+      "family": "blog",
+      "topic": "How to Build a Quality Sampling Plan for Filipino Outsourcing",
+      "slug": "filipino-outsourcing-quality-sampling-plan",
+      "contentHash": "79be1966a0c4c91c7bf2f0d7f0b4935cec2e00096f64f17e65fdaf5eda1bcfb7",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-quality-sampling-plan"
+    },
+    {
+      "family": "blog",
+      "topic": "A Correction Workflow for Filipino Outsourcing Operations",
+      "slug": "filipino-outsourcing-correction-workflow",
+      "contentHash": "57a92416aba548da638d2bc491b356a9b0d74a0be0b5fae22dd402a4bfe023cc",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-correction-workflow"
+    },
+    {
+      "family": "blog",
+      "topic": "How to Test Business Continuity for a Filipino Outsourcing Team",
+      "slug": "filipino-outsourcing-business-continuity-test",
+      "contentHash": "ee700c5c603ece342ce0ba45d4fec47960e676a0eb91436f333af247f97cc36d",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-business-continuity-test"
+    },
+    {
+      "family": "blog",
+      "topic": "An Offboarding Checklist for a Filipino Outsourcing Role",
+      "slug": "filipino-outsourcing-offboarding-checklist",
+      "contentHash": "01ef6576aa1641fc5311a2ffe967530a3a498458a3d7ba7eba47bc0489a829d7",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-offboarding-checklist"
+    }
+  ],
+  "timezone": "Etc/UTC"
+}
