@@ -35,3 +35,15 @@ This is a source-only planning ledger. It maps existing Philippines-only service
 ## 2026-09-23 Blog decision-support expansion
 
 Twelve new buyer guides extend the staffing-decision pillar across commercial planning, candidate assessment, work trials, equipment, communication, quality sampling, capacity, continuity, offboarding, and delivery-model transitions. Their canonical slugs and publication evidence are recorded in `.paperclip/daily-content/2026-09-23/blog.json`; future batches must treat those topics and slugs as occupied.
+
+## 2026-09-27 September research reconciliation
+
+The five September 25 research records were added in rendered-source commit `1073fff9ff9a4e573b41fbdcc282b4323d98c362`. A fresh local build confirms that each route has its stated route-local handoff, one canonical URL, and a sitemap entry. These are delivered reader paths, not new candidates.
+
+| Existing supporting research | Confirmed destination | Route-local result | Next action |
+| --- | --- | --- | --- |
+| `/research/philippines-outsourcing-online-transaction-record-research-2026` | `/services/ecommerce-operations` | Delivered. The main content has the Ecommerce Operations handoff. | Do not duplicate it. |
+| `/research/philippines-outsourcing-invoice-evidence-handoff-research-2026` | `/services/bookkeeping-support` | Delivered. The main content has the Bookkeeping Support handoff. | Do not duplicate it. |
+| `/research/philippines-outsourcing-sss-contribution-handoff-research-2026` | `/services/bookkeeping-support` | Delivered. The main content has the payroll-evidence handoff. | Do not duplicate it. |
+| `/research/philippines-outsourcing-remote-device-custody-research-2026` | `/services/data-processing-support` | Delivered. The main content has the Data Processing Support handoff. | Do not duplicate it. |
+| `/research/philippines-outsourcing-provider-exit-evidence-research-2026` | `/blog/Filipino-outsource-staffing-planning` | Delivered. The main content sends the buyer to the staffing planning guide. | Do not replace it with a generic service CTA. |
