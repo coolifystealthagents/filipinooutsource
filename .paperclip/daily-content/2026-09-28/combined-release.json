@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "contract": "FIL-94 September 28 combined release",
+  "cycleLabel": "September28",
+  "publicationDate": "2026-09-28",
+  "timezone": "Etc/UTC",
+  "repository": "coolifystealthagents/filipinooutsource",
+  "productionBranch": "main",
+  "baselineSha": "a435fbd5866f932fa6c6e3f62b7f09036066cf03",
+  "blogTaskId": "29898a2a-ecc9-4a13-a197-0befe1672851",
+  "blogRunId": "a74dcb6c-1d88-4950-9441-faf0c8188c77",
+  "researchTaskId": "cda54378-1968-402e-84ca-46022653a265",
+  "researchRunId": "03fca677-84f9-4c9e-a0f9-0df20186424e",
+  "blogContentCommit": "1df3f98ed432c9dcc3c7e436ef674703a01b0102",
+  "researchContentCommit": "b5998f5263a5000c251a3d1b8bd93b6d87015c2e",
+  "required": {
+    "blog": 12,
+    "research": 5
+  },
+  "staged": {
+    "blog": 12,
+    "research": 5
+  },
+  "verified": {
+    "blog": 0,
+    "research": 0
+  },
+  "validation": {
+    "typescript": "passed",
+    "productionBuild": "passed (659 static pages)",
+    "blogRenderedSubstantiveWords": "2218-2619",
+    "blogMaximumFiveWordShingleJaccard": 0.2239,
+    "researchRenderedSubstantiveWords": "1627-1691",
+    "researchMaximumFiveWordShingleJaccard": 0.351496,
+    "duplicateSlugs": "passed against baseline",
+    "metadata": "datePublished/canonical/sitemap rendered for all 17"
+  },
+  "remoteSha": "pending sole non-force production push",
+  "deploymentEvidence": "No deployment submitted. Browser operator owns the single Coolify deployment; user owns article-by-article public verification.",
+  "blogArticles": [
+    {
+      "slug": "filipino-outsourcing-pilot-acceptance-criteria",
+      "topic": "How to Set Acceptance Criteria for a Filipino Outsourcing Pilot",
+      "contentHash": "9abd6f3a124825ece11349cb39354e381e110c1a06934c5af761cce15e68270f",
+      "publicationDate": "2026-09-28",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-pilot-acceptance-criteria"
+    },
+    {
+      "slug": "filipino-outsourcing-client-management-capacity",
+      "topic": "How Much Client Management Capacity Does a Filipino Team Need?",
+      "contentHash": "586eee3b9f6d3ce844b8c699b981dd6dc667c97c96d64b11fe04249924a30617",
+      "publicationDate": "2026-09-28",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-client-management-capacity"
+    },
+    {
+      "slug": "filipino-outsourcing-knowledge-transfer-plan",
+      "topic": "A Knowledge-Transfer Plan for Filipino Outsourcing",
+      "contentHash": "cda48dbac6b62f306f1060de56ca7329e765f32fc2078e70a0ebaf612be95403",
+      "publicationDate": "2026-09-28",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-knowledge-transfer-plan"
+    },
+    {
+      "slug": "filipino-outsourcing-exception-escalation-routing",
+      "topic": "How to Route Exceptions in Filipino Outsourcing Operations",
+      "contentHash": "e465937cddad2453ff8ccedf6fdf55a6768cbe49909a4fd8ce9d295053ab228c",
+      "publicationDate": "2026-09-28",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-exception-escalation-routing"
+    },
+    {
+      "slug": "filipino-outsourcing-tool-access-matrix",
+      "topic": "A Tool-Access Matrix for a Filipino Outsourcing Role",
+      "contentHash": "0d3cd0cb3311972aff4be531d69a4309beb41233edeb3dbfd0dce97a2a648826",
+      "publicationDate": "2026-09-28",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-tool-access-matrix"
+    },
+    {
+      "slug": "filipino-outsourcing-data-minimization-workflow",
+      "topic": "How to Minimize Data in a Filipino Outsourcing Workflow",
+      "contentHash": "eb307cee8f49abcdae4b7fbcce7032295ee156ff36d817fdb7bd2ab01438f59a",
+      "publicationDate": "2026-09-28",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-data-minimization-workflow"
+    },
+    {
+      "slug": "filipino-outsourcing-output-specification",
+      "topic": "How to Write an Output Specification for Filipino Outsourcing",
+      "contentHash": "ccf473ac0ce4fe05d194faf9a6bafa0901a220f1d39625f6f1c138055222bb21",
+      "publicationDate": "2026-09-28",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-output-specification"
+    },
+    {
+      "slug": "filipino-outsourcing-feedback-cadence",
+      "topic": "How to Set a Feedback Cadence for a Filipino Outsourcing Team",
+      "contentHash": "9087c47f899ac7c4958d6cd0b39ba6dfe6dc7e695a132e846ba92246ef45dd35",
+      "publicationDate": "2026-09-28",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-feedback-cadence"
+    },
+    {
+      "slug": "filipino-outsourcing-backup-coverage-design",
+      "topic": "How to Design Backup Coverage for a Filipino Outsourcing Role",
+      "contentHash": "f325b2083a4e8feea041256d3efb88083867417a5219d9ac154c7307b9be71c3",
+      "publicationDate": "2026-09-28",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-backup-coverage-design"
+    },
+    {
+      "slug": "filipino-outsourcing-instruction-change-control",
+      "topic": "A Change-Control Process for Outsourcing Instructions",
+      "contentHash": "5e1bb8196c2be087ba9d59b41f0ea7a7e7899e7d951e2170b000b9a0fa52fe88",
+      "publicationDate": "2026-09-28",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-instruction-change-control"
+    },
+    {
+      "slug": "filipino-outsourcing-demand-baseline",
+      "topic": "How to Build a Demand Baseline Before Filipino Outsourcing",
+      "contentHash": "97b3f497f45963eb280c1c1c6cfd4588035f38c7e0f63ff954450aee494bbe51",
+      "publicationDate": "2026-09-28",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-demand-baseline"
+    },
+    {
+      "slug": "filipino-outsourcing-governance-meeting-agenda",
+      "topic": "A Governance Meeting Agenda for Filipino Outsourcing",
+      "contentHash": "e021adf236109276371eb00a5aa7750b357a22b9e12ec05288423bfdfc1a4f75",
+      "publicationDate": "2026-09-28",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-governance-meeting-agenda"
+    }
+  ],
+  "researchArticles": [
+    {
+      "family": "people-operations",
+      "topic": "PhilHealth remittance handoff",
+      "slug": "philippines-outsourcing-philhealth-remittance-handoff-research-2026",
+      "sources": [
+        "https://www.philhealth.gov.ph/partners/employers/pay_procedures.php",
+        "https://www.philhealth.gov.ph/partners/employers/",
+        "https://www.philhealth.gov.ph/circulars/2020/circ2020-0008.pdf"
+      ],
+      "contentHash": "d727c768d56969c856f5b84063aed46e1d375a9cab1b0b323da08ca7ae522cb5",
+      "publicationDate": "2026-09-28",
+      "commitSha": "b5998f5263a5000c251a3d1b8bd93b6d87015c2e",
+      "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-philhealth-remittance-handoff-research-2026",
+      "verificationTime": null
+    },
+    {
+      "family": "people-operations",
+      "topic": "Pag-IBIG contribution reconciliation",
+      "slug": "philippines-outsourcing-pagibig-contribution-reconciliation-research-2026",
+      "sources": [
+        "https://www.pagibigfund.gov.ph/document/pdf/circulars/provident/HDMF%20Circular%20275%20-%20Implementing%20Guidelines%20on%20Employer%20Registration%20Contribution%20and%20Remittance.pdf",
+        "https://www.pagibigfund.gov.ph/employer.html",
+        "https://www.pagibigfund.gov.ph/circulars.html"
+      ],
+      "contentHash": "ddf12262936f8ed04e66e04d0bc3542d12cbd1f35ee5a7f86425bd35c048ea80",
+      "publicationDate": "2026-09-28",
+      "commitSha": "b5998f5263a5000c251a3d1b8bd93b6d87015c2e",
+      "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-pagibig-contribution-reconciliation-research-2026",
+      "verificationTime": null
+    },
+    {
+      "family": "people-operations",
+      "topic": "Work accident evidence handoff",
+      "slug": "philippines-outsourcing-work-accident-evidence-handoff-research-2026",
+      "sources": [
+        "https://bwc.dole.gov.ph/occupational-safety-and-health-forms/",
+        "https://bwc.dole.gov.ph/dole-bureau-working-conditions-report-on-wair-cy-2024/",
+        "https://bwc.dole.gov.ph/timely-submission-of-osh-compliance-reports-strengthens-dole-policies-and-worker-protection/"
+      ],
+      "contentHash": "0b4238d74101bbc8a3aa480b06fafd58818d8610678ed76cfb07fc89b257be9e",
+      "publicationDate": "2026-09-28",
+      "commitSha": "b5998f5263a5000c251a3d1b8bd93b6d87015c2e",
+      "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-work-accident-evidence-handoff-research-2026",
+      "verificationTime": null
+    },
+    {
+      "family": "privacy-operations",
+      "topic": "Consent withdrawal operations",
+      "slug": "philippines-outsourcing-consent-withdrawal-operations-research-2026",
+      "sources": [
+        "https://privacy.gov.ph/wp-content/uploads/2024/05/2023-compendium-2.pdf",
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://privacy.gov.ph/wp-content/uploads/2021/02/NPC-Advisory-2021-01-FINAL.pdf"
+      ],
+      "contentHash": "daf0c7d21d3b72140aa38741f705cae5cf6539072504395af6b6773a450742a5",
+      "publicationDate": "2026-09-28",
+      "commitSha": "b5998f5263a5000c251a3d1b8bd93b6d87015c2e",
+      "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-consent-withdrawal-operations-research-2026",
+      "verificationTime": null
+    },
+    {
+      "family": "finance-operations",
+      "topic": "Compensation withholding tax handoff",
+      "slug": "philippines-outsourcing-compensation-withholding-tax-handoff-research-2026",
+      "sources": [
+        "https://efps.bir.gov.ph/efps-war/EFPSWeb_war/help/help1601c.html",
+        "https://bir-cdn.bir.gov.ph/local/pdf/1601C%20final%20Jan%202018%20with%20DPA.pdf",
+        "https://www.bir.gov.ph/bir-forms"
+      ],
+      "contentHash": "54922e4f9ca88a5bfd3b3bddd12abca9c1d204f3e0338bb8d8566d6a2dfd8792",
+      "publicationDate": "2026-09-28",
+      "commitSha": "b5998f5263a5000c251a3d1b8bd93b6d87015c2e",
+      "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-compensation-withholding-tax-handoff-research-2026",
+      "verificationTime": null
+    }
+  ]
+}
