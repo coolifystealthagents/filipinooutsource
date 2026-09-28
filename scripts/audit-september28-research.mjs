@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 
 const slugs = [
   'philippines-outsourcing-philhealth-remittance-handoff-research-2026',
@@ -26,7 +27,7 @@ for (const slug of slugs) {
   const text = decode(body);
   const count = words(text).length;
   if (count < 1200) throw new Error(`body below 1200 words: ${slug} (${count})`);
-  texts.set(slug, { count, set: shingles(words(text)) });
+  texts.set(slug, { count, set: shingles(words(text)), contentHash: crypto.createHash('sha256').update(text).digest('hex') });
 }
 
 let max = { pair: [], value: 0 };
@@ -37,4 +38,4 @@ for (let i = 0; i < slugs.length; i++) for (let j = i + 1; j < slugs.length; j++
   if (value > max.value) max = { pair: [slugs[i], slugs[j]], value };
 }
 if (max.value >= 0.5) throw new Error(`five-word shingle overlap >=50%: ${(max.value * 100).toFixed(2)}%`);
-console.log(JSON.stringify({ articles: [...texts].map(([slug, v]) => ({ slug, substantiveWordCount: v.count })), maximumPairwiseFiveWordShingleJaccard: Number(max.value.toFixed(6)), maximumPair: max.pair }, null, 2));
+console.log(JSON.stringify({ articles: [...texts].map(([slug, v]) => ({ slug, substantiveWordCount: v.count, contentHash: v.contentHash })), maximumPairwiseFiveWordShingleJaccard: Number(max.value.toFixed(6)), maximumPair: max.pair }, null, 2));

@@ -1,0 +1,35 @@
+{
+  "routine": "Daily Research Publishing",
+  "cycleLabel": "September 28, 2026 combined release",
+  "publicationDate": "2026-09-28",
+  "siteTimezone": "UTC (repository date rendering)",
+  "taskId": "cda54378-1968-402e-84ca-46022653a265",
+  "runId": "03fca677-84f9-4c9e-a0f9-0df20186424e",
+  "requiredCount": 5,
+  "stagedCount": 5,
+  "verifiedCount": 0,
+  "status": "local-research-handoff-awaiting-blog-integration",
+  "repository": "coolifystealthagents/filipinooutsource",
+  "productionBranch": "main",
+  "researchBranch": "fil-93-research-2026-09-28",
+  "productionBaseSha": "a435fbd5866f932fa6c6e3f62b7f09036066cf03",
+  "contentCommit": "b5998f5263a5000c251a3d1b8bd93b6d87015c2e",
+  "deploymentResource": "zicup2lu74m4qgqkyrhj8tzf",
+  "deploymentEvidence": "Research-only local staging. Research did not push, deploy, or probe public routes. Blog is the sole release integrator; the browser operator owns the single Coolify deployment; the user owns public-route verification.",
+  "validation": {
+    "typescript": "passed",
+    "productionBuild": "passed (646 static pages)",
+    "renderedSubstantiveWordCounts": [1691, 1638, 1627, 1676, 1643],
+    "maximumPairwiseFiveWordShingleJaccard": 0.351496,
+    "duplicateSlugCheck": "passed (5 unique new slugs; no baseline inventory collisions)",
+    "metadata": "passed (rendered canonical and datePublished 2026-09-28 for all 5)",
+    "publicProbe": "not performed by contract"
+  },
+  "articles": [
+    {"family":"people-operations","topic":"PhilHealth remittance handoff","slug":"philippines-outsourcing-philhealth-remittance-handoff-research-2026","sources":["https://www.philhealth.gov.ph/partners/employers/pay_procedures.php","https://www.philhealth.gov.ph/partners/employers/","https://www.philhealth.gov.ph/circulars/2020/circ2020-0008.pdf"],"contentHash":"d727c768d56969c856f5b84063aed46e1d375a9cab1b0b323da08ca7ae522cb5","publicationDate":"2026-09-28","commitSha":"b5998f5263a5000c251a3d1b8bd93b6d87015c2e","liveUrl":"https://filipinooutsource.com/research/philippines-outsourcing-philhealth-remittance-handoff-research-2026","verificationTime":null},
+    {"family":"people-operations","topic":"Pag-IBIG contribution reconciliation","slug":"philippines-outsourcing-pagibig-contribution-reconciliation-research-2026","sources":["https://www.pagibigfund.gov.ph/document/pdf/circulars/provident/HDMF%20Circular%20275%20-%20Implementing%20Guidelines%20on%20Employer%20Registration%20Contribution%20and%20Remittance.pdf","https://www.pagibigfund.gov.ph/employer.html","https://www.pagibigfund.gov.ph/circulars.html"],"contentHash":"ddf12262936f8ed04e66e04d0bc3542d12cbd1f35ee5a7f86425bd35c048ea80","publicationDate":"2026-09-28","commitSha":"b5998f5263a5000c251a3d1b8bd93b6d87015c2e","liveUrl":"https://filipinooutsource.com/research/philippines-outsourcing-pagibig-contribution-reconciliation-research-2026","verificationTime":null},
+    {"family":"people-operations","topic":"Work accident evidence handoff","slug":"philippines-outsourcing-work-accident-evidence-handoff-research-2026","sources":["https://bwc.dole.gov.ph/occupational-safety-and-health-forms/","https://bwc.dole.gov.ph/dole-bureau-working-conditions-report-on-wair-cy-2024/","https://bwc.dole.gov.ph/timely-submission-of-osh-compliance-reports-strengthens-dole-policies-and-worker-protection/"],"contentHash":"0b4238d74101bbc8a3aa480b06fafd58818d8610678ed76cfb07fc89b257be9e","publicationDate":"2026-09-28","commitSha":"b5998f5263a5000c251a3d1b8bd93b6d87015c2e","liveUrl":"https://filipinooutsource.com/research/philippines-outsourcing-work-accident-evidence-handoff-research-2026","verificationTime":null},
+    {"family":"privacy-operations","topic":"Consent withdrawal operations","slug":"philippines-outsourcing-consent-withdrawal-operations-research-2026","sources":["https://privacy.gov.ph/wp-content/uploads/2024/05/2023-compendium-2.pdf","https://privacy.gov.ph/data-privacy-act/","https://privacy.gov.ph/wp-content/uploads/2021/02/NPC-Advisory-2021-01-FINAL.pdf"],"contentHash":"daf0c7d21d3b72140aa38741f705cae5cf6539072504395af6b6773a450742a5","publicationDate":"2026-09-28","commitSha":"b5998f5263a5000c251a3d1b8bd93b6d87015c2e","liveUrl":"https://filipinooutsource.com/research/philippines-outsourcing-consent-withdrawal-operations-research-2026","verificationTime":null},
+    {"family":"finance-operations","topic":"Compensation withholding tax handoff","slug":"philippines-outsourcing-compensation-withholding-tax-handoff-research-2026","sources":["https://efps.bir.gov.ph/efps-war/EFPSWeb_war/help/help1601c.html","https://bir-cdn.bir.gov.ph/local/pdf/1601C%20final%20Jan%202018%20with%20DPA.pdf","https://www.bir.gov.ph/bir-forms"],"contentHash":"54922e4f9ca88a5bfd3b3bddd12abca9c1d204f3e0338bb8d8566d6a2dfd8792","publicationDate":"2026-09-28","commitSha":"b5998f5263a5000c251a3d1b8bd93b6d87015c2e","liveUrl":"https://filipinooutsource.com/research/philippines-outsourcing-compensation-withholding-tax-handoff-research-2026","verificationTime":null}
+  ]
+}
