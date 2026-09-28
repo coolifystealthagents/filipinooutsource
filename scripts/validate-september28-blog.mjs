@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+const batchPath='app/blog-september28.ts';
+const batch=fs.readFileSync(batchPath,'utf8'), data=fs.readFileSync('app/data.ts','utf8'), page=fs.readFileSync('app/blog/[slug]/page.tsx','utf8'), sitemap=fs.readFileSync('app/sitemap.xml/route.ts','utf8');
+const slugs=[...batch.matchAll(/slug:'([^']+)'/g)].map(m=>m[1]), titles=[...batch.matchAll(/title:'([^']+)'/g)].map(m=>m[1]);
+const other=fs.readdirSync('app').filter(n=>n.startsWith('blog-')&&n.endsWith('.ts')&&n!=='blog-september28.ts').map(n=>fs.readFileSync(`app/${n}`,'utf8')).join('\n');
+if(slugs.length!==12||new Set(slugs).size!==12)throw new Error(`Expected 12 unique slugs; found ${slugs.length}/${new Set(slugs).size}`);
+if(titles.length!==12||new Set(titles).size!==12)throw new Error('Expected 12 unique titles');
+for(const slug of slugs)if(other.includes(slug))throw new Error(`Previously used slug: ${slug}`);
+if(!data.includes('...september28BlogPosts')||!data.includes('...september28BlogDetails'))throw new Error('Batch not wired into data.ts');
+if(!page.includes('datePublished: detail.datePublished')||!page.includes('alternates: { canonical: `/blog/${slug}` }'))throw new Error('Schema/canonical binding missing');
+if(!sitemap.includes('blogs.map'))throw new Error('Sitemap mapping missing');
+if(!batch.includes("datePublished:'2026-09-28'"))throw new Error('Publication date binding missing');
+console.log(`SEPTEMBER28_BLOG_SOURCE_PASS count=${slugs.length}`);

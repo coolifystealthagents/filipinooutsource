@@ -47,3 +47,7 @@ The five September 25 research records were added in rendered-source commit `107
 | `/research/philippines-outsourcing-sss-contribution-handoff-research-2026` | `/services/bookkeeping-support` | Delivered. The main content has the payroll-evidence handoff. | Do not duplicate it. |
 | `/research/philippines-outsourcing-remote-device-custody-research-2026` | `/services/data-processing-support` | Delivered. The main content has the Data Processing Support handoff. | Do not duplicate it. |
 | `/research/philippines-outsourcing-provider-exit-evidence-research-2026` | `/blog/Filipino-outsource-staffing-planning` | Delivered. The main content sends the buyer to the staffing planning guide. | Do not replace it with a generic service CTA. |
+
+## 2026-09-28 Blog operating-design expansion
+
+Twelve new buyer guides extend the Filipino outsourcing decision path across pilot acceptance, client management capacity, knowledge transfer, exception routing, tool access, data minimization, output specifications, feedback cadence, backup coverage, instruction change control, demand baselines, and governance meetings. Canonical slugs, source URLs, content hashes, and route inventory are recorded in `.paperclip/daily-content/2026-09-28/blog.json`; future batches must treat these topics and slugs as occupied.

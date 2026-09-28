@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "contract": "FIL-94 September 28 combined release",
+  "cycleLabel": "September28",
+  "publicationDate": "2026-09-28",
+  "timezone": "Etc/UTC",
+  "family": "blog",
+  "domain": "filipinooutsource.com",
+  "repository": "coolifystealthagents/filipinooutsource",
+  "branch": "main",
+  "baselineSha": "a435fbd5866f932fa6c6e3f62b7f09036066cf03",
+  "requiredCount": 12,
+  "status": "local-validation-passed-awaiting-research-handoff",
+  "build": "passed: Next.js production build, 654 static pages",
+  "validation": "passed: 12 unique new slugs; TypeScript; rendered bodies 2218-2619 words; maximum five-word-shingle Jaccard 22.39%",
+  "commitSha": "pending",
+  "remoteSha": "pending",
+  "deploymentEvidence": "No deployment submitted. Browser operator owns the single deployment after the combined push.",
+  "verifiedCount": 0,
+  "verificationTime": null,
+  "entries": [
+    {
+      "family": "blog",
+      "topic": "How to Set Acceptance Criteria for a Filipino Outsourcing Pilot",
+      "slug": "filipino-outsourcing-pilot-acceptance-criteria",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "contentHash": "9abd6f3a124825ece11349cb39354e381e110c1a06934c5af761cce15e68270f",
+      "actualPublicationDate": "2026-09-28",
+      "commitSha": "pending",
+      "deploymentEvidence": "pending combined release handoff to browser operator",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-pilot-acceptance-criteria",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "How Much Client Management Capacity Does a Filipino Team Need?",
+      "slug": "filipino-outsourcing-client-management-capacity",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "contentHash": "586eee3b9f6d3ce844b8c699b981dd6dc667c97c96d64b11fe04249924a30617",
+      "actualPublicationDate": "2026-09-28",
+      "commitSha": "pending",
+      "deploymentEvidence": "pending combined release handoff to browser operator",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-client-management-capacity",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "A Knowledge-Transfer Plan for Filipino Outsourcing",
+      "slug": "filipino-outsourcing-knowledge-transfer-plan",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "contentHash": "cda48dbac6b62f306f1060de56ca7329e765f32fc2078e70a0ebaf612be95403",
+      "actualPublicationDate": "2026-09-28",
+      "commitSha": "pending",
+      "deploymentEvidence": "pending combined release handoff to browser operator",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-knowledge-transfer-plan",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "How to Route Exceptions in Filipino Outsourcing Operations",
+      "slug": "filipino-outsourcing-exception-escalation-routing",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "contentHash": "e465937cddad2453ff8ccedf6fdf55a6768cbe49909a4fd8ce9d295053ab228c",
+      "actualPublicationDate": "2026-09-28",
+      "commitSha": "pending",
+      "deploymentEvidence": "pending combined release handoff to browser operator",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-exception-escalation-routing",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "A Tool-Access Matrix for a Filipino Outsourcing Role",
+      "slug": "filipino-outsourcing-tool-access-matrix",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "contentHash": "0d3cd0cb3311972aff4be531d69a4309beb41233edeb3dbfd0dce97a2a648826",
+      "actualPublicationDate": "2026-09-28",
+      "commitSha": "pending",
+      "deploymentEvidence": "pending combined release handoff to browser operator",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-tool-access-matrix",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "How to Minimize Data in a Filipino Outsourcing Workflow",
+      "slug": "filipino-outsourcing-data-minimization-workflow",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "contentHash": "eb307cee8f49abcdae4b7fbcce7032295ee156ff36d817fdb7bd2ab01438f59a",
+      "actualPublicationDate": "2026-09-28",
+      "commitSha": "pending",
+      "deploymentEvidence": "pending combined release handoff to browser operator",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-data-minimization-workflow",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "How to Write an Output Specification for Filipino Outsourcing",
+      "slug": "filipino-outsourcing-output-specification",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "contentHash": "ccf473ac0ce4fe05d194faf9a6bafa0901a220f1d39625f6f1c138055222bb21",
+      "actualPublicationDate": "2026-09-28",
+      "commitSha": "pending",
+      "deploymentEvidence": "pending combined release handoff to browser operator",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-output-specification",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "How to Set a Feedback Cadence for a Filipino Outsourcing Team",
+      "slug": "filipino-outsourcing-feedback-cadence",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "contentHash": "9087c47f899ac7c4958d6cd0b39ba6dfe6dc7e695a132e846ba92246ef45dd35",
+      "actualPublicationDate": "2026-09-28",
+      "commitSha": "pending",
+      "deploymentEvidence": "pending combined release handoff to browser operator",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-feedback-cadence",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "How to Design Backup Coverage for a Filipino Outsourcing Role",
+      "slug": "filipino-outsourcing-backup-coverage-design",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "contentHash": "f325b2083a4e8feea041256d3efb88083867417a5219d9ac154c7307b9be71c3",
+      "actualPublicationDate": "2026-09-28",
+      "commitSha": "pending",
+      "deploymentEvidence": "pending combined release handoff to browser operator",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-backup-coverage-design",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "A Change-Control Process for Outsourcing Instructions",
+      "slug": "filipino-outsourcing-instruction-change-control",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "contentHash": "5e1bb8196c2be087ba9d59b41f0ea7a7e7899e7d951e2170b000b9a0fa52fe88",
+      "actualPublicationDate": "2026-09-28",
+      "commitSha": "pending",
+      "deploymentEvidence": "pending combined release handoff to browser operator",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-instruction-change-control",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "How to Build a Demand Baseline Before Filipino Outsourcing",
+      "slug": "filipino-outsourcing-demand-baseline",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "contentHash": "97b3f497f45963eb280c1c1c6cfd4588035f38c7e0f63ff954450aee494bbe51",
+      "actualPublicationDate": "2026-09-28",
+      "commitSha": "pending",
+      "deploymentEvidence": "pending combined release handoff to browser operator",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-demand-baseline",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "A Governance Meeting Agenda for Filipino Outsourcing",
+      "slug": "filipino-outsourcing-governance-meeting-agenda",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication"
+      ],
+      "contentHash": "e021adf236109276371eb00a5aa7750b357a22b9e12ec05288423bfdfc1a4f75",
+      "actualPublicationDate": "2026-09-28",
+      "commitSha": "pending",
+      "deploymentEvidence": "pending combined release handoff to browser operator",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-governance-meeting-agenda",
+      "verificationTime": null
+    }
+  ]
+}

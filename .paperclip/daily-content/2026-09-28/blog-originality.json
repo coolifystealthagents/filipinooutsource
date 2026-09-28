@@ -1,0 +1,23 @@
+{
+  "status": "SEPTEMBER28_BLOG_ORIGINALITY_PASS",
+  "metric": "five-word-shingle Jaccard over rendered article-section text; shared layout, navigation, CTA banners, FAQ, sources, and related cards excluded",
+  "wordCounts": {
+    "filipino-outsourcing-pilot-acceptance-criteria": 2246,
+    "filipino-outsourcing-client-management-capacity": 2218,
+    "filipino-outsourcing-knowledge-transfer-plan": 2271,
+    "filipino-outsourcing-exception-escalation-routing": 2512,
+    "filipino-outsourcing-tool-access-matrix": 2566,
+    "filipino-outsourcing-data-minimization-workflow": 2338,
+    "filipino-outsourcing-output-specification": 2296,
+    "filipino-outsourcing-feedback-cadence": 2218,
+    "filipino-outsourcing-backup-coverage-design": 2339,
+    "filipino-outsourcing-instruction-change-control": 2619,
+    "filipino-outsourcing-demand-baseline": 2349,
+    "filipino-outsourcing-governance-meeting-agenda": 2311
+  },
+  "maximumPairwiseOverlapPercent": 22.39,
+  "maximumPair": [
+    "filipino-outsourcing-tool-access-matrix",
+    "filipino-outsourcing-governance-meeting-agenda"
+  ]
+}
