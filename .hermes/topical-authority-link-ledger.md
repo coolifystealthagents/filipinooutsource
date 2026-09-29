@@ -48,6 +48,18 @@ The five September 25 research records were added in rendered-source commit `107
 | `/research/philippines-outsourcing-remote-device-custody-research-2026` | `/services/data-processing-support` | Delivered. The main content has the Data Processing Support handoff. | Do not duplicate it. |
 | `/research/philippines-outsourcing-provider-exit-evidence-research-2026` | `/blog/Filipino-outsource-staffing-planning` | Delivered. The main content sends the buyer to the staffing planning guide. | Do not replace it with a generic service CTA. |
 
+## 2026-09-28 research handoff reconciliation
+
+A fresh production artifact review confirmed that each new source-backed route already has one scoped service handoff in its route-local main. These are delivered reader paths, not candidates for a second CTA.
+
+| Existing supporting research | Confirmed destination | Route-local result | Next action |
+| --- | --- | --- | --- |
+| `/research/philippines-outsourcing-philhealth-remittance-handoff-research-2026` | `/services/bookkeeping-support` | Delivered. The main content has one bookkeeping-support handoff for approved payroll, EPRS evidence, and exception ownership. | Do not duplicate it. |
+| `/research/philippines-outsourcing-pagibig-contribution-reconciliation-research-2026` | `/services/bookkeeping-support` | Delivered. The main content has one bookkeeping-support handoff for approved records, payment controls, and posting checks. | Do not duplicate it. |
+| `/research/philippines-outsourcing-work-accident-evidence-handoff-research-2026` | `/services/administrative-support` | Delivered. The main content has one administrative-support handoff for protected intake and safety-owner escalation. | Do not add a generic staffing CTA. |
+| `/research/philippines-outsourcing-consent-withdrawal-operations-research-2026` | `/services/customer-support-operations` | Delivered. The main content has one customer-support handoff for approved purpose changes and privacy-owner decisions. | Do not duplicate it. |
+| `/research/philippines-outsourcing-compensation-withholding-tax-handoff-research-2026` | `/services/bookkeeping-support` | Delivered. The main content has one bookkeeping-support handoff for controlled payroll evidence and authorized tax decisions. | Do not duplicate it. |
+
 ## 2026-09-28 Blog operating-design expansion
 
 Twelve new buyer guides extend the Filipino outsourcing decision path across pilot acceptance, client management capacity, knowledge transfer, exception routing, tool access, data minimization, output specifications, feedback cadence, backup coverage, instruction change control, demand baselines, and governance meetings. Canonical slugs, source URLs, content hashes, and route inventory are recorded in `.paperclip/daily-content/2026-09-28/blog.json`; future batches must treat these topics and slugs as occupied.
