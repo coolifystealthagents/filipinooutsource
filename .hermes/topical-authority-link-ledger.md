@@ -15,6 +15,18 @@ This is a source-only planning ledger. It maps existing Philippines-only service
 | `/services/property-management-support` | `/research/philippines-property-inspection-records-research-2026` | What inspection record lets a coordinator route a property issue without approving repairs? | Audit a short link only if the research still lacks this exact service path. |
 | `/services/healthcare-administration` | `/research/philippines-patient-appointment-records-research-2026` | Which appointment details may be handled while clinical and privacy decisions stay with the client? | Audit a short link only if the research still lacks this exact service path. |
 
+## 2026-10-01 verified-absent candidate audit
+
+A fresh production build confirmed the five pairs below use existing, self-canonical research and Philippines-only service routes. Each source route has zero matching links inside its route-local `<main>`, and both routes are present in the sitemap. These are planning candidates, not permission to add multiple CTAs or publish a generic link.
+
+| Existing supporting research | Confirmed destination | Route-local result | Next action |
+| --- | --- | --- | --- |
+| `/research/philippines-ecommerce-shipment-traceability-research-2026` | `/services/ecommerce-operations` | Verified absent. The shipment record route has no ecommerce-operations link in its main content. | First candidate: review the typed source record and preserve store-owner decisions on refunds, delivery promises, and exceptions. |
+| `/research/philippines-crm-field-definition-research-2026` | `/services/sales-development-support` | Verified absent. The CRM definition route has no sales-development-support link in its main content. | Keep as a later candidate after the ecommerce review. |
+| `/research/philippines-data-access-request-research-2026` | `/services/data-processing-support` | Verified absent. The access-request route has no data-processing-support link in its main content. | Keep privacy, access, and purpose decisions with the client owner. |
+| `/research/philippines-property-inspection-records-research-2026` | `/services/property-management-support` | Verified absent. The inspection-record route has no property-management-support link in its main content. | Keep repair approval, safety, and lease decisions with the property owner. |
+| `/research/philippines-patient-appointment-records-research-2026` | `/services/healthcare-administration` | Verified absent. The appointment-record route has no healthcare-administration link in its main content. | Keep clinical, privacy, and scheduling decisions with the authorized healthcare owner. |
+
 ## Rules for the next release
 
 ## 2026-09-23 research additions
