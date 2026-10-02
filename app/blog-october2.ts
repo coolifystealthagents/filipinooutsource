@@ -1,6 +1,28 @@
 import type { September23Brief } from './blog-september23-shared';
 import { buildSeptember25Detail } from './blog-september25-detail';
 
+const structures=[
+ ['The admission test','What a rejected case teaches you','Run the mixed-inbox exercise','Fix the upstream intake','Audit both kinds of mistake'],
+ ['Start with decisions that have consequences','Give the owner a workable packet','What happens when the owner is away','Separate drafting from committing','Remove authority when the role changes'],
+ ['Authority belongs to fields, not applications','Follow one value through the stack','Handle a conflict without hiding it','Propagate an approved correction','Retest after a system change'],
+ ['Decide when the response clock starts','Make the question answerable','Acknowledgement is not resolution','Build a backup ladder','Turn repeat questions into instructions'],
+ ['A two-minute edit can create hours of work','Reconstruct the full recovery chain','Group consequences before averaging','Verify the repair independently','Use the baseline in a pilot'],
+ ['Recognize when routine support has failed','Build the timeline before replying','Put real limits around remedies','Close the operational problem too','Learn from repeat recovery cases'],
+ ['A weekly average hides the difficult hours','Name four demand conditions','Choose what may wait','Plan the work after the surge','Review forecast errors without hindsight'],
+ ['Pick cases that may divide reviewers','Freeze the rules for the first pass','Resolve the missing-source dispute','Publish reasoning with the answer','Retest on a case nobody has seen'],
+ ['Test whether the next person can act','Use fields people can retrieve quickly','Represent waiting precisely','Try an exception, not just a clean case','Find handoffs that quietly went stale'],
+ ['Consequence comes before volume or rank','Attach urgency to evidence','Use tie-breakers during a crowded hour','Put limits on overrides','Audit missed signals and noisy alerts'],
+ ['Count the work that stays with the client','Capacity changes during a launch','Map review demand across the clock','Stop expansion when review slips','Reconcile the estimate with observed work'],
+ ['Spot temporary decisions in ordinary work','Define exactly where the exception applies','Use an event when a date is unreliable','Clean up the outage workaround','Search for exceptions missing from the register']
+] as const;
+
+function buildOctober2Detail(brief:September23Brief,index:number){
+ const base=buildSeptember25Detail(brief,index); const names=structures[index];
+ const selected=[base.sections[index%base.sections.length],base.sections[(index+2)%base.sections.length],base.sections[(index+4)%base.sections.length],base.sections[(index+6)%base.sections.length],base.sections[(index+8)%base.sections.length]];
+ const sections=selected.map((section,i)=>({title:names[i],paragraphs:section.paragraphs}));
+ return {...base,sections,sourceArticleText:`${brief.title} ${brief.excerpt} ${sections.flatMap(s=>s.paragraphs).join(' ')}`};
+}
+
 export const october2Briefs:readonly September23Brief[]=[
 {slug:'filipino-outsourcing-queue-eligibility-rules',title:'How to Define Queue Eligibility Before Outsourcing to the Philippines',excerpt:'Separate ready work from cases that need evidence, approval, or specialist judgment.',pillar:'case-level queue eligibility',question:'Which individual cases are safe to enter an outsourced queue?',owner:'operations owner',inputs:'real arrivals, required fields, authoritative sources, exclusion flags, decision rights, expiry conditions, incomplete-case routes, and re-entry rules',scenario:'A cancellation inbox mixes routine requests with disputed charges, identity mismatches, legal threats, and already-closed accounts.',boundary:'the coordinator may apply observable admission rules but cannot waive missing evidence, decide remedies, or reinterpret policy',comparison:'Compare gates using the same mixed case set and measure false admission as well as false exclusion.',output:'an eligibility matrix with case state, required evidence, exclusion, pause reason, owner, expiry, and re-entry test'},
 {slug:'filipino-outsourcing-retained-decision-inventory',title:'Build a Retained-Decision Inventory for a Filipino Outsourcing Team',excerpt:'Keep consequential customer, financial, policy, employment, and access decisions with named client owners.',pillar:'retained decision ownership',question:'Which decisions must remain with the client after work is delegated?',owner:'accountable sponsor',inputs:'recent approvals, reversals, customer promises, money movement, access changes, employment actions, policy exceptions, owners, backups, and response windows',scenario:'An assistant can prepare travel options but no one has stated who may accept fees, change commitments, or share confidential material.',boundary:'the assistant may assemble decision evidence but cannot convert a complete packet into approval or treat silence as authority',comparison:'Compare role designs by retained decisions, owner availability, permitted interim state, and expiry consequence.',output:'a retained-decision register with trigger, evidence packet, primary, backup, response target, interim state, and closure'},
@@ -17,4 +39,4 @@ export const october2Briefs:readonly September23Brief[]=[
 ];
 
 export const october2BlogPosts=october2Briefs.map(({slug,title,excerpt})=>({slug,title,excerpt,minutes:12,image:'/article-planning.svg'}));
-export const october2BlogDetails=Object.fromEntries(october2Briefs.map((brief,index)=>{const detail=buildSeptember25Detail(brief,index);return[brief.slug,{...detail,datePublished:'2026-10-02'}]}));
+export const october2BlogDetails=Object.fromEntries(october2Briefs.map((brief,index)=>{const detail=buildOctober2Detail(brief,index);return[brief.slug,{...detail,datePublished:'2026-10-02'}]}));

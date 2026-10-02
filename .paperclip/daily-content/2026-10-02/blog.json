@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "cycleLabel": "2026-10-02",
+  "timezone": "Etc/UTC",
+  "requiredCount": 12,
+  "stagedCount": 12,
+  "verifiedCount": 0,
+  "status": "validated-awaiting-combined-push",
+  "repository": "coolifystealthagents/filipinooutsource",
+  "branch": "fil-96-blog-2026-10-02",
+  "baselineSha": "d299f714946f8dbcb00389a6154176fa44c006a0",
+  "validation": {
+    "wordCounts": {
+      "filipino-outsourcing-queue-eligibility-rules": 1202,
+      "filipino-outsourcing-retained-decision-inventory": 1564,
+      "filipino-outsourcing-source-of-truth-map": 1267,
+      "filipino-outsourcing-manager-response-standard": 1510,
+      "filipino-outsourcing-correction-cost-baseline": 1613,
+      "filipino-outsourcing-service-recovery-playbook": 1161,
+      "filipino-outsourcing-workload-volatility-bands": 1540,
+      "filipino-outsourcing-quality-calibration-session": 1118,
+      "filipino-outsourcing-handoff-completeness-test": 1677,
+      "filipino-outsourcing-case-priority-rules": 1197,
+      "filipino-outsourcing-reviewer-capacity-model": 1642,
+      "filipino-outsourcing-decision-expiry-register": 1336
+    },
+    "maximumPairwiseFiveWordShingleJaccard": 0.22161,
+    "maximumPair": [
+      "filipino-outsourcing-queue-eligibility-rules",
+      "filipino-outsourcing-case-priority-rules"
+    ],
+    "repeatedSubstantiveParagraphs": 0,
+    "sharedArgumentReview": "passed: each article addresses a different buyer decision, uses a distinct heading sequence and scenario, and ends in a different operational artifact; no article is a title or keyword swap",
+    "humanizerScan": "passed: no em/en dashes or flagged inflated AI vocabulary",
+    "renderedMetadata": "passed: canonical, datePublished, shared image reference, index data and sitemap entry"
+  },
+  "articles": [
+    {
+      "family": "buyer-operating-design",
+      "topic": "How to Define Queue Eligibility Before Outsourcing to the Philippines",
+      "slug": "filipino-outsourcing-queue-eligibility-rules",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+      ],
+      "contentHash": "08fedc77b9e75dddd03b648cf916a59a06eb29dce88bea4c984b1f76c71c4a2b",
+      "publicationDate": "2026-10-02",
+      "commitSha": "pending-final-combined-commit",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-queue-eligibility-rules",
+      "verificationTime": null
+    },
+    {
+      "family": "buyer-operating-design",
+      "topic": "Build a Retained-Decision Inventory for a Filipino Outsourcing Team",
+      "slug": "filipino-outsourcing-retained-decision-inventory",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+      ],
+      "contentHash": "5ad7b9a9e5dae0ce6003764640e15122babc347d296662b8b66707788e25a459",
+      "publicationDate": "2026-10-02",
+      "commitSha": "pending-final-combined-commit",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-retained-decision-inventory",
+      "verificationTime": null
+    },
+    {
+      "family": "buyer-operating-design",
+      "topic": "Create a Source-of-Truth Map for Outsourced Operations",
+      "slug": "filipino-outsourcing-source-of-truth-map",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+      ],
+      "contentHash": "f01eb433b81199d66c63be4a6f4d5eb396323043d99d3b215743241b0c70f256",
+      "publicationDate": "2026-10-02",
+      "commitSha": "pending-final-combined-commit",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-source-of-truth-map",
+      "verificationTime": null
+    },
+    {
+      "family": "buyer-operating-design",
+      "topic": "Set a Manager Response Standard for a Filipino Outsourcing Team",
+      "slug": "filipino-outsourcing-manager-response-standard",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+      ],
+      "contentHash": "b4a0deb17009a42dd91cf1b30eda1246b7d4ec666e52735e660851fe3ef6663f",
+      "publicationDate": "2026-10-02",
+      "commitSha": "pending-final-combined-commit",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-manager-response-standard",
+      "verificationTime": null
+    },
+    {
+      "family": "buyer-operating-design",
+      "topic": "Measure the Cost of Corrections Before Outsourcing a Workflow",
+      "slug": "filipino-outsourcing-correction-cost-baseline",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+      ],
+      "contentHash": "3f031492355cc5d17f097c62b9686414789c3b17a74eb2458a164fe786b4db8e",
+      "publicationDate": "2026-10-02",
+      "commitSha": "pending-final-combined-commit",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-correction-cost-baseline",
+      "verificationTime": null
+    },
+    {
+      "family": "buyer-operating-design",
+      "topic": "Write a Service-Recovery Playbook for a Filipino Support Team",
+      "slug": "filipino-outsourcing-service-recovery-playbook",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+      ],
+      "contentHash": "4725f3dc98862f107ec6eed81ec46e35975cb02f9252bda0d61b2f700d4289e7",
+      "publicationDate": "2026-10-02",
+      "commitSha": "pending-final-combined-commit",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-service-recovery-playbook",
+      "verificationTime": null
+    },
+    {
+      "family": "buyer-operating-design",
+      "topic": "Plan Workload Volatility for a Filipino Outsourcing Team",
+      "slug": "filipino-outsourcing-workload-volatility-bands",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+      ],
+      "contentHash": "983fb03e241e6c11bdc5e7ecb2d8ac2df9fb0e3beccd55bf754dc6a3ffd0053d",
+      "publicationDate": "2026-10-02",
+      "commitSha": "pending-final-combined-commit",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-workload-volatility-bands",
+      "verificationTime": null
+    },
+    {
+      "family": "buyer-operating-design",
+      "topic": "Run a Quality Calibration Session with a Filipino Outsourcing Team",
+      "slug": "filipino-outsourcing-quality-calibration-session",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+      ],
+      "contentHash": "2989f52fc9275e5faac446ce4a2c69dc4cc56de0b2c93d6f7fc09c6cdbb35622",
+      "publicationDate": "2026-10-02",
+      "commitSha": "pending-final-combined-commit",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-quality-calibration-session",
+      "verificationTime": null
+    },
+    {
+      "family": "buyer-operating-design",
+      "topic": "Test Handoff Completeness Across a Filipino Outsourcing Shift",
+      "slug": "filipino-outsourcing-handoff-completeness-test",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+      ],
+      "contentHash": "53be9a0c95a9e8087d9a672b426d455b606f99f69f0f8cf2e028da249f88fef3",
+      "publicationDate": "2026-10-02",
+      "commitSha": "pending-final-combined-commit",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-handoff-completeness-test",
+      "verificationTime": null
+    },
+    {
+      "family": "buyer-operating-design",
+      "topic": "Write Case-Priority Rules for a Filipino Operations Team",
+      "slug": "filipino-outsourcing-case-priority-rules",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+      ],
+      "contentHash": "4d214f937a0175dfd107b8e97c6fa83c438ee7bbed32dc995c4738e86f3395ec",
+      "publicationDate": "2026-10-02",
+      "commitSha": "pending-final-combined-commit",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-case-priority-rules",
+      "verificationTime": null
+    },
+    {
+      "family": "buyer-operating-design",
+      "topic": "Build a Reviewer-Capacity Model for Filipino Outsourcing",
+      "slug": "filipino-outsourcing-reviewer-capacity-model",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+      ],
+      "contentHash": "af9b5a9f39889e239da704bb99f2edc95a2214d50945c84c7bccf655f12507ce",
+      "publicationDate": "2026-10-02",
+      "commitSha": "pending-final-combined-commit",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-reviewer-capacity-model",
+      "verificationTime": null
+    },
+    {
+      "family": "buyer-operating-design",
+      "topic": "Use a Decision-Expiry Register in Filipino Outsourcing",
+      "slug": "filipino-outsourcing-decision-expiry-register",
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+      ],
+      "contentHash": "7928beaac0fc57baeb6d2b80a4ee2aced544ecae029d848f540139ef3954b2dd",
+      "publicationDate": "2026-10-02",
+      "commitSha": "pending-final-combined-commit",
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-decision-expiry-register",
+      "verificationTime": null
+    }
+  ]
+}
