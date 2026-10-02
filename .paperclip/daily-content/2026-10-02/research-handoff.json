@@ -1,0 +1,87 @@
+{
+  "routine": "Daily Research Publishing",
+  "cycleLabel": "2026-10-02 combined release",
+  "taskId": "cbae7884-1e41-42d2-96e4-35a0eae0676b",
+  "runId": "614bca42-06c6-4b8d-a966-23d1ba7aae5a",
+  "pairedBlogTaskId": "25bef26a-b522-4def-a829-36f50ccf8061",
+  "repository": "coolifystealthagents/filipinooutsource",
+  "productionBranch": "main",
+  "productionBaseSha": "d299f714946f8dbcb00389a6154176fa44c006a0",
+  "researchBranch": "fil-95-research-2026-10-02",
+  "contentCommit": "73259038071d47e9520a15fbb6c99591b4bbd431",
+  "worktree": "/paperclip/instances/default/projects/e3c19e70-b81b-45c1-a4f8-861cd64f6cb1/4e9ee839-d9cc-46e4-91e7-cdd5e2e1c9d8/fil-95-research-2026-10-02",
+  "siteTimezone": "UTC (repository date rendering)",
+  "provisionalDatePublished": "2026-10-02",
+  "actualFirstPublicationDate": null,
+  "dateReconciliationRequired": "Blog integrator must reconcile visible date, datePublished, indexes, sitemap, and manifest immediately before the sole combined push. If first publication is not 2026-10-02 UTC, update all five articles and release evidence before pushing.",
+  "requiredCount": 5,
+  "stagedCount": 5,
+  "verifiedCount": 0,
+  "status": "local-research-handoff-awaiting-fil-96-integration",
+  "deploymentResource": "zicup2lu74m4qgqkyrhj8tzf",
+  "deploymentEvidence": "Research performed no push, deployment, or public-route probe. FIL-96 is the sole combined integrator; the browser operator owns deployment; public verification follows exact-SHA deployment evidence.",
+  "validation": {
+    "dependencyInstall": "npm ci --include=dev passed; npm reported 4 existing audit findings (3 high, 1 critical), no dependency files changed",
+    "typescript": "passed",
+    "productionBuild": "passed (664 static pages)",
+    "substantiveWordCounts": [1520, 1319, 1315, 1330, 1299],
+    "maximumPairwiseFiveWordShingleJaccard": 0.001151,
+    "repeatedSubstantiveParagraphs": 0,
+    "sharedArgumentReview": "passed: five distinct decisions, structures, boundary cases, tests, and reader outcomes",
+    "duplicateSlugCheck": "passed against production inventory at baseline",
+    "metadata": "passed rendered canonical, datePublished 2026-10-02, shared repository image, research index, and sitemap generation",
+    "publicProbe": "not performed by contract"
+  },
+  "articles": [
+    {
+      "family": "corporate-administration",
+      "topic": "SEC eFAST filing packet control",
+      "slug": "philippines-outsourcing-sec-efast-filing-packet-research-2026",
+      "contentHash": "729838c47e2f34116b80fa455821f86f49c22bf3898939e51a3b58e257890eeb",
+      "sourcesChecked": "2026-10-02",
+      "sources": ["https://efast.sec.gov.ph/faqs", "https://efast.sec.gov.ph/user/static/media/user_guide_022825.2d5ac2ad.pdf", "https://www.sec.gov.ph/reportorial-requirements/corporations-with-primary-licenses/"],
+      "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-sec-efast-filing-packet-research-2026",
+      "verificationTime": null
+    },
+    {
+      "family": "legal-administration",
+      "topic": "Philippine trademark docket control",
+      "slug": "philippines-outsourcing-trademark-docket-control-research-2026",
+      "contentHash": "8803c2a42e9264725774864e2a88e8652de105a43db72de1b429a0c599f0969c",
+      "sourcesChecked": "2026-10-02",
+      "sources": ["https://www.ipophil.gov.ph/trademark/filing/", "https://www.ipophil.gov.ph/etm-file-trademark/", "https://www.ipophil.gov.ph/advisories/"],
+      "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-trademark-docket-control-research-2026",
+      "verificationTime": null
+    },
+    {
+      "family": "finance-operations",
+      "topic": "BIR Form 2307 certificate reconciliation",
+      "slug": "philippines-outsourcing-bir-2307-certificate-reconciliation-research-2026",
+      "contentHash": "9a41651dc20b3b0d593e13da4bc86c10e1f71b076b9b7c1d0b1f97aebc156bb5",
+      "sourcesChecked": "2026-10-02",
+      "sources": ["https://bir-cdn.bir.gov.ph/local/pdf/2307%20Jan%202018%20ENCS%20v3.pdf", "https://www.bir.gov.ph/bir-forms?datasetCode=3381&idTag=BIR2304&label=2304&tab=Certificates&type=TAB+LINK", "https://efps.bir.gov.ph/efps-war/EFPSWeb_war/forms/1604E/1604e_v2_02.xhtml"],
+      "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-bir-2307-certificate-reconciliation-research-2026",
+      "verificationTime": null
+    },
+    {
+      "family": "privacy-operations",
+      "topic": "outsourced data-sharing register",
+      "slug": "philippines-outsourcing-data-sharing-register-research-2026",
+      "contentHash": "4c1f8e965b54355e2749c468613bfc6ed3e4ad5927d99b0a3e006d8eb2e6e3bc",
+      "sourcesChecked": "2026-10-02",
+      "sources": ["https://privacy.gov.ph/wp-content/uploads/2021/01/Circular-Data-Sharing-Agreement-amending-16-02-21-Dec-2020-clean-copy-FINAL-LYA-and-JDN-signed-minor-edit.pdf", "https://privacy.gov.ph/data-security/", "https://privacy.gov.ph/pips-and-pics/advisories-circulars/"],
+      "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-data-sharing-register-research-2026",
+      "verificationTime": null
+    },
+    {
+      "family": "marketing-operations",
+      "topic": "DTI sales promotion permit evidence",
+      "slug": "philippines-outsourcing-sales-promotion-permit-evidence-research-2026",
+      "contentHash": "08e3e2085ce93c5f25f8770e1476e0b64055668c95157e6c13bc0086847976ea",
+      "sourcesChecked": "2026-10-02",
+      "sources": ["https://fairtrade.dti.gov.ph/about/business-regulations/sales-promotion-division/", "https://fairtrade.dti.gov.ph/stripped-sales-promo-faq/", "https://standardsph.dti.gov.ph/upload/upload/download?file=e4f8n8H2Sa3uc20230927651374470a596.pdf&path=storage%2Fuploads%2Fsdac%2Fpns%2Flaws_issuances%2F"],
+      "liveUrl": "https://filipinooutsource.com/research/philippines-outsourcing-sales-promotion-permit-evidence-research-2026",
+      "verificationTime": null
+    }
+  ]
+}
