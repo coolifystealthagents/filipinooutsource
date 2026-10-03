@@ -21,7 +21,7 @@ A fresh production build confirmed the five pairs below use existing, self-canon
 
 | Existing supporting research | Confirmed destination | Route-local result | Next action |
 | --- | --- | --- | --- |
-| `/research/philippines-ecommerce-shipment-traceability-research-2026` | `/services/ecommerce-operations` | Verified absent. The shipment record route has no ecommerce-operations link in its main content. | First candidate: review the typed source record and preserve store-owner decisions on refunds, delivery promises, and exceptions. |
+| `/research/philippines-ecommerce-shipment-traceability-research-2026` | `/services/ecommerce-operations` | Delivered in `8c6a731bcbd87282c1129e92b92a5e649ae76f71`: one route-local handoff is present in the fresh local artifact. | `deployment_pending_public_verification / public_stale`: do not duplicate it; the currently served apex and www pages still omit the handoff and modified date. |
 | `/research/philippines-crm-field-definition-research-2026` | `/services/sales-development-support` | Verified absent. The CRM definition route has no sales-development-support link in its main content. | Keep as a later candidate after the ecommerce review. |
 | `/research/philippines-data-access-request-research-2026` | `/services/data-processing-support` | Verified absent. The access-request route has no data-processing-support link in its main content. | Keep privacy, access, and purpose decisions with the client owner. |
 | `/research/philippines-property-inspection-records-research-2026` | `/services/property-management-support` | Verified absent. The inspection-record route has no property-management-support link in its main content. | Keep repair approval, safety, and lease decisions with the property owner. |
@@ -43,6 +43,14 @@ A fresh production build confirmed the five pairs below use existing, self-canon
 2. Keep the link inside the paragraph where the buyer's question appears. A generic footer or sidebar link does not count.
 3. Keep the reader-facing sentence unique to FilipinoOutsource.com. Do not promise placement, savings, outcomes, or clinical, legal, or financial decisions.
 4. A public link release needs its own source, target, canonical, sitemap, and dual-host proof. This ledger alone does not need a deployment because it produces no route output.
+
+## 2026-10-03 shipment traceability delivery status
+
+- Rendered source: `8c6a731bcbd87282c1129e92b92a5e649ae76f71`
+- Preserve rendered-source commit `8c6a731bcbd87282c1129e92b92a5e649ae76f71`; it adds the typed Ecommerce Operations handoff and refreshes only this research record's modified date.
+- Local artifact: `research/philippines-ecommerce-shipment-traceability-research-2026.html` has the expected H1, one self-canonical URL, `article:modified_time` `2026-10-03`, the visible `Prepare the shipment handoff` section, one `/services/ecommerce-operations` link in route-local main, and the canonical sitemap location. This sitemap intentionally has no `lastmod` values.
+- Deployment: no repository-owned deployment configuration or approved application identifier was available. No deployment was guessed or triggered.
+- Public evidence: cache-busted apex and www responses were HTML 200 with the expected H1 and apex canonical, but both omit the visible marker, the Ecommerce Operations link, and the modified-date metadata. The canonical public sitemap XML includes the route. Classification: `deployment_pending_public_verification / public_stale`.
 
 ## 2026-09-23 Blog decision-support expansion
 
