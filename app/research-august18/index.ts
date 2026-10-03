@@ -34,6 +34,7 @@ function makePost(article: August18ResearchModule): ResearchPost {
     excerpt: `Research question: ${question} Evidence-led analysis of ${article.focus} for businesses planning Philippines-based support.`,
     published: 'August 18, 2026',
     datePublished: '2026-08-18',
+    dateModified: article.dateModified,
     readTime: '10 minute read',
     cluster: article.cluster,
     cardHighlight: article.finding,
@@ -54,6 +55,7 @@ function makePost(article: August18ResearchModule): ResearchPost {
       { q: 'What should a buyer measure first?', a: `Measure ${article.measure}, then inspect the records behind the measure.` }
     ],
     sources: [{ name: article.sourceName, url: article.sourceUrl }, ...sources.filter((source) => source.name !== article.sourceName)],
+    serviceHandoff: article.serviceHandoff,
     related: [{ label: 'Review services', href: '/services' }, { label: 'Read the company brief', href: '/about' }]
   };
 }

@@ -2,6 +2,7 @@ export type August18ResearchModule = {
   slug: string;
   sourceDate: '2026-08-18';
   datePublished: '2026-08-18';
+  dateModified?: string;
   title: string;
   cluster: string;
   statistic: string;
@@ -15,4 +16,5 @@ export type August18ResearchModule = {
   angle: string;
   caseStudy: string;
   measure: string;
+  serviceHandoff?: { heading: string; copy: string; label: string; href: string };
 };
