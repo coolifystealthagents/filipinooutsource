@@ -3,7 +3,7 @@
   "cycleLabel": "2026-10-05",
   "timezone": "Etc/UTC",
   "requiredCount": 12,
-  "stagedCount": 0,
+  "stagedCount": 2,
   "verifiedCount": 0,
   "status": "drafting",
   "repository": "coolifystealthagents/filipinooutsource",
@@ -19,5 +19,36 @@
   "publicationDate": null,
   "combinedCommitSha": null,
   "deploymentEvidence": null,
-  "articles": []
+  "articles": [
+    {
+      "family": "client-management-readiness",
+      "topic": "Management readiness before outsourcing",
+      "slug": "filipino-outsourcing-management-readiness-test",
+      "sources": [
+        "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+        "https://privacy.gov.ph/accountability/"
+      ],
+      "sourceBodyWordCount": 935,
+      "sourceBodyHash": "7b0ab4fcf1c15999ea84efe9bc46c572c0f0f378a0a05c6760ff0e783135d598",
+      "publicationDate": null,
+      "commitSha": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-management-readiness-test",
+      "verificationTime": null
+    },
+    {
+      "family": "asynchronous-operations",
+      "topic": "Asynchronous communication charter",
+      "slug": "filipino-team-asynchronous-communication-charter",
+      "sources": [
+        "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+        "https://privacy.gov.ph/accountability/"
+      ],
+      "sourceBodyWordCount": 1016,
+      "sourceBodyHash": "b882345328a2a809f84470768b49f2b7fbeca127252a2e951566c4382f378cb2",
+      "publicationDate": null,
+      "commitSha": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-team-asynchronous-communication-charter",
+      "verificationTime": null
+    }
+  ]
 }
