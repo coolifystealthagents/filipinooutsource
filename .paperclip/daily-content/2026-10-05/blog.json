@@ -3,7 +3,7 @@
   "cycleLabel": "2026-10-05",
   "timezone": "Etc/UTC",
   "requiredCount": 12,
-  "stagedCount": 9,
+  "stagedCount": 10,
   "verifiedCount": 0,
   "status": "drafting",
   "repository": "coolifystealthagents/filipinooutsource",
@@ -149,6 +149,18 @@
       "publicationDate": null,
       "commitSha": null,
       "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-throughput-decision-delay",
+      "verificationTime": null
+    },
+    {
+      "family": "quality-correction",
+      "topic": "Actionable rework return notes",
+      "slug": "filipino-outsourcing-rework-return-note",
+      "sources": ["https://privacy.gov.ph/accountability/", "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"],
+      "sourceBodyWordCount": 904,
+      "sourceBodyHash": "a5e7626918cbf40ae367bd17b30c25eba1a6eea1330e7edb022df26013f3f7ad",
+      "publicationDate": null,
+      "commitSha": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-rework-return-note",
       "verificationTime": null
     }
   ]
