@@ -22,6 +22,14 @@
   "publicationDate": null,
   "combinedCommitSha": null,
   "deploymentEvidence": null,
+  "integrationCheckpoint": {
+    "researchCount": 5,
+    "researchWordCounts": [1266, 1243, 1207, 1202, 1204],
+    "researchMaximumPairwiseFiveWordShingleJaccard": 0.00209,
+    "lockedDependencyInstall": "passed: npm ci --include=dev --no-audit --no-fund",
+    "typecheck": "passed: npm run lint",
+    "productionBuild": "pending final 17-route head"
+  },
   "articles": [
     {
       "family": "client-management-readiness",
