@@ -3,7 +3,7 @@
   "cycleLabel": "2026-10-05",
   "timezone": "Etc/UTC",
   "requiredCount": 12,
-  "stagedCount": 7,
+  "stagedCount": 8,
   "verifiedCount": 0,
   "status": "drafting",
   "repository": "coolifystealthagents/filipinooutsource",
@@ -125,6 +125,18 @@
       "publicationDate": null,
       "commitSha": null,
       "liveUrl": "https://filipinooutsource.com/blog/filipino-team-role-change-checklist",
+      "verificationTime": null
+    },
+    {
+      "family": "continuity-planning",
+      "topic": "Business-owner absence test",
+      "slug": "filipino-outsourcing-owner-absence-test",
+      "sources": ["https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final", "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"],
+      "sourceBodyWordCount": 909,
+      "sourceBodyHash": "46d26abc597eac04a7ffe67e2fb7f2153c85d2528e7c8682f61eaa8a4e952d9a",
+      "publicationDate": null,
+      "commitSha": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-owner-absence-test",
       "verificationTime": null
     }
   ]
