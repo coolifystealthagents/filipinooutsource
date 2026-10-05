@@ -3,7 +3,7 @@
   "cycleLabel": "2026-10-05",
   "timezone": "Etc/UTC",
   "requiredCount": 12,
-  "stagedCount": 8,
+  "stagedCount": 9,
   "verifiedCount": 0,
   "status": "drafting",
   "repository": "coolifystealthagents/filipinooutsource",
@@ -137,6 +137,18 @@
       "publicationDate": null,
       "commitSha": null,
       "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-owner-absence-test",
+      "verificationTime": null
+    },
+    {
+      "family": "operations-measurement",
+      "topic": "Throughput and decision delay",
+      "slug": "filipino-outsourcing-throughput-decision-delay",
+      "sources": ["https://psa.gov.ph/statistics/standards", "https://www.nist.gov/publications"],
+      "sourceBodyWordCount": 910,
+      "sourceBodyHash": "b355626692ff96b3b950e684d5819518e2667321ed7138f1a8b15dfe106dd9e9",
+      "publicationDate": null,
+      "commitSha": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-throughput-decision-delay",
       "verificationTime": null
     }
   ]
