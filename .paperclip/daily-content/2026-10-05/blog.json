@@ -3,7 +3,7 @@
   "cycleLabel": "2026-10-05",
   "timezone": "Etc/UTC",
   "requiredCount": 12,
-  "stagedCount": 10,
+  "stagedCount": 11,
   "verifiedCount": 0,
   "status": "drafting",
   "repository": "coolifystealthagents/filipinooutsource",
@@ -161,6 +161,18 @@
       "publicationDate": null,
       "commitSha": null,
       "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-rework-return-note",
+      "verificationTime": null
+    },
+    {
+      "family": "client-dependency-planning",
+      "topic": "Recurring-process dependency map",
+      "slug": "filipino-outsourcing-client-dependency-map",
+      "sources": ["https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final", "https://csrc.nist.gov/pubs/sp/800/161/r1/final"],
+      "sourceBodyWordCount": 920,
+      "sourceBodyHash": "dd1e6720f2827e2d46b9e12b6183f49c2c102f3ad3468241b02a083db84d9164",
+      "publicationDate": null,
+      "commitSha": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-client-dependency-map",
       "verificationTime": null
     }
   ]
