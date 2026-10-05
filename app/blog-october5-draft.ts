@@ -85,7 +85,7 @@ export const october5BlogDrafts: October5BlogDraft[] = [
       ],
       sources: [
         { label: 'NIST contingency planning guidance', url: 'https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final' },
-        { label: 'Philippine National Privacy Commission accountability guidance', url: 'https://privacy.gov.ph/accountability/' },
+        { label: 'Official Gazette — Republic Act No. 10173 accountability principle', url: 'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/' },
       ],
       inlineAnchors: [
         { phrase: 'services overview', href: '/services' },
@@ -160,12 +160,12 @@ export const october5BlogDrafts: October5BlogDraft[] = [
       ],
       sources: [
         { label: 'NIST contingency planning guidance', url: 'https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final' },
-        { label: 'Philippine National Privacy Commission accountability guidance', url: 'https://privacy.gov.ph/accountability/' },
+        { label: 'Official Gazette — Republic Act No. 10173 accountability principle', url: 'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/' },
       ],
       inlineAnchors: [
         { phrase: 'executive assistance', href: '/services/executive-assistance' },
         { phrase: 'planning conversation', href: '/contact-us' },
-        { phrase: 'Philippine National Privacy Commission accountability guidance', href: 'https://privacy.gov.ph/accountability/', external: true },
+        { phrase: 'Republic Act No. 10173 accountability principle', href: 'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/', external: true },
       ],
       related: [
         { label: 'Plan an executive assistance lane', href: '/services/executive-assistance' },
@@ -207,7 +207,7 @@ export const october5BlogDrafts: October5BlogDraft[] = [
         {
           title: 'Redact the training copy without breaking the lesson',
           paragraphs: [
-            'Preserve the original case only in its approved business system. Create a separate training copy with the minimum fields needed to teach the decision. Replace customer names, addresses, account numbers, private notes, payment details, and unrelated history unless a field is necessary for the lesson and the approved training environment permits it. Do not paste a full production screenshot into a slide simply because cropping takes time. The Philippine National Privacy Commission describes accountability as an organizational duty, so the person preparing examples needs a named purpose and owner for the copied data.',
+            'Preserve the original case only in its approved business system. Create a separate training copy with the minimum fields needed to teach the decision. Replace customer names, addresses, account numbers, private notes, payment details, and unrelated history unless a field is necessary for the lesson and the approved training environment permits it. Do not paste a full production screenshot into a slide simply because cropping takes time. Republic Act No. 10173 makes accountability an organizational duty, so the person preparing examples needs a named purpose and owner for the copied data.',
             'Redaction must not make the answer obvious in a way the live case is not. If source timestamps determine which record is current, keep realistic timestamps while removing identity. If the lesson concerns a mismatch, preserve the mismatch. Mark altered values as synthetic or redacted so nobody later treats the example as a real customer record. Record where the original came from, who approved the training copy, and when the copy should be reviewed. The learner needs a faithful problem, not a decorative screenshot stripped of its deciding evidence.',
           ],
         },
@@ -234,11 +234,11 @@ export const october5BlogDrafts: October5BlogDraft[] = [
         },
       ],
       sources: [
-        { label: 'Philippine National Privacy Commission accountability guidance', url: 'https://privacy.gov.ph/accountability/' },
+        { label: 'Official Gazette — Republic Act No. 10173 accountability principle', url: 'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/' },
         { label: 'NIST privacy framework', url: 'https://www.nist.gov/privacy-framework' },
       ],
       inlineAnchors: [
-        { phrase: 'Philippine National Privacy Commission describes accountability', href: 'https://privacy.gov.ph/accountability/', external: true },
+        { phrase: 'Republic Act No. 10173 establishes accountability', href: 'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/', external: true },
         { phrase: 'customer support operations', href: '/services/customer-support-operations' },
         { phrase: 'staffing discussion', href: '/contact-us' },
       ],
@@ -276,7 +276,7 @@ export const october5BlogDrafts: October5BlogDraft[] = [
           title: 'Classify questions by the owner who can answer',
           paragraphs: [
             'Use categories that lead to action. A source question asks where an approved fact can be found. An instruction question asks which rule governs. An access question concerns an account, permission, or system failure. An approval question presents evidence for a retained decision. A scope question asks whether the request belongs in the queue at all. Give each category a primary owner, a competent backup, the minimum evidence packet, and a safe waiting state. Avoid a single ask the manager label that hides very different work.',
-            'A good classification also keeps sensitive material in the correct place. The question record can refer to an approved case identifier without copying a full customer file into chat. The National Privacy Commission’s accountability material places responsibility on the organization handling personal data, so convenience should not decide where a question travels. Name the allowed channel for each question type and the people permitted to view it. If the owner lacks access to the source record, fix that operating problem before promising a fast response.',
+            'A good classification also keeps sensitive material in the correct place. The question record can refer to an approved case identifier without copying a full customer file into chat. Republic Act No. 10173 places responsibility on the organization handling personal data, so convenience should not decide where a question travels. Name the allowed channel for each question type and the people permitted to view it. If the owner lacks access to the source record, fix that operating problem before promising a fast response.',
           ],
         },
         {
@@ -309,11 +309,11 @@ export const october5BlogDrafts: October5BlogDraft[] = [
         },
       ],
       sources: [
-        { label: 'Philippine National Privacy Commission accountability guidance', url: 'https://privacy.gov.ph/accountability/' },
+        { label: 'Official Gazette — Republic Act No. 10173 accountability principle', url: 'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/' },
         { label: 'NIST contingency planning guidance', url: 'https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final' },
       ],
       inlineAnchors: [
-        { phrase: 'National Privacy Commission’s accountability material', href: 'https://privacy.gov.ph/accountability/', external: true },
+        { phrase: 'Republic Act No. 10173 accountability principle', href: 'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/', external: true },
         { phrase: 'bookkeeping support', href: '/services/bookkeeping-support' },
         { phrase: 'planning conversation', href: '/contact-us' },
       ],
@@ -360,8 +360,8 @@ export const october5BlogDrafts: October5BlogDraft[] = [
           'A buyer planning data processing support can bring the candidate pool and admission checklist to a staffing discussion. That conversation can focus on the fields, systems, exclusions, and reviewer rather than a broad job title. The immediate outcome is a safer first batch. Expansion comes later, after the business has evidence that another category has its own source rule, access boundary, owner, and finish point.'
         ]}
       ],
-      sources:[{label:'NIST access control guidance',url:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final'},{label:'Philippine National Privacy Commission accountability guidance',url:'https://privacy.gov.ph/accountability/'}],
-      inlineAnchors:[{phrase:'data processing support',href:'/services/data-processing-support'},{phrase:'staffing discussion',href:'/contact-us'},{phrase:'Philippine National Privacy Commission accountability guidance',href:'https://privacy.gov.ph/accountability/',external:true}],
+      sources:[{label:'NIST access control guidance',url:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final'},{label:'Official Gazette — Republic Act No. 10173 accountability principle',url:'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/'}],
+      inlineAnchors:[{phrase:'data processing support',href:'/services/data-processing-support'},{phrase:'staffing discussion',href:'/contact-us'},{phrase:'Republic Act No. 10173 accountability principle',href:'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/',external:true}],
       related:[{label:'Review data processing support',href:'/services/data-processing-support'},{label:'Plan a controlled first batch',href:'/contact-us'}],
       image:{src:'/article-planning.svg',alt:'A first live batch sorted into admitted, paused, and excluded cases',caption:'Admission rules keep the first batch small enough to inspect and useful enough to expose weak points.'},
     },
@@ -398,8 +398,8 @@ export const october5BlogDrafts: October5BlogDraft[] = [
           ,'Keep a definition sheet beside the report. It should state the timezone, business calendar, treatment of reopened cases, source of every timestamp, and whether paused time remains inside the customer-facing age. When a dashboard changes one of these rules, publish the effective date. Otherwise a better-looking trend may come from a changed calculation rather than improved handling.'
         ]}
       ],
-      sources:[{label:'Department of Trade and Industry consumer resources',url:'https://www.dti.gov.ph/resources/consumer-corner/'},{label:'NIST incident response guidance',url:'https://csrc.nist.gov/pubs/sp/800/61/r2/final'}],
-      inlineAnchors:[{phrase:'customer support operations',href:'/services/customer-support-operations'},{phrase:'planning request',href:'/contact-us'},{phrase:'Department of Trade and Industry consumer resources',href:'https://www.dti.gov.ph/resources/consumer-corner/',external:true}],
+      sources:[{label:'DTI Consumer Complaints Assistance and Resolution system',url:'https://consumercare.dti.gov.ph/'},{label:'NIST incident response guidance',url:'https://csrc.nist.gov/pubs/sp/800/61/r2/final'}],
+      inlineAnchors:[{phrase:'customer support operations',href:'/services/customer-support-operations'},{phrase:'planning request',href:'/contact-us'},{phrase:'DTI Consumer Complaints Assistance and Resolution system',href:'https://consumercare.dti.gov.ph/',external:true}],
       related:[{label:'Review customer support operations',href:'/services/customer-support-operations'},{label:'Map an exception queue',href:'/contact-us'}],
       image:{src:'/article-planning.svg',alt:'Exception timeline divided into evidence, decision, system, and handling states',caption:'Separate state clocks show why an exception is waiting and who can move it.'},
     }
@@ -415,7 +415,7 @@ export const october5BlogDrafts: October5BlogDraft[] = [
       ]},
       {title:'Calculate the access delta',paragraphs:[
         'Inventory current accounts and permissions, then connect each one to a continuing task. Remove access that has no purpose in the new role. Request new permissions through the normal approval path rather than copying a colleague’s profile. For retained systems, check whether the permission level still fits. A calendar role may need delegate access, while renewal preparation may need read-only contract and usage views but no billing, export, or user-administration rights.',
-        'Record the system, account owner, data exposed, approved action, approver, grant time, review date, and removal trigger. Where a temporary overlap is necessary, give it an end event and monitor it. Shared credentials make this reconciliation difficult and should not be used as a shortcut. The National Privacy Commission’s accountability guidance supports assigning responsibility for personal-data handling, which includes knowing why a person retains access after duties change.'
+        'Record the system, account owner, data exposed, approved action, approver, grant time, review date, and removal trigger. Where a temporary overlap is necessary, give it an end event and monitor it. Shared credentials make this reconciliation difficult and should not be used as a shortcut. Republic Act No. 10173 supports assigning responsibility for personal-data handling, which includes knowing why a person retains access after duties change.'
       ]},
       {title:'Transfer open work before changing the label',paragraphs:[
         'Build an inventory of open items in the old queue. Each needs an identifier, current state, source, last action, unanswered question, owner, deadline, and destination. Decide whether the person finishes it, hands it to a named successor, or closes it under an approved rule. Do not leave old work in private messages after the official role changes. The successor should be able to continue from the approved record without calling the former owner for missing context.',
@@ -435,8 +435,8 @@ export const october5BlogDrafts: October5BlogDraft[] = [
         ,'Include the worker in this review. Ask which old requests still arrive, which new cases lack examples, and where the written boundary differs from what managers request in practice. Preserve the answer as operational evidence rather than treating it as a complaint or informal permission. If demand has expanded, revise the role through the same approval, access, instruction, and acceptance steps instead of letting repeated exceptions create a shadow job.'
       ]}
     ],
-    sources:[{label:'Philippine National Privacy Commission accountability guidance',url:'https://privacy.gov.ph/accountability/'},{label:'NIST access control guidance',url:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final'}],
-    inlineAnchors:[{phrase:'National Privacy Commission’s accountability guidance',href:'https://privacy.gov.ph/accountability/',external:true},{phrase:'executive assistance',href:'/services/executive-assistance'},{phrase:'planning conversation',href:'/contact-us'}],
+    sources:[{label:'Official Gazette — Republic Act No. 10173 accountability principle',url:'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/'},{label:'NIST access control guidance',url:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final'}],
+    inlineAnchors:[{phrase:'Republic Act No. 10173 accountability principle',href:'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/',external:true},{phrase:'executive assistance',href:'/services/executive-assistance'},{phrase:'planning conversation',href:'/contact-us'}],
     related:[{label:'Review executive assistance',href:'/services/executive-assistance'},{label:'Plan a role change',href:'/contact-us'}],
     image:{src:'/article-planning.svg',alt:'Old and new role lanes connected by task, access, and ownership checks',caption:'A role change is complete when old obligations close and new authority is explicit.'}
   }}),
@@ -507,8 +507,8 @@ export const october5BlogDrafts: October5BlogDraft[] = [
         ,'Publish the report with its data window, generation time, source systems, known gaps, and accountable reviewer. Keep the case-level evidence available to authorized reviewers without exposing personal information in a broad dashboard. When late records change a prior period, record the correction rather than silently replacing the number. This gives managers a stable basis for comparing operations while keeping the limits of the data visible.'
       ]}
     ],
-    sources:[{label:'Philippine Statistics Authority statistical standards',url:'https://psa.gov.ph/statistics/standards'},{label:'NIST measurement guidance',url:'https://www.nist.gov/publications'}],
-    inlineAnchors:[{phrase:'data processing support',href:'/services/data-processing-support'},{phrase:'planning conversation',href:'/contact-us'},{phrase:'Philippine Statistics Authority statistical standards',href:'https://psa.gov.ph/statistics/standards',external:true}],
+    sources:[{label:'Philippine Statistics Authority Inventory of Statistical Standards',url:'https://psa.gov.ph/issip'},{label:'NIST measurement guidance',url:'https://www.nist.gov/publications'}],
+    inlineAnchors:[{phrase:'data processing support',href:'/services/data-processing-support'},{phrase:'planning conversation',href:'/contact-us'},{phrase:'Philippine Statistics Authority Inventory of Statistical Standards',href:'https://psa.gov.ph/issip',external:true}],
     related:[{label:'Review data processing support',href:'/services/data-processing-support'},{label:'Map a reporting workflow',href:'/contact-us'}],
     image:{src:'/article-planning.svg',alt:'Queue report separating routine throughput, evidence waits, and client decision time',caption:'Separate event clocks show which part of the workflow each owner can improve.'}
   }}),
@@ -543,8 +543,8 @@ export const october5BlogDrafts: October5BlogDraft[] = [
         ,'Sample accepted work as well as returns. A return-only review cannot show whether the same rule is applied consistently to similar cases or whether one reviewer selects unusually difficult items. Compare a normal completion, a corrected item, and a borderline case against the same source. Record disagreements and settle them before using return rates to change staffing, coaching, or scope.'
       ]}
     ],
-    sources:[{label:'Philippine National Privacy Commission accountability guidance',url:'https://privacy.gov.ph/accountability/'},{label:'NIST information integrity controls',url:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final'}],
-    inlineAnchors:[{phrase:'customer support operations',href:'/services/customer-support-operations'},{phrase:'planning request',href:'/contact-us'},{phrase:'Philippine National Privacy Commission accountability guidance',href:'https://privacy.gov.ph/accountability/',external:true}],
+    sources:[{label:'Official Gazette — Republic Act No. 10173 accountability principle',url:'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/'},{label:'NIST information integrity controls',url:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final'}],
+    inlineAnchors:[{phrase:'customer support operations',href:'/services/customer-support-operations'},{phrase:'planning request',href:'/contact-us'},{phrase:'Republic Act No. 10173 accountability principle',href:'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/',external:true}],
     related:[{label:'Review customer support operations',href:'/services/customer-support-operations'},{label:'Plan a reviewable workflow',href:'/contact-us'}],
     image:{src:'/article-planning.svg',alt:'Return note connecting an observed defect, source rule, correction owner, and resubmission',caption:'A return note works when the correction can be traced to the same source used in review.'}
   }}),
@@ -617,7 +617,7 @@ export const october5BlogDrafts: October5BlogDraft[] = [
         'Include the people doing the work in the review. Ask where classifications require hidden context, which handoffs lose customer history, and which permissions are broader than the lane needs. Compare those observations with case evidence before changing the design. A clean diagram can still fail in daily use when the source system does not expose the deciding fact at intake.'
       ]}
     ],
-    sources:[{label:'NIST access control guidance',url:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final'},{label:'Department of Trade and Industry consumer resources',url:'https://www.dti.gov.ph/resources/consumer-corner/'}],
+    sources:[{label:'NIST access control guidance',url:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final'},{label:'DTI Consumer Complaints Assistance and Resolution system',url:'https://consumercare.dti.gov.ph/'}],
     inlineAnchors:[{phrase:'customer support operations',href:'/services/customer-support-operations'},{phrase:'bookkeeping support',href:'/services/bookkeeping-support'},{phrase:'planning request',href:'/contact-us'}],
     related:[{label:'Review customer support operations',href:'/services/customer-support-operations'},{label:'Review bookkeeping support',href:'/services/bookkeeping-support'},{label:'Discuss a mixed queue',href:'/contact-us'}],
     image:{src:'/article-planning.svg',alt:'One intake queue divided into routine coordination and specialist decision lanes',caption:'A useful split gives each case one observable route and preserves its history across handoffs.'}

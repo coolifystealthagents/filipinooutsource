@@ -43,7 +43,7 @@
       "slug": "filipino-outsourcing-management-readiness-test",
       "sources": [
         "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
-        "https://privacy.gov.ph/accountability/"
+        "https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
       ],
       "sourceBodyWordCount": 935,
       "sourceBodyHash": "7b0ab4fcf1c15999ea84efe9bc46c572c0f0f378a0a05c6760ff0e783135d598",
@@ -58,7 +58,7 @@
       "slug": "filipino-team-asynchronous-communication-charter",
       "sources": [
         "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
-        "https://privacy.gov.ph/accountability/"
+        "https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
       ],
       "sourceBodyWordCount": 1016,
       "sourceBodyHash": "98e239bdd7d4e0d4efbc33f3cafe60b9688233880c340e427d743744709d65f8",
@@ -72,11 +72,11 @@
       "topic": "Training example library",
       "slug": "filipino-outsourcing-training-example-library",
       "sources": [
-        "https://privacy.gov.ph/accountability/",
+        "https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/",
         "https://www.nist.gov/privacy-framework"
       ],
-      "sourceBodyWordCount": 1027,
-      "sourceBodyHash": "8e7b95b0415a032c6341ea98de721a85fd4e391e87c0d75bf0b9f993eb169f61",
+      "sourceBodyWordCount": 1025,
+      "sourceBodyHash": "8ce4679534b97544c34ec4bbb45abf36f8dd7874a76020d9b9e41f3e60f46813",
       "publicationDate": "2026-10-05",
       "commitSha": "07b88babc116600369cbf71b0a3d2b47c790198e",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-training-example-library",
@@ -87,11 +87,11 @@
       "topic": "Client question budget",
       "slug": "filipino-outsourcing-client-question-budget",
       "sources": [
-        "https://privacy.gov.ph/accountability/",
+        "https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/",
         "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
       ],
-      "sourceBodyWordCount": 973,
-      "sourceBodyHash": "15243266b0f5948438ee2d8dc63eee4f7e564942cd3e8e53c4b378750636491c",
+      "sourceBodyWordCount": 971,
+      "sourceBodyHash": "20e5e1afa868f13c7bb263dba10f0885fb3e81db156c51411411070ee745aee3",
       "publicationDate": "2026-10-05",
       "commitSha": "07b88babc116600369cbf71b0a3d2b47c790198e",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-client-question-budget",
@@ -103,7 +103,7 @@
       "slug": "filipino-outsourcing-first-live-batch",
       "sources": [
         "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
-        "https://privacy.gov.ph/accountability/"
+        "https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
       ],
       "sourceBodyWordCount": 964,
       "sourceBodyHash": "557f488e9e9b12f7574d7cd5007837f23e83d99130e56b80414423bfa669917b",
@@ -117,7 +117,7 @@
       "topic": "Exception backlog age",
       "slug": "filipino-outsourcing-exception-backlog-age",
       "sources": [
-        "https://www.dti.gov.ph/resources/consumer-corner/",
+        "https://consumercare.dti.gov.ph/",
         "https://csrc.nist.gov/pubs/sp/800/61/r2/final"
       ],
       "sourceBodyWordCount": 924,
@@ -132,11 +132,11 @@
       "topic": "Role-change checklist",
       "slug": "filipino-team-role-change-checklist",
       "sources": [
-        "https://privacy.gov.ph/accountability/",
+        "https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/",
         "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
       ],
-      "sourceBodyWordCount": 906,
-      "sourceBodyHash": "ccfa2c4f5a669fa42b487519413af77e8546f1e81c2eba10e66de1b15a08d179",
+      "sourceBodyWordCount": 904,
+      "sourceBodyHash": "ba8cbbe556bf46b6054841438767bc55dfb2d9f28497d4ce1f42dd88ea104310",
       "publicationDate": "2026-10-05",
       "commitSha": "07b88babc116600369cbf71b0a3d2b47c790198e",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-team-role-change-checklist",
@@ -162,7 +162,7 @@
       "topic": "Throughput and decision delay",
       "slug": "filipino-outsourcing-throughput-decision-delay",
       "sources": [
-        "https://psa.gov.ph/statistics/standards",
+        "https://psa.gov.ph/issip",
         "https://www.nist.gov/publications"
       ],
       "sourceBodyWordCount": 910,
@@ -177,7 +177,7 @@
       "topic": "Actionable rework return notes",
       "slug": "filipino-outsourcing-rework-return-note",
       "sources": [
-        "https://privacy.gov.ph/accountability/",
+        "https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/",
         "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
       ],
       "sourceBodyWordCount": 904,
@@ -208,7 +208,7 @@
       "slug": "filipino-outsourcing-split-queue-two-roles",
       "sources": [
         "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
-        "https://www.dti.gov.ph/resources/consumer-corner/"
+        "https://consumercare.dti.gov.ph/"
       ],
       "sourceBodyWordCount": 926,
       "sourceBodyHash": "c0312667c320c6eba4a6cf4062c0cbf7cb5121efe263562358b8f8d22b0c0107",
