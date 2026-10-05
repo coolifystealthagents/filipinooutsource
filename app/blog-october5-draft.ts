@@ -174,4 +174,79 @@ export const october5BlogDrafts: October5BlogDraft[] = [
       image: { src: '/article-planning.svg', alt: 'Communication map connecting a case record, owner, backup, and shift handoff', caption: 'A useful charter makes the next state visible even when the original sender is offline.' },
     },
   }),
+  finalize({
+    slug: 'filipino-outsourcing-training-example-library',
+    title: 'Build a Training Example Library Before Hiring Filipino Staff',
+    excerpt: 'Turn real work into current, redacted examples that teach rules, exceptions, and stopping points.',
+    minutes: 12,
+    image: '/article-planning.svg',
+    detail: {
+      lead: 'A folder of past work is not automatically a training library. Useful examples have a known source, a current rule, a clear teaching purpose, and an owner who can retire them.',
+      shortAnswer: 'Build the library around decisions a new Filipino team member must make in one defined queue. Include a routine case, an incomplete case, an exception, and a counterexample. Remove unnecessary personal data, attach the governing instruction, explain the expected action, and give every example an owner and review date.',
+      takeaways: [
+        'Choose examples for the judgment they teach, not because they look polished.',
+        'Keep the original evidence separate from the annotated training copy.',
+        'Use counterexamples to show where similar-looking cases take different paths.',
+        'Retire an example when its source, system, or approved rule changes.',
+      ],
+      sections: [
+        {
+          title: 'Choose one queue and list its recurring decisions',
+          paragraphs: [
+            'Start with a queue that has a stable entrance and a visible finish. Order-status support is easier to teach than a broad instruction to help customers. List the decisions inside that queue: whether the order identifier is valid, which system controls shipment state, what information may be repeated to the customer, when missing evidence pauses the case, and which events require a client owner. This list gives each example a job. Without it, people tend to collect memorable cases that do not cover the choices a new worker will face most often.',
+            'Keep the first library small enough to review. One strong example can teach each common decision, while a paired counterexample can expose the boundary. If two examples teach the same action from the same evidence, keep the clearer one. If the queue changes by channel or customer type, do not assume one example covers both. Write down the difference that matters. The library should help a learner recognize a state and select an approved next step, not reward imitation of surface wording.',
+          ],
+        },
+        {
+          title: 'Build a case set that includes friction',
+          paragraphs: [
+            'A clean example shows the normal path, but training fails if every case is clean. Include an incomplete record where a required identifier is absent, a conflict where two sources disagree, and a consequential case where the worker must stop. For an order queue, the set might contain a delivered order with a carrier scan, a message missing the order number, a storefront status that conflicts with the carrier record, and a request that would change a refund or delivery promise. Each case should state which facts are observed and which decision remains with the client.',
+            'Add a counterexample that looks close to the normal case but needs a different action. A tracking page that says label created is not the same as evidence that the carrier received the parcel. A customer name that resembles an account holder is not identity verification. The annotation should explain the decisive fact in ordinary language. This is where a good library earns its keep: it prevents a learner from turning a familiar shape into an automatic answer when one missing fact changes the safe path.',
+          ],
+        },
+        {
+          title: 'Redact the training copy without breaking the lesson',
+          paragraphs: [
+            'Preserve the original case only in its approved business system. Create a separate training copy with the minimum fields needed to teach the decision. Replace customer names, addresses, account numbers, private notes, payment details, and unrelated history unless a field is necessary for the lesson and the approved training environment permits it. Do not paste a full production screenshot into a slide simply because cropping takes time. The Philippine National Privacy Commission describes accountability as an organizational duty, so the person preparing examples needs a named purpose and owner for the copied data.',
+            'Redaction must not make the answer obvious in a way the live case is not. If source timestamps determine which record is current, keep realistic timestamps while removing identity. If the lesson concerns a mismatch, preserve the mismatch. Mark altered values as synthetic or redacted so nobody later treats the example as a real customer record. Record where the original came from, who approved the training copy, and when the copy should be reviewed. The learner needs a faithful problem, not a decorative screenshot stripped of its deciding evidence.',
+          ],
+        },
+        {
+          title: 'Annotate reasoning without inventing authority',
+          paragraphs: [
+            'For each case, attach the governing instruction and write the expected path in steps. Name the intake state, evidence checked, reason code, permitted action, stop condition, owner handoff, and completion evidence. Explain why the other plausible path is wrong. Keep business judgment with the authorized client owner. An annotation may say that the coordinator assembles the order record and routes a remedy question; it should not suggest that a well-prepared packet gives the coordinator authority to approve the remedy.',
+            'Use the words that appear in the actual queue. If the system calls a state waiting for customer evidence, do not rename it pending review in the training note. Small vocabulary changes create avoidable uncertainty during live work. Link the current instruction rather than copying a paragraph that will drift. If the instruction is unsettled, label the example as blocked and send the question to the owner. A training author should not settle policy through an annotation that happens to sound reasonable.',
+          ],
+        },
+        {
+          title: 'Test retrieval and transfer, not memory',
+          paragraphs: [
+            'Give a learner an unseen case after reviewing the example set. Ask them to find the relevant example, identify the governing rule, state what is missing, and prepare the next action. Include one case that resembles two examples so the learner must distinguish them using evidence. Score the path as well as the output. A correct customer sentence reached through an unsupported source is still a training defect because the same habit can fail on the next case.',
+            'Have a manager who did not build the library repeat the exercise. This checks whether the annotations are self-contained or depend on the author explaining them aloud. Record where both people hesitated. The repair may be a better index, a sharper case title, a missing counterexample, or a change to the operating instruction. Avoid adding paragraphs just to answer every imaginable question. When a question belongs to another queue or decision owner, say so and link the learner to the right route.',
+          ],
+        },
+        {
+          title: 'Retire examples before they become shadow policy',
+          paragraphs: [
+            'Give every example an owner, effective date, governing source, affected system, and next review event. Review it when the source changes, the interface changes a deciding field, a correction reveals a misleading annotation, or the queue gains a new boundary. Mark retired examples clearly and remove them from the learner view. Keep an archive only where the business needs change history. A screenshot from an old workflow should not keep teaching a rule after the live system has moved on.',
+            'Use returned work to improve coverage, but do not turn every unusual incident into a new example. First decide whether the return came from execution, an unclear instruction, a source conflict, or a client decision that arrived late. Add an example only when it teaches a repeatable distinction. Buyers planning customer support operations can bring a small case set into a staffing discussion. That makes the conversation concrete: the team can see the queue, the evidence, the stop point, and the client decisions that still need an owner.',
+          ],
+        },
+      ],
+      sources: [
+        { label: 'Philippine National Privacy Commission accountability guidance', url: 'https://privacy.gov.ph/accountability/' },
+        { label: 'NIST privacy framework', url: 'https://www.nist.gov/privacy-framework' },
+      ],
+      inlineAnchors: [
+        { phrase: 'Philippine National Privacy Commission describes accountability', href: 'https://privacy.gov.ph/accountability/', external: true },
+        { phrase: 'customer support operations', href: '/services/customer-support-operations' },
+        { phrase: 'staffing discussion', href: '/contact-us' },
+      ],
+      related: [
+        { label: 'Review customer support operations', href: '/services/customer-support-operations' },
+        { label: 'Discuss a training-ready queue', href: '/contact-us' },
+      ],
+      image: { src: '/article-planning.svg', alt: 'Training case cards showing a routine case, missing evidence, an exception, and a retired example', caption: 'A compact example set should teach the normal path and the points where a worker must pause.' },
+    },
+  }),
 ];

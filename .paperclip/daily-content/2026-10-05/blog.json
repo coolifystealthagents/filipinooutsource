@@ -3,7 +3,7 @@
   "cycleLabel": "2026-10-05",
   "timezone": "Etc/UTC",
   "requiredCount": 12,
-  "stagedCount": 2,
+  "stagedCount": 3,
   "verifiedCount": 0,
   "status": "drafting",
   "repository": "coolifystealthagents/filipinooutsource",
@@ -59,6 +59,21 @@
       "publicationDate": null,
       "commitSha": null,
       "liveUrl": "https://filipinooutsource.com/blog/filipino-team-asynchronous-communication-charter",
+      "verificationTime": null
+    },
+    {
+      "family": "training-and-onboarding",
+      "topic": "Training example library",
+      "slug": "filipino-outsourcing-training-example-library",
+      "sources": [
+        "https://privacy.gov.ph/accountability/",
+        "https://www.nist.gov/privacy-framework"
+      ],
+      "sourceBodyWordCount": 1027,
+      "sourceBodyHash": "8e7b95b0415a032c6341ea98de721a85fd4e391e87c0d75bf0b9f993eb169f61",
+      "publicationDate": null,
+      "commitSha": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-training-example-library",
       "verificationTime": null
     }
   ]
