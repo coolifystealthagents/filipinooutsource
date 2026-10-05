@@ -3,7 +3,7 @@
   "cycleLabel": "2026-10-05",
   "timezone": "Etc/UTC",
   "requiredCount": 12,
-  "stagedCount": 4,
+  "stagedCount": 6,
   "verifiedCount": 0,
   "status": "drafting",
   "repository": "coolifystealthagents/filipinooutsource",
@@ -89,6 +89,30 @@
       "publicationDate": null,
       "commitSha": null,
       "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-client-question-budget",
+      "verificationTime": null
+    },
+    {
+      "family": "controlled-launch",
+      "topic": "Safe first live batch",
+      "slug": "filipino-outsourcing-first-live-batch",
+      "sources": ["https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final", "https://privacy.gov.ph/accountability/"],
+      "sourceBodyWordCount": 964,
+      "sourceBodyHash": "557f488e9e9b12f7574d7cd5007837f23e83d99130e56b80414423bfa669917b",
+      "publicationDate": null,
+      "commitSha": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-first-live-batch",
+      "verificationTime": null
+    },
+    {
+      "family": "exception-operations",
+      "topic": "Exception backlog age",
+      "slug": "filipino-outsourcing-exception-backlog-age",
+      "sources": ["https://www.dti.gov.ph/resources/consumer-corner/", "https://csrc.nist.gov/pubs/sp/800/61/r2/final"],
+      "sourceBodyWordCount": 924,
+      "sourceBodyHash": "4dd2480465714d6ccd36ce6587e5f8378230ba3c3b6ce660b007efa4cfd80a58",
+      "publicationDate": null,
+      "commitSha": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-exception-backlog-age",
       "verificationTime": null
     }
   ]
