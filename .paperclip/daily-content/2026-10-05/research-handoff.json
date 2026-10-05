@@ -1,0 +1,42 @@
+{
+  "routine": "Daily Research Publishing",
+  "cycleLabel": "2026-10-05 combined release",
+  "taskId": "45e5c0ba-60f0-4334-a343-1b5daef05471",
+  "runId": "8f90ed01-f48c-4c5e-b467-45a49ef971b0",
+  "repository": "coolifystealthagents/filipinooutsource",
+  "productionBranch": "main",
+  "productionBaseSha": "d55153e5acde70597445529398dd7e44996bfe44",
+  "researchBranch": "fil-97-research-2026-10-05",
+  "contentCommit": "5acdeadb543f62c64ba3f4ce16dee8f4bc86bf6a",
+  "worktree": "/paperclip/instances/default/projects/e3c19e70-b81b-45c1-a4f8-861cd64f6cb1/4e9ee839-d9cc-46e4-91e7-cdd5e2e1c9d8/fil-97-research-2026-10-05",
+  "siteTimezone": "UTC (repository date rendering)",
+  "provisionalDatePublished": "2026-10-05",
+  "actualFirstPublicationDate": null,
+  "dateReconciliationRequired": "Blog integrator must reconcile all visible and structured dates immediately before the sole combined push. If first publication is not 2026-10-05 UTC, update all five articles and this ledger before pushing.",
+  "requiredCount": 5,
+  "stagedCount": 5,
+  "verifiedCount": 0,
+  "status": "local-research-handoff-awaiting-blog-integration",
+  "deploymentResource": "zicup2lu74m4qgqkyrhj8tzf",
+  "deploymentEvidence": "Research performed no push, deployment, or public verification. Blog is sole integrator; browser operator owns deployment.",
+  "validation": {
+    "dependencyInstall": "npm ci --include=dev passed; 0 vulnerabilities",
+    "typescript": "passed in Next.js production build",
+    "productionBuild": "passed (681 static pages)",
+    "substantiveWordCounts": [1266, 1243, 1207, 1202, 1204],
+    "maximumPairwiseFiveWordShingleJaccard": 0.00209,
+    "maximumPair": ["philippines-outsourcing-bir-invoice-control-research-2026", "philippines-outsourcing-online-merchant-disclosure-control-research-2026"],
+    "repeatedSubstantiveParagraphs": 0,
+    "sharedArgumentReview": "passed: five different decision owners, evidence lifecycles, boundary cases, field tests, and reader outcomes",
+    "priorCorpusCollisionReview": "passed: topics and slugs do not duplicate the September 28 or October 2 inventory",
+    "metadata": "rendered canonical, datePublished, shared repository image, research index, and sitemap generation passed",
+    "publicProbe": "not performed by contract"
+  },
+  "articles": [
+    {"family":"workforce-operations","topic":"Philippine contractor due diligence","slug":"philippines-outsourcing-contractor-due-diligence-research-2026","contentHash":"90d111bbef1aca47dc8b2a511c28c174e0ceae67b699907ffafc303b489f53d8","sourcesChecked":"2026-10-05","sources":["https://www.ble.dole.gov.ph/wp-content/uploads/2023/02/DO-174-17-Rules-Implementing-Articles-106-to-109-of-the-Labor-Code-As-Amended1.pdf","https://dole.gov.ph/news/bello-signs-d-o-on-contracting-and-subcontracting/"],"liveUrl":"https://filipinooutsource.com/research/philippines-outsourcing-contractor-due-diligence-research-2026","verificationTime":null},
+    {"family":"privacy-operations","topic":"outsourced personal-data processing instructions","slug":"philippines-outsourcing-personal-data-processing-instructions-research-2026","contentHash":"6473ab5e88789a9bb2c6ed9b1f9fa799fcb53245d3442b7160f4182eeebe696c","sourcesChecked":"2026-10-05","sources":["https://privacy.gov.ph/data-privacy-act/","https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/","https://privacy.gov.ph/third-parties/"],"liveUrl":"https://filipinooutsource.com/research/philippines-outsourcing-personal-data-processing-instructions-research-2026","verificationTime":null},
+    {"family":"finance-operations","topic":"BIR invoice control after EOPT","slug":"philippines-outsourcing-bir-invoice-control-research-2026","contentHash":"758aa4ea33cc7a7120cdbd2d7feaa1a02a95b78e9bb9517e6b1637d0e912d379","sourcesChecked":"2026-10-05","sources":["https://bir-cdn.bir.gov.ph/BIR/pdf/RMC%20No.%2077-2024.pdf"],"liveUrl":"https://filipinooutsource.com/research/philippines-outsourcing-bir-invoice-control-research-2026","verificationTime":null},
+    {"family":"ecommerce-operations","topic":"online merchant disclosure consistency","slug":"philippines-outsourcing-online-merchant-disclosure-control-research-2026","contentHash":"99a41254277578f5e871b1764bab6cf26cc14afff4b0e5dd3bf1a1ba10fb6f3d","sourcesChecked":"2026-10-05","sources":["https://ecommerce.dti.gov.ph/internet-transactions-act-of-2023/","https://ecommerce.dti.gov.ph/related-laws-policy-issuance/","https://ecommerce.dti.gov.ph/faqs/"],"liveUrl":"https://filipinooutsource.com/research/philippines-outsourcing-online-merchant-disclosure-control-research-2026","verificationTime":null},
+    {"family":"payroll-operations","topic":"SSS contribution reconciliation","slug":"philippines-outsourcing-sss-contribution-reconciliation-research-2026","contentHash":"303ae64794f22aa4b7504e392f5bd63a350207cffb525333549776b643f44ee4","sourcesChecked":"2026-10-05","sources":["https://www.sss.gov.ph/employer-er/","https://www.sss.gov.ph/pay-contribution/","https://www.sss.gov.ph/sss/DownloadContent?fileName=SSSForms_Contribution_Collection_List.pdf","https://www.sss.gov.ph/sss-circulars/"],"liveUrl":"https://filipinooutsource.com/research/philippines-outsourcing-sss-contribution-reconciliation-research-2026","verificationTime":null}
+  ]
+}
