@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "cycleLabel": "2026-10-05",
+  "timezone": "Etc/UTC",
+  "requiredCount": 12,
+  "stagedCount": 0,
+  "verifiedCount": 0,
+  "status": "drafting",
+  "repository": "coolifystealthagents/filipinooutsource",
+  "productionBranch": "main",
+  "draftBranch": "fil-98-blog-2026-10-05",
+  "baselineSha": "d55153e5acde70597445529398dd7e44996bfe44",
+  "researchDependency": {
+    "issue": "FIL-97",
+    "branch": "fil-97-research-2026-10-05",
+    "handoffCommit": null,
+    "status": "awaiting-handoff"
+  },
+  "publicationDate": null,
+  "combinedCommitSha": null,
+  "deploymentEvidence": null,
+  "articles": []
+}
