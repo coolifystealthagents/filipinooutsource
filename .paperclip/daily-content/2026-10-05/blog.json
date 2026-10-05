@@ -3,7 +3,7 @@
   "cycleLabel": "2026-10-05",
   "timezone": "Etc/UTC",
   "requiredCount": 12,
-  "stagedCount": 6,
+  "stagedCount": 7,
   "verifiedCount": 0,
   "status": "drafting",
   "repository": "coolifystealthagents/filipinooutsource",
@@ -113,6 +113,18 @@
       "publicationDate": null,
       "commitSha": null,
       "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-exception-backlog-age",
+      "verificationTime": null
+    },
+    {
+      "family": "role-transition",
+      "topic": "Role-change checklist",
+      "slug": "filipino-team-role-change-checklist",
+      "sources": ["https://privacy.gov.ph/accountability/", "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"],
+      "sourceBodyWordCount": 906,
+      "sourceBodyHash": "ccfa2c4f5a669fa42b487519413af77e8546f1e81c2eba10e66de1b15a08d179",
+      "publicationDate": null,
+      "commitSha": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-team-role-change-checklist",
       "verificationTime": null
     }
   ]
