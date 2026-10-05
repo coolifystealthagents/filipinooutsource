@@ -13,8 +13,11 @@
   "researchDependency": {
     "issue": "FIL-97",
     "branch": "fil-97-research-2026-10-05",
-    "handoffCommit": null,
-    "status": "awaiting-handoff"
+    "contentCommit": "5acdeadb543f62c64ba3f4ce16dee8f4bc86bf6a",
+    "handoffCommit": "67a8edfcd8a3139aec3e708c988dfbf00cde0c08",
+    "integratedContentCommit": "2ec1303e9d65710bd787bcd09fbb09f3615f2c04",
+    "integratedHandoffCommit": "d92709e5cf8899f01986fd22859802acd9c3104f",
+    "status": "integrated-awaiting-combined-validation"
   },
   "publicationDate": null,
   "combinedCommitSha": null,
