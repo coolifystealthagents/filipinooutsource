@@ -3,7 +3,7 @@
   "cycleLabel": "2026-10-05",
   "timezone": "Etc/UTC",
   "requiredCount": 12,
-  "stagedCount": 3,
+  "stagedCount": 4,
   "verifiedCount": 0,
   "status": "drafting",
   "repository": "coolifystealthagents/filipinooutsource",
@@ -55,7 +55,7 @@
         "https://privacy.gov.ph/accountability/"
       ],
       "sourceBodyWordCount": 1016,
-      "sourceBodyHash": "b882345328a2a809f84470768b49f2b7fbeca127252a2e951566c4382f378cb2",
+      "sourceBodyHash": "98e239bdd7d4e0d4efbc33f3cafe60b9688233880c340e427d743744709d65f8",
       "publicationDate": null,
       "commitSha": null,
       "liveUrl": "https://filipinooutsource.com/blog/filipino-team-asynchronous-communication-charter",
@@ -74,6 +74,21 @@
       "publicationDate": null,
       "commitSha": null,
       "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-training-example-library",
+      "verificationTime": null
+    },
+    {
+      "family": "client-review-capacity",
+      "topic": "Client question budget",
+      "slug": "filipino-outsourcing-client-question-budget",
+      "sources": [
+        "https://privacy.gov.ph/accountability/",
+        "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
+      ],
+      "sourceBodyWordCount": 973,
+      "sourceBodyHash": "15243266b0f5948438ee2d8dc63eee4f7e564942cd3e8e53c4b378750636491c",
+      "publicationDate": null,
+      "commitSha": null,
+      "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-client-question-budget",
       "verificationTime": null
     }
   ]

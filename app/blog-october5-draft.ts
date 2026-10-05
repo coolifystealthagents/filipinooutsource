@@ -125,8 +125,8 @@ export const october5BlogDrafts: October5BlogDraft[] = [
         {
           title: 'Define what each response changes',
           paragraphs: [
-            'Teams lose time when a check mark, “noted,” or quick reaction is treated as approval. The charter should distinguish acknowledgement from an answer, an answer from authorization, and authorization from completed action. Acknowledgement confirms receipt and identifies who will respond. An answer supplies requested information. Authorization comes only from the named owner and should state scope and expiry when limited. Resolution means the approved action occurred and the record contains closure evidence. These meanings make a handoff inspectable and reduce pressure to infer intent from tone.',
-            'Write a few accepted response forms in plain language. For example: “Received; the service owner will answer by 15:00 UTC” is an acknowledgement, not permission to proceed. “Use the address in order record 4821 for this shipment only; approval expires after dispatch” is a scoped decision if it comes from the authorized owner. “Carrier record updated at 14:42 UTC; confirmation attached” records action. The exact wording can vary, but each response should make the resulting state clear to a person who was not present.',
+            'Teams lose time when a check mark, "noted," or quick reaction is treated as approval. The charter should distinguish acknowledgement from an answer, an answer from authorization, and authorization from completed action. Acknowledgement confirms receipt and identifies who will respond. An answer supplies requested information. Authorization comes only from the named owner and should state scope and expiry when limited. Resolution means the approved action occurred and the record contains closure evidence. These meanings make a handoff inspectable and reduce pressure to infer intent from tone.',
+            'Write a few accepted response forms in plain language. For example: "Received; the service owner will answer by 15:00 UTC" is an acknowledgement, not permission to proceed. "Use the address in order record 4821 for this shipment only; approval expires after dispatch" is a scoped decision if it comes from the authorized owner. "Carrier record updated at 14:42 UTC; confirmation attached" records action. The exact wording can vary, but each response should make the resulting state clear to a person who was not present.',
           ],
         },
         {
@@ -139,7 +139,7 @@ export const october5BlogDrafts: October5BlogDraft[] = [
         {
           title: 'Make quiet hours and backup ownership explicit',
           paragraphs: [
-            'A Filipino team may overlap partly, fully, or barely at all with client managers. Write the expected working windows in UTC and the local zones people actually use, including daylight-saving changes where relevant. Then define quiet hours, planned review windows, primary owners, backups, and the safe waiting state for each consequence class. “Available online” is not a backup plan. The backup must have the competence and authority required for the decision, or the charter must say that the work pauses.',
+            'A Filipino team may overlap partly, fully, or barely at all with client managers. Write the expected working windows in UTC and the local zones people actually use, including daylight-saving changes where relevant. Then define quiet hours, planned review windows, primary owners, backups, and the safe waiting state for each consequence class. "Available online" is not a backup plan. The backup must have the competence and authority required for the decision, or the charter must say that the work pauses.',
             'Consider a customer exception arriving near the end of a Manila shift while the North American owner is offline. The coordinator can preserve the customer’s wording, verify the approved records, prevent duplicate handling, and prepare the exact question. If the issue involves an unapproved remedy, the coordinator does not promise one. The case enters a safe pending state with a next update time. If observable facts meet the urgent rule, the alert goes to the named backup with the evidence packet. Otherwise the owner receives a ready-to-answer record at the next review window.',
           ],
         },
@@ -247,6 +247,81 @@ export const october5BlogDrafts: October5BlogDraft[] = [
         { label: 'Discuss a training-ready queue', href: '/contact-us' },
       ],
       image: { src: '/article-planning.svg', alt: 'Training case cards showing a routine case, missing evidence, an exception, and a retired example', caption: 'A compact example set should teach the normal path and the points where a worker must pause.' },
+    },
+  }),
+  finalize({
+    slug: 'filipino-outsourcing-client-question-budget',
+    title: 'Set a Client Question Budget for an Outsourced Workflow',
+    excerpt: 'Estimate manager attention for launch questions, then use repeated questions to repair the workflow.',
+    minutes: 12,
+    image: '/article-planning.svg',
+    detail: {
+      lead: 'A new outsourced queue creates questions even when the role is carefully scoped. Budgeting for them makes the client workload visible before unanswered decisions become hidden backlog.',
+      shortAnswer: 'A client question budget estimates how many questions a new Filipino team will send, who must answer each type, and when those owners are available. It is a planning limit, not a cap that pressures workers to guess. Track repeated questions separately because they often point to missing examples, unstable rules, poor access, or decisions that the client has not assigned.',
+      takeaways: [
+        'Estimate question demand from real cases before choosing review windows.',
+        'Separate missing facts, instructions, access, and approval questions.',
+        'Protect an urgent route without treating every blocked case as urgent.',
+        'Repair repeat causes instead of praising a lower question count by itself.',
+      ],
+      sections: [
+        {
+          title: 'Count the questions already hiding in the work',
+          paragraphs: [
+            'Before launch, sample recent items from the proposed queue and replay them as if a new worker handled them. Mark every point where the person would need a fact, an instruction, system access, or a client decision. Use actual cases, including returns and exceptions, rather than a manager’s memory of a normal day. Ten bookkeeping packets may produce two source-document questions, one access failure, and three classification decisions. That pattern is more useful than saying the work is straightforward because an experienced employee rarely asks for help.',
+            'Record the question beside the event that caused it. A missing receipt begins when the packet arrives without evidence. A policy question begins when the written instruction does not cover the observed case. An approval question begins when the evidence packet is complete and reaches the authorized owner. These clocks matter because they identify who can remove the delay. The Filipino team member can request a missing file or prepare an approval packet, but cannot solve an unsettled accounting decision by staying online longer.',
+          ],
+        },
+        {
+          title: 'Classify questions by the owner who can answer',
+          paragraphs: [
+            'Use categories that lead to action. A source question asks where an approved fact can be found. An instruction question asks which rule governs. An access question concerns an account, permission, or system failure. An approval question presents evidence for a retained decision. A scope question asks whether the request belongs in the queue at all. Give each category a primary owner, a competent backup, the minimum evidence packet, and a safe waiting state. Avoid a single ask the manager label that hides very different work.',
+            'A good classification also keeps sensitive material in the correct place. The question record can refer to an approved case identifier without copying a full customer file into chat. The National Privacy Commission’s accountability material places responsibility on the organization handling personal data, so convenience should not decide where a question travels. Name the allowed channel for each question type and the people permitted to view it. If the owner lacks access to the source record, fix that operating problem before promising a fast response.',
+          ],
+        },
+        {
+          title: 'Turn the estimate into calendar capacity',
+          paragraphs: [
+            'Convert the sample into a range for the first working period. Estimate how many questions of each type may arrive, how long a complete answer usually takes, and whether the work must happen at a specific time. Then reserve review windows on the owners’ real calendars. A finance owner might review complete classification packets twice daily, while an operations lead answers instruction gaps in one scheduled session. Access failures may go directly to a system owner. The budget becomes credible when named people can see the work competing for their time.',
+            'Include the cost of reading context, not only typing an answer. A five-minute response may require ten minutes to inspect the source and another five to record the decision. If the primary owner is away, the backup must understand the rule and have authority to act. Otherwise the safe plan is to pause that case class. The budget should expose this constraint rather than average it away. A launch that needs ninety minutes of daily owner attention will not succeed on a calendar that offers fifteen.',
+          ],
+        },
+        {
+          title: 'Design office hours and an honest urgent route',
+          paragraphs: [
+            'Scheduled question windows reduce scattered interruption and give the team a predictable handoff. Require each question to include the case, observed evidence, source checked, current state, exact uncertainty, decision owner, and expiry if one exists. Owners can answer several complete packets together and send stable instruction changes back through the controlled guide. The worker knows when to expect an answer and can continue other approved items instead of repeatedly asking whether someone saw the message.',
+            'Some events cannot wait for office hours. Define the urgent route with observable consequences and deadlines, such as a credible account-security issue or an imminent customer commitment that an authorized owner must address. State who receives the alert and what containment the worker may perform. A blocked routine item is not urgent just because its age is uncomfortable. Keeping this distinction protects the urgent channel and prevents seniority or message volume from replacing the published test.',
+          ],
+        },
+        {
+          title: 'Read repeated questions as process evidence',
+          paragraphs: [
+            'Review the question log weekly during launch. Group repeats by cause instead of blaming the person who asked. Five questions about the same required field may show that the intake form omits it. Repeated requests for a source may mean the index is poor. Conflicting owner answers reveal an instruction or authority problem. Questions that arrive without enough context may need a better packet template. Fix the cause, date the change, and test it on an unseen case before assuming the issue is closed.',
+            'Do not set a target of zero questions. That number can mean the guide works, but it can also mean workers are guessing, hiding uncertainty, or leaving difficult items untouched. Pair question volume with returned work, unsupported decisions, waiting states, and sample-review findings. A healthy pattern may include more questions at first and fewer repeats later. The useful result is not silence. It is a queue where new questions reveal genuinely new conditions and routine questions can be answered from a current source.',
+          ],
+        },
+        {
+          title: 'Reset the budget as the queue changes',
+          paragraphs: [
+            'Question demand changes after launch. New tools, seasonal volume, a revised policy, different customer types, or a wider scope can create a fresh learning period. Recalculate the range rather than holding the team to a number from a quieter queue. Record the change event, affected question categories, temporary review capacity, and the condition for returning to the normal schedule. This avoids treating predictable change work as a sudden performance problem.',
+            'For bookkeeping support, start with one document-preparation lane and keep payment, classification, and final accounting decisions with named client owners. Bring a sample question log to the planning conversation. It shows which sources are missing, where owner time is needed, and which cases must wait. That is enough to choose a smaller first batch, strengthen the instructions, or reserve more review time before candidate matching begins.',
+          ],
+        },
+      ],
+      sources: [
+        { label: 'Philippine National Privacy Commission accountability guidance', url: 'https://privacy.gov.ph/accountability/' },
+        { label: 'NIST contingency planning guidance', url: 'https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final' },
+      ],
+      inlineAnchors: [
+        { phrase: 'National Privacy Commission’s accountability material', href: 'https://privacy.gov.ph/accountability/', external: true },
+        { phrase: 'bookkeeping support', href: '/services/bookkeeping-support' },
+        { phrase: 'planning conversation', href: '/contact-us' },
+      ],
+      related: [
+        { label: 'Review bookkeeping support', href: '/services/bookkeeping-support' },
+        { label: 'Share a queue for planning', href: '/contact-us' },
+      ],
+      image: { src: '/article-planning.svg', alt: 'Question log grouped by source, instruction, access, approval, and scope', caption: 'A question budget connects expected demand to owners and real review windows.' },
     },
   }),
 ];
