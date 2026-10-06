@@ -3,6 +3,7 @@ import { August19Module } from './types';
 const article: August19Module = {
   sourceDate: '2026-08-19',
   datePublished: '2026-08-19',
+  dateModified: '2026-10-06',
   slug: 'philippines-data-access-request-research-2026',
   title: 'Philippines Data Access Request Research 2026',
   cluster: 'Data Operations',
@@ -17,6 +18,12 @@ const article: August19Module = {
   secondUrl: 'https://www.officialgazette.gov.ph/',
   thirdName: 'Department of Information and Communications Technology',
   thirdUrl: 'https://dict.gov.ph/',
+  serviceHandoff: {
+    heading: 'Set up a controlled request record',
+    copy: 'Use data processing support to prepare the request log, approved field checks, owner routing, and restricted-evidence reference. The client privacy or data owner still decides identity, scope, disclosure, and any exception.',
+    label: 'Review data processing support',
+    href: '/services/data-processing-support'
+  },
   sections: [
     {
       heading: 'Evidence in the request record',
