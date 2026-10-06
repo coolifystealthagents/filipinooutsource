@@ -2,7 +2,7 @@ import type { ResearchPost } from './fleet-data';
 
 type Draft = Omit<ResearchPost,'published'|'datePublished'|'readTime'|'heroImage'>;
 const checked='Accessed October 5, 2026';
-const common={published:'October 5, 2026',datePublished:'2026-10-05',readTime:'12 minute read',heroImage:'/article-planning.svg'} as const;
+const common={published:'October 6, 2026',datePublished:'2026-10-06',readTime:'12 minute read',heroImage:'/article-planning.svg'} as const;
 const p=(heading:string,paragraphs:string[])=>({heading,paragraphs});
 
 const drafts: Draft[]=[

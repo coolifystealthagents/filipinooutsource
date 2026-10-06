@@ -19,7 +19,7 @@
     "integratedHandoffCommit": "d92709e5cf8899f01986fd22859802acd9c3104f",
     "status": "integrated-awaiting-combined-validation"
   },
-  "publicationDate": "2026-10-05",
+  "publicationDate": "2026-10-06",
   "combinedCommitSha": null,
   "deploymentEvidence": null,
   "integrationCheckpoint": {
@@ -47,7 +47,7 @@
       ],
       "sourceBodyWordCount": 935,
       "sourceBodyHash": "7b0ab4fcf1c15999ea84efe9bc46c572c0f0f378a0a05c6760ff0e783135d598",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "commitSha": "07b88babc116600369cbf71b0a3d2b47c790198e",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-management-readiness-test",
       "verificationTime": null
@@ -62,7 +62,7 @@
       ],
       "sourceBodyWordCount": 1016,
       "sourceBodyHash": "98e239bdd7d4e0d4efbc33f3cafe60b9688233880c340e427d743744709d65f8",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "commitSha": "07b88babc116600369cbf71b0a3d2b47c790198e",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-team-asynchronous-communication-charter",
       "verificationTime": null
@@ -77,7 +77,7 @@
       ],
       "sourceBodyWordCount": 1025,
       "sourceBodyHash": "8ce4679534b97544c34ec4bbb45abf36f8dd7874a76020d9b9e41f3e60f46813",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "commitSha": "07b88babc116600369cbf71b0a3d2b47c790198e",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-training-example-library",
       "verificationTime": null
@@ -92,7 +92,7 @@
       ],
       "sourceBodyWordCount": 971,
       "sourceBodyHash": "20e5e1afa868f13c7bb263dba10f0885fb3e81db156c51411411070ee745aee3",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "commitSha": "07b88babc116600369cbf71b0a3d2b47c790198e",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-client-question-budget",
       "verificationTime": null
@@ -107,7 +107,7 @@
       ],
       "sourceBodyWordCount": 964,
       "sourceBodyHash": "557f488e9e9b12f7574d7cd5007837f23e83d99130e56b80414423bfa669917b",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "commitSha": "07b88babc116600369cbf71b0a3d2b47c790198e",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-first-live-batch",
       "verificationTime": null
@@ -122,7 +122,7 @@
       ],
       "sourceBodyWordCount": 924,
       "sourceBodyHash": "4dd2480465714d6ccd36ce6587e5f8378230ba3c3b6ce660b007efa4cfd80a58",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "commitSha": "07b88babc116600369cbf71b0a3d2b47c790198e",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-exception-backlog-age",
       "verificationTime": null
@@ -137,7 +137,7 @@
       ],
       "sourceBodyWordCount": 904,
       "sourceBodyHash": "ba8cbbe556bf46b6054841438767bc55dfb2d9f28497d4ce1f42dd88ea104310",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "commitSha": "07b88babc116600369cbf71b0a3d2b47c790198e",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-team-role-change-checklist",
       "verificationTime": null
@@ -152,7 +152,7 @@
       ],
       "sourceBodyWordCount": 909,
       "sourceBodyHash": "46d26abc597eac04a7ffe67e2fb7f2153c85d2528e7c8682f61eaa8a4e952d9a",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "commitSha": "07b88babc116600369cbf71b0a3d2b47c790198e",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-owner-absence-test",
       "verificationTime": null
@@ -167,7 +167,7 @@
       ],
       "sourceBodyWordCount": 910,
       "sourceBodyHash": "b355626692ff96b3b950e684d5819518e2667321ed7138f1a8b15dfe106dd9e9",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "commitSha": "07b88babc116600369cbf71b0a3d2b47c790198e",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-throughput-decision-delay",
       "verificationTime": null
@@ -182,7 +182,7 @@
       ],
       "sourceBodyWordCount": 904,
       "sourceBodyHash": "a5e7626918cbf40ae367bd17b30c25eba1a6eea1330e7edb022df26013f3f7ad",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "commitSha": "07b88babc116600369cbf71b0a3d2b47c790198e",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-rework-return-note",
       "verificationTime": null
@@ -197,7 +197,7 @@
       ],
       "sourceBodyWordCount": 920,
       "sourceBodyHash": "dd1e6720f2827e2d46b9e12b6183f49c2c102f3ad3468241b02a083db84d9164",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "commitSha": "07b88babc116600369cbf71b0a3d2b47c790198e",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-client-dependency-map",
       "verificationTime": null
@@ -212,7 +212,7 @@
       ],
       "sourceBodyWordCount": 926,
       "sourceBodyHash": "c0312667c320c6eba4a6cf4062c0cbf7cb5121efe263562358b8f8d22b0c0107",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "commitSha": "07b88babc116600369cbf71b0a3d2b47c790198e",
       "liveUrl": "https://filipinooutsource.com/blog/filipino-outsourcing-split-queue-two-roles",
       "verificationTime": null
@@ -243,7 +243,7 @@
     "priorCorpus": "passed: zero slug collisions across 416 prior Blog routes; closest title-word pair manually reviewed as role change versus onboarding",
     "sourceRenderOrderedParagraphParity": "passed for all 12 Blog routes after HTML entity and anchor normalization",
     "researchHandoff": "5 routes; source counts 1266,1243,1207,1202,1204; reported max Jaccard 0.00209; qualitative and prior-corpus reviews passed",
-    "metadata": "all 17 titles, 2026-10-05 datePublished, canonicals, indexes and sitemap rendered",
+    "metadata": "all 17 titles, 2026-10-06 datePublished, canonicals, indexes and sitemap rendered",
     "images": "17 route references passed; local HTTP 200 image/svg+xml; SVG signature and XML decode passed",
     "links": "all internal contextual routes HTTP 200; official sources checked, SSS stale 404 repaired; some official PH sites return automated-client 403, TLS-chain errors or timeout and were independently identified on official domains",
     "dependencies": "npm audit: 0 vulnerabilities",

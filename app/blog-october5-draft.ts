@@ -625,4 +625,4 @@ export const october5BlogDrafts: October5BlogDraft[] = [
 ];
 
 export const october5BlogPosts = october5BlogDrafts.map(({slug,title,excerpt,minutes,image})=>({slug,title,excerpt,minutes,image}));
-export const october5BlogDetails = Object.fromEntries(october5BlogDrafts.map(({slug,detail})=>[slug,{...detail,datePublished:'2026-10-05'}]));
+export const october5BlogDetails = Object.fromEntries(october5BlogDrafts.map(({slug,detail})=>[slug,{...detail,datePublished:'2026-10-06'}]));
