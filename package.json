@@ -7,7 +7,8 @@
     "start": "next start -H 0.0.0.0 -p 3000",
     "lint": "tsc --noEmit",
     "test:shipment-handoff": "node --test tests/shipment-traceability-handoff.test.mjs",
-    "test:data-access-request-handoff": "node --test tests/data-access-request-handoff.test.mjs"
+    "test:data-access-request-handoff": "node --test tests/data-access-request-handoff.test.mjs",
+    "test:crm-field-definition-handoff": "node --test tests/crm-field-definition-handoff.test.mjs"
   },
   "dependencies": {
     "@next/third-parties": "^15.5.27",
