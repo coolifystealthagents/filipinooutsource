@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-08",
+  "requiredCount": 12,
+  "entries": [
+    {
+      "slug": "philippines-outsourcing-manager-approval-queue",
+      "title": "Build a Manager Approval Queue for a Philippines-Based Team",
+      "route": "/blog/philippines-outsourcing-manager-approval-queue",
+      "bodyWordCount": 1250
+    },
+    {
+      "slug": "filipino-support-shift-handoff-reconciliation",
+      "title": "Reconcile a Customer-Support Shift Handoff Across Time Zones",
+      "route": "/blog/filipino-support-shift-handoff-reconciliation",
+      "bodyWordCount": 1253
+    },
+    {
+      "slug": "philippines-outsourcing-client-source-of-truth-map",
+      "title": "Create a Source-of-Truth Map Before Delegating Operations Work",
+      "route": "/blog/philippines-outsourcing-client-source-of-truth-map",
+      "bodyWordCount": 1250
+    },
+    {
+      "slug": "filipino-ecommerce-return-request-evidence-packet",
+      "title": "Prepare an Ecommerce Return-Request Evidence Packet Without Promising a Remedy",
+      "route": "/blog/filipino-ecommerce-return-request-evidence-packet",
+      "bodyWordCount": 1267
+    },
+    {
+      "slug": "philippines-bookkeeping-source-document-exception-log",
+      "title": "Run a Source-Document Exception Log for Filipino Bookkeeping Support",
+      "route": "/blog/philippines-bookkeeping-source-document-exception-log",
+      "bodyWordCount": 1256
+    },
+    {
+      "slug": "filipino-executive-assistant-confidential-calendar-visibility",
+      "title": "Set Calendar Visibility Boundaries for a Filipino Executive Assistant",
+      "route": "/blog/filipino-executive-assistant-confidential-calendar-visibility",
+      "bodyWordCount": 1247
+    },
+    {
+      "slug": "philippines-data-processing-rejected-record-queue",
+      "title": "Design a Rejected-Record Queue for Filipino Data-Processing Staff",
+      "route": "/blog/philippines-data-processing-rejected-record-queue",
+      "bodyWordCount": 1243
+    },
+    {
+      "slug": "philippines-outsourcing-training-example-retirement",
+      "title": "Retire Outdated Training Examples Before They Become Shadow Policy",
+      "route": "/blog/philippines-outsourcing-training-example-retirement",
+      "bodyWordCount": 1253
+    },
+    {
+      "slug": "filipino-recruitment-coordinator-candidate-reschedule-boundary",
+      "title": "Control Candidate Rescheduling Without Changing the Hiring Process",
+      "route": "/blog/filipino-recruitment-coordinator-candidate-reschedule-boundary",
+      "bodyWordCount": 1241
+    },
+    {
+      "slug": "philippines-property-maintenance-vendor-arrival-proof",
+      "title": "Prepare Vendor Arrival Evidence for Remote Property Coordination",
+      "route": "/blog/philippines-property-maintenance-vendor-arrival-proof",
+      "bodyWordCount": 1247
+    },
+    {
+      "slug": "filipino-sales-research-company-identity-resolution",
+      "title": "Resolve Company Identity Before a Filipino Researcher Updates CRM",
+      "route": "/blog/filipino-sales-research-company-identity-resolution",
+      "bodyWordCount": 1248
+    },
+    {
+      "slug": "philippines-outsourcing-offboarding-open-work-transfer",
+      "title": "Transfer Open Work During a Philippines Outsourcing Offboarding",
+      "route": "/blog/philippines-outsourcing-offboarding-open-work-transfer",
+      "bodyWordCount": 1251
+    }
+  ]
+}

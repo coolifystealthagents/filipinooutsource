@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-08",
+  "requiredCount": 5,
+  "entries": [
+    {
+      "slug": "philippines-outsourcing-owner-response-latency-research-2026",
+      "title": "How Quickly Do Client Owners Respond to Outsourced Workflow Exceptions?",
+      "route": "/research/philippines-outsourcing-owner-response-latency-research-2026",
+      "bodyWordCount": 1300,
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/",
+        "https://www.dti.gov.ph/",
+        "https://www.dole.gov.ph/"
+      ]
+    },
+    {
+      "slug": "filipino-support-handoff-information-loss-study-2026",
+      "title": "Where Does Information Disappear During Filipino Support Handoffs?",
+      "route": "/research/filipino-support-handoff-information-loss-study-2026",
+      "bodyWordCount": 1282,
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/",
+        "https://www.dti.gov.ph/",
+        "https://www.dole.gov.ph/"
+      ]
+    },
+    {
+      "slug": "philippines-data-entry-reviewer-agreement-study-2026",
+      "title": "Do Reviewers Agree on Filipino Data-Entry Exceptions?",
+      "route": "/research/philippines-data-entry-reviewer-agreement-study-2026",
+      "bodyWordCount": 1273,
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/",
+        "https://www.dti.gov.ph/",
+        "https://www.dole.gov.ph/"
+      ]
+    },
+    {
+      "slug": "philippines-outsourcing-access-removal-evidence-study-2026",
+      "title": "Does Outsourcing Offboarding Evidence Prove Access Was Removed?",
+      "route": "/research/philippines-outsourcing-access-removal-evidence-study-2026",
+      "bodyWordCount": 1282,
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/",
+        "https://www.dti.gov.ph/",
+        "https://www.dole.gov.ph/"
+      ]
+    },
+    {
+      "slug": "filipino-bookkeeping-exception-recurrence-study-2026",
+      "title": "Why Do Bookkeeping Source Exceptions Recur After Correction?",
+      "route": "/research/filipino-bookkeeping-exception-recurrence-study-2026",
+      "bodyWordCount": 1282,
+      "sources": [
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/",
+        "https://www.dti.gov.ph/",
+        "https://www.dole.gov.ph/"
+      ]
+    }
+  ]
+}
