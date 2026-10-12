@@ -1,0 +1,143 @@
+{
+  "domain": "FilipinoOutsource.com",
+  "repository": "coolifystealthagents/filipinooutsource",
+  "branch": "main",
+  "baseSha": "8d1dc2b2b33d6191209bf619458a0e5c5c91ded8",
+  "publicationDate": "2026-10-12",
+  "blog": [
+    {
+      "title": "Build a Holiday Coverage Calendar for a Filipino Support Team",
+      "slug": "philippines-support-holiday-coverage-calendar",
+      "sourcePath": "app/blog-october12.ts",
+      "thumbnailPath": "public/oct12-heroes/philippines-support-holiday-coverage-calendar.svg",
+      "route": "/blog/philippines-support-holiday-coverage-calendar"
+    },
+    {
+      "title": "Prepare a Client-System Access Request for Filipino Staff",
+      "slug": "filipino-staff-client-system-access-request",
+      "sourcePath": "app/blog-october12.ts",
+      "thumbnailPath": "public/oct12-heroes/filipino-staff-client-system-access-request.svg",
+      "route": "/blog/filipino-staff-client-system-access-request"
+    },
+    {
+      "title": "Write an Acceptance Criteria Card for an Outsourced Task",
+      "slug": "outsourced-task-acceptance-criteria-card",
+      "sourcePath": "app/blog-october12.ts",
+      "thumbnailPath": "public/oct12-heroes/outsourced-task-acceptance-criteria-card.svg",
+      "route": "/blog/outsourced-task-acceptance-criteria-card"
+    },
+    {
+      "title": "Use a Written Response Review Rubric for Filipino Support Staff",
+      "slug": "filipino-staff-written-response-review-rubric",
+      "sourcePath": "app/blog-october12.ts",
+      "thumbnailPath": "public/oct12-heroes/filipino-staff-written-response-review-rubric.svg",
+      "route": "/blog/filipino-staff-written-response-review-rubric"
+    },
+    {
+      "title": "Activate Backup Coverage Without Losing Queue Ownership",
+      "slug": "philippines-outsourcing-backup-coverage-activation",
+      "sourcePath": "app/blog-october12.ts",
+      "thumbnailPath": "public/oct12-heroes/philippines-outsourcing-backup-coverage-activation.svg",
+      "route": "/blog/philippines-outsourcing-backup-coverage-activation"
+    },
+    {
+      "title": "Create an Exception Message That Gets a Decision",
+      "slug": "outsourced-exception-message-template",
+      "sourcePath": "app/blog-october12.ts",
+      "thumbnailPath": "public/oct12-heroes/outsourced-exception-message-template.svg",
+      "route": "/blog/outsourced-exception-message-template"
+    },
+    {
+      "title": "Use a Shadow-to-Live Launch Gate for an Outsourced Workflow",
+      "slug": "shadow-to-live-outsourcing-launch-gate",
+      "sourcePath": "app/blog-october12.ts",
+      "thumbnailPath": "public/oct12-heroes/shadow-to-live-outsourcing-launch-gate.svg",
+      "route": "/blog/shadow-to-live-outsourcing-launch-gate"
+    },
+    {
+      "title": "Prepare a Timekeeping Discrepancy Handoff Without Deciding Pay",
+      "slug": "filipino-staff-timekeeping-discrepancy-handoff",
+      "sourcePath": "app/blog-october12.ts",
+      "thumbnailPath": "public/oct12-heroes/filipino-staff-timekeeping-discrepancy-handoff.svg",
+      "route": "/blog/filipino-staff-timekeeping-discrepancy-handoff"
+    },
+    {
+      "title": "Maintain a Client Policy Version Receipt Log",
+      "slug": "client-policy-version-receipt-log",
+      "sourcePath": "app/blog-october12.ts",
+      "thumbnailPath": "public/oct12-heroes/client-policy-version-receipt-log.svg",
+      "route": "/blog/client-policy-version-receipt-log"
+    },
+    {
+      "title": "Verify Remote Meeting Actions Before Marking Them Complete",
+      "slug": "remote-meeting-action-verification-ledger",
+      "sourcePath": "app/blog-october12.ts",
+      "thumbnailPath": "public/oct12-heroes/remote-meeting-action-verification-ledger.svg",
+      "route": "/blog/remote-meeting-action-verification-ledger"
+    },
+    {
+      "title": "Assemble a Knowledge Transfer Exit Packet for an Outsourced Role",
+      "slug": "philippines-outsourcing-knowledge-transfer-exit-packet",
+      "sourcePath": "app/blog-october12.ts",
+      "thumbnailPath": "public/oct12-heroes/philippines-outsourcing-knowledge-transfer-exit-packet.svg",
+      "route": "/blog/philippines-outsourcing-knowledge-transfer-exit-packet"
+    },
+    {
+      "title": "Run a Sensitive Data Redaction Preflight Check",
+      "slug": "sensitive-data-redaction-preflight-check",
+      "sourcePath": "app/blog-october12.ts",
+      "thumbnailPath": "public/oct12-heroes/sensitive-data-redaction-preflight-check.svg",
+      "route": "/blog/sensitive-data-redaction-preflight-check"
+    }
+  ],
+  "research": [
+    {
+      "title": "Do Reviewers Agree When Outsourcing Instructions Are Ambiguous?",
+      "slug": "outsourcing-instruction-ambiguity-agreement-research",
+      "sourcePath": "app/research-october12.ts",
+      "thumbnailPath": "public/oct12-heroes/outsourcing-instruction-ambiguity-agreement-research.svg",
+      "route": "/research/outsourcing-instruction-ambiguity-agreement-research"
+    },
+    {
+      "title": "How Long Does an Outsourced Handoff Wait for Acceptance?",
+      "slug": "outsourced-handoff-acknowledgment-latency-research",
+      "sourcePath": "app/research-october12.ts",
+      "thumbnailPath": "public/oct12-heroes/outsourced-handoff-acknowledgment-latency-research.svg",
+      "route": "/research/outsourced-handoff-acknowledgment-latency-research"
+    },
+    {
+      "title": "Does Granted Access Match the Work a Filipino Support Role Performs?",
+      "slug": "least-privilege-role-fit-research",
+      "sourcePath": "app/research-october12.ts",
+      "thumbnailPath": "public/oct12-heroes/least-privilege-role-fit-research.svg",
+      "route": "/research/least-privilege-role-fit-research"
+    },
+    {
+      "title": "Which Work-Sample Errors Predict a Weak Handoff Design?",
+      "slug": "outsourced-work-sample-error-taxonomy-research",
+      "sourcePath": "app/research-october12.ts",
+      "thumbnailPath": "public/oct12-heroes/outsourced-work-sample-error-taxonomy-research.svg",
+      "route": "/research/outsourced-work-sample-error-taxonomy-research"
+    },
+    {
+      "title": "Where Do Exceptions Accumulate Across Client and Philippine Time Zones?",
+      "slug": "timezone-overlap-exception-concentration-research",
+      "sourcePath": "app/research-october12.ts",
+      "thumbnailPath": "public/oct12-heroes/timezone-overlap-exception-concentration-research.svg",
+      "route": "/research/timezone-overlap-exception-concentration-research"
+    }
+  ],
+  "registryPaths": [
+    "app/data.ts",
+    "app/fleet-data.ts"
+  ],
+  "routePaths": [
+    "app/blog/[slug]/page.tsx",
+    "app/research/[slug]/page.tsx"
+  ],
+  "indexPaths": [
+    "app/blog/page.tsx",
+    "app/research/page.tsx"
+  ],
+  "sitemapPath": "app/sitemap.xml/route.ts"
+}
