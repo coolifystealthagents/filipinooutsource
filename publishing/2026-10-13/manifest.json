@@ -1,0 +1,143 @@
+{
+  "domain": "FilipinoOutsource.com",
+  "repository": "coolifystealthagents/filipinooutsource",
+  "branch": "main",
+  "baseSha": "3ea3a3f4271ea30354727064e3daa968c0725798",
+  "publicationDate": "2026-10-13",
+  "blog": [
+    {
+      "title": "Build a Daily Control Brief for a Filipino Assistant",
+      "slug": "filipino-assistant-daily-control-brief",
+      "sourcePath": "app/blog-october13.ts",
+      "thumbnailPath": "public/oct13-heroes/filipino-assistant-daily-control-brief.svg",
+      "route": "/blog/filipino-assistant-daily-control-brief"
+    },
+    {
+      "title": "Map Scope Before Delegating a Customer Inbox",
+      "slug": "outsourced-customer-inbox-scope-map",
+      "sourcePath": "app/blog-october13.ts",
+      "thumbnailPath": "public/oct13-heroes/outsourced-customer-inbox-scope-map.svg",
+      "route": "/blog/outsourced-customer-inbox-scope-map"
+    },
+    {
+      "title": "Design a Shift Handoff Board for a Philippines Team",
+      "slug": "philippines-team-shift-handoff-board",
+      "sourcePath": "app/blog-october13.ts",
+      "thumbnailPath": "public/oct13-heroes/philippines-team-shift-handoff-board.svg",
+      "route": "/blog/philippines-team-shift-handoff-board"
+    },
+    {
+      "title": "Control a Bookkeeping Document Chase Without Creating Records",
+      "slug": "filipino-bookkeeping-document-chase",
+      "sourcePath": "app/blog-october13.ts",
+      "thumbnailPath": "public/oct13-heroes/filipino-bookkeeping-document-chase.svg",
+      "route": "/blog/filipino-bookkeeping-document-chase"
+    },
+    {
+      "title": "Create a Decision Rights Matrix for a Remote Assistant",
+      "slug": "remote-assistant-decision-rights-matrix",
+      "sourcePath": "app/blog-october13.ts",
+      "thumbnailPath": "public/oct13-heroes/remote-assistant-decision-rights-matrix.svg",
+      "route": "/blog/remote-assistant-decision-rights-matrix"
+    },
+    {
+      "title": "Write a Field Contract for Outsourced Data Entry",
+      "slug": "outsourced-data-entry-field-contract",
+      "sourcePath": "app/blog-october13.ts",
+      "thumbnailPath": "public/oct13-heroes/outsourced-data-entry-field-contract.svg",
+      "route": "/blog/outsourced-data-entry-field-contract"
+    },
+    {
+      "title": "Use Change Control for Executive Calendar Requests",
+      "slug": "filipino-assistant-calendar-change-control",
+      "sourcePath": "app/blog-october13.ts",
+      "thumbnailPath": "public/oct13-heroes/filipino-assistant-calendar-change-control.svg",
+      "route": "/blog/filipino-assistant-calendar-change-control"
+    },
+    {
+      "title": "Run an Impact Review Before Releasing an SOP Change",
+      "slug": "outsourced-sop-change-impact-review",
+      "sourcePath": "app/blog-october13.ts",
+      "thumbnailPath": "public/oct13-heroes/outsourced-sop-change-impact-review.svg",
+      "route": "/blog/outsourced-sop-change-impact-review"
+    },
+    {
+      "title": "Build a Vendor Inquiry Routing Guide for Filipino Staff",
+      "slug": "philippines-vendor-inquiry-routing-guide",
+      "sourcePath": "app/blog-october13.ts",
+      "thumbnailPath": "public/oct13-heroes/philippines-vendor-inquiry-routing-guide.svg",
+      "route": "/blog/philippines-vendor-inquiry-routing-guide"
+    },
+    {
+      "title": "Maintain a Risk-Based Quality Sample Register",
+      "slug": "remote-team-quality-sample-register",
+      "sourcePath": "app/blog-october13.ts",
+      "thumbnailPath": "public/oct13-heroes/remote-team-quality-sample-register.svg",
+      "route": "/blog/remote-team-quality-sample-register"
+    },
+    {
+      "title": "Close Access Safely When a Filipino Staff Assignment Ends",
+      "slug": "filipino-staff-leaver-access-checklist",
+      "sourcePath": "app/blog-october13.ts",
+      "thumbnailPath": "public/oct13-heroes/filipino-staff-leaver-access-checklist.svg",
+      "route": "/blog/filipino-staff-leaver-access-checklist"
+    },
+    {
+      "title": "Assemble an Evidence Pack for an Outsourcing Pilot Review",
+      "slug": "outsourcing-pilot-evidence-pack",
+      "sourcePath": "app/blog-october13.ts",
+      "thumbnailPath": "public/oct13-heroes/outsourcing-pilot-evidence-pack.svg",
+      "route": "/blog/outsourcing-pilot-evidence-pack"
+    }
+  ],
+  "research": [
+    {
+      "title": "How Often Are Outsourced Queue Items Ready at First Review?",
+      "slug": "outsourced-queue-source-completeness-research",
+      "sourcePath": "app/research-october13.ts",
+      "thumbnailPath": "public/oct13-heroes/outsourced-queue-source-completeness-research.svg",
+      "route": "/research/outsourced-queue-source-completeness-research"
+    },
+    {
+      "title": "Which Owner Questions Delay Filipino Assistant Work?",
+      "slug": "filipino-assistant-owner-response-study",
+      "sourcePath": "app/research-october13.ts",
+      "thumbnailPath": "public/oct13-heroes/filipino-assistant-owner-response-study.svg",
+      "route": "/research/filipino-assistant-owner-response-study"
+    },
+    {
+      "title": "Do Corrected Outsourced Records Stay Correct?",
+      "slug": "outsourced-record-correction-recurrence-research",
+      "sourcePath": "app/research-october13.ts",
+      "thumbnailPath": "public/oct13-heroes/outsourced-record-correction-recurrence-research.svg",
+      "route": "/research/outsourced-record-correction-recurrence-research"
+    },
+    {
+      "title": "Does Work Age Differ Around Philippines Shift Boundaries?",
+      "slug": "philippines-shift-boundary-aging-research",
+      "sourcePath": "app/research-october13.ts",
+      "thumbnailPath": "public/oct13-heroes/philippines-shift-boundary-aging-research.svg",
+      "route": "/research/philippines-shift-boundary-aging-research"
+    },
+    {
+      "title": "How Long Do Temporary Access Exceptions Remain Open?",
+      "slug": "delegated-access-exception-lifetime-research",
+      "sourcePath": "app/research-october13.ts",
+      "thumbnailPath": "public/oct13-heroes/delegated-access-exception-lifetime-research.svg",
+      "route": "/research/delegated-access-exception-lifetime-research"
+    }
+  ],
+  "registryPaths": [
+    "app/data.ts",
+    "app/fleet-data.ts"
+  ],
+  "routePaths": [
+    "app/blog/[slug]/page.tsx",
+    "app/research/[slug]/page.tsx"
+  ],
+  "indexPaths": [
+    "app/blog/page.tsx",
+    "app/research/page.tsx"
+  ],
+  "sitemapPath": "app/sitemap.xml/route.ts"
+}
