@@ -6,6 +6,7 @@ export const october12ResearchPosts: readonly ResearchPost[]=[
     "excerpt": "An inter-rater protocol for identifying missing sources, hidden judgment, authority gaps, and safe stop conditions.",
     "published": "October 12, 2026",
     "datePublished": "2026-10-12",
+    "dateModified": "2026-10-18",
     "readTime": "12 minute read",
     "cluster": "/services/data-processing-support",
     "cardHighlight": "A nine-stage protocol makes instruction ambiguity agreement, uncertainty, ownership, and verification inspectable.",
@@ -216,7 +217,8 @@ export const october12ResearchPosts: readonly ResearchPost[]=[
     "serviceHandoff": {
       "heading": "Apply the protocol to a bounded service lane",
       "copy": "Use the findings to define evidence, permitted preparation, stop rules, client-owner decisions, and destination verification before live work expands.",
-      "label": "Review the related service"
+      "label": "Review the related service",
+      "href": "/services/data-processing-support"
     },
     "heroImage": "/oct12-heroes/outsourcing-instruction-ambiguity-agreement-research.svg"
   },
@@ -226,6 +228,7 @@ export const october12ResearchPosts: readonly ResearchPost[]=[
     "excerpt": "A cohort design separating send time, receipt, accountable acceptance, first action, and verified destination state.",
     "published": "October 12, 2026",
     "datePublished": "2026-10-12",
+    "dateModified": "2026-10-18",
     "readTime": "12 minute read",
     "cluster": "/services/executive-assistance",
     "cardHighlight": "A nine-stage protocol makes handoff acceptance latency, uncertainty, ownership, and verification inspectable.",
@@ -436,7 +439,8 @@ export const october12ResearchPosts: readonly ResearchPost[]=[
     "serviceHandoff": {
       "heading": "Apply the protocol to a bounded service lane",
       "copy": "Use the findings to define evidence, permitted preparation, stop rules, client-owner decisions, and destination verification before live work expands.",
-      "label": "Review the related service"
+      "label": "Review the related service",
+      "href": "/services/executive-assistance"
     },
     "heroImage": "/oct12-heroes/outsourced-handoff-acknowledgment-latency-research.svg"
   },
@@ -446,6 +450,7 @@ export const october12ResearchPosts: readonly ResearchPost[]=[
     "excerpt": "A task-to-permission audit design for required capabilities, unused access, sensitive paths, exceptions, and timely removal.",
     "published": "October 12, 2026",
     "datePublished": "2026-10-12",
+    "dateModified": "2026-10-18",
     "readTime": "12 minute read",
     "cluster": "/services/data-processing-support",
     "cardHighlight": "A nine-stage protocol makes task-to-permission fit, uncertainty, ownership, and verification inspectable.",
@@ -656,7 +661,8 @@ export const october12ResearchPosts: readonly ResearchPost[]=[
     "serviceHandoff": {
       "heading": "Apply the protocol to a bounded service lane",
       "copy": "Use the findings to define evidence, permitted preparation, stop rules, client-owner decisions, and destination verification before live work expands.",
-      "label": "Review the related service"
+      "label": "Review the related service",
+      "href": "/services/data-processing-support"
     },
     "heroImage": "/oct12-heroes/least-privilege-role-fit-research.svg"
   },
@@ -666,6 +672,7 @@ export const october12ResearchPosts: readonly ResearchPost[]=[
     "excerpt": "A blinded evaluation protocol separating candidate mistakes from unclear instructions, source defects, access constraints, and reviewer inconsistency.",
     "published": "October 12, 2026",
     "datePublished": "2026-10-12",
+    "dateModified": "2026-10-18",
     "readTime": "12 minute read",
     "cluster": "/services/data-processing-support",
     "cardHighlight": "A nine-stage protocol makes work-sample error taxonomy, uncertainty, ownership, and verification inspectable.",
@@ -876,7 +883,8 @@ export const october12ResearchPosts: readonly ResearchPost[]=[
     "serviceHandoff": {
       "heading": "Apply the protocol to a bounded service lane",
       "copy": "Use the findings to define evidence, permitted preparation, stop rules, client-owner decisions, and destination verification before live work expands.",
-      "label": "Review the related service"
+      "label": "Review the related service",
+      "href": "/services/data-processing-support"
     },
     "heroImage": "/oct12-heroes/outsourced-work-sample-error-taxonomy-research.svg"
   },
@@ -886,6 +894,7 @@ export const october12ResearchPosts: readonly ResearchPost[]=[
     "excerpt": "A time-banded workflow study of queue arrivals, owner availability, handoffs, aging, and next-shift recovery without judging worker performance.",
     "published": "October 12, 2026",
     "datePublished": "2026-10-12",
+    "dateModified": "2026-10-18",
     "readTime": "12 minute read",
     "cluster": "/services/customer-support-operations",
     "cardHighlight": "A nine-stage protocol makes time-zone exception concentration, uncertainty, ownership, and verification inspectable.",
@@ -1096,7 +1105,8 @@ export const october12ResearchPosts: readonly ResearchPost[]=[
     "serviceHandoff": {
       "heading": "Apply the protocol to a bounded service lane",
       "copy": "Use the findings to define evidence, permitted preparation, stop rules, client-owner decisions, and destination verification before live work expands.",
-      "label": "Review the related service"
+      "label": "Review the related service",
+      "href": "/services/customer-support-operations"
     },
     "heroImage": "/oct12-heroes/timezone-overlap-exception-concentration-research.svg"
   }
