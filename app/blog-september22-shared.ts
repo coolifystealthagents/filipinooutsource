@@ -31,7 +31,7 @@ export function buildSeptember22Detail(b: September22Brief) {
     {title:'Set authority and escalation limits',paragraphs:[
       `The central boundary is ${b.boundary}. Translate that boundary into examples of work the Filipino team member may complete, work they may draft but not release, and work that must stop immediately.`,
       `An escalation should contain the item identifier, relevant source, observed conflict or missing field, deadline source, action paused, and one decision question. “Please advise” transfers the research burden back to the manager. A compact evidence packet lets the owner decide without reopening every system.`,
-      `Urgency does not expand authority. If the named owner is unavailable, the fallback must already be written. Otherwise the safe action is to preserve the item, record the deadline, and use the approved urgent channel—not to borrow permission from a superficially similar past case.`
+      `Urgency does not expand authority. If the named owner is unavailable, the fallback must already be written. Otherwise the safe action is to preserve the item, record the deadline, and use the approved urgent channel,not to borrow permission from a superficially similar past case.`
     ]},
     {title:'Plan access and privacy controls',paragraphs:[
       `Create an access matrix with system, business purpose, permitted action, approver, authentication method, review date, and removal trigger. Prefer named accounts, minimum permissions, and a separate drafting or test area when the role does not need to alter an authoritative record.`,

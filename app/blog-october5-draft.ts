@@ -85,7 +85,7 @@ export const october5BlogDrafts: October5BlogDraft[] = [
       ],
       sources: [
         { label: 'NIST contingency planning guidance', url: 'https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final' },
-        { label: 'Official Gazette — Republic Act No. 10173 accountability principle', url: 'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/' },
+        { label: 'Official Gazette , Republic Act No. 10173 accountability principle', url: 'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/' },
       ],
       inlineAnchors: [
         { phrase: 'services overview', href: '/services' },
@@ -160,7 +160,7 @@ export const october5BlogDrafts: October5BlogDraft[] = [
       ],
       sources: [
         { label: 'NIST contingency planning guidance', url: 'https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final' },
-        { label: 'Official Gazette — Republic Act No. 10173 accountability principle', url: 'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/' },
+        { label: 'Official Gazette , Republic Act No. 10173 accountability principle', url: 'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/' },
       ],
       inlineAnchors: [
         { phrase: 'executive assistance', href: '/services/executive-assistance' },
@@ -234,7 +234,7 @@ export const october5BlogDrafts: October5BlogDraft[] = [
         },
       ],
       sources: [
-        { label: 'Official Gazette — Republic Act No. 10173 accountability principle', url: 'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/' },
+        { label: 'Official Gazette , Republic Act No. 10173 accountability principle', url: 'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/' },
         { label: 'NIST privacy framework', url: 'https://www.nist.gov/privacy-framework' },
       ],
       inlineAnchors: [
@@ -309,7 +309,7 @@ export const october5BlogDrafts: October5BlogDraft[] = [
         },
       ],
       sources: [
-        { label: 'Official Gazette — Republic Act No. 10173 accountability principle', url: 'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/' },
+        { label: 'Official Gazette , Republic Act No. 10173 accountability principle', url: 'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/' },
         { label: 'NIST contingency planning guidance', url: 'https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final' },
       ],
       inlineAnchors: [
@@ -360,7 +360,7 @@ export const october5BlogDrafts: October5BlogDraft[] = [
           'A buyer planning data processing support can bring the candidate pool and admission checklist to a staffing discussion. That conversation can focus on the fields, systems, exclusions, and reviewer rather than a broad job title. The immediate outcome is a safer first batch. Expansion comes later, after the business has evidence that another category has its own source rule, access boundary, owner, and finish point.'
         ]}
       ],
-      sources:[{label:'NIST access control guidance',url:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final'},{label:'Official Gazette — Republic Act No. 10173 accountability principle',url:'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/'}],
+      sources:[{label:'NIST access control guidance',url:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final'},{label:'Official Gazette , Republic Act No. 10173 accountability principle',url:'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/'}],
       inlineAnchors:[{phrase:'data processing support',href:'/services/data-processing-support'},{phrase:'staffing discussion',href:'/contact-us'},{phrase:'Republic Act No. 10173 accountability principle',href:'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/',external:true}],
       related:[{label:'Review data processing support',href:'/services/data-processing-support'},{label:'Plan a controlled first batch',href:'/contact-us'}],
       image:{src:'/article-planning.svg',alt:'A first live batch sorted into admitted, paused, and excluded cases',caption:'Admission rules keep the first batch small enough to inspect and useful enough to expose weak points.'},
@@ -435,7 +435,7 @@ export const october5BlogDrafts: October5BlogDraft[] = [
         ,'Include the worker in this review. Ask which old requests still arrive, which new cases lack examples, and where the written boundary differs from what managers request in practice. Preserve the answer as operational evidence rather than treating it as a complaint or informal permission. If demand has expanded, revise the role through the same approval, access, instruction, and acceptance steps instead of letting repeated exceptions create a shadow job.'
       ]}
     ],
-    sources:[{label:'Official Gazette — Republic Act No. 10173 accountability principle',url:'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/'},{label:'NIST access control guidance',url:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final'}],
+    sources:[{label:'Official Gazette , Republic Act No. 10173 accountability principle',url:'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/'},{label:'NIST access control guidance',url:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final'}],
     inlineAnchors:[{phrase:'Republic Act No. 10173 accountability principle',href:'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/',external:true},{phrase:'executive assistance',href:'/services/executive-assistance'},{phrase:'planning conversation',href:'/contact-us'}],
     related:[{label:'Review executive assistance',href:'/services/executive-assistance'},{label:'Plan a role change',href:'/contact-us'}],
     image:{src:'/article-planning.svg',alt:'Old and new role lanes connected by task, access, and ownership checks',caption:'A role change is complete when old obligations close and new authority is explicit.'}
@@ -543,7 +543,7 @@ export const october5BlogDrafts: October5BlogDraft[] = [
         ,'Sample accepted work as well as returns. A return-only review cannot show whether the same rule is applied consistently to similar cases or whether one reviewer selects unusually difficult items. Compare a normal completion, a corrected item, and a borderline case against the same source. Record disagreements and settle them before using return rates to change staffing, coaching, or scope.'
       ]}
     ],
-    sources:[{label:'Official Gazette — Republic Act No. 10173 accountability principle',url:'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/'},{label:'NIST information integrity controls',url:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final'}],
+    sources:[{label:'Official Gazette , Republic Act No. 10173 accountability principle',url:'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/'},{label:'NIST information integrity controls',url:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final'}],
     inlineAnchors:[{phrase:'customer support operations',href:'/services/customer-support-operations'},{phrase:'planning request',href:'/contact-us'},{phrase:'Republic Act No. 10173 accountability principle',href:'https://officialgazette.gov.ph/2012/08/15/republic-act-no-10173/',external:true}],
     related:[{label:'Review customer support operations',href:'/services/customer-support-operations'},{label:'Plan a reviewable workflow',href:'/contact-us'}],
     image:{src:'/article-planning.svg',alt:'Return note connecting an observed defect, source rule, correction owner, and resubmission',caption:'A return note works when the correction can be traced to the same source used in review.'}

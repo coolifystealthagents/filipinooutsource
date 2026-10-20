@@ -2,7 +2,7 @@ type Topic = { slug:string; title:string; excerpt:string; lane:string; focus:str
 
 const common = (lane:string, focus:string, sections:{title:string; paragraphs:string[]}[]) => ({
   datePublished:'2026-08-20', dateModified:'2026-08-20',
-  image:{src:`/images/blog-2026-08-20-${lane.replace(/[^a-z0-9]+/g,'-')}.png`,alt:`Filipino ${lane} planning desk`,caption:`A reviewable ${lane} workflow keeps source records, boundaries, and owner decisions visible.`},
+  image:{src:`/images/blog-2026-08-20-${lane.toLowerCase().replace(/[^a-z0-9]+/g,'-')}.png`,alt:`Filipino ${lane} planning desk`,caption:`A reviewable ${lane} workflow keeps source records, boundaries, and owner decisions visible.`},
   shortAnswer:`FilipinoOutsource.com buyers should scope ${lane} as a bounded operating lane: ${focus} The role can prepare evidence and maintain agreed records, while an authorized client owner keeps consequential decisions.`,
   takeaways:['Name one recurring queue and its finished output.','Use normal, incomplete, and stop-rule examples before launch.','Give named, limited access tied to the first queue.','Review evidence and exceptions with an accountable owner.'],
   inlineAnchors:[{phrase:'staffing plan',href:'/blog/Filipino-outsource-staffing-planning'},{phrase:'onboarding checklist',href:'/blog/Filipino-outsource-staffing-onboarding-checklist'}],

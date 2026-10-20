@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { Header, Footer } from '../../components';
 import { researchPosts, ResearchPost } from '../../fleet-data';
 import { site } from '../../data';
+import { ActiveTableOfContents, type TableOfContentsItem } from '../../article-toc';
 
 const readerDate = new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
 const formatReaderDate = (value: string) => readerDate.format(new Date(`${value}T00:00:00Z`));
@@ -38,7 +39,14 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
   const { slug } = await params;
   const post: ResearchPost | undefined = researchPosts.find((p) => p.slug === slug);
   if (!post) notFound();
-  const toc = post.sections.map((section) => ({ id: slugify(section.heading), label: section.heading }));
+  const toc: TableOfContentsItem[] = [
+    ...post.sections.map((section) => ({ id: slugify(section.heading), label: section.heading })),
+    ...(post.serviceHandoff ? [{ id: 'service-handoff', label: post.serviceHandoff.heading }] : []),
+    ...(post.table ? [{ id: 'operational-benchmarks', label: post.table.heading }] : []),
+    { id: 'methodology', label: 'Methodology' },
+    { id: 'faq', label: 'FAQ' },
+    ...(post.sources?.length ? [{ id: 'sources', label: 'Sources and citation' }] : []),
+  ];
 
   return (
     <>
@@ -78,7 +86,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
         <section className="section research-body-section">
           <div className="container research-layout">
             <article className="research-article">
-              {post.heroImage ? <img className="research-hero-image" src={post.heroImage} alt="" /> : null}
+              {post.heroImage ? <img className="research-hero-image" src={post.heroImage} alt={`Research graphic for ${post.title}`} /> : null}
               <aside aria-label="Key Takeaways" className="research-takeaways">
                 <h2>Key Takeaways</h2>
                 <ul>{post.keyTakeaways.map((item) => <li key={item}>{item}</li>)}</ul>
@@ -144,15 +152,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
             </article>
 
             <aside className="research-sidebar" aria-label="Research navigation">
-              <div className="research-sidebar-card">
-                <h2>In this research</h2>
-                <ol>
-                  {toc.map((item) => <li key={item.id}><a href={`#${item.id}`}>{item.label}</a></li>)}
-                  {post.table ? <li><a href="#operational-benchmarks">{post.table.heading}</a></li> : null}
-                  <li><a href="#methodology">Methodology</a></li>
-                  <li><a href="#faq">FAQ</a></li>
-                </ol>
-              </div>
+              <ActiveTableOfContents items={toc} title="In this research" className="research-sidebar-card" />
               <div className="research-cta-card">
                 <span>Planning note</span>
                 <h2>Turn market scale into a safer role plan.</h2>

@@ -4,7 +4,8 @@ import { site } from '../data';
 
 export const metadata = {
   title: `Research | ${site.brand}`,
-  description: 'Original research and source-backed analysis for Philippines-based support operations.'
+  description: 'Original research and source-backed analysis for Philippines-based support operations.',
+  alternates: { canonical: '/research' },
 };
 
 const clusters = ['All Research', ...Array.from(new Set(researchPosts.map((post) => post.cluster)))] as const;

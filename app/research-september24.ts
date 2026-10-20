@@ -11,8 +11,8 @@ export type PrimarySourceResearchTopic = {
   related: readonly { label: string; href: string }[];
 };
 
-const irr = { name: `National Privacy Commission — Implementing Rules and Regulations of the Data Privacy Act (${checked})`, url: 'https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/' };
-const security = { name: `National Privacy Commission — Circular 2023-06 security requirements overview (${checked})`, url: 'https://privacy.gov.ph/npc-issues-circulars-to-strengthen-personal-data-protection-in-ph/' };
+const irr = { name: `National Privacy Commission , Implementing Rules and Regulations of the Data Privacy Act (${checked})`, url: 'https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/' };
+const security = { name: `National Privacy Commission , Circular 2023-06 security requirements overview (${checked})`, url: 'https://privacy.gov.ph/npc-issues-circulars-to-strengthen-personal-data-protection-in-ph/' };
 
 const topics: readonly PrimarySourceResearchTopic[] = [
   {
@@ -35,7 +35,7 @@ const topics: readonly PrimarySourceResearchTopic[] = [
     ],
     boundary: 'A customer writes “delete everything” in a support chat. The account also contains transaction records, another user’s messages, an unresolved dispute, and marketing preferences stored in a separate platform. The agent must preserve and route the request, not promise immediate deletion or silently close the account.',
     uncertainty: 'Applicable rights, response periods, identity checks, exceptions, retention duties, controller location, other jurisdictions, and acceptable delivery safeguards depend on the real request and records. This study is an operating framework, not a legal determination or a substitute for the controller’s privacy process.',
-    sources: [{ name: `National Privacy Commission — Data Subject Rights (${checked})`, url: 'https://privacy.gov.ph/data-subject-rights/' }, { name: `National Privacy Commission — Advisory No. 2021-01, Data Subject Rights (${checked})`, url: 'https://privacy.gov.ph/pips-and-pics/advisories-circulars/' }, irr],
+    sources: [{ name: `National Privacy Commission , Data Subject Rights (${checked})`, url: 'https://privacy.gov.ph/data-subject-rights/' }, { name: `National Privacy Commission , Advisory No. 2021-01, Data Subject Rights (${checked})`, url: 'https://privacy.gov.ph/pips-and-pics/advisories-circulars/' }, irr],
     service: { heading: 'Build a controlled request queue', copy: 'Use the customer support operations guide to define intake language, authentication handoffs, system searches, approval ownership, and secure release before requests arrive.', label: 'Review customer support operations', href: '/services/customer-support-operations' },
     related: [{ label: 'Review data export coordination', href: '/research/philippines-data-export-request-coordination-research-2026' }, { label: 'Plan data processing support', href: '/services/data-processing-support' }]
   },
@@ -59,7 +59,7 @@ const topics: readonly PrimarySourceResearchTopic[] = [
     ],
     boundary: 'A buyer wants a remote coordinator to clean a customer spreadsheet. During scoping, the file is found to contain health notes, identity documents, children’s information, free-text complaints, and links to a new AI enrichment tool. “Spreadsheet cleanup” no longer describes the actual processing.',
     uncertainty: 'The required assessment depth, consultation, lawful basis, transfer safeguards, security controls, residual-risk acceptance, and whether processing should proceed depend on the actual parties, data, technology, consequences, and applicable laws. A completed template does not itself establish compliance or safety.',
-    sources: [{ name: `National Privacy Commission — Five Pillars: Privacy Impact Assessment (${checked})`, url: 'https://privacy.gov.ph/5-pillars-of-compliance-2/' }, { name: `National Privacy Commission — Guidelines on Privacy Impact Assessment, Advisory 2017-03 (${checked})`, url: 'https://www.privacy.gov.ph/wp-content/uploads/2022/01/NPC_AdvisoryNo.2017-03.pdf' }, security],
+    sources: [{ name: `National Privacy Commission , Five Pillars: Privacy Impact Assessment (${checked})`, url: 'https://privacy.gov.ph/5-pillars-of-compliance-2/' }, { name: `National Privacy Commission , Guidelines on Privacy Impact Assessment, Advisory 2017-03 (${checked})`, url: 'https://www.privacy.gov.ph/wp-content/uploads/2022/01/NPC_AdvisoryNo.2017-03.pdf' }, security],
     service: { heading: 'Map the data before staffing the task', copy: 'Use the data processing support guide to identify minimum fields, systems, access levels, reviewers, exceptions, and removal evidence for the proposed role.', label: 'Review data processing support', href: '/services/data-processing-support' },
     related: [{ label: 'Review BYOD controls', href: '/research/philippines-outsourcing-byod-controls-research-2026' }, { label: 'Review data processing support', href: '/services/data-processing-support' }]
   },
@@ -83,13 +83,13 @@ const topics: readonly PrimarySourceResearchTopic[] = [
     ],
     boundary: 'A support coordinator sees a customer record in an unauthorized shared folder. The worker can stop sharing and preserve the link under an approved playbook, but should not decide whether the event is legally reportable, delete evidence, notify customers, or declare that no harm occurred.',
     uncertainty: 'DPO independence, reporting lines, registration, professional qualifications, conflict management, response duties, and interaction with other specialists depend on the organization and current requirements. This article does not allocate statutory responsibility or determine who must hold a particular office.',
-    sources: [{ name: `National Privacy Commission — Appointing a Data Protection Officer (${checked})`, url: 'https://privacy.gov.ph/appointing-a-data-protection-officer/' }, { name: `National Privacy Commission — Accountability overview (${checked})`, url: 'https://privacy.gov.ph/accountability/' }, security, irr],
+    sources: [{ name: `National Privacy Commission , Appointing a Data Protection Officer (${checked})`, url: 'https://privacy.gov.ph/appointing-a-data-protection-officer/' }, { name: `National Privacy Commission , Accountability overview (${checked})`, url: 'https://privacy.gov.ph/accountability/' }, security, irr],
     service: { heading: 'Put the privacy route inside daily operations', copy: 'Use the data processing support guide to define worker actions, pause conditions, evidence fields, and the client-side owners who make privacy and security decisions.', label: 'Review data processing support', href: '/services/data-processing-support' },
     related: [{ label: 'Review breach escalation records', href: '/research/philippines-outsourcing-data-breach-escalation-research-2026' }, { label: 'Review data processing support', href: '/services/data-processing-support' }]
   },
   {
     slug: 'philippines-outsourcing-contractor-registration-due-diligence-research-2026',
-    title: 'What Does Philippine Contractor Registration Prove—and Not Prove?',
+    title: 'What Does Philippine Contractor Registration Prove,and Not Prove?',
     excerpt: 'A buyer-side review of Department Order No. 174 records, contracting facts, worker protections, and the limits of registration as outsourcing due diligence.',
     cluster: 'Buyer Governance', subject: 'contractor-registration due diligence',
     question: 'When a Philippines provider presents a contractor registration, what should a buyer verify before treating the labor arrangement, service scope, and operating controls as settled?',
@@ -107,7 +107,7 @@ const topics: readonly PrimarySourceResearchTopic[] = [
     ],
     boundary: 'A sales proposal uses one brand, the registration names another company, invoices come from a third entity, and daily instructions would be issued directly to workers by the overseas buyer. The registration image does not resolve the mismatch or the real allocation of control.',
     uncertainty: 'Whether Department Order No. 174 applies, whether a specific arrangement is permissible, who is an employer, and what liabilities follow require current facts and qualified Philippine legal advice. Government rules and records can change; registration is neither a quality rating nor a guarantee of compliance.',
-    sources: [{ name: `Department of Labor and Employment — Department Order No. 174, Series of 2017 (${checked})`, url: 'https://www.ble.dole.gov.ph/wp-content/uploads/2023/02/DO-174-17-Rules-Implementing-Articles-106-to-109-of-the-Labor-Code-As-Amended1.pdf' }, { name: `DOLE Regional Office XI — Contracting and Subcontracting overview (${checked})`, url: 'https://ro11.dole.gov.ph/organizational-outcome-1-2/' }, { name: `Department of Labor and Employment — Labor Code of the Philippines (${checked})`, url: 'https://dole.gov.ph/labor-code-of-the-philippines/' }],
+    sources: [{ name: `Department of Labor and Employment , Department Order No. 174, Series of 2017 (${checked})`, url: 'https://www.ble.dole.gov.ph/wp-content/uploads/2023/02/DO-174-17-Rules-Implementing-Articles-106-to-109-of-the-Labor-Code-As-Amended1.pdf' }, { name: `DOLE Regional Office XI , Contracting and Subcontracting overview (${checked})`, url: 'https://ro11.dole.gov.ph/organizational-outcome-1-2/' }, { name: `Department of Labor and Employment , Labor Code of the Philippines (${checked})`, url: 'https://dole.gov.ph/labor-code-of-the-philippines/' }],
     service: { heading: 'Turn provider evidence into a role plan', copy: 'Use the staffing planning guide to reconcile the provider, employer, supervisor, accounts, schedule, review owner, and decisions that remain with the buyer.', label: 'Read the staffing plan guide', href: '/blog/Filipino-outsource-staffing-planning' },
     related: [{ label: 'Review provider verification research', href: '/research/philippines-outsourcing-provider-verification-research-2026' }, { label: 'Questions before hiring Filipino talent', href: '/blog/Filipino-outsource-staffing-provider-questions' }]
   },
@@ -131,7 +131,7 @@ const topics: readonly PrimarySourceResearchTopic[] = [
     ],
     boundary: 'A manager asks in chat for a coordinator to export a complete customer table to a new analytics vendor “just this once.” The current register permits only a weekly aggregate report and names no vendor. The worker should preserve and route the proposed change, not treat seniority or urgency as authority.',
     uncertainty: 'Controller-processor roles, lawful authority, contractual requirements, cross-border rules, subprocessor conditions, security measures, and retention obligations depend on the actual relationship and jurisdictions. An instruction register supports accountability but does not cure an unlawful purpose or replace professional review.',
-    sources: [irr, { name: `National Privacy Commission — Advisory Opinion 2020-018, Outsourcing the Processing of Personal Data (${checked})`, url: 'https://privacy.gov.ph/wp-content/uploads/2022/01/NPC_AdvisoryOpinionNo._2020-018.pdf' }, { name: `National Privacy Commission — Manage Legal guidance for outsourcing contracts (${checked})`, url: 'https://privacy.gov.ph/manage-legal/' }, security],
+    sources: [irr, { name: `National Privacy Commission , Advisory Opinion 2020-018, Outsourcing the Processing of Personal Data (${checked})`, url: 'https://privacy.gov.ph/wp-content/uploads/2022/01/NPC_AdvisoryOpinionNo._2020-018.pdf' }, { name: `National Privacy Commission , Manage Legal guidance for outsourcing contracts (${checked})`, url: 'https://privacy.gov.ph/manage-legal/' }, security],
     service: { heading: 'Convert contract scope into daily instructions', copy: 'Use the data processing support guide to define allowed fields, systems, actions, reviewers, exception routes, and exit evidence for a controlled first queue.', label: 'Review data processing support', href: '/services/data-processing-support' },
     related: [{ label: 'Review subprocessor change control', href: '/research/philippines-outsourcing-subprocessor-change-control-research-2026' }, { label: 'Review data processing agreements', href: '/research/philippines-outsourcing-data-processing-agreement-research-2026' }]
   }
@@ -162,7 +162,7 @@ export function makePrimarySourceResearchPost(
     faq: [
       { q: 'Is this legal, privacy, employment, security, or tax advice?', a: 'No. It is a buyer-side research and workflow framework. Qualified advisers and accountable owners must decide how current rules apply to real facts.' },
       { q: 'Does a five-case review prove quality or compliance?', a: 'No. It tests whether the current written instruction is usable on a bounded set and exposes exclusions, uncertainty, and disagreement.' },
-      { q: 'What may the support role own?', a: 'Approved evidence gathering, defined administrative fields, status preparation, correction records, and focused escalation—not consequential decisions outside written authority.' },
+      { q: 'What may the support role own?', a: 'Approved evidence gathering, defined administrative fields, status preparation, correction records, and focused escalation,not consequential decisions outside written authority.' },
       { q: 'When should the record be reopened?', a: 'When purpose, source, data, party, contract, system, tool, location, reviewer, consequence, law, or retention practice changes.' }
     ],
     sources: t.sources, related: t.related, serviceHandoff: t.service, heroImage: '/article-planning.svg'

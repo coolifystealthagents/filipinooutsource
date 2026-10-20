@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { Header, Footer, CTA } from '../../components';
 import { blogPosts, blogDetails, guideBodies, site } from '../../data';
+import { ActiveTableOfContents, type TableOfContentsItem } from '../../article-toc';
 
 const base = 'https://filipinooutsource.com';
 const strictAccountingSlug = 'outsource-accounting-to-philippines';
@@ -45,7 +46,7 @@ function ArticleBanner({ banner }: { banner: any }) {
       <p className="article-kicker">{banner.eyebrow}</p>
       <h2>{banner.title}</h2>
       <p>{banner.text}</p>
-      <a className="btn primary" href={banner.href} id="cta-blog-slug-action-1">{banner.cta}</a>
+      <a className="btn primary" href={banner.href} data-acr-track="blog-slug-action">{banner.cta}</a>
     </aside>
   );
 }
@@ -69,19 +70,30 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const url = `${base}/blog/${slug}`;
   const strictAccounting = slug === strictAccountingSlug;
   const pilotFormat = Boolean(detail?.formatPilot);
+  const postImage = 'image' in post ? post.image : undefined;
 
   if (detail) {
     const faqItems = detail.faqs || [];
-    const toc = [
+    const tocLabels = [
       'Short answer',
       'What to settle first',
       ...(detail.sections || []).map((section: any) => section.title),
+      pilotFormat ? detail.decisionTable?.title : undefined,
       detail.metrics?.title,
       detail.comparisonTitle || (detail.comparison ? 'Compare the choices' : undefined),
+      ...(detail.scripts || []).map((script: any) => script.title),
       detail.scenario?.title,
       faqItems.length ? 'Questions buyers ask' : undefined,
+      detail.sources?.length ? 'Sources and further reading' : undefined,
+      detail.tags?.length ? 'Tags' : undefined,
       detail.related ? 'Keep planning' : undefined,
     ].filter(Boolean) as string[];
+    const toc: TableOfContentsItem[] = tocLabels.map((label) => ({ id: slugify(label), label }));
+    const heroImage = detail.image || {
+      src: postImage || '/article-planning.svg',
+      alt: `Planning illustration for ${post.title}`,
+      caption: 'A practical guide to planning the workflow, controls, and review path.',
+    };
 
     const articleSchema = {
       '@context': 'https://schema.org',
@@ -139,13 +151,13 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                 <h1>{post.title}</h1>
                 <p className="lead">{post.excerpt}</p>
                 <p className="byline">By {site.brand} Editorial Team · Published: <time dateTime={detail.datePublished || '2026-07-22'}>{formatReaderDate(detail.datePublished || '2026-07-22')}</time>{detail.dateModified && detail.dateModified !== detail.datePublished ? <> · Updated <time dateTime={detail.dateModified}>{formatReaderDate(detail.dateModified)}</time></> : null} · {post.minutes} min read</p>
-                {detail.image && <figure className="article-hero-image"><img src={detail.image.src} alt={detail.image.alt} /><figcaption>{detail.image.caption}</figcaption></figure>}
+                <figure className="article-hero-image"><img src={heroImage.src} alt={heroImage.alt} /><figcaption>{heroImage.caption}</figcaption></figure>
                 {pilotFormat && detail.editorialChecks && <div className="pilot-trust-strip" aria-label="Editorial checks">{detail.editorialChecks.map((item: string) => <span key={item}>{item}</span>)}</div>}
               </header>
 
               <div className="article-grid">
                 <aside className="article-sidebar" aria-label="Article navigation">
-                  <div className="toc-card"><p className="article-kicker">In this article</p><ol>{toc.map((item) => <li key={item}><a href={`#${slugify(item)}`}>{item}</a></li>)}</ol></div>
+                  <ActiveTableOfContents items={toc} title="In this article" className="toc-card" titleClassName="article-kicker" />
                   <div className="sidebar-card"><p className="article-kicker">{pilotFormat ? 'Planning checkpoint' : 'Need a staffing scope?'}</p><p>{pilotFormat ? 'Use this guide to decide whether one queue is ready for candidate review.' : 'Turn a scattered handoff into one role, one review owner, and one controlled access plan.'}</p><a className="btn primary" href="/contact-us" id="cta-blog-slug-action-2">Request plan</a></div>
                 </aside>
 
@@ -180,12 +192,13 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                   {pilotFormat && detail.decisionTable && <section id={slugify(detail.decisionTable.title)} className="article-section"><h2>{detail.decisionTable.title}</h2><p>{detail.decisionTable.intro}</p><div className="pilot-decision-table"><div className="comparison-row comparison-head">{detail.decisionTable.headers.map((header: string) => <span key={header}>{header}</span>)}</div>{detail.decisionTable.rows.map((row: string[]) => <div className="comparison-row" key={row[0]}>{row.map((cell: string, index: number) => index === 0 ? <strong key={cell}>{cell}</strong> : <span key={cell}>{cell}</span>)}</div>)}</div></section>}
                   {detail.metrics && <section id={slugify(detail.metrics.title)} className="article-section"><h2>{detail.metrics.title}</h2><p>{detail.metrics.intro}</p><div className="metric-grid">{detail.metrics.items.map((item: any) => <article key={item.label}><strong>{item.value}</strong><h3>{item.label}</h3><p>{item.note}</p></article>)}</div><p className="metric-note">{detail.metrics.note}</p></section>}
                   {detail.comparison && <section id={slugify(detail.comparisonTitle || 'Compare the choices')} className="article-section"><h2>{detail.comparisonTitle || 'Compare the choices'}</h2><div className="comparison-table"><div className="comparison-row comparison-head"><span>Question</span><span>Weak answer</span><span>Useful answer</span></div>{detail.comparison.map((row: any) => <div className="comparison-row" key={row.question}><strong>{row.question}</strong><span>{row.weak}</span><span>{row.useful}</span></div>)}</div></section>}
-                  {detail.scripts?.map((script: any) => <section className="script-card" key={script.title}><h2>{script.title}</h2><blockquote>{script.quote}</blockquote><p>{script.note}</p></section>)}
+                  {detail.scripts?.map((script: any) => <section className="script-card" id={slugify(script.title)} key={script.title}><h2>{script.title}</h2><blockquote>{script.quote}</blockquote><p>{script.note}</p></section>)}
                   {detail.scenario && <section id={slugify(detail.scenario.title)} className="article-section scenario-card"><h2>{detail.scenario.title}</h2>{detail.scenario.paragraphs.map((paragraph: string) => <LinkedParagraph key={paragraph} paragraph={paragraph} anchors={inlineAnchors} />)}</section>}
 
                   {faqItems.length > 0 && <section id="questions-buyers-ask" className="article-section"><h2>Questions buyers ask</h2><div className="faq-stack">{faqItems.map((faq: any) => <article key={faq.question}><h3>Q: {faq.question}</h3><p>A: {faq.answer}</p></article>)}</div></section>}
                   {articleBanners?.[2] && <ArticleBanner banner={articleBanners[2]} />}
-                  {detail.tags && <section className="article-tags" aria-label="Article tags"><h2>Tags</h2><div>{detail.tags.map((tag: string) => <span key={tag}>{tag}</span>)}</div></section>}
+                  {detail.sources?.length > 0 && <section id="sources-and-further-reading" className="article-section"><h2>Sources and further reading</h2><ul className="source-list">{detail.sources.map((source: any) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.label || source.name || source.url}</a></li>)}</ul></section>}
+                  {detail.tags && <section id="tags" className="article-tags" aria-label="Article tags"><h2>Tags</h2><div>{detail.tags.map((tag: string) => <span key={tag}>{tag}</span>)}</div></section>}
                   {detail.related && <section id="keep-planning" className="related-card"><h2>Keep planning</h2><div>{detail.related.map((item: any) => <a href={item.href} key={item.href}>{item.label}<span>Read next</span></a>)}</div></section>}
                 </div>
               </div>
@@ -203,11 +216,22 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
     {eyebrow:'Before you hand off work',title:'Check the scope while it is still small.',text:'A short planning request can help turn scattered tasks into one reviewable Philippines staffing lane.',href:'/contact-us',cta:'Contact Us'},
     {eyebrow:'Ready to plan the next step?',title:'Share the work you want covered.',text:'Send the tasks, tools, schedule, and approval points so a staffing conversation starts with useful context.',href:'/contact-us',cta:'Contact Us'},
   ];
+  const fallbackSections = guide?.sections || [];
+  const fallbackToc: TableOfContentsItem[] = fallbackSections.length
+    ? fallbackSections.map((section: any) => ({ id: slugify(section.title), label: section.title }))
+    : [{ id: 'start-with-a-defined-workflow', label: 'Start with a defined workflow' }];
+  const fallbackHero = postImage || '/article-planning.svg';
 
   return (
     <>
       <Header />
-      <main><article className="section"><div className="container article-shell"><p className="eyebrow">{site.brand} blog</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><ArticleBanner banner={fallbackBanners[0]} />{guide ? <><p>{guide.intro}</p>{guide.sections.map((section: any, index: number) => <React.Fragment key={section.title}><section className="card"><h2>{section.title}</h2>{section.paragraphs.map((paragraph: string) => <p key={paragraph}>{paragraph}</p>)}</section>{index === 0 && <ArticleBanner banner={fallbackBanners[1]} />}</React.Fragment>)}</> : <section className="card"><h2>Start with a defined workflow</h2><p>For Philippines-based staffing, document the work, tools, schedule, and desired outcome before candidate matching. Keep business judgment and final approvals with a named manager. <a href="https://www.ilo.org/global/topics/non-standard-employment/WCMS_534825/lang--en/index.htm" target="_blank" rel="noopener noreferrer">International Labour Organization guidance on remote work arrangements</a> reinforces the need for clear expectations, communication rhythms, and accountable handoffs.</p></section>}<ArticleBanner banner={fallbackBanners[2]} /></div></article><CTA /></main>
+      <main className="article-page"><article className="section"><div className="container article-frame">
+        <header className="article-header"><p className="eyebrow">{site.brand} blog</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><figure className="article-hero-image"><img src={fallbackHero} alt={`Planning illustration for ${post.title}`} /><figcaption>A visual guide to defining the work, access, and review path before hiring.</figcaption></figure></header>
+        <div className="article-grid">
+          <aside className="article-sidebar" aria-label="Article navigation"><ActiveTableOfContents items={fallbackToc} title="In this article" className="toc-card" titleClassName="article-kicker" /></aside>
+          <div className="article-wrap"><ArticleBanner banner={fallbackBanners[0]} />{guide ? <><p>{guide.intro}</p>{guide.sections.map((section: any, index: number) => <React.Fragment key={section.title}><section className="card article-section" id={slugify(section.title)}><h2>{section.title}</h2>{section.paragraphs.map((paragraph: string) => <p key={paragraph}>{paragraph}</p>)}</section>{index === 0 && <ArticleBanner banner={fallbackBanners[1]} />}</React.Fragment>)}</> : <section className="card article-section" id="start-with-a-defined-workflow"><h2>Start with a defined workflow</h2><p>For Philippines-based staffing, document the work, tools, schedule, and desired outcome before candidate matching. Keep business judgment and final approvals with a named manager. <a href="https://www.ilo.org/global/topics/non-standard-employment/WCMS_534825/lang--en/index.htm" target="_blank" rel="noopener noreferrer">International Labour Organization guidance on remote work arrangements</a> reinforces the need for clear expectations, communication rhythms, and accountable handoffs.</p></section>}<ArticleBanner banner={fallbackBanners[2]} /></div>
+        </div>
+      </div></article><CTA /></main>
       <Footer />
     </>
   );

@@ -11,8 +11,8 @@ type Topic = {
   related: readonly { label: string; href: string }[];
 };
 
-const npcAi = { name: `National Privacy Commission — Advisory No. 2024-04 on AI systems processing personal data (${checked})`, url: 'https://privacy.gov.ph/wp-content/uploads/2024/12/Advisory-2024.12.19-Guidelines-on-Artificial-Intelligence-w-SGD.pdf' };
-const npcIrr = { name: `National Privacy Commission — Data Privacy Act implementing rules (${checked})`, url: 'https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/' };
+const npcAi = { name: `National Privacy Commission , Advisory No. 2024-04 on AI systems processing personal data (${checked})`, url: 'https://privacy.gov.ph/wp-content/uploads/2024/12/Advisory-2024.12.19-Guidelines-on-Artificial-Intelligence-w-SGD.pdf' };
+const npcIrr = { name: `National Privacy Commission , Data Privacy Act implementing rules (${checked})`, url: 'https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/' };
 
 const topics: readonly Topic[] = [
   {
@@ -35,7 +35,7 @@ const topics: readonly Topic[] = [
     ],
     caseStudy: 'A customer-support coordinator wants to paste a full ticket history into a public AI chat to shorten a reply, but the approved workflow names no AI tool, retention setting, or reviewer.',
     uncertainty: 'Whether a tool processes personal data, acts as another processor, transfers data, trains on inputs, or supports an acceptable use depends on its current configuration, contract, technical behavior, and the real data. This article does not approve a product or determine lawful processing.',
-    sources: [npcAi, npcIrr, { name: `National Privacy Commission — Third Parties guidance (${checked})`, url: 'https://privacy.gov.ph/third-parties/' }],
+    sources: [npcAi, npcIrr, { name: `National Privacy Commission , Third Parties guidance (${checked})`, url: 'https://privacy.gov.ph/third-parties/' }],
     service: { heading: 'Define the data lane before adding AI', copy: 'Use the data processing support guide to identify approved inputs, systems, reviewers, exception routes, and access limits before any AI-assisted step is assigned.', label: 'Review data processing support', href: '/services/data-processing-support' },
     related: [{ label: 'Review BYOD controls', href: '/research/philippines-outsourcing-byod-controls-research-2026' }, { label: 'Plan data processing support', href: '/services/data-processing-support' }]
   },
@@ -59,7 +59,7 @@ const topics: readonly Topic[] = [
     ],
     caseStudy: 'A sales-research queue collects names and work roles from company pages, then a new instruction asks the team to append personal profiles and family details without changing the documented purpose.',
     uncertainty: 'The lawful basis, territorial scope, source expectations, contractual limits, intellectual-property issues, platform terms, and safeguards depend on the actual collection and reuse. This desk study is not authorization to scrape a site or legal advice.',
-    sources: [{ name: `National Privacy Commission — Advisory No. 2026-01, Guidelines on Data Scraping (${checked})`, url: 'https://privacy.gov.ph/wp-content/uploads/2026/04/SGD_A_1.pdf' }, { name: `National Privacy Commission — APPA summary of the 2026 scraping guidance (${checked})`, url: 'https://privacy.gov.ph/npc-strengthens-regional-ties-and-advances-data-privacy-standards-at-the-65th-appa-forum-in-hong-kong-sar-china/' }, npcIrr],
+    sources: [{ name: `National Privacy Commission , Advisory No. 2026-01, Guidelines on Data Scraping (${checked})`, url: 'https://privacy.gov.ph/wp-content/uploads/2026/04/SGD_A_1.pdf' }, { name: `National Privacy Commission , APPA summary of the 2026 scraping guidance (${checked})`, url: 'https://privacy.gov.ph/npc-strengthens-regional-ties-and-advances-data-privacy-standards-at-the-65th-appa-forum-in-hong-kong-sar-china/' }, npcIrr],
     service: { heading: 'Turn source research into a bounded data task', copy: 'Use the sales development support guide to define eligible organizations, allowed fields, approved sources, verification, suppression, and reviewer ownership.', label: 'Review sales development support', href: '/services/sales-development-support' },
     related: [{ label: 'Review source-field lineage', href: '/research/philippines-outsourcing-source-field-lineage-research-2026' }, { label: 'Plan sales development support', href: '/services/sales-development-support' }]
   },
@@ -83,7 +83,7 @@ const topics: readonly Topic[] = [
     ],
     caseStudy: 'A marketing assistant receives an AI-generated testimonial image based on a real customer photograph, but the brief contains no approval record, disclosure plan, or route for the depicted person to object.',
     uncertainty: 'Identity, lawful basis, consent scope, protected expression, necessity, falsity, platform duties, remedies, and cross-border law depend on facts beyond an image file. This article does not decide whether a specific work may be created or published.',
-    sources: [{ name: `National Privacy Commission — Notice on real persons’ likenesses in AI-generated images (${checked})`, url: 'https://privacy.gov.ph/notice-to-the-public-use-of-real-persons-likenesses-in-ai-generated-images/' }, npcAi, npcIrr],
+    sources: [{ name: `National Privacy Commission , Notice on real persons’ likenesses in AI-generated images (${checked})`, url: 'https://privacy.gov.ph/notice-to-the-public-use-of-real-persons-likenesses-in-ai-generated-images/' }, npcAi, npcIrr],
     service: { heading: 'Put publication authority outside the production queue', copy: 'Use the digital marketing support guide to define asset sources, approvals, disclosures, reviewers, publishing rights, and takedown escalation before production begins.', label: 'Review digital marketing support', href: '/services/digital-marketing-support' },
     related: [{ label: 'Review website source controls', href: '/research/philippines-website-source-review-research-2026' }, { label: 'Plan digital marketing support', href: '/services/digital-marketing-support' }]
   },
@@ -107,7 +107,7 @@ const topics: readonly Topic[] = [
     ],
     caseStudy: 'A recruiting coordinator receives an AI-generated candidate ranking and is asked to reject every person below a threshold even though the team cannot see the model inputs, reason codes, or correction path.',
     uncertainty: 'Whether a workflow is automated decision-making, significantly affects a person, requires registration or notice, or provides meaningful intervention depends on the system and real consequence. This article is not a compliance determination or employment decision.',
-    sources: [npcAi, { name: `National Privacy Commission — Circular No. 17-01 on automated decision-making (${checked})`, url: 'https://privacy.gov.ph/npc-circular-17-01-registration-data-processing-notifications-regarding-automated-decision-making/' }, npcIrr],
+    sources: [npcAi, { name: `National Privacy Commission , Circular No. 17-01 on automated decision-making (${checked})`, url: 'https://privacy.gov.ph/npc-circular-17-01-registration-data-processing-notifications-regarding-automated-decision-making/' }, npcIrr],
     service: { heading: 'Keep candidate decisions with the hiring owner', copy: 'Use the recruitment coordination guide to separate scheduling and evidence preparation from screening criteria, automated recommendations, accommodations, and final hiring decisions.', label: 'Review recruitment coordination', href: '/services/recruitment-coordination' },
     related: [{ label: 'Review candidate interview coordination', href: '/research/philippines-candidate-interview-coordination-research-2026' }, { label: 'Plan recruitment coordination', href: '/services/recruitment-coordination' }]
   },
@@ -131,7 +131,7 @@ const topics: readonly Topic[] = [
     ],
     caseStudy: 'A provider enables a new transcription platform for support calls and describes it as an internal efficiency feature, while the buyer has no record of the platform, processing location, retention, or approval instruction.',
     uncertainty: 'Controller and processor roles, instruction form, contractual rights, international transfers, audit scope, notification periods, deletion feasibility, and legal duties depend on the actual parties and processing. Qualified privacy and legal owners must decide the change.',
-    sources: [npcIrr, { name: `National Privacy Commission — Third Parties guidance (${checked})`, url: 'https://privacy.gov.ph/third-parties/' }, { name: `National Privacy Commission — Advisory Opinion No. 2017-015 on outsourcing and another processor (${checked})`, url: 'https://privacy.gov.ph/wp-content/uploads/2022/01/NPC_AdvisoryOpinionNo._2017-015.pdf' }],
+    sources: [npcIrr, { name: `National Privacy Commission , Third Parties guidance (${checked})`, url: 'https://privacy.gov.ph/third-parties/' }, { name: `National Privacy Commission , Advisory Opinion No. 2017-015 on outsourcing and another processor (${checked})`, url: 'https://privacy.gov.ph/wp-content/uploads/2022/01/NPC_AdvisoryOpinionNo._2017-015.pdf' }],
     service: { heading: 'Map the processing chain before access begins', copy: 'Use the data processing support guide to define systems, minimum fields, account owners, review evidence, incident paths, and removal steps across every approved provider.', label: 'Review data processing support', href: '/services/data-processing-support' },
     related: [{ label: 'Review data-processing agreements', href: '/research/philippines-outsourcing-data-processing-agreement-research-2026' }, { label: 'Review provider verification', href: '/research/philippines-outsourcing-provider-verification-research-2026' }]
   }
@@ -157,7 +157,7 @@ function makePost(t: Topic): ResearchPost {
     methodology: `Qualitative desk review of ${t.sources.length} primary National Privacy Commission sources, checked September 23, 2026. The method separated explicit source propositions from FilipinoOutsource.com operating analysis, then applied the framework to a hypothetical boundary case and a five-case consecutive review design. No live workflow, provider, worker, personal data, model, product, price, or business outcome was tested.`,
     faq: [
       { q: 'Does this article approve a tool or workflow?', a: 'No. The accountable buyer and qualified owners must evaluate the real purpose, parties, data, configuration, contracts, risks, and applicable law.' },
-      { q: 'What may the support role own?', a: 'Approved evidence gathering, defined administrative preparation, source and version records, focused escalation, and correction evidence—not consequential decisions beyond written authority.' },
+      { q: 'What may the support role own?', a: 'Approved evidence gathering, defined administrative preparation, source and version records, focused escalation, and correction evidence,not consequential decisions beyond written authority.' },
       { q: 'Does a five-case review prove performance or compliance?', a: 'No. It tests whether the current instruction is usable on a bounded set and exposes exclusions, uncertainty, and disagreement.' },
       { q: 'When should the record be reopened?', a: 'When purpose, source, data, tool, party, feature, model, location, audience, reviewer, consequence, law, or retention practice changes.' }
     ],

@@ -56,7 +56,7 @@ function makePost(article: August18ResearchModule): ResearchPost {
     ],
     sources: [{ name: article.sourceName, url: article.sourceUrl }, ...sources.filter((source) => source.name !== article.sourceName)],
     serviceHandoff: article.serviceHandoff,
-    related: [{ label: 'Review services', href: '/services' }, { label: 'Read the company brief', href: '/about' }]
+    related: [{ label: 'Review services', href: '/services' }, { label: 'Explore services', href: '/services' }]
   };
 }
 

@@ -229,7 +229,7 @@ export const blogDetails = {
 
     bodyLinks: {
       internal: [
-        {href:'/services/admin-support',label:'admin support',note:'Use this service page when the first queue is administrative.'},
+        {href:'/services/executive-assistance',label:'admin support',note:'Use this service page when the first queue is administrative.'},
         {href:'/blog/Filipino-outsource-staffing-provider-questions',label:'provider questions',note:'Use these questions before comparing staffing options.'},
       ],
       external: {href:'https://www.cisa.gov/secure-our-world/require-multifactor-authentication',label:'CISA MFA',note:'Authority guidance for multifactor authentication and account safety.'},
@@ -541,7 +541,7 @@ export const blogDetails = {
     sources:[{name:'SBA: Hire and manage employees',url:'https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees',note:'Small-business hiring guidance that supports defining roles and responsibilities before hiring.'}],
     faqs:[{question:'What tasks are easiest to outsource first?',answer:'Start with repeat admin, support, records, scheduling prep, reporting, or follow-up work that has examples and a clear reviewer.'},{question:'Should I outsource sales calls first?',answer:'Only if scripts, compliance rules, recording/review, and escalation paths are already clear. Otherwise begin with research, list cleanup, or call prep.'},{question:'How do I know when to add more tasks?',answer:'Add tasks after the first queue is accurate, questions have decreased, and the SOP reflects real exceptions.'}],
     tags: ['Task selection', 'Outsourcing plan', 'Review process'],
-    related:[{href:'/blog/Filipino-outsource-staffing-planning',label:'Write staffing plan'},{href:'/blog/Filipino-outsource-staffing-provider-questions',label:'Provider questions'},{href:'/blog/Filipino-outsource-staffing-onboarding-checklist',label:'Use the launch checklist'},{href:'/services/admin-support',label:'Plan admin support'}],
+    related:[{href:'/blog/Filipino-outsource-staffing-planning',label:'Write staffing plan'},{href:'/blog/Filipino-outsource-staffing-provider-questions',label:'Provider questions'},{href:'/blog/Filipino-outsource-staffing-onboarding-checklist',label:'Use the launch checklist'},{href:'/services/executive-assistance',label:'Plan admin support'}],
   },
   'Filipino-outsource-staffing-onboarding-checklist': {
     datePublished: '2026-07-22',

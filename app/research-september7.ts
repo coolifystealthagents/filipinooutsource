@@ -1,10 +1,10 @@
 import type { ResearchPost } from './fleet-data';
 
 const sources = [
-  {name:'National Privacy Commission — Data Privacy Act of 2012',url:'https://privacy.gov.ph/data-privacy-act/'},
-  {name:'NIST SP 800-53 Rev. 5 — Audit and Accountability',url:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final'},
-  {name:'CISA — Require Multifactor Authentication',url:'https://www.cisa.gov/secure-our-world/require-multifactor-authentication'},
-  {name:'Philippine Statistics Authority — Technical Notes',url:'https://psa.gov.ph/statistics/technical-notes/165790'},
+  {name:'National Privacy Commission , Data Privacy Act of 2012',url:'https://privacy.gov.ph/data-privacy-act/'},
+  {name:'NIST SP 800-53 Rev. 5 , Audit and Accountability',url:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final'},
+  {name:'CISA , Require Multifactor Authentication',url:'https://www.cisa.gov/secure-our-world/require-multifactor-authentication'},
+  {name:'Philippine Statistics Authority , Technical Notes',url:'https://psa.gov.ph/statistics/technical-notes/165790'},
 ] as const;
 
 type Study = {slug:string;title:string;excerpt:string;cluster:string;question:string;setting:string;model:string;caseStudy:string;limit:string;finding:string;labels:readonly [string,string,string]};

@@ -32,10 +32,10 @@ const topics: readonly Topic[] = [
     ],
     uncertainty: 'The correct controller/processor roles, transfer mechanism, notice language, retention period, and security measures depend on the real parties, jurisdictions, data, systems, and purpose. This study does not determine compliance for a specific arrangement.',
     sources: [
-      { name: `National Privacy Commission — Data Privacy Act of 2012 (${checked})`, url: 'https://privacy.gov.ph/data-privacy-act/' },
-      { name: `National Privacy Commission — Implementing Rules and Regulations (${checked})`, url: 'https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/' },
-      { name: `National Privacy Commission — Advisory No. 2024-01, Model Contractual Clauses (${checked})`, url: 'https://privacy.gov.ph/wp-content/uploads/2024/06/Published-NPC-Advisory-No.-2024-01-Contractual-Clauses-for-Cross-Border-Transfers_30May24.pdf' },
-      { name: `National Privacy Commission — Manage Legal guidance (${checked})`, url: 'https://privacy.gov.ph/manage-legal/' }
+      { name: `National Privacy Commission , Data Privacy Act of 2012 (${checked})`, url: 'https://privacy.gov.ph/data-privacy-act/' },
+      { name: `National Privacy Commission , Implementing Rules and Regulations (${checked})`, url: 'https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/' },
+      { name: `National Privacy Commission , Advisory No. 2024-01, Model Contractual Clauses (${checked})`, url: 'https://privacy.gov.ph/wp-content/uploads/2024/06/Published-NPC-Advisory-No.-2024-01-Contractual-Clauses-for-Cross-Border-Transfers_30May24.pdf' },
+      { name: `National Privacy Commission , Manage Legal guidance (${checked})`, url: 'https://privacy.gov.ph/manage-legal/' }
     ],
     service: { heading: 'Translate the agreement into a controlled role', copy: 'Use the data-processing support service guide to narrow source systems, approved fields, review steps, and exception ownership before access begins.', label: 'Review data processing support', href: '/services/data-processing-support' },
     related: [{ label: 'Review access administration research', href: '/research/philippines-user-access-administration-research-2026' }, { label: 'Plan data processing support', href: '/services/data-processing-support' }]
@@ -60,9 +60,9 @@ const topics: readonly Topic[] = [
     ],
     uncertainty: 'Entitlement and computation can change with employment status, compensation structure, agreements, company practice, and later issuances. Agency fees and direct-employment costs are not interchangeable, and this article does not calculate an individual worker’s benefit.',
     sources: [
-      { name: `DOLE Bureau of Working Conditions — 13th-month pay guidance (${checked})`, url: 'https://bwc.dole.gov.ph/dole-bwc-urges-employers-to-release-13th-month-pay-not-later-than-december-24/' },
-      { name: `National Wages and Productivity Commission — Handbook on Workers’ Statutory Monetary Benefits (${checked})`, url: 'https://nwpc.dole.gov.ph/wp-content/uploads/2023/08/2023-07-25-Handbook-on-Workers-Statutory-Monetary-Benefits-2023_edition.pdf' },
-      { name: `Department of Labor and Employment — Labor Code, DOLE Edition 2022 (${checked})`, url: 'https://dole.gov.ph/labor-code-of-the-philippines-2/' }
+      { name: `DOLE Bureau of Working Conditions , 13th-month pay guidance (${checked})`, url: 'https://bwc.dole.gov.ph/dole-bwc-urges-employers-to-release-13th-month-pay-not-later-than-december-24/' },
+      { name: `National Wages and Productivity Commission , Handbook on Workers’ Statutory Monetary Benefits (${checked})`, url: 'https://nwpc.dole.gov.ph/wp-content/uploads/2023/08/2023-07-25-Handbook-on-Workers-Statutory-Monetary-Benefits-2023_edition.pdf' },
+      { name: `Department of Labor and Employment , Labor Code, DOLE Edition 2022 (${checked})`, url: 'https://dole.gov.ph/labor-code-of-the-philippines-2/' }
     ],
     service: { heading: 'Build the control into the finance workflow', copy: 'Use the bookkeeping support guide to define which records an assistant may prepare and which payroll, classification, or payment decisions stay with the employer and its advisers.', label: 'Review bookkeeping support', href: '/services/bookkeeping-support' },
     related: [{ label: 'Review bookkeeping controls research', href: '/research/philippines-bookkeeping-support-controls-research-2026' }, { label: 'Plan bookkeeping support', href: '/services/bookkeeping-support' }]
@@ -87,9 +87,9 @@ const topics: readonly Topic[] = [
     ],
     uncertainty: 'The applicable amounts, timing exceptions, separation characterization, data-retention duties, and dispute process depend on the employment facts, policies, agreements, and law. DOLE’s public release is a starting source, not an adjudication of a case.',
     sources: [
-      { name: `Department of Labor and Employment — Final pay and COE guidance, January 21, 2026 (${checked})`, url: 'https://dole.gov.ph/final-pay-coe-must-be-released-on-time-dole/' },
-      { name: `Department of Labor and Employment — Labor Code, DOLE Edition 2022 (${checked})`, url: 'https://dole.gov.ph/labor-code-of-the-philippines-2/' },
-      { name: `National Privacy Commission — Data Privacy Act of 2012 (${checked})`, url: 'https://privacy.gov.ph/data-privacy-act/' }
+      { name: `Department of Labor and Employment , Final pay and COE guidance, January 21, 2026 (${checked})`, url: 'https://dole.gov.ph/final-pay-coe-must-be-released-on-time-dole/' },
+      { name: `Department of Labor and Employment , Labor Code, DOLE Edition 2022 (${checked})`, url: 'https://dole.gov.ph/labor-code-of-the-philippines-2/' },
+      { name: `National Privacy Commission , Data Privacy Act of 2012 (${checked})`, url: 'https://privacy.gov.ph/data-privacy-act/' }
     ],
     service: { heading: 'Assign the offboarding administration lane', copy: 'Use the recruitment coordination guide to separate document follow-up and status tracking from employer decisions, payroll calculations, and legal review.', label: 'Review recruitment coordination', href: '/services/recruitment-coordination' },
     related: [{ label: 'Review access removal evidence', href: '/research/philippines-outsourcing-access-removal-research-2026' }, { label: 'Plan recruitment coordination', href: '/services/recruitment-coordination' }]
@@ -114,10 +114,10 @@ const topics: readonly Topic[] = [
     ],
     uncertainty: 'Coverage, hour rules, reporting obligations, safety measures, equipment terms, and employee rights depend on the actual employer, role, agreement, workplace, and later guidance. This operational model is not an employment-law opinion.',
     sources: [
-      { name: `Department of Labor and Employment — Department Order No. 237-22 (${checked})`, url: 'https://dole.gov.ph/news/department-order-no-237-22-revised-implementing-rules-and-regulations-of-ra-no-11165-otherwise-known-as-the-telecommuting-act/' },
-      { name: `Department of Labor and Employment — Expanded WFH guidance (${checked})`, url: 'https://dole.gov.ph/news/dole-expands-wfh-assures-standards-in-alternate-workplace/' },
-      { name: `DOLE Bureau of Working Conditions — Flexible work guidance, March 11, 2026 (${checked})`, url: 'https://bwc.dole.gov.ph/dole-bwc-provides-guidance-on-flexible-work-arrangements-while-safeguarding-workers-rights/' },
-      { name: `Department of Labor and Employment — Labor Code Book Three (${checked})`, url: 'https://dole.gov.ph/book-3-conditions-of-employment/' }
+      { name: `Department of Labor and Employment , Department Order No. 237-22 (${checked})`, url: 'https://dole.gov.ph/news/department-order-no-237-22-revised-implementing-rules-and-regulations-of-ra-no-11165-otherwise-known-as-the-telecommuting-act/' },
+      { name: `Department of Labor and Employment , Expanded WFH guidance (${checked})`, url: 'https://dole.gov.ph/news/dole-expands-wfh-assures-standards-in-alternate-workplace/' },
+      { name: `DOLE Bureau of Working Conditions , Flexible work guidance, March 11, 2026 (${checked})`, url: 'https://bwc.dole.gov.ph/dole-bwc-provides-guidance-on-flexible-work-arrangements-while-safeguarding-workers-rights/' },
+      { name: `Department of Labor and Employment , Labor Code Book Three (${checked})`, url: 'https://dole.gov.ph/book-3-conditions-of-employment/' }
     ],
     service: { heading: 'Convert the agreement into daily coordination', copy: 'Use the executive assistance guide to define overlap, calendar authority, availability signals, escalation rules, and the manager who approves exceptions.', label: 'Review executive assistance', href: '/services/executive-assistance' },
     related: [{ label: 'Review schedule overlap research', href: '/research/philippines-services-workforce-schedule-overlap-research-2026' }, { label: 'Plan executive assistance', href: '/services/executive-assistance' }]
@@ -136,19 +136,19 @@ const topics: readonly Topic[] = [
     ],
     application: [
       'Define official warning sources, who monitors them, which locations matter, what event triggers a safe stop, how workers report unavailability, and who assumes each critical queue.',
-      'Distribute knowledge and access before an event. A backup person needs current instructions, named credentials, a recoverable work queue, and authority boundaries—not merely a phone number.',
+      'Distribute knowledge and access before an event. A backup person needs current instructions, named credentials, a recoverable work queue, and authority boundaries,not merely a phone number.',
       'Prioritize life safety and local government instructions. No customer response target should pressure a worker to ignore evacuation, flood, wind, power, transport, or communications risks.',
       'After recovery, record the warning, affected period, work paused, handoff result, data integrity check, backlog owner, customer communication, and one improvement to the plan.'
     ],
     uncertainty: 'Hazards, local exposure, infrastructure, household conditions, and official instructions vary. This study does not predict availability, guarantee continuity, or replace PAGASA, local government, emergency, safety, insurance, or engineering advice.',
     sources: [
-      { name: `DOST-PAGASA — Typhoon and Flood Awareness Week 2026 (${checked})`, url: 'https://pagasa.dost.gov.ph/press-release/215' },
-      { name: `DOST-PAGASA — Severe wind hazard maps (${checked})`, url: 'https://www.pagasa.dost.gov.ph/products-and-services/severe-wind-maps' },
-      { name: `DOST-PAGASA — Storm surge information and preparedness (${checked})`, url: 'https://www.pagasa.dost.gov.ph/information/storm-surge' },
-      { name: `Department of Labor and Employment — Flexible work guidance, March 17, 2026 (${checked})`, url: 'https://dole.gov.ph/news/private-sector-may-implement-flexible-work-schemes-amid-middle-east-crisis-dole/' }
+      { name: `DOST-PAGASA , Typhoon and Flood Awareness Week 2026 (${checked})`, url: 'https://pagasa.dost.gov.ph/press-release/215' },
+      { name: `DOST-PAGASA , Severe wind hazard maps (${checked})`, url: 'https://www.pagasa.dost.gov.ph/products-and-services/severe-wind-maps' },
+      { name: `DOST-PAGASA , Storm surge information and preparedness (${checked})`, url: 'https://www.pagasa.dost.gov.ph/information/storm-surge' },
+      { name: `Department of Labor and Employment , Flexible work guidance, March 17, 2026 (${checked})`, url: 'https://dole.gov.ph/news/private-sector-may-implement-flexible-work-schemes-amid-middle-east-crisis-dole/' }
     ],
     service: { heading: 'Design a continuity-ready support queue', copy: 'Use the customer support operations guide to assign backup coverage, approved status messages, escalation owners, and a backlog-recovery review.', label: 'Review customer support operations', href: '/services/customer-support-operations' },
-    related: [{ label: 'Review remote handoff research', href: '/research/philippines-outsourcing-remote-handoff-research-2026' }, { label: 'Plan customer support operations', href: '/services/customer-support-operations' }]
+    related: [{ label: 'Review remote handoff research', href: '/research/philippines-remote-team-handoff-research-2026' }, { label: 'Plan customer support operations', href: '/services/customer-support-operations' }]
   }
 ];
 
@@ -232,7 +232,7 @@ function makePost(t: Topic): ResearchPost {
     faq: [
       { q: 'Is this legal, payroll, privacy, safety, or tax advice?', a: 'No. It is a buyer-side research and workflow framework. Qualified advisers and accountable owners must decide how current rules apply to the real facts.' },
       { q: 'Does a five-case sample prove performance?', a: 'No. It tests whether a written instruction is usable on a bounded set and makes exclusions and disagreement visible.' },
-      { q: 'What should the support role own?', a: 'Approved evidence gathering, defined administrative fields, status preparation, correction records, and focused escalation—not consequential decisions outside written authority.' },
+      { q: 'What should the support role own?', a: 'Approved evidence gathering, defined administrative fields, status preparation, correction records, and focused escalation,not consequential decisions outside written authority.' },
       { q: 'When should the workflow be reviewed again?', a: 'After a change in law or guidance, purpose, system, data, location, schedule, responsible owner, or recurring exception pattern.' }
     ],
     sources: t.sources, related: t.related, serviceHandoff: t.service, heroImage: '/article-planning.svg'

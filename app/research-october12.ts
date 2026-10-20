@@ -160,11 +160,11 @@ export const october12ResearchPosts: readonly ResearchPost[]=[
     ],
     "sources": [
       {
-        "name": "National Privacy Commission — Data Privacy Act of 2012",
+        "name": "National Privacy Commission , Data Privacy Act of 2012",
         "url": "https://privacy.gov.ph/data-privacy-act/"
       },
       {
-        "name": "Official Gazette — Republic Act No. 10173",
+        "name": "Official Gazette , Republic Act No. 10173",
         "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
       },
       {
@@ -180,23 +180,23 @@ export const october12ResearchPosts: readonly ResearchPost[]=[
         "url": "https://dict.gov.ph/"
       },
       {
-        "name": "International Labour Organization — Philippines",
+        "name": "International Labour Organization , Philippines",
         "url": "https://www.ilo.org/regions-and-countries/asia-and-pacific/philippines"
       },
       {
-        "name": "NIST — Cybersecurity Framework 2.0",
+        "name": "NIST , Cybersecurity Framework 2.0",
         "url": "https://www.nist.gov/cyberframework"
       },
       {
-        "name": "NIST — Privacy Framework",
+        "name": "NIST , Privacy Framework",
         "url": "https://www.nist.gov/privacy-framework"
       },
       {
-        "name": "CISA — Identity and Access Management",
+        "name": "CISA , Identity and Access Management",
         "url": "https://www.cisa.gov/topics/cybersecurity-best-practices/identity-and-access-management"
       },
       {
-        "name": "OECD — Guidelines on the Protection of Privacy",
+        "name": "OECD , Guidelines on the Protection of Privacy",
         "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0188"
       }
     ],
@@ -382,11 +382,11 @@ export const october12ResearchPosts: readonly ResearchPost[]=[
     ],
     "sources": [
       {
-        "name": "National Privacy Commission — Data Privacy Act of 2012",
+        "name": "National Privacy Commission , Data Privacy Act of 2012",
         "url": "https://privacy.gov.ph/data-privacy-act/"
       },
       {
-        "name": "Official Gazette — Republic Act No. 10173",
+        "name": "Official Gazette , Republic Act No. 10173",
         "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
       },
       {
@@ -402,23 +402,23 @@ export const october12ResearchPosts: readonly ResearchPost[]=[
         "url": "https://dict.gov.ph/"
       },
       {
-        "name": "International Labour Organization — Philippines",
+        "name": "International Labour Organization , Philippines",
         "url": "https://www.ilo.org/regions-and-countries/asia-and-pacific/philippines"
       },
       {
-        "name": "NIST — Cybersecurity Framework 2.0",
+        "name": "NIST , Cybersecurity Framework 2.0",
         "url": "https://www.nist.gov/cyberframework"
       },
       {
-        "name": "NIST — Privacy Framework",
+        "name": "NIST , Privacy Framework",
         "url": "https://www.nist.gov/privacy-framework"
       },
       {
-        "name": "CISA — Identity and Access Management",
+        "name": "CISA , Identity and Access Management",
         "url": "https://www.cisa.gov/topics/cybersecurity-best-practices/identity-and-access-management"
       },
       {
-        "name": "OECD — Guidelines on the Protection of Privacy",
+        "name": "OECD , Guidelines on the Protection of Privacy",
         "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0188"
       }
     ],
@@ -604,11 +604,11 @@ export const october12ResearchPosts: readonly ResearchPost[]=[
     ],
     "sources": [
       {
-        "name": "National Privacy Commission — Data Privacy Act of 2012",
+        "name": "National Privacy Commission , Data Privacy Act of 2012",
         "url": "https://privacy.gov.ph/data-privacy-act/"
       },
       {
-        "name": "Official Gazette — Republic Act No. 10173",
+        "name": "Official Gazette , Republic Act No. 10173",
         "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
       },
       {
@@ -624,23 +624,23 @@ export const october12ResearchPosts: readonly ResearchPost[]=[
         "url": "https://dict.gov.ph/"
       },
       {
-        "name": "International Labour Organization — Philippines",
+        "name": "International Labour Organization , Philippines",
         "url": "https://www.ilo.org/regions-and-countries/asia-and-pacific/philippines"
       },
       {
-        "name": "NIST — Cybersecurity Framework 2.0",
+        "name": "NIST , Cybersecurity Framework 2.0",
         "url": "https://www.nist.gov/cyberframework"
       },
       {
-        "name": "NIST — Privacy Framework",
+        "name": "NIST , Privacy Framework",
         "url": "https://www.nist.gov/privacy-framework"
       },
       {
-        "name": "CISA — Identity and Access Management",
+        "name": "CISA , Identity and Access Management",
         "url": "https://www.cisa.gov/topics/cybersecurity-best-practices/identity-and-access-management"
       },
       {
-        "name": "OECD — Guidelines on the Protection of Privacy",
+        "name": "OECD , Guidelines on the Protection of Privacy",
         "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0188"
       }
     ],
@@ -826,11 +826,11 @@ export const october12ResearchPosts: readonly ResearchPost[]=[
     ],
     "sources": [
       {
-        "name": "National Privacy Commission — Data Privacy Act of 2012",
+        "name": "National Privacy Commission , Data Privacy Act of 2012",
         "url": "https://privacy.gov.ph/data-privacy-act/"
       },
       {
-        "name": "Official Gazette — Republic Act No. 10173",
+        "name": "Official Gazette , Republic Act No. 10173",
         "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
       },
       {
@@ -846,23 +846,23 @@ export const october12ResearchPosts: readonly ResearchPost[]=[
         "url": "https://dict.gov.ph/"
       },
       {
-        "name": "International Labour Organization — Philippines",
+        "name": "International Labour Organization , Philippines",
         "url": "https://www.ilo.org/regions-and-countries/asia-and-pacific/philippines"
       },
       {
-        "name": "NIST — Cybersecurity Framework 2.0",
+        "name": "NIST , Cybersecurity Framework 2.0",
         "url": "https://www.nist.gov/cyberframework"
       },
       {
-        "name": "NIST — Privacy Framework",
+        "name": "NIST , Privacy Framework",
         "url": "https://www.nist.gov/privacy-framework"
       },
       {
-        "name": "CISA — Identity and Access Management",
+        "name": "CISA , Identity and Access Management",
         "url": "https://www.cisa.gov/topics/cybersecurity-best-practices/identity-and-access-management"
       },
       {
-        "name": "OECD — Guidelines on the Protection of Privacy",
+        "name": "OECD , Guidelines on the Protection of Privacy",
         "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0188"
       }
     ],
@@ -1048,11 +1048,11 @@ export const october12ResearchPosts: readonly ResearchPost[]=[
     ],
     "sources": [
       {
-        "name": "National Privacy Commission — Data Privacy Act of 2012",
+        "name": "National Privacy Commission , Data Privacy Act of 2012",
         "url": "https://privacy.gov.ph/data-privacy-act/"
       },
       {
-        "name": "Official Gazette — Republic Act No. 10173",
+        "name": "Official Gazette , Republic Act No. 10173",
         "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
       },
       {
@@ -1068,23 +1068,23 @@ export const october12ResearchPosts: readonly ResearchPost[]=[
         "url": "https://dict.gov.ph/"
       },
       {
-        "name": "International Labour Organization — Philippines",
+        "name": "International Labour Organization , Philippines",
         "url": "https://www.ilo.org/regions-and-countries/asia-and-pacific/philippines"
       },
       {
-        "name": "NIST — Cybersecurity Framework 2.0",
+        "name": "NIST , Cybersecurity Framework 2.0",
         "url": "https://www.nist.gov/cyberframework"
       },
       {
-        "name": "NIST — Privacy Framework",
+        "name": "NIST , Privacy Framework",
         "url": "https://www.nist.gov/privacy-framework"
       },
       {
-        "name": "CISA — Identity and Access Management",
+        "name": "CISA , Identity and Access Management",
         "url": "https://www.cisa.gov/topics/cybersecurity-best-practices/identity-and-access-management"
       },
       {
-        "name": "OECD — Guidelines on the Protection of Privacy",
+        "name": "OECD , Guidelines on the Protection of Privacy",
         "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0188"
       }
     ],

@@ -1,10 +1,10 @@
 import type { ResearchPost } from './fleet-data';
 
 const sources = [
-  {name:'National Privacy Commission — Data Privacy Act of 2012',url:'https://privacy.gov.ph/data-privacy-act/'},
-  {name:'NIST SP 800-53 Rev. 5 — Audit and Accountability',url:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final'},
-  {name:'CISA — Require Multifactor Authentication',url:'https://www.cisa.gov/secure-our-world/require-multifactor-authentication'},
-  {name:'Philippine Statistics Authority — Technical Notes',url:'https://psa.gov.ph/statistics/technical-notes/165790'},
+  {name:'National Privacy Commission , Data Privacy Act of 2012',url:'https://privacy.gov.ph/data-privacy-act/'},
+  {name:'NIST SP 800-53 Rev. 5 , Audit and Accountability',url:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final'},
+  {name:'CISA , Require Multifactor Authentication',url:'https://www.cisa.gov/secure-our-world/require-multifactor-authentication'},
+  {name:'Philippine Statistics Authority , Technical Notes',url:'https://psa.gov.ph/statistics/technical-notes/165790'},
 ] as const;
 
 type Study = {slug:string;title:string;excerpt:string;cluster:string;question:string;setting:string;model:string;caseStudy:string;limit:string;finding:string;labels:readonly [string,string,string]};
@@ -31,7 +31,7 @@ function makeStudy(s: Study): ResearchPost {
       {heading:'What the measure can and cannot say',paragraphs:[`${s.finding} A raw count cannot explain causation. It must be paired with total eligible items, the observation period, exclusions, and any instruction change during that period.`,`The coordinator may keep the record and flag a threshold chosen by the client. The owner decides whether the pattern changes staffing, policy, access, or workflow. A small sample may be useful for diagnosis without supporting a general claim about people or providers.`]},
       {heading:'A boundary case',paragraphs:[s.caseStudy,`The safe handoff keeps both the earlier state and the later evidence. It names what changed, which action remains paused, and who can decide. Replacing the original record would make the eventual result look simpler than the work actually was.`]},
       {heading:'A practical review routine',paragraphs:[`Start with five consecutive eligible items and one deliberately selected exception. Ask a second reviewer to reproduce the status from the approved sources, check the category, and locate the decision owner. Record disagreement instead of forcing consensus into the first label.`,`Review category definitions after the sample. If two reviewers use one label differently, revise the example or split the category. Keep the old version and effective date so historical counts are not silently compared under a new rule.`]},
-      {heading:'Limitations and evidence-led conclusion',paragraphs:[s.limit,`The evidence supports a narrow conclusion: ${s.finding.toLowerCase()} For FilipinoOutsource.com buyers, the useful next step is a small, dated sample with visible source links and owner decisions—not a benchmark borrowed from another queue.`,`Access limits, retention, professional review, and customer or employee rights still depend on the buyer’s setting. Any legal, accounting, clinical, employment, security, or commercial determination stays with an authorized professional or client owner.`]},
+      {heading:'Limitations and evidence-led conclusion',paragraphs:[s.limit,`The evidence supports a narrow conclusion: ${s.finding.toLowerCase()} For FilipinoOutsource.com buyers, the useful next step is a small, dated sample with visible source links and owner decisions,not a benchmark borrowed from another queue.`,`Access limits, retention, professional review, and customer or employee rights still depend on the buyer’s setting. Any legal, accounting, clinical, employment, security, or commercial determination stays with an authorized professional or client owner.`]},
     ],
     methodology:`Qualitative desk analysis applying official Philippine privacy guidance, NIST audit-control guidance, CISA access guidance, and PSA definition practices to five hypothetical ${s.cluster.toLowerCase()} records. No production provider, worker, customer, or outcome was measured.`,
     faq:[{q:'Does the study set a performance target?',a:'No. It proposes observable fields and limits; the buyer defines any target for its own queue.'},{q:'Can a coordinator resolve the exception?',a:'The coordinator can document and route it. The authorized client owner makes the consequential decision.'},{q:'What is the smallest useful test?',a:'Review five eligible records and one exception against the original sources with a second reviewer.'}],

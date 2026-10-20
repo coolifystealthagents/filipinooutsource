@@ -25,9 +25,9 @@ const topics: readonly PrimarySourceResearchTopic[] = [
     boundary: 'A customer supplies a screenshot showing free delivery, while the current product page shows a delivery charge and the order was placed through a marketplace operated by another company. The coordinator can preserve both states and route the discrepancy, but cannot decide which party is liable or promise a refund.',
     uncertainty: 'The applicable rights, disclosures, remedy, jurisdiction, platform responsibility, evidence standard, and enforcement route depend on the actual transaction and current law. This workflow study is not legal advice and does not establish that any seller, platform, or support process complies with the Internet Transactions Act.',
     sources: [
-      { name: `Department of Trade and Industry Ecommerce Bureau — Republic Act No. 11967, Internet Transactions Act of 2023 (${checked})`, url: 'https://ecommerce.dti.gov.ph/internet-transactions-act-of-2023/' },
-      { name: `Official Gazette — Republic Act No. 11967 (${checked})`, url: 'https://www.officialgazette.gov.ph/2023/12/05/republic-act-no-11967/' },
-      { name: `Department of Trade and Industry — Consumer Protection (${checked})`, url: 'https://www.dti.gov.ph/konsyumer/consumer-education/' }
+      { name: `Department of Trade and Industry Ecommerce Bureau , Republic Act No. 11967, Internet Transactions Act of 2023 (${checked})`, url: 'https://ecommerce.dti.gov.ph/internet-transactions-act-of-2023/' },
+      { name: `Official Gazette , Republic Act No. 11967 (${checked})`, url: 'https://www.officialgazette.gov.ph/2023/12/05/republic-act-no-11967/' },
+      { name: `Department of Trade and Industry , Consumer Protection (${checked})`, url: 'https://www.dti.gov.ph/konsyumer/consumer-education/' }
     ],
     service: { heading: 'Build a transaction evidence queue', copy: 'Use the ecommerce operations guide to define order evidence, approved statuses, remedy owners, customer communication, and exception routes before a live queue is delegated.', label: 'Review ecommerce operations', href: '/services/ecommerce-operations' },
     related: [{ label: 'Review order exception research', href: '/research/philippines-order-exception-resolution-research-2026' }, { label: 'Plan customer support operations', href: '/services/customer-support-operations' }]
@@ -53,13 +53,13 @@ const topics: readonly PrimarySourceResearchTopic[] = [
     boundary: 'A supplier sends a document labeled official receipt, then emails a replacement invoice with a different tax identifier and new bank details. The support worker can compare and quarantine the records, but should not choose the valid tax document, change the vendor master, or release payment.',
     uncertainty: 'The valid invoice form, tax consequences, evidence needed by a buyer, transitional treatment, record retention, and correction method depend on current BIR rules and transaction facts. This article does not provide tax, accounting, or legal advice and does not validate any invoice.',
     sources: [
-      { name: `Bureau of Internal Revenue — Revenue Regulations No. 7-2024 (${checked})`, url: 'https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%207-%202024.pdf' },
-      { name: `Bureau of Internal Revenue — Revenue Regulations No. 3-2024 (${checked})`, url: 'https://bir-cdn.bir.gov.ph/BIR/pdf/RR%203-2024%20%28final%29.pdf' },
-      { name: `Bureau of Internal Revenue — Revenue Regulations No. 11-2024 (${checked})`, url: 'https://bir-cdn.bir.gov.ph/BIR/pdf/RR%2011-2024.pdf' },
-      { name: `Bureau of Internal Revenue — Ease of Paying Taxes portal (${checked})`, url: 'https://www.bir.gov.ph/EOPT' }
+      { name: `Bureau of Internal Revenue , Revenue Regulations No. 7-2024 (${checked})`, url: 'https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%207-%202024.pdf' },
+      { name: `Bureau of Internal Revenue , Revenue Regulations No. 3-2024 (${checked})`, url: 'https://bir-cdn.bir.gov.ph/BIR/pdf/RR%203-2024%20%28final%29.pdf' },
+      { name: `Bureau of Internal Revenue , Revenue Regulations No. 11-2024 (${checked})`, url: 'https://bir-cdn.bir.gov.ph/BIR/pdf/RR%2011-2024.pdf' },
+      { name: `Bureau of Internal Revenue , Ease of Paying Taxes portal (${checked})`, url: 'https://www.bir.gov.ph/EOPT' }
     ],
     service: { heading: 'Separate preparation from financial authority', copy: 'Use the bookkeeping support guide to define source fields, comparison steps, exception owners, posting access, payment gates, and review evidence.', label: 'Review bookkeeping support', href: '/services/bookkeeping-support' },
-    related: [{ label: 'Review invoice exception records', href: '/research/philippines-invoice-exception-records-research-2026' }, { label: 'Review payment reconciliation research', href: '/research/philippines-payment-reconciliation-research-2026' }]
+    related: [{ label: 'Review invoice exception records', href: '/research/philippines-invoice-exception-records-research-2026' }, { label: 'Review payment reconciliation research', href: '/research/philippines-payment-reconciliation-exception-research-2026' }]
   },
   {
     slug: 'philippines-outsourcing-sss-contribution-handoff-research-2026',
@@ -82,12 +82,12 @@ const topics: readonly PrimarySourceResearchTopic[] = [
     boundary: 'The employer total was paid using a valid PRN, but one employee line used a former identifier and does not appear in the posting report. The coordinator can preserve the mismatch and prepare the evidence, but cannot move the amount to another employee or declare the obligation resolved.',
     uncertainty: 'Coverage, contribution amounts, deadlines, compensation treatment, employer liability, correction steps, and official account status depend on current SSS rules and employer facts. This workflow is not payroll, benefits, accounting, or legal advice and does not prove successful remittance.',
     sources: [
-      { name: `Social Security System — Employer duties and responsibilities (${checked})`, url: 'https://www.sss.gov.ph/employer-er/' },
-      { name: `Social Security System — Pay Contributions and Payment Reference Number guidance (${checked})`, url: 'https://www.sss.gov.ph/pay-contribution/' },
-      { name: `Social Security System — Official payment channels (${checked})`, url: 'https://www.sss.gov.ph/sss-payment-channels/' }
+      { name: `Social Security System , Employer duties and responsibilities (${checked})`, url: 'https://www.sss.gov.ph/employer-er/' },
+      { name: `Social Security System , Pay Contributions and Payment Reference Number guidance (${checked})`, url: 'https://www.sss.gov.ph/pay-contribution/' },
+      { name: `Social Security System , Official payment channels (${checked})`, url: 'https://www.sss.gov.ph/sss-payment-channels/' }
     ],
     service: { heading: 'Build a reviewable payroll support lane', copy: 'Use the bookkeeping support guide to separate payroll evidence preparation, employer approval, payment authority, posting reconciliation, and correction ownership.', label: 'Review bookkeeping support', href: '/services/bookkeeping-support' },
-    related: [{ label: 'Review thirteenth-month-pay budgeting research', href: '/research/philippines-outsourcing-thirteenth-month-pay-budget-research-2026' }, { label: 'Review employee record reconciliation', href: '/research/philippines-employee-record-reconciliation-research-2026' }]
+    related: [{ label: 'Review thirteenth-month-pay budgeting research', href: '/research/philippines-outsourcing-thirteenth-month-pay-budget-research-2026' }, { label: 'Review employee record reconciliation', href: '/research/philippines-employee-records-administration-research-2026' }]
   },
   {
     slug: 'philippines-outsourcing-remote-device-custody-research-2026',
@@ -110,9 +110,9 @@ const topics: readonly PrimarySourceResearchTopic[] = [
     boundary: 'A remote coordinator returns a company laptop, but their browser session still reaches a customer system and an approved sync folder remains on a personal phone used during an outage. Receiving the laptop does not prove that access or copies ended.',
     uncertainty: 'Appropriate configuration, monitoring authority, employee notice, BYOD controls, forensic preservation, wiping, retention, and disposal depend on the actual device, data, relationship, contract, risk, and current law. This desk review does not certify a device or security program.',
     sources: [
-      { name: `National Privacy Commission — PHE Bulletin No. 12: Protecting Personal Data in a Work From Home Arrangement (${checked})`, url: 'https://privacy.gov.ph/npc-phe-bulletin-no-12-protecting-personal-data-in-a-work-from-home-arrangement/' },
-      { name: `National Privacy Commission — Implementing Rules and Regulations of the Data Privacy Act (${checked})`, url: 'https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/' },
-      { name: `National Privacy Commission — Data Security guidance (${checked})`, url: 'https://privacy.gov.ph/data-security/' }
+      { name: `National Privacy Commission , PHE Bulletin No. 12: Protecting Personal Data in a Work From Home Arrangement (${checked})`, url: 'https://privacy.gov.ph/npc-phe-bulletin-no-12-protecting-personal-data-in-a-work-from-home-arrangement/' },
+      { name: `National Privacy Commission , Implementing Rules and Regulations of the Data Privacy Act (${checked})`, url: 'https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/' },
+      { name: `National Privacy Commission , Data Security guidance (${checked})`, url: 'https://privacy.gov.ph/data-security/' }
     ],
     service: { heading: 'Connect devices to role boundaries', copy: 'Use the data processing support guide to map necessary applications, approved data, named accounts, incident routes, removal triggers, and verification evidence.', label: 'Review data processing support', href: '/services/data-processing-support' },
     related: [{ label: 'Review BYOD controls research', href: '/research/philippines-outsourcing-byod-controls-research-2026' }, { label: 'Review access removal evidence', href: '/research/philippines-outsourcing-access-removal-research-2026' }]
@@ -138,10 +138,10 @@ const topics: readonly PrimarySourceResearchTopic[] = [
     boundary: 'The provider confirms that all files were deleted, but one shared drive is owned by a departed worker, a reporting integration still has an active token, and a subprocessor retains backups under an unspecified schedule. Contract termination has occurred; verified operational closure has not.',
     uncertainty: 'Return, retention, deletion, audit access, employee records, legal hold, backup handling, subprocessor duties, and acceptable proof depend on the contract, role, data, systems, jurisdictions, and current professional advice. This framework does not prove deletion or discharge contractual or statutory duties.',
     sources: [
-      { name: `National Privacy Commission — Implementing Rules and Regulations of the Data Privacy Act (${checked})`, url: 'https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/' },
-      { name: `National Privacy Commission — Manage Legal: outsourcing and contractual safeguards (${checked})`, url: 'https://privacy.gov.ph/manage-legal/' },
-      { name: `National Privacy Commission — Data Security guidance (${checked})`, url: 'https://privacy.gov.ph/data-security/' },
-      { name: `National Privacy Commission — Accountability guidance (${checked})`, url: 'https://privacy.gov.ph/accountability/' }
+      { name: `National Privacy Commission , Implementing Rules and Regulations of the Data Privacy Act (${checked})`, url: 'https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/' },
+      { name: `National Privacy Commission , Manage Legal: outsourcing and contractual safeguards (${checked})`, url: 'https://privacy.gov.ph/manage-legal/' },
+      { name: `National Privacy Commission , Data Security guidance (${checked})`, url: 'https://privacy.gov.ph/data-security/' },
+      { name: `National Privacy Commission , Accountability guidance (${checked})`, url: 'https://privacy.gov.ph/accountability/' }
     ],
     service: { heading: 'Design the exit before access starts', copy: 'Use the staffing planning guide to name systems, evidence owners, handoff requirements, removal triggers, and verification steps before the engagement begins.', label: 'Read the staffing planning guide', href: '/blog/Filipino-outsource-staffing-planning' },
     related: [{ label: 'Review access removal evidence', href: '/research/philippines-outsourcing-access-removal-research-2026' }, { label: 'Review instruction register research', href: '/research/philippines-outsourcing-instruction-register-research-2026' }]

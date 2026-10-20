@@ -1,11 +1,13 @@
 import { Header, Footer, JsonLd } from './components';
 import { site, services, blogPosts, staffingOffer } from './data';
 
+export const metadata = { alternates: { canonical: '/' } };
+
 const steps = [
-  ['01', 'Map the work', 'List the repeatable tasks, examples, tools, hours, and decisions that stay with your team.'],
-  ['02', 'Meet the shortlist', 'Review Filipino candidates against the same work sample and written scorecard.'],
-  ['03', 'Run a narrow first week', 'Start with limited access, daily review, and a named person who can answer questions.'],
-  ['04', 'Add work when it is steady', 'Expand the role only after the first handoffs are accurate and easy to review.'],
+  ['Scope', 'Map the work', 'List the repeatable tasks, examples, tools, hours, and decisions that stay with your team.'],
+  ['Match', 'Meet the shortlist', 'Review Filipino candidates against the same work sample and written scorecard.'],
+  ['Launch', 'Run a narrow first week', 'Start with limited access, daily review, and a named person who can answer questions.'],
+  ['Grow', 'Add work when it is steady', 'Expand the role only after the first handoffs are accurate and easy to review.'],
 ] as const;
 
 export default function Home() {
@@ -39,7 +41,7 @@ export default function Home() {
 
     <section className="container ph-section" id="roles">
       <div className="ph-section-head"><div><p className="ph-kicker dark">Start with the work</p><h2>Pick a role.</h2></div><p>You do not need a grand outsourcing plan. Pick one lane with repeatable work, decent examples, and a manager who can review early handoffs.</p></div>
-      <div className="ph-role-grid">{services.map((service, index) => <a id={`cta-home-services-open-${service.slug}`} href={`/services/${service.slug}`} className="ph-role" key={service.slug}><span>0{index + 1}</span><h3>{service.title}</h3><p>{service.desc}</p><b>Open the role brief →</b></a>)}</div>
+      <div className="ph-role-grid">{services.map((service) => <a id={`cta-home-services-open-${service.slug}`} href={`/services/${service.slug}`} className="ph-role" key={service.slug}><span>Role brief</span><h3>{service.title}</h3><p>{service.desc}</p><b>Open the role brief →</b></a>)}</div>
     </section>
 
     <section className="ph-system" id="how-it-works">

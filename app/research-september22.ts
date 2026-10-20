@@ -32,10 +32,10 @@ const topics: readonly Topic[] = [
     ],
     uncertainty: 'Registration systems, filing status, licensing duties, tax records, ownership, and contracting authority can change and may require paid records or professional interpretation. This study does not approve any provider or establish that registration proves service quality, solvency, security, or compliance.',
     sources: [
-      { name: `Securities and Exchange Commission — Company Registration System (${checked})`, url: 'https://appointment.sec.gov.ph/online-services/sec-company-registration-system/' },
-      { name: `Securities and Exchange Commission — Check with SEC (${checked})`, url: 'https://checkwithsec.sec.gov.ph/' },
-      { name: `Department of Trade and Industry — Business Name Registration System (${checked})`, url: 'https://bnrs.dti.gov.ph/' },
-      { name: `National Privacy Commission — Implementing Rules and Regulations (${checked})`, url: 'https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/' }
+      { name: `Securities and Exchange Commission , Company Registration System (${checked})`, url: 'https://appointment.sec.gov.ph/online-services/sec-company-registration-system/' },
+      { name: `Securities and Exchange Commission , Check with SEC (${checked})`, url: 'https://checkwithsec.sec.gov.ph/' },
+      { name: `Department of Trade and Industry , Business Name Registration System (${checked})`, url: 'https://bnrs.dti.gov.ph/' },
+      { name: `National Privacy Commission , Implementing Rules and Regulations (${checked})`, url: 'https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/' }
     ],
     service: { heading: 'Turn provider checks into a scoped operating lane', copy: 'Use the data processing support guide to define the entity, systems, records, access, reviewer, and evidence needed before live work begins.', label: 'Review data processing support', href: '/services/data-processing-support' },
     related: [{ label: 'Review data-processing agreement research', href: '/research/philippines-outsourcing-data-processing-agreement-research-2026' }, { label: 'Read provider questions', href: '/blog/Filipino-outsource-staffing-provider-questions' }]
@@ -60,9 +60,9 @@ const topics: readonly Topic[] = [
     ],
     uncertainty: 'Holiday classification, geographic coverage, employee coverage, pay computation, rest-day interaction, collective agreements, local proclamations, and provider pricing depend on current facts and issuances. This article is not payroll or employment-law advice.',
     sources: [
-      { name: `Bureau of Working Conditions — 2026 Labor Advisories (${checked})`, url: 'https://bwc.dole.gov.ph/issuances/labor-advisories/' },
-      { name: `Department of Labor and Employment — Labor Code Book Three (${checked})`, url: 'https://dole.gov.ph/book-3-conditions-of-employment/' },
-      { name: `National Wages and Productivity Commission — Workers’ Statutory Monetary Benefits Handbook (${checked})`, url: 'https://nwpc.dole.gov.ph/wp-content/uploads/2024/11/Workers-Statutory-Monetary-Benefits-Handbook-2024-Edition.pdf' }
+      { name: `Bureau of Working Conditions , 2026 Labor Advisories (${checked})`, url: 'https://bwc.dole.gov.ph/issuances/labor-advisories/' },
+      { name: `Department of Labor and Employment , Labor Code Book Three (${checked})`, url: 'https://dole.gov.ph/book-3-conditions-of-employment/' },
+      { name: `National Wages and Productivity Commission , Workers’ Statutory Monetary Benefits Handbook (${checked})`, url: 'https://nwpc.dole.gov.ph/wp-content/uploads/2024/11/Workers-Statutory-Monetary-Benefits-Handbook-2024-Edition.pdf' }
     ],
     service: { heading: 'Build coverage into customer operations', copy: 'Use the customer support operations guide to define hours, priorities, backup ownership, approved messages, and escalation routes before a holiday window.', label: 'Review customer support operations', href: '/services/customer-support-operations' },
     related: [{ label: 'Review schedule overlap research', href: '/research/philippines-services-workforce-schedule-overlap-research-2026' }, { label: 'Plan customer support operations', href: '/services/customer-support-operations' }]
@@ -87,9 +87,9 @@ const topics: readonly Topic[] = [
     ],
     uncertainty: 'Whether an event is a personal data breach, whether notification is mandatory, when knowledge occurred, which jurisdictions apply, and what containment is appropriate depend on the real facts. Only accountable privacy, security, legal, and controller representatives should make those decisions.',
     sources: [
-      { name: `National Privacy Commission — Circular No. 16-03, Personal Data Breach Management (${checked})`, url: 'https://privacy.gov.ph/wp-content/uploads/2016/12/sgd-npc-circular-16-03-personal-data-breach-management.pdf' },
-      { name: `National Privacy Commission — Circulars strengthening personal-data protection (${checked})`, url: 'https://privacy.gov.ph/npc-issues-circulars-to-strengthen-personal-data-protection-in-ph/' },
-      { name: `National Privacy Commission — Data Privacy Act implementing rules (${checked})`, url: 'https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/' }
+      { name: `National Privacy Commission , Circular No. 16-03, Personal Data Breach Management (${checked})`, url: 'https://privacy.gov.ph/wp-content/uploads/2016/12/sgd-npc-circular-16-03-personal-data-breach-management.pdf' },
+      { name: `National Privacy Commission , Circulars strengthening personal-data protection (${checked})`, url: 'https://privacy.gov.ph/npc-issues-circulars-to-strengthen-personal-data-protection-in-ph/' },
+      { name: `National Privacy Commission , Data Privacy Act implementing rules (${checked})`, url: 'https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/' }
     ],
     service: { heading: 'Write the incident route before granting access', copy: 'Use the data processing support guide to limit accounts, define evidence fields, and name the client privacy and security owners who receive an incident escalation.', label: 'Review data processing support', href: '/services/data-processing-support' },
     related: [{ label: 'Review access removal evidence', href: '/research/philippines-outsourcing-access-removal-research-2026' }, { label: 'Review data processing agreements', href: '/research/philippines-outsourcing-data-processing-agreement-research-2026' }]
@@ -114,9 +114,9 @@ const topics: readonly Topic[] = [
     ],
     uncertainty: 'The lawful basis, employer role, monitoring purpose, worker expectations, home context, system design, employment agreement, and data captured vary materially. This desk study neither authorizes a monitoring practice nor determines that any product is compliant.',
     sources: [
-      { name: `National Privacy Commission — WFH privacy FAQ and monitoring guidance (${checked})`, url: 'https://privacy.gov.ph/npc-phe-bulletin-no-14-updated-frequently-asked-questions-faqs/' },
-      { name: `National Privacy Commission — Advisory Opinion No. 2024-003 in 2023 Compendium (${checked})`, url: 'https://privacy.gov.ph/wp-content/uploads/2024/05/2023-compendium-2.pdf' },
-      { name: `National Privacy Commission — Data Privacy Act of 2012 (${checked})`, url: 'https://privacy.gov.ph/data-privacy-act/' }
+      { name: `National Privacy Commission , WFH privacy FAQ and monitoring guidance (${checked})`, url: 'https://privacy.gov.ph/npc-phe-bulletin-no-14-updated-frequently-asked-questions-faqs/' },
+      { name: `National Privacy Commission , Advisory Opinion No. 2024-003 in 2023 Compendium (${checked})`, url: 'https://privacy.gov.ph/wp-content/uploads/2024/05/2023-compendium-2.pdf' },
+      { name: `National Privacy Commission , Data Privacy Act of 2012 (${checked})`, url: 'https://privacy.gov.ph/data-privacy-act/' }
     ],
     service: { heading: 'Manage outputs instead of ambient presence', copy: 'Use the executive assistance guide to define finished work, check-in points, review samples, calendar authority, and exception ownership without substituting surveillance for role design.', label: 'Review executive assistance', href: '/services/executive-assistance' },
     related: [{ label: 'Review telecommuting agreement research', href: '/research/philippines-telecommuting-agreement-operations-research-2026' }, { label: 'Plan executive assistance', href: '/services/executive-assistance' }]
@@ -141,9 +141,9 @@ const topics: readonly Topic[] = [
     ],
     uncertainty: 'Appropriate controls depend on data sensitivity, platform capabilities, employment and contracting relationships, local law, worker notice, device ownership, threat model, and the buyer’s other jurisdictions. BYOD may be unsuitable for some workflows even when a policy exists.',
     sources: [
-      { name: `National Privacy Commission — Protecting Personal Data in a WFH Arrangement (${checked})`, url: 'https://privacy.gov.ph/npc-phe-bulletin-no-12-protecting-personal-data-in-a-work-from-home-arrangement/' },
-      { name: `National Privacy Commission — Circular No. 2023-06 overview (${checked})`, url: 'https://privacy.gov.ph/npc-issues-circulars-to-strengthen-personal-data-protection-in-ph/' },
-      { name: `National Privacy Commission — Data Privacy Act implementing rules (${checked})`, url: 'https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/' }
+      { name: `National Privacy Commission , Protecting Personal Data in a WFH Arrangement (${checked})`, url: 'https://privacy.gov.ph/npc-phe-bulletin-no-12-protecting-personal-data-in-a-work-from-home-arrangement/' },
+      { name: `National Privacy Commission , Circular No. 2023-06 overview (${checked})`, url: 'https://privacy.gov.ph/npc-issues-circulars-to-strengthen-personal-data-protection-in-ph/' },
+      { name: `National Privacy Commission , Data Privacy Act implementing rules (${checked})`, url: 'https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/' }
     ],
     service: { heading: 'Match device controls to the data task', copy: 'Use the data processing support guide to define minimum fields, approved systems, export limits, reviewer access, and removal evidence before choosing an endpoint model.', label: 'Review data processing support', href: '/services/data-processing-support' },
     related: [{ label: 'Review access administration research', href: '/research/philippines-user-access-administration-research-2026' }, { label: 'Plan data processing support', href: '/services/data-processing-support' }]
@@ -169,7 +169,7 @@ function makePost(t: Topic): ResearchPost {
       { heading: 'Buyer implementation sequence', paragraphs: ['First, state the exact output and its business purpose. Second, map authoritative inputs and minimum fields. Third, name the reviewer and decisions outside the support role. Fourth, reduce access and retention to the smallest practical scope. Fifth, test consecutive cases and preserve disagreements. Sixth, revise the instruction before deciding whether volume should expand.', 'The commercial discussion should mirror the operating design. Ask who employs or contracts with the worker, who supervises daily work, who owns each system, who responds to incidents, who provides backup coverage, and what evidence the buyer receives. An agency label does not answer questions the actual agreement leaves open.', 'During the first month, examine exceptions more closely than throughput. A queue with few escalations may be clear, or workers may be guessing. Sample source-to-output accuracy and ask why work was not escalated. Treat visible uncertainty and timely stops as correct work when the instruction requires them.', 'At the end of the first review period, retain a decision register: what changed, why, which source supported it, who approved it, when it took effect, and when it will be revisited. This makes onboarding a controlled learning cycle instead of a one-time transfer of undocumented manager habits.'] }
     ],
     methodology: `Qualitative desk review of ${t.sources.length} primary Philippine government sources, checked September 22, 2026. The analysis separated explicit source statements from buyer-side workflow inferences, then tested the proposed record against complete, missing, conflicting, authorization-boundary, and timing scenarios. No provider, worker, client, production system, personal data, price, or outcome was studied. The method cannot establish prevalence, performance, legal compliance, or causation.`,
-    faq: [{ q: 'Is this legal, payroll, privacy, security, or tax advice?', a: 'No. It is a buyer-side research and workflow framework. Qualified advisers and accountable owners must decide how current rules apply to the real facts.' }, { q: 'Does a five-case sample prove performance?', a: 'No. It tests whether a written instruction is usable on a bounded set and makes exclusions and disagreement visible.' }, { q: 'What should the support role own?', a: 'Approved evidence gathering, defined administrative fields, status preparation, correction records, and focused escalation—not consequential decisions outside written authority.' }, { q: 'When should the workflow be reviewed again?', a: 'After a change in law or guidance, purpose, system, data, location, schedule, responsible owner, or recurring exception pattern.' }],
+    faq: [{ q: 'Is this legal, payroll, privacy, security, or tax advice?', a: 'No. It is a buyer-side research and workflow framework. Qualified advisers and accountable owners must decide how current rules apply to the real facts.' }, { q: 'Does a five-case sample prove performance?', a: 'No. It tests whether a written instruction is usable on a bounded set and makes exclusions and disagreement visible.' }, { q: 'What should the support role own?', a: 'Approved evidence gathering, defined administrative fields, status preparation, correction records, and focused escalation,not consequential decisions outside written authority.' }, { q: 'When should the workflow be reviewed again?', a: 'After a change in law or guidance, purpose, system, data, location, schedule, responsible owner, or recurring exception pattern.' }],
     sources: t.sources, related: t.related, serviceHandoff: t.service, heroImage: '/article-planning.svg'
   };
 }

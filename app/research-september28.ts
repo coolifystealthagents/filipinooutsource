@@ -25,12 +25,12 @@ const topics: readonly PrimarySourceResearchTopic[] = [
     boundary: 'An employer payment succeeds, but two employees were omitted after a late roster change and a third line carries an identifier that belongs to a former worker. The coordinator may isolate and document each mismatch; payment success is not proof that every member record posted correctly.',
     uncertainty: 'Rates, deadlines, coverage, member status, retroactive treatment, penalties, correction methods, and benefits consequences depend on current PhilHealth rules and employer facts. This workflow study is not payroll, benefits, accounting, or legal advice and does not verify remittance.',
     sources: [
-      { name: `PhilHealth — Employer Payment and Reporting Procedures (${checked})`, url: 'https://www.philhealth.gov.ph/partners/employers/pay_procedures.php' },
-      { name: `PhilHealth — Employers portal (${checked})`, url: 'https://www.philhealth.gov.ph/partners/employers/' },
-      { name: `PhilHealth — Circular 2020-0008 on EPRS online payment (${checked})`, url: 'https://www.philhealth.gov.ph/circulars/2020/circ2020-0008.pdf' }
+      { name: `PhilHealth , Employer Payment and Reporting Procedures (${checked})`, url: 'https://www.philhealth.gov.ph/partners/employers/pay_procedures.php' },
+      { name: `PhilHealth , Employers portal (${checked})`, url: 'https://www.philhealth.gov.ph/partners/employers/' },
+      { name: `PhilHealth , Circular 2020-0008 on EPRS online payment (${checked})`, url: 'https://www.philhealth.gov.ph/circulars/2020/circ2020-0008.pdf' }
     ],
     service: { heading: 'Separate preparation from employer authority', copy: 'Use the bookkeeping support guide to define source payroll, roster controls, EPRS access, approval gates, payment authority, posting checks, and exception ownership.', label: 'Review bookkeeping support', href: '/services/bookkeeping-support' },
-    related: [{ label: 'Review SSS contribution handoff research', href: '/research/philippines-outsourcing-sss-contribution-handoff-research-2026' }, { label: 'Review employee record reconciliation', href: '/research/philippines-employee-record-reconciliation-research-2026' }]
+    related: [{ label: 'Review SSS contribution handoff research', href: '/research/philippines-outsourcing-sss-contribution-handoff-research-2026' }, { label: 'Review employee record reconciliation', href: '/research/philippines-employee-records-administration-research-2026' }]
   },
   {
     slug: 'philippines-outsourcing-pagibig-contribution-reconciliation-research-2026',
@@ -53,9 +53,9 @@ const topics: readonly PrimarySourceResearchTopic[] = [
     boundary: 'The remittance total matches payroll, yet the file contains a duplicate member line and excludes a newly regularized employee whose status changed after the cutoff. A balanced total cannot prove that the right contribution reached each intended member account.',
     uncertainty: 'Coverage, contribution bases and limits, due dates, employer duties, corrections, penalties, and effects on a member account depend on current Fund rules and actual employment facts. The employer and qualified advisers must resolve those questions.',
     sources: [
-      { name: `Pag-IBIG Fund — Circular No. 275, Employer Registration, Contribution and Remittance (${checked})`, url: 'https://www.pagibigfund.gov.ph/document/pdf/circulars/provident/HDMF%20Circular%20275%20-%20Implementing%20Guidelines%20on%20Employer%20Registration%20Contribution%20and%20Remittance.pdf' },
-      { name: `Pag-IBIG Fund — Employer services (${checked})`, url: 'https://www.pagibigfund.gov.ph/employer.html' },
-      { name: `Pag-IBIG Fund — Circulars and implementing guidance (${checked})`, url: 'https://www.pagibigfund.gov.ph/circulars.html' }
+      { name: `Pag-IBIG Fund , Circular No. 275, Employer Registration, Contribution and Remittance (${checked})`, url: 'https://www.pagibigfund.gov.ph/document/pdf/circulars/provident/HDMF%20Circular%20275%20-%20Implementing%20Guidelines%20on%20Employer%20Registration%20Contribution%20and%20Remittance.pdf' },
+      { name: `Pag-IBIG Fund , Employer services (${checked})`, url: 'https://www.pagibigfund.gov.ph/employer.html' },
+      { name: `Pag-IBIG Fund , Circulars and implementing guidance (${checked})`, url: 'https://www.pagibigfund.gov.ph/circulars.html' }
     ],
     service: { heading: 'Make member-level exceptions visible', copy: 'Use the bookkeeping support guide to assign source records, review steps, payment authority, protected identifiers, posting evidence, and a correction owner.', label: 'Review bookkeeping support', href: '/services/bookkeeping-support' },
     related: [{ label: 'Review PhilHealth remittance handoff research', href: '/research/philippines-outsourcing-philhealth-remittance-handoff-research-2026' }, { label: 'Review final pay offboarding research', href: '/research/philippines-outsourcing-final-pay-offboarding-research-2026' }]
@@ -81,11 +81,11 @@ const topics: readonly PrimarySourceResearchTopic[] = [
     boundary: 'A remote worker reports wrist pain after an equipment change and mentions a prior condition in the same message. The coordinator can preserve the report and notify the safety owner; they should not label it occupational, request unnecessary medical history, or close it because no single accident occurred.',
     uncertainty: 'Emergency action, work-relatedness, reporting duties, medical privacy, investigation, record retention, benefits, and corrective measures depend on the event, workplace, employment facts, and current law. This article is not medical, safety, employment, or legal advice.',
     sources: [
-      { name: `DOLE Bureau of Working Conditions — Occupational Safety and Health Forms (${checked})`, url: 'https://bwc.dole.gov.ph/occupational-safety-and-health-forms/' },
-      { name: `DOLE Bureau of Working Conditions — Report on WAIR CY 2024 (${checked})`, url: 'https://bwc.dole.gov.ph/dole-bureau-working-conditions-report-on-wair-cy-2024/' },
-      { name: `DOLE Bureau of Working Conditions — Timely Submission of OSH Compliance Reports (${checked})`, url: 'https://bwc.dole.gov.ph/timely-submission-of-osh-compliance-reports-strengthens-dole-policies-and-worker-protection/' }
+      { name: `DOLE Bureau of Working Conditions , Occupational Safety and Health Forms (${checked})`, url: 'https://bwc.dole.gov.ph/occupational-safety-and-health-forms/' },
+      { name: `DOLE Bureau of Working Conditions , Report on WAIR CY 2024 (${checked})`, url: 'https://bwc.dole.gov.ph/dole-bureau-working-conditions-report-on-wair-cy-2024/' },
+      { name: `DOLE Bureau of Working Conditions , Timely Submission of OSH Compliance Reports (${checked})`, url: 'https://bwc.dole.gov.ph/timely-submission-of-osh-compliance-reports-strengthens-dole-policies-and-worker-protection/' }
     ],
-    service: { heading: 'Put the emergency route ahead of the form', copy: 'Use the administrative support guide to define intake limits, urgent contacts, protected records, accountable reviewers, deadlines, and follow-up evidence.', label: 'Review administrative support', href: '/services/administrative-support' },
+    service: { heading: 'Put the emergency route ahead of the form', copy: 'Use the administrative support guide to define intake limits, urgent contacts, protected records, accountable reviewers, deadlines, and follow-up evidence.', label: 'Review administrative support', href: '/services/executive-assistance' },
     related: [{ label: 'Review weather continuity research', href: '/research/philippines-remote-team-weather-continuity-research-2026' }, { label: 'Review remote staffing handoffs', href: '/research/philippines-remote-staffing-handoff-research-2026' }]
   },
   {
@@ -109,9 +109,9 @@ const topics: readonly PrimarySourceResearchTopic[] = [
     boundary: 'A user clicks “unsubscribe” from a newsletter, then asks support to delete the account while an unpaid invoice and fraud review remain open. Marketing suppression can proceed under the defined rule, but the worker cannot assume the same action controls billing, security evidence, account records, and backups.',
     uncertainty: 'Whether consent is required, whether another lawful basis applies, how identity should be checked, what must be retained, which recipients must act, and what the requester must be told depend on the actual processing. The controller and qualified privacy advisers must decide.',
     sources: [
-      { name: `National Privacy Commission — Circular No. 2023-04 Guidelines on Consent (${checked})`, url: 'https://privacy.gov.ph/wp-content/uploads/2024/05/2023-compendium-2.pdf' },
-      { name: `National Privacy Commission — Data Privacy Act of 2012 (${checked})`, url: 'https://privacy.gov.ph/data-privacy-act/' },
-      { name: `National Privacy Commission — Advisory No. 2021-01 on Data Subject Rights (${checked})`, url: 'https://privacy.gov.ph/wp-content/uploads/2021/02/NPC-Advisory-2021-01-FINAL.pdf' }
+      { name: `National Privacy Commission , Circular No. 2023-04 Guidelines on Consent (${checked})`, url: 'https://privacy.gov.ph/wp-content/uploads/2024/05/2023-compendium-2.pdf' },
+      { name: `National Privacy Commission , Data Privacy Act of 2012 (${checked})`, url: 'https://privacy.gov.ph/data-privacy-act/' },
+      { name: `National Privacy Commission , Advisory No. 2021-01 on Data Subject Rights (${checked})`, url: 'https://privacy.gov.ph/wp-content/uploads/2021/02/NPC-Advisory-2021-01-FINAL.pdf' }
     ],
     service: { heading: 'Map consent to real systems and purposes', copy: 'Use the customer support operations guide to define authenticated intake, approved status changes, privacy-owner decisions, downstream execution, and verification.', label: 'Review customer support operations', href: '/services/customer-support-operations' },
     related: [{ label: 'Review data-subject request handoffs', href: '/research/philippines-outsourcing-data-subject-request-handoff-research-2026' }, { label: 'Review outsourced data retention', href: '/research/philippines-outsourced-data-retention-research-2026' }]
@@ -137,12 +137,12 @@ const topics: readonly PrimarySourceResearchTopic[] = [
     boundary: 'Payroll supplies a revised taxable-compensation total after the draft return was approved, while the payment instruction still matches the earlier amount. The preparer can flag the difference and rebuild a comparison; they cannot choose which number to file or release the tax payment.',
     uncertainty: 'Taxability, withholding rates, filing method, deadlines, signatory authority, amendments, penalties, credits, and employee effects depend on current BIR rules and the taxpayer’s facts. This research is not tax, accounting, payroll, or legal advice.',
     sources: [
-      { name: `Bureau of Internal Revenue — Form 1601-C Guidelines and Instructions (${checked})`, url: 'https://efps.bir.gov.ph/efps-war/EFPSWeb_war/help/help1601c.html' },
-      { name: `Bureau of Internal Revenue — Form 1601-C (${checked})`, url: 'https://bir-cdn.bir.gov.ph/local/pdf/1601C%20final%20Jan%202018%20with%20DPA.pdf' },
-      { name: `Bureau of Internal Revenue — Forms directory (${checked})`, url: 'https://www.bir.gov.ph/bir-forms' }
+      { name: `Bureau of Internal Revenue , Form 1601-C Guidelines and Instructions (${checked})`, url: 'https://efps.bir.gov.ph/efps-war/EFPSWeb_war/help/help1601c.html' },
+      { name: `Bureau of Internal Revenue , Form 1601-C (${checked})`, url: 'https://bir-cdn.bir.gov.ph/local/pdf/1601C%20final%20Jan%202018%20with%20DPA.pdf' },
+      { name: `Bureau of Internal Revenue , Forms directory (${checked})`, url: 'https://www.bir.gov.ph/bir-forms' }
     ],
     service: { heading: 'Keep tax preparation behind an approval boundary', copy: 'Use the bookkeeping support guide to identify payroll sources, review owners, filing credentials, signatory authority, payment controls, and correction evidence.', label: 'Review bookkeeping support', href: '/services/bookkeeping-support' },
-    related: [{ label: 'Review invoice evidence handoff research', href: '/research/philippines-outsourcing-invoice-evidence-handoff-research-2026' }, { label: 'Review payment reconciliation research', href: '/research/philippines-payment-reconciliation-research-2026' }]
+    related: [{ label: 'Review invoice evidence handoff research', href: '/research/philippines-outsourcing-invoice-evidence-handoff-research-2026' }, { label: 'Review payment reconciliation research', href: '/research/philippines-payment-reconciliation-exception-research-2026' }]
   }
 ];
 

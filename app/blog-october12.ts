@@ -82,11 +82,11 @@ export const october12BlogDrafts=[
       ],
       "sources": [
         {
-          "label": "National Privacy Commission — Data Privacy Act of 2012",
+          "label": "National Privacy Commission , Data Privacy Act of 2012",
           "url": "https://privacy.gov.ph/data-privacy-act/"
         },
         {
-          "label": "Official Gazette — Republic Act No. 10173",
+          "label": "Official Gazette , Republic Act No. 10173",
           "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
         },
         {
@@ -223,11 +223,11 @@ export const october12BlogDrafts=[
       ],
       "sources": [
         {
-          "label": "National Privacy Commission — Data Privacy Act of 2012",
+          "label": "National Privacy Commission , Data Privacy Act of 2012",
           "url": "https://privacy.gov.ph/data-privacy-act/"
         },
         {
-          "label": "Official Gazette — Republic Act No. 10173",
+          "label": "Official Gazette , Republic Act No. 10173",
           "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
         },
         {
@@ -364,11 +364,11 @@ export const october12BlogDrafts=[
       ],
       "sources": [
         {
-          "label": "National Privacy Commission — Data Privacy Act of 2012",
+          "label": "National Privacy Commission , Data Privacy Act of 2012",
           "url": "https://privacy.gov.ph/data-privacy-act/"
         },
         {
-          "label": "Official Gazette — Republic Act No. 10173",
+          "label": "Official Gazette , Republic Act No. 10173",
           "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
         },
         {
@@ -505,11 +505,11 @@ export const october12BlogDrafts=[
       ],
       "sources": [
         {
-          "label": "National Privacy Commission — Data Privacy Act of 2012",
+          "label": "National Privacy Commission , Data Privacy Act of 2012",
           "url": "https://privacy.gov.ph/data-privacy-act/"
         },
         {
-          "label": "Official Gazette — Republic Act No. 10173",
+          "label": "Official Gazette , Republic Act No. 10173",
           "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
         },
         {
@@ -646,11 +646,11 @@ export const october12BlogDrafts=[
       ],
       "sources": [
         {
-          "label": "National Privacy Commission — Data Privacy Act of 2012",
+          "label": "National Privacy Commission , Data Privacy Act of 2012",
           "url": "https://privacy.gov.ph/data-privacy-act/"
         },
         {
-          "label": "Official Gazette — Republic Act No. 10173",
+          "label": "Official Gazette , Republic Act No. 10173",
           "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
         },
         {
@@ -787,11 +787,11 @@ export const october12BlogDrafts=[
       ],
       "sources": [
         {
-          "label": "National Privacy Commission — Data Privacy Act of 2012",
+          "label": "National Privacy Commission , Data Privacy Act of 2012",
           "url": "https://privacy.gov.ph/data-privacy-act/"
         },
         {
-          "label": "Official Gazette — Republic Act No. 10173",
+          "label": "Official Gazette , Republic Act No. 10173",
           "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
         },
         {
@@ -928,11 +928,11 @@ export const october12BlogDrafts=[
       ],
       "sources": [
         {
-          "label": "National Privacy Commission — Data Privacy Act of 2012",
+          "label": "National Privacy Commission , Data Privacy Act of 2012",
           "url": "https://privacy.gov.ph/data-privacy-act/"
         },
         {
-          "label": "Official Gazette — Republic Act No. 10173",
+          "label": "Official Gazette , Republic Act No. 10173",
           "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
         },
         {
@@ -1069,11 +1069,11 @@ export const october12BlogDrafts=[
       ],
       "sources": [
         {
-          "label": "National Privacy Commission — Data Privacy Act of 2012",
+          "label": "National Privacy Commission , Data Privacy Act of 2012",
           "url": "https://privacy.gov.ph/data-privacy-act/"
         },
         {
-          "label": "Official Gazette — Republic Act No. 10173",
+          "label": "Official Gazette , Republic Act No. 10173",
           "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
         },
         {
@@ -1210,11 +1210,11 @@ export const october12BlogDrafts=[
       ],
       "sources": [
         {
-          "label": "National Privacy Commission — Data Privacy Act of 2012",
+          "label": "National Privacy Commission , Data Privacy Act of 2012",
           "url": "https://privacy.gov.ph/data-privacy-act/"
         },
         {
-          "label": "Official Gazette — Republic Act No. 10173",
+          "label": "Official Gazette , Republic Act No. 10173",
           "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
         },
         {
@@ -1351,11 +1351,11 @@ export const october12BlogDrafts=[
       ],
       "sources": [
         {
-          "label": "National Privacy Commission — Data Privacy Act of 2012",
+          "label": "National Privacy Commission , Data Privacy Act of 2012",
           "url": "https://privacy.gov.ph/data-privacy-act/"
         },
         {
-          "label": "Official Gazette — Republic Act No. 10173",
+          "label": "Official Gazette , Republic Act No. 10173",
           "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
         },
         {
@@ -1492,11 +1492,11 @@ export const october12BlogDrafts=[
       ],
       "sources": [
         {
-          "label": "National Privacy Commission — Data Privacy Act of 2012",
+          "label": "National Privacy Commission , Data Privacy Act of 2012",
           "url": "https://privacy.gov.ph/data-privacy-act/"
         },
         {
-          "label": "Official Gazette — Republic Act No. 10173",
+          "label": "Official Gazette , Republic Act No. 10173",
           "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
         },
         {
@@ -1633,11 +1633,11 @@ export const october12BlogDrafts=[
       ],
       "sources": [
         {
-          "label": "National Privacy Commission — Data Privacy Act of 2012",
+          "label": "National Privacy Commission , Data Privacy Act of 2012",
           "url": "https://privacy.gov.ph/data-privacy-act/"
         },
         {
-          "label": "Official Gazette — Republic Act No. 10173",
+          "label": "Official Gazette , Republic Act No. 10173",
           "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
         },
         {
@@ -1856,11 +1856,11 @@ export const october12BlogDetails={
     ],
     "sources": [
       {
-        "label": "National Privacy Commission — Data Privacy Act of 2012",
+        "label": "National Privacy Commission , Data Privacy Act of 2012",
         "url": "https://privacy.gov.ph/data-privacy-act/"
       },
       {
-        "label": "Official Gazette — Republic Act No. 10173",
+        "label": "Official Gazette , Republic Act No. 10173",
         "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
       },
       {
@@ -1990,11 +1990,11 @@ export const october12BlogDetails={
     ],
     "sources": [
       {
-        "label": "National Privacy Commission — Data Privacy Act of 2012",
+        "label": "National Privacy Commission , Data Privacy Act of 2012",
         "url": "https://privacy.gov.ph/data-privacy-act/"
       },
       {
-        "label": "Official Gazette — Republic Act No. 10173",
+        "label": "Official Gazette , Republic Act No. 10173",
         "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
       },
       {
@@ -2124,11 +2124,11 @@ export const october12BlogDetails={
     ],
     "sources": [
       {
-        "label": "National Privacy Commission — Data Privacy Act of 2012",
+        "label": "National Privacy Commission , Data Privacy Act of 2012",
         "url": "https://privacy.gov.ph/data-privacy-act/"
       },
       {
-        "label": "Official Gazette — Republic Act No. 10173",
+        "label": "Official Gazette , Republic Act No. 10173",
         "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
       },
       {
@@ -2258,11 +2258,11 @@ export const october12BlogDetails={
     ],
     "sources": [
       {
-        "label": "National Privacy Commission — Data Privacy Act of 2012",
+        "label": "National Privacy Commission , Data Privacy Act of 2012",
         "url": "https://privacy.gov.ph/data-privacy-act/"
       },
       {
-        "label": "Official Gazette — Republic Act No. 10173",
+        "label": "Official Gazette , Republic Act No. 10173",
         "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
       },
       {
@@ -2392,11 +2392,11 @@ export const october12BlogDetails={
     ],
     "sources": [
       {
-        "label": "National Privacy Commission — Data Privacy Act of 2012",
+        "label": "National Privacy Commission , Data Privacy Act of 2012",
         "url": "https://privacy.gov.ph/data-privacy-act/"
       },
       {
-        "label": "Official Gazette — Republic Act No. 10173",
+        "label": "Official Gazette , Republic Act No. 10173",
         "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
       },
       {
@@ -2526,11 +2526,11 @@ export const october12BlogDetails={
     ],
     "sources": [
       {
-        "label": "National Privacy Commission — Data Privacy Act of 2012",
+        "label": "National Privacy Commission , Data Privacy Act of 2012",
         "url": "https://privacy.gov.ph/data-privacy-act/"
       },
       {
-        "label": "Official Gazette — Republic Act No. 10173",
+        "label": "Official Gazette , Republic Act No. 10173",
         "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
       },
       {
@@ -2660,11 +2660,11 @@ export const october12BlogDetails={
     ],
     "sources": [
       {
-        "label": "National Privacy Commission — Data Privacy Act of 2012",
+        "label": "National Privacy Commission , Data Privacy Act of 2012",
         "url": "https://privacy.gov.ph/data-privacy-act/"
       },
       {
-        "label": "Official Gazette — Republic Act No. 10173",
+        "label": "Official Gazette , Republic Act No. 10173",
         "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
       },
       {
@@ -2794,11 +2794,11 @@ export const october12BlogDetails={
     ],
     "sources": [
       {
-        "label": "National Privacy Commission — Data Privacy Act of 2012",
+        "label": "National Privacy Commission , Data Privacy Act of 2012",
         "url": "https://privacy.gov.ph/data-privacy-act/"
       },
       {
-        "label": "Official Gazette — Republic Act No. 10173",
+        "label": "Official Gazette , Republic Act No. 10173",
         "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
       },
       {
@@ -2928,11 +2928,11 @@ export const october12BlogDetails={
     ],
     "sources": [
       {
-        "label": "National Privacy Commission — Data Privacy Act of 2012",
+        "label": "National Privacy Commission , Data Privacy Act of 2012",
         "url": "https://privacy.gov.ph/data-privacy-act/"
       },
       {
-        "label": "Official Gazette — Republic Act No. 10173",
+        "label": "Official Gazette , Republic Act No. 10173",
         "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
       },
       {
@@ -3062,11 +3062,11 @@ export const october12BlogDetails={
     ],
     "sources": [
       {
-        "label": "National Privacy Commission — Data Privacy Act of 2012",
+        "label": "National Privacy Commission , Data Privacy Act of 2012",
         "url": "https://privacy.gov.ph/data-privacy-act/"
       },
       {
-        "label": "Official Gazette — Republic Act No. 10173",
+        "label": "Official Gazette , Republic Act No. 10173",
         "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
       },
       {
@@ -3196,11 +3196,11 @@ export const october12BlogDetails={
     ],
     "sources": [
       {
-        "label": "National Privacy Commission — Data Privacy Act of 2012",
+        "label": "National Privacy Commission , Data Privacy Act of 2012",
         "url": "https://privacy.gov.ph/data-privacy-act/"
       },
       {
-        "label": "Official Gazette — Republic Act No. 10173",
+        "label": "Official Gazette , Republic Act No. 10173",
         "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
       },
       {
@@ -3330,11 +3330,11 @@ export const october12BlogDetails={
     ],
     "sources": [
       {
-        "label": "National Privacy Commission — Data Privacy Act of 2012",
+        "label": "National Privacy Commission , Data Privacy Act of 2012",
         "url": "https://privacy.gov.ph/data-privacy-act/"
       },
       {
-        "label": "Official Gazette — Republic Act No. 10173",
+        "label": "Official Gazette , Republic Act No. 10173",
         "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/"
       },
       {
