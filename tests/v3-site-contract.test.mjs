@@ -15,6 +15,7 @@ const booking = read('app/booking-components.tsx');
 const contact = read('app/contact-us/page.tsx');
 const thankYou = read('app/thank-you/page.tsx');
 const nextConfig = read('next.config.mjs');
+const middleware = read('middleware.ts');
 const home = read('app/page.tsx');
 const services = read('app/services/page.tsx');
 const serviceDetail = read('app/services/[slug]/page.tsx');
@@ -75,6 +76,10 @@ test('security headers and canonical redirects are configured', () => {
     assert.match(nextConfig, new RegExp(header));
   }
   assert.match(nextConfig, /www\.filipinooutsource\.com/);
+  assert.match(middleware, /x-forwarded-proto/);
+  assert.match(middleware, /cf-visitor/);
+  assert.match(middleware, /"scheme"\\s\*:\\s\*"http"/);
+  assert.match(middleware, /NextResponse\.redirect\(url, 308\)/);
 });
 
 test('visible source content contains no forbidden dash characters', () => {
