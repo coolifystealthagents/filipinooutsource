@@ -15,6 +15,11 @@ const counts = researchPosts.reduce<Record<string, number>>((acc, post) => {
   acc[post.cluster] = (acc[post.cluster] || 0) + 1;
   return acc;
 }, {});
+const clusterId = (cluster: string) => cluster.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+const firstPostByCluster = new Map<string, string>();
+for (const post of researchPosts) {
+  if (!firstPostByCluster.has(post.cluster)) firstPostByCluster.set(post.cluster, post.slug);
+}
 
 export default function Research() {
   return <>
@@ -33,7 +38,7 @@ export default function Research() {
           {researchPosts.length ? <>
             <nav className="research-cluster-tabs" aria-label="Research clusters">
               {clusters.map((cluster, index) => {
-                const href = index === 0 ? '#all-research' : `#${cluster.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+                const href = index === 0 ? '#all-research' : `#${clusterId(cluster)}`;
                 return <a className={index === 0 ? 'active' : ''} href={href} key={cluster}>
                   <span>{cluster}</span>
                   {index > 0 ? <small>{counts[cluster] || 0}</small> : <small>{researchPosts.length}</small>}
@@ -42,7 +47,7 @@ export default function Research() {
             </nav>
 
             <div className="research-card-grid" id="all-research">
-              {researchPosts.map((post) => <a className="research-library-card" href={`/research/${post.slug}`} key={post.slug} id={post.cluster.toLowerCase().replace(/[^a-z0-9]+/g, '-')}>
+              {researchPosts.map((post) => <a className="research-library-card" href={`/research/${post.slug}`} key={post.slug} id={firstPostByCluster.get(post.cluster) === post.slug ? clusterId(post.cluster) : undefined}>
                 <span className="research-card-badge">{post.cluster}</span>
                 <h2>{post.title}</h2>
                 <p className="research-card-highlight">{post.cardHighlight}</p>

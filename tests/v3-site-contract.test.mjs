@@ -20,6 +20,7 @@ const home = read('app/page.tsx');
 const services = read('app/services/page.tsx');
 const serviceDetail = read('app/services/[slug]/page.tsx');
 const research = read('app/research/[slug]/page.tsx');
+const researchIndex = read('app/research/page.tsx');
 
 const sourceFiles = walk(path.join(root, 'app')).filter((file) => /\.(?:ts|tsx|md|mdx)$/.test(file));
 const appSource = sourceFiles.map((file) => fs.readFileSync(file, 'utf8')).join('\n');
@@ -69,6 +70,8 @@ test('article layouts provide complete sticky navigation hooks and meaningful he
   assert.match(research, /service-handoff/);
   assert.match(research, /sources/);
   assert.doesNotMatch(research, /className="research-hero-image"[^>]+alt=""/);
+  assert.match(researchIndex, /firstPostByCluster\.get\(post\.cluster\) === post\.slug/);
+  assert.doesNotMatch(researchIndex, /id=\{post\.cluster\.toLowerCase/);
 });
 
 test('security headers and canonical redirects are configured', () => {
