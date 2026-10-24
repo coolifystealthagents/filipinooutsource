@@ -3,6 +3,7 @@ import { Header, Footer } from '../../components';
 import { researchPosts, ResearchPost } from '../../fleet-data';
 import { site } from '../../data';
 import { ActiveTableOfContents, type TableOfContentsItem } from '../../article-toc';
+import Oct22MobileToc from '../../oct22-mobile-toc';
 
 const readerDate = new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
 const formatReaderDate = (value: string) => readerDate.format(new Date(`${value}T00:00:00Z`));
@@ -51,7 +52,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
   return (
     <>
       <Header />
-      <main className="research-page">
+      <main className="research-page"><Oct22MobileToc />
         <section className="research-hero">
           <div className="container research-hero-grid">
             <div>

@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { Header, Footer, CTA } from '../../components';
 import { blogPosts, blogDetails, guideBodies, site } from '../../data';
 import { ActiveTableOfContents, type TableOfContentsItem } from '../../article-toc';
+import Oct22MobileToc from '../../oct22-mobile-toc';
 
 const base = 'https://filipinooutsource.com';
 const strictAccountingSlug = 'outsource-accounting-to-philippines';
@@ -139,7 +140,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
     return (
       <>
         <Header />
-        <main className={pilotFormat ? "article-page competitor-article-page" : "article-page"}>
+        <main className={pilotFormat ? "article-page competitor-article-page" : "article-page"}><Oct22MobileToc />
           <JsonLd data={articleSchema} />
           {faqItems.length > 0 && <JsonLd data={faqSchema} />}
           <JsonLd data={breadcrumbSchema} />
@@ -225,7 +226,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   return (
     <>
       <Header />
-      <main className="article-page"><article className="section"><div className="container article-frame">
+      <main className="article-page"><Oct22MobileToc /><article className="section"><div className="container article-frame">
         <header className="article-header"><p className="eyebrow">{site.brand} blog</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><figure className="article-hero-image"><img src={fallbackHero} alt={`Planning illustration for ${post.title}`} /><figcaption>A visual guide to defining the work, access, and review path before hiring.</figcaption></figure></header>
         <div className="article-grid">
           <aside className="article-sidebar" aria-label="Article navigation"><ActiveTableOfContents items={fallbackToc} title="In this article" className="toc-card" titleClassName="article-kicker" /></aside>

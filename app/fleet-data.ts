@@ -57,6 +57,7 @@ import { october2ResearchPosts } from './research-october2';
 import { october5ResearchPosts } from './research-october5';
 import { october8ResearchPosts } from './research-october8';
 import { october13ResearchPosts } from './research-october13';
+import { october22ResearchPosts } from './research-october22';
 import { october12ResearchPosts } from './research-october12';
 
 const researchSourceSet = [
@@ -427,6 +428,7 @@ export const fleetServices: readonly FleetService[] = [
 ];
 
 export const researchPosts: readonly ResearchPost[] = [
+  ...october22ResearchPosts,
   ...october13ResearchPosts,
   ...october12ResearchPosts,
   ...october8ResearchPosts,
