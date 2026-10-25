@@ -8,6 +8,7 @@
     "lint": "tsc --noEmit",
     "test:october12-service-handoffs": "node --test tests/october12-service-handoffs.test.mjs",
     "test:shipment-handoff": "node --test tests/shipment-traceability-handoff.test.mjs",
+    "test:property-inspection-handoff": "node --test tests/property-inspection-handoff.test.mjs",
     "test:data-access-request-handoff": "node --test tests/data-access-request-handoff.test.mjs",
     "test:crm-field-definition-handoff": "node --test tests/crm-field-definition-handoff.test.mjs"
   },
