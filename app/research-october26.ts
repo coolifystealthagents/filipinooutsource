@@ -166,44 +166,44 @@ export const october26ResearchPosts: readonly ResearchPost[] = [
     ],
     "sources": [
       {
-        "label": "OECD Employment",
-        "url": "https://www.oecd.org/employment/"
+        "url": "https://www.oecd.org/employment/",
+        "name": "OECD Employment"
       },
       {
-        "label": "OSHA Recordkeeping",
-        "url": "https://www.osha.gov/recordkeeping"
+        "url": "https://www.osha.gov/recordkeeping",
+        "name": "OSHA Recordkeeping"
       },
       {
-        "label": "NALS, The Association for Legal Professionals",
-        "url": "https://www.nals.org/"
+        "url": "https://www.nals.org/",
+        "name": "NALS, The Association for Legal Professionals"
       },
       {
-        "label": "SHRM Talent Acquisition",
-        "url": "https://www.shrm.org/"
+        "url": "https://www.shrm.org/",
+        "name": "SHRM Talent Acquisition"
       },
       {
-        "label": "U.S. General Services Administration",
-        "url": "https://www.gsa.gov/"
+        "url": "https://www.gsa.gov/",
+        "name": "U.S. General Services Administration"
       },
       {
-        "label": "International Labour Organization Data",
-        "url": "https://www.ilo.org/data"
+        "url": "https://www.ilo.org/data",
+        "name": "International Labour Organization Data"
       },
       {
-        "label": "Internal Revenue Service",
-        "url": "https://www.irs.gov/"
+        "url": "https://www.irs.gov/",
+        "name": "Internal Revenue Service"
       },
       {
-        "label": "American Staffing Association",
-        "url": "https://americanstaffing.net/"
+        "url": "https://americanstaffing.net/",
+        "name": "American Staffing Association"
       },
       {
-        "label": "SBA Business Guide",
-        "url": "https://www.sba.gov/business-guide"
+        "url": "https://www.sba.gov/business-guide",
+        "name": "SBA Business Guide"
       },
       {
-        "label": "NAPEO",
-        "url": "https://www.napeo.org/"
+        "url": "https://www.napeo.org/",
+        "name": "NAPEO"
       }
     ],
     "related": [
@@ -389,44 +389,44 @@ export const october26ResearchPosts: readonly ResearchPost[] = [
     ],
     "sources": [
       {
-        "label": "U.S. General Services Administration",
-        "url": "https://www.gsa.gov/"
+        "url": "https://www.gsa.gov/",
+        "name": "U.S. General Services Administration"
       },
       {
-        "label": "NAPEO",
-        "url": "https://www.napeo.org/"
+        "url": "https://www.napeo.org/",
+        "name": "NAPEO"
       },
       {
-        "label": "U.S. Department of Labor, FLSA Recordkeeping",
-        "url": "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+        "url": "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping",
+        "name": "U.S. Department of Labor, FLSA Recordkeeping"
       },
       {
-        "label": "Internal Revenue Service",
-        "url": "https://www.irs.gov/"
+        "url": "https://www.irs.gov/",
+        "name": "Internal Revenue Service"
       },
       {
-        "label": "World Bank Philippines Overview",
-        "url": "https://www.worldbank.org/en/country/philippines/overview"
+        "url": "https://www.worldbank.org/en/country/philippines/overview",
+        "name": "World Bank Philippines Overview"
       },
       {
-        "label": "SHRM Talent Acquisition",
-        "url": "https://www.shrm.org/"
+        "url": "https://www.shrm.org/",
+        "name": "SHRM Talent Acquisition"
       },
       {
-        "label": "NALS, The Association for Legal Professionals",
-        "url": "https://www.nals.org/"
+        "url": "https://www.nals.org/",
+        "name": "NALS, The Association for Legal Professionals"
       },
       {
-        "label": "American Staffing Association",
-        "url": "https://americanstaffing.net/"
+        "url": "https://americanstaffing.net/",
+        "name": "American Staffing Association"
       },
       {
-        "label": "Project Management Institute Standards",
-        "url": "https://www.pmi.org/standards"
+        "url": "https://www.pmi.org/standards",
+        "name": "Project Management Institute Standards"
       },
       {
-        "label": "OECD Employment",
-        "url": "https://www.oecd.org/employment/"
+        "url": "https://www.oecd.org/employment/",
+        "name": "OECD Employment"
       }
     ],
     "related": [
@@ -612,44 +612,44 @@ export const october26ResearchPosts: readonly ResearchPost[] = [
     ],
     "sources": [
       {
-        "label": "OSHA Recordkeeping",
-        "url": "https://www.osha.gov/recordkeeping"
+        "url": "https://www.osha.gov/recordkeeping",
+        "name": "OSHA Recordkeeping"
       },
       {
-        "label": "SHRM Talent Acquisition",
-        "url": "https://www.shrm.org/"
+        "url": "https://www.shrm.org/",
+        "name": "SHRM Talent Acquisition"
       },
       {
-        "label": "World Bank Philippines Overview",
-        "url": "https://www.worldbank.org/en/country/philippines/overview"
+        "url": "https://www.worldbank.org/en/country/philippines/overview",
+        "name": "World Bank Philippines Overview"
       },
       {
-        "label": "OECD Employment",
-        "url": "https://www.oecd.org/employment/"
+        "url": "https://www.oecd.org/employment/",
+        "name": "OECD Employment"
       },
       {
-        "label": "NALS, The Association for Legal Professionals",
-        "url": "https://www.nals.org/"
+        "url": "https://www.nals.org/",
+        "name": "NALS, The Association for Legal Professionals"
       },
       {
-        "label": "U.S. General Services Administration",
-        "url": "https://www.gsa.gov/"
+        "url": "https://www.gsa.gov/",
+        "name": "U.S. General Services Administration"
       },
       {
-        "label": "International Labour Organization Data",
-        "url": "https://www.ilo.org/data"
+        "url": "https://www.ilo.org/data",
+        "name": "International Labour Organization Data"
       },
       {
-        "label": "Project Management Institute Standards",
-        "url": "https://www.pmi.org/standards"
+        "url": "https://www.pmi.org/standards",
+        "name": "Project Management Institute Standards"
       },
       {
-        "label": "U.S. Department of Labor, FLSA Recordkeeping",
-        "url": "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+        "url": "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping",
+        "name": "U.S. Department of Labor, FLSA Recordkeeping"
       },
       {
-        "label": "Association for Supply Chain Management",
-        "url": "https://www.ascm.org/"
+        "url": "https://www.ascm.org/",
+        "name": "Association for Supply Chain Management"
       }
     ],
     "related": [
@@ -835,44 +835,44 @@ export const october26ResearchPosts: readonly ResearchPost[] = [
     ],
     "sources": [
       {
-        "label": "American Staffing Association",
-        "url": "https://americanstaffing.net/"
+        "url": "https://americanstaffing.net/",
+        "name": "American Staffing Association"
       },
       {
-        "label": "Internal Revenue Service",
-        "url": "https://www.irs.gov/"
+        "url": "https://www.irs.gov/",
+        "name": "Internal Revenue Service"
       },
       {
-        "label": "NALS, The Association for Legal Professionals",
-        "url": "https://www.nals.org/"
+        "url": "https://www.nals.org/",
+        "name": "NALS, The Association for Legal Professionals"
       },
       {
-        "label": "NAPEO",
-        "url": "https://www.napeo.org/"
+        "url": "https://www.napeo.org/",
+        "name": "NAPEO"
       },
       {
-        "label": "OECD Employment",
-        "url": "https://www.oecd.org/employment/"
+        "url": "https://www.oecd.org/employment/",
+        "name": "OECD Employment"
       },
       {
-        "label": "Project Management Institute Standards",
-        "url": "https://www.pmi.org/standards"
+        "url": "https://www.pmi.org/standards",
+        "name": "Project Management Institute Standards"
       },
       {
-        "label": "U.S. Department of Labor, FLSA Recordkeeping",
-        "url": "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+        "url": "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping",
+        "name": "U.S. Department of Labor, FLSA Recordkeeping"
       },
       {
-        "label": "U.S. General Services Administration",
-        "url": "https://www.gsa.gov/"
+        "url": "https://www.gsa.gov/",
+        "name": "U.S. General Services Administration"
       },
       {
-        "label": "Association for Supply Chain Management",
-        "url": "https://www.ascm.org/"
+        "url": "https://www.ascm.org/",
+        "name": "Association for Supply Chain Management"
       },
       {
-        "label": "OSHA Recordkeeping",
-        "url": "https://www.osha.gov/recordkeeping"
+        "url": "https://www.osha.gov/recordkeeping",
+        "name": "OSHA Recordkeeping"
       }
     ],
     "related": [
@@ -1058,44 +1058,44 @@ export const october26ResearchPosts: readonly ResearchPost[] = [
     ],
     "sources": [
       {
-        "label": "World Bank Philippines Overview",
-        "url": "https://www.worldbank.org/en/country/philippines/overview"
+        "url": "https://www.worldbank.org/en/country/philippines/overview",
+        "name": "World Bank Philippines Overview"
       },
       {
-        "label": "International Labour Organization Data",
-        "url": "https://www.ilo.org/data"
+        "url": "https://www.ilo.org/data",
+        "name": "International Labour Organization Data"
       },
       {
-        "label": "OSHA Recordkeeping",
-        "url": "https://www.osha.gov/recordkeeping"
+        "url": "https://www.osha.gov/recordkeeping",
+        "name": "OSHA Recordkeeping"
       },
       {
-        "label": "NALS, The Association for Legal Professionals",
-        "url": "https://www.nals.org/"
+        "url": "https://www.nals.org/",
+        "name": "NALS, The Association for Legal Professionals"
       },
       {
-        "label": "Project Management Institute Standards",
-        "url": "https://www.pmi.org/standards"
+        "url": "https://www.pmi.org/standards",
+        "name": "Project Management Institute Standards"
       },
       {
-        "label": "U.S. Department of Labor, FLSA Recordkeeping",
-        "url": "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+        "url": "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping",
+        "name": "U.S. Department of Labor, FLSA Recordkeeping"
       },
       {
-        "label": "NAPEO",
-        "url": "https://www.napeo.org/"
+        "url": "https://www.napeo.org/",
+        "name": "NAPEO"
       },
       {
-        "label": "American Staffing Association",
-        "url": "https://americanstaffing.net/"
+        "url": "https://americanstaffing.net/",
+        "name": "American Staffing Association"
       },
       {
-        "label": "Internal Revenue Service",
-        "url": "https://www.irs.gov/"
+        "url": "https://www.irs.gov/",
+        "name": "Internal Revenue Service"
       },
       {
-        "label": "OECD Employment",
-        "url": "https://www.oecd.org/employment/"
+        "url": "https://www.oecd.org/employment/",
+        "name": "OECD Employment"
       }
     ],
     "related": [
