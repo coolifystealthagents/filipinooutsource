@@ -27,6 +27,7 @@ import { october22BlogPosts, october22BlogDetails } from './blog-october22';
 import { october25BlogPosts, october25BlogDetails } from './blog-october25';
 import { october26BlogPosts, october26BlogDetails } from './blog-october26';
 import { october27BlogPosts, october27BlogDetails } from './blog-october27';
+import { october28BlogPosts, october28BlogDetails } from './blog-october28';
 import { october12BlogPosts, october12BlogDetails } from './blog-october12';
 
 export const site = {
@@ -80,7 +81,7 @@ export const services = [
   }
 ] as const;
 export const blogPosts = [
-  ...october27BlogPosts, ...october26BlogPosts, ...october25BlogPosts, ...october22BlogPosts,
+  ...october28BlogPosts, ...october27BlogPosts, ...october26BlogPosts, ...october25BlogPosts, ...october22BlogPosts,
   ...october13BlogPosts,
   ...october12BlogPosts,
   ...october8BlogPosts,
@@ -194,7 +195,7 @@ export const guideBodies = {
 } as const;
 
 export const blogDetails = {
-  ...october27BlogDetails, ...october26BlogDetails, ...october25BlogDetails, ...october22BlogDetails,
+  ...october28BlogDetails, ...october27BlogDetails, ...october26BlogDetails, ...october25BlogDetails, ...october22BlogDetails,
   ...october13BlogDetails,
   ...october12BlogDetails,
   ...october8BlogDetails,

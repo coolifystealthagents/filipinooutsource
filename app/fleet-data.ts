@@ -61,6 +61,7 @@ import { october22ResearchPosts } from './research-october22';
 import { october25ResearchPosts } from './research-october25';
 import { october26ResearchPosts } from './research-october26';
 import { october27ResearchPosts } from './research-october27';
+import { october28ResearchPosts } from './research-october28';
 import { october12ResearchPosts } from './research-october12';
 
 const researchSourceSet = [
@@ -431,7 +432,7 @@ export const fleetServices: readonly FleetService[] = [
 ];
 
 export const researchPosts: readonly ResearchPost[] = [
-  ...october27ResearchPosts, ...october26ResearchPosts, ...october25ResearchPosts, ...october22ResearchPosts,
+  ...october28ResearchPosts, ...october27ResearchPosts, ...october26ResearchPosts, ...october25ResearchPosts, ...october22ResearchPosts,
   ...october13ResearchPosts,
   ...october12ResearchPosts,
   ...october8ResearchPosts,
