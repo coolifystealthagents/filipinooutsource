@@ -2,7 +2,7 @@ import type { ResearchPost } from './fleet-data';
 
 export const november02ResearchPosts: readonly ResearchPost[] = [
   {
-    "slug": "fio01-research-shift-handoff-01",
+    "slug": "fio02-research-shift-handoff-01",
     "title": "How complete is the evidence in the shift handoff record?",
     "excerpt": "How complete is the evidence in the shift handoff record? asks what the shift handoff record can show in one frozen window, with a defined population, an evidence sample, and a dated review.",
     "published": "2026-11-02",
@@ -137,11 +137,11 @@ export const november02ResearchPosts: readonly ResearchPost[] = [
     "related": [
       {
         "label": "Map the shift handoff decision to one accountable owner",
-        "href": "/blog/fio01-shift-handoff-01"
+        "href": "/blog/fio02-shift-handoff-01"
       },
       {
         "label": "Write the queue priority intake note that survives a later review",
-        "href": "/blog/fio01-queue-priority-02"
+        "href": "/blog/fio02-queue-priority-02"
       }
     ],
     "serviceHandoff": {
@@ -150,10 +150,10 @@ export const november02ResearchPosts: readonly ResearchPost[] = [
       "label": "See the related offshore staffing service",
       "href": "/services"
     },
-    "heroImage": "/daily02/filipinooutsource/fio01-research-shift-handoff-01.webp"
+    "heroImage": "/daily02/filipinooutsource/fio02-research-shift-handoff-01.webp"
   },
   {
-    "slug": "fio01-research-queue-priority-02",
+    "slug": "fio02-research-queue-priority-02",
     "title": "Where does delay accumulate in the queue priority handoff?",
     "excerpt": "Where does delay accumulate in the queue priority handoff? asks what the queue priority record can show in one frozen window, with a defined population, an evidence sample, and a dated review.",
     "published": "2026-11-02",
@@ -288,11 +288,11 @@ export const november02ResearchPosts: readonly ResearchPost[] = [
     "related": [
       {
         "label": "Map the shift handoff decision to one accountable owner",
-        "href": "/blog/fio01-shift-handoff-01"
+        "href": "/blog/fio02-shift-handoff-01"
       },
       {
         "label": "Write the queue priority intake note that survives a later review",
-        "href": "/blog/fio01-queue-priority-02"
+        "href": "/blog/fio02-queue-priority-02"
       }
     ],
     "serviceHandoff": {
@@ -301,10 +301,10 @@ export const november02ResearchPosts: readonly ResearchPost[] = [
       "label": "See the related offshore staffing service",
       "href": "/services"
     },
-    "heroImage": "/daily02/filipinooutsource/fio01-research-queue-priority-02.webp"
+    "heroImage": "/daily02/filipinooutsource/fio02-research-queue-priority-02.webp"
   },
   {
-    "slug": "fio01-research-meeting-notes-03",
+    "slug": "fio02-research-meeting-notes-03",
     "title": "How old are the exceptions in the meeting notes queue?",
     "excerpt": "How old are the exceptions in the meeting notes queue? asks what the meeting notes record can show in one frozen window, with a defined population, an evidence sample, and a dated review.",
     "published": "2026-11-02",
@@ -439,11 +439,11 @@ export const november02ResearchPosts: readonly ResearchPost[] = [
     "related": [
       {
         "label": "Map the shift handoff decision to one accountable owner",
-        "href": "/blog/fio01-shift-handoff-01"
+        "href": "/blog/fio02-shift-handoff-01"
       },
       {
         "label": "Write the queue priority intake note that survives a later review",
-        "href": "/blog/fio01-queue-priority-02"
+        "href": "/blog/fio02-queue-priority-02"
       }
     ],
     "serviceHandoff": {
@@ -452,10 +452,10 @@ export const november02ResearchPosts: readonly ResearchPost[] = [
       "label": "See the related offshore staffing service",
       "href": "/services"
     },
-    "heroImage": "/daily02/filipinooutsource/fio01-research-meeting-notes-03.webp"
+    "heroImage": "/daily02/filipinooutsource/fio02-research-meeting-notes-03.webp"
   },
   {
-    "slug": "fio01-research-client-reporting-04",
+    "slug": "fio02-research-client-reporting-04",
     "title": "What happens to client reporting coverage when the owner is away?",
     "excerpt": "What happens to client reporting coverage when the owner is away? asks what the client reporting record can show in one frozen window, with a defined population, an evidence sample, and a dated review.",
     "published": "2026-11-02",
@@ -590,11 +590,11 @@ export const november02ResearchPosts: readonly ResearchPost[] = [
     "related": [
       {
         "label": "Map the shift handoff decision to one accountable owner",
-        "href": "/blog/fio01-shift-handoff-01"
+        "href": "/blog/fio02-shift-handoff-01"
       },
       {
         "label": "Write the queue priority intake note that survives a later review",
-        "href": "/blog/fio01-queue-priority-02"
+        "href": "/blog/fio02-queue-priority-02"
       }
     ],
     "serviceHandoff": {
@@ -603,10 +603,10 @@ export const november02ResearchPosts: readonly ResearchPost[] = [
       "label": "See the related offshore staffing service",
       "href": "/services"
     },
-    "heroImage": "/daily02/filipinooutsource/fio01-research-client-reporting-04.webp"
+    "heroImage": "/daily02/filipinooutsource/fio02-research-client-reporting-04.webp"
   },
   {
-    "slug": "fio01-research-access-review-05",
+    "slug": "fio02-research-access-review-05",
     "title": "Can the access review report be reproduced from its sources?",
     "excerpt": "Can the access review report be reproduced from its sources? asks what the access review record can show in one frozen window, with a defined population, an evidence sample, and a dated review.",
     "published": "2026-11-02",
@@ -741,11 +741,11 @@ export const november02ResearchPosts: readonly ResearchPost[] = [
     "related": [
       {
         "label": "Map the shift handoff decision to one accountable owner",
-        "href": "/blog/fio01-shift-handoff-01"
+        "href": "/blog/fio02-shift-handoff-01"
       },
       {
         "label": "Write the queue priority intake note that survives a later review",
-        "href": "/blog/fio01-queue-priority-02"
+        "href": "/blog/fio02-queue-priority-02"
       }
     ],
     "serviceHandoff": {
@@ -754,6 +754,6 @@ export const november02ResearchPosts: readonly ResearchPost[] = [
       "label": "See the related offshore staffing service",
       "href": "/services"
     },
-    "heroImage": "/daily02/filipinooutsource/fio01-research-access-review-05.webp"
+    "heroImage": "/daily02/filipinooutsource/fio02-research-access-review-05.webp"
   }
 ];
