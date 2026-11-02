@@ -28,6 +28,7 @@ import { october25BlogPosts, october25BlogDetails } from './blog-october25';
 import { october26BlogPosts, october26BlogDetails } from './blog-october26';
 import { october27BlogPosts, october27BlogDetails } from './blog-october27';
 import { november01BlogPosts, november01BlogDetails } from './blog-nov01';
+import { november02BlogPosts, november02BlogDetails } from './blog-nov02';
 import { october28BlogPosts, october28BlogDetails } from './blog-october28';
 import { october12BlogPosts, october12BlogDetails } from './blog-october12';
 
@@ -82,7 +83,7 @@ export const services = [
   }
 ] as const;
 export const blogPosts = [
-  ...november01BlogPosts, ...october28BlogPosts, ...october27BlogPosts, ...october26BlogPosts, ...october25BlogPosts, ...october22BlogPosts,
+  ...november02BlogPosts, ...november01BlogPosts, ...october28BlogPosts, ...october27BlogPosts, ...october26BlogPosts, ...october25BlogPosts, ...october22BlogPosts,
   ...october13BlogPosts,
   ...october12BlogPosts,
   ...october8BlogPosts,
@@ -195,7 +196,7 @@ export const guideBodies = {
   },
 } as const;
 
-export const blogDetails = { ...november01BlogDetails,
+export const blogDetails = { ...november02BlogDetails, ...november01BlogDetails,
   ...october28BlogDetails, ...october27BlogDetails, ...october26BlogDetails, ...october25BlogDetails, ...october22BlogDetails,
   ...october13BlogDetails,
   ...october12BlogDetails,
