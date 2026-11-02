@@ -99,6 +99,7 @@ export const november02BlogPosts=[
 
 export const november02BlogDetails={
   "fio01-shift-handoff-01": {
+    "datePublished": "2026-11-02",
     "lead": "Map the shift handoff decision to one accountable owner sets a bounded routine for shift handoff in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "shortAnswer": "Map the shift handoff decision to one accountable owner sets a bounded routine for shift handoff in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "takeaways": [
@@ -167,6 +168,7 @@ export const november02BlogDetails={
     ]
   },
   "fio01-queue-priority-02": {
+    "datePublished": "2026-11-02",
     "lead": "Write the queue priority intake note that survives a later review sets a bounded routine for queue priority in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "shortAnswer": "Write the queue priority intake note that survives a later review sets a bounded routine for queue priority in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "takeaways": [
@@ -235,6 +237,7 @@ export const november02BlogDetails={
     ]
   },
   "fio01-meeting-notes-03": {
+    "datePublished": "2026-11-02",
     "lead": "Cut rework at the meeting notes handoff with a two-field check sets a bounded routine for meeting notes in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "shortAnswer": "Cut rework at the meeting notes handoff with a two-field check sets a bounded routine for meeting notes in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "takeaways": [
@@ -303,6 +306,7 @@ export const november02BlogDetails={
     ]
   },
   "fio01-client-reporting-04": {
+    "datePublished": "2026-11-02",
     "lead": "Resolve a conflicting client reporting record without erasing history sets a bounded routine for client reporting in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "shortAnswer": "Resolve a conflicting client reporting record without erasing history sets a bounded routine for client reporting in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "takeaways": [
@@ -371,6 +375,7 @@ export const november02BlogDetails={
     ]
   },
   "fio01-access-review-05": {
+    "datePublished": "2026-11-02",
     "lead": "Sample access review quality weekly, not only volume sets a bounded routine for access review in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "shortAnswer": "Sample access review quality weekly, not only volume sets a bounded routine for access review in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "takeaways": [
@@ -439,6 +444,7 @@ export const november02BlogDetails={
     ]
   },
   "fio01-onboarding-plan-06": {
+    "datePublished": "2026-11-02",
     "lead": "Build an exception code list the onboarding plan team will use sets a bounded routine for onboarding plan in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "shortAnswer": "Build an exception code list the onboarding plan team will use sets a bounded routine for onboarding plan in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "takeaways": [
@@ -507,6 +513,7 @@ export const november02BlogDetails={
     ]
   },
   "fio01-shift-handoff-queue-07": {
+    "datePublished": "2026-11-02",
     "lead": "Keep shift handoff queue evidence durable when the systems change sets a bounded routine for shift handoff queue in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "shortAnswer": "Keep shift handoff queue evidence durable when the systems change sets a bounded routine for shift handoff queue in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "takeaways": [
@@ -575,6 +582,7 @@ export const november02BlogDetails={
     ]
   },
   "fio01-queue-priority-queue-08": {
+    "datePublished": "2026-11-02",
     "lead": "Prepare queue priority queue work for month-end without a scramble sets a bounded routine for queue priority queue in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "shortAnswer": "Prepare queue priority queue work for month-end without a scramble sets a bounded routine for queue priority queue in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "takeaways": [
@@ -643,6 +651,7 @@ export const november02BlogDetails={
     ]
   },
   "fio01-meeting-notes-queue-09": {
+    "datePublished": "2026-11-02",
     "lead": "Coach a specialist through a meeting notes queue near miss sets a bounded routine for meeting notes queue in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "shortAnswer": "Coach a specialist through a meeting notes queue near miss sets a bounded routine for meeting notes queue in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "takeaways": [
@@ -711,6 +720,7 @@ export const november02BlogDetails={
     ]
   },
   "fio01-client-reporting-queue-10": {
+    "datePublished": "2026-11-02",
     "lead": "Decide what a VA may send on client reporting queue without a second review sets a bounded routine for client reporting queue in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "shortAnswer": "Decide what a VA may send on client reporting queue without a second review sets a bounded routine for client reporting queue in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "takeaways": [
@@ -779,6 +789,7 @@ export const november02BlogDetails={
     ]
   },
   "fio01-access-review-queue-11": {
+    "datePublished": "2026-11-02",
     "lead": "Turn a access review queue backlog into a dated work plan sets a bounded routine for access review queue in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "shortAnswer": "Turn a access review queue backlog into a dated work plan sets a bounded routine for access review queue in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "takeaways": [
@@ -847,6 +858,7 @@ export const november02BlogDetails={
     ]
   },
   "fio01-onboarding-plan-queue-12": {
+    "datePublished": "2026-11-02",
     "lead": "Protect onboarding plan queue coverage during leave and turnover sets a bounded routine for onboarding plan queue in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "shortAnswer": "Protect onboarding plan queue coverage during leave and turnover sets a bounded routine for onboarding plan queue in Filipino offshore staffing. The record shows the source, the owner, the exception, and the close.",
     "takeaways": [
