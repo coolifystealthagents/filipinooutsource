@@ -113,6 +113,7 @@ export const november03ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this shift handoff completeness workflow with bounded roles, evidence, and escalation ownership.",
+      "label": "See the related offshore staffing service",
       "href": "/services"
     },
     "heroImage": "/daily03/filipinooutsource/fio03-research-shift-handoff-completeness.webp"
@@ -229,6 +230,7 @@ export const november03ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this queue priority exception aging workflow with bounded roles, evidence, and escalation ownership.",
+      "label": "See the related offshore staffing service",
       "href": "/services"
     },
     "heroImage": "/daily03/filipinooutsource/fio03-research-queue-priority-aging.webp"
@@ -345,6 +347,7 @@ export const november03ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this meeting action closure workflow with bounded roles, evidence, and escalation ownership.",
+      "label": "See the related offshore staffing service",
       "href": "/services"
     },
     "heroImage": "/daily03/filipinooutsource/fio03-research-meeting-action-closure.webp"
@@ -461,6 +464,7 @@ export const november03ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this attendance exception evidence workflow with bounded roles, evidence, and escalation ownership.",
+      "label": "See the related offshore staffing service",
       "href": "/services"
     },
     "heroImage": "/daily03/filipinooutsource/fio03-research-attendance-evidence.webp"
@@ -577,6 +581,7 @@ export const november03ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this timesheet approval timeliness workflow with bounded roles, evidence, and escalation ownership.",
+      "label": "See the related offshore staffing service",
       "href": "/services"
     },
     "heroImage": "/daily03/filipinooutsource/fio03-research-timesheet-approval-time.webp"
@@ -693,6 +698,7 @@ export const november03ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this client report reproducibility workflow with bounded roles, evidence, and escalation ownership.",
+      "label": "See the related offshore staffing service",
       "href": "/services"
     },
     "heroImage": "/daily03/filipinooutsource/fio03-research-client-report-reproducibility.webp"
@@ -809,6 +815,7 @@ export const november03ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this backup coverage readiness workflow with bounded roles, evidence, and escalation ownership.",
+      "label": "See the related offshore staffing service",
       "href": "/services"
     },
     "heroImage": "/daily03/filipinooutsource/fio03-research-backup-coverage-readiness.webp"
