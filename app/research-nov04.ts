@@ -113,7 +113,8 @@ export const november04ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this handoff note completeness workflow with bounded roles, evidence, and escalation ownership.",
-      "href": "/services"
+      "href": "/services",
+      "label": "See the related offshore staffing service"
     },
     "heroImage": "/daily04/filipinooutsource/how-complete-is-a-handoff-note-before-the-next-shift-starts.webp"
   },
@@ -229,7 +230,8 @@ export const november04ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this time-zone overlap confirmation workflow with bounded roles, evidence, and escalation ownership.",
-      "href": "/services"
+      "href": "/services",
+      "label": "See the related offshore staffing service"
     },
     "heroImage": "/daily04/filipinooutsource/how-often-are-time-zone-overlaps-confirmed-before-coverage-is-promised.webp"
   },
@@ -345,7 +347,8 @@ export const november04ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this client escalation evidence workflow with bounded roles, evidence, and escalation ownership.",
-      "href": "/services"
+      "href": "/services",
+      "label": "See the related offshore staffing service"
     },
     "heroImage": "/daily04/filipinooutsource/what-evidence-should-a-client-escalation-summary-carry.webp"
   },
@@ -461,7 +464,8 @@ export const november04ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this process exception aging workflow with bounded roles, evidence, and escalation ownership.",
-      "href": "/services"
+      "href": "/services",
+      "label": "See the related offshore staffing service"
     },
     "heroImage": "/daily04/filipinooutsource/how-old-do-process-exceptions-become-before-review.webp"
   },
@@ -577,7 +581,8 @@ export const november04ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this capacity report reproducibility workflow with bounded roles, evidence, and escalation ownership.",
-      "href": "/services"
+      "href": "/services",
+      "label": "See the related offshore staffing service"
     },
     "heroImage": "/daily04/filipinooutsource/can-a-weekly-capacity-report-be-reproduced-from-approved-time-records.webp"
   },
@@ -693,7 +698,8 @@ export const november04ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this access removal timeliness workflow with bounded roles, evidence, and escalation ownership.",
-      "href": "/services"
+      "href": "/services",
+      "label": "See the related offshore staffing service"
     },
     "heroImage": "/daily04/filipinooutsource/how-quickly-is-access-removed-after-an-assignment-ends.webp"
   },
@@ -809,7 +815,8 @@ export const november04ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this task queue reprioritization coverage workflow with bounded roles, evidence, and escalation ownership.",
-      "href": "/services"
+      "href": "/services",
+      "label": "See the related offshore staffing service"
     },
     "heroImage": "/daily04/filipinooutsource/what-coverage-risk-remains-in-a-reprioritized-task-queue.webp"
   }
