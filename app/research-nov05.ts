@@ -113,6 +113,7 @@ export const november05ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this client access approval evidence workflow with bounded roles, evidence, and escalation ownership.",
+      "label": "See the related offshore staffing service",
       "href": "/services"
     },
     "heroImage": "/daily05/filipinooutsource/how-often-do-client-access-requests-close-with-approval-evidence.webp"
@@ -229,6 +230,7 @@ export const november05ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this task reassignment aging workflow with bounded roles, evidence, and escalation ownership.",
+      "label": "See the related offshore staffing service",
       "href": "/services"
     },
     "heroImage": "/daily05/filipinooutsource/how-old-do-task-reassignments-become-before-review.webp"
@@ -345,6 +347,7 @@ export const november05ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this weekly summary reproducibility workflow with bounded roles, evidence, and escalation ownership.",
+      "label": "See the related offshore staffing service",
       "href": "/services"
     },
     "heroImage": "/daily05/filipinooutsource/can-a-weekly-summary-be-reproduced-from-approved-time-records.webp"
@@ -461,6 +464,7 @@ export const november05ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this holiday coverage planning workflow with bounded roles, evidence, and escalation ownership.",
+      "label": "See the related offshore staffing service",
       "href": "/services"
     },
     "heroImage": "/daily05/filipinooutsource/is-holiday-coverage-planned-before-the-local-calendar-changes.webp"
@@ -577,6 +581,7 @@ export const november05ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this complaint handoff ownership workflow with bounded roles, evidence, and escalation ownership.",
+      "label": "See the related offshore staffing service",
       "href": "/services"
     },
     "heroImage": "/daily05/filipinooutsource/do-complaint-handoffs-name-the-next-owner.webp"
@@ -693,6 +698,7 @@ export const november05ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this process change log consistency workflow with bounded roles, evidence, and escalation ownership.",
+      "label": "See the related offshore staffing service",
       "href": "/services"
     },
     "heroImage": "/daily05/filipinooutsource/how-consistently-is-a-process-change-log-linked-to-the-approved-version.webp"
@@ -809,6 +815,7 @@ export const november05ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this new-hire access readiness workflow with bounded roles, evidence, and escalation ownership.",
+      "label": "See the related offshore staffing service",
       "href": "/services"
     },
     "heroImage": "/daily05/filipinooutsource/what-share-of-new-hires-have-tool-access-before-the-first-shift.webp"
