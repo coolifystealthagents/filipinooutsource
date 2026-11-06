@@ -113,6 +113,7 @@ export const november06ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this credential change approval evidence workflow with bounded roles, evidence, and escalation ownership.",
+      "label": "Compare roles",
       "href": "/services"
     },
     "heroImage": "/daily06/filipinooutsource/how-often-do-shared-credential-changes-have-client-approval-evidence.webp"
@@ -229,6 +230,7 @@ export const november06ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this shift swap aging workflow with bounded roles, evidence, and escalation ownership.",
+      "label": "Compare roles",
       "href": "/services"
     },
     "heroImage": "/daily06/filipinooutsource/how-old-do-shift-swap-requests-become-before-confirmation.webp"
@@ -345,6 +347,7 @@ export const november06ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this invoice to hours traceability workflow with bounded roles, evidence, and escalation ownership.",
+      "label": "Compare roles",
       "href": "/services"
     },
     "heroImage": "/daily06/filipinooutsource/can-a-monthly-invoice-be-matched-to-approved-hours.webp"
@@ -461,6 +464,7 @@ export const november06ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this holiday coverage completeness workflow with bounded roles, evidence, and escalation ownership.",
+      "label": "Compare roles",
       "href": "/services"
     },
     "heroImage": "/daily06/filipinooutsource/is-holiday-coverage-evidence-complete-before-the-local-holiday.webp"
@@ -577,6 +581,7 @@ export const november06ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this escalation ownership completeness workflow with bounded roles, evidence, and escalation ownership.",
+      "label": "Compare roles",
       "href": "/services"
     },
     "heroImage": "/daily06/filipinooutsource/do-client-escalations-name-the-next-owner-and-response-time.webp"
@@ -693,6 +698,7 @@ export const november06ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this process document currency workflow with bounded roles, evidence, and escalation ownership.",
+      "label": "Compare roles",
       "href": "/services"
     },
     "heroImage": "/daily06/filipinooutsource/how-current-is-the-process-document-used-by-the-specialist.webp"
@@ -809,6 +815,7 @@ export const november06ResearchPosts: readonly ResearchPost[] = [
     "serviceHandoff": {
       "heading": "Related service",
       "copy": "Plan this new specialist access readiness workflow with bounded roles, evidence, and escalation ownership.",
+      "label": "Compare roles",
       "href": "/services"
     },
     "heroImage": "/daily06/filipinooutsource/what-share-of-new-specialists-have-tool-access-before-the-first-task.webp"
