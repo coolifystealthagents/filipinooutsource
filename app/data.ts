@@ -30,6 +30,7 @@ import { october27BlogPosts, october27BlogDetails } from './blog-october27';
 import { november01BlogPosts, november01BlogDetails } from './blog-nov01';
 import { november02BlogPosts, november02BlogDetails } from './blog-nov02';
 import { november03BlogPosts, november03BlogDetails } from './blog-nov03';
+import { november08BlogPosts, november08BlogDetails } from './blog-nov08';
 import { november07BlogPosts, november07BlogDetails } from './blog-nov07';
 import { november06BlogPosts, november06BlogDetails } from './blog-nov06';
 import { november05BlogPosts, november05BlogDetails } from './blog-nov05';
@@ -88,7 +89,7 @@ export const services = [
   }
 ] as const;
 export const blogPosts = [
-  ...november07BlogPosts, ...november06BlogPosts, ...november05BlogPosts, ...november04BlogPosts, ...november03BlogPosts, ...november02BlogPosts, ...november01BlogPosts, ...october28BlogPosts, ...october27BlogPosts, ...october26BlogPosts, ...october25BlogPosts, ...october22BlogPosts,
+  ...november08BlogPosts, ...november07BlogPosts, ...november06BlogPosts, ...november05BlogPosts, ...november04BlogPosts, ...november03BlogPosts, ...november02BlogPosts, ...november01BlogPosts, ...october28BlogPosts, ...october27BlogPosts, ...october26BlogPosts, ...october25BlogPosts, ...october22BlogPosts,
   ...october13BlogPosts,
   ...october12BlogPosts,
   ...october8BlogPosts,
@@ -201,7 +202,7 @@ export const guideBodies = {
   },
 } as const;
 
-export const blogDetails = { ...november07BlogDetails, ...november06BlogDetails, ...november05BlogDetails, ...november04BlogDetails, ...november03BlogDetails, ...november02BlogDetails, ...november01BlogDetails,
+export const blogDetails = { ...november08BlogDetails, ...november07BlogDetails, ...november06BlogDetails, ...november05BlogDetails, ...november04BlogDetails, ...november03BlogDetails, ...november02BlogDetails, ...november01BlogDetails,
   ...october28BlogDetails, ...october27BlogDetails, ...october26BlogDetails, ...october25BlogDetails, ...october22BlogDetails,
   ...october13BlogDetails,
   ...october12BlogDetails,
