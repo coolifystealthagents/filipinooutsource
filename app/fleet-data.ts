@@ -64,6 +64,7 @@ import { october27ResearchPosts } from './research-october27';
 import { november01ResearchPosts } from './research-nov01';
 import { november02ResearchPosts } from './research-nov02';
 import { november03ResearchPosts } from './research-nov03';
+import { november09ResearchPosts } from './research-nov09';
 import { november08ResearchPosts } from './research-nov08';
 import { november07ResearchPosts } from './research-nov07';
 import { november06ResearchPosts } from './research-nov06';
@@ -440,7 +441,7 @@ export const fleetServices: readonly FleetService[] = [
 ];
 
 export const researchPosts: readonly ResearchPost[] = [
-  ...november08ResearchPosts, ...november07ResearchPosts, ...november06ResearchPosts, ...november05ResearchPosts, ...november04ResearchPosts, ...november03ResearchPosts, ...november02ResearchPosts, ...november01ResearchPosts, ...october28ResearchPosts, ...october27ResearchPosts, ...october26ResearchPosts, ...october25ResearchPosts, ...october22ResearchPosts,
+  ...november09ResearchPosts, ...november08ResearchPosts, ...november07ResearchPosts, ...november06ResearchPosts, ...november05ResearchPosts, ...november04ResearchPosts, ...november03ResearchPosts, ...november02ResearchPosts, ...november01ResearchPosts, ...october28ResearchPosts, ...october27ResearchPosts, ...october26ResearchPosts, ...october25ResearchPosts, ...october22ResearchPosts,
   ...october13ResearchPosts,
   ...october12ResearchPosts,
   ...october8ResearchPosts,
