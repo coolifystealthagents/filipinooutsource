@@ -151,7 +151,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                 <p className="eyebrow">Philippines hiring guide</p>
                 <h1>{post.title}</h1>
                 <p className="lead">{post.excerpt}</p>
-                <p className="byline">By {site.brand} Editorial Team · Published: <time dateTime={detail.datePublished || '2026-07-22'}>{formatReaderDate(detail.datePublished || '2026-07-22')}</time>{detail.dateModified && detail.dateModified !== detail.datePublished ? <> · Updated <time dateTime={detail.dateModified}>{formatReaderDate(detail.dateModified)}</time></> : null} · {post.minutes} min read</p>
+                <p className="byline">By {site.brand} Editorial Team · Published <time dateTime={detail.datePublished || '2026-07-22'}>{formatReaderDate(detail.datePublished || '2026-07-22')}</time>{detail.dateModified && detail.dateModified !== detail.datePublished ? <> · Updated <time dateTime={detail.dateModified}>{formatReaderDate(detail.dateModified)}</time></> : null} · {post.minutes} min read</p>
                 <figure className="article-hero-image"><img src={heroImage.src} alt={heroImage.alt} /><figcaption>{heroImage.caption}</figcaption></figure>
                 {pilotFormat && detail.editorialChecks && <div className="pilot-trust-strip" aria-label="Editorial checks">{detail.editorialChecks.map((item: string) => <span key={item}>{item}</span>)}</div>}
               </header>
