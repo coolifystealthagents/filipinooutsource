@@ -34,7 +34,7 @@ export default function Home() {
           <p className="ph-disclosure">FilipinoOutsource.com is an independent information site. Your request may be sent to a staffing partner that recruits only in the Philippines.</p>
         </div>
         <div className="ph-hero-media">
-          <img src="/stealth-agents-hero-assistant.webp" alt="Experienced Stealth Agents executive assistant in a professional office" width="640" height="720"/>
+          <img src="/filipino-virtual-assistant-hero.webp" alt="Customer support professional working at a computer with a headset" width="1280" height="1440"/>
           <div className="ph-field-note"><span>Philippines-based talent</span><b>Experienced. Dedicated. Process driven.</b></div>
         </div>
       </div>
