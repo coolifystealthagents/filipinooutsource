@@ -108,7 +108,7 @@ export default function StandardContactForm({ endpoint = "/api/submit-lead", enc
         {referral === "Other" ? <label>Please Specify *<input name="referralSpecify" required /></label> : null}
         <label>Tell us about the work *<textarea name="message" rows={4} required placeholder="Tasks, tools, schedule, goals, or anything else that would help us understand the role." /></label>
         {error ? <p className="sa-error" role="alert">{error}</p> : null}
-        <button type="submit" disabled={submitting}>{submitting ? "Submitting..." : "Book My Free Consultation"}</button>
+        <button type="submit" disabled={submitting}><span className="sa-submit-label">{submitting ? "Submitting..." : "Book My Free Consultation"}</span></button>
         <p className="sa-form-note">By submitting, you agree that a staffing specialist may contact you about your request. We do not submit the form until you choose the button above.</p>
       </form>
       <style jsx>{`
@@ -121,7 +121,7 @@ export default function StandardContactForm({ endpoint = "/api/submit-lead", enc
         input:focus,select:focus,textarea:focus{border-color:#00adf4;box-shadow:0 0 0 3px rgba(0,173,244,.14)}
         small{margin-top:-3px;color:#7b869b;font-size:12px;font-weight:400}.sa-phone{display:grid;grid-template-columns:120px 1fr;border:1px solid #cfd7e3;border-radius:9px;overflow:hidden}.sa-phone:focus-within{border-color:#00adf4;box-shadow:0 0 0 3px rgba(0,173,244,.14)}
         .sa-phone select,.sa-phone input{border:0;border-radius:0;box-shadow:none!important}.sa-phone select{border-right:1px solid #dbe1ea;padding-right:8px}.sa-phone input{min-width:0}
-        textarea{resize:vertical;min-height:96px}button{width:100%;border:0;border-radius:10px;background:linear-gradient(100deg,#05acec,#79cdf1);color:#fff;padding:16px 22px;font-size:17px;font-weight:800;cursor:pointer;box-shadow:0 7px 16px rgba(0,173,244,.22)}
+        textarea{resize:vertical;min-height:96px}button{width:100%;border:0;border-radius:10px;background:linear-gradient(100deg,#05acec,#79cdf1);color:#fff;padding:16px 22px;font-family:Montserrat,Manrope,sans-serif;font-size:17px;font-weight:800;cursor:pointer;box-shadow:0 7px 16px rgba(0,173,244,.22)}.sa-submit-label{display:inline-block;min-width:max-content;color:inherit;font:inherit;line-height:1.15}
         button:hover{filter:brightness(.98)}button:disabled{cursor:wait;opacity:.65}.sa-error{margin:0;color:#b42318;font-size:14px}.sa-hp{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important}
         .sa-form-note{margin:0;color:#64748b;font-size:11px;line-height:1.5;text-align:center}
         @media(max-width:700px){.sa-form-card{padding:25px 20px 28px;border-radius:16px}h2{font-size:24px}.sa-grid{grid-template-columns:1fr;gap:15px}.sa-phone{grid-template-columns:112px 1fr}}

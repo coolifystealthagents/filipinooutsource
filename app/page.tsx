@@ -1,5 +1,6 @@
 import { Header, Footer, JsonLd } from './components';
 import { site, services, blogPosts, staffingOffer } from './data';
+import { TestimonialsRail } from './booking-components';
 
 export const metadata = { alternates: { canonical: '/' } };
 
@@ -25,23 +26,28 @@ export default function Home() {
       <div className="ph-contours" aria-hidden="true"/>
       <div className="container ph-hero-grid">
         <div className="ph-hero-copy">
-          <p className="ph-kicker">Filipino talent, properly scoped</p>
-          <h1>Build your Philippines team clearly.</h1>
-          <p className="ph-intro">Turn the tasks piling up on your desk into a clear role for Filipino talent. Set the handoffs, access rules, schedule, and review routine before anyone starts.</p>
-          <div className="ph-actions"><a className="ph-button ph-button-lime" href="/contact-us" id="cta-page-action-1">Plan my team</a><a className="ph-text-link" href="#roles" id="cta-page-action-2">See role map <span>↘</span></a></div>
+          <p className="ph-kicker">Experienced Philippines-based talent</p>
+          <h1>Hire Filipino Assistants With <span>10+ Years</span> Of Experience.</h1>
+          <p className="ph-intro">Build a dedicated support role around your workflow, tools, schedule, and review process—then meet experienced Filipino talent matched to the work.</p>
+          <ul className="ph-hero-benefits"><li>Clear English communicators</li><li>Work in your US time zone</li><li>Skilled and process driven</li><li>Ready to take on more responsibility over time</li></ul>
+          <div className="ph-actions"><a className="ph-button ph-button-lime" href="/contact-us" id="cta-page-action-1">Hire experienced assistants <span aria-hidden="true">→</span></a><a className="ph-text-link" href="#roles" id="cta-page-action-2">Explore roles <span>↓</span></a></div>
           <p className="ph-disclosure">FilipinoOutsource.com is an independent information site. Your request may be sent to a staffing partner that recruits only in the Philippines.</p>
         </div>
         <div className="ph-hero-media">
-          <img src="/illustrations/getillustrations/goodle-team-illustrations-svg/filipino-team-planning.svg" alt="Illustration of a Filipino team planning clearly scoped work together"/>
-          <div className="ph-field-note"><span>Role brief</span><b>Tasks + tools + hours + limits</b></div>
+          <img src="/stealth-agents-hero-assistant.webp" alt="Experienced Stealth Agents executive assistant in a professional office" width="640" height="720"/>
+          <div className="ph-field-note"><span>Philippines-based talent</span><b>Experienced. Dedicated. Process driven.</b></div>
         </div>
       </div>
       <div className="container ph-checks" aria-label="Planning principles"><span><img src="/icons/getillustrations/sharpie-business-icons-svg/sourcing-check.svg" alt="Philippines-only sourcing icon" width="28" height="28"/> Philippines-only sourcing</span><span><img src="/icons/getillustrations/sharpie-business-icons-svg/work-sample.svg" alt="Work sample review icon" width="28" height="28"/> Work sample before interview</span><span><img src="/icons/getillustrations/sharpie-business-icons-svg/review-owner.svg" alt="Named review owner icon" width="28" height="28"/> Named review owner</span></div>
     </section>
 
+    <section className="ph-reviews" aria-label="Client reviews"><div className="container"><TestimonialsRail /></div></section>
+
+    <section className="ph-proof" aria-label="Why businesses choose Filipino support"><div className="container ph-proof-grid"><article><strong>Philippines-only</strong><span>talent sourcing</span></article><article><strong>Dedicated</strong><span>full-time support</span></article><article><strong>Documented</strong><span>roles and handoffs</span></article><article><strong>Managed</strong><span>quality and continuity</span></article></div></section>
+
     <section className="container ph-section" id="roles">
       <div className="ph-section-head"><div><p className="ph-kicker dark">Start with the work</p><h2>Pick a role.</h2></div><p>You do not need a grand outsourcing plan. Pick one lane with repeatable work, decent examples, and a manager who can review early handoffs.</p></div>
-      <div className="ph-role-grid">{services.map((service) => <a id={`cta-home-services-open-${service.slug}`} href={`/services/${service.slug}`} className="ph-role" key={service.slug}><span>Role brief</span><h3>{service.title}</h3><p>{service.desc}</p><b>Open the role brief →</b></a>)}</div>
+      <div className="ph-role-grid">{services.map((service) => <a id={`cta-home-services-open-${service.slug}`} href={`/services/${service.slug}`} className="ph-role" key={service.slug}><span>Role brief</span><h3>{service.title}</h3><p>{service.desc}</p><b>Open the role brief</b></a>)}</div>
     </section>
 
     <section className="ph-system" id="how-it-works">
