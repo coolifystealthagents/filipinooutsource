@@ -1,5 +1,7 @@
 /* Extend the established homepage palette across the rest of the site. */
 .legit-footer{margin-top:0}
+.legit-footer .footer-logo .logo-name span{color:#fff}
+.legit-footer .footer-logo .logo-sub{color:#addfcd}
 .footer-grid{grid-template-columns:minmax(0,1.3fr) repeat(2,minmax(0,.75fr)) minmax(0,1.1fr);gap:34px}
 .footer-parent{min-width:0}
 .footer-parent>a:first-of-type{display:inline-flex;align-items:center;justify-content:center;max-width:235px;min-height:72px;padding:12px;background:#fff;border-radius:10px}
