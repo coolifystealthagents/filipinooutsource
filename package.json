@@ -14,7 +14,10 @@
     "test:patient-appointment-handoff": "node --test tests/patient-appointment-handoff.test.mjs"
   },
   "dependencies": {
+    "@fontsource/geist": "^5.3.0",
+    "@gsap/react": "^2.1.2",
     "@next/third-parties": "^15.5.27",
+    "gsap": "^3.15.1",
     "next": "^15.5.27",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

@@ -160,7 +160,7 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
 
   return <>
     <Header />
-    <main>
+    <main className="renew-detail">
       <JsonLd data={{ '@context': 'https://schema.org', '@type': 'Service', name: service.title, description: service.desc, url, areaServed: 'Worldwide', provider: { '@type': 'Organization', name: site.brand } }} />
 
       <section className="fleet-hero service-role-hero">
@@ -201,17 +201,17 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
 
           <section className="article-section">
             <p className="eyebrow">Controls and guardrails</p>
-            <h2>Design the boundary before granting access.</h2>
+            <h2>Design the boundary before granting access.</h2><p>Agree on who checks each control and where exceptions go. These are the boundaries for this role:</p>
             <div className="fleet-detail-grid">
-              {service.controls.map((control) => <article className="card" key={control}><h3>{control}</h3><p>Document how this control applies to the first queue, who verifies it, and what happens when the worker reaches the limit.</p></article>)}
+              {service.controls.map((control) => <article className="card" key={control}><h3>{control}</h3></article>)}
             </div>
           </section>
 
           <section className="article-section">
             <p className="eyebrow">First week</p>
-            <h2>Use a small batch to test the handoff.</h2>
+            <h2>Use a small batch to test the handoff.</h2><p>Use representative work to confirm the instructions. Keep a shared record of corrections and unanswered questions, then update the brief before increasing volume.</p>
             <div className="article-steps">
-              {service.firstWeek.map((step) => <article key={step}><h3>{step}</h3><p>Capture questions, corrections, and exceptions in the working instructions before the next live batch.</p></article>)}
+              {service.firstWeek.map((step) => <article key={step}><h3>{step}</h3></article>)}
               <article><h3>Confirm the operating rhythm</h3><p>Agree on daily updates, review windows, escalation contacts, and the evidence used to approve expansion.</p></article>
             </div>
             <a className="btn secondary" href="/blog/Filipino-outsource-staffing-onboarding-checklist">Read the onboarding checklist</a>

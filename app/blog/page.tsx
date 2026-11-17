@@ -12,7 +12,7 @@ export default function Blog() {
   const pages = Math.max(1, Math.ceil(blogPosts.length / postsPerPage));
   const posts = blogPosts.slice(0, postsPerPage);
   return <><Header /><main>
-    <section className="fleet-hero editorial-index-hero"><div className="container"><div><p className="eyebrow">Blog</p><h1>Filipino Outsource guides</h1><p className="lead">Practical planning for Philippines-based business operations roles, workflows, and manager handoffs.</p></div><img src="/images/team-workshop.jpg" alt="Team planning work together around a whiteboard" /></div></section>
+    <section className="fleet-hero editorial-index-hero"><div className="container"><div><p className="eyebrow">Blog</p><h1>Practical guides for your team</h1><p className="lead">Practical planning for Philippines-based business operations roles, workflows, and manager handoffs.</p></div><img src="/images/team-workshop.jpg" alt="Team planning work together around a whiteboard" /></div></section>
     <section className="section"><div className="container fleet-service-grid blog-card-grid">{posts.map((post, index) => {
       const date = publication(post.slug);
       const photo = editorialPhotography[index];

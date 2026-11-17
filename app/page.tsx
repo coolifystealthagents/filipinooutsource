@@ -1,73 +1,13 @@
-import { Header, Footer, JsonLd } from './components';
-import { servicePhotography } from './service-photography';
-import { site, services, blogPosts, staffingOffer } from './data';
-import { TestimonialsRail } from './booking-components';
-
-export const metadata = { alternates: { canonical: '/' } };
-
-const steps = [
-  ['Scope', 'Map the work', 'List the repeatable tasks, examples, tools, hours, and decisions that stay with your team.'],
-  ['Match', 'Meet the shortlist', 'Review Filipino candidates against the same work sample and written scorecard.'],
-  ['Launch', 'Run a narrow first week', 'Start with limited access, daily review, and a named person who can answer questions.'],
-  ['Grow', 'Add work when it is steady', 'Expand the role only after the first handoffs are accurate and easy to review.'],
-] as const;
-
-export default function Home() {
-  const url = `https://${site.domain.toLowerCase()}`;
-  const schema = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      { '@type': 'WebSite', '@id': `${url}/#website`, name: site.brand, url },
-      { '@type': 'Organization', '@id': `${url}/#organization`, name: site.brand, url },
-    ],
-  };
-
-  return <><Header/><main className="ph-home" data-design="philippines-ops-map-2026" data-gi-rollout="two-illustration-packs-one-icon-pack"><JsonLd data={schema}/>
-    <section className="ph-hero">
-      <div className="ph-contours" aria-hidden="true"/>
-      <div className="container ph-hero-grid">
-        <div className="ph-hero-copy">
-          <p className="ph-kicker">Experienced Philippines-based talent</p>
-          <h1>Hire Filipino Assistants With <span>10+ Years</span> Of Experience.</h1>
-          <p className="ph-intro">Build a dedicated support role around your workflow, tools, schedule, and review process—then meet experienced Filipino talent matched to the work.</p>
-          <ul className="ph-hero-benefits"><li>Clear English communicators</li><li>Work in your US time zone</li><li>Skilled and process driven</li><li>Ready to take on more responsibility over time</li></ul>
-          <div className="ph-actions"><a className="ph-button ph-button-lime" href="/contact-us" id="cta-page-action-1">Hire experienced assistants <span aria-hidden="true">→</span></a><a className="ph-text-link" href="#roles" id="cta-page-action-2">Explore roles <span>↓</span></a></div>
-          <p className="ph-disclosure">FilipinoOutsource.com is an independent information site. Your request may be sent to a staffing partner that recruits only in the Philippines.</p>
-        </div>
-        <div className="ph-hero-media">
-          <img src="/filipino-virtual-assistant-hero.webp" alt="Customer support professional working at a computer with a headset" width="1280" height="1440"/>
-          <div className="ph-field-note"><span>Philippines-based talent</span><b>Experienced. Dedicated. Process driven.</b></div>
-        </div>
-      </div>
-      <div className="container ph-checks" aria-label="Planning principles"><span><img src="/icons/getillustrations/sharpie-business-icons-svg/sourcing-check.svg" alt="Philippines-only sourcing icon" width="28" height="28"/> Philippines-only sourcing</span><span><img src="/icons/getillustrations/sharpie-business-icons-svg/work-sample.svg" alt="Work sample review icon" width="28" height="28"/> Work sample before interview</span><span><img src="/icons/getillustrations/sharpie-business-icons-svg/review-owner.svg" alt="Named review owner icon" width="28" height="28"/> Named review owner</span></div>
-    </section>
-
-    <section className="ph-reviews" aria-label="Client reviews"><div className="container"><TestimonialsRail /></div></section>
-
-    <section className="ph-proof" aria-label="Why businesses choose Filipino support"><div className="container ph-proof-grid"><article><strong>Philippines-only</strong><span>talent sourcing</span></article><article><strong>Dedicated</strong><span>full-time support</span></article><article><strong>Documented</strong><span>roles and handoffs</span></article><article><strong>Managed</strong><span>quality and continuity</span></article></div></section>
-
-    <section className="container ph-section" id="roles">
-      <div className="ph-section-head"><div><p className="ph-kicker dark">Start with the work</p><h2>Pick a role.</h2></div><p>You do not need a grand outsourcing plan. Pick one lane with repeatable work, decent examples, and a manager who can review early handoffs.</p></div>
-      <div className="ph-role-grid">{services.map((service) => <a id={`cta-home-services-open-${service.slug}`} href={`/services/${service.slug}`} className="ph-role" key={service.slug}><img className="ph-role-photo" src={servicePhotography[service.slug].src} alt={servicePhotography[service.slug].alt} loading="lazy" /><span>Role brief</span><h3>{service.title}</h3><p>{service.desc}</p><b>Open the role brief</b></a>)}</div>
-    </section>
-
-    <section className="ph-system" id="how-it-works">
-      <div className="container ph-system-grid">
-        <div><p className="ph-kicker">The part around the hire</p><h2>Give the team a clear way to work.</h2><p className="ph-system-lead">Hiring fills the seat. Clear ownership keeps the work moving after the person starts.</p></div>
-        <div className="ph-system-list">{staffingOffer.included.map((item, index) => <article key={item}><span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><p>{item}</p></article>)}</div>
-      </div>
-    </section>
-
-    <section className="container ph-section">
-      <div className="ph-section-head"><div><p className="ph-kicker dark">A controlled launch</p><h2>Controlled launch.</h2></div><p>That is a compliment. The best early handoffs are small enough to check, repeat, and improve without drama.</p></div>
-      <div className="ph-steps">{steps.map(([number, title, body]) => <article key={number}><span>{number}</span><h3>{title}</h3><p>{body}</p></article>)}</div>
-    </section>
-
-    <section className="container ph-guides">
-      <div className="ph-guides-title"><p className="ph-kicker dark">Before you send a brief</p><h2>Read the field notes.</h2></div>
-      <div>{blogPosts.slice(0,3).map(post => <a href={`/blog/${post.slug}`} key={post.slug}><span>{post.minutes} min</span><h3>{post.title}</h3><p>{post.excerpt}</p></a>)}</div>
-    </section>
-
-    <section className="container ph-final"><div><p className="ph-kicker">One role. Clear boundaries.</p><h2>What should your Philippines team own first?</h2></div><a className="ph-button ph-button-lime" href="/contact-us" id="cta-page-action-3">Plan my team</a></section>
-  </main><Footer/></>;
-}
+import {Header,Footer,JsonLd} from './components';
+import {catalog,site} from './design-content';
+import {servicePhotography} from './service-photography';
+export const metadata={alternates:{canonical:'/'}};
+export default function Home(){return <><Header/><main className="renew-home"><JsonLd data={{'@context':'https://schema.org','@type':'Organization',name:site.brand,url:`https://${site.domain}`}}/>
+<section className="renew-hero"><div className="container"><p className="renew-kicker">Your team in the Philippines</p><h1>Great people. More room to grow.</h1><div className="renew-hero-bottom"><div><p className="renew-lead">Find a dedicated Filipino assistant for the work that keeps your business moving—from executive support to customer care and everyday operations.</p><div className="renew-actions"><a className="renew-button" href="/contact-us">Build your team</a><a className="renew-link" href="/services">Explore the services ↗</a></div><p className="renew-note">Philippines-based professionals. Supported by StealthAgents.</p></div><img src="/filipino-virtual-assistant-hero.webp" alt="Customer support professional working with a headset" width="1200" height="800" fetchPriority="high"/></div></div></section>
+<section className="renew-intro container"><h2>The right help makes the whole day work better.</h2><div><p>A capable assistant does more than clear a to-do list. They keep information organized, follow-ups visible and recurring work moving, so your team can concentrate on the decisions that need them.</p><p>Agree on working hours, systems, responsibilities and the decisions that need your approval. You get a practical role description before recruiting begins, then a documented handoff when your assistant starts.</p></div></section>
+<section className="renew-catalog container"><div className="renew-heading"><h2>Where could you use another pair of hands?</h2><a className="renew-link" href="/services">Compare every service ↗</a></div><div className="renew-services">{catalog.slice(0,10).map(s=><a href={`/services/${s.slug}`} className="renew-service" key={s.slug}><img src={servicePhotography[s.slug].src} alt={servicePhotography[s.slug].alt} loading="lazy"/><div><h3>{s.title}</h3><p>{s.desc}</p><span>Explore this service ↗</span></div></a>)}</div></section>
+<section className="renew-working"><div className="container"><div className="renew-heading"><h2>Good support starts with a clear brief.</h2><p>A straightforward way to turn a recurring workload into a role someone can own.</p></div><div className="renew-process"><article><h3>Bring the work</h3><p>Show us the tasks that keep returning: the inbox, the calendar, the records or the follow-up list. Include examples, approximate volume and the tools your team already uses.</p></article><article><h3>Meet the right person</h3><p>Define the skills, availability and communication style the role needs. Review candidates against representative work so the conversation goes beyond a job title.</p></article><article><h3>Build a working rhythm</h3><p>Start with a manageable workload and a named reviewer. Use regular updates and a shared exception list to improve instructions before adding more responsibility.</p></article></div></div></section>
+<section className="renew-team container"><img src="/stealth-agents-team-bacolod.jpg" alt="StealthAgents team outside the Bacolod City Government Center" loading="lazy"/><div><p className="renew-kicker">The people behind the work</p><h2>Dedicated support. A team behind it.</h2><p>StealthAgents recruits, employs and supports the Philippines-based professionals who deliver this work. Filipino Outsource helps you find the right starting point for your team.</p><p>You retain ownership of priorities, approvals and sensitive decisions. Your assistant handles the agreed day-to-day work, with clear instructions and a route for questions.</p><a className="renew-link" href="/contact-us">Talk through your requirements ↗</a></div></section>
+<section className="renew-faq container"><h2>Before you build your team.</h2><div><details><summary>What should I outsource first?</summary><p>Choose recurring work with clear inputs and a result you can review. A shared inbox, scheduling queue or document backlog is often easier to scope than a role that depends on undocumented judgment.</p></details><details><summary>Can someone work in our tools and time zone?</summary><p>Include your required hours, software and communication expectations in the brief. The staffing conversation should confirm availability and relevant experience before a match is agreed.</p></details><details><summary>How do we protect sensitive information?</summary><p>Use named accounts, limited permissions and approved instructions. Keep sensitive decisions with the appropriate internal owner and agree on an escalation process before access is granted.</p></details><details><summary>How is the service priced?</summary><p>Scope, experience, schedule and responsibilities affect the staffing plan. Share your requirements for a specific discussion rather than relying on a generic rate.</p></details></div></section>
+<section className="renew-cta"><div className="container"><h2>Let’s take something off your plate.</h2><a className="renew-button" href="/contact-us">Plan your support ↗</a></div></section>
+</main><Footer/></>}

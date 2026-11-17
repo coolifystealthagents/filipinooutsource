@@ -9,7 +9,7 @@ export function JsonLd({ data }: { data: any }) {
 }
 
 export function LogoMark() {
-  return <span className="logo-mark-wrap"><img className="logo-img" src="/logo.svg?v=20261020-v3" alt="" /><span className="logo-text"><span className="logo-name"><span>Filipino</span><span>Outsource</span></span><span className="logo-sub">Philippines-based staffing</span></span></span>;
+  return <span className="logo-mark-wrap"><img className="logo-img" src="/logo.svg?v=20261020-v3" alt="" /><span className="logo-text"><span className="logo-name"><span>Filipino</span><span>Outsource</span></span><span className="logo-sub">Powered by StealthAgents</span></span></span>;
 }
 
 function PoweredBy() {

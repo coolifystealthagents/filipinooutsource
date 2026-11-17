@@ -27,7 +27,7 @@ export default function ContactUs() {
       <div className="container contact-trust-hero-grid">
         <div className="contact-trust-copy">
           <p className="contact-trust-kicker">Philippines-based staffing, built around your workflow</p>
-          <h1>Build a Filipino support role your team can actually manage.</h1>
+          <h1>Let’s build your Philippines team.</h1>
           <p className="contact-trust-lead">Share the work, tools, schedule, and review needs behind the role. We will use those details to prepare a focused, no-pressure staffing conversation.</p>
           <ul className="contact-trust-signals"><li>A role scoped around real tasks</li><li>Dedicated, full-time talent</li><li>Clear access and review boundaries</li></ul>
           <TestimonialsRail contact />
