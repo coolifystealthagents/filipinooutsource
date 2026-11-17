@@ -77,6 +77,8 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
           </div>
         </section>
 
+        <div className="container"><div className="mobile-toc-slot"><ActiveTableOfContents items={toc} title="In this research" className="research-sidebar-card" /></div></div>
+
         {post.datePublished ? <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org', '@type': 'Article', headline: post.title,
           datePublished: post.datePublished,

@@ -155,6 +155,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                 <figure className="article-hero-image"><img src={heroImage.src} alt={heroImage.alt} /><figcaption>{heroImage.caption}</figcaption></figure>
                 {pilotFormat && detail.editorialChecks && <div className="pilot-trust-strip" aria-label="Editorial checks">{detail.editorialChecks.map((item: string) => <span key={item}>{item}</span>)}</div>}
               </header>
+              <div className="mobile-toc-slot"><ActiveTableOfContents items={toc} title="In this article" className="toc-card" titleClassName="article-kicker" /></div>
 
               <div className="article-grid">
                 <aside className="article-sidebar" aria-label="Article navigation">
