@@ -163,15 +163,14 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
     <main>
       <JsonLd data={{ '@context': 'https://schema.org', '@type': 'Service', name: service.title, description: service.desc, url, areaServed: 'Worldwide', provider: { '@type': 'Organization', name: site.brand } }} />
 
-      <section className="fleet-hero variant-0">
-        <div className="container">
-          <p className="eyebrow">Philippines-based business operations support</p>
-          <h1>{service.title}</h1>
-          <p className="lead">{service.desc}</p>
-          <div className="actions">
-            <a className="btn primary" href="/contact-us">Scope this role</a>
-            <a className="btn secondary" href="#role-brief">Review the role brief</a>
+      <section className="fleet-hero service-role-hero">
+        <div className="container service-role-hero-grid">
+          <div><p className="eyebrow">Philippines-based business operations support</p>
+            <h1>{service.title}</h1>
+            <p className="lead">{profile.definition}</p>
+            <div className="actions"><a className="btn primary" href="/contact-us">Scope this role</a><a className="btn secondary" href="#role-brief">Review the role brief</a></div>
           </div>
+          <figure><img src={servicePhotography[service.slug].src} alt={servicePhotography[service.slug].alt} width="1200" height="800" /><figcaption>Real work, clear ownership, and reviewable handoffs.</figcaption></figure>
         </div>
       </section>
 
@@ -181,14 +180,10 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
             <article className="card">
               <p className="eyebrow">Role definition</p>
               <h2>What {role} means here</h2>
-              <p>{profile.definition}</p>
+              <p>{service.desc}</p>
               <h3>Best fit</h3>
               <p>{profile.bestFor}</p>
             </article>
-            <figure className="article-hero-image">
-              <img src={servicePhotography[service.slug].src} alt={servicePhotography[service.slug].alt} />
-              <figcaption>A practical view of the workflow, evidence, and review boundary for {role}.</figcaption>
-            </figure>
           </div>
 
           <div className="fleet-detail-grid service-detail-grid">

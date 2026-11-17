@@ -1,8 +1,8 @@
 // Licensed stock photography. See /public/optimization/photography-sources.json.
 export const servicePhotography: Record<string, { src: string; alt: string }> = {
   'executive-assistance': { src: '/optimization/executive-calendar-management.webp', alt: 'Office professional checking a folder beside her laptop' },
-  'customer-support-operations': { src: '/optimization/inbox-triage.webp', alt: 'Professional reviewing correspondence and documents at his desk' },
-  'bookkeeping-support': { src: '/optimization/document-production.webp', alt: 'Documents and stationery being organized at an office desk' },
+  'customer-support-operations': { src: '/optimization/inbox-triage.webp', alt: 'Support professional wearing a headset while reviewing her laptop' },
+  'bookkeeping-support': { src: '/optimization/document-production.webp', alt: 'Two colleagues reviewing paperwork beside a laptop' },
   'recruitment-coordination': { src: '/optimization/meeting-administration.webp', alt: 'A team reviewing meeting documents around a table' },
   'digital-marketing-support': { src: '/optimization/research-briefing.webp', alt: 'Colleagues preparing a research report with charts' },
   'ecommerce-operations': { src: '/optimization/ecommerce-operations.jpg', alt: 'Online store operator preparing packages beside a laptop' },
