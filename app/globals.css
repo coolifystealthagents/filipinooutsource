@@ -234,3 +234,6 @@ body{background:var(--ph-cream);color:var(--ph-ink)}
   .ph-hero{width:100%;border-radius:0}.ph-hero-grid{gap:36px;padding:48px 0}.ph-hero h1{font-size:44px;line-height:1.04}.ph-intro{font-size:16px}.ph-hero-benefits li{font-size:14px}.ph-actions{gap:16px}.ph-button{width:100%}.ph-text-link{width:100%;text-align:center}.ph-disclosure{font-size:10px}.ph-hero-media img{height:auto;border-radius:10px}.ph-reviews{padding:54px 0 38px}.ph-proof{padding-bottom:56px}.ph-proof-grid{grid-template-columns:1fr 1fr}.ph-proof article{min-height:112px;padding:14px}.ph-proof strong{font-size:18px}.ph-proof span{font-size:11px}
   .contact-trust-hero{padding-top:40px}.contact-official-team-media:before{inset:-8px 10px 10px -8px}.contact-official-team-media img{border-radius:16px}.contact-agent-portrait{max-width:100%}
 }
+
+/* Keep the compact ToC disclosure out of the desktop sidebar. */
+@media(min-width:981px){.active-toc-mobile{display:none!important}}
