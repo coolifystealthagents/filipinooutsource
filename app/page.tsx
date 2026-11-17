@@ -1,4 +1,5 @@
 import { Header, Footer, JsonLd } from './components';
+import { servicePhotography } from './service-photography';
 import { site, services, blogPosts, staffingOffer } from './data';
 import { TestimonialsRail } from './booking-components';
 
@@ -47,13 +48,13 @@ export default function Home() {
 
     <section className="container ph-section" id="roles">
       <div className="ph-section-head"><div><p className="ph-kicker dark">Start with the work</p><h2>Pick a role.</h2></div><p>You do not need a grand outsourcing plan. Pick one lane with repeatable work, decent examples, and a manager who can review early handoffs.</p></div>
-      <div className="ph-role-grid">{services.map((service) => <a id={`cta-home-services-open-${service.slug}`} href={`/services/${service.slug}`} className="ph-role" key={service.slug}><span>Role brief</span><h3>{service.title}</h3><p>{service.desc}</p><b>Open the role brief</b></a>)}</div>
+      <div className="ph-role-grid">{services.map((service) => <a id={`cta-home-services-open-${service.slug}`} href={`/services/${service.slug}`} className="ph-role" key={service.slug}><img className="ph-role-photo" src={servicePhotography[service.slug].src} alt={servicePhotography[service.slug].alt} loading="lazy" /><span>Role brief</span><h3>{service.title}</h3><p>{service.desc}</p><b>Open the role brief</b></a>)}</div>
     </section>
 
     <section className="ph-system" id="how-it-works">
       <div className="container ph-system-grid">
         <div><p className="ph-kicker">The part around the hire</p><h2>Give the team a clear way to work.</h2><p className="ph-system-lead">Hiring fills the seat. Clear ownership keeps the work moving after the person starts.</p><img src="/illustrations/getillustrations/goodle-business-illustrations-svg/remote-work-handoff.svg" alt="Remote work ownership handoff"/></div>
-        <div className="ph-system-list">{staffingOffer.included.map((item, index) => <article key={item}><span>{index + 1}</span><p>{item}</p></article>)}</div>
+        <div className="ph-system-list">{staffingOffer.included.map((item) => <article key={item}><p>{item}</p></article>)}</div>
       </div>
     </section>
 

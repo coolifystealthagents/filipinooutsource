@@ -1,0 +1,85 @@
+[
+  {
+    "asset": "/optimization/crm-administration.webp",
+    "source": "https://www.pexels.com/photo/8441819/",
+    "license": "https://www.pexels.com/license/",
+    "alt": "Professional reviewing information on a laptop",
+    "note": "Stock photography illustrating the work; not represented as StealthAgents employees or clients.",
+    "sha256": "c8717af9877122ffd727622f879dcd502125b49d7678ca89ae87b461a1eb2b84"
+  },
+  {
+    "asset": "/optimization/document-production.webp",
+    "source": "https://www.pexels.com/photo/7688110/",
+    "license": "https://www.pexels.com/license/",
+    "alt": "Documents and stationery being organized at an office desk",
+    "note": "Stock photography illustrating the work; not represented as StealthAgents employees or clients.",
+    "sha256": "c0c4a364c6be84b302225af7d0386c628ac6301ffd1a64d33f5afbdca46788dd"
+  },
+  {
+    "asset": "/optimization/executive-calendar-management.webp",
+    "source": "https://www.pexels.com/photo/7654451/",
+    "license": "https://www.pexels.com/license/",
+    "alt": "Office professional checking a folder beside her laptop",
+    "note": "Stock photography illustrating the work; not represented as StealthAgents employees or clients.",
+    "sha256": "df0658da57bc4b20dc29ffa266eb8121330872a9afd9b946f36116f428eea37b"
+  },
+  {
+    "asset": "/optimization/inbox-triage.webp",
+    "source": "https://www.pexels.com/photo/9052865/",
+    "license": "https://www.pexels.com/license/",
+    "alt": "Professional reviewing correspondence and documents at his desk",
+    "note": "Stock photography illustrating the work; not represented as StealthAgents employees or clients.",
+    "sha256": "c29dbce9a9363011da25039590c5a6fd84a0508ac30c171bd2953d9a93d2557f"
+  },
+  {
+    "asset": "/optimization/meeting-administration.webp",
+    "source": "https://www.pexels.com/photo/7109315/",
+    "license": "https://www.pexels.com/license/",
+    "alt": "A team reviewing meeting documents around a table",
+    "note": "Stock photography illustrating the work; not represented as StealthAgents employees or clients.",
+    "sha256": "b72f477836014e21197a87bbc8bc04ad7e3ef2573e44397e6541a9f7be3dd5a8"
+  },
+  {
+    "asset": "/optimization/personal-executive-support.webp",
+    "source": "https://www.pexels.com/photo/5387263/",
+    "license": "https://www.pexels.com/license/",
+    "alt": "Professional reviewing paperwork in a bright office",
+    "note": "Stock photography illustrating the work; not represented as StealthAgents employees or clients.",
+    "sha256": "8f00bcf1114f130d50278f1b7038c813db4aef876507b5f664304309087e0476"
+  },
+  {
+    "asset": "/optimization/project-administration.webp",
+    "source": "https://www.pexels.com/photo/8518619/",
+    "license": "https://www.pexels.com/license/",
+    "alt": "Team planning tasks on a whiteboard",
+    "note": "Stock photography illustrating the work; not represented as StealthAgents employees or clients.",
+    "sha256": "c8717af9877122ffd727622f879dcd502125b49d7678ca89ae87b461a1eb2b84"
+  },
+  {
+    "asset": "/optimization/research-briefing.webp",
+    "source": "https://www.pexels.com/photo/7964540/",
+    "license": "https://www.pexels.com/license/",
+    "alt": "Colleagues preparing a research report with charts",
+    "note": "Stock photography illustrating the work; not represented as StealthAgents employees or clients.",
+    "sha256": "0c0f805b493d4e692ea3abc789afa0b1b52f4d9a15f2a9328357ed8bf9614b1d"
+  },
+  {
+    "asset": "/optimization/services-overview-20261117.jpg",
+    "pexelsPhotoId": 9034773,
+    "source": "https://www.pexels.com/photo/9034773/",
+    "license": "https://www.pexels.com/license/",
+    "alt": "Colleagues discussing a plan during an office presentation",
+    "sha256": "0bc077c7c973b06ee7ce538d638c746d915fd0cc42e34a8767d2fd1235d0a1bb",
+    "width": 2000,
+    "height": 1333,
+    "note": "Stock photography illustrating the work; not represented as StealthAgents employees or clients."
+  },
+  {
+    "asset": "/optimization/vendor-follow-up.webp",
+    "source": "https://www.pexels.com/photo/7731374/",
+    "license": "https://www.pexels.com/license/",
+    "alt": "Colleagues reviewing a document beside a laptop",
+    "note": "Stock photography illustrating the work; not represented as StealthAgents employees or clients.",
+    "sha256": "df0658da57bc4b20dc29ffa266eb8121330872a9afd9b946f36116f428eea37b"
+  }
+]

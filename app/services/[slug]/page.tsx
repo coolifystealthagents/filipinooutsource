@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { Header, Footer, CTA, JsonLd } from '../../components';
 import { fleetServices } from '../../fleet-data';
+import { servicePhotography } from '../../service-photography';
 import { site } from '../../data';
 
 const base = `https://${site.domain.toLowerCase()}`;
@@ -185,7 +186,7 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
               <p>{profile.bestFor}</p>
             </article>
             <figure className="article-hero-image">
-              <img src={profile.image} alt={profile.imageAlt} />
+              <img src={servicePhotography[service.slug].src} alt={servicePhotography[service.slug].alt} />
               <figcaption>A practical view of the workflow, evidence, and review boundary for {role}.</figcaption>
             </figure>
           </div>

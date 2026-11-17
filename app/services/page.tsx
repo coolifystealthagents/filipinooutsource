@@ -1,5 +1,6 @@
 import { Header, Footer, CTA } from '../components';
 import { fleetServices } from '../fleet-data';
+import { servicePhotography } from '../service-photography';
 import { site } from '../data';
 
 export const metadata = {
@@ -66,14 +67,14 @@ export default function Services() {
     <Header />
     <main>
       <section className="fleet-hero variant-0">
-        <div className="container">
-          <p className="eyebrow">Philippines-based services</p>
+        <div className="container optimization-services-hero">
+          <div><p className="eyebrow">Philippines-based services</p>
           <h1>Choose the workflow before you choose the role.</h1>
           <p className="lead">Compare focused support roles by the queue they can own, the decisions that stay with your team, and the evidence you need before launch.</p>
           <div className="actions">
             <a className="btn primary" href="#role-selection">Compare roles</a>
             <a className="btn secondary" href="/contact-us">Discuss your workflow</a>
-          </div>
+          </div></div><img src="/optimization/services-overview-20261117.jpg" alt="Colleagues discussing a plan during an office presentation" />
         </div>
       </section>
 
@@ -110,6 +111,7 @@ export default function Services() {
           </div>
           <div className="fleet-service-grid">
             {fleetServices.map((service) => <a className="card fleet-service-card" href={`/services/${service.slug}`} key={service.slug}>
+              <img className="optimization-service-photo" src={servicePhotography[service.slug].src} alt={servicePhotography[service.slug].alt} loading="lazy" />
               <p className="eyebrow">Service brief</p>
               <h2>{service.title}</h2>
               <p>{service.desc}</p>
