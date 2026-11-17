@@ -53,8 +53,8 @@ export default function Home() {
 
     <section className="ph-system" id="how-it-works">
       <div className="container ph-system-grid">
-        <div><p className="ph-kicker">The part around the hire</p><h2>Give the team a clear way to work.</h2><p className="ph-system-lead">Hiring fills the seat. Clear ownership keeps the work moving after the person starts.</p><img src="/illustrations/getillustrations/goodle-business-illustrations-svg/remote-work-handoff.svg" alt="Remote work ownership handoff"/></div>
-        <div className="ph-system-list">{staffingOffer.included.map((item) => <article key={item}><p>{item}</p></article>)}</div>
+        <div><p className="ph-kicker">The part around the hire</p><h2>Give the team a clear way to work.</h2><p className="ph-system-lead">Hiring fills the seat. Clear ownership keeps the work moving after the person starts.</p></div>
+        <div className="ph-system-list">{staffingOffer.included.map((item, index) => <article key={item}><span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><p>{item}</p></article>)}</div>
       </div>
     </section>
 

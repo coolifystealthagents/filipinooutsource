@@ -5,9 +5,9 @@ export const servicePhotography: Record<string, { src: string; alt: string }> = 
   'bookkeeping-support': { src: '/optimization/document-production.webp', alt: 'Documents and stationery being organized at an office desk' },
   'recruitment-coordination': { src: '/optimization/meeting-administration.webp', alt: 'A team reviewing meeting documents around a table' },
   'digital-marketing-support': { src: '/optimization/research-briefing.webp', alt: 'Colleagues preparing a research report with charts' },
-  'ecommerce-operations': { src: '/optimization/vendor-follow-up.webp', alt: 'Colleagues reviewing a document beside a laptop' },
+  'ecommerce-operations': { src: '/optimization/ecommerce-operations.jpg', alt: 'Online store operator preparing packages beside a laptop' },
   'sales-development-support': { src: '/optimization/crm-administration.webp', alt: 'Professional reviewing information on a laptop' },
-  'data-processing-support': { src: '/optimization/project-administration.webp', alt: 'Team planning tasks on a whiteboard' },
+  'data-processing-support': { src: '/optimization/data-processing-support.jpg', alt: 'Professional analyzing data at an office computer' },
   'property-management-support': { src: '/optimization/personal-executive-support.webp', alt: 'Professional reviewing paperwork in a bright office' },
-  'healthcare-administration': { src: '/optimization/services-overview-20261117.jpg', alt: 'Colleagues discussing a plan during an office presentation' },
+  'healthcare-administration': { src: '/optimization/healthcare-administration.jpg', alt: 'Medical receptionist assisting a patient with a tablet' },
 };

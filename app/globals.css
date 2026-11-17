@@ -288,3 +288,8 @@ body{background:var(--ph-cream);color:var(--ph-ink)}
 @media(min-width:1000px){.contact-trust-hero{padding-top:20px!important}.contact-trust-copy{padding-top:20px!important}}
 @media(max-width:980px){.site-header .nav-inner{flex-wrap:wrap!important}.site-header .fleet-nav{display:flex!important;order:3;width:100%;justify-content:center;gap:8px!important;margin:0!important;padding:8px 0;border-top:1px solid #e4e8ef}.site-header .fleet-nav a{padding:6px 10px}}
 @media(max-width:640px){.site-header{height:auto;min-height:100px}.site-header .nav-inner{height:auto;min-height:100px;align-content:center;justify-content:space-between}.site-header .fleet-nav{flex-basis:100%}}
+
+/* Keep the process copy in the flexible column beside its step number. */
+.ph-system-list article{grid-template-columns:48px minmax(0,1fr)}
+.ph-system-list article>span{display:grid;color:#bdf04d;font-size:12px;font-weight:800}
+.ph-system-list article>p{grid-column:2;min-width:0;max-width:48ch;line-height:1.48}

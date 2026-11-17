@@ -48,14 +48,6 @@
     "sha256": "8f00bcf1114f130d50278f1b7038c813db4aef876507b5f664304309087e0476"
   },
   {
-    "asset": "/optimization/project-administration.webp",
-    "source": "https://www.pexels.com/photo/8518619/",
-    "license": "https://www.pexels.com/license/",
-    "alt": "Team planning tasks on a whiteboard",
-    "note": "Stock photography illustrating the work; not represented as StealthAgents employees or clients.",
-    "sha256": "c8717af9877122ffd727622f879dcd502125b49d7678ca89ae87b461a1eb2b84"
-  },
-  {
     "asset": "/optimization/research-briefing.webp",
     "source": "https://www.pexels.com/photo/7964540/",
     "license": "https://www.pexels.com/license/",
@@ -75,11 +67,27 @@
     "note": "Stock photography illustrating the work; not represented as StealthAgents employees or clients."
   },
   {
-    "asset": "/optimization/vendor-follow-up.webp",
-    "source": "https://www.pexels.com/photo/7731374/",
+    "asset": "/optimization/ecommerce-operations.jpg",
+    "source": "https://www.pexels.com/photo/7289725/",
     "license": "https://www.pexels.com/license/",
-    "alt": "Colleagues reviewing a document beside a laptop",
-    "note": "Stock photography illustrating the work; not represented as StealthAgents employees or clients.",
-    "sha256": "df0658da57bc4b20dc29ffa266eb8121330872a9afd9b946f36116f428eea37b"
+    "alt": "Online store operator preparing packages beside a laptop",
+    "sha256": "770bb16716a9680a917966cd477b0983d7de53339a258e401723d8759162f90c",
+    "note": "Licensed stock photography illustrating the service; not company staff or a client."
+  },
+  {
+    "asset": "/optimization/data-processing-support.jpg",
+    "source": "https://www.pexels.com/photo/37828832/",
+    "license": "https://www.pexels.com/license/",
+    "alt": "Professional analyzing data at an office computer",
+    "sha256": "0bf11774396e6a8184ceb65065842b08c3b133bf16e2a06a7bb3cfcdfd78d976",
+    "note": "Licensed stock photography illustrating the service; not company staff or a client."
+  },
+  {
+    "asset": "/optimization/healthcare-administration.jpg",
+    "source": "https://www.pexels.com/photo/4269203/",
+    "license": "https://www.pexels.com/license/",
+    "alt": "Medical receptionist assisting a patient with a tablet",
+    "sha256": "2787f67c8a614cb083705f9949cd427ea4c68c4c3282eb618110234a3bd766a3",
+    "note": "Licensed stock photography illustrating the service; not company staff or a client."
   }
 ]
