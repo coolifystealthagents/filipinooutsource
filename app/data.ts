@@ -32,6 +32,7 @@ import { november02BlogPosts, november02BlogDetails } from './blog-nov02';
 import { november03BlogPosts, november03BlogDetails } from './blog-nov03';
 import { november10BlogPosts, november10BlogDetails } from './blog-nov10';
 import { november17BlogPosts, november17BlogDetails } from './blog-nov17';
+import { november18BlogPosts, november18BlogDetails } from './blog-nov18';
 import { november16BlogPosts, november16BlogDetails } from './blog-nov16';
 import { november11BlogPosts, november11BlogDetails } from './blog-nov11';
 import { november09BlogPosts, november09BlogDetails } from './blog-nov09';
@@ -94,7 +95,7 @@ export const services = [
   }
 ] as const;
 export const blogPosts = [
-  ...november17BlogPosts, ...november16BlogPosts, ...november11BlogPosts, ...november10BlogPosts, ...november09BlogPosts, ...november08BlogPosts, ...november07BlogPosts, ...november06BlogPosts, ...november05BlogPosts, ...november04BlogPosts, ...november03BlogPosts, ...november02BlogPosts, ...november01BlogPosts, ...october28BlogPosts, ...october27BlogPosts, ...october26BlogPosts, ...october25BlogPosts, ...october22BlogPosts,
+  ...november18BlogPosts, ...november17BlogPosts, ...november16BlogPosts, ...november11BlogPosts, ...november10BlogPosts, ...november09BlogPosts, ...november08BlogPosts, ...november07BlogPosts, ...november06BlogPosts, ...november05BlogPosts, ...november04BlogPosts, ...november03BlogPosts, ...november02BlogPosts, ...november01BlogPosts, ...october28BlogPosts, ...october27BlogPosts, ...october26BlogPosts, ...october25BlogPosts, ...october22BlogPosts,
   ...october13BlogPosts,
   ...october12BlogPosts,
   ...october8BlogPosts,
@@ -207,7 +208,7 @@ export const guideBodies = {
   },
 } as const;
 
-export const blogDetails = { ...november17BlogDetails, ...november16BlogDetails, ...november11BlogDetails, ...november10BlogDetails, ...november09BlogDetails, ...november08BlogDetails, ...november07BlogDetails, ...november06BlogDetails, ...november05BlogDetails, ...november04BlogDetails, ...november03BlogDetails, ...november02BlogDetails, ...november01BlogDetails,
+export const blogDetails = { ...november18BlogDetails, ...november17BlogDetails, ...november16BlogDetails, ...november11BlogDetails, ...november10BlogDetails, ...november09BlogDetails, ...november08BlogDetails, ...november07BlogDetails, ...november06BlogDetails, ...november05BlogDetails, ...november04BlogDetails, ...november03BlogDetails, ...november02BlogDetails, ...november01BlogDetails,
   ...october28BlogDetails, ...october27BlogDetails, ...october26BlogDetails, ...october25BlogDetails, ...october22BlogDetails,
   ...october13BlogDetails,
   ...october12BlogDetails,
