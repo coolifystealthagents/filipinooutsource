@@ -9,7 +9,7 @@ const readerDate = new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'l
 const publication = (slug: string) => (blogDetails[slug as keyof typeof blogDetails] as { datePublished?: string } | undefined)?.datePublished;
 
 export const metadata = {
-  title: `Blog | ${site.brand}`,
+  title: 'Blog',
   description: `Philippines-based ${site.primary} planning guides.`,
   alternates: { canonical: '/blog' },
 };

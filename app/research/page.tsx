@@ -5,7 +5,7 @@ import { editorialPhotography } from '../editorial-photography';
 import { site } from '../data';
 
 export const metadata = {
-  title: `Research | ${site.brand}`,
+  title: 'Research',
   description: 'Source-backed analysis for Philippines-based support operations.',
   alternates: { canonical: '/research' },
 };

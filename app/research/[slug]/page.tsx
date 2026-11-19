@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = researchPosts.find((p) => p.slug === slug);
   if (!post) return {};
   return {
-    title: `${post.title} | ${site.brand}`,
+    title: post.title,
     description: post.excerpt,
     alternates: { canonical: `/research/${slug}` },
     openGraph: post.datePublished ? {

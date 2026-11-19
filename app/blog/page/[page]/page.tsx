@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ page: str
   const { page } = await params;
   const n = Number(page);
   return {
-    title: `Blog page ${n} | ${site.brand}`,
+    title: `Blog page ${n}`,
     description: `Browse page ${n} of Philippines-based staffing and workflow guides.`,
     alternates: { canonical: n === 1 ? '/blog' : `/blog/page/${n}` },
   };

@@ -3,7 +3,7 @@ import StandardContactForm from './StandardContactForm';
 import { Header, Footer } from '../components';
 
 export const metadata: Metadata = {
-  title: 'Contact Filipino Outsource | Build Your Philippines-Based Team',
+  title: { absolute: 'Contact Filipino Outsource | Build Your Philippines-Based Team' },
   description: 'Book a free staffing consultation about experienced Filipino virtual assistants for operations, support, and executive roles.',
   alternates: { canonical: 'https://filipinooutsource.com/contact-us' },
   robots: { index: true, follow: true },
