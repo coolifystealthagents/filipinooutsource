@@ -3109,6 +3109,15 @@ main {
   .mobile-toc-slot .active-toc-desktop {
     display: none;
   }
+
+  .article-page .mobile-toc-slot .toc-card,
+  .research-page .mobile-toc-slot .research-sidebar-card {
+    max-height: none;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
 }
 
 /* Article pages (blog + research)
