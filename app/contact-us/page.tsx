@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import StandardContactForm from './StandardContactForm';
 import { Header, Footer } from '../components';
-import { TestimonialsRail } from '../booking-components';
 
 export const metadata: Metadata = {
   title: 'Contact Filipino Outsource | Build Your Philippines-Based Team',
@@ -21,7 +20,7 @@ const prepCards = [
 const capabilities = ['Executive assistance and calendar coordination', 'Customer support and inbox operations', 'Bookkeeping preparation and record support', 'Ecommerce and order coordination', 'Data processing and quality checks', 'Recruiting and candidate scheduling', 'Sales administration and CRM upkeep', 'Documented onboarding and manager handoffs'];
 
 export default function ContactUs() {
-  return <><Header /><main className="contact-trust-page">
+  return <><Header /><main className="fo-page contact-trust-page">
     <section className="contact-trust-hero">
       <div className="contact-trust-glow" aria-hidden="true" />
       <div className="container contact-trust-hero-grid">
@@ -30,7 +29,12 @@ export default function ContactUs() {
           <h1>Let’s build your Philippines team.</h1>
           <p className="contact-trust-lead">Share the work, tools, schedule, and review needs behind the role. We will use those details to prepare a focused, no-pressure staffing conversation.</p>
           <ul className="contact-trust-signals"><li>A role scoped around real tasks</li><li>Dedicated, full-time talent</li><li>Clear access and review boundaries</li></ul>
-          <TestimonialsRail contact />
+          <div className="fo-contact-brief">
+            <span className="fo-contact-brief-kicker">What the first call covers</span>
+            <div className="fo-contact-brief-row"><strong>One queue</strong><span>Choose work with clear inputs and a reviewable finish.</span></div>
+            <div className="fo-contact-brief-row"><strong>One owner</strong><span>Name the manager who answers questions and approves exceptions.</span></div>
+            <div className="fo-contact-brief-row"><strong>One rhythm</strong><span>Agree the daily updates and the weekly quality check.</span></div>
+          </div>
         </div>
         <StandardContactForm endpoint="/api/contact" encoding="form" />
       </div>

@@ -107,21 +107,6 @@ export default function StandardContactForm({ endpoint = "/api/submit-lead", enc
         <button type="submit" disabled={submitting}><span className="sa-submit-label">{submitting ? "Submitting..." : "Book My Free Consultation"}</span></button>
         <p className="sa-form-note">By submitting, you agree that a staffing specialist may contact you about your request. We do not submit the form until you choose the button above.</p>
       </form>
-      <style jsx>{`
-        .sa-form-card{width:100%;max-width:780px;margin:0 auto;background:#fff;border:1px solid rgba(255,255,255,.72);border-radius:20px;padding:20px 26px 24px;box-shadow:0 28px 80px rgba(0,0,0,.27);color:#34415a;text-align:left}
-        .sa-form-kicker{margin:0 0 8px;color:#0e7490;font-size:12px;line-height:1.2;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
-        h2{margin:0 0 9px;color:#111827;font-size:27px;line-height:1.15;font-weight:850;letter-spacing:-.03em;max-width:700px}.sa-form-intro{margin:0 0 22px;color:#64748b;font-size:14px;line-height:1.5}
-        form{display:flex;flex-direction:column;gap:9px}.sa-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-        label{display:flex;flex-direction:column;gap:6px;font-size:13px;line-height:1.25;font-weight:750;color:#34415a}
-        input,select,textarea{box-sizing:border-box;width:100%;border:1px solid #cfd7e3;border-radius:9px;background:#fff;color:#1f2937;font:inherit;font-size:15px;padding:8px 11px;outline:none;min-height:40px}
-        input:focus,select:focus,textarea:focus{border-color:#00adf4;box-shadow:0 0 0 3px rgba(0,173,244,.14)}
-        small{margin-top:-3px;color:#7b869b;font-size:12px;font-weight:400}.sa-phone{display:grid;grid-template-columns:120px 1fr;border:1px solid #cfd7e3;border-radius:9px;overflow:hidden}.sa-phone:focus-within{border-color:#00adf4;box-shadow:0 0 0 3px rgba(0,173,244,.14)}
-        .sa-phone select,.sa-phone input{border:0;border-radius:0;box-shadow:none!important}.sa-phone select{border-right:1px solid #dbe1ea;padding-right:8px}.sa-phone input{min-width:0}
-        textarea{resize:vertical;min-height:58px}button{width:100%;border:0;border-radius:10px;background:linear-gradient(100deg,#05acec,#79cdf1);color:#fff;padding:11px 20px;font-family:Montserrat,Manrope,sans-serif;font-size:17px;font-weight:800;cursor:pointer;box-shadow:0 7px 16px rgba(0,173,244,.22)}.sa-submit-label{display:inline-block;min-width:max-content;color:inherit;font:inherit;line-height:1.15}
-        button:hover{filter:brightness(.98)}button:disabled{cursor:wait;opacity:.65}.sa-error{margin:0;color:#b42318;font-size:14px}.sa-hp{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important}
-        .sa-form-note{margin:0;color:#64748b;font-size:11px;line-height:1.5;text-align:center}
-        @media(max-width:700px){.sa-form-card{padding:25px 20px 28px;border-radius:16px}h2{font-size:24px}.sa-grid{grid-template-columns:1fr;gap:15px}.sa-phone{grid-template-columns:112px 1fr}}
-      `}</style>
     </div>
   );
 }

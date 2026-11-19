@@ -3,7 +3,6 @@ import { Header, Footer } from '../../components';
 import { researchPosts, ResearchPost } from '../../fleet-data';
 import { site } from '../../data';
 import { ActiveTableOfContents, type TableOfContentsItem } from '../../article-toc';
-import Oct22MobileToc from '../../oct22-mobile-toc';
 
 const readerDate = new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
 const formatReaderDate = (value: string) => readerDate.format(new Date(`${value}T00:00:00Z`));
@@ -52,7 +51,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
   return (
     <>
       <Header />
-      <main className="research-page"><Oct22MobileToc />
+      <main className="research-page">
         <section className="research-hero">
           <div className="container research-hero-grid">
             <div>
@@ -65,6 +64,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
                 <span>{post.readTime}</span>
                 <span>{post.sources?.length || 0} {(post.sources?.length || 0) === 1 ? 'source' : 'sources'}</span>
               </div>
+              <div className="mobile-toc-slot"><ActiveTableOfContents items={toc} title="In this research" className="research-sidebar-card" /></div>
             </div>
             <aside className="research-hero-card" aria-label="Research summary">
               {post.stats.slice(0, 3).map((stat) => (
@@ -76,8 +76,6 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
             </aside>
           </div>
         </section>
-
-        <div className="container"><div className="mobile-toc-slot"><ActiveTableOfContents items={toc} title="In this research" className="research-sidebar-card" /></div></div>
 
         {post.datePublished ? <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org', '@type': 'Article', headline: post.title,

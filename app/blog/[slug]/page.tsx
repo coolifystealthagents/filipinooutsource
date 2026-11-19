@@ -4,7 +4,6 @@ import type { Metadata } from 'next';
 import { Header, Footer, CTA } from '../../components';
 import { blogPosts, blogDetails, guideBodies, site } from '../../data';
 import { ActiveTableOfContents, type TableOfContentsItem } from '../../article-toc';
-import Oct22MobileToc from '../../oct22-mobile-toc';
 
 const base = 'https://filipinooutsource.com';
 const strictAccountingSlug = 'outsource-accounting-to-philippines';
@@ -140,7 +139,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
     return (
       <>
         <Header />
-        <main className={pilotFormat ? "article-page competitor-article-page" : "article-page"}><Oct22MobileToc />
+        <main className={pilotFormat ? "article-page competitor-article-page" : "article-page"}>
           <JsonLd data={articleSchema} />
           {faqItems.length > 0 && <JsonLd data={faqSchema} />}
           <JsonLd data={breadcrumbSchema} />
@@ -152,11 +151,10 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                 <h1>{post.title}</h1>
                 <p className="lead">{post.excerpt}</p>
                 <p className="byline">By {site.brand} Editorial Team · Published <time dateTime={detail.datePublished || '2026-07-22'}>{formatReaderDate(detail.datePublished || '2026-07-22')}</time>{detail.dateModified && detail.dateModified !== detail.datePublished ? <> · Updated <time dateTime={detail.dateModified}>{formatReaderDate(detail.dateModified)}</time></> : null} · {post.minutes} min read</p>
+                <div className="mobile-toc-slot"><ActiveTableOfContents items={toc} title="In this article" className="toc-card" titleClassName="article-kicker" /></div>
                 <figure className="article-hero-image"><img src={heroImage.src} alt={heroImage.alt} /><figcaption>{heroImage.caption}</figcaption></figure>
                 {pilotFormat && detail.editorialChecks && <div className="pilot-trust-strip" aria-label="Editorial checks">{detail.editorialChecks.map((item: string) => <span key={item}>{item}</span>)}</div>}
               </header>
-              <div className="mobile-toc-slot"><ActiveTableOfContents items={toc} title="In this article" className="toc-card" titleClassName="article-kicker" /></div>
-
               <div className="article-grid">
                 <aside className="article-sidebar" aria-label="Article navigation">
                   <ActiveTableOfContents items={toc} title="In this article" className="toc-card" titleClassName="article-kicker" />
@@ -227,8 +225,8 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   return (
     <>
       <Header />
-      <main className="article-page"><Oct22MobileToc /><article className="section"><div className="container article-frame">
-        <header className="article-header"><p className="eyebrow">{site.brand} blog</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><figure className="article-hero-image"><img src={fallbackHero} alt={`Planning illustration for ${post.title}`} /><figcaption>A visual guide to defining the work, access, and review path before hiring.</figcaption></figure></header>
+      <main className="article-page"><article className="section"><div className="container article-frame">
+        <header className="article-header"><p className="eyebrow">{site.brand} blog</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><div className="mobile-toc-slot"><ActiveTableOfContents items={fallbackToc} title="In this article" className="toc-card" titleClassName="article-kicker" /></div><figure className="article-hero-image"><img src={fallbackHero} alt={`Planning illustration for ${post.title}`} /><figcaption>A visual guide to defining the work, access, and review path before hiring.</figcaption></figure></header>
         <div className="article-grid">
           <aside className="article-sidebar" aria-label="Article navigation"><ActiveTableOfContents items={fallbackToc} title="In this article" className="toc-card" titleClassName="article-kicker" /></aside>
           <div className="article-wrap"><ArticleBanner banner={fallbackBanners[0]} />{guide ? <><p>{guide.intro}</p>{guide.sections.map((section: any, index: number) => <React.Fragment key={section.title}><section className="card article-section" id={slugify(section.title)}><h2>{section.title}</h2>{section.paragraphs.map((paragraph: string) => <p key={paragraph}>{paragraph}</p>)}</section>{index === 0 && <ArticleBanner banner={fallbackBanners[1]} />}</React.Fragment>)}</> : <section className="card article-section" id="start-with-a-defined-workflow"><h2>Start with a defined workflow</h2><p>For Philippines-based staffing, document the work, tools, schedule, and desired outcome before candidate matching. Keep business judgment and final approvals with a named manager. <a href="https://www.ilo.org/global/topics/non-standard-employment/WCMS_534825/lang--en/index.htm" target="_blank" rel="noopener noreferrer">International Labour Organization guidance on remote work arrangements</a> reinforces the need for clear expectations, communication rhythms, and accountable handoffs.</p></section>}<ArticleBanner banner={fallbackBanners[2]} /></div>

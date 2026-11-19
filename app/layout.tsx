@@ -6,8 +6,9 @@ import '@fontsource/geist/400.css';
 import '@fontsource/geist/600.css';
 import '@fontsource/geist/700.css';
 import './renew.css';
-import PageMotion from './PageMotion';
-import type { Metadata } from 'next';
+import './redesign.css';
+import SiteMotion from './SiteMotion';
+import type { Metadata, Viewport } from 'next';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://filipinooutsource.com'),
@@ -16,11 +17,28 @@ export const metadata: Metadata = {
   openGraph: { title: 'Filipino Outsource', description: 'Practical role planning for Filipino talent sourced only in the Philippines.', url: 'https://filipinooutsource.com', siteName: 'Filipino Outsource', type: 'website' },
 };
 
-export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}<PageMotion/><AcrClient/><Script id="acr-tracker-config" strategy="beforeInteractive">{`window.ACR_TRACKER_CONFIG={siteId:'filipino-outsource',endpoint:'/ingest/track',debug:false,funnelSteps:[{path:'/contact-us',step:1,label:'Form Page',event:'funnel_form_page'},{path:'/contact',step:1,label:'Form Page',event:'funnel_form_page'},{path:'/thank-you',step:2,label:'Form Submitted',event:'funnel_form_submitted'},{path:'/thanks-whats-next',step:3,label:'Booking Confirmed',event:'funnel_booking_confirmed'}]};`}</Script><Script src="https://acrtracking.stealthagents.us/v1/tracker.js" strategy="afterInteractive"/>
+export const viewport: Viewport = {
+  themeColor: '#04121e',
+  colorScheme: 'light',
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body>
+        {children}
+        <SiteMotion />
+        <AcrClient />
+        <Script id="acr-tracker-config" strategy="beforeInteractive">{`window.ACR_TRACKER_CONFIG={siteId:'filipino-outsource',endpoint:'/ingest/track',debug:false,funnelSteps:[{path:'/contact-us',step:1,label:'Form Page',event:'funnel_form_page'},{path:'/contact',step:1,label:'Form Page',event:'funnel_form_page'},{path:'/thank-you',step:2,label:'Form Submitted',event:'funnel_form_submitted'},{path:'/thanks-whats-next',step:3,label:'Booking Confirmed',event:'funnel_booking_confirmed'}]};`}</Script>
+        <Script src="https://acrtracking.stealthagents.us/v1/tracker.js" strategy="afterInteractive" />
         <Script
           id="databull-analytics"
           src="https://databull.stealthagents.us/js/script.js"
           data-website-id="dc_mufan8ppjaed61"
           data-domain="filipinooutsource.com"
           strategy="afterInteractive"
-        /></body></html>}
+        />
+      </body>
+    </html>
+  );
+}

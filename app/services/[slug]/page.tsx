@@ -160,25 +160,30 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
 
   return <>
     <Header />
-    <main className="renew-detail">
+    <main className="fo-page fo-detail-page">
       <JsonLd data={{ '@context': 'https://schema.org', '@type': 'Service', name: service.title, description: service.desc, url, areaServed: 'Worldwide', provider: { '@type': 'Organization', name: site.brand } }} />
 
-      <section className="fleet-hero service-role-hero">
-        <div className="container service-role-hero-grid">
-          <div><p className="eyebrow">Philippines-based business operations support</p>
+      <section className="fo-detail-hero">
+        <div className="fo-hero-bg" aria-hidden="true"><span className="fo-aurora fo-aurora--a" /><span className="fo-aurora fo-aurora--b" /><span className="fo-ring fo-ring--1" /><span className="fo-grid-lines" /></div>
+        <div className="container fo-detail-grid">
+          <div className="fo-detail-copy">
+            <p className="fo-eyebrow fo-eyebrow--light">Philippines-based business operations support</p>
             <h1>{service.title}</h1>
-            <p className="lead">{profile.definition}</p>
-            <div className="actions"><a className="btn primary" href="/contact-us">Scope this role</a><a className="btn secondary" href="#role-brief">Review the role brief</a></div>
+            <p className="fo-hero-lead">{profile.definition}</p>
+            <div className="fo-actions"><a className="fo-btn fo-btn--sun" href="/contact-us">Scope this role ↗</a><a className="fo-btn fo-btn--ghost" href="#role-brief">Review the role brief</a></div>
           </div>
-          <figure><img src={servicePhotography[service.slug].src} alt={servicePhotography[service.slug].alt} width="1200" height="800" /><figcaption>Real work, clear ownership, and reviewable handoffs.</figcaption></figure>
+          <figure className="fo-detail-media" data-tilt data-tilt-strength="4">
+            <img src={servicePhotography[service.slug].src} alt={servicePhotography[service.slug].alt} width="1200" height="800" />
+            <figcaption>Real work, clear ownership, and reviewable handoffs.</figcaption>
+          </figure>
         </div>
       </section>
 
-      <section className="section service-depth" id="role-brief">
+      <section className="fo-detail-body" id="role-brief">
         <div className="container">
           <div className="service-intro-grid">
             <article className="card">
-              <p className="eyebrow">Role definition</p>
+              <p className="fo-eyebrow fo-eyebrow--plain">Role definition</p>
               <h2>What {role} means here</h2>
               <p>{service.desc}</p>
               <h3>Best fit</h3>
@@ -187,20 +192,20 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
           </div>
 
           <div className="fleet-detail-grid service-detail-grid">
-            <article className="card"><p className="eyebrow">In scope</p><h2>Useful starting tasks</h2><ul>{profile.outcomes.map((item) => <li key={item}>{item}</li>)}</ul></article>
-            <article className="card"><p className="eyebrow">Workflow discipline</p><h2>Baseline operating tasks</h2><ul>{service.tasks.map((item) => <li key={item}>{item}</li>)}</ul></article>
-            <article className="card"><p className="eyebrow">Client ownership</p><h2>Keep these decisions internal</h2><ul>{profile.retained.map((item) => <li key={item}>{item}</li>)}</ul></article>
+            <article className="card"><p className="fo-eyebrow fo-eyebrow--plain">In scope</p><h2>Useful starting tasks</h2><ul>{profile.outcomes.map((item) => <li key={item}>{item}</li>)}</ul></article>
+            <article className="card"><p className="fo-eyebrow fo-eyebrow--plain">Workflow discipline</p><h2>Baseline operating tasks</h2><ul>{service.tasks.map((item) => <li key={item}>{item}</li>)}</ul></article>
+            <article className="card"><p className="fo-eyebrow fo-eyebrow--plain">Client ownership</p><h2>Keep these decisions internal</h2><ul>{profile.retained.map((item) => <li key={item}>{item}</li>)}</ul></article>
           </div>
 
           <div className="article-banner article-banner-middle">
             <p className="article-kicker">Bring a real queue</p>
             <h2>Turn this role brief into a scoped hiring conversation.</h2>
             <p>Share the tools, weekly volume, working hours, examples, and approval limits. A staffing specialist can help identify what belongs in the first role.</p>
-            <a className="btn primary" href="/contact-us">Discuss {role}</a>
+            <a className="fo-btn fo-btn--sun" href="/contact-us">Discuss {role} ↗</a>
           </div>
 
           <section className="article-section">
-            <p className="eyebrow">Controls and guardrails</p>
+            <p className="fo-eyebrow fo-eyebrow--plain">Controls and guardrails</p>
             <h2>Design the boundary before granting access.</h2><p>Agree on who checks each control and where exceptions go. These are the boundaries for this role:</p>
             <div className="fleet-detail-grid">
               {service.controls.map((control) => <article className="card" key={control}><h3>{control}</h3></article>)}
@@ -208,24 +213,24 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
           </section>
 
           <section className="article-section">
-            <p className="eyebrow">First week</p>
+            <p className="fo-eyebrow fo-eyebrow--plain">First week</p>
             <h2>Use a small batch to test the handoff.</h2><p>Use representative work to confirm the instructions. Keep a shared record of corrections and unanswered questions, then update the brief before increasing volume.</p>
             <div className="article-steps">
               {service.firstWeek.map((step) => <article key={step}><h3>{step}</h3></article>)}
               <article><h3>Confirm the operating rhythm</h3><p>Agree on daily updates, review windows, escalation contacts, and the evidence used to approve expansion.</p></article>
             </div>
-            <a className="btn secondary" href="/blog/Filipino-outsource-staffing-onboarding-checklist">Read the onboarding checklist</a>
+            <a className="btn secondary" href="/blog/Filipino-outsource-staffing-onboarding-checklist">Read the onboarding checklist ↗</a>
           </section>
 
           <section className="article-section scenario-card">
-            <p className="eyebrow">Buyer readiness</p>
+            <p className="fo-eyebrow fo-eyebrow--plain">Buyer readiness</p>
             <h2>Is this workflow ready to hand off?</h2>
             <ul>{profile.readiness.map((item) => <li key={item}>{item}</li>)}</ul>
             <p><b>Pause the handoff</b> if nobody can explain the finish condition, examples conflict, access cannot be limited, or exceptions have no owner. Fixing those gaps before recruitment gives candidates a fairer work sample and managers a clearer review process.</p>
           </section>
 
           <section className="article-section">
-            <p className="eyebrow">KPIs and review cadence</p>
+            <p className="fo-eyebrow fo-eyebrow--plain">KPIs and review cadence</p>
             <h2>Measure output and control, not online presence.</h2>
             <div className="comparison-table" aria-label={`${service.title} KPI review table`}>
               <div className="comparison-row comparison-head"><span>Indicator</span><span>What to measure</span><span>Review cadence</span></div>
@@ -235,13 +240,13 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
           </section>
 
           <section className="article-section service-faq">
-            <p className="eyebrow">Common questions</p>
+            <p className="fo-eyebrow fo-eyebrow--plain">Common questions</p>
             <h2>{service.title} FAQs</h2>
             {faqs.map(([question, answer]) => <article key={question}><h3>{question}</h3><p>{answer}</p></article>)}
           </section>
 
           <section className="related-card">
-            <p className="eyebrow">Compare adjacent roles</p>
+            <p className="fo-eyebrow fo-eyebrow--light">Compare adjacent roles</p>
             <h2>Related services and planning guides</h2>
             <div>
               {related.map((item) => <a href={`/services/${item.slug}`} key={item.slug}>{item.title}<span>Service brief</span></a>)}
