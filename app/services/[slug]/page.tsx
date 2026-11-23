@@ -179,6 +179,27 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
         </div>
       </section>
 
+      <section className="fo-service-facts" aria-label="Service snapshot">
+        <div className="container fo-service-facts-grid">
+          <article><span>Prepared output</span><strong>{profile.outcomes[0]}</strong></article>
+          <article><span>Review owner</span><strong>A named client-side reviewer approves the output</strong></article>
+          <article><span>Starting access</span><strong>Named accounts and least-privilege permissions</strong></article>
+          <article><span>First proof</span><strong>A small live batch reviewed before expansion</strong></article>
+        </div>
+      </section>
+
+      <nav className="fo-service-nav" aria-label="On this page">
+        <div className="container">
+          <a href="#role-brief">Role brief</a>
+          <a href="#scope">Scope</a>
+          <a href="#controls">Controls</a>
+          <a href="#first-week">First week</a>
+          <a href="#kpis">KPIs</a>
+          <a href="#questions">Questions</a>
+          <a className="fo-service-nav-cta" href="/contact-us">Scope this role ↗</a>
+        </div>
+      </nav>
+
       <section className="fo-detail-body" id="role-brief">
         <div className="container">
           <div className="service-intro-grid">
@@ -191,7 +212,7 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
             </article>
           </div>
 
-          <div className="fleet-detail-grid service-detail-grid">
+          <div className="fleet-detail-grid service-detail-grid" id="scope">
             <article className="card"><p className="fo-eyebrow fo-eyebrow--plain">In scope</p><h2>Useful starting tasks</h2><ul>{profile.outcomes.map((item) => <li key={item}>{item}</li>)}</ul></article>
             <article className="card"><p className="fo-eyebrow fo-eyebrow--plain">Workflow discipline</p><h2>Baseline operating tasks</h2><ul>{service.tasks.map((item) => <li key={item}>{item}</li>)}</ul></article>
             <article className="card"><p className="fo-eyebrow fo-eyebrow--plain">Client ownership</p><h2>Keep these decisions internal</h2><ul>{profile.retained.map((item) => <li key={item}>{item}</li>)}</ul></article>
@@ -204,7 +225,7 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
             <a className="fo-btn fo-btn--sun" href="/contact-us">Discuss {role} ↗</a>
           </div>
 
-          <section className="article-section">
+          <section className="article-section" id="controls">
             <p className="fo-eyebrow fo-eyebrow--plain">Controls and guardrails</p>
             <h2>Design the boundary before granting access.</h2><p>Agree on who checks each control and where exceptions go. These are the boundaries for this role:</p>
             <div className="fleet-detail-grid">
@@ -212,7 +233,7 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
             </div>
           </section>
 
-          <section className="article-section">
+          <section className="article-section" id="first-week">
             <p className="fo-eyebrow fo-eyebrow--plain">First week</p>
             <h2>Use a small batch to test the handoff.</h2><p>Use representative work to confirm the instructions. Keep a shared record of corrections and unanswered questions, then update the brief before increasing volume.</p>
             <div className="article-steps">
@@ -229,7 +250,7 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
             <p><b>Pause the handoff</b> if nobody can explain the finish condition, examples conflict, access cannot be limited, or exceptions have no owner. Fixing those gaps before recruitment gives candidates a fairer work sample and managers a clearer review process.</p>
           </section>
 
-          <section className="article-section">
+          <section className="article-section" id="kpis">
             <p className="fo-eyebrow fo-eyebrow--plain">KPIs and review cadence</p>
             <h2>Measure output and control, not online presence.</h2>
             <div className="comparison-table" aria-label={`${service.title} KPI review table`}>
@@ -239,7 +260,7 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
             <p className="metric-note">During the first month, review a small sample frequently and classify corrections by cause. Reduce review only when quality is stable. Expand scope only when repeat errors and unresolved exceptions remain controlled.</p>
           </section>
 
-          <section className="article-section service-faq">
+          <section className="article-section service-faq" id="questions">
             <p className="fo-eyebrow fo-eyebrow--plain">Common questions</p>
             <h2>{service.title} FAQs</h2>
             {faqs.map(([question, answer]) => <article key={question}><h3>{question}</h3><p>{answer}</p></article>)}
@@ -249,7 +270,7 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
             <p className="fo-eyebrow fo-eyebrow--light">Compare adjacent roles</p>
             <h2>Related services and planning guides</h2>
             <div>
-              {related.map((item) => <a href={`/services/${item.slug}`} key={item.slug}>{item.title}<span>Service brief</span></a>)}
+              {related.map((item) => <a className="fo-related-card" href={`/services/${item.slug}`} key={item.slug}><img src={servicePhotography[item.slug].src} alt={servicePhotography[item.slug].alt} loading="lazy" /><div><b>{item.title}</b><span>{item.desc}</span></div></a>)}
               <a href="/services">Compare all services<span>Role matrix</span></a>
               <a href="/blog/Filipino-outsource-staffing-planning">Read the staffing planning guide<span>Planning guide</span></a>
               <a href="/contact-us">Discuss your workflow<span>Contact</span></a>
