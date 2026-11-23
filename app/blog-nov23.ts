@@ -4,7 +4,7 @@ export const november23BlogPosts = [
     "title": "Verify a Filipino specialist's background check before client system access",
     "excerpt": "A background-check gate that records the check type, the completion date, and the client access approval before a specialist reaches a client system.",
     "minutes": 9,
-    "image": "/daily22/filipinooutsource/verify-a-filipino-specialist-s-background-check-before-client-system-access.webp",
+    "image": "/daily23/filipinooutsource/verify-a-filipino-specialist-s-background-check-before-client-system-access.webp",
     "datePublished": "2026-11-23"
   },
   {
@@ -12,7 +12,7 @@ export const november23BlogPosts = [
     "title": "Track a client-approved overtime request for a Filipino support desk",
     "excerpt": "An overtime record that ties extra hours to a client request, the approval limit, and the payroll period before the desk extends coverage.",
     "minutes": 9,
-    "image": "/daily22/filipinooutsource/track-a-client-approved-overtime-request-for-a-filipino-support-desk.webp",
+    "image": "/daily23/filipinooutsource/track-a-client-approved-overtime-request-for-a-filipino-support-desk.webp",
     "datePublished": "2026-11-23"
   },
   {
@@ -20,7 +20,7 @@ export const november23BlogPosts = [
     "title": "Review a Filipino team's paid time off coverage plan before a holiday week",
     "excerpt": "A coverage plan that names the specialists on leave, the backup queue owner, and the client notice date before a holiday week begins.",
     "minutes": 9,
-    "image": "/daily22/filipinooutsource/review-a-filipino-team-s-paid-time-off-coverage-plan-before-a-holiday-week.webp",
+    "image": "/daily23/filipinooutsource/review-a-filipino-team-s-paid-time-off-coverage-plan-before-a-holiday-week.webp",
     "datePublished": "2026-11-23"
   },
   {
@@ -28,7 +28,7 @@ export const november23BlogPosts = [
     "title": "Check a Filipino specialist's home internet redundancy before a client launch",
     "excerpt": "A connectivity check that records the primary line, the backup path, and the tested failover date before a specialist supports a client launch.",
     "minutes": 9,
-    "image": "/daily22/filipinooutsource/check-a-filipino-specialist-s-home-internet-redundancy-before-a-client-launch.webp",
+    "image": "/daily23/filipinooutsource/check-a-filipino-specialist-s-home-internet-redundancy-before-a-client-launch.webp",
     "datePublished": "2026-11-23"
   },
   {
@@ -36,7 +36,7 @@ export const november23BlogPosts = [
     "title": "Record a client data retention instruction for a Filipino back-office queue",
     "excerpt": "A retention instruction that states the client's required holding period, the deletion method, and the reviewer for a Filipino back-office queue.",
     "minutes": 9,
-    "image": "/daily22/filipinooutsource/record-a-client-data-retention-instruction-for-a-filipino-back-office-queue.webp",
+    "image": "/daily23/filipinooutsource/record-a-client-data-retention-instruction-for-a-filipino-back-office-queue.webp",
     "datePublished": "2026-11-23"
   },
   {
@@ -44,7 +44,7 @@ export const november23BlogPosts = [
     "title": "Verify a Filipino team's language proficiency test against the client requirement",
     "excerpt": "A language check that ties the test score, the test date, and the client's stated requirement to the specialist assigned to a customer-facing queue.",
     "minutes": 9,
-    "image": "/daily22/filipinooutsource/verify-a-filipino-team-s-language-proficiency-test-against-the-client-requirement.webp",
+    "image": "/daily23/filipinooutsource/verify-a-filipino-team-s-language-proficiency-test-against-the-client-requirement.webp",
     "datePublished": "2026-11-23"
   },
   {
@@ -52,7 +52,7 @@ export const november23BlogPosts = [
     "title": "Review a Filipino specialist's equipment stipend against the client agreement",
     "excerpt": "An equipment stipend review that matches the allowance, the purchase receipts, and the client agreement line before reimbursement.",
     "minutes": 9,
-    "image": "/daily22/filipinooutsource/review-a-filipino-specialist-s-equipment-stipend-against-the-client-agreement.webp",
+    "image": "/daily23/filipinooutsource/review-a-filipino-specialist-s-equipment-stipend-against-the-client-agreement.webp",
     "datePublished": "2026-11-23"
   },
   {
@@ -60,7 +60,7 @@ export const november23BlogPosts = [
     "title": "Check a Filipino team's incident escalation contact list for a client outage",
     "excerpt": "An escalation contact check that confirms the on-call names, the client contacts, and the response window before an outage occurs.",
     "minutes": 9,
-    "image": "/daily22/filipinooutsource/check-a-filipino-team-s-incident-escalation-contact-list-for-a-client-outage.webp",
+    "image": "/daily23/filipinooutsource/check-a-filipino-team-s-incident-escalation-contact-list-for-a-client-outage.webp",
     "datePublished": "2026-11-23"
   }
 ];

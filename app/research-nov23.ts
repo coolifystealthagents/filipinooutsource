@@ -145,7 +145,7 @@ export const november23ResearchPosts: readonly ResearchPost[] = [
         "href": "/research"
       }
     ],
-    "heroImage": "/daily22/filipinooutsource/do-filipino-specialists-clear-a-background-check-before-client-system-access.webp"
+    "heroImage": "/daily23/filipinooutsource/do-filipino-specialists-clear-a-background-check-before-client-system-access.webp"
   },
   {
     "slug": "are-overtime-requests-approved-before-a-filipino-desk-extends-hours",
@@ -291,7 +291,7 @@ export const november23ResearchPosts: readonly ResearchPost[] = [
         "href": "/research"
       }
     ],
-    "heroImage": "/daily22/filipinooutsource/are-overtime-requests-approved-before-a-filipino-desk-extends-hours.webp"
+    "heroImage": "/daily23/filipinooutsource/are-overtime-requests-approved-before-a-filipino-desk-extends-hours.webp"
   },
   {
     "slug": "do-filipino-teams-document-holiday-coverage-before-the-break",
@@ -437,7 +437,7 @@ export const november23ResearchPosts: readonly ResearchPost[] = [
         "href": "/research"
       }
     ],
-    "heroImage": "/daily22/filipinooutsource/do-filipino-teams-document-holiday-coverage-before-the-break.webp"
+    "heroImage": "/daily23/filipinooutsource/do-filipino-teams-document-holiday-coverage-before-the-break.webp"
   },
   {
     "slug": "is-home-internet-redundancy-tested-before-a-client-launch",
@@ -583,7 +583,7 @@ export const november23ResearchPosts: readonly ResearchPost[] = [
         "href": "/research"
       }
     ],
-    "heroImage": "/daily22/filipinooutsource/is-home-internet-redundancy-tested-before-a-client-launch.webp"
+    "heroImage": "/daily23/filipinooutsource/is-home-internet-redundancy-tested-before-a-client-launch.webp"
   },
   {
     "slug": "do-filipino-back-office-queues-follow-a-client-data-retention-instruction",
@@ -729,7 +729,7 @@ export const november23ResearchPosts: readonly ResearchPost[] = [
         "href": "/research"
       }
     ],
-    "heroImage": "/daily22/filipinooutsource/do-filipino-back-office-queues-follow-a-client-data-retention-instruction.webp"
+    "heroImage": "/daily23/filipinooutsource/do-filipino-back-office-queues-follow-a-client-data-retention-instruction.webp"
   },
   {
     "slug": "are-language-proficiency-tests-current-for-client-facing-filipino-queues",
@@ -875,7 +875,7 @@ export const november23ResearchPosts: readonly ResearchPost[] = [
         "href": "/research"
       }
     ],
-    "heroImage": "/daily22/filipinooutsource/are-language-proficiency-tests-current-for-client-facing-filipino-queues.webp"
+    "heroImage": "/daily23/filipinooutsource/are-language-proficiency-tests-current-for-client-facing-filipino-queues.webp"
   },
   {
     "slug": "do-equipment-stipends-match-the-client-agreement",
@@ -1021,6 +1021,6 @@ export const november23ResearchPosts: readonly ResearchPost[] = [
         "href": "/research"
       }
     ],
-    "heroImage": "/daily22/filipinooutsource/do-equipment-stipends-match-the-client-agreement.webp"
+    "heroImage": "/daily23/filipinooutsource/do-equipment-stipends-match-the-client-agreement.webp"
   }
 ];
