@@ -452,6 +452,7 @@ export const fleetServices: readonly FleetService[] = [
 ];
 
 export const researchPosts: readonly ResearchPost[] = [
+  ...november24ResearchPosts,
   ...november23ResearchPosts, ...november22ResearchPosts, ...november21ResearchPosts, ...november20ResearchPosts, ...november19ResearchPosts, ...november18ResearchPosts, ...november17ResearchPosts, ...november16ResearchPosts, ...november11ResearchPosts, ...november10ResearchPosts, ...november09ResearchPosts, ...november08ResearchPosts, ...november07ResearchPosts, ...november06ResearchPosts, ...november05ResearchPosts, ...november04ResearchPosts, ...november03ResearchPosts, ...november02ResearchPosts, ...november01ResearchPosts, ...october28ResearchPosts, ...october27ResearchPosts, ...october26ResearchPosts, ...october25ResearchPosts, ...october22ResearchPosts,
   ...october13ResearchPosts,
   ...october12ResearchPosts,
