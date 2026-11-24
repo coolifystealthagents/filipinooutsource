@@ -33,6 +33,7 @@ import { november03BlogPosts, november03BlogDetails } from './blog-nov03';
 import { november10BlogPosts, november10BlogDetails } from './blog-nov10';
 import { november17BlogPosts, november17BlogDetails } from './blog-nov17';
 import { november23BlogPosts, november23BlogDetails } from './blog-nov23';
+import { november24BlogPosts, november24BlogDetails } from './blog-nov24';
 import { november22BlogPosts, november22BlogDetails } from './blog-nov22';
 import { november21BlogPosts, november21BlogDetails } from './blog-nov21';
 import { november20BlogPosts, november20BlogDetails } from './blog-nov20';

@@ -67,6 +67,7 @@ import { november03ResearchPosts } from './research-nov03';
 import { november10ResearchPosts } from './research-nov10';
 import { november17ResearchPosts } from './research-nov17';
 import { november23ResearchPosts } from './research-nov23';
+import { november24ResearchPosts } from './research-nov24';
 import { november22ResearchPosts } from './research-nov22';
 import { november21ResearchPosts } from './research-nov21';
 import { november20ResearchPosts } from './research-nov20';
