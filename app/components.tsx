@@ -38,7 +38,7 @@ function PoweredBy({ className = '' }: { className?: string }) {
 
 export function Header() {
   return (
-    <header className="fo-header">
+    <header data-site-header="sticky" className="fo-header">
       <div className="fo-nav-inner">
         <a className="fo-brand" href="/" aria-label={`${site.brand || 'Filipino Outsource'} home`}>
           <LogoMark />
@@ -58,7 +58,7 @@ export function Header() {
 
 export function Footer() {
   return (
-    <footer className="fo-footer">
+    <footer data-site-footer="true" className="fo-footer">
       <div className="fo-footer-inner container">
         <div className="fo-footer-top">
           <div className="fo-footer-brand">
@@ -84,7 +84,7 @@ export function Footer() {
           </div>
           <div>
             <h3>Explore</h3>
-            <div className="fo-footer-links">
+            <div data-footer-menu="true" className="fo-footer-links">
               <a href="/services">All services</a>
               <a href="/blog">Blog</a>
               <a href="/research">Research</a>

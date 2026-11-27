@@ -939,10 +939,6 @@ main {
   animation: fo-marquee 38s linear infinite;
 }
 
-.fo-marquee:hover .fo-marquee-track {
-  animation-play-state: paused;
-}
-
 .fo-marquee-group {
   display: flex;
   align-items: center;

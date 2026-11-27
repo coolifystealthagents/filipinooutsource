@@ -10,6 +10,8 @@ import './redesign.css';
 import SiteMotion from './SiteMotion';
 import type { Metadata, Viewport } from 'next';
 
+import "./site-chrome-fixes.css";
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://filipinooutsource.com'),
   title: { default: 'Filipino Outsource | Plan a Philippines team', template: '%s | Filipino Outsource' },
